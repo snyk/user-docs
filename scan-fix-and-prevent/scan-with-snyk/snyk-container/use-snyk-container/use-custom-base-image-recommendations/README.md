@@ -122,7 +122,7 @@ On the Project page for the application image, navigate to **Settings** and conf
 
 Choose the Dockerfile repository and add the path to your Dockerfile. Click **Update Dockerfile**.
 
-<figure><img src="https://lh5.googleusercontent.com/4cyspvfpv1ZA-4rmhU7DzngLigf8c6rgEu5d7wHiiy7QMbIHy8Qw6qqS0VLEAEYpAfBADISvvQAyCkGqeoBgKxexDxzVPBJvNzB44MSvBzGlPd0NNuWrZyv_73NggOYlSjZCER0z" alt=""><figcaption><p>Configure the path to your Dockerfile</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/custom-base-image-1.png" alt=""><figcaption><p>Configure the path to your Dockerfile</p></figcaption></figure>
 
 ### View Custom Base Image Recommendations
 
@@ -132,7 +132,7 @@ Next, navigate to the **Project** page to see the recommendations for the image.
 You may need to retest a Project when you set the Dockerfile for an existing project.
 {% endhint %}
 
-<figure><img src="https://lh5.googleusercontent.com/G--7GkeQ6i0bwTWE1tdC_Gg5d727JdQQfclEQ1n2opt5vtRDjT2FBChFpSZBD9V1TleoLigSzhtEERg4tfVI6yIua5Q5nGeNycmR93BYCG1DsiREvhNWKtFdZ4imJZvC1ypmDKOI" alt="Snyk custom base image recommendations displayed on a container Project page"><figcaption><p>Example of Custom Base Image Recommendations</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/custom-base-image-2.png" alt="Snyk custom base image recommendations displayed on a container Project page"><figcaption><p>Example of Custom Base Image Recommendations</p></figcaption></figure>
 
 ## Known limitations of CBIR
 

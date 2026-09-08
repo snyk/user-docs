@@ -2,6 +2,7 @@
 
 * [Overview](README.md)
 * [Authentication for third-party tools](implementation-and-setup/enterprise-setup/authentication-for-third-party-tools.md)
+* [AI and agent access](ai-and-agent-access.md)
 
 ## Integrations
 
