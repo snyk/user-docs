@@ -13,11 +13,11 @@ The Snyk Priority Score is determined based on a number of industry-standard cri
 Snyk does not use the CVSS score alone to determine priority; other factors are also considered.
 {% endhint %}
 
-See [Calculation of Priority Score](priority-score.md#calculation-of-priority-score) for detailed information on how scores are determined.
+For detailed information on how Snyk determines scores, visit [Calculation of Priority Score](#calculation-of-priority-score).
 
 You can view Priority Scores in Projects views, Reports, and the API.
 
-There are no settings related to the Priority Score; they are read-only and cannot be hidden. An example follows of Priority Scores displayed in a Project view.
+The Priority Score is read-only. You cannot hide it or change how Snyk calculates it.
 
 ## View Priority Score for an issue
 
@@ -37,7 +37,7 @@ The API endpoint [Get list of latest issues](https://app.gitbook.com/s/IEEjSXQQu
 
 For each issue, Snyk processes and weighs several factors in a proprietary algorithm to produce the score for that issue. These factors include the following:
 
-* [Severity levels](severity-levels.md): calculated using CVSS framework v3.1 scores for an issue.
+* [Severity levels](severity-levels.md): based on the CVSS Base Score for the issue. Snyk uses CVSS v4.0 where a v4.0 vector is available, and CVSS v3.1 for vulnerabilities published before Snyk adopted v4.0.
 * [Exploit maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/): determined by the industry-leading Snyk security team using manual and automated methods to track which vulnerabilities are exploitable and to what extent. This applies to Snyk Open Source.
 * [Reachability](reachability-analysis.md) (the extent to which vulnerabilities are reachable from the code): determined by looking at the code paths called within a Project. This applies to Snyk Open Source.
 * [Fixability](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): defined as having a safer version to upgrade to or a Snyk patch available. For vulnerabilities with neither, developers must either fix the code themselves or use an alternative package. Thus, vulnerabilities with fixes are given a higher Priority Score. This applies to Snyk Open Source.
