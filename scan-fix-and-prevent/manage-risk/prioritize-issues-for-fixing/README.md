@@ -145,7 +145,7 @@ Some tools use only the single factor of severity to prioritize issues, but this
 
 You can prioritize at the Project level when looking at a specific Project. Enterprise customers can prioritize across all Projects.
 
-Snyk Priority Score and Risk Score rank the [severity](severity-levels.md) of an issue and the urgency of fixing it. For details, see [Priority Score vs Risk Score](priority-score-vs-risk-score.md), [Priority Score](priority-score.md), and [Risk Score](risk-score.md).
+Snyk Priority Score and Risk Score rank issues by how urgently you need to fix them. [Severity](severity-levels.md) is a separate label indicating assessed risk, and is one of the factors that feed the scores. For details, visit [Priority Score vs Risk Score](priority-score-vs-risk-score.md), [Priority Score](priority-score.md), and [Risk Score](risk-score.md).
 
 You can [ignore issues](ignore-issues/) and [triage issues](vulnerable-conditions.md) to establish your issue management strategy.
 
@@ -153,7 +153,7 @@ You can [ignore issues](ignore-issues/) and [triage issues](vulnerable-condition
 
 Consider [Malicious packages](malicious-packages.md) and how to address them in your Projects.
 
-You can set up [reachable vulnerability analysis ](reachability-analysis.md)to identify vulnerabilities with a path to your code. This helps you asse are calculated as part of the priority score.
+You can set up [reachable vulnerability analysis](reachability-analysis.md) to identify vulnerabilities with a path to your code. Reachability is one of the factors calculated as part of the Priority Score.
 
 [Vulnerabilities with Social Trends](vulnerabilities-with-social-trends.md) are calculated as part of the Priority Score.
 
