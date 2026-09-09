@@ -47,7 +47,7 @@ func Test_labelToFileName(t *testing.T) {
 
 func Test_renderReferenceDocsPage_writesFrontmatterDescription(t *testing.T) {
 	testDir := t.TempDir()
-	filePath := createTempFile(t, testDir, "existing content")
+	filePath := createTempFile(t, testDir)
 
 	err := renderReferenceDocsPage(filePath, "Apps", testDir, []operationPath{
 		{
@@ -101,7 +101,7 @@ func Test_renderReferenceDocsPage(t *testing.T) {
 		{
 			name: "renders reference docs page",
 			args: args{
-				filePath: createTempFile(t, testDir, "existing content"),
+				filePath: createTempFile(t, testDir),
 				label:    "Apps",
 				docsPath: testDir,
 				operation: []operationPath{
@@ -132,7 +132,7 @@ func Test_renderReferenceDocsPage(t *testing.T) {
 			name: "renders reference docs page, with category context hint",
 
 			args: args{
-				filePath: createTempFile(t, testDir, "existing content"),
+				filePath: createTempFile(t, testDir),
 				label:    "Apps",
 				docsPath: testDir,
 				operation: []operationPath{
@@ -173,7 +173,7 @@ func Test_renderReferenceDocsPage(t *testing.T) {
 			name: "renders reference docs page, without category context hint if no matches",
 
 			args: args{
-				filePath: createTempFile(t, testDir, "existing content"),
+				filePath: createTempFile(t, testDir),
 				label:    "Apps",
 				docsPath: testDir,
 				operation: []operationPath{
@@ -221,14 +221,15 @@ func Test_renderReferenceDocsPage(t *testing.T) {
 	}
 }
 
-func createTempFile(t *testing.T, baseDir, content string) string {
+func createTempFile(t *testing.T, baseDir string) string {
 	t.Helper()
 	fileBaseDir := path.Join(baseDir, "somepath")
 	err := os.MkdirAll(fileBaseDir, 0o755)
 	assert.NoError(t, err)
 	file, err := os.CreateTemp(fileBaseDir, "output")
 	assert.NoError(t, err)
-	_, err = file.WriteString(content)
+	// The renderer must overwrite whatever the file already held.
+	_, err = file.WriteString("existing content")
 	assert.NoError(t, err)
 	return file.Name()
 }
