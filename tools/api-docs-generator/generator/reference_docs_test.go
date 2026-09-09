@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path"
+	"strings"
 	"testing"
 
 	"github.com/snyk/user-docs/tools/api-docs-generator/config"
@@ -42,6 +43,44 @@ func Test_labelToFileName(t *testing.T) {
 			}
 		})
 	}
+}
+
+func Test_renderReferenceDocsPage_writesFrontmatterDescription(t *testing.T) {
+	testDir := t.TempDir()
+	filePath := createTempFile(t, testDir, "existing content")
+
+	err := renderReferenceDocsPage(filePath, "Apps", testDir, []operationPath{
+		{
+			specPath: "foo/test/apps-spec.yaml",
+			pathURL:  "/apps",
+			method:   "GET",
+			docsHint: "This is a hint",
+		},
+	}, config.CategoryContexts{})
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	content, err := os.ReadFile(filePath)
+	if err != nil {
+		t.Fatal(err)
+	}
+	rendered := string(content)
+
+	// GitBook reads the description from frontmatter, which must be the very
+	// first thing in the file, before the H1.
+	assert.True(t, strings.HasPrefix(rendered, "---\ndescription: "),
+		"page starts with a frontmatter description block")
+	assert.Contains(t, rendered, "Snyk API reference for the Apps endpoints",
+		"description names the endpoint group")
+	assert.Less(t, strings.Index(rendered, "---"), strings.Index(rendered, "# Apps"),
+		"frontmatter comes before the heading")
+}
+
+func Test_referencePageDescription(t *testing.T) {
+	got := referencePageDescription("Apps")
+	assert.Contains(t, got, "Apps")
+	assert.NotContains(t, got, "\n", "a description must stay on one line to be valid frontmatter")
 }
 
 func Test_renderReferenceDocsPage(t *testing.T) {
