@@ -1,3 +1,9 @@
+---
+description: >-
+  How to review and act on validated vulnerabilities from completed Continuous
+  Offensive Security scans
+---
+
 # Findings and Reports
 
 Review and act on validated vulnerabilities from completed scans. Every finding was exploited during the scan, so there is no false-positive triage to do first.

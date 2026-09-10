@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to diagnose Snyk Studio and Snyk MCP server problems, including CLI
+  version and authentication issues
 nav_context: classic
 ---
 

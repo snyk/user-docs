@@ -1,3 +1,9 @@
+---
+description: >-
+  How to read the target summary, findings list, and scan history for a
+  Continuous Offensive Security target
+---
+
 # Interpret Scan Results
 
 When you open a target, you get every finding on it, plus a summary of the target's current state. You can also open an individual scan to see only what that scan found.

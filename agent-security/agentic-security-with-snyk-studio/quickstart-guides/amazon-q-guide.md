@@ -1,4 +1,5 @@
 ---
+description: How to set up Snyk Studio and the Snyk MCP server in Amazon Q
 nav_context: classic
 ---
 

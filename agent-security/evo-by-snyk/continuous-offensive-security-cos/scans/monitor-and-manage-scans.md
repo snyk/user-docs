@@ -1,3 +1,9 @@
+---
+description: >-
+  How to monitor scan progress and manage scan activity across your Continuous
+  Offensive Security targets
+---
+
 # Monitor and Manage Scans
 
 The scans and jobs view gives you access to every scan performed across Evo, in one place. Where a target shows you the scan history for that one application, this view shows all activity regardless of which target it belongs to.

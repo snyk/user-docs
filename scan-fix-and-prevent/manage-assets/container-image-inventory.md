@@ -1,3 +1,9 @@
+---
+description: >-
+  How the Container image inventory consolidates your container images into
+  one list
+---
+
 # Container image inventory
 
 The Container image inventory is a unified view in the Snyk platform that consolidates all of your container images into a single, manageable list, regardless of where they were scanned.

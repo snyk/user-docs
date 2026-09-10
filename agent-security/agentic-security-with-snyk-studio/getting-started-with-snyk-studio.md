@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to install and configure Snyk Studio, with and without agentic
+  environment hooks support
 nav_context: classic
 ---
 

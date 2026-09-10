@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to configure all your Snyk IDE plugins from a single configuration
+  dialog
 nav_context: classic
 ---
 

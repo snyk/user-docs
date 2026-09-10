@@ -1,3 +1,9 @@
+---
+description: >-
+  How the Remediation Agent generates, applies, and verifies vulnerability
+  fixes in your Projects
+---
+
 # Remediation Agent
 
 {% hint style="info" %}

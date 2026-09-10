@@ -1,3 +1,9 @@
+---
+description: >-
+  The IP addresses Continuous Offensive Security scans run from, by region,
+  and where to allow them
+---
+
 # Scanner IP addresses
 
 Scan traffic originates from a fixed set of IP addresses. Allowing these addresses through your network controls is often what makes the difference between a thorough scan and one that spends its time being blocked.
