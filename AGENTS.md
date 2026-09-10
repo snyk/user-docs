@@ -72,7 +72,6 @@ make run     # regenerate into the repo — writes real files under developer-to
 
 - **Work on a branch in this repository, not a fork.** GitBook previews do not build for forks, so a fork cannot be reviewed properly.
 - **Sign every commit.** A ruleset on `main` requires verified signatures and will block the merge otherwise. This is a hard gate, not a convention. Commits made through the GitHub API are unsigned, so create them locally with `git commit -S`. To fix a branch that already has unsigned commits: `git rebase --exec 'git commit --amend --no-edit -S' origin/main`.
-- One space and one concern per pull request. Content and generator changes do not belong together.
 - The only **required** check is `ci/circleci: Scan repository for secrets` (gitleaks). `security/snyk`, `code/snyk`, `license/snyk`, and `synchronize-api-docs` also run and should be green, but the ruleset does not block on them. Run `pre-commit install` to catch secrets before you push.
 - Code-owner review is required. [`.github/CODEOWNERS`](.github/CODEOWNERS) routes all content to `@snyk/design-content_docs` and `@mihaisau-snyk`; `tools/api-docs-generator/*` goes to `@snyk/platformeng_api`. Review is where writing style is enforced.
 - The `/ship-it` Slack workflow is the intake path for **internal Snyk contributors only**, and a human runs it — it is not a step you perform. If you are working for an internal contributor, opening the pull request is not the last step and they still need to submit it. External contributions end at the pull request. See [README.md](README.md).
