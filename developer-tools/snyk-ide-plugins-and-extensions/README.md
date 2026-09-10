@@ -7,12 +7,12 @@ description: >-
 
 # Snyk IDE plugins and extensions
 
+Snyk Security plugins and extensions find and fix security vulnerabilities and issues in Snyk Projects. This helps individual developers, open source contributors, and code maintainers to pass security reviews, avoid costly fixes later in development, and reduce time to develop and deliver secure code.
+
 {% hint style="info" %}
 If Snyk is hosting your data in a region other than `SNYK US-01`, you may set the custom endpoint in the IDE. For more information, see [IDEs URLS](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls) on the [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) page.\
 Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 {% endhint %}
-
-Snyk Security plugins and extensions find and fix security vulnerabilities and issues in Snyk Projects. This helps individual developers, open source contributors, and code maintainers to pass security reviews, avoid costly fixes later in development, and reduce time to develop and deliver secure code.
 
 The results of a vulnerability scan show issues with context, impact, and fix guidance in your IDE, where the fix for the vulnerability can be done right in the IDE itself.
 

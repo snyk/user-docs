@@ -5,11 +5,11 @@ nav_context: agnostic
 
 # Workspaces
 
+Workspaces represents a significant step forward in providing you with the most reliable and accurate vulnerability detection possible.
+
 {% hint style="info" %}
 Workspaces improve the accuracy and reliability of Snyk’s SCM integration results, especially for large-scale enterprise environments. This capability also supports additional functionality and improvements we have planned in the future. For these reasons, Snyk strongly recommends [enabling this option](workspaces.md#manage-workspaces) by default at your Group level.
 {% endhint %}
-
-Workspaces represents a significant step forward in providing you with the most reliable and accurate vulnerability detection possible.
 
 Traditionally, Snyk has accessed repository contents using SCM APIs, which impose primary and secondary rate limits, and content limits. For example, the GitHub.com APIs are rate-limited to allow only a certain number of requests per hour, and there is a limit on the number of tree entries that can be retrieved from the Git database.
 

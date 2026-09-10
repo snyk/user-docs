@@ -5,6 +5,8 @@ nav_context: classic
 
 # Artifactory package repository connection setup
 
+Connecting a custom Artifactory Package Repository enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
+
 {% hint style="info" %}
 **Feature availability**\
 Package repository integrations are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
@@ -12,8 +14,6 @@ Package repository integrations are available only with Enterprise plans. For mo
 **Supported projects**\
 The Artifactory Package Repository integration supports [Node.js](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#supported-package-managers-and-package-registries) (npm and Yarn) and [Maven](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin#supported-package-managers-and-package-registries) Projects. For [Improved Gradle SCM scanning](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle#improved-gradle-scm-scanning), use the Maven settings.
 {% endhint %}
-
-Connecting a custom Artifactory Package Repository enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
 
 You can configure these types of Artifactory Package Repository:
 

@@ -5,13 +5,13 @@ nav_context: classic
 
 # Integrate with Google Container Registry (GCR)
 
+Snyk integrates with Google Container Registry (GCR) so you can import your Projects, monitor your containers for vulnerabilities, and fix vulnerabilities as you work. Snyk tests the Projects you have imported for any known security vulnerabilities at a frequency you control. GCR integration works similarly to other Snyk integrations.&#x20;
+
 {% hint style="warning" %}
 Google Container Registry (GCR) has been [officially deprecated](https://cloud.google.com/container-registry/docs/release-notes#May_15_2023) by Google and is no longer supported. Google has replaced GCR with the new Google Artifact Registry (GAR). All Snyk customers should **immediately** migrate to the [Snyk GAR integration](integrate-with-google-artifact-registry-gar.md). \
 \
 Note that Google currently redirects `gcr.io` paths to GAR. Your legacy Snyk GCR integration may continue to work if  the credentials provided to Snyk also have the `roles/artifactregistry.reader`  and `roles/resourcemanager.projects.list` roles authorized for them. However, this redirect may stop functioning in the future. We strongly recommend that you migrate to the [Snyk GAR integration](integrate-with-google-artifact-registry-gar.md) at the earliest to avoid any unwanted service interruptions.&#x20;
 {% endhint %}
-
-Snyk integrates with Google Container Registry (GCR) so you can import your Projects, monitor your containers for vulnerabilities, and fix vulnerabilities as you work. Snyk tests the Projects you have imported for any known security vulnerabilities at a frequency you control. GCR integration works similarly to other Snyk integrations.&#x20;
 
 ## Enable permissions to access GCR
 
