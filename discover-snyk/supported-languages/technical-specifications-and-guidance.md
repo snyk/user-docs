@@ -86,6 +86,7 @@ Support is defined by the pairing of a template engine with the language that re
 | FreeMarker | `.ftl`, `.ftlh` | Java, Kotlin, Scala, Groovy |
 | Handlebars | `.hbs`, `.handlebars` | JavaScript, TypeScript, Java, Kotlin, Scala |
 | Jinja2 | `.j2`, `.jinja`, `.jinja2` | Python |
+| Mako | `.mako`, `.mak` | Python |
 | Mustache | `.mustache` | JavaScript, TypeScript, Java, Kotlin, Scala, Python, Ruby, PHP, C#, VB.NET, Go, C/C++, Swift, Objective-C |
 | Pug | `.pug`, `.jade` | JavaScript, TypeScript, Java, Kotlin, Scala, PHP |
 | Razor | `.cshtml`, `.razor`, `.vbhtml` | C#, VB.NET |
