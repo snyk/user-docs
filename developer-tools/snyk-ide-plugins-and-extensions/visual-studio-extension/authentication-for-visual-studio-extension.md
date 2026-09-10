@@ -13,7 +13,7 @@ Snyk supports the following protocols for authentication:
 * Personal Access Token
 * API token (Legacy)
 
-<figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-extension-visual.png" alt=""><figcaption><p>Authentication methods available in the Snyk extension in Visual Studio</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-extension-visual.png" alt="Authentication methods available in the Snyk extension in Visual Studio"><figcaption><p>Authentication methods available in the Snyk extension in Visual Studio</p></figcaption></figure>
 
 ## Steps to authenticate using the OAuth 2.0 protocol
 
@@ -21,11 +21,11 @@ Follow the next steps to authenticate:
 
 1. After the extension is installed, navigate to **Extensions** > **Snyk** > **Windows**, and then **Snyk** to open the Snyk panel.
 
-<figure><img src="../../.gitbook/assets/SCR-20240822-llxy.png" alt="" width="563"><figcaption><p>Snyk extension navigation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20240822-llxy.png" alt="Snyk extension navigation" width="563"><figcaption><p>Snyk extension navigation</p></figcaption></figure>
 
 2. On the welcome screen, click **Trust project and scan**.
 
-<figure><img src="../../.gitbook/assets/SCR-20240822-lmdw.png" alt="" width="563"><figcaption><p>Trust project and scan</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20240822-lmdw.png" alt="Trust project and scan" width="563"><figcaption><p>Trust project and scan</p></figcaption></figure>
 
 3. A new browser window opens, requiring you to log in to your Snyk account.
 4. In the next prompt, the Snyk IDE extension requests access to act on your behalf. Click **Grant app access**.
@@ -37,7 +37,7 @@ The analysis starts automatically. The IDE reads and saves the authentication on
 You might encounter the browser redirecting to 127.0.0.1:8080. This is normal, and you would need to retry the steps above.<br>
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/endhint.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/endhint.png" alt="Browser redirect to the local callback address during OAuth authentication"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 OAuth 2.0 tokens are not static and cannot be copied from the Snyk account page.
@@ -58,7 +58,7 @@ To authenticate using the Personal Access token, follow these steps:
 1. Navigate to **Preferences** > **Snyk**.
 2.  Set the flag to **Use Personal Access Token**.
 
-    <figure><img src="../../.gitbook/assets/steps-authenticate-using-personal-access-token.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-personal-access-token.png" alt="Authenticating the Visual Studio extension with a Personal Access Token"><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4. Create your **Personal Access Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
 5. Paste or enter the token in the **Token** field.
@@ -72,15 +72,15 @@ Follow these steps to authenticate:
 
 1. After the extension is installed, navigate to **Extensions** > **Snyk** > **Settings**:
 
-<figure><img src="../../.gitbook/assets/SCR-20240822-lyzs.png" alt="" width="375"><figcaption><p>Snyk Settings navigation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20240822-lyzs.png" alt="Snyk Settings navigation" width="375"><figcaption><p>Snyk Settings navigation</p></figcaption></figure>
 
 2.  Find the **Authentication Method** and change it to **API Token** authentication.
 
-    <figure><img src="../../.gitbook/assets/steps-authenticate-using-personal-access-token.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-personal-access-token.png" alt="Selecting the API token authentication method"><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token.png" alt="Authenticating the Visual Studio extension with a Snyk API token"><figcaption></figcaption></figure>
 5. The API token is automatically updated in the **API Token field**.
 6. Click **Apply and Close**.
 

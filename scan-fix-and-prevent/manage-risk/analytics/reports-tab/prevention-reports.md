@@ -130,21 +130,21 @@ High level metrics provide an overview of how often PR checks are passing along 
 
 A high rate of failed PR checks may indicate emerging risk areas while a high rate of overridden checks may signal that developers are bypassing security gates and warrant further investigation. An increasing success rate over time can demonstrate that developers are producing more secure code earlier in your software development life cycle.
 
-<figure><img src="../../../.gitbook/assets/pr-check-performance-status.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pr-check-performance-status.png" alt="PR check performance and status section of the Prevention report"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/pr-check-performance-status-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pr-check-performance-status-2.png" alt="PR check performance and status section of the Prevention report"><figcaption></figcaption></figure>
 
 #### Error PR checks by error message
 
 This table surfaces recurring technical issues that may be preventing PR checks from completing, such as misconfigured integrations or unsupported project types. By surfacing these directly, the report helps teams identify recurring configuration issues, making it easier to prioritize fixes that most improve developer experience.
 
-<figure><img src="../../../.gitbook/assets/error-pr-checks-error-message.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/error-pr-checks-error-message.png" alt="Table of error PR checks grouped by error message"><figcaption></figcaption></figure>
 
 ### Pull-request overview & adoption
 
 This section focuses on pull request outcomes and how broadly PR scanning is enabled across your repositories and organizations. You can quickly see your PR check coverage across all repositories for Snyk Code and Snyk Open Source and how often Snyk PR checks are surfacing vulnerabilities in PRs before they reach a production branch. Different tables allow you to drill down into PR scanning adoption and PR scanning performance by Group, Organization, and repository.
 
-<figure><img src="../../../.gitbook/assets/pull-request-overview-adoption.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pull-request-overview-adoption.png" alt="Pull request overview and adoption section of the Prevention report"><figcaption></figcaption></figure>
 
 #### PR scanning by
 
@@ -158,15 +158,15 @@ PR check enablement for all targets and projects imported through an integration
 
 Repository status will be "N/A" under the repository view when a repository is new to Snyk or if the specific Snyk product does not apply (there are no projects for that product type imported for the target repository).
 
-<figure><img src="../../../.gitbook/assets/pr-scanning.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pr-scanning.png" alt="PR scanning coverage by repository"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/pr-scanning-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pr-scanning-2.png" alt="PR scanning coverage by Organization"><figcaption></figcaption></figure>
 
 #### PR scanning performance by
 
 The **% PRs With Failed Checks** indicates how often Snyk detected a vulnerability that violated the policy set under your PR check settings for at least one of the checks for that PR. This can help you understand the value in running these scans before your code is already merged for specific organizations and repositories.
 
-<figure><img src="../../../.gitbook/assets/pr-scanning-performance.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pr-scanning-performance.png" alt="PR scanning performance, including the percentage of PRs with failed checks"><figcaption></figcaption></figure>
 
 ## Repositories tested in CI/CD report
 

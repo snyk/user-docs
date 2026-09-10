@@ -14,7 +14,7 @@ You can access Snyk Studio, including Snyk's MCP server, in VSCode to secure cod
 * Open the [Snyk Security plugin](cursor:extension/snyk-security.snyk-vulnerability-scanner).
 * Click **Install.**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-10-13 at 2.19.30 PM.png" alt="" width="375"><figcaption><p>The Snyk Security plugin in the extensions library.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-10-13 at 2.19.30 PM.png" alt="The Snyk Security plugin in the extensions library." width="375"><figcaption><p>The Snyk Security plugin in the extensions library.</p></figcaption></figure>
 
 ### Enable Secure At inception
 
@@ -78,9 +78,9 @@ Enable the Snyk MCP Server using one of the following methods:
 
 * Open the Command Palette (**Cmd + Shift + P** on MMacOS, **Ctrl + Shift + P** on Windows), select **MCP: List Servers**, then find **Snyk MCP server** in the list and enable all tools.
 * In the GitHub Copilot chat, click the **Tools** icon.\
-  ![](../../.gitbook/assets/2026-06-22_09-40-00.png)
+  ![Enabling the Snyk MCP server from the Snyk extension](../../.gitbook/assets/2026-06-22_09-40-00.png)
 * You can see a list of all MCP Servers and their tool. Locate Snyk from the list and enable all of its tools:\
-  ![](../../.gitbook/assets/2026-06-22_09-40-14.png)
+  ![Snyk MCP server listed as enabled in GitHub Copilot](../../.gitbook/assets/2026-06-22_09-40-14.png)
 
 #### Install with Node.js and `npx`
 
@@ -124,7 +124,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption><p>Successful Snyk MCP Server configuration in VSCode.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34).png" alt="Successful Snyk MCP Server configuration in VSCode."><figcaption><p>Successful Snyk MCP Server configuration in VSCode.</p></figcaption></figure>
 
 {% hint style="info" %}
 For additional MCP configuration options on VS Code and troubleshooting, visit the official [VS Code MCP server documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
@@ -136,11 +136,11 @@ As a one-time setup, you might need to authenticate and trust the Project direct
 
 The model and the agentic code assistant run most of these workflows, and you approve them in a browser confirmation dialog. The process looks similar to this:
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption><p>Authentication prompt for the Snyk MCP Server.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt="Authentication prompt for the Snyk MCP Server."><figcaption><p>Authentication prompt for the Snyk MCP Server.</p></figcaption></figure>
 
 If you need to authenticate and trust the current directory, then proceed and complete the process.
 
-<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption><p>The agentic code assistant automatically running Snyk MCP server tools.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt="The agentic code assistant automatically running Snyk MCP server tools."><figcaption><p>The agentic code assistant automatically running Snyk MCP server tools.</p></figcaption></figure>
 
 ## Examples
 
@@ -156,11 +156,11 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Copilot indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption><p>Prompt responses from Copilot on the security scan results.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37).png" alt="Prompt responses from Copilot on the security scan results."><figcaption><p>Prompt responses from Copilot on the security scan results.</p></figcaption></figure>
 
 Copilot then gathers all the security scan results, both code (SAST) and dependencies (SCA). Using the recommendations and context from the Snyk MCP server, Copilot suggests code changes that address some or all of the vulnerabilities found:
 
-<figure><img src="../../.gitbook/assets/image (339).png" alt=""><figcaption><p>Suggested changes and recommendations from Copilot.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (339).png" alt="Suggested changes and recommendations from Copilot."><figcaption><p>Suggested changes and recommendations from Copilot.</p></figcaption></figure>
 
 ### Secure at inception rules
 
