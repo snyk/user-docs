@@ -39,6 +39,18 @@ For PHP, the following frameworks and libraries are supported:
 
 The following file formats are supported: `.php`, `.phtml`, `.module`, `.inc`, `.install`, `.theme`, `.profile`.
 
+### Template file analysis
+
+Snyk Code parses template files and follows data from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template renders its output.
+
+For PHP, Snyk Code supports the following template engines:
+
+* Mustache
+* Pug
+* Twig
+
+For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../technical-specifications-and-guidance.md#template-file-analysis).
+
 ## PHP for Snyk Open Source
 
 For PHP with Snyk Open Source, PHP versions 5.2 through 8.5 are supported.

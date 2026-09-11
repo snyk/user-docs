@@ -47,6 +47,19 @@ Available features:
 * Reports
 * Interfile analysis
 
+### Template file analysis
+
+Snyk Code parses template files and follows data from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template renders its output.
+
+For TypeScript, Snyk Code supports the following template engines:
+
+* EJS
+* Handlebars
+* Mustache
+* Pug
+
+For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../technical-specifications-and-guidance.md#template-file-analysis).
+
 ## TypeScript for Snyk Open Source
 
 For TypeScript with Snyk Open Source, the following file formats are supported:

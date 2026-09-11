@@ -26,7 +26,7 @@ Improved Gradle SCM scanning is in Early Access. For more information, see [SCM 
 
 ## Technical specifications
 
-Snyk supports Java analysis for Java versions up to SE 21 and is designed to process code from newer Java versions where feasible.
+Snyk supports Java analysis for Java versions up to SE 25 and is designed to process code from newer Java versions where feasible.
 
 ### Supported frameworks and libraries
 
@@ -38,6 +38,8 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * Android Standard Library
 * Apache Camel
 * Apache Commons
+* Apache Commons Collections
+* Apache CXF
 * Apache Tomcat
 * Apache XML
 * apache.mahou
@@ -50,7 +52,10 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * Dropwizard
 * elasticsearch
 * FasterXML Jackson
+* Flyway
+* Google API Client
 * Google Guava
+* Google OAuth Client
 * grpc-java
 * hibernate
 * http4k
@@ -64,6 +69,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * Java Standard Edition
 * javalin
 * Jax-RS
+* JAXB
 * Jolokia
 * jooq
 {% endcolumn %}
@@ -72,6 +78,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * Kyro
 * Micronaut
 * mongo-java-driver
+* MSAL4J
 * Netty
 * okhttp3
 * org.apache.hc.client5
@@ -82,12 +89,14 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * org.dom4j.io
 * Playframework
 * rxhttp
+* SAP Commerce (Hybris)
 * Seam logger
 * SnakeYaml
 * Spongycastle
 * Spring AI
 * Spring boot
 * Spring Cloud Config
+* Spring Security OAuth2 Client
 * Spring Web, MVC and JDBC
 * Spring WebFlux
 * Struts
@@ -106,6 +115,8 @@ Kotlin only:
 * khttp
 {% endcolumn %}
 {% endcolumns %}
+
+For SAP Commerce (Hybris), Snyk Code analyzes FlexibleSearch queries for SQL injection. This is supported for Java only. Snyk Code recognizes values supplied through query parameter binding as safe and does not report them.
 
 ### Supported package managers and package registries <a href="#supported-package-managers-and-package-registries" id="supported-package-managers-and-package-registries"></a>
 
@@ -128,6 +139,21 @@ Available features:
 * Reports
 * Interfile analysis - Kotlin is fully supported
 * Interfile analysis - Android is partially supported
+
+### Template file analysis
+
+Snyk Code parses template files and follows data from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template renders its output.
+
+For Java and Kotlin, Snyk Code supports the following template engines:
+
+* FreeMarker
+* Handlebars
+* Mustache
+* Pug
+* Thymeleaf
+* Velocity
+
+For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../../supported-languages/technical-specifications-and-guidance.md#template-file-analysis).
 
 ## Java and Kotlin for Snyk Open Source
 

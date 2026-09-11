@@ -57,6 +57,7 @@ For Python, the following frameworks and libraries are supported:
 * huggingface\_hub
 * iopg
 * LangChain
+* LangChain LiteLLM
 * ldap3
 * libxml
 * lxml
@@ -88,6 +89,8 @@ For Python, the following frameworks and libraries are supported:
 {% endcolumn %}
 {% endcolumns %}
 
+Snyk Code treats data returned through LangChain LiteLLM as untrusted, so it reports model output that reaches a sink the same way it reports any other untrusted input.
+
 ### Serverless support
 
 Snyk Code analyzes Python functions that run on AWS Lambda. Snyk resolves handlers from AWS SAM and Serverless Framework configuration files, so it analyzes the function entry point as application code instead of skipping it.
@@ -109,6 +112,18 @@ Snyk treats the handler event as untrusted as a whole, rather than tracking indi
 Snyk Code relies on Python projects to follow a standard directory layout for accurate analysis. Specifically, Snyk Code expects Projects to be compatible with [`setuptools` automatic discovery](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#auto-discovery), which identifies packages and modules automatically based on the directory structure. This includes support for `init.py` files to ensure that symbols defined in package initialization files are imported correctly, leading to a more accurate and deeper analysis.
 
 Both `src-layout` and `flat-layout` are supported. Proper adherence to these conventions allows the scanner to trace code effectively and provide accurate results.
+
+### Template file analysis
+
+Snyk Code parses template files and follows data from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template renders its output.
+
+For Python, Snyk Code supports the following template engines:
+
+* Jinja2
+* Mako
+* Mustache
+
+For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../../technical-specifications-and-guidance.md#template-file-analysis).
 
 ## Python for Snyk Open Source
 

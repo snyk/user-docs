@@ -74,6 +74,30 @@ Partial support includes:
 
 Snyk continuously expands its framework coverage and improves analysis accuracy.
 
+### Template file analysis
+
+Snyk Code analyzes template files together with the application code that renders them. Snyk Code follows data that reaches a template from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template writes its output. The reported data flow spans both the application code and the template.
+
+Snyk Code takes the escaping behavior of the template engine into account. Snyk Code does not report output written through the default escaping of the engine. Snyk Code treats output written through a construct that bypasses escaping, such as a raw or unescaped directive, as a sink.
+
+Support is defined by the pairing of a template engine with the language that renders the template. The following pairs are supported. Template files are analyzed in addition to the source file formats listed for each language.
+
+| Template engine | File extensions | Languages |
+| :--- | :--- | :--- |
+| EJS | `.ejs` | JavaScript, TypeScript |
+| FreeMarker | `.ftl`, `.ftlh` | Java, Kotlin, Scala, Groovy |
+| Handlebars | `.hbs`, `.handlebars` | JavaScript, TypeScript, Java, Kotlin, Scala |
+| Jinja2 | `.j2`, `.jinja`, `.jinja2` | Python |
+| Mako | `.mako`, `.mak` | Python |
+| Mustache | `.mustache` | JavaScript, TypeScript, Java, Kotlin, Scala, Python, Ruby, PHP, C#, VB.NET, Go, C/C++, Swift, Objective-C |
+| Pug | `.pug`, `.jade` | JavaScript, TypeScript, Java, Kotlin, Scala, PHP |
+| Razor | `.cshtml`, `.razor`, `.vbhtml` | C#, VB.NET |
+| Thymeleaf | `.html`, `.xml` | Java, Kotlin, Scala, Groovy |
+| Twig | `.twig`, `.html.twig` | PHP |
+| Velocity | `.vm`, `.vtl` | Java, Kotlin, Scala, Groovy |
+
+Snyk is expanding this coverage. If a template engine or a pair you use is not listed, [contact Snyk Support](https://support.snyk.io).
+
 ### How Snyk Code analysis works
 
 Snyk scans your codebase following this sequence:
