@@ -71,10 +71,22 @@ make run     # regenerate into the repo — writes real files under developer-to
 ## Pull requests
 
 - **Work on a branch in this repository, not a fork.** GitBook previews do not build for forks, so a fork cannot be reviewed properly.
-- **Sign every commit.** A ruleset on `main` requires verified signatures and will block the merge otherwise. This is a hard gate, not a convention. Commits made through the GitHub API are unsigned, so create them locally with `git commit -S`. To fix a branch that already has unsigned commits: `git rebase --exec 'git commit --amend --no-edit -S' origin/main`.
+- **Sign every commit.** A ruleset on `main` requires verified signatures and will block the merge otherwise. This is a hard gate, not a convention.
+  - Working locally: `git commit -S`. Commits pushed from a local clone are unsigned unless you sign them. To fix a branch that already has unsigned commits: `git rebase --exec 'git commit --amend --no-edit -S' origin/main`.
+  - Automating: do **not** provision a signing key. Commits created through the GitHub API are signed by GitHub automatically. `peter-evans/create-pull-request` with `sign-commits: true` uses that path — see [`.github/workflows/sync-api-docs.yml`](.github/workflows/sync-api-docs.yml). The default `GITHUB_TOKEN` is enough, and the CircleCI, Snyk and GitBook checks all still run.
 - The only **required** check is `ci/circleci: Scan repository for secrets` (gitleaks). `security/snyk`, `code/snyk`, `license/snyk`, and `synchronize-api-docs` also run and should be green, but the ruleset does not block on them. Run `pre-commit install` to catch secrets before you push.
 - Code-owner review is required. [`.github/CODEOWNERS`](.github/CODEOWNERS) routes all content to `@snyk/design-content_docs` and `@mihaisau-snyk`; `tools/api-docs-generator/*` goes to `@snyk/platformeng_api`. Review is where writing style is enforced.
 - The `/ship-it` Slack workflow is the intake path for **internal Snyk contributors only**, and a human runs it — it is not a step you perform. If you are working for an internal contributor, opening the pull request is not the last step and they still need to submit it. External contributions end at the pull request. See [README.md](README.md).
+
+## Automated ship-it drafts
+
+Some pull requests here are opened by an automation that watches the `/ship-it` requests in `#ask-docs` and drafts from the PRD they reference. Its instructions live in `snyk/user-docs-internal` (`.cursor/rules/ship-it-*.mdc`), not in this repository. If you are that agent, or picking up after it:
+
+- Branches are named `ship-it/<JIRA-KEY>`, one per request. Re-running a request updates the existing branch in place — do not open a second pull request for the same key, and do not overwrite reviewer edits already on the branch.
+- Drafts are **always** opened as draft pull requests and stay draft until a technical writer moves them to Ready. Draft status is what keeps unreviewed content off the site.
+- `[ACTION REQUIRED: ...]` markers in a draft are deliberate. Each one is a place the source material did not answer a question, flagged rather than guessed. Resolve them before moving the pull request out of draft; do not delete them unanswered.
+- The commits are signed because they are created through the GitHub API. **A verified signature here means the automation produced the commit, not that anyone reviewed it** — code-owner review is still the gate.
+- The agent does not submit `/ship-it` requests, transition Jira tickets, or merge anything.
 
 ## Do not touch
 
