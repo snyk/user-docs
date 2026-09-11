@@ -19,7 +19,7 @@ However, results can vary significantly depending on the ecosystem and how the d
 
 ## Go standard library vulnerabilities
 
-Snyk Container reports vulnerabilities from the Go standard library in addition to third-party modules.
+Starting on October 5, 2026, Snyk Container reports vulnerabilities from the Go standard library in addition to third-party modules.
 
 ### How it works
 
