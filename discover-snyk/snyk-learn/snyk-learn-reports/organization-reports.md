@@ -3,6 +3,8 @@ description: How to view and export Snyk Learn organization reports, available o
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Organization reports
 
 {% hint style="info" %}

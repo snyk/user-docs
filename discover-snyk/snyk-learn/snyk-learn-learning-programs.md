@@ -3,6 +3,8 @@ description: How Snyk administrators curate security learning paths with Snyk Le
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Learn learning programs
 
 {% hint style="info" %}

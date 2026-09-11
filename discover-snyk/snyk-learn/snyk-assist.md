@@ -3,6 +3,8 @@ description: Snyk Assist for Learn, an AI-powered assistant that answers Snyk pr
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Assist for Learn
 
 {% hint style="info" %}

@@ -3,6 +3,8 @@ description: How to enable and test Snyk PR Checks, which block pull requests th
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Test PR Checks
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

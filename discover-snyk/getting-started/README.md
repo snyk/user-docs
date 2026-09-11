@@ -5,6 +5,8 @@ description: >-
   first scanning and remediation tasks
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Getting started
 
 {% hint style="info" %}

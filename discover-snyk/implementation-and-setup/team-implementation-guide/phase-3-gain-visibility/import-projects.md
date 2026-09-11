@@ -5,6 +5,8 @@ description: >-
   CI/CD
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Import Projects
 
 Depending on the integrations you have configured, and the language / package managers in your tech stack, you can import Projects into Snyk using:

@@ -3,6 +3,8 @@ description: How to configure the GitHub integration with Snyk, including genera
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitHub
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}
