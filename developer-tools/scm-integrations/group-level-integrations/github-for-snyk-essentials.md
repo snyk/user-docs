@@ -15,11 +15,13 @@ If you used GitHub Apps for your SCM integrations at the Snyk Organization level
 * Builds - only when using GitHub Actions.
 * Scans - only when using Code security.
 
-Ensure you meet all prerequisites listed on the [GitHub and GitHub Enterprise permission requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements) page.
+Ensure you meet all prerequisites listed on the [GitHub for Snyk Essentials permission requirements](../user-permissions-and-access-scopes.md#github-for-snyk-essentials) page.
 
 To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles#group-level-permissions).
 
 ## Integrate GitHub using Snyk Essentials: <a href="#github-integrate-using-snyk-apprisk" id="github-integrate-using-snyk-apprisk"></a>
+
+Snyk Essentials Group-level GitHub integrations use a classic personal access token (PAT), not a fine-grained PAT.
 
 1. Profile name (`mandatory`): Input your integration profile name.
 2. Organizations (`mandatory`): Input the names of all the relevant GitHub organizations.
@@ -47,6 +49,10 @@ If you want to pull data from both organization and personal repositories, then 
 {% endhint %}
 
 ## Generate a Personal access token from your GitHub settings
+
+{% hint style="info" %}
+Generate the PAT from a GitHub Billing Admin account. This helps ensure Snyk Essentials can access all downstream organizations in the account and reduces the risk of the token becoming invalid when an individual user leaves the organization.
+{% endhint %}
 
 1. Open GitHub and click the Settings menu for your profile.
 2. Select Developer settings from the left sidebar.
