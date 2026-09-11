@@ -62,6 +62,9 @@ BOT_AUTHORS = {
     "dependabot[bot]",
     "snyk-bot",
     "snyk-docs-bot",
+    # Service accounts that open the scheduled synchronisation pull requests.
+    "Snyk Team IDE",
+    "Team CLI Bot",
 }
 
 SUMMARY_ENTRY = re.compile(r"^(?P<indent>\s*)\*\s+\[(?P<title>[^\]]*)\]\((?P<target>[^)]*)\)")
@@ -84,6 +87,10 @@ GITBOOK_BROKEN_MARKER = "/broken/"
 # any single page was reviewed. Counting one as an edit would report the whole
 # site as freshly written. See --bulk-threshold.
 BULK_COMMIT_FILES = 200
+
+# How many rows each expandable detail list shows. The published page is a
+# summary; the full lists are in the --format json output.
+DETAIL_ROWS = 12
 
 
 def run_git(repo: str, *args: str) -> str:
@@ -656,18 +663,13 @@ def page_link(relpath: str) -> str:
     return f'<a href="{REPO_URL}/{esc(relpath)}">{esc(relpath)}</a>'
 
 
-def table(headers: list[str], rows: list[list[str]], widths: list[int] | None = None) -> str:
-    parts = ['<table data-layout="default"><thead><tr>']
-    for index, header in enumerate(headers):
-        width = f' data-colwidth="{widths[index]}"' if widths else ""
-        parts.append(f"<th{width}><p><strong>{esc(header)}</strong></p></th>")
+def table(headers: list[str], rows: list[list[str]]) -> str:
+    parts = ["<table><thead><tr>"]
+    for header in headers:
+        parts.append(f"<th><strong>{esc(header)}</strong></th>" if header else "<th></th>")
     parts.append("</tr></thead><tbody>")
     for row in rows:
-        parts.append("<tr>")
-        for index, cell in enumerate(row):
-            width = f' data-colwidth="{widths[index]}"' if widths else ""
-            parts.append(f"<td{width}><p>{cell}</p></td>")
-        parts.append("</tr>")
+        parts.append("<tr>" + "".join(f"<td>{cell}</td>" for cell in row) + "</tr>")
     parts.append("</tbody></table>")
     return "".join(parts)
 
@@ -708,7 +710,7 @@ def render_html(report: dict) -> str:
         f'on {esc(report["generated_at"])}.</p>'
         "<p>Every figure is derived from the repository itself, so the page can be regenerated at any time "
         "and needs no service to stay up. Pages produced by a generator are counted in the inventory but "
-        "excluded from the navigation, link, and freshness findings, because no writer can act on them.</p></div>"
+        "excluded from the navigation, link, and attention findings, because no writer can act on them.</p></div>"
     )
 
     out.append("<h2>At a glance</h2>")
@@ -754,7 +756,6 @@ def render_html(report: dict) -> str:
                     "Point at a file that is not in the repository",
                 ],
             ],
-            widths=[220, 110, 430],
         )
     )
 
@@ -805,18 +806,18 @@ def render_html(report: dict) -> str:
                 verdict(nav["dangling"], 1, 10),
             ]
         )
-    out.append(table(["Space", "Missing from navigation", "Dead entries"], rows, widths=[300, 230, 230]))
+    out.append(table(["Space", "Missing from navigation", "Dead entries"], rows))
 
     if navigation["orphans"]:
-        body = "<ul>" + "".join(f"<li><p>{page_link(path)}</p></li>" for path in navigation["orphans"][:60]) + "</ul>"
+        body = "<ul>" + "".join(f"<li><p>{page_link(path)}</p></li>" for path in navigation["orphans"][:DETAIL_ROWS]) + "</ul>"
         if len(navigation["orphans"]) > 60:
-            body += f"<p>… and {len(navigation['orphans']) - 60:,} more.</p>"
+            body += f"<p>… and {len(navigation['orphans']) - DETAIL_ROWS:,} more.</p>"
         out.append(expand(f"{len(navigation['orphans']):,} pages not listed in any SUMMARY.md", body))
 
     if navigation["dangling"]:
         rows = [
             [esc(entry["space"]), esc(entry["title"]), f"<code>{esc(entry['target'])}</code>", str(entry["line"])]
-            for entry in navigation["dangling"][:60]
+            for entry in navigation["dangling"][:DETAIL_ROWS]
         ]
         out.append(
             expand(
@@ -826,11 +827,15 @@ def render_html(report: dict) -> str:
         )
 
     if report["stray"]:
-        body = "<ul>" + "".join(f"<li><p>{page_link(path)}</p></li>" for path in report["stray"][:40]) + "</ul>"
+        body = "<ul>" + "".join(f"<li><p>{page_link(path)}</p></li>" for path in report["stray"][:DETAIL_ROWS]) + "</ul>"
         out.append(
             '<div data-type="panel-warning"><p>Markdown sits outside every space, in a directory with no '
             "SUMMARY.md. GitBook cannot render it, so it is dead weight in the repository.</p></div>"
-            + expand(f"{len(report['stray']):,} files outside any space", body)
+            + expand(
+                f"{len(report['stray']):,} file{'s' if len(report['stray']) != 1 else ''} "
+                "outside any space",
+                body,
+            )
         )
 
     out.append("<h2>Link health</h2>")
@@ -857,15 +862,15 @@ def render_html(report: dict) -> str:
             verdict(len(links["broken"]), 1, 25),
         ]
     )
-    out.append(table(["Space", "Absolute docs.snyk.io links", "Broken relative links"], rows, widths=[300, 230, 230]))
+    out.append(table(["Space", "Absolute docs.snyk.io links", "Broken relative links"], rows))
 
     if links["absolute"]:
-        worst = Counter(item["page"] for item in links["absolute"]).most_common(25)
+        worst = Counter(item["page"] for item in links["absolute"]).most_common(DETAIL_ROWS)
         rows = [[page_link(page), str(count)] for page, count in worst]
         out.append(
             expand(
                 f"Pages holding the most absolute links ({len(links['absolute']):,} in total)",
-                table(["Page", "Absolute links"], rows, widths=[600, 160]),
+                table(["Page", "Absolute links"], rows),
             )
         )
 
@@ -883,11 +888,11 @@ def render_html(report: dict) -> str:
                 f"<code>{esc(item['target'])}</code>",
                 lozenge("GitBook marker", "red") if item["gitbook_marker"] else lozenge("Missing file", "yellow"),
             ]
-            for item in links["broken"][:60]
+            for item in links["broken"][:DETAIL_ROWS]
         ]
-        body = table(["Page", "Link target", "Kind"], rows, widths=[350, 280, 130])
+        body = table(["Page", "Link target", "Kind"], rows)
         if len(links["broken"]) > 60:
-            body += f"<p>… and {len(links['broken']) - 60:,} more.</p>"
+            body += f"<p>… and {len(links['broken']) - DETAIL_ROWS:,} more.</p>"
         out.append(expand(f"All {len(links['broken']):,} broken links", body))
 
     out.append("<h2>Attention</h2>")
@@ -919,7 +924,7 @@ def render_html(report: dict) -> str:
         count = buckets[key]
         share = round(count / hand_written * 100) if hand_written else 0
         rows.append([lozenge(label, colour), f"{count:,}", f"{share}%", f"<code>{bar(count, peak)}</code>"])
-    out.append(table(["Last edited", "Pages", "Share", ""], rows, widths=[220, 100, 100, 340]))
+    out.append(table(["Last edited", "Pages", "Share", ""], rows))
 
     out.append(
         f"<p>The last row is the one to look at. Those <strong>{buckets['untouched']:,} pages</strong> have "
@@ -959,17 +964,17 @@ def render_html(report: dict) -> str:
         )
     )
 
-    untouched = fresh["untouched"][:25]
+    untouched = fresh["untouched"][:DETAIL_ROWS]
     if untouched:
         rows = [[page_link(item["page"]), f"{item['words']:,}"] for item in untouched]
         out.append(
             expand(
-                "The 25 largest pages nobody has edited since the restructure",
-                table(["Page", "Words"], rows, widths=[620, 140]),
+                f"The {len(untouched)} largest pages nobody has edited since the restructure",
+                table(["Page", "Words"], rows),
             )
         )
 
-    oldest = fresh["oldest"][:25]
+    oldest = fresh["oldest"][:DETAIL_ROWS]
     if oldest:
         rows = [
             [page_link(item["page"]), f"{item['days']:,} days", f"{item['words']:,}"]
@@ -977,8 +982,8 @@ def render_html(report: dict) -> str:
         ]
         out.append(
             expand(
-                "The 25 edited pages left longest since",
-                table(["Page", "Last edited", "Words"], rows, widths=[520, 140, 100]),
+                f"The {len(oldest)} edited pages left longest since",
+                table(["Page", "Last edited", "Words"], rows),
             )
         )
 
@@ -1014,9 +1019,9 @@ def render_html(report: dict) -> str:
             "",
         ]
     )
-    out.append(table(["Month", "GitBook editor", "Pull request", "Total", ""], rows, widths=[110, 130, 120, 90, 310]))
+    out.append(table(["Month", "GitBook editor", "Pull request", "Total", ""], rows))
 
-    contributors = activity["contributors"][:15]
+    contributors = activity["contributors"][:DETAIL_ROWS]
     if contributors:
         peak = contributors[0][1]
         rows = [
@@ -1026,7 +1031,7 @@ def render_html(report: dict) -> str:
         out.append(
             expand(
                 f"Top contributors over the last 12 months ({len(activity['contributors']):,} people in total)",
-                table(["Contributor", "Commits", ""], rows, widths=[260, 100, 400]),
+                table(["Contributor", "Commits", ""], rows),
             )
         )
 
