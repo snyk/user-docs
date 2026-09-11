@@ -88,7 +88,7 @@ For Python, the following frameworks and libraries are supported:
 {% endcolumn %}
 {% endcolumns %}
 
-Snyk Code treats data returned through LangChain LiteLLM as untrusted, so model output that reaches a sink is reported in the same way as any other untrusted input.
+Snyk Code treats data returned through LangChain LiteLLM as untrusted, so it reports model output that reaches a sink the same way it reports any other untrusted input.
 
 ### Serverless support
 
@@ -114,7 +114,7 @@ Both `src-layout` and `flat-layout` are supported. Proper adherence to these con
 
 ### Template file analysis
 
-Snyk Code parses template files and follows data from your application code into the template, so a cross-site scripting vulnerability that becomes exploitable only where the template renders its output is reported. The reported data flow runs from the application code through to the template. Analysis previously stopped at the template boundary.
+Snyk Code parses template files and follows data from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template renders its output.
 
 For Python, Snyk Code supports the following template engines:
 
