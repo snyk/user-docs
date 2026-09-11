@@ -111,7 +111,7 @@ The following file formats are supported: `.ejs`, `.es`, `.es6`, `.htm`, `.html`
 
 ### Template file analysis
 
-Snyk Code parses template files and follows data from your application code into the template, so a cross-site scripting vulnerability that becomes exploitable only where the template renders its output is reported. The reported data flow runs from the application code through to the template. Analysis previously stopped at the template boundary.
+Snyk Code parses template files and follows data from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template renders its output.
 
 For JavaScript, Snyk Code supports the following template engines:
 
