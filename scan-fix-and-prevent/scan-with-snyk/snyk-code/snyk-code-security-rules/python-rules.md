@@ -24,6 +24,7 @@ Each rule includes the following information.
 | Use of Hardcoded Cryptographic Initialization Value                        | CWE-329          | OWASP:A04:2025                                            |
 | Use of Hardcoded Cryptographic Key                                         | CWE-321          | OWASP:A04:2025                                            |
 | Hardcoded Secret                                                           | CWE-547          | OWASP:A02:2025                                            |
+| Improper Neutralization of CRLF Sequences in HTTP Headers                  | CWE-113          | OWASP:A05:2025                                            |
 | Use of a Broken or Risky Cryptographic Algorithm                           | CWE-327          | OWASP:A04:2025                                            |
 | Insecure default value                                                     | CWE-453          | None                                                      |
 | Insecure File Permissions                                                  | CWE-732          | OWASP:A01:2025                                            |
@@ -47,6 +48,7 @@ Each rule includes the following information.
 | Inadequate Encryption Strength                                             | CWE-326          | OWASP:A04:2025                                            |
 | Arbitrary File Write via Archive Extraction (Tar Slip)                     | CWE-22           | CWE Top 25, OWASP:A01:2025                                |
 | Origin Validation Error                                                    | CWE-942, CWE-346 | OWASP:A02:2025, OWASP:A07:2025, OWASP-API:API8:2023       |
+| Improper Restriction of Rendered UI Layers or Frames                       | CWE-1021         | OWASP:A06:2025                                            |
 | Cryptographic Issues                                                       | CWE-310          | None                                                      |
 | Use of Insufficiently Random Values                                        | CWE-330          | OWASP:A04:2025                                            |
 | Python 2 source code                                                       | CWE-1104         | OWASP:A03:2025                                            |
