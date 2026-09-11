@@ -1,53 +1,9 @@
 ---
-description: Overview of Snyk integrations across agentic workflows, SCMs, IDEs, CI/CD pipelines, and more
+description: Reference for Snyk Essentials integration availability, sync times, connection statuses, and Snyk Broker setup
 nav_context: classic
 ---
 
-# Overview
-
-## Snyk Studio - Agentic integrations
-
-Agentic workflows transform software development by using AI assistants to automate tasks and write code, boosting productivity. But this speed poses security risks, as AI-generated code may have vulnerabilities.
-
-Snyk offers security guardrails through Snyk Studio, including its integration with the Model Context Protocol (MCP), an open standard enabling AI tools to communicate with the Snyk security platform. This allows AI assistants to run scans and check for vulnerabilities during code generation, embedding security early in AI-powered development for both human and AI-generated code.
-
-Snyk provides information about:
-
-* [Snyk Studio and Secure at inception](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/distribution-at-scale)
-* [Quickstart guides for several AI assistants](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides)
-* [Troubleshooting for the Snyk MCP Server](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/troubleshooting)
-* [Usage analytics](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/usage-analytics)
-
-{% hint style="info" %}
-**Feature availability**
-
-Snyk does not offer a hosted, remote version of its MCP server.
-
-The Snyk MCP Server is designed as a local MCP server, running on your system using the Snyk CLI to ensure local file access
-{% endhint %}
-
-## Integrations for Snyk
-
-Many integrations are available for using third-party functionality within Snyk and using Snyk with other tools. See [SCM, IDE, and CI/CD workflow and integrations](../scm-integrations/) for information on integrations and other methods of accomplishing that workflow.
-
-This page identifies additional Snyk integrations and where to find them.
-
-Snyk provides plugins for repository gatekeepers and integrations to connect with package repositories:
-
-* [Artifactory Gatekeeper Plugin](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin)
-* [Package repository integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations)
-
-There are integrations that support [Snyk Container](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations).
-
-Integrations for [event forwarding](event-forwarding/) allow you to push Snyk platform events directly to certain products on other platforms, enabling you to set up custom alerting, build your own reporting, trigger automation, and more.
-
-[Notification and ticketing systems integrations](jira-and-slack-integrations/) help you work with Snyk in Jira and Slack.
-
-Information is also provided on how Snyk can work with [vulnerability management tools](partner-integrations.md).
-
-Snyk provides alternative reporting tools. For more information, see [Reporting and BI integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share).
-
-## Integrations for Snyk Essentials
+# Snyk Essentials integrations reference
 
 The **Integrations** page shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
 
@@ -55,7 +11,7 @@ The following supported Snyk data are automatically synced: Snyk Open Source, Sn
 
 Each connected integration enables you to pause data syncing, modify integration profiles and configurations, delete the integration, or check when the integration was last synced and when the next sync is scheduled.
 
-### Integrations syncing time
+## Integrations syncing time
 
 Depending on the type of action, the syncing times might differ:
 
@@ -65,7 +21,7 @@ Depending on the type of action, the syncing times might differ:
 * Sync repository (archive old or deleted repositories) - weekly
 * Get organization chart - weekly
 
-### Integration connection statuses
+## Integration connection statuses
 
 After you finish setting up an integration, you can see the following connection statuses:
 
@@ -78,7 +34,7 @@ After you finish setting up an integration, you can see the following connection
 
 If you encounter any of the failed statuses, check the Connection failure details list available on the integration card.
 
-### Snyk Essentials integrations ecosystem
+## Snyk Essentials integrations ecosystem
 
 You can refer to the table below to verify the availability and compatibility of all integrations for Snyk Essentials. The integrations are categorized by type, listed by name, and indicated as available or not for Snyk Essentials.
 
@@ -108,7 +64,7 @@ You can refer to the list below to view available and compatible integrations fo
 * [Slack](jira-and-slack-integrations/slack-integration.md)
 * Email
 
-### Using the Integrations page
+## Using the Integrations page
 
 Use the **Integrations** page to onboard integrations and populate Snyk Essentials with data from SCM tools.
 
@@ -122,7 +78,7 @@ See the [Group-level integrations](../scm-integrations/group-level-integrations/
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 
-### Using Snyk Broker
+## Using Snyk Broker
 
 If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/using-snyk-essentials-with-snyk-broker).
 
