@@ -82,7 +82,7 @@ For Objective-C, Snyk supports `.m` files, and implicitly supports `.h` files.
 
 ### Template file analysis
 
-Snyk Code parses template files and follows data from your application code into the template, so a cross-site scripting vulnerability that becomes exploitable only where the template renders its output is reported. The reported data flow runs from the application code through to the template. Analysis previously stopped at the template boundary.
+Snyk Code parses template files and follows data from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template renders its output.
 
 For Swift and Objective-C, Snyk Code supports the following template engines:
 
