@@ -116,7 +116,7 @@ Kotlin only:
 {% endcolumn %}
 {% endcolumns %}
 
-For SAP Commerce (Hybris), Snyk Code analyzes FlexibleSearch queries for SQL injection. This is supported for Java only. Values supplied through query parameter binding are recognized as safe and are not reported.
+For SAP Commerce (Hybris), Snyk Code analyzes FlexibleSearch queries for SQL injection. This is supported for Java only. Snyk Code recognizes values supplied through query parameter binding as safe and does not report them.
 
 ### Supported package managers and package registries <a href="#supported-package-managers-and-package-registries" id="supported-package-managers-and-package-registries"></a>
 
@@ -142,7 +142,7 @@ Available features:
 
 ### Template file analysis
 
-Snyk Code parses template files and follows data from your application code into the template, so a cross-site scripting vulnerability that becomes exploitable only where the template renders its output is reported. The reported data flow runs from the application code through to the template. Analysis previously stopped at the template boundary.
+Snyk Code parses template files and follows data from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template renders its output.
 
 For Java and Kotlin, Snyk Code supports the following template engines:
 
