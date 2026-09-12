@@ -5,6 +5,8 @@ nav_context: agnostic
 
 # Running your Universal Broker client
 
+Run your Broker deployment on your container engine ([Docker Compose](running-your-universal-broker-client.md#docker-compose-example) or [Kubernetes cluster](running-your-universal-broker-client.md#helm)).
+
 {% hint style="info" %}
 Ensure you have all of the [prerequisites](prerequisites-for-universal-broker.md) before running the Broker Client:
 
@@ -12,8 +14,6 @@ Ensure you have all of the [prerequisites](prerequisites-for-universal-broker.md
 * A credential reference associated with your deployment
 * Valid integration credentials required by your connections such as MY\_GITHUB\_TOKEN If references are missing, the connection will not be established, and an error entry will be logged in the Broker client logs.
 {% endhint %}
-
-Run your Broker deployment on your container engine ([Docker Compose](running-your-universal-broker-client.md#docker-compose-example) or [Kubernetes cluster](running-your-universal-broker-client.md#helm)).
 
 If you are not using `app.snyk.io` (for example, if you log into https://app.eu.snyk.io), you will need to target the Broker server for your region by using the following in your Docker run command `-e BROKER_SERVER_URL=https://broker.region.snyk.io \` .  For details, visit [Broker URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-server-urls).
 

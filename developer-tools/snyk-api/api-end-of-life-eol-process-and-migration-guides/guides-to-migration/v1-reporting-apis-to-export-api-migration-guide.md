@@ -5,13 +5,13 @@ nav_context: agnostic
 
 # V1 Reporting APIs to Export API migration guide
 
+This guide outlines the migration path for all routes in the legacy v1 Reporting API.
+
 {% hint style="warning" %}
 **End of life**
 
 The v1 Reporting API is being deprecated, and future development and support are focused on the [Dataset Export API](../../using-specific-snyk-apis/export-api-specifications-columns-and-filters.md) and the [Issues REST API](../../reference/issues.md). Snyk recommends migrating to the new [Export API](../../using-specific-snyk-apis/export-api-specifications-columns-and-filters.md).
 {% endhint %}
-
-This guide outlines the migration path for all routes in the legacy v1 Reporting API.
 
 ### V1 Reporting legacy API to New Export API migration guide
 
