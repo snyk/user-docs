@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the PersonalAccessToken endpoints, including request parameters and response schemas
+---
+
 # PersonalAccessToken
 
 {% hint style="info" %}

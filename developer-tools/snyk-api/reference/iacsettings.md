@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the IacSettings endpoints, including request parameters and response schemas
+---
+
 # IacSettings
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Ignores (v1) endpoints, including request parameters and response schemas
+---
+
 # Ignores (v1)
 
 {% hint style="info" %}

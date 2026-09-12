@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the LanguagesSettings endpoints, including request parameters and response schemas
+---
+
 # LanguagesSettings
 
 {% hint style="info" %}

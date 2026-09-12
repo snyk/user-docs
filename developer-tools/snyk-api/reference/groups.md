@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Groups endpoints, including request parameters and response schemas
+---
+
 # Groups
 
 {% hint style="info" %}

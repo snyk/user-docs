@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the AccessRequests endpoints, including request parameters and response schemas
+---
+
 # AccessRequests
 
 {% hint style="info" %}

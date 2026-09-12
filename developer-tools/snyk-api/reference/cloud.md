@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Cloud endpoints, including request parameters and response schemas
+---
+
 # Cloud
 
 {% hint style="info" %}

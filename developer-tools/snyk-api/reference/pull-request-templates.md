@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Pull Request Templates endpoints, including request parameters and response schemas
+---
+
 # Pull Request Templates
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Collection endpoints, including request parameters and response schemas
+---
+
 # Collection
 
 {% hint style="info" %}

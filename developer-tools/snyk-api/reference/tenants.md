@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Tenants endpoints, including request parameters and response schemas
+---
+
 # Tenants
 
 {% hint style="info" %}

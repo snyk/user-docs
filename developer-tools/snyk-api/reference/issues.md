@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Issues endpoints, including request parameters and response schemas
+---
+
 # Issues
 
 {% hint style="info" %}

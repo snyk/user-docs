@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Snapshots (v1) endpoints, including request parameters and response schemas
+---
+
 # Snapshots (v1)
 
 {% hint style="info" %}

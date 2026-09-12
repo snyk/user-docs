@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Policies endpoints, including request parameters and response schemas
+---
+
 # Policies
 
 {% hint style="info" %}

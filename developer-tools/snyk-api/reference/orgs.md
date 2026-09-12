@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Orgs endpoints, including request parameters and response schemas
+---
+
 # Orgs
 
 {% hint style="info" %}
