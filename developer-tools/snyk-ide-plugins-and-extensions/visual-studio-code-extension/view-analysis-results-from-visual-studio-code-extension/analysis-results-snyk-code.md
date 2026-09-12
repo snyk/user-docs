@@ -3,6 +3,8 @@ description: How to view Snyk Code security results in the Visual Studio Code ex
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Analysis results: Snyk Code
 
 Snyk Code analysis shows security vulnerabilities in your code with every scan.

@@ -3,6 +3,8 @@ description: How to troubleshoot the Snyk Visual Studio Code extension, includin
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Troubleshooting for Visual Studio Code extension
 
 {% hint style="warning" %}

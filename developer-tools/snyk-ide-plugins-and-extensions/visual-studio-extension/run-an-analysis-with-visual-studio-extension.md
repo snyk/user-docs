@@ -3,6 +3,8 @@ description: How to run a Snyk scan on your solution with the Visual Studio exte
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Run an analysis with Visual Studio extension
 
 Open your solution and click **Run scan**. Depending on the size of your solution and the time needed to build a dependency graph, it takes less than one or two minutes to get the vulnerabilities.

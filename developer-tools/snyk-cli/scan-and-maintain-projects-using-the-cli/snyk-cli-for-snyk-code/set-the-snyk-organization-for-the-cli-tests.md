@@ -3,6 +3,8 @@ description: How to set the Snyk Organization used for Snyk Code CLI tests
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Set the Snyk Organization for CLI tests
 
 If you have several Organizations in your Snyk account, before you test your code using the CLI, specify which Snyk Organization will be used for the test count.

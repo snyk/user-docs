@@ -3,6 +3,8 @@ description: How to modify the AWS Lambda function for the Snyk to Slack integra
 nav_context: classic
 ---
 
+{% include "../../../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Modify the Lambda function
 
 1. Open your Lambda function and click on **Configuration**.

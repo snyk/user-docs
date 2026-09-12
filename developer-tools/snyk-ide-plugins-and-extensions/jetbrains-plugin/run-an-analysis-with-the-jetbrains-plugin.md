@@ -5,6 +5,8 @@ description: >-
   authenticated, and trusted
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Run an analysis with the JetBrains plugin
 
 {% hint style="info" %}

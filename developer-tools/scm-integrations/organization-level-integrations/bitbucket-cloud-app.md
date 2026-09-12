@@ -5,6 +5,8 @@ description: >-
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Bitbucket Cloud App
 
 The Bitbucket Cloud App is positioned to be the default Bitbucket Cloud integration

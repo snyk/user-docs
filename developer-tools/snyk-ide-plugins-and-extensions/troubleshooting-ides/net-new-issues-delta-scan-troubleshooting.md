@@ -3,6 +3,8 @@ description: How to troubleshoot Snyk net new issues delta scans that fail on np
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Net new issues (delta) scan troubleshooting
 
 ## Problem

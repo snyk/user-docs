@@ -3,6 +3,8 @@ description: How to configure the GitHub integration for Snyk Essentials at the 
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitHub for Snyk Essentials
 
 {% hint style="info" %}

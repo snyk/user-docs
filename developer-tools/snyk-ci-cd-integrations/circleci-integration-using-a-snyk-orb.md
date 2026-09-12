@@ -3,6 +3,8 @@ description: How Snyk integrates with CircleCI using a Snyk Orb to scan applicat
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # CircleCI integration using a Snyk Orb
 
 Snyk integrates with [CircleCI](https://circleci.com) using a Snyk Orb, seamlessly scanning your application dependencies and Docker images for open-source security vulnerabilities as part of the CI/CD workflow.

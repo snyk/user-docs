@@ -3,6 +3,8 @@ nav_context: classic
 description: Legacy configuration for the Snyk Eclipse plugin, kept available for versions before the unified IDE configuration dialog
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configuration of the Eclipse plugin
 
 {% hint style="info" %}

@@ -3,6 +3,8 @@ description: How to troubleshoot the Snyk JetBrains plugin, including unsupporte
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Troubleshooting for the JetBrains plugin
 
 {% hint style="warning" %}

@@ -3,6 +3,8 @@ description: How to migrate to the Snyk Bitbucket Pipelines pipe v1.0.0 with cus
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Migrating to Bitbucket Pipelines v1.0.0
 
 When you are upgrading from < 1.0.0 to 1.0.0+, make the following changes in your configuration:

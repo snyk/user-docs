@@ -5,6 +5,8 @@ description: >-
   Visual Studio Code extension
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Visual Studio Code extension configuration, environment variables, and proxy
 
 {% hint style="info" %}

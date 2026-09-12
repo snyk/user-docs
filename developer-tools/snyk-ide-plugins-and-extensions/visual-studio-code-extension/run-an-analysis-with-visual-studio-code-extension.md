@@ -3,6 +3,8 @@ description: How to run a Snyk scan with the Visual Studio Code extension once c
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Run an analysis with Visual Studio Code extension
 
 {% hint style="info" %}

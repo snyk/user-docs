@@ -3,6 +3,8 @@ description: How the Snyk Security app for Jira Cloud surfaces vulnerabilities i
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Security in Jira Cloud integration
 
 {% hint style="info" %}

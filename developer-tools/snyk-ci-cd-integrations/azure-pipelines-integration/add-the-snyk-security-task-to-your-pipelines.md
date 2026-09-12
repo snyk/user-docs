@@ -3,6 +3,8 @@ description: How to add the Snyk Security task to your Azure Pipelines, includin
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Add the Snyk Security Task to your pipelines
 
 ## **Prerequisites to add Snyk Security Task to your pipelines**

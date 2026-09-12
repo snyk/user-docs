@@ -3,6 +3,8 @@ description: How to set up the Snyk Jira integration to create tickets from vuln
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Jira integration
 
 {% hint style="info" %}

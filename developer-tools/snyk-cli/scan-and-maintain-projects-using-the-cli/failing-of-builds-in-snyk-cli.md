@@ -3,6 +3,8 @@ description: How the snyk test command fails builds based on vulnerabilities fou
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Failing of builds in Snyk CLI
 
 The `snyk test` command has the following options for failing your builds:
