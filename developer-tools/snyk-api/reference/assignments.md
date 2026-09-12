@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Assignments endpoints, including request parameters and response schemas
+---
+
 # Assignments
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Integrations (v1) endpoints, including request parameters and response schemas
+---
+
 # Integrations (v1)
 
 {% hint style="info" %}

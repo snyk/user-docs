@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the AiBom endpoints, including request parameters and response schemas
+---
+
 # AiBom
 
 {% hint style="info" %}

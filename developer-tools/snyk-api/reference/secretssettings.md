@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the SecretsSettings endpoints, including request parameters and response schemas
+---
+
 # SecretsSettings
 
 {% hint style="info" %}

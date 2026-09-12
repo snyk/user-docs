@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Export endpoints, including request parameters and response schemas
+---
+
 # Export
 
 {% hint style="info" %}

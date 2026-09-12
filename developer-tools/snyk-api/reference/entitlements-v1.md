@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Entitlements (v1) endpoints, including request parameters and response schemas
+---
+
 # Entitlements (v1)
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Package endpoints, including request parameters and response schemas
+---
+
 # Package
 
 {% hint style="info" %}

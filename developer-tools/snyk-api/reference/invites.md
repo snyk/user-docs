@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Invites endpoints, including request parameters and response schemas
+---
+
 # Invites
 
 {% hint style="info" %}

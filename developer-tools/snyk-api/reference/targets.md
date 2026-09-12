@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Targets endpoints, including request parameters and response schemas
+---
+
 # Targets
 
 {% hint style="info" %}

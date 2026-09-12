@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Reporting API (v1) endpoints, including request parameters and response schemas
+---
+
 # Reporting API (v1)
 
 {% hint style="info" %}

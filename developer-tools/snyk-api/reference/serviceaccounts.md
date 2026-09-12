@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the ServiceAccounts endpoints, including request parameters and response schemas
+---
+
 # ServiceAccounts
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the SastSettings endpoints, including request parameters and response schemas
+---
+
 # SastSettings
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Webhooks (v1) endpoints, including request parameters and response schemas
+---
+
 # Webhooks (v1)
 
 {% hint style="info" %}

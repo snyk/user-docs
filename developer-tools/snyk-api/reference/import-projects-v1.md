@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Import Projects (v1) endpoints, including request parameters and response schemas
+---
+
 # Import Projects (v1)
 
 {% hint style="info" %}

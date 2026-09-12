@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Audit Logs endpoints, including request parameters and response schemas
+---
+
 # Audit Logs
 
 {% hint style="info" %}

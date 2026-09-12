@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Users (v1) endpoints, including request parameters and response schemas
+---
+
 # Users (v1)
 
 {% hint style="info" %}
