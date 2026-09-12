@@ -19,7 +19,7 @@ To access request headers, create a **Catch Raw Hook** trigger. This trigger pro
 
 You receive a webhook URL where you send requests.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-1%20\(1\).png)
+![Zapier trigger step showing the generated webhook URL](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-1%20\(1\).png)
 
 Create a Webhook in Snyk using the API with the `your-url` URL.
 
@@ -56,7 +56,7 @@ You can ping a webhook to test the Zapier trigger.
 
 Select a ping request from the list and map fields.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-2%20\(1\).png)
+![Selecting a ping request from the list and mapping its fields](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-2%20\(1\).png)
 
 ### Action (validate a payload)
 
@@ -64,11 +64,11 @@ Create a JS Action to validate a payload:
 
 **"Code by Zapier" → "Run Javascript"**
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-3%20\(1\).png)
+![Creating a JavaScript action to validate the webhook payload](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-3%20\(1\).png)
 
 Map `headers['X-Hub-Signature']` and `payload string` to the snippet variables.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-4%20\(1\).png)
+![Mapping the signature header and payload string to the snippet variables](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-4%20\(1\).png)
 
 This snippet adds an `isValid: boolean` variable to Zap fields.
 
@@ -101,7 +101,7 @@ try {
 
 Test the snippet, ensure `isValid === true`.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-5%20\(1\).png)
+![Test result for the validation snippet](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-5%20\(1\).png)
 
 ### Action (parse a payload)
 
@@ -111,7 +111,7 @@ Create the same JS Action:
 
 **"Code by Zapier" → "Run Javascript"**, with the following field mapping:
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-6%20\(1\).png)
+![Creating a JavaScript action to parse the webhook payload](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-6%20\(1\).png)
 
 And the following JS snippet:
 
@@ -156,14 +156,14 @@ After providing all fields, decide whether to use the event.
 
 To filter, create **"Filter by Zapier"** app:
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-7%20\(1\).png)
+![Adding the Filter by Zapier app as an action](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-7%20\(1\).png)
 
 Select a filter method.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-8%20\(1\).png)
+![Selecting a filter method](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-8%20\(1\).png)
 
 ### Action (send a notification)
 
 Access all fields to build a notification template. Send an email or choose other notification types.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-9%20\(1\).png)
+![Building a notification template from the parsed webhook fields](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-9%20\(1\).png)
