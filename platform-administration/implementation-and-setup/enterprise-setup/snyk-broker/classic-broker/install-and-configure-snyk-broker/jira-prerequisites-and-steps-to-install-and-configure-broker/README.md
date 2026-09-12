@@ -3,6 +3,8 @@ description: Prerequisites and steps to install and configure Snyk Broker for Ji
 nav_context: classic
 ---
 
+{% include "../../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Jira - prerequisites and steps to install and configure Broker
 
 Before installing, review the general instructions for the installation method you plan to use, [Helm](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md) or [Docker](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md).

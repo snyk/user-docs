@@ -3,6 +3,8 @@ description: How to manage members of a Snyk Group, available on Enterprise plan
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Manage users in a Group
 
 {% hint style="info" %}

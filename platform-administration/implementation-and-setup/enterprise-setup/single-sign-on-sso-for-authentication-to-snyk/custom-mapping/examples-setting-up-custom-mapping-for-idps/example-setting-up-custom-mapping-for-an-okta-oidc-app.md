@@ -3,6 +3,8 @@ description: Example of setting up a Snyk custom mapping integration for an Okta
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Example: setting up custom mapping for an Okta OIDC app
 
 Follow these steps configure an integration for OIDC Okta.

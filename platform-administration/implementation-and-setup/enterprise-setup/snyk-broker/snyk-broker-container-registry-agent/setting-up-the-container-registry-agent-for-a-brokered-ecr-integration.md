@@ -3,6 +3,8 @@ description: How to set up the Container Registry Agent for a brokered Amazon EC
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Setting up the Container Registry Agent for a brokered ECR integration
 
 ## Terminology and diagram for brokered ECR integration

@@ -3,6 +3,8 @@ description: The Snyk hierarchy of Tenant, Groups, and Organizations, and how it
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Tenant, Groups, and Organizations
 
 ## The Snyk hierarchy

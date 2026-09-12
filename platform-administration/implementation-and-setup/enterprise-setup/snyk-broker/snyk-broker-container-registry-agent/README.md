@@ -3,6 +3,8 @@ description: The Snyk Broker Container Registry Agent for scanning private conta
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Broker - Container Registry Agent
 
 {% hint style="info" %}

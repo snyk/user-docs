@@ -3,6 +3,8 @@ description: How to view and modify Snyk Group general settings, including the G
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Group general settings
 
 To view and modify settings for your Group, navigate to **Settings** > **General**.

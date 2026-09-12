@@ -3,6 +3,8 @@ description: Snyk service accounts for non-interactive API access, available on 
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Service accounts
 
 {% hint style="info" %}

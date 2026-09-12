@@ -3,6 +3,8 @@ description: How to remove Universal Broker resources with the snyk-broker-confi
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Disconnect and clean up
 
 The `snyk-broker-config workflows <RESOURCE> delete` command allows you to remove resources.

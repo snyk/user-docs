@@ -3,6 +3,8 @@ description: How to enable early Snyk Preview features, separate from IDE plugin
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Preview
 
 {% hint style="info" %}
