@@ -51,5 +51,5 @@ Snyk Studio supports integrating the following Snyk security tools into an AI sy
 * `snyk_package_health_check` (evaluate package health during dependency selection)
 
 {% hint style="info" %}
-Running `snyk_sca_scan` can execute third-party ecosystem tools (for example, Gradle or Maven) on your machine to fetch the project's dependency tree.
+Running `snyk_sca_scan` can execute third-party ecosystem tools (for example, Gradle or Maven) on your machine to fetch the dependency tree for the Project.
 {% endhint %}
