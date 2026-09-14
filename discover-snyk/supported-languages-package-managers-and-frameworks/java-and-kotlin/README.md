@@ -147,9 +147,6 @@ Snyk Code parses template files and follows data from your application code into
 For Java and Kotlin, Snyk Code supports the following template engines:
 
 * FreeMarker
-* Handlebars
-* Mustache
-* Pug
 * Thymeleaf
 * Velocity
 

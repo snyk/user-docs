@@ -82,17 +82,17 @@ Support is defined by the pairing of a template engine with the language that re
 
 | Template engine | File extensions | Languages |
 | :--- | :--- | :--- |
-| EJS | `.ejs` | JavaScript, TypeScript |
-| FreeMarker | `.ftl`, `.ftlh` | Java, Kotlin, Scala, Groovy |
-| Handlebars | `.hbs`, `.handlebars` | JavaScript, TypeScript, Java, Kotlin, Scala |
+| EJS | `.ejs` | JavaScript |
+| FreeMarker | `.ftl`, `.ftlh`, `.ftlx` | Java, Kotlin, Groovy |
+| Handlebars | `.hbs`, `.handlebars` | JavaScript |
 | Jinja2 | `.j2`, `.jinja`, `.jinja2` | Python |
-| Mako | `.mako`, `.mak` | Python |
-| Mustache | `.mustache` | JavaScript, TypeScript, Java, Kotlin, Scala, Python, Ruby, PHP, C#, VB.NET, Go, C/C++, Swift, Objective-C |
-| Pug | `.pug`, `.jade` | JavaScript, TypeScript, Java, Kotlin, Scala, PHP |
-| Razor | `.cshtml`, `.razor`, `.vbhtml` | C#, VB.NET |
-| Thymeleaf | `.html`, `.xml` | Java, Kotlin, Scala, Groovy |
-| Twig | `.twig`, `.html.twig` | PHP |
-| Velocity | `.vm`, `.vtl` | Java, Kotlin, Scala, Groovy |
+| Mako | `.mako` | Python |
+| Mustache | `.mustache`, `.mu` | JavaScript, C# |
+| Pug | `.pug`, `.jade` | JavaScript |
+| Razor | `.cshtml`, `.razor` | C# |
+| Thymeleaf | `.html` | Java, Kotlin, Groovy |
+| Twig | `.twig` | PHP |
+| Velocity | `.vm`, `.vtl` | Java, Kotlin, Groovy |
 
 Snyk is expanding this coverage. If a template engine or a pair you use is not listed, [contact Snyk Support](https://support.snyk.io).
 

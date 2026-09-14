@@ -48,7 +48,7 @@ For .NET with Snyk Code, the following frameworks and libraries are supported:
 
 Snyk Code parses template files and follows data from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template renders its output.
 
-For C# and VB.NET, Snyk Code supports the following template engines:
+For C#, Snyk Code supports the following template engines:
 
 * Mustache
 * Razor

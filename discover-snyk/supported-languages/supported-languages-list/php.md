@@ -43,8 +43,6 @@ Snyk Code parses template files and follows data from your application code into
 
 For PHP, Snyk Code supports the following template engines:
 
-* Mustache
-* Pug
 * Twig
 
 For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../technical-specifications-and-guidance.md#template-file-analysis).
