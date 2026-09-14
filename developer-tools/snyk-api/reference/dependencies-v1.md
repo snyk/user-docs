@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Dependencies (v1) endpoints, including request parameters and response schemas
+---
+
 # Dependencies (v1)
 
 {% hint style="info" %}

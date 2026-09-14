@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Monitor (v1) endpoints, including request parameters and response schemas
+---
+
 # Monitor (v1)
 
 {% hint style="info" %}

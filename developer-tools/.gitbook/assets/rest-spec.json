@@ -1555,6 +1555,15 @@
           "$ref": "#/components/schemas/DateInterval"
         }
       },
+      "ComponentIdParam": {
+        "description": "Component ID whose Findings should be listed or converted into a\ndocument.",
+        "in": "path",
+        "name": "component_id",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      },
       "ConnectionId": {
         "description": "Connection ID",
         "in": "path",
@@ -1671,6 +1680,16 @@
         "description": "Deployment ID",
         "in": "path",
         "name": "deployment_id",
+        "required": true,
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "DocumentIdParam": {
+        "description": "ID of a completed Findings document.",
+        "in": "path",
+        "name": "document_id",
         "required": true,
         "schema": {
           "format": "uuid",
@@ -9434,6 +9453,33 @@
         ],
         "type": "object"
       },
+      "CreateFindingsDocumentRequestBody": {
+        "description": "Request body for creating a new findings document.",
+        "properties": {
+          "data": {
+            "properties": {
+              "attributes": {
+                "$ref": "#/components/schemas/FindingsDocumentAttributes"
+              },
+              "type": {
+                "enum": [
+                  "findings_document_requests"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "attributes"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "data"
+        ],
+        "type": "object"
+      },
       "CreateGroupMembershipRequestBody": {
         "properties": {
           "data": {
@@ -10816,6 +10862,15 @@
           }
         },
         "type": "object"
+      },
+      "DocumentFormat": {
+        "description": "Available formats findings can be converted into.",
+        "enum": [
+          "sarif",
+          "cyclonedx",
+          "snyk_schema"
+        ],
+        "type": "string"
       },
       "DotnetSettings": {
         "additionalProperties": false,
@@ -14252,6 +14307,97 @@
           "secrets"
         ],
         "type": "string"
+      },
+      "FindingsDocumentAttributes": {
+        "description": "Attributes for creating a new findings document.",
+        "properties": {
+          "component_id": {
+            "description": "The ID of the component to generate a document for.",
+            "type": "string"
+          },
+          "format": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DocumentFormat"
+              }
+            ],
+            "description": "Desired output format for the generated Findings document."
+          },
+          "test_id": {
+            "description": "The ID of the test to generate a document for.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "format",
+          "test_id"
+        ],
+        "type": "object"
+      },
+      "FindingsDocumentJobAttributes": {
+        "description": "FindingsDocumentJobAttributes represents the attributes of a\nFindings-document-generation Job resource.",
+        "properties": {
+          "component_id": {
+            "description": "The ID of the component to generate a document for.",
+            "type": "string"
+          },
+          "created_at": {
+            "description": "Creation time of the job resource.",
+            "format": "date-time",
+            "type": "string"
+          },
+          "format": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DocumentFormat"
+              }
+            ],
+            "description": "The format requested for the generated document."
+          },
+          "status": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestExecutionStates"
+              }
+            ],
+            "description": "State of the document conversion job, whether it is pending, running, complete or errored."
+          },
+          "test_id": {
+            "description": "The ID of the test to generate a document for.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "format",
+          "created_at",
+          "test_id"
+        ],
+        "type": "object"
+      },
+      "FindingsDocumentJobData": {
+        "description": "FindingsDocumentJobData represents a Findings-document Job resource\nobject.",
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/FindingsDocumentJobAttributes"
+          },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "findings_document_jobs"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "attributes",
+          "type"
+        ],
+        "type": "object"
       },
       "FixAction": {
         "description": "Different fix formats in which the fix action is represented. We distinguish between advice and diff formats.\n\nAdvice - Fix advice in a display only / informational format. These are highly product line specific, so they have their own model.\n- upgradePackageAdvice: Upgrade a direct package from one version to a newer one that resolves the vulnerability.\n- pinPackageAdvice: Pin a package at a specific version.\n\nDiff - Fix suggestions in the unified diff format that introduce code changes\nto remediate the vulnerability. Can be used to represent fix actions for any product line.",
@@ -71354,6 +71500,358 @@
         "x-stability-level": "stable"
       }
     },
+    "/orgs/{org_id}/document_jobs/{job_id}": {
+      "get": {
+        "description": "Get a Document Conversion job.\n\nThe Findings API is Asynchronous, and Document conversions begun through the API\nare assigned a Job ID which references the in-progress document conversion. The\nJob ID is provided in a successful response from the CreateTestFindingsDoc or CreateComponentFindingsDoc\nendpoint.\n\nThis endpoint is used to poll for the status of a document conversion using its\nassociated Job ID.\n\nWhen the Job is Finished and the Document is ready for consumption,\na Related link will be populated in the response with a link to the finished document along\nwith its id that can be used to call the getDocument endpoint.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getFindingsDocumentJob",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "description": "Snyk Org ID under which to run or query information\nabout a Job or Test.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Job ID returned from the Test API to query.",
+            "in": "path",
+            "name": "job_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/FindingsDocumentJobData"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful API response with a single resource",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "303": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/FindingsDocumentJobData"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Redirect to another resource after async processing.",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "location": {
+                "required": true,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get a findings-document job. (Early Access)",
+        "tags": [
+          "Findings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/documents/{document_id}": {
+      "get": {
+        "description": "Get a completed findings document.\n\nA Document returned through this endpoint is intended to\nbe findings converted to a specified document type using the\nDocument ID returned from the getFindingsDocumentJob endpoint.\n\nThe document's raw bytes are streamed back directly in the response body.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getDocument",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "description": "Snyk Org ID under which to run or query information\nabout a Job or Test.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/DocumentIdParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "format": "binary",
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Response from the Findings API to download a completed document."
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get a completed findings document. (Early Access)",
+        "tags": [
+          "Findings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
     "/orgs/{org_id}/ecosystems/{ecosystem}/packages/{package_name}": {
       "get": {
         "description": "Get package metadata for a specific package from an ecosystem.\n\n**Important:** The security section of `package_health` refers to the `latest_version` of the package, not all versions. Since the `overall_rating` is computed from all health sections (including security), it is also influenced by the latest version's security data.\n\n**Supported Ecosystems:** npm, pypi, maven, nuget, golang\n\n#### Required permissions\n\n- `View Organization (org.read)`",
@@ -71746,6 +72244,205 @@
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-10-15",
         "x-stability-level": "stable"
+      }
+    },
+    "/orgs/{org_id}/findings/documents": {
+      "post": {
+        "description": "Create a new findings document using a TestID and non-required ComponentID.\n\nProvide a test ID to start the process for converting this test's\nfindings (or a component's findings with an additional component ID)into a document of a given\nformat (SARIF or CycloneDX). A Job ID is returned that can be used to poll for the completion of the\ndocument conversion via GetFindingsDocumentJob.\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `Test packages (org.package.test)`",
+        "operationId": "createTestFindingsDoc",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "description": "Snyk Org ID under which to run or query information\nabout a Job or Test.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateFindingsDocumentRequestBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/FindingsDocumentJobAttributes"
+                        },
+                        "id": {
+                          "format": "uuid",
+                          "type": "string"
+                        },
+                        "type": {
+                          "enum": [
+                            "findings_document_jobs"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "id",
+                        "attributes"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "The request has been accepted for processing, but processing has not yet completed.",
+            "headers": {
+              "content-location": {
+                "description": "A pointer to the newly created Test resource",
+                "required": true,
+                "schema": {
+                  "format": "string",
+                  "type": "string"
+                }
+              },
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Create a new findings document. (Early Access)",
+        "tags": [
+          "Findings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/inventory/assets": {
@@ -83936,6 +84633,174 @@
         "summary": "Get a test. (Early Access)",
         "tags": [
           "Tests"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/tests/{test_id}/components/{component_id}/findings": {
+      "get": {
+        "description": "List findings for a Component.\n\nTest Findings are scanner-agnostic representations of\nvulnerabilities and organization-level policy breaches.\nWhen Snyk runs a Test, the results of that Test are\nformatted into Findings.\n\nThis endpoint returns pages of Findings associated with\na given Component ID. Findings are returned in sorted order by\nID, with page size equal to the provided Limit query parameter.\nPage size is 10 Findings by default if no parameter is provided.\n\nNote that the Findings returned from this endpoint are only the\nFindings that are _not_ suppressed by policy and are _not_\nin violation of a set Test threshold (like Severity or Risk Score).\n\nTo retrieve the next (or previous) page of Findings, utilize the\nNext and Prev links returned in the response.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "listComponentFindings",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.PaginatedRequest.starting_after"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.PaginatedRequest.ending_before"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.PaginatedRequest.limit"
+          },
+          {
+            "description": "Snyk Org ID under which to run or query information\nabout a Job or Test.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/TestIdParam"
+          },
+          {
+            "$ref": "#/components/parameters/ComponentIdParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "$ref": "#/components/schemas/FindingData"
+                      },
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.PaginatedLinks"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful API response for a paginated collection.",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "List findings for a component. (Early Access)",
+        "tags": [
+          "Findings"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
