@@ -7,7 +7,7 @@ description: >-
 
 # Overview
 
-Snyk secures AI-assisted development and the AI systems your organization runs, across three areas.
+Snyk secures AI-assisted development and the AI systems your Organization runs, across three areas.
 
 ## Secure coding assistants with Snyk Studio
 
@@ -17,13 +17,13 @@ Use Snyk Studio when you want to:
 
 * Guide coding assistants such as Claude Code, Codex CLI, Cursor, and Gemini CLI toward secure output as they generate code.
 * Run Snyk scans (Snyk Code, Snyk Open Source, Snyk IaC) directly from an agent through the local Snyk MCP Server.
-* Roll out consistent security directives across your organization's AI tooling.
+* Roll out consistent security directives across AI tooling in your Organization.
 
-To get started, see [Getting started with Snyk Studio](agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md) or jump to a [quickstart guide](agentic-security-with-snyk-studio/quickstart-guides/) for your specific tool.
+To get started, visit [Getting started with Snyk Studio](agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md) or jump to a [quickstart guide](agentic-security-with-snyk-studio/quickstart-guides/) for your specific tool.
 
 ## Govern cloud AI platforms
 
-Beyond an individual developer's coding assistant, Snyk extends visibility to the [cloud AI platforms](cloud-ai-platforms/overview.md) your organization runs, such as Anthropic's Claude Enterprise. These integrations surface AI models, approved MCP servers, and tool-level permissions as assets in your Evo inventory.
+Beyond what an individual developer generates with a coding assistant, Snyk extends visibility to the [cloud AI platforms](cloud-ai-platforms/overview.md) your Organization runs, such as Anthropic's Claude Enterprise. These integrations surface AI models, approved MCP servers, and tool-level permissions as assets in your Evo inventory.
 
 ## Manage AI risk and posture with Evo by Snyk
 
