@@ -5,7 +5,7 @@ nav_context: classic
 
 # Snyk Essentials integrations reference
 
-The **Integrations** page, under **Settings > Integrations**, shows all active integrations, including any data automatically synced from your existing Snyk Organizations.
+The **Integrations** page, under **Settings** > **Integrations**, shows all active integrations, including any data automatically synced from your existing Snyk Organizations.
 
 The following supported Snyk data are automatically synced: Snyk Open Source, Snyk Code, Snyk IaC, Snyk Container.
 
@@ -74,13 +74,13 @@ You can add an integration by following these steps:
 2. Click **Add integration** and select the integration you want to add.
 3. Configure your connection and click **Done**.
 
-See the [Group-level integrations](../scm-integrations/group-level-integrations/) page for step-by-step details about how to set up an integration.
+Visit the [Group-level integrations](../scm-integrations/group-level-integrations/) page for step-by-step details about how to set up an integration.
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 
 ## Using Snyk Broker
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/using-snyk-essentials-with-snyk-broker).
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, visit the Snyk Broker documentation, including [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/using-snyk-essentials-with-snyk-broker).
 
 {% hint style="info" %}
 Enable the Snyk Essentials flag in your Snyk Broker deployment environment before running the commands.
