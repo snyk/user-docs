@@ -1,7 +1,7 @@
 ---
 nav_context: agnostic
 description: >-
-  Secure AI-assisted development and the AI systems your organization runs,
+  Secure AI-assisted development and the AI systems your Organization runs,
   across coding assistants, cloud AI platforms, and organization-wide AI risk
 ---
 
@@ -32,5 +32,5 @@ Beyond what an individual developer generates with a coding assistant, Snyk exte
 ## Choosing where to start
 
 * Securing what an individual developer generates with an AI coding assistant → start with Snyk Studio.
-* Governing a cloud AI platform your organization has adopted → start with Cloud AI platforms.
+* Governing a cloud AI platform your Organization has adopted → start with Cloud AI platforms.
 * Getting a unified view of AI risk and enforcing policy across both → start with Evo by Snyk.
