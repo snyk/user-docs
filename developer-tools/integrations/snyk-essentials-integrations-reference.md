@@ -5,7 +5,7 @@ nav_context: classic
 
 # Snyk Essentials integrations reference
 
-The **Integrations** page shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
+The **Integrations** page, under **Settings > Integrations**, shows all active integrations, including any data automatically synced from your existing Snyk Organizations.
 
 The following supported Snyk data are automatically synced: Snyk Open Source, Snyk Code, Snyk IaC, Snyk Container.
 
