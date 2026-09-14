@@ -1,6 +1,8 @@
 ---
-description: Snyk support for the uv package manager with Python, available in Early Access on Enterprise plans through the CLI and SCM
 nav_context: agnostic
+description: >-
+  Snyk support for the uv package manager with Python, available in Early Access
+  on Enterprise plans through the CLI and SCM
 ---
 
 # Support for uv
@@ -32,7 +34,7 @@ Snyk supports the `snyk test`, `snyk monitor`, and `snyk sbom` commands.
 The following flags, options, and arguments are not available:
 
 * `--detection-depth`: There is no maximum depth for directory traversal. In later releases, Snyk scans only `uv` Projects in directories up to the given depth.
-* `--print-deps`: The test incorrectly fails with a `Could not detect supported target files` error. In later releases, Snyk outputs dependency graphs for all found Projects without running a test.
+* `--print-deps`: The test incorrectly fails with a `Could not detect supported target files` error.
 * Input directory positional argument: When you run `snyk test <directory>`, Snyk ignores the directory. In later releases, Snyk scans only the specified directory.
 
 The following flags and options are supported with limitations:
@@ -56,7 +58,7 @@ For SBOMs generated for `uv` Projects:
 
 ## SCM support for uv
 
-Snyk imports and tests  `uv` Projects directly from your connected Git repositories.
+Snyk imports and tests `uv` Projects directly from your connected Git repositories.
 
 Snyk resolves the following:
 
@@ -75,7 +77,7 @@ You must have a connected SCM integration on an Organization, on the Enterprise 
 When you import a repository, Snyk scans every directory for a `pyproject.toml` and `uv.lock` pair and creates one Snyk Project per pair.
 
 * Both files must be in the same directory. If a directory contains only a `pyproject.toml` (no lock file) or only a `uv.lock` (no manifest file), Snyk does not create a Project.
-* When both `uv.lock` and `poetry.lock` exist for the same `pyproject.toml` ,  `uv.lock` takes precedence, and Snyk identifies the Project as a `uv` Project.
+* When both `uv.lock` and `poetry.lock` exist for the same `pyproject.toml` , `uv.lock` takes precedence, and Snyk identifies the Project as a `uv` Project.
 * Snyk identifies a `requirements.txt` in the same repository as a separate pip Project, independent of the `uv` Project.
 * Snyk identifies Projects by path. Two directories with byte-identical manifests, therefore, become two separate Projects.
 

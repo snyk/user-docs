@@ -1,6 +1,8 @@
 ---
-description: How Snyk releases features through stages from alpha to general availability, and what each stage means for access and documentation.
 nav_context: agnostic
+description: >-
+  How Snyk releases features through stages from alpha to general availability,
+  and what each stage means for access and documentation.
 ---
 
 # Snyk release process
@@ -42,7 +44,7 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
   * SCM integration for uv
 * Reports
   * [Repositories tested in CI/CD report](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#repositories-tested-in-ci-cd-report)
-* [Snyk 2.0 platform improvements](snyk-2.0-platform-improvements.md)
+* [Snyk 2.0 platform improvements](/broken/pages/SrUlxzQBndMqThxlcua5)
 
 ### Deprecated features
 

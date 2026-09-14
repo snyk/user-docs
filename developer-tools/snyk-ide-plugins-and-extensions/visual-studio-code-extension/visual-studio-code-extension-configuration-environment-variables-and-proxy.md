@@ -1,6 +1,8 @@
 ---
 nav_context: classic
-description: Legacy configuration, environment variables, and proxy settings for the Snyk Visual Studio Code extension
+description: >-
+  Legacy configuration, environment variables, and proxy settings for the Snyk
+  Visual Studio Code extension
 ---
 
 # Visual Studio Code extension configuration, environment variables, and proxy
@@ -52,7 +54,7 @@ These settings are not part of the stable functionality and are not officially s
 
 ## CLI and Language Server
 
-* When **Automatic Dependency Management** is checked, the plugin will download the [CLI](../../snyk-cli/) and update it regularly to the defined CLI path, if defined. Uncheck this option if downloading the CLI is not possible due to your network configuration, for example, due to firewall rules, and you need to obtain this dependency through other means.
+* When **Automatic Dependency Management** is checked, the plugin will download the [CLI](../../snyk-cli/overview.md) and update it regularly to the defined CLI path, if defined. Uncheck this option if downloading the CLI is not possible due to your network configuration, for example, due to firewall rules, and you need to obtain this dependency through other means.
 * **CLI Path:** Allow changing the CLI file path (optional field).
 
 ## Environment variables

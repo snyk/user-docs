@@ -1,6 +1,6 @@
 ---
-description: Tips and resources for troubleshooting and scaling Snyk CI/CD integrations
 nav_context: agnostic
+description: Tips and resources for troubleshooting and scaling Snyk CI/CD integrations
 ---
 
 # CI/CD troubleshooting and resources
@@ -11,7 +11,7 @@ This page provides a few tips to help troubleshoot or scale CI/CD integrations.
 
 If the CLI and the pipeline are running the same engine, try to clone the Project and scan with the CLI.
 
-Try various CLI options. Use the Snyk CLI to find and fix known vulnerabilities as you run it in the pipeline. For more information, see the [CLI documentation](../../snyk-cli/).
+Try various CLI options. Use the Snyk CLI to find and fix known vulnerabilities as you run it in the pipeline. For more information, see the [CLI documentation](../../snyk-cli/overview.md).
 
 ### Step 2: Get logs
 

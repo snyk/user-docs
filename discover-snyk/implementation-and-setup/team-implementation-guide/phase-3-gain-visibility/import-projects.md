@@ -1,6 +1,8 @@
 ---
-description: How to import Projects into Snyk using an SCM integration or the Snyk CLI with CI/CD
 nav_context: classic
+description: >-
+  How to import Projects into Snyk using an SCM integration or the Snyk CLI with
+  CI/CD
 ---
 
 # Import Projects
@@ -56,7 +58,7 @@ A command must be formulated for each type of test to perform (open source, code
 To use the Snyk CLI:
 
 1. [Install the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) using one of the appropriate methods as part of the build script.
-2. [Authenticate to use the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/authenticate-to-use-the-cli) by using the `snyk auth` command or an environment variable.
+2. [Authenticate to use the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) by using the `snyk auth` command or an environment variable.
 3. In the script, navigate to the Project folder.
 4. Run the appropriate `snyk test` or `snyk monitor` commands and options for the type of scan you want to run.\
    \

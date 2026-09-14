@@ -1,3 +1,9 @@
+---
+description: >-
+  How to scan for hard-coded secrets with the Snyk CLI, including pre-commit
+  hooks
+---
+
 # Secrets scanning in the Snyk CLI
 
 Use Snyk Secrets for the CLI to identify and manage sensitive information (API keys, passwords, tokens) in your source code. You can:
@@ -109,7 +115,7 @@ exclude:
 * Wrap any pattern that begins with a special character, such as an asterisk (`*`), in double quotation marks.
 * If Snyk cannot parse a section of the `.snyk` file, it skips that section and applies the remaining sections. If it cannot parse the file at all, the scan continues without the exclusions from that file.
 
-For the full exclusion pattern syntax and formatting rules, see [Exclusion syntax of the `.snyk` file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import#exclusion-syntax-of-the-.snyk-file).
+For the full exclusion pattern syntax and formatting rules, see [Exclusion syntax of the `.snyk` file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/import-project-repository/exclude-directories-and-files-from-project-import#exclusion-syntax-of-the-.snyk-file).
 {% endhint %}
 
 ### Exclude paths for a single scan

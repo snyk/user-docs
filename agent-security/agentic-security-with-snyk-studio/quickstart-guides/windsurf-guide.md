@@ -1,10 +1,13 @@
 ---
+description: >-
+  How to access Snyk Studio in Windsurf with the Snyk Security plugin or a
+  direct install
 nav_context: classic
 ---
 
 # Windsurf guide
 
-Access [Snyk Studio](<../../README (1).md>), including Snyk's MCP server, in Windsurf to secure code generated with agentic workflows through an LLM. This can be achieved by using the Snyk Security plugin or installing Snyk Studio directly. For most users, we recommend accessing Snyk Studio using the Snyk Security plugin.
+Access [Snyk Studio](../../), including Snyk's MCP server, in Windsurf to secure code generated with agentic workflows through an LLM. This can be achieved by using the Snyk Security plugin or installing Snyk Studio directly. For most users, we recommend accessing Snyk Studio using the Snyk Security plugin.
 
 ## Recommended: Access Snyk Studio using the Snyk Security Plugin
 

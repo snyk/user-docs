@@ -7,7 +7,9 @@ nav_context: agnostic
 
 The Snyk Risk score and Priority score are keys to security management. Both types of score help Organizations handle current threats and prepare for future vulnerabilities, leading to a more robust security framework.
 
-The Priority and Risk Scores rank the issues and the urgency of fixing them. Both scores provide a number between 1 and 1000, where 1 means low severity and 1000 means high severity. Snyk uses these numbers to indicate the urgency of remediating a vulnerability.
+The Priority Score and the Risk Score rank issues by how urgently you need to fix them. Both run from 0 to 1,000, where a higher number means a more urgent issue.
+
+Both scores are ranks, not severity bands. A score orders one issue against another. It does not correspond to a [severity level](severity-levels.md), and Snyk does not define a score range for Critical, High, Medium, or Low. An issue can therefore carry a Critical severity and still rank below a High severity issue that has a mature exploit, is reachable in your code, or has a fix available.
 
 {% hint style="info" %}
 Risk score assesses the potential impact of vulnerabilities, prioritizing those with severe consequences.
@@ -32,33 +34,41 @@ You can use the following table to decide which type of score works best for you
 | -------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | **Availability**     | <ul><li>General availability</li></ul>                                                                 | <ul><li>Early access</li></ul>                                                                         |
 | **Applicability**    | <ul><li>Vulnerability issues</li><li>License issues</li></ul>                                          | <ul><li>Vulnerability issues</li></ul>                                                                 |
-| **Snyk coverage**    | <ul><li>Snyk Open Source</li><li>Snyk Code</li><li>Snyk Container</li></ul>                            | <ul><li>Snyk Open Source</li><li>Snyk Container</li></ul>                                              |
-| **Coverage**         | <ul><li>Project view from Snyk Web UI</li><li>Reports view from Snyk Web UI</li><li>Snyk API</li></ul> | <ul><li>Project view from Snyk Web UI</li><li>Reports view from Snyk Web UI</li><li>Snyk API</li></ul> |
-| **Integrations**     | <ul><li>Kubernetes</li></ul>                                                                           | NA                                                                                                     |
+| **Snyk coverage**    | <ul><li>Snyk Open Source</li><li>Snyk Code</li><li>Snyk Container</li><li>Snyk IaC</li></ul>           | <ul><li>Snyk Open Source</li><li>Snyk Container</li></ul>                                              |
+| **Where it appears** | <ul><li>Project view from Snyk Web UI</li><li>Reports view from Snyk Web UI</li><li>Snyk API</li></ul> | <ul><li>Project view from Snyk Web UI</li><li>Reports view from Snyk Web UI</li><li>Snyk API</li></ul> |
+| **Integrations**     | <ul><li>Kubernetes</li></ul>                                                                           | Not supported                                                                                          |
 | **Assessment model** | <ul><li>Impact</li><li>Actionability</li></ul>                                                         | <ul><li>Impact</li><li>Likelihood</li></ul>                                                            |
+
+## Can I map scores to priority levels?
+
+No. Snyk does not publish a mapping from Priority Score or Risk Score values to severity levels. Use a score to order issues against each other, and use the [severity level](severity-levels.md) when you need a named band.
+
+Snyk applies one score threshold operationally. Snyk raises automatic fix pull requests and backlog pull requests for issues that meet or exceed the **Score** threshold set for your Organization, which defaults to 700. This threshold is a configurable automation setting, not a severity band. For more information, visit [Enable automatic fix PRs](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-fix-prs.md).
+
+If you set your own threshold, review it periodically. A score changes when its contributing factors change, and factors such as the Exploit Prediction Scoring System (EPSS) can change daily.
 
 ## When and why to use the Priority Score
 
 The Priority Score tool helps manage vulnerabilities by prioritizing the most urgent issues based on exploitability, ease of mitigation, and potential for exploitation. Use it to first address the critical vulnerabilities and if you want to prioritize the Snyk Code issues (since Risk score is not available for Snyk Code).
 
-* Time-Sensitive Projects - When you are working on Projects with tight deadlines, it is important to address security concerns right away.
-* Initial Triage - Priority score quickly identifies and mitigates immediate threats from multiple vulnerabilities.
-* Resource Allocation - Teams can allocate security resources to promptly address urgent risks.
+* Time-sensitive Projects: when you are working on Projects with tight deadlines, it is important to address security concerns right away.
+* Initial triage: Priority Score quickly identifies and mitigates immediate threats from multiple vulnerabilities.
+* Resource allocation: teams can allocate security resources to promptly address urgent risks.
 
 Priority Score helps your team quickly prioritize and address urgent Project vulnerabilities to reduce the risk of attacks.
 
 The assessment model used by the Priority score focuses on two factors:
 
-* Impact - Snyk analyses the possibility of a fix to address multiple vulnerabilities. The Priority score increases exponentially with the number of vulnerabilities addressed by a fix.
-* Actionability - Snyk analyses how easy it is to remediate a vulnerability.
+* Impact - Snyk analyzes the possibility of a fix to address multiple vulnerabilities. The Priority score increases exponentially with the number of vulnerabilities addressed by a fix.
+* Actionability - Snyk analyzes how easy it is to remediate a vulnerability.
 
 ## When and why to use the Risk score
 
 The Risk Score assesses security threats based on their potential impact and likelihood, allowing for more nuanced vulnerability management.
 
-* Comprehensive Risk Assessment - Use the Risk Score to assess both exploitability and potential damage when evaluating vulnerabilities.
-* Long-Term Security Planning - Identifies and prioritizes potential risks, assisting in planning future security infrastructure improvements.
-* Stakeholder Communication - The Risk Score is a metric that communicates security risks to non-technical stakeholders, aiding informed decisions on security investments.
+* Comprehensive risk assessment: use the Risk Score to assess both exploitability and potential damage when evaluating vulnerabilities.
+* Long-term security planning: identifies and prioritizes potential risks, assisting in planning future security infrastructure improvements.
+* Stakeholder communication: the Risk Score is a metric that communicates security risks to non-technical stakeholders, aiding informed decisions on security investments.
 
 The Risk Score helps balance immediate threat mitigation with long-term security posture, creating a comprehensive approach to managing vulnerabilities.
 
@@ -84,13 +94,13 @@ Scan your source code and apply the following filters to your list of found vuln
 
 * Issue type: Vulnerabilities
 * Severity: Critical
-* Fixed in available: Yes
+* Fixed availability: Yes
 * Computed fixability: Fixable
 * Exploit maturity: Mature
 
 ### Risk score use case
 
-Let's assume that you are integrating a new third-party library into an existing application, and after a scan, you discover that the library has several vulnerabilities. Filter the vulnerabilities using the Risk score to determine which vulnerabilities pose the greatest threat.
+Assume you are integrating a new third-party library into an existing application, and after a scan, you discover that the library has several vulnerabilities. Filter the vulnerabilities using the Risk score to determine which vulnerabilities pose the greatest threat.
 
 Remember that Risk score must first be enabled from the [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview) screen and can only be applied to Snyk Open Source and Snyk Container.
 
@@ -102,7 +112,7 @@ Scan your source code and apply the following filters to your list of found vuln
 * Computed fixability: Fixable
 * Exploit maturity: Mature
 
-After you apply the filters, you have a list of the most critical vulnerabilities that need to be fixed before safely integrating the third-party library with your application. Fixing these critical issues you are preventing a potential security breach and are also safeguarding the integrity of your application.
+After you apply the filters, you have a list of the most critical vulnerabilities that need to be fixed before safely integrating the third-party library with your application. By fixing these critical issues, you prevent a potential security breach and safeguard the integrity of your application.
 
 Given the high severity and the mature exploit, the risk score for this issue would be elevated, indicating an urgent need for action. In this scenario, organizations should prioritize patching this vulnerability immediately due to the high risk of exploitation.
 

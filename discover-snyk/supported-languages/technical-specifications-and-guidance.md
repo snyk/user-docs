@@ -1,6 +1,8 @@
 ---
-description: Technical requirements for Snyk Code and Snyk Open Source, including file encoding and how Snyk builds the dependency tree
 nav_context: agnostic
+description: >-
+  Technical requirements for Snyk Code and Snyk Open Source, including file
+  encoding and how Snyk builds the dependency tree
 ---
 
 # Technical specifications and guidance
@@ -16,7 +18,7 @@ Snyk analyzes and builds the dependency tree depending on the language and packa
 ### How Snyk for Open Source and licensing works
 
 {% hint style="info" %}
-Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must build your Project. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli).
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must build your Project. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli).
 {% endhint %}
 
 Snyk builds a dependency graph and (dependency tree) and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.

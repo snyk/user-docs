@@ -1,4 +1,6 @@
 ---
+description: >-
+  How to set up Snyk Studio and the Snyk MCP server in Gemini Code Assist
 nav_context: classic
 ---
 

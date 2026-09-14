@@ -1,6 +1,8 @@
 ---
-description: How to test Python Projects with the Snyk CLI, including setting the Python version and preparing pip dependencies before scanning
 nav_context: agnostic
+description: >-
+  How to test Python Projects with the Snyk CLI, including setting the Python
+  version and preparing pip dependencies before scanning
 ---
 
 # CLI support for Python
@@ -13,7 +15,7 @@ To set the Python version in the CLI, add the following option to `snyk test` or
 --command=python3
 ```
 
-For details, see the options for Python Projects in the [`snyk test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/test) and [`snyk monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/monitor) help.
+For details, see the options for Python Projects in the [`snyk test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/test) and [`snyk monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) help.
 
 ## Pip and CLI
 

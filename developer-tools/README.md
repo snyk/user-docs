@@ -1,6 +1,8 @@
 ---
-description: Run Snyk locally, in repositories, and in pipelines, and choose the developer tool integration that matches your workflow
 nav_context: agnostic
+description: >-
+  Run Snyk locally, in repositories, and in pipelines, and choose the developer
+  tool integration that matches your workflow
 ---
 
 # Overview
@@ -30,7 +32,7 @@ Snyk provides platform-specific setup and parameters for:
 
 ## Snyk CLI
 
-Use the [Snyk CLI](snyk-cli/) for scripting and automation. It supports local testing, CI/CD pipelines, and advanced workflows like SBOM generation and custom configuration.
+Use the [Snyk CLI](snyk-cli/overview.md) for scripting and automation. It supports local testing, CI/CD pipelines, and advanced workflows like SBOM generation and custom configuration.
 
 This section covers:
 
@@ -48,5 +50,5 @@ This section covers:
 This section provides setup guidance, including authentication, proxy, workspace trust settings, and troubleshooting steps for each IDE.
 
 {% hint style="warning" %}
-Snyk IDE plugins and extensions rely on the [Snyk CLI](snyk-cli/) and the Snyk Vulnerability Database to perform many functions. Visit the individual IDE documentation for more information.
+Snyk IDE plugins and extensions rely on the [Snyk CLI](snyk-cli/overview.md) and the Snyk Vulnerability Database to perform many functions. Visit the individual IDE documentation for more information.
 {% endhint %}

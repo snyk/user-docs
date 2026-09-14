@@ -1,3 +1,9 @@
+---
+description: >-
+  How to add a Continuous Offensive Security target, including authorization
+  requirements
+---
+
 # Before you begin
 
 Adding a target takes three steps. This page walks through all three in order, with full detail for each step inline.

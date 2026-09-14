@@ -1,3 +1,9 @@
+---
+description: >-
+  How the Ignore Approval Workflow adds governance around risk acceptance in
+  Snyk Code
+---
+
 # Ignore Approval Workflow
 
 Ignore Approval Workflow creates a layer of governance around risk acceptance within Snyk. You can perform the following:

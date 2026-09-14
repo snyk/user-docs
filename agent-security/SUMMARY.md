@@ -1,12 +1,8 @@
 # Table of contents
 
-## Remediation Agent
-
-* [Remediation Agent](README.md)
-
 ## Agentic security with Snyk studio
 
-* [Overview](<README (1).md>)
+* [Overview](README.md)
 * [Getting started with Snyk Studio](agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md)
 * [Directives](agentic-security-with-snyk-studio/directives.md)
 * [Distribution at scale](agentic-security-with-snyk-studio/distribution-at-scale.md)

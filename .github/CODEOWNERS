@@ -14,6 +14,7 @@
 # https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
 
 * @snyk/design-content_docs
+* @mihaisau-snyk
 tools/api-docs-generator/* @snyk/platformeng_api
 .github/workflows/* @snyk/platformeng_api @snyk/design-content_docs
 docs/.gitbook/assets/v1-api-spec.yaml @snyk/platformeng_api @snyk/design-content_docs

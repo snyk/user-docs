@@ -1,3 +1,9 @@
+---
+description: >-
+  How to start and monitor AI pentesting scans against your Continuous
+  Offensive Security targets
+---
+
 # Scans
 
 Start and monitor AI pentesting scans against your configured targets. Each scan runs the full attack-and-validation pipeline and produces a set of confirmed findings.

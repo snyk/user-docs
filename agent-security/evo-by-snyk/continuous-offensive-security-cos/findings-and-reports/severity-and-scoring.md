@@ -1,3 +1,9 @@
+---
+description: >-
+  How severity levels and CVSS scores work in Continuous Offensive Security,
+  and how to prioritize findings
+---
+
 # Severity and Scoring
 
 Every finding carries a severity, a CVSS score, and a CVSS vector. Together these let you order work across findings and across targets.

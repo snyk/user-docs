@@ -1,15 +1,15 @@
 ---
-description: How to integrate Snyk Open Source into your workflow using the CLI
 nav_context: classic
+description: How to integrate Snyk Open Source into your workflow using the CLI
 ---
 
 # Integrate Snyk into your workflow using the CLI
 
-This page provides an example of integrating Snyk into your GitHub workflow using the [Snyk CLI](../../).
+This page provides an example of integrating Snyk into your GitHub workflow using the [Snyk CLI](../../overview.md).
 
 ### Step 1: Set up the environment
 
-1.  Open the [Snyk CLI](../../), and run a git clone command on the **goof** repository.
+1.  Open the [Snyk CLI](../../overview.md), and run a git clone command on the **goof** repository.
 
     ```
        git clone https://github.com/snyk/goof.git

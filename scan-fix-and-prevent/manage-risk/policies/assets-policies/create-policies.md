@@ -1,6 +1,6 @@
 ---
-description: How to create asset policies in Snyk Essentials
 nav_context: classic
+description: How to create asset policies in Snyk Essentials
 ---
 
 # Create policies
@@ -40,7 +40,7 @@ The risk factors on assets are taking the release status of the applied [risk fa
 The Runtime discovered and Runtime last seen filters are taking the release status of the used runtime integration.
 {% endhint %}
 
-You must specify an asset property for each filter component. For all available properties for asset policies, see [Asset inventory filters](../../../manage-assets/assets-inventory-filters.md).
+You must specify an asset property for each filter component. For all available properties for asset policies, see [Asset inventory filters](../../../fix/manage-asset-inventory/assets-inventory-filters.md).
 
 You can specify more than one filter component with an **And** or **Or** operator.
 

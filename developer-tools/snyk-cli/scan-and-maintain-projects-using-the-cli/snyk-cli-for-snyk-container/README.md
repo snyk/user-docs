@@ -1,6 +1,6 @@
 ---
-description: How to use the Snyk CLI for Snyk Container image scanning
 nav_context: agnostic
+description: How to use the Snyk CLI for Snyk Container image scanning
 ---
 
 # Snyk CLI for Snyk Container
@@ -9,7 +9,7 @@ nav_context: agnostic
 To use the Snyk CLI, ensure you [install ](../../install-the-snyk-cli/)and [authenticate](../../commands/auth.md).
 {% endhint %}
 
-The Snyk Container Command Line Interface or [Snyk CLI](../../) helps you find and fix vulnerabilities in container images on your local machine.
+The Snyk Container Command Line Interface or [Snyk CLI](../../overview.md) helps you find and fix vulnerabilities in container images on your local machine.
 
 To use Snyk Container from the CLI, see the following pages:
 

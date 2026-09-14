@@ -1,4 +1,5 @@
 ---
+description: Report types that show how your teams use Snyk Studio
 nav_context: agnostic
 ---
 

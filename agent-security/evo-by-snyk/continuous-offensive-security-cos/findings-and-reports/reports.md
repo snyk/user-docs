@@ -1,3 +1,9 @@
+---
+description: >-
+  How to generate and use PDF reports from completed Continuous Offensive
+  Security scans
+---
+
 # Reports
 
 Every completed scan produces a downloadable report. The report contains more detail than the UI list view, which makes it the artifact to use whenever the audience is outside Evo.
