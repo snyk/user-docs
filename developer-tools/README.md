@@ -17,7 +17,7 @@ Snyk integrates with SCMs like GitHub, GitLab, Bitbucket, and Azure Repos. Use t
 * run pull request checks
 * open pull requests for fixes and upgrades
 
-Visit the [SCMs ](scm-integrations/)page to learn more about workspaces, access scopes, and configuration at the Group and Organization levels.
+Visit the [SCMs](scm-integrations/) page to learn more about workspaces, access scopes, and configuration at the Group and Organization levels.
 
 ## Snyk CI/CDs
 
