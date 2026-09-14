@@ -17,7 +17,7 @@ Snyk integrates with SCMs like GitHub, GitLab, Bitbucket, and Azure Repos. Use t
 * run pull request checks
 * open pull requests for fixes and upgrades
 
-Visit the [SCMs ](scm-integrations/)page to learn more about workspaces, access scopes, and configuration at the Group and Organization levels.
+Visit the [SCMs](scm-integrations/) page to learn more about workspaces, access scopes, and configuration at the Group and Organization levels.
 
 ## Snyk CI/CDs
 
@@ -52,3 +52,20 @@ This section provides setup guidance, including authentication, proxy, workspace
 {% hint style="warning" %}
 Snyk IDE plugins and extensions rely on the [Snyk CLI](snyk-cli/overview.md) and the Snyk Vulnerability Database to perform many functions. Visit the individual IDE documentation for more information.
 {% endhint %}
+
+## Other integrations
+
+Snyk also connects with:
+
+* Package repositories and gatekeepers — [Artifactory Gatekeeper Plugin](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin), [package repository integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations)
+* [Container registries](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations)
+* [Event forwarding](integrations/event-forwarding/)
+* [Jira and Slack integrations](integrations/jira-and-slack-integrations/)
+* [Partner integrations](integrations/partner-integrations.md)
+* [Reporting and BI integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share)
+
+For Snyk Essentials-specific integration availability, sync times, and connection statuses, visit [Snyk Essentials integrations reference](integrations/snyk-essentials-integrations-reference.md).
+
+## AI-assisted development
+
+To secure AI coding assistants and agentic workflows, visit the [Agent security](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/) section — it covers Snyk Studio and the Snyk MCP Server.

@@ -6,7 +6,6 @@
 
 ## Integrations
 
-* [Overview](integrations/integrate-with-snyk.md)
 * [SCMs](scm-integrations/README.md)
   * [Deployment recommendations](scm-integrations/deployment-recommendations.md)
   * [Workspaces](scm-integrations/workspaces.md)
@@ -162,6 +161,7 @@
     * [Set up the Terraform Cloud integration for IaC](snyk-ci-cd-integrations/terraform-cloud-integration-for-snyk-iac-using-run-tasks/set-up-the-terraform-cloud-integration-for-iac.md)
     * [How to use the Terraform Cloud integration for IaC](snyk-ci-cd-integrations/terraform-cloud-integration-for-snyk-iac-using-run-tasks/how-to-use-the-terraform-cloud-integration-for-iac.md)
   * [Terraform Enterprise integration for Snyk IaC](snyk-ci-cd-integrations/terraform-enterprise-integration-for-snyk-iac.md)
+* [Snyk Essentials integrations reference](integrations/snyk-essentials-integrations-reference.md)
 * [Partner integrations](integrations/partner-integrations.md)
 * [Jira and Slack integrations](integrations/jira-and-slack-integrations/README.md)
   * [Snyk Security in Jira Cloud integration](integrations/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md)
@@ -255,7 +255,7 @@
   * [Export API: Specifications, columns, and filters](snyk-api/using-specific-snyk-apis/export-api-specifications-columns-and-filters.md)
   * [Issues: List issues for a package](snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package.md)
   * [SBOM APIs](snyk-api/using-specific-snyk-apis/sbom-apis/README.md)
-    * [Get a Project’s SBOM document](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-get-a-projects-sbom-document.md)
+    * [Get a Project's SBOM document](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-get-a-projects-sbom-document.md)
     * [Test an SBOM document for vulnerabilities](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
   * [Snyk Apps APIs](snyk-api/using-specific-snyk-apis/snyk-apps-apis/README.md)
     * [About Snyk Apps](snyk-api/using-specific-snyk-apis/snyk-apps-apis/about-snyk-apps.md)
