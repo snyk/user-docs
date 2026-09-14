@@ -64,8 +64,8 @@ Snyk also connects with:
 * [Partner integrations](integrations/partner-integrations.md)
 * [Reporting and BI integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share)
 
-For Snyk Essentials-specific integration availability, sync times, and connection statuses, see [Snyk Essentials integrations reference](integrations/snyk-essentials-integrations-reference.md).
+For Snyk Essentials-specific integration availability, sync times, and connection statuses, visit [Snyk Essentials integrations reference](integrations/snyk-essentials-integrations-reference.md).
 
 ## AI-assisted development
 
-To secure AI coding assistants and agentic workflows, see the [Agent security](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/) section — it covers Snyk Studio and the Snyk MCP Server.
+To secure AI coding assistants and agentic workflows, visit the [Agent security](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/) section — it covers Snyk Studio and the Snyk MCP Server.
