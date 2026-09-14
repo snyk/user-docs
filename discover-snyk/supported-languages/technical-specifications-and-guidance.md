@@ -74,30 +74,6 @@ Partial support includes:
 
 Snyk continuously expands its framework coverage and improves analysis accuracy.
 
-### Template file analysis
-
-Snyk Code analyzes template files together with the application code that renders them. Snyk Code follows data that reaches a template from your application code into the template, so it reports a cross-site scripting vulnerability that becomes exploitable only where the template writes its output. The reported data flow spans both the application code and the template.
-
-Snyk Code takes the escaping behavior of the template engine into account. Snyk Code does not report output written through the default escaping of the engine. Snyk Code treats output written through a construct that bypasses escaping, such as a raw or unescaped directive, as a sink.
-
-Support is defined by the pairing of a template engine with the language that renders the template. The following pairs are supported. Template files are analyzed in addition to the source file formats listed for each language.
-
-| Template engine | File extensions | Languages |
-| :--- | :--- | :--- |
-| EJS | `.ejs` | JavaScript |
-| FreeMarker | `.ftl`, `.ftlh`, `.ftlx` | Java, Kotlin, Groovy |
-| Handlebars | `.hbs`, `.handlebars` | JavaScript |
-| Jinja2 | `.j2`, `.jinja`, `.jinja2` | Python |
-| Mako | `.mako` | Python |
-| Mustache | `.mustache`, `.mu` | JavaScript, C# |
-| Pug | `.pug`, `.jade` | JavaScript |
-| Razor | `.cshtml`, `.razor` | C# |
-| Thymeleaf | `.html` | Java, Kotlin, Groovy |
-| Twig | `.twig` | PHP |
-| Velocity | `.vm`, `.vtl` | Java, Kotlin, Groovy |
-
-Snyk is expanding this coverage. If a template engine or a pair you use is not listed, [contact Snyk Support](https://support.snyk.io).
-
 ### How Snyk Code analysis works
 
 Snyk scans your codebase following this sequence:
