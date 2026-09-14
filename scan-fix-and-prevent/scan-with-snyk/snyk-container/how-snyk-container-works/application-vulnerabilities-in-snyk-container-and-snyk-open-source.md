@@ -27,7 +27,7 @@ Snyk derives the Go version from the toolchain version compiled into the binary.
 
 ### What this means for your results
 
-Expect to see vulnerabilities from Go standard library packages on your container Projects. These are valid, although not all of them may be reachable by your application's code. Snyk Container has not always reported these vulnerabilities, so expect to see an increase in vulnerabilities on your existing Projects. To address this, you can:
+Expect to see vulnerabilities from Go standard library packages on your container Projects. These are valid, though not all may be reachable by your application code. Snyk Container has not always reported these vulnerabilities, so expect to see an increase in vulnerabilities on your existing Projects. To address this, you can:
 
 * Remediate: Rebuild the binary with a Go toolchain version that fixes the reported vulnerabilities.
 * Reduce noise: [Ignore a reported standard library vulnerability](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/README.md) if you determine it is not relevant to your application.
