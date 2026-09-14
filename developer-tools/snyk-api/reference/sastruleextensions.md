@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the SastRuleExtensions endpoints, including request parameters and response schemas
+---
+
 # SastRuleExtensions
 
 {% hint style="info" %}

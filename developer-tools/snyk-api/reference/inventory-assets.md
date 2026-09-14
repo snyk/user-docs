@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Inventory Assets endpoints, including request parameters and response schemas
+---
+
 # Inventory Assets
 
 {% hint style="info" %}

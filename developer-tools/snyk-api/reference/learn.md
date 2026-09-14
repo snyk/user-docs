@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the learn endpoints, including request parameters and response schemas
+---
+
 # learn
 
 {% hint style="info" %}

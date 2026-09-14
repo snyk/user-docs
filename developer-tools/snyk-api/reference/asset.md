@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Asset endpoints, including request parameters and response schemas
+---
+
 # Asset
 
 {% hint style="info" %}

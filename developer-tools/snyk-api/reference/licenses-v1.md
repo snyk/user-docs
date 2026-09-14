@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Licenses (v1) endpoints, including request parameters and response schemas
+---
+
 # Licenses (v1)
 
 {% hint style="info" %}

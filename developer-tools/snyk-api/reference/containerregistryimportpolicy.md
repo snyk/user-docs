@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the ContainerRegistryImportPolicy endpoints, including request parameters and response schemas
+---
+
 # ContainerRegistryImportPolicy
 
 {% hint style="info" %}
