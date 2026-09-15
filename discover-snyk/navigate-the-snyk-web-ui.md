@@ -6,7 +6,7 @@ description: >-
 
 # Navigate the Snyk Web UI
 
-Snyk introduces a new navigation with a unified side menu, a top scope selector for **Tenant**, **Group**, and **Organization**, **Navigation search**, **Dark Mode**. Use this page to find where features live in the new interface and to map paths from the classic navigation.
+Snyk introduces a new navigation with a unified side menu, a top scope selector for **Tenant**, **Group**, and **Organization**, **Navigation search**, and **Dark Mode**. Use this page to find where features live in the new interface and to map paths from the classic navigation.
 
 ## Side menu
 
@@ -40,7 +40,7 @@ The top scope selector replaces the classic sidebar headers for **Tenant**, **Gr
 
 * **Group settings:** General, Notifications.
 * **Security and access:** SSO, Member roles, Service accounts, Members.
-* **Products and features:** Snyk Agent Fix, Snyk Open Source, Snyk Code, and other licensed products.
+* **Products and features:** Snyk Agent Fix, Snyk Open Source, Snyk Code, Snyk Assist, and other licensed products.
 * **Plan and billing:** Your plan and billing, Available plans.
 * **Integrations:** General, Snyk Broker, All integrations.
 
@@ -48,7 +48,7 @@ The top scope selector replaces the classic sidebar headers for **Tenant**, **Gr
 
 * **Organization settings:** General, Service accounts, Notifications, Automated collections.
 * **Security and access:** Members.
-* **Products and features:** Snyk Open Source, Snyk Code, Snyk Container, Snyk IaC, and other licensed products.
+* **Products and features:** Snyk Open Source, Snyk Code, Snyk Container, Snyk IaC, Snyk Assist, and other licensed products.
 * **Integrations:** General, Snyk Broker, Authorized Snyk Apps, All integrations, and individual integrations such as ECR and GitHub.
 * **Snyk Preview:** enable controls for preview features.
 
@@ -58,21 +58,22 @@ The following classic items now live elsewhere in the new interface.
 
 | Classic navigation                    | New location                                                | How to get there                                                                                 |
 | ------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Organizations (left sidebar)          | Top breadcrumb bar > **Organization** dropdown              | Open the **Organization** dropdown, then select an Organization or **+ Create new Organization** |
+| Organizations                         | Scope selector > **Organization** dropdown                  | Open the **Organization** dropdown, then select an Organization or **+ Create new Organization** |
 | Tenant / Group / Organization headers | Scope selector                                              | Use the three dropdowns from left to right                                                       |
 | Dependencies                          | **Analytics** > **Reports** > **Dependencies and licenses** | Navigate to **Analytics** > **Reports**, or press **⌘K** and enter `dependencies`                |
 | Integrations                          | **Settings** > **Integrations**                             | Navigate to **Settings** > **Integrations**                                                      |
 | Members                               | **Settings** > **Security and access** > **Members**        | Navigate to **Settings** > **Security and access** > **Members**                                 |
-| Product updates                       | Notifications bell in the side menu                         | Click the bell at the bottom of the side menu                                                    |
-| Help                                  | **Help** at the bottom of the side menu                     | Click **Help** in the side menu                                                                  |
+| Product updates                       | Side menu                                                   | Click **Product updates** in the Side menu                                                       |
+| Help                                  | Side menu                                                   | Click **Help** in the side menu                                                                  |
 
 New areas without a direct classic equivalent:
 
-| New area              | Where it is         | What it does                                                         |
-| --------------------- | ------------------- | -------------------------------------------------------------------- |
-| **Projects**          | Side menu           | Top-level entry to the Snyk Projects list                            |
-| **Navigation search** | Opens over any page | Jump to any page by name using **⌘K** or **Ctrl+K**                  |
-| **Inventory**         | Side menu           | Unified view of your assets, starting with Container Images and SBOM |
+| New area              | Where it is                                     | What it does                                                         |
+| --------------------- | ----------------------------------------------- | -------------------------------------------------------------------- |
+| **Projects**          | Side menu                                       | Top-level entry to the Snyk Projects list                            |
+| **Navigation search** | Opens over any page                             | Jump to any page by name using **⌘K** or **Ctrl+K**                  |
+| **Inventory**         | Side menu                                       | Unified view of your assets, starting with Container Images and SBOM |
+| **Snyk Assist**       | Top-right corner, next to **Navigation search** | In-product AI assistant for product, security, and account questions |
 
 ## Switch between new and classic navigation
 
@@ -88,6 +89,35 @@ To return to the new navigation, open the same menu and select **Switch new navi
 * Your **Projects**, **Issues**, **Integrations**, and **Settings** values do not change under the new navigation.
 * API tokens, service accounts, and Snyk CLI behavior are unaffected.
 * Snyk continues to release features to both interfaces during the transition period.
+
+## Snyk Assist
+
+{% hint style="info" %}
+**Release** **status**\
+\
+Snyk Assist is in Early Access and available only on the Snyk Enterprise plan. Snyk Assist is not available under classic navigation. Group Admins manage Snyk Assist from **Settings** > **Products and features**.
+{% endhint %}
+
+Snyk Assist is an in-product AI assistant. To open Snyk Assist, click the **Snyk Assist** icon in the top-right corner, next to **Navigation search**. The Snyk Assist panel opens on the right.
+
+Snyk Assist can help with:
+
+* security questions and best practices
+* Snyk product and feature guidance
+* information about your Organization and Group, such as issues, Projects, and integrations
+* known vulnerabilities for a package or package version
+* support ticket creation
+* feature requests for capabilities Snyk does not support
+
+Snyk Assist does not see your screen. It returns only what you can already see in the Snyk Web UI, and cannot change settings, run scans, or modify Projects on your behalf.
+
+Snyk Assist is scoped to your current Organization and Group. It cannot see across your Tenant or compare Organizations.
+
+Snyk Assist runs on Google Vertex AI. Snyk does not use your prompts or responses to train foundation models.
+
+{% hint style="info" %}
+Do not include confidential or sensitive information in your questions. For details, see the [Snyk Assist disclaimer](https://snyk.io/policies/snyk-assist-disclaimer).
+{% endhint %}
 
 ## Dark mode
 
