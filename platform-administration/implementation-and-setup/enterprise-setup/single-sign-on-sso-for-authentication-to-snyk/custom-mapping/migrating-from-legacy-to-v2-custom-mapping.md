@@ -1,0 +1,134 @@
+---
+description: How to migrate Snyk SSO custom role mapping from the legacy format to v2 colon-delimited syntax
+nav_context: classic
+---
+
+# Migrating from legacy to v2 custom mapping
+
+Single Sign-On (SSO) custom mapping dynamically provisions users into Snyk Groups and Organizations based on attributes passed from your Identity Provider (IdP).
+
+If your company still uses the legacy format, the updated custom mapping gives you a standardized syntax, wildcard support, and streamlined assignments for custom roles.
+
+For details on the legacy and v2 formats, visit [Legacy custom mapping](legacy-custom-mapping.md) and [Custom mapping](README.md).
+
+## Benefits of v2 custom mapping
+
+The v2 format uses an extensible, colon-delimited string syntax:
+
+`snyk:{scope}:{target}:{role}`
+
+This gives you:
+
+* Support for multiple Groups
+* Claims-based provisioning and deprovisioning of access
+* Support for Tenant-level roles
+
+## Migration IdP configuration process
+
+### Step 1: Plan and audit
+
+* Review your current IdP configuration (Okta, Entra ID, Google Workspace).
+* Document existing legacy role strings.
+* Ensure all users have appropriate role mappings configured in the IdP before activation.
+* Maintain fallback access during the transition by leaving legacy mapping assignments unchanged in the IdP.
+* Coordinate timing with internal stakeholders to minimize disruption. Work with your security and compliance teams, because role changes during an audit can temporarily affect access reporting and user permissions.
+
+{% hint style="info" %}
+These migration activities apply to the SSO connection directly and affect all Snyk Groups associated with the connection. All Groups using the same connection transition to v2 custom mapping simultaneously.
+{% endhint %}
+
+### Step 2: Extract identifiers
+
+The new format requires slugs, not IDs.
+
+* Organization slug: navigate to **Organization Settings** > **General**.
+* Group slug: navigate to **Group Settings** > **General**.
+* Role name: navigate to **Group Settings** > **Member Roles** (for example, `developer_readonly`).
+
+For more details, visit [Slugs](README.md#slugs) and [Role normalized name](README.md#role-normalized-name).
+
+### Step 3: Translate legacy strings to v2 syntax
+
+Build the colon-delimited strings from your existing dash-delimited strings.
+
+Example translation:
+
+* Before: `snyk-partner-plugins-admin`
+* After: `snyk:org:partner-plugins:org_admin`
+
+### Step 4: Configure your IdP
+
+Update your IdP to pass a multi-value attribute containing the new strings.
+
+* Mandatory prefix: all strings must start with `snyk:`
+* Case sensitivity: role values are case-sensitive
+
+Legacy and v2 mappings can coexist in the assertion during the transition period. Snyk recommends retaining the legacy mappings temporarily so that you can roll back if needed.
+
+## Implementation and rollout
+
+### Step 5: Test pre-production activation
+
+After you set up a few new role mappings in your IdP, open a support case with the [Snyk Support team](https://support.snyk.io) for custom mapping activation. As part of this case, Support validates the claims for compliance with the specification.
+
+After claims are validated, complete role mapping setup in your IdP.
+
+Your Snyk account team performs final validation.
+
+### Step 6: Production activation
+
+After validation is complete, Snyk Support enables v2 custom mapping in your production environment.
+
+{% hint style="info" %}
+Snyk updates the existing SSO connection to use v2 custom role mapping.
+{% endhint %}
+
+Snyk assigns roles automatically the next time each user logs in.
+
+{% hint style="warning" %}
+Users without a valid mapping configured in the IdP lose access upon login.
+{% endhint %}
+
+### Step 7: Production validation and cleanup
+
+Confirm expected access levels and Organization assignment in Snyk.
+
+Snyk recommends cleaning up legacy mapping configuration in the IdP post-validation, since it is no longer needed.
+
+## Syntax translation reference
+
+### Group-level roles
+
+The legacy format relied on strict strings or Group IDs. The v2 format targets the group scope and uses wildcards or Group slugs.
+
+| Goal | Legacy format | v2 format |
+| ---- | ------------- | --------- |
+| Group Admin (all Groups in SSO) | `snyk-groupadmin` | `snyk:group:*:group_admin` |
+| Group Viewer (all Groups in SSO) | `snyk-groupviewer` | `snyk:group:*:group_viewer` |
+| Custom Group role | Not available | `snyk:group::custom:{custom_role}` |
+
+{% hint style="info" %}
+The v2 format replaces Group ID logic with explicit Organization-level wildcards.
+{% endhint %}
+
+### Organization-level roles
+
+The legacy format used dashes, which made custom roles hard to parse when the role or Organization name itself contained a dash. The v2 format uses a strict `snyk:org:{slug}:{role}` structure.
+
+| Goal | Legacy format | v2 format |
+| ---- | ------------- | --------- |
+| Org Admin | `snyk-{slug}-admin` | `snyk:org:{slug}:org_admin` |
+| Org Collaborator | `snyk-{slug}-collaborator` | `snyk:org:{slug}:org_collaborator` |
+| Org Collaborator across all Orgs in a Group | `snyk-{groupID}` | `snyk:org:*:org_collaborator` |
+| Custom role | `snyk-{slug}-{custom_role}` | `snyk:org:{slug}:custom:{custom_role}` |
+
+### Tenant-level roles
+
+The v2 format introduces the tenant scope and uses an empty string `::` for the target, because an SSO connection is linked to a single Tenant.
+
+| Goal | Legacy format | v2 format |
+| ---- | ------------- | --------- |
+| Tenant Admin | `snyk-tenantadmin` | `snyk:tenant::tenant_admin` |
+| Tenant Viewer | `snyk-tenantviewer` | `snyk:tenant::tenant_viewer` |
+| Tenant Member | `snyk-tenantmember` | `snyk:tenant::tenant_member` |
+| Custom Tenant role | Not available | `snyk:tenant::custom:{custom_role}` |
