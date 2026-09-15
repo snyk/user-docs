@@ -1,5 +1,6 @@
 ---
 description: How Snyk Container scans container images and their base images
+nav_context: agnostic
 ---
 
 # How Snyk Container works

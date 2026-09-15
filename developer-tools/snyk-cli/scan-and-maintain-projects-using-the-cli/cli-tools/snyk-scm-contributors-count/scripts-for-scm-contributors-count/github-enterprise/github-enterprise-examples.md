@@ -1,5 +1,6 @@
 ---
 description: The list of options and examples for GitHub Enterprise
+nav_context: agnostic
 ---
 
 # Github Enterprise - Examples

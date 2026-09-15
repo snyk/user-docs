@@ -1,5 +1,6 @@
 ---
 description: How to test a Snyk IaC custom rule
+nav_context: agnostic
 ---
 
 # Testing a rule

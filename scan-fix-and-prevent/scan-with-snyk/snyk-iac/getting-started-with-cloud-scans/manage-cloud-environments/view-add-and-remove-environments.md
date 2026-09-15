@@ -1,5 +1,6 @@
 ---
 description: How to view, add, and remove Snyk cloud environments
+nav_context: classic
 ---
 
 # View, add, and remove environments

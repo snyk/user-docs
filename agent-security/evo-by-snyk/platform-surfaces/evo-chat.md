@@ -1,18 +1,24 @@
+---
+description: >-
+  How to use Evo chat to explore your inventory, manage policies, and generate
+  reports in natural language
+nav_context: classic
+---
+
 # Evo chat
 
-## What is Evo chat?
+Evo chat is a conversational interface for working with the Evo platform. Use it to explore your inventory, create and manage policies, understand risk, and generate reports using natural language. You can refine results with follow-up questions and ask about what you see in the Inventory, Policies, Issues, and Reports views.
 
-Evo chat is a conversational interface for working with the Evo platform. Use it to explore your inventory, create and manage policies, understand risk, and generate reports using natural language. You can refine results with follow-up questions, and ask about what you see in the Inventory, Policies, Issues, and Reports views.
-
-Evo chat asks for your approval before it creates or updates a policy. It does not delete policies.
+Evo chat asks for your approval before creating or updating a policy. It does not delete policies.
 
 ## Use cases
 
 {% hint style="warning" %}
 Evo chat does not support:
 
-* Deleting a policy (components are read-only)
+* Deleting policies because components are read-only
 * Reporting using email
+* Creating or updating policies if you have restricted access to specific Organizations
 {% endhint %}
 
 The following examples show prompts you can use with Evo chat to perform tasks. Evo chat provides guidance if you attempt an unsupported operation.
@@ -42,10 +48,10 @@ Example prompts include:
 
 The Policy agent is plugged in to the Risk Intelligence agent to create more elaborate policies.
 
-* "Create a high-severity policy for \[ECI-score] greater or equal than \[score]."
-* "Create a policy that detects all issues with model\_bias\_score higher than 500."
-* "Create a policy that detects all datasets that have data leakage score higher than 300."
-* "Create a policy that detects all models that have ECI score higher than 300 and license \[license-name]."
+* "Create a high-severity policy for \[ECI-score] greater than or equal to \[score]."
+* "Create a policy that detects all models with a PII extraction score higher than 500."
+* "Create a policy for models where the Bias & Fairness score is above 400."
+* "Create a policy that detects all models that have an ECI score higher than 300 and license \[license-name]."
 
 ### Policy compliance and issues
 
@@ -89,14 +95,14 @@ Chat example:
 
 Use these guidelines to optimize chat interactions:
 
-* Keep conversations short: Long conversations increase the context window size.
-* Be specific: Provide detailed prompts to receive accurate information.
-* Start new topics: To change the topic, click **+** to start a new chat.
-* Refresh the window: If the chat returns unexpected output, refresh the window.
-* Expect non-deterministic results: Results and wording differ between sessions.
-* Use natural language: For example, use prompts like "Which datasets have the \[name] license?" or "List models scanned in the last 24 hours."
-* Specify sorting: For example, use prompts like "Show the top ten most common AI components" or "List issues by highest severity first."
-* Define aggregations: For example, use prompts like "Group issues by repository" or "Count models by vendor."
-* Filter issues by type: Use these exact terms:
+* Keep conversations short: long conversations increase the context window size.
+* Be specific: provide detailed prompts to receive accurate information.
+* Start new topics: to change the topic, click **+** to start a new chat.
+* Refresh the window: if the chat returns unexpected output, refresh the window.
+* Expect non-deterministic results; wording and results differ between sessions.
+* Use natural language: for example, use prompts like "Which datasets have the \[name] license?" or "List models scanned in the last 24 hours."
+* Specify sorting: for example, use prompts like "Show the top ten most common AI components" or "List issues by highest severity first."
+* Define aggregations: for example, use prompts like "Group issues by repository" or "Count models by vendor."
+* Filter issues by type: use these exact terms:
   * agent, application, dataset, http-frontend, http-server, identity-provider, messaging, model, nosql-database, object-storage, package, prompt, repo, secrets-manager, service, sql-database, tool
   * mcp-client, mcp-server, mcp-resource

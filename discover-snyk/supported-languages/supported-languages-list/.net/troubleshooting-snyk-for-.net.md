@@ -1,5 +1,6 @@
 ---
 description: How to resolve common Snyk problems for .NET, including static dependency resolution for legacy Project files and Legacy Broker setups
+nav_context: agnostic
 ---
 
 # Troubleshooting Snyk for .NET

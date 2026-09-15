@@ -1,5 +1,6 @@
 ---
 description: How Group administrators set Snyk license policies
+nav_context: agnostic
 ---
 
 # License policies

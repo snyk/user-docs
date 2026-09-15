@@ -1,5 +1,6 @@
 ---
 description: How to understand your issues in the Snyk Issues UI
+nav_context: agnostic
 ---
 
 # Understand your issues

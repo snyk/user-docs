@@ -1,5 +1,6 @@
 ---
 description: Flow and tech for GitLab and GitLab Server
+nav_context: agnostic
 ---
 
 # GitLab and GitLab Server

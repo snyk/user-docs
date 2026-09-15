@@ -1,5 +1,6 @@
 ---
 description: How issue IDs work across the Snyk V1 and REST APIs
+nav_context: agnostic
 ---
 
 # Issue IDs in Snyk APIs

@@ -1,5 +1,6 @@
 ---
 description: How to ignore vulnerabilities using the Snyk CLI
+nav_context: agnostic
 ---
 
 # Ignore vulnerabilities using the Snyk CLI

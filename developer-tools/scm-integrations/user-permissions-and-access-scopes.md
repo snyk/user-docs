@@ -2,6 +2,7 @@
 description: >-
   The user permissions and access scopes Snyk SCM integrations require, by
   connection method
+nav_context: agnostic
 ---
 
 # User permissions and access scopes

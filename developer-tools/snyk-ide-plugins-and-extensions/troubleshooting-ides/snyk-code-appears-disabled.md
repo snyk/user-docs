@@ -1,5 +1,6 @@
 ---
 description: How to resolve Snyk Code appearing disabled in an IDE plugin
+nav_context: agnostic
 ---
 
 # Snyk Code appears disabled

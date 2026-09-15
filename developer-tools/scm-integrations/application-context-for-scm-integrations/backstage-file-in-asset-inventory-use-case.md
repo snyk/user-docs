@@ -1,5 +1,6 @@
 ---
 description: How a Backstage catalog file enriches repository assets in Snyk Essentials Asset Inventory
+nav_context: classic
 ---
 
 # Backstage file in Asset Inventory - use case

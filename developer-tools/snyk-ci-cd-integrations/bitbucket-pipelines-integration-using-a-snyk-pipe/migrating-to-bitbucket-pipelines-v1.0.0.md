@@ -1,5 +1,6 @@
 ---
 description: How to migrate to the Snyk Bitbucket Pipelines pipe v1.0.0 with custom image support
+nav_context: classic
 ---
 
 # Migrating to Bitbucket Pipelines v1.0.0

@@ -1,5 +1,6 @@
 ---
 description: The Google Cloud resources Snyk IaC supports for drift detection
+nav_context: agnostic
 ---
 
 # Google resources

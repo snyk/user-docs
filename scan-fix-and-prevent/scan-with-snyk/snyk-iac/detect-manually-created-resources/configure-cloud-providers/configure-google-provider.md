@@ -1,5 +1,6 @@
 ---
 description: How to configure the Google Cloud provider for Snyk IaC drift detection
+nav_context: agnostic
 ---
 
 # Configure Google provider

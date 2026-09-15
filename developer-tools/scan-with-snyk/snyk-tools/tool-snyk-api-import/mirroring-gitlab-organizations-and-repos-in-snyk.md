@@ -1,5 +1,6 @@
 ---
 description: How to import all GitLab organizations and repositories into Snyk with snyk-api-import
+nav_context: agnostic
 ---
 
 # Mirroring GitLab organizations and repos in Snyk

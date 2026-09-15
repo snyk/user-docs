@@ -1,5 +1,6 @@
 ---
 description: How to set up an Okta SAML application and connect it to Snyk for SSO
+nav_context: classic
 ---
 
 # Okta SAML application setup

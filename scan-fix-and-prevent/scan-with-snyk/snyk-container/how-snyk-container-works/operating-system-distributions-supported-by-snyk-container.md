@@ -1,5 +1,6 @@
 ---
 description: The operating system distributions Snyk Container supports
+nav_context: agnostic
 ---
 
 # Operating system distributions supported by Snyk Container

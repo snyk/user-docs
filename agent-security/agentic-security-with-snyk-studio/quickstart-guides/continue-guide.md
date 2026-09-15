@@ -1,3 +1,8 @@
+---
+description: How to set up Snyk Studio and the Snyk MCP server in Continue
+nav_context: classic
+---
+
 # Continue guide
 
 You can access Snyk Studio, including Snyk's MCP server, in Continue to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server asks for trust and trigger authentication if necessary.
@@ -5,7 +10,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Continue to secure c
 ## Prerequisites
 
 * [Install the Continue extension](continue-guide.md#install-continue)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](continue-guide.md#install-the-snyk-mcp-server-in-continue)
 
 ### Install Continue
@@ -34,7 +39,7 @@ mcpServers:
     env: {}
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
 
 #### Install with Node.js and `npx`
 

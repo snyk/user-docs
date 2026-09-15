@@ -1,5 +1,6 @@
 ---
 description: How to force Snyk IDE plugins to use the latest Snyk Language Server
+nav_context: agnostic
 ---
 
 # Force use of the latest language server

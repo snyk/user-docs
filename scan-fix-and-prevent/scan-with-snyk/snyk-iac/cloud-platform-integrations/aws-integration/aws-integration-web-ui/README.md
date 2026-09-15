@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk AWS integration in the Web UI
+nav_context: agnostic
 ---
 
 # AWS Integration: Web UI

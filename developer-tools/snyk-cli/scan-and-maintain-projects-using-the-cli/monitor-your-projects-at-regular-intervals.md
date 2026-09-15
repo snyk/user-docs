@@ -1,5 +1,6 @@
 ---
 description: How to monitor your Projects at regular intervals with the Snyk CLI
+nav_context: agnostic
 ---
 
 # Monitor your Projects at regular intervals

@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for PHP
+nav_context: agnostic
 ---
 
 # Snyk PHP action

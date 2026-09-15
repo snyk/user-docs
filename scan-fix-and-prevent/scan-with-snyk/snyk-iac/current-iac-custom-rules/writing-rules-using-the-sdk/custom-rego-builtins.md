@@ -1,5 +1,6 @@
 ---
 description: The custom Rego built-in functions available for Snyk IaC custom rules
+nav_context: agnostic
 ---
 
 # Custom Rego Builtins

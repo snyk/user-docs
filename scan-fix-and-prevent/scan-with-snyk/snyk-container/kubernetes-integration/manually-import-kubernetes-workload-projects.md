@@ -1,5 +1,6 @@
 ---
 description: How to manually import Kubernetes workload Projects into Snyk
+nav_context: classic
 ---
 
 # Manually import Kubernetes workload Projects

@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for Node.js
+nav_context: agnostic
 ---
 
 # Snyk Node action

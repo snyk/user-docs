@@ -1,5 +1,8 @@
 ---
-description: How to use the unified IDE configuration dialog to set authentication, CLI, trust, and Project defaults across the Snyk IDE plugins
+description: >-
+  How to configure all your Snyk IDE plugins from a single configuration
+  dialog
+nav_context: classic
 ---
 
 # Unified IDE Configuration Dialog

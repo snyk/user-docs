@@ -1,5 +1,6 @@
 ---
 description: How to import repositories into Snyk from your SCM integration to start scanning your Projects
+nav_context: classic
 ---
 
 # Import repositories

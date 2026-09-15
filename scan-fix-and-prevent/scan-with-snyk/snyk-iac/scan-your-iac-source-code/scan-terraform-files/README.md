@@ -1,5 +1,6 @@
 ---
 description: How to scan Terraform files with Snyk IaC
+nav_context: agnostic
 ---
 
 # Scan Terraform files

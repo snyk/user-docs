@@ -1,5 +1,6 @@
 ---
 description: The Snyk end-of-life policy for images from the Snyk Images build toolchain
+nav_context: agnostic
 ---
 
 # Snyk Images and EOL image policy

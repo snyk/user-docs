@@ -1,5 +1,6 @@
 ---
 description: How to view the licenses detected across your Snyk Projects
+nav_context: classic
 ---
 
 # View licenses

@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot domain verification with a TXT file in Snyk API and Web
+nav_context: classic
 ---
 
 # Troubleshoot domain verification with TXT file

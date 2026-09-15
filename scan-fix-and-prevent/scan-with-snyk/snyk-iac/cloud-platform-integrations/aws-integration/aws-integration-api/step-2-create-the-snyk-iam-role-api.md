@@ -1,5 +1,6 @@
 ---
 description: 'Step 2: create the Snyk IAM role for the AWS integration using the API'
+nav_context: agnostic
 ---
 
 # Step 2: Create the Snyk IAM role (API)

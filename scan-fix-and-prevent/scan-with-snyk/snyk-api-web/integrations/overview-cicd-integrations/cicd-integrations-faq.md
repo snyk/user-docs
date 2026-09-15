@@ -1,5 +1,6 @@
 ---
 description: Frequently asked questions about Snyk API and Web CI/CD integrations
+nav_context: agnostic
 ---
 
 # CI/CD integrations FAQ

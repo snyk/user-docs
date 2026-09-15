@@ -1,5 +1,6 @@
 ---
 description: How to configure the Snyk pipe to test and monitor code in Bitbucket Pipelines
+nav_context: agnostic
 ---
 
 # Configure your Bitbucket Pipelines integration

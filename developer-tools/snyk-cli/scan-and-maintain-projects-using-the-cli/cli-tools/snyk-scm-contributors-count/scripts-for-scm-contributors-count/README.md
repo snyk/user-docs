@@ -1,5 +1,6 @@
 ---
 description: A detailed guide to the specific SCM-Contributor-Count scripts
+nav_context: agnostic
 ---
 
 # Scripts for SCM contributors count

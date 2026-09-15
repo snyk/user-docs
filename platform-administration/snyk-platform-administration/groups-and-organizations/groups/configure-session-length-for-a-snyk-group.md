@@ -1,5 +1,6 @@
 ---
 description: How Group admins configure the inactivity session length before Snyk logs users out, by default 24 hours
+nav_context: classic
 ---
 
 # Configure session length for a Snyk Group

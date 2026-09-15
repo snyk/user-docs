@@ -1,5 +1,6 @@
 ---
 description: The snyk-scm-contributors-count tool that counts contributing developers in your SCM
+nav_context: agnostic
 ---
 
 # snyk-scm-contributors-count

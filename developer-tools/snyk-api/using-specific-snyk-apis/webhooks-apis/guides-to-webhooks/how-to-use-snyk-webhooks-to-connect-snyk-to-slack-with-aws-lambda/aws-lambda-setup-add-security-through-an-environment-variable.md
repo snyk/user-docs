@@ -1,5 +1,6 @@
 ---
 description: How to secure the AWS Lambda function with an environment variable
+nav_context: agnostic
 ---
 
 # AWS Lambda setup: add security through an environment variable

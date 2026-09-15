@@ -1,5 +1,6 @@
 ---
 description: Flow, technology, and examples for the GitHub Enterprise scm-contributors-count script
+nav_context: agnostic
 ---
 
 # GitHub Enterprise

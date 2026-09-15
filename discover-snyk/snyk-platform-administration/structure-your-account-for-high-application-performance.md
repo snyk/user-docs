@@ -1,5 +1,6 @@
 ---
 description: Guidelines for structuring Snyk accounts, Groups, Organizations, and Projects to maintain high performance at scale
+nav_context: agnostic
 ---
 
 # Structure your account for high application performance

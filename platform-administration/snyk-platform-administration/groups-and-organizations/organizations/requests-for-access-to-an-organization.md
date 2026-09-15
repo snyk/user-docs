@@ -1,5 +1,6 @@
 ---
 description: How users request access to a Snyk Organization and how administrators review those requests
+nav_context: classic
 ---
 
 # Requests for access to an Organization

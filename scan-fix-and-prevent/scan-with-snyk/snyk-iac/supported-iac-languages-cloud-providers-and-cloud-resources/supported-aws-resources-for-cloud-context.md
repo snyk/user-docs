@@ -1,5 +1,6 @@
 ---
 description: The AWS resources Snyk IaC supports for cloud context
+nav_context: agnostic
 ---
 
 # Supported AWS resources for cloud context

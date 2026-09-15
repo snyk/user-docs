@@ -1,5 +1,6 @@
 ---
 description: How to use IaC sources with Snyk drift detection
+nav_context: classic
 ---
 
 # IAC sources usage

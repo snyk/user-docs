@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk Azure Repositories integration for Azure DevOps Server 2020 and above, on Enterprise plans
+nav_context: classic
 ---
 
 # Azure Repositories (TFS)

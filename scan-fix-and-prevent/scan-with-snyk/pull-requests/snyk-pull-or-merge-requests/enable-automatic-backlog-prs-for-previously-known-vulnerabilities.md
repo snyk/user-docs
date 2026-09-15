@@ -1,5 +1,6 @@
 ---
 description: How to enable automatic backlog PRs for previously known vulnerabilities
+nav_context: classic
 ---
 
 # Enable automatic backlog PRs for previously known vulnerabilities

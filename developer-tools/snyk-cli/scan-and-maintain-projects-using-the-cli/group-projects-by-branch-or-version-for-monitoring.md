@@ -1,5 +1,6 @@
 ---
 description: How to group Projects by branch or version when monitoring with the CLI
+nav_context: classic
 ---
 
 # Group Projects by branch or version for monitoring

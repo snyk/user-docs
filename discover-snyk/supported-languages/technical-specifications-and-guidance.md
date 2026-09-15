@@ -1,5 +1,8 @@
 ---
-description: Technical requirements for Snyk Code and Snyk Open Source, including file encoding and how Snyk builds the dependency tree
+nav_context: agnostic
+description: >-
+  Technical requirements for Snyk Code and Snyk Open Source, including file
+  encoding and how Snyk builds the dependency tree
 ---
 
 # Technical specifications and guidance
@@ -89,6 +92,6 @@ You can use these tools to automatically check your code for security issues as 
 
 Navigate to the following pages for more details:
 
-* CLI for [Snyk Open Source](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source) and [Snyk Code](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code)
+* CLI for [Snyk Open Source](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source) and [Snyk Code](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code)
 * CI/CD for [Snyk Open Source](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-open-source-specific-ci-cd-strategies) and [Snyk Code](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/use-snyk-code-in-the-ci-cd-pipeline)
 * [SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations) for Snyk Open Source and Snyk Code

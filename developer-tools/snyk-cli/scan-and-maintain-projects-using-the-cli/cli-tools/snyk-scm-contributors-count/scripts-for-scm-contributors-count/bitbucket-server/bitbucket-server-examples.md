@@ -1,5 +1,6 @@
 ---
 description: The list of options and some examples for Bitbucket Server
+nav_context: agnostic
 ---
 
 # Bitbucket Server - Examples

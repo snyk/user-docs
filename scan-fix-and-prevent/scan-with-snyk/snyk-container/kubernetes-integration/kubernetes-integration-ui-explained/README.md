@@ -1,5 +1,6 @@
 ---
 description: How to navigate the Snyk Kubernetes integration UI
+nav_context: agnostic
 ---
 
 # Navigate the Kubernetes integration UI

@@ -1,5 +1,6 @@
 ---
 description: The release and support policy for Snyk IDE plugins, including build channels
+nav_context: agnostic
 ---
 
 # Release and support policy for Snyk IDE plugins

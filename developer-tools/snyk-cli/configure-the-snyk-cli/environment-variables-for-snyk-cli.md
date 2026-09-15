@@ -1,5 +1,6 @@
 ---
 description: The environment variables you can use to configure the Snyk CLI
+nav_context: agnostic
 ---
 
 # Environment variables for Snyk CLI

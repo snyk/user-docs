@@ -1,5 +1,6 @@
 ---
 description: How to invite members to your Snyk Organization and assign their roles from the web UI
+nav_context: classic
 ---
 
 # Invite team members

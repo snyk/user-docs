@@ -1,5 +1,6 @@
 ---
 description: How to connect Snyk to an Artifactory registry for npm
+nav_context: classic
 ---
 
 # Artifactory Registry for npm

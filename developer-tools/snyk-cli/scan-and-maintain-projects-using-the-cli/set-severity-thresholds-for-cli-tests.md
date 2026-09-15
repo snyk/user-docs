@@ -1,5 +1,6 @@
 ---
 description: How to set severity thresholds for Snyk CLI tests
+nav_context: agnostic
 ---
 
 # Severity thresholds for CLI tests
@@ -12,4 +13,4 @@ To improve control over your tests, you can use the `--severity-threshold` optio
 Setting `--severity-threshold` to `low` has the same effect as running the command without specifying the threshold; all vulnerabilities are reported.
 {% endhint %}
 
-Note: The `--severity-threshold` option is available with the `snyk test`, `snyk code`, `snyk container`, and `snyk iac test` commands. See the [CLI commands help](../commands/) pages for each command for details.
+Note: The `--severity-threshold` option is available with the `snyk test`, `snyk code`, `snyk container`, `snyk iac test`, and `snyk aibom test` commands. See the [CLI commands help](../commands/) pages for each command for details.

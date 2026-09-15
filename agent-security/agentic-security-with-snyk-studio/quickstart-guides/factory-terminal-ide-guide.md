@@ -1,3 +1,10 @@
+---
+description: >-
+  How to set up Snyk Studio and the Snyk MCP server in Factory Terminal and
+  IDE
+nav_context: classic
+---
+
 # Factory Terminal/IDE guide
 
 Access Snyk Studio, including Snyk's MCP server, in Factory Terminal/IDE to secure code generated with agentic workflows through an LLM. You can achieve this by installing Snyk Studio directly.

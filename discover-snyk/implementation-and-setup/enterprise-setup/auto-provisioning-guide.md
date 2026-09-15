@@ -1,5 +1,6 @@
 ---
 description: How Snyk auto-provisions accounts for Pilot and Enterprise plans, including the setup questions you answer first
+nav_context: classic
 ---
 
 # Auto-provisioning guide

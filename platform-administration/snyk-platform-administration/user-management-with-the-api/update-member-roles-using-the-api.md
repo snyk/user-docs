@@ -1,5 +1,6 @@
 ---
 description: How to migrate Snyk members to new roles using the API, with recommended bounded concurrency
+nav_context: agnostic
 ---
 
 # Update member roles using the API

@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for Maven 3 with JDK 11
+nav_context: agnostic
 ---
 
 # Snyk Maven-3-jdk-11 action

@@ -1,5 +1,6 @@
 ---
 description: How Snyk automatically creates Project collections
+nav_context: classic
 ---
 
 # Automatically created Project collections

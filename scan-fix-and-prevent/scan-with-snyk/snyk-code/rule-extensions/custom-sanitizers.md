@@ -1,5 +1,6 @@
 ---
 description: How to define custom sanitizers as Snyk Code Rule Extensions to reduce false positives in taint flow analysis
+nav_context: agnostic
 ---
 
 # Custom sanitizers

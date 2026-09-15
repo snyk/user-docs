@@ -1,5 +1,6 @@
 ---
 description: How to integrate New Relic with Snyk using webhooks
+nav_context: classic
 ---
 
 # How to use Snyk Webhooks to integrate New Relic with Snyk

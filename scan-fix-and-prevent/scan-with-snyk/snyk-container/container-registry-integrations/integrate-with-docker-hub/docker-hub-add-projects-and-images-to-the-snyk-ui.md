@@ -1,5 +1,6 @@
 ---
 description: How to add Docker Hub Projects and images to Snyk
+nav_context: classic
 ---
 
 # Docker Hub - add Projects and images to the Snyk UI

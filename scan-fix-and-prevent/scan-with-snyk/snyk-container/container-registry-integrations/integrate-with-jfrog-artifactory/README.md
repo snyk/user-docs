@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with JFrog Artifactory
+nav_context: agnostic
 ---
 
 # Integrate with JFrog Artifactory

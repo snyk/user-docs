@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Security app for Jira Cloud surfaces vulnerabilities in your Jira projects
+nav_context: classic
 ---
 
 # Snyk Security in Jira Cloud integration

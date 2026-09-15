@@ -1,5 +1,6 @@
 ---
 description: How to test Terraform files with Snyk IaC using the CLI
+nav_context: agnostic
 ---
 
 # Terraform files

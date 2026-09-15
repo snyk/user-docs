@@ -1,5 +1,6 @@
 ---
 description: Recommendations for rolling out Snyk SCM integration features gradually to avoid developer friction
+nav_context: classic
 ---
 
 # Deployment recommendations

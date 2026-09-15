@@ -1,5 +1,6 @@
 ---
 description: Flow, technology, and examples for the Bitbucket Cloud scm-contributors-count script
+nav_context: agnostic
 ---
 
 # Bitbucket Cloud

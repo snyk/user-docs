@@ -1,5 +1,6 @@
 ---
 description: How to install and configure Snyk Broker for Nexus Repository using Docker
+nav_context: agnostic
 ---
 
 # Nexus Repository - install and configure using Docker

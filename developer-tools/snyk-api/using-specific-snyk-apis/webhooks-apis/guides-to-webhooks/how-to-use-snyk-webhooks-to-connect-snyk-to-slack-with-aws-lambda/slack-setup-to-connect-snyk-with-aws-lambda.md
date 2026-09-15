@@ -1,5 +1,6 @@
 ---
 description: How to set up Slack to connect Snyk with AWS Lambda
+nav_context: classic
 ---
 
 # Slack setup to connect Snyk with AWS Lambda

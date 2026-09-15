@@ -1,5 +1,6 @@
 ---
 description: How to exclude directories and files from Snyk Code CLI tests
+nav_context: classic
 ---
 
 # Exclude directories and files from Snyk Code CLI tests

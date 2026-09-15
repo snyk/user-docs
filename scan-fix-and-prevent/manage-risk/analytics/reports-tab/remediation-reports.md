@@ -1,5 +1,6 @@
 ---
 description: The remediation reports in Snyk Analytics
+nav_context: classic
 ---
 
 # Remediation reports

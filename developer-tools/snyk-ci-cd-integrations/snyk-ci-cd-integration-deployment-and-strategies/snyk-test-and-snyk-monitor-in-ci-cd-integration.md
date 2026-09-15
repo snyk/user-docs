@@ -1,5 +1,6 @@
 ---
 description: How to use snyk test and snyk monitor in a CI/CD pipeline for Snyk Open Source Projects
+nav_context: agnostic
 ---
 
 # Snyk test and snyk monitor in CI/CD integration

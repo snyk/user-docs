@@ -1,5 +1,8 @@
 ---
-description: Snyk support for TypeScript with Snyk Open Source and Snyk Code, including SCM import, CLI and IDE testing, and JavaScript frameworks
+nav_context: agnostic
+description: >-
+  Snyk support for TypeScript with Snyk Open Source and Snyk Code, including SCM
+  import, CLI and IDE testing, and JavaScript frameworks
 ---
 
 # TypeScript
@@ -35,7 +38,9 @@ As a package registry, Snyk supports [npmjs.org](https://www.npmjs.org/).
 
 ## TypeScript for Snyk Code
 
-For TypeScript with Snyk Code, the following file formats are supported: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`
+For an overview of the supported security rules, visit [JavaScript and TypeScript rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/javascript-and-typescript-rules).
+
+For TypeScript with Snyk Code, the following file formats are supported: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`, `.erb`
 
 Available features:
 

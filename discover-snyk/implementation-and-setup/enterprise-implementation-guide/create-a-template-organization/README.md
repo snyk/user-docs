@@ -1,5 +1,6 @@
 ---
 description: How to create a template Snyk Organization to standardize account structure, access control, and reporting
+nav_context: agnostic
 ---
 
 # Create a template Organization

@@ -1,5 +1,6 @@
 ---
 description: How to import a Project to scan with Snyk Code
+nav_context: classic
 ---
 
 # Import Project with Snyk Code

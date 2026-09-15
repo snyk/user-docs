@@ -1,5 +1,6 @@
 ---
 description: How to scan all unmanaged JAR files with the Snyk CLI
+nav_context: classic
 ---
 
 # Scan all unmanaged JAR files

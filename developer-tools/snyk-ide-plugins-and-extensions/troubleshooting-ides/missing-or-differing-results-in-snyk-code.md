@@ -1,5 +1,6 @@
 ---
 description: How to resolve missing or differing Snyk Code results caused by ignore files
+nav_context: agnostic
 ---
 
 # Missing or differing results in Snyk Code

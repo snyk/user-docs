@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk Google Cloud integration in the Web UI
+nav_context: agnostic
 ---
 
 # Google Cloud Integration: Web UI

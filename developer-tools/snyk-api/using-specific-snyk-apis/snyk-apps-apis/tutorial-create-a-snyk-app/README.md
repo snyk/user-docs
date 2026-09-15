@@ -1,5 +1,6 @@
 ---
 description: Tutorial for building a simple Snyk App
+nav_context: agnostic
 ---
 
 # Tutorial: create a Snyk App

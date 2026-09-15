@@ -1,5 +1,6 @@
 ---
 description: How to group Projects using collections and views
+nav_context: agnostic
 ---
 
 # Project collections groupings

@@ -1,5 +1,6 @@
 ---
 description: How to resolve the invalid string length error when scanning Projects with the CLI
+nav_context: agnostic
 ---
 
 # Invalid string length error when scanning projects

@@ -1,5 +1,6 @@
 ---
 description: Example Snyk Language Server configurations for editors such as Sublime Text
+nav_context: classic
 ---
 
 # Example configurations for Snyk Language Server

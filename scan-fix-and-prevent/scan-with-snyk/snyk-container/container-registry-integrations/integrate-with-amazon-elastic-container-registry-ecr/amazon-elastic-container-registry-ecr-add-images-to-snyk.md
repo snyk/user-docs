@@ -1,5 +1,6 @@
 ---
 description: How to add Amazon ECR images to Snyk
+nav_context: classic
 ---
 
 # Amazon Elastic Container Registry (ECR) - add images to Snyk

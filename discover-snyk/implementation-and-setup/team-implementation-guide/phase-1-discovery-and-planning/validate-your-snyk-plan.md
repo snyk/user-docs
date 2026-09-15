@@ -1,5 +1,6 @@
 ---
 description: How to confirm your Snyk license is applied correctly to your Organization in Usage, Plans, and Billing
+nav_context: classic
 ---
 
 # Validate your Snyk plan

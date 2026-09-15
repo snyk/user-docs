@@ -1,3 +1,10 @@
+---
+description: >-
+  How Snyk Evo integrates with cloud AI platforms to find AI assets deployed
+  outside your code
+nav_context: agnostic
+---
+
 # Overview
 
 ## Cloud AI platforms

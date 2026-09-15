@@ -1,5 +1,6 @@
 ---
 description: How to install and configure Snyk Broker for GitLab using Helm
+nav_context: agnostic
 ---
 
 # GitLab - install and configure using Helm

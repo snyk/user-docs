@@ -1,5 +1,6 @@
 ---
 description: How to control API rate limits for the scm-contributors-count tool
+nav_context: agnostic
 ---
 
 # API rate limit control for scm-contributors-count

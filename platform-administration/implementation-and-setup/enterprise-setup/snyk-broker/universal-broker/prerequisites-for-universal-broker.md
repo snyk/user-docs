@@ -1,5 +1,6 @@
 ---
 description: Prerequisites for deploying the Universal Broker, including supported platforms and the snyk-broker-config CLI tool
+nav_context: agnostic
 ---
 
 # Prerequisites for Universal Broker

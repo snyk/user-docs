@@ -1,5 +1,6 @@
 ---
 description: How to configure private gem sources for Ruby with Snyk
+nav_context: classic
 ---
 
 # Private gem sources for Ruby configuration

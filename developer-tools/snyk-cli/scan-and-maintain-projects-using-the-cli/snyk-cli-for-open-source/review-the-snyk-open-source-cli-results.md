@@ -1,5 +1,6 @@
 ---
 description: How to review Snyk Open Source results from the CLI
+nav_context: classic
 ---
 
 # Review the Snyk Open Source CLI results

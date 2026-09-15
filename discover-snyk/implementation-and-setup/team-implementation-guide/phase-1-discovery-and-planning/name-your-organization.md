@@ -1,5 +1,6 @@
 ---
 description: How to name your Snyk Organization and plan your account structure of Groups and Organizations
+nav_context: classic
 ---
 
 # Name your Organization

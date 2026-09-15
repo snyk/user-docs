@@ -1,5 +1,8 @@
 ---
-description: Snyk support for .NET with Snyk Code and Snyk Open Source, including C# and VB.NET frameworks, libraries, and versions
+nav_context: agnostic
+description: >-
+  Snyk support for .NET with Snyk Code and Snyk Open Source, including C# and
+  VB.NET frameworks, libraries, and versions
 ---
 
 # .NET (C# and VB.NET)

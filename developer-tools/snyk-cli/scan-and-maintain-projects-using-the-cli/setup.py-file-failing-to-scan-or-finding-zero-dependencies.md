@@ -1,5 +1,6 @@
 ---
 description: How to resolve a setup.py file failing to scan or finding zero dependencies
+nav_context: agnostic
 ---
 
 # Setup.py file failing to scan or finding zero dependencies

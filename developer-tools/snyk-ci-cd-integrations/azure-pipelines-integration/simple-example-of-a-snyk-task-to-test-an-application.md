@@ -1,5 +1,6 @@
 ---
 description: A simple example of a Snyk task to test the open source dependencies of an application in Azure Pipelines
+nav_context: agnostic
 ---
 
 # Simple example of a Snyk task to test an application

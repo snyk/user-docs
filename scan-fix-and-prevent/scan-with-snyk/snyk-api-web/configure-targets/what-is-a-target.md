@@ -1,5 +1,6 @@
 ---
 description: What a target is in Snyk API and Web scanning
+nav_context: agnostic
 ---
 
 # What is a target?

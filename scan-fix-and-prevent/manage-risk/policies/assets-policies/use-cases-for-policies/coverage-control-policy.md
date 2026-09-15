@@ -1,4 +1,5 @@
 ---
+nav_context: classic
 description: How to use a coverage control policy in Snyk Essentials
 ---
 
@@ -10,7 +11,7 @@ Identifying and setting coverage policies allows your team to define where certa
 
 The following example filters out assets that should have Snyk Open Source and Snyk Code security controls in place and then sets the coverage policies.
 
-<figure><img src="../../../../.gitbook/assets/assets-policy-setting-coverage-control-policy.png" alt="AppRisk - Setting up a Coverage Control policy"><figcaption><p>Assets Policy - Setting up a Coverage Control policy</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/assets-policy-setting-coverage-control-policy.png" alt="Assets Policy - Setting up a Coverage Control policy"><figcaption><p>Assets Policy - Setting up a Coverage Control policy</p></figcaption></figure>
 
 To follow the example, these are the filters you need to apply:
 
@@ -26,4 +27,4 @@ Next, you need to define two actions, one for Snyk Open Source, and one for Snyk
 
     For Snyk Code, scans happen by default once a week, or when changes have been pushed to the monitored branch. The Coverage Control Policy needs to check that a Snyk Code scan occurred for that repository in the last week.
 
-In the Inventory view, any coverage gap is indicated with strikes through the control coverage icon. See more details about each icon on the [Inventory capabilities](../../../../manage-assets/assets-inventory-components.md) page.
+In the Inventory view, any coverage gap is indicated with strikes through the control coverage icon. See more details about each icon on the [Inventory capabilities](../../../../fix/manage-asset-inventory/assets-inventory-components.md) page.

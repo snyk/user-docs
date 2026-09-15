@@ -1,5 +1,6 @@
 ---
 description: Service description for Snyk Jumpstart Basic, consultant-led assisted account configuration
+nav_context: agnostic
 ---
 
 # Snyk Jumpstart Basic Services Description

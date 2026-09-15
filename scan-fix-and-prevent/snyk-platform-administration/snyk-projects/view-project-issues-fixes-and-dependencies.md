@@ -1,5 +1,6 @@
 ---
 description: How to view Project issues, fixes, and dependencies
+nav_context: classic
 ---
 
 # View Project issues, fixes, and dependencies

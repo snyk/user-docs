@@ -1,5 +1,6 @@
 ---
 description: The key CLI features for Snyk API and Web
+nav_context: agnostic
 ---
 
 # CLI key features for Snyk API & Web

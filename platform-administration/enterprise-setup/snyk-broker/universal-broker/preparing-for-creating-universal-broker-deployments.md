@@ -1,5 +1,6 @@
 ---
 description: How to prepare hosts and meet prerequisites before creating Universal Broker deployments
+nav_context: agnostic
 ---
 
 # Preparing for creating Universal Broker deployments

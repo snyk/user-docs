@@ -1,5 +1,6 @@
 ---
 description: How to configure the Snyk integration with Docker Hub
+nav_context: classic
 ---
 
 # Configure the integration with Docker Hub

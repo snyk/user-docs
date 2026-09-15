@@ -1,5 +1,6 @@
 ---
 description: CI/CD strategies for running Snyk IaC as part of your pipeline stages
+nav_context: agnostic
 ---
 
 # Snyk IaC-specific CI/CD strategies

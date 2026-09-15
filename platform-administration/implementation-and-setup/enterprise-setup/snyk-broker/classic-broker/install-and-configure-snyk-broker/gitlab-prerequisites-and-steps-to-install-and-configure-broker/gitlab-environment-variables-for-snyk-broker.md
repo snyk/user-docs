@@ -1,5 +1,6 @@
 ---
 description: Environment variables required to configure the Snyk Broker client for GitLab
+nav_context: agnostic
 ---
 
 # GitLab - environment variables for Snyk Broker

@@ -1,5 +1,6 @@
 ---
 description: How to clone your template Organization to build a Snyk structure that mirrors your business
+nav_context: classic
 ---
 
 # Create your Snyk structure

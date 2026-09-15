@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for Python
+nav_context: agnostic
 ---
 
 # Snyk Python action

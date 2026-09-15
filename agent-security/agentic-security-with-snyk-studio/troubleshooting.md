@@ -1,3 +1,10 @@
+---
+description: >-
+  How to diagnose Snyk Studio and Snyk MCP server problems, including CLI
+  version and authentication issues
+nav_context: classic
+---
+
 # Troubleshooting
 
 If you encounter issues with Snyk Studio or the integration using Snyk's MCP server, try the troubleshooting steps provided here.

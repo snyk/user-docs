@@ -1,3 +1,10 @@
+---
+description: >-
+  How Trusted Output Assurance secures AI-assisted development before insecure
+  code reaches production
+nav_context: agnostic
+---
+
 # Trusted Output Assurance
 
 Trusted Output Assurance helps you secure AI-assisted development before insecure code reaches production. Use it to guide coding agents, scan generated code and dependencies, and fix vulnerabilities as part of the developer workflow.

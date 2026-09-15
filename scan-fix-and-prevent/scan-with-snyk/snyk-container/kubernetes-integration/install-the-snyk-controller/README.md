@@ -1,5 +1,6 @@
 ---
 description: How to install the Snyk Controller for the Kubernetes integration
+nav_context: agnostic
 ---
 
 # Install the Snyk Controller

@@ -1,5 +1,6 @@
 ---
 description: How to install the Snyk Controller with OpenShift 4 and OperatorHub
+nav_context: agnostic
 ---
 
 # Install the Snyk Controller with OpenShift 4 and OperatorHub

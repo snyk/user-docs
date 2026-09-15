@@ -1,5 +1,6 @@
 ---
 description: How to use the Snyk SBOM API endpoints
+nav_context: agnostic
 ---
 
 # SBOM APIs

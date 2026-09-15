@@ -1,5 +1,6 @@
 ---
 description: How to view Snyk IaC issue reports
+nav_context: classic
 ---
 
 # View Snyk IaC issue reports

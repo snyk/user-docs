@@ -1,5 +1,6 @@
 ---
 description: The list of options and some examples for Azure
+nav_context: agnostic
 ---
 
 # Azure - Examples

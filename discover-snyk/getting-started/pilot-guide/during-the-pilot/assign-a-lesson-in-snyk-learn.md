@@ -1,5 +1,6 @@
 ---
 description: How to assign interactive Snyk Learn lessons so developers can learn to fix vulnerabilities across languages
+nav_context: agnostic
 ---
 
 # Assign a lesson in Snyk Learn

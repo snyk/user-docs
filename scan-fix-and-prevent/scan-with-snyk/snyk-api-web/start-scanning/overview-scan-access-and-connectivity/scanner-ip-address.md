@@ -1,5 +1,6 @@
 ---
 description: The scanner IP addresses used by Snyk API and Web
+nav_context: agnostic
 ---
 
 # Scanner IP address

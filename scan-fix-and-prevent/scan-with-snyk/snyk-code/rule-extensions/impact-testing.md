@@ -1,5 +1,6 @@
 ---
 description: How to run an impact test through the API to see how a proposed Snyk Code Rule Extension would change Project findings
+nav_context: agnostic
 ---
 
 # Impact testing

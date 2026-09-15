@@ -1,8 +1,10 @@
 # Table of contents
 
+* [Overview](README.md)
+
 ## Agentic security with Snyk studio
 
-* [Overview](README.md)
+* [Overview](agentic-security-with-snyk-studio/README.md)
 * [Getting started with Snyk Studio](agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md)
 * [Directives](agentic-security-with-snyk-studio/directives.md)
 * [Distribution at scale](agentic-security-with-snyk-studio/distribution-at-scale.md)
@@ -46,9 +48,24 @@
   * [Evo chat](evo-by-snyk/platform-surfaces/evo-chat.md)
 * [AI-SPM](evo-by-snyk/ai-spm/README.md)
   * [AI asset visibility](evo-by-snyk/ai-spm/ai-asset-visibility.md)
-  * [Risk intelligence](evo-by-snyk/ai-spm/risk-intelligence.md)
+  * [Risk intelligence](evo-by-snyk/ai-spm/risk-intelligence/README.md)
+    * [Framework mappings](evo-by-snyk/ai-spm/risk-intelligence/framework-mappings.md)
 * [Agentic Development Security (ADS)](evo-by-snyk/agentic-development-security-ads/README.md)
   * [Activation and deployment](evo-by-snyk/agentic-development-security-ads/activation-and-deployment.md)
   * [Agent Supply Chain Security](evo-by-snyk/agentic-development-security-ads/agent-supply-chain-security.md)
   * [Agent Behavior Governance](evo-by-snyk/agentic-development-security-ads/agent-behavior-governance.md)
   * [Trusted Output Assurance](evo-by-snyk/agentic-development-security-ads/trusted-output-assurance.md)
+* [Continuous Offensive Security (COS)](evo-by-snyk/continuous-offensive-security-cos/README.md)
+  * [Targets](evo-by-snyk/continuous-offensive-security-cos/targets/README.md)
+    * [Before you begin](evo-by-snyk/continuous-offensive-security-cos/targets/before-you-begin.md)
+    * [Define the Target Scope](evo-by-snyk/continuous-offensive-security-cos/targets/define-the-target-scope.md)
+    * [Configure authentication](evo-by-snyk/continuous-offensive-security-cos/targets/configure-authentication.md)
+    * [Manage Targets](evo-by-snyk/continuous-offensive-security-cos/targets/manage-targets.md)
+  * [Scans](evo-by-snyk/continuous-offensive-security-cos/scans/README.md)
+    * [Scanner IP addresses](evo-by-snyk/continuous-offensive-security-cos/scans/scanner-ip-addresses.md)
+    * [Monitor and Manage Scans](evo-by-snyk/continuous-offensive-security-cos/scans/monitor-and-manage-scans.md)
+  * [Findings and Reports](evo-by-snyk/continuous-offensive-security-cos/findings-and-reports/README.md)
+    * [Interpret Scan Results](evo-by-snyk/continuous-offensive-security-cos/findings-and-reports/interpret-scan-results.md)
+    * [Understand finding details](evo-by-snyk/continuous-offensive-security-cos/findings-and-reports/understand-finding-details.md)
+    * [Severity and Scoring](evo-by-snyk/continuous-offensive-security-cos/findings-and-reports/severity-and-scoring.md)
+    * [Reports](evo-by-snyk/continuous-offensive-security-cos/findings-and-reports/reports.md)

@@ -1,5 +1,6 @@
 ---
 description: How to manage vulnerabilities found by Snyk Open Source
+nav_context: agnostic
 ---
 
 # Manage vulnerabilities

@@ -1,5 +1,6 @@
 ---
 description: How to configure logout detection for Snyk API and Web targets
+nav_context: classic
 ---
 
 # Logout detection

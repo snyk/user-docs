@@ -1,5 +1,6 @@
 ---
 description: How Snyk administrators curate security learning paths with Snyk Learn learning programs, available in Early Access
+nav_context: classic
 ---
 
 # Snyk Learn learning programs

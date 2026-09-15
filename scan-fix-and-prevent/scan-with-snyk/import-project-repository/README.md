@@ -1,5 +1,6 @@
 ---
 description: How to import Project repositories into Snyk for scanning
+nav_context: classic
 ---
 
 # Project repositories

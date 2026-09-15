@@ -1,3 +1,8 @@
+---
+description: How to set up Snyk Studio and the Snyk MCP server in Amazon Q
+nav_context: classic
+---
+
 # Amazon Q guide
 
 You can access Snyk Studio, including Snyk's MCP server, in Amazon Q to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
@@ -5,7 +10,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Amazon Q to secure c
 ## Prerequisites
 
 * [Install the code assistant extension](amazon-q-guide.md#install-amazon-q)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](amazon-q-guide.md#install-the-snyk-mcp-server-in-the-amazon-q-ide-extension)
 
 ### Install Amazon Q

@@ -2,6 +2,7 @@
 hidden: true
 noIndex: true
 description: Frequently asked questions about Consistent Ignores for Snyk Code
+nav_context: agnostic
 ---
 
 # Consistent Ignores for Snyk Code FAQs

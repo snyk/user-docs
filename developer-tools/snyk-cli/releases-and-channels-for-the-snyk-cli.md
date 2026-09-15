@@ -1,5 +1,6 @@
 ---
 description: The Snyk CLI release channels and versioning
+nav_context: classic
 ---
 
 # Releases and channels for the Snyk CLI

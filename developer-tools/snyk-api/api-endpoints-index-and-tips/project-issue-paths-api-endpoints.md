@@ -1,5 +1,6 @@
 ---
 description: Snyk API endpoints for Project issue paths
+nav_context: agnostic
 ---
 
 # Project issue paths API endpoints

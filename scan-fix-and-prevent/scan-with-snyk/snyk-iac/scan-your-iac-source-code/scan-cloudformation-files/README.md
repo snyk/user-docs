@@ -1,5 +1,6 @@
 ---
 description: How to scan AWS CloudFormation files with Snyk IaC
+nav_context: agnostic
 ---
 
 # Scan CloudFormation files

@@ -1,5 +1,6 @@
 ---
 description: Examples of Snyk IaC custom rules
+nav_context: agnostic
 ---
 
 # Examples of IaC custom rules

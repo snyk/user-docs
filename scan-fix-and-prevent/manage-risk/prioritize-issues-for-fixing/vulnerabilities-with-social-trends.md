@@ -1,5 +1,6 @@
 ---
 description: How Snyk Social Trends surface vulnerabilities gaining attention
+nav_context: agnostic
 ---
 
 # Vulnerabilities with Social Trends

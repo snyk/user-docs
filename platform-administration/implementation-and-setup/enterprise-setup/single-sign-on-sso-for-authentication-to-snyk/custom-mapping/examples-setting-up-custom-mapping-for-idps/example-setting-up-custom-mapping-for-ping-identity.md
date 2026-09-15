@@ -1,5 +1,6 @@
 ---
 description: Example of configuring Snyk custom mapping of roles for Ping Identity using legacy custom mapping
+nav_context: classic
 ---
 
 # Example: setting up custom mapping for Ping Identity

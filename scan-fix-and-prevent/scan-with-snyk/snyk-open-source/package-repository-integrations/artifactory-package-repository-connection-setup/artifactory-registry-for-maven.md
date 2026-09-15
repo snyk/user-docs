@@ -1,5 +1,6 @@
 ---
 description: How to connect Snyk to an Artifactory registry for Maven
+nav_context: classic
 ---
 
 # Artifactory registry for Maven

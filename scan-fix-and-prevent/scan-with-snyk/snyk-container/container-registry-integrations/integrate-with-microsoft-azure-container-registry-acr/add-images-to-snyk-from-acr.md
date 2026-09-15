@@ -1,5 +1,6 @@
 ---
 description: How to add images to Snyk from Azure Container Registry (ACR)
+nav_context: classic
 ---
 
 # Add images to Snyk from ACR

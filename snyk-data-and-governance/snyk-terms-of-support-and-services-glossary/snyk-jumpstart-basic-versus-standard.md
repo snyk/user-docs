@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Jumpstart Basic and Standard consultant-led onboarding packages differ
+nav_context: agnostic
 ---
 
 # Snyk Jumpstart: Basic versus Standard

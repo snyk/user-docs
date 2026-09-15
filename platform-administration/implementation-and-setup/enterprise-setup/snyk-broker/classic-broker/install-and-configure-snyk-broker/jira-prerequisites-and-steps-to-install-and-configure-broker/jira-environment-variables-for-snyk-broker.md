@@ -1,5 +1,6 @@
 ---
 description: Environment variables required to configure the Snyk Broker client for Jira
+nav_context: agnostic
 ---
 
 # Jira - environment variables for Snyk Broker

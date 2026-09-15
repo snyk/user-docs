@@ -1,5 +1,6 @@
 ---
 description: How to authenticate the Snyk JetBrains plugin, including the supported protocols
+nav_context: classic
 ---
 
 # Authentication for the JetBrains plugin

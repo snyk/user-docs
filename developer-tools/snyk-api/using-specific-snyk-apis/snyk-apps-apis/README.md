@@ -1,5 +1,6 @@
 ---
 description: How to use the Snyk Apps APIs to build integrations
+nav_context: agnostic
 ---
 
 # How to use Snyk Apps APIs

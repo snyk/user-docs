@@ -1,5 +1,6 @@
 ---
 description: 'Phase 6 of the Snyk team implementation: triage, prioritize, ignore, and fix vulnerabilities in your backlog'
+nav_context: agnostic
 ---
 
 # Phase 6: triages, ignores and fixes

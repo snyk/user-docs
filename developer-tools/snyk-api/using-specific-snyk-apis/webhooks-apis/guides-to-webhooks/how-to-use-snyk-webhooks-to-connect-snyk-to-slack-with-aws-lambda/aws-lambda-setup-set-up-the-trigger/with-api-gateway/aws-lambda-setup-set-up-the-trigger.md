@@ -1,5 +1,6 @@
 ---
 description: How to set up an AWS API Gateway trigger for the Snyk to Slack Lambda function
+nav_context: agnostic
 ---
 
 # AWS API Gateway: Setting up a trigger

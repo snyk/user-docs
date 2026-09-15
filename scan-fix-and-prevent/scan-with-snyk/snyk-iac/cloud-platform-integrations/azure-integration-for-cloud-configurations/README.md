@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk with Azure to scan cloud configurations
+nav_context: agnostic
 ---
 
 # Azure integration for cloud configurations

@@ -1,5 +1,6 @@
 ---
 description: How to configure proxy support, including authentication, for a Snyk Broker Docker installation
+nav_context: agnostic
 ---
 
 # Proxy support with Docker

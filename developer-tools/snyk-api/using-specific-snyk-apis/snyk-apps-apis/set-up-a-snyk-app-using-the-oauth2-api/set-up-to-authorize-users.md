@@ -1,5 +1,6 @@
 ---
 description: How to set up user authorization when connecting accounts to a Snyk App
+nav_context: classic
 ---
 
 # Set up to authorize users

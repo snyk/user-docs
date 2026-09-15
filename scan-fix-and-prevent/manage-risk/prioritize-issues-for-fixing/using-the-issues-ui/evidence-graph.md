@@ -1,5 +1,6 @@
 ---
 description: How the evidence graph visualizes the context of a Snyk issue
+nav_context: agnostic
 ---
 
 # Evidence graph

@@ -1,5 +1,6 @@
 ---
 description: Common questions about Snyk Broker, including update frequency and how it works
+nav_context: agnostic
 ---
 
 # Common questions about Broker

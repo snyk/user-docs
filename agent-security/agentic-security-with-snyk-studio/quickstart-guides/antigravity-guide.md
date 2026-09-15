@@ -1,3 +1,9 @@
+---
+description: >-
+  How to set up Snyk Studio and the Snyk MCP server in Google Antigravity
+nav_context: classic
+---
+
 # Antigravity guide
 
 Add Snyk Studio to Google Antigravity to secure code generated with agentic workflows through a Large Language Model (LLM). This can be achieved in several ways. When you use it for the first time, Snyk Studio will ask for trust and trigger authentication if necessary.

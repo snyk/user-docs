@@ -1,5 +1,6 @@
 ---
 description: How to switch the Snyk API and Web scan profile
+nav_context: classic
 ---
 
 # Switch the scan profile

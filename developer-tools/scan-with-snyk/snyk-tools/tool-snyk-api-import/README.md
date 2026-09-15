@@ -1,5 +1,6 @@
 ---
 description: The snyk-api-import tool for importing Projects and monitoring dependencies at scale, in CI and ad hoc
+nav_context: agnostic
 ---
 
 # Tool: snyk-api-import

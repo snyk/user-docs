@@ -1,5 +1,6 @@
 ---
 description: How to run Snyk Code in a CI/CD pipeline to catch vulnerabilities in code changes
+nav_context: agnostic
 ---
 
 # Snyk Code in the CI/CD pipeline

@@ -183,12 +183,16 @@ func renderReferenceDocsPage(filePath, label, docsPath string, operation []opera
 		return err
 	}
 
-	_, err = fmt.Fprintf(docsFile, `# %s
+	_, err = fmt.Fprintf(docsFile, `---
+description: %s
+---
+
+# %s
 
 {%% hint style="info" %%}
 %s
 {%% endhint %%}
-`, label, operation[0].docsHint)
+`, referencePageDescription(label), label, operation[0].docsHint)
 	if err != nil {
 		return err
 	}
@@ -229,6 +233,16 @@ func renderReferenceDocsPage(filePath, label, docsPath string, operation []opera
 		}
 	}
 	return nil
+}
+
+// referencePageDescription builds the frontmatter description for a reference
+// page. GitBook uses this as the page's meta description, and it is what search
+// results and AI assistants quote when they surface the page.
+//
+// The text is derived from the label so that every generated page carries one
+// without a maintainer having to write 60 of them by hand.
+func referencePageDescription(label string) string {
+	return fmt.Sprintf("Snyk API reference for the %s endpoints, including request parameters and response schemas", label)
 }
 
 func labelToFileName(label string) string {

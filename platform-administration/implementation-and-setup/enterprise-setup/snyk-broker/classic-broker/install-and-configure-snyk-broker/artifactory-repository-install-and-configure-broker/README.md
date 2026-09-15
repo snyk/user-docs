@@ -1,5 +1,6 @@
 ---
 description: Prerequisites and steps to install and configure Snyk Broker for Artifactory Repository, on Enterprise plans
+nav_context: classic
 ---
 
 # Artifactory Repository - prerequisites and steps to install and configure Broker

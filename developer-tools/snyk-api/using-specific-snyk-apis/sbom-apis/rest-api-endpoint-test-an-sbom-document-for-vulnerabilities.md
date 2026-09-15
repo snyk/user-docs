@@ -1,5 +1,6 @@
 ---
 description: How to test an SBOM document for vulnerabilities with the Snyk REST API
+nav_context: agnostic
 ---
 
 # Test an SBOM document for vulnerabilities

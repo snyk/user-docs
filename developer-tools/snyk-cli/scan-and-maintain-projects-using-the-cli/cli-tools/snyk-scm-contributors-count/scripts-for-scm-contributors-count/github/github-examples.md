@@ -1,5 +1,6 @@
 ---
 description: The list of options and some examples for GitHub
+nav_context: agnostic
 ---
 
 # GitHub - Examples

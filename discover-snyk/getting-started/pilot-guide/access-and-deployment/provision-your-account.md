@@ -1,5 +1,6 @@
 ---
 description: How to provision your Snyk tenant with your account team and access it after the welcome email
+nav_context: agnostic
 ---
 
 # Provision your account

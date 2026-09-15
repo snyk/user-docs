@@ -1,5 +1,6 @@
 ---
 description: How to review Snyk reports at the Organization and Group level for insights into vulnerabilities across Projects
+nav_context: agnostic
 ---
 
 # Review reporting

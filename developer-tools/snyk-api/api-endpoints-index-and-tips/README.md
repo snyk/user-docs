@@ -2,6 +2,7 @@
 description: >-
   Index of Snyk API endpoints with tips, including how to find your Organization
   ID
+nav_context: agnostic
 ---
 
 # API endpoints index and tips

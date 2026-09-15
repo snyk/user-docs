@@ -1,5 +1,6 @@
 ---
 description: How to sync your container registry with Snyk
+nav_context: classic
 ---
 
 # Sync your container registry

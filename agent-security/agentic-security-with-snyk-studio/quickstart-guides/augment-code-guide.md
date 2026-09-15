@@ -1,3 +1,8 @@
+---
+description: How to set up Snyk Studio and the Snyk MCP server in Augment Code
+nav_context: classic
+---
+
 # Augment Code guide
 
 Add Snyk Studio to Augment Code to secure code generated with agentic workflows through a Large Language Model (LLM). You can achieve this in several ways. When you use it for the first time, Snyk Studio asks for trust and, if necessary, trigger authentication.
@@ -5,7 +10,7 @@ Add Snyk Studio to Augment Code to secure code generated with agentic workflows 
 ## Prerequisites
 
 * [Install the code assistant extension](https://www.augmentcode.com/)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](augment-code-guide.md#install-the-snyk-mcp-server-in-augment-code)
 
 ### Install Augment Code
@@ -26,7 +31,7 @@ Install the Snyk MCP Server using the method that best suits your operating syst
 * Name: Snyk
 * Command: /absolute/path/to/snyk mcp -t stdio
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
 
 ## Setting up the Snyk MCP Server
 

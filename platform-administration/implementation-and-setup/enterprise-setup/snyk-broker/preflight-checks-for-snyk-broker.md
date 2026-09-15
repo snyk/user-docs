@@ -1,5 +1,6 @@
 ---
 description: How Snyk Broker preflight checks catch errors and misconfigurations at client startup
+nav_context: agnostic
 ---
 
 # Preflight checks for Snyk Broker

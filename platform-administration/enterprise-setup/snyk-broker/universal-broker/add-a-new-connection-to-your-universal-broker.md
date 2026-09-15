@@ -1,5 +1,6 @@
 ---
 description: How to add a new connection to your Universal Broker with the snyk-broker-config CLI tool
+nav_context: agnostic
 ---
 
 # Add a new connection to your Universal Broker

@@ -1,5 +1,6 @@
 ---
 description: Example Snyk Security Scan task configuration to test a Node.js npm application in Azure Pipelines
+nav_context: classic
 ---
 
 # Example of a Snyk task to test a node.js (npm)-based application

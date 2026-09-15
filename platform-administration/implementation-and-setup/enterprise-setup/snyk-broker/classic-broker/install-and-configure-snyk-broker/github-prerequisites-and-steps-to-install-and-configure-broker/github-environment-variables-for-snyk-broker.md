@@ -1,5 +1,6 @@
 ---
 description: Environment variables required to configure the Snyk Broker client for GitHub
+nav_context: agnostic
 ---
 
 # GitHub - environment variables for Snyk Broker

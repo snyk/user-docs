@@ -1,5 +1,6 @@
 ---
 description: 'How Snyk SCM integrations add security at each stage: importing a Project, writing code, and building'
+nav_context: classic
 ---
 
 # SCMs

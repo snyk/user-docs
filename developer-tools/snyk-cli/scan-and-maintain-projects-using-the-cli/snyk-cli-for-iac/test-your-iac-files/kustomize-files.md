@@ -1,5 +1,6 @@
 ---
 description: How to test Kustomize files with Snyk IaC using the CLI
+nav_context: agnostic
 ---
 
 # Kustomize files

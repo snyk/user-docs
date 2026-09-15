@@ -1,5 +1,6 @@
 ---
 description: How to use an asset classification policy in Snyk Essentials
+nav_context: agnostic
 ---
 
 # Classification policy

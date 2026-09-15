@@ -1,5 +1,6 @@
 ---
 description: How to use coverage and coverage gap policies in Snyk Essentials
+nav_context: agnostic
 ---
 
 # Coverage and coverage gap policies

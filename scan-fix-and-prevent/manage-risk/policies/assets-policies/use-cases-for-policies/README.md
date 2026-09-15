@@ -1,5 +1,6 @@
 ---
 description: Use cases for Snyk Essentials asset policies
+nav_context: agnostic
 ---
 
 # Use cases for policies

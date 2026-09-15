@@ -1,5 +1,6 @@
 ---
 description: How to configure Snyk Broker on Docker for Snyk Open Source scans of large manifest files, for GitHub integrations
+nav_context: agnostic
 ---
 
 # Snyk Open Source Scans (SCA) of large manifest files, Docker setup

@@ -1,5 +1,6 @@
 ---
 description: FAQ and troubleshooting guidance for Snyk Code Rule Extensions, including permissions and API rate limits
+nav_context: agnostic
 ---
 
 # FAQ & troubleshooting

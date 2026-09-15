@@ -1,3 +1,8 @@
+---
+description: How to set up Snyk Studio and the Snyk MCP server in Devin
+nav_context: classic
+---
+
 # Devin guide
 
 You can access Snyk Studio, including Snyk's MCP server, in Devin to secure code generated with agentic workflows through an LLM. You can achieve this in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.

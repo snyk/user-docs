@@ -1,5 +1,6 @@
 ---
 description: How to register a Snyk App and configure user authorization in the tutorial
+nav_context: agnostic
 ---
 
 # Register the App and configure user authorization

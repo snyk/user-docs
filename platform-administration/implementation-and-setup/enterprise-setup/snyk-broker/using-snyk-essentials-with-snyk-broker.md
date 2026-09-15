@@ -1,5 +1,6 @@
 ---
 description: How to use Snyk Essentials with Snyk Broker to scan repositories on an SCM that is not publicly accessible
+nav_context: agnostic
 ---
 
 # Using Snyk Essentials with Snyk Broker

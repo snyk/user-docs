@@ -1,5 +1,6 @@
 ---
 description: How to make your first Snyk REST API call with curl, including finding your Organization ID and authentication token
+nav_context: agnostic
 ---
 
 # Getting started with the REST API

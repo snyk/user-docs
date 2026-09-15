@@ -1,5 +1,6 @@
 ---
 description: How Snyk integrates with cloud platforms to scan cloud configurations
+nav_context: agnostic
 ---
 
 # Cloud platform integrations

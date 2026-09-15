@@ -1,6 +1,7 @@
 ---
 description: >-
   How to scan Kubernetes configuration files with Snyk IaC
+nav_context: agnostic
 ---
 
 # Scan Kubernetes configuration files

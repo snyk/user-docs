@@ -1,3 +1,10 @@
+---
+description: >-
+  How to install Snyk Studio in Codex CLI using the hooks-based or rules-based
+  approach
+nav_context: classic
+---
+
 # Codex CLI guide
 
 Access Snyk Studio in Codex CLI to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Codex CLI.
@@ -11,7 +18,7 @@ For installation instructions, visit [Getting started with Snyk Studio](../getti
 ### Prerequisites
 
 * [Install the Codex CLI](codex-cli-guide.md#install-codex-cli)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](codex-cli-guide.md#install-the-snyk-mcp-server-in-codex-cli-using-npx)
 
 ### Install Codex CLI

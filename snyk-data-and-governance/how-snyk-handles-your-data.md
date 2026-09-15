@@ -1,5 +1,6 @@
 ---
 description: How Snyk accesses, transfers, and stores your data as a developer security platform
+nav_context: classic
 ---
 
 # How Snyk handles your data

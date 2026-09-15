@@ -1,5 +1,6 @@
 ---
 description: The security concept of operations for the Snyk CLI and applications
+nav_context: agnostic
 ---
 
 # Security concept of operations for Snyk

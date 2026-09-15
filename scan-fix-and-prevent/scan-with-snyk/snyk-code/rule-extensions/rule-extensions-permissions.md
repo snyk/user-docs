@@ -1,5 +1,6 @@
 ---
 description: The custom-role permissions required to manage and test Snyk Code Rule Extensions through the API and the Snyk Web UI
+nav_context: classic
 ---
 
 # Rule Extensions permissions

@@ -1,5 +1,6 @@
 ---
 description: How to set the broker server URL for your region in a Snyk Broker Helm chart installation
+nav_context: agnostic
 ---
 
 # Multi-tenant settings for Helm chart installation

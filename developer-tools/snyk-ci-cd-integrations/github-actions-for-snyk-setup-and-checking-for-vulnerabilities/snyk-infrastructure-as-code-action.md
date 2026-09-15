@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for infrastructure as code (IaC)
+nav_context: agnostic
 ---
 
 # Snyk Infrastructure as Code action

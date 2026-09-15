@@ -1,5 +1,8 @@
 ---
-description: Snyk support for Go with Snyk Open Source and Snyk Code, including SCM import, CLI and IDE testing, and supported frameworks
+nav_context: classic
+description: >-
+  Snyk support for Go with Snyk Open Source and Snyk Code, including SCM import,
+  CLI and IDE testing, and supported frameworks
 ---
 
 # Go
@@ -36,6 +39,8 @@ Available integrations:
 For Go, Snyk supports [Go Modules](https://go.dev/ref/mod) and [dep](https://github.com/golang/dep) as package managers.
 
 ## Go for Snyk Code
+
+For an overview of the supported security rules, visit [Go rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/go-rules).
 
 For Go with Snyk Code, Snyk supports:
 
@@ -158,7 +163,7 @@ For package registries or proxies (Artifactory, Nexus), Snyk always requires an 
 For source control private dependencies, (GitHub and GitHub Enterprise, Bitbucket, GitLab, Azure Repos):
 
 * Snyk only requires an explicit URL if you use a brokered connection. For non-brokered setups, Snyk relies natively on your existing SCM Organization permissions, and you do not need to configure a URL here.
-* When you provide a URL for a brokered SCM, Snyk adds the host to `GONOSUMDB` so Go correctly tunnels traffic and skips the public checksum database. For example: `https://github.snyk-customer.com/owner/internal-shared-lib`&#x20;
+* When you provide a URL for a brokered SCM, Snyk adds the host to `GONOSUMDB` so Go correctly tunnels traffic and skips the public checksum database. For example: `https://github.snyk-customer.com/owner/internal-shared-lib`
 
 #### Configuration rules
 
@@ -176,6 +181,6 @@ To build the dependency tree, Snyk analyzes your `Gopkg.lock` files.
 
 When you test dep Projects using the CLI, Snyk requires installation of dependencies. Run `dep ensure` to achieve this.
 
-#### SCM integrations for dep&#x20;
+#### SCM integrations for dep
 
 To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your SCM repository.

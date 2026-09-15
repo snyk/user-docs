@@ -1,5 +1,6 @@
 ---
 description: How to manage Snyk API and Web findings
+nav_context: classic
 ---
 
 # Manage findings

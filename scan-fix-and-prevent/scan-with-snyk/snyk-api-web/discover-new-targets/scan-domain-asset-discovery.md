@@ -1,5 +1,6 @@
 ---
 description: How to scan a domain for asset discovery in Snyk API and Web
+nav_context: classic
 ---
 
 # Scan a domain for asset discovery

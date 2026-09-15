@@ -1,5 +1,6 @@
 ---
 description: How the Snyk JetBrains plugin uses folder trust before scanning new folders
+nav_context: classic
 ---
 
 # JetBrains plugin folder trust

@@ -1,5 +1,6 @@
 ---
 description: The Universal Broker, which manages many Broker connections of any type from a single client for simpler deployments
+nav_context: classic
 ---
 
 # Universal Broker

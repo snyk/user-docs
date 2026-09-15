@@ -1,5 +1,6 @@
 ---
 description: Service description for Snyk API and Web Managed Scans, an add-on for expert-run dynamic application security testing
+nav_context: agnostic
 ---
 
 # Snyk API & Web Managed Scans Service Description

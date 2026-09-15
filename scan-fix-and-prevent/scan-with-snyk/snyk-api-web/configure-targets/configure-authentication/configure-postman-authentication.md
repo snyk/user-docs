@@ -1,5 +1,6 @@
 ---
 description: How to configure Postman authentication for Snyk API and Web targets
+nav_context: classic
 ---
 
 # Postman authentication

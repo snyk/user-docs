@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk with Google Cloud to scan cloud configurations
+nav_context: agnostic
 ---
 
 # Google Cloud integration

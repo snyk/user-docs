@@ -1,5 +1,6 @@
 ---
 description: How to configure Jira synchronization settings for Snyk API and Web
+nav_context: classic
 ---
 
 # Configure Jira synchronization settings

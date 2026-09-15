@@ -1,5 +1,6 @@
 ---
 description: How to scan code locally with the Snyk IDE plugin, using VS Code as the example setup
+nav_context: classic
 ---
 
 # Local scanning with the IDE

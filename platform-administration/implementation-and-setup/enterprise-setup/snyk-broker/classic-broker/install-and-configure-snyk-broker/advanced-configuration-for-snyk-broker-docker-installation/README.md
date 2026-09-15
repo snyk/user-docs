@@ -1,5 +1,6 @@
 ---
 description: Advanced configuration options for a Snyk Broker Docker installation, including multi-tenant region settings
+nav_context: agnostic
 ---
 
 # Advanced configuration for Snyk Broker Docker installation

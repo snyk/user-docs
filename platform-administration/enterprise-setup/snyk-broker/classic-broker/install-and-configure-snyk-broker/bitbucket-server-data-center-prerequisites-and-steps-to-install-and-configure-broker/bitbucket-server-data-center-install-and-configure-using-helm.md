@@ -1,5 +1,6 @@
 ---
 description: How to install and configure Snyk Broker for Bitbucket Server and Data Center using Helm
+nav_context: agnostic
 ---
 
 # Bitbucket Server/Data Center - install and configure using Helm

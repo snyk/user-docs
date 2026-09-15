@@ -1,5 +1,6 @@
 ---
 description: How to generate the import file and use it with the snyk-api-import tool
+nav_context: agnostic
 ---
 
 # Creating and using the import file

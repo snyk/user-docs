@@ -5,7 +5,7 @@
 * [Glossary](getting-started/glossary.md)
 * [Snyk release process](getting-started/snyk-release-process.md)
 * [What's new?](whats-new.md)
-* [Snyk 2.0 platform improvements](getting-started/snyk-2.0-platform-improvements.md)
+* [Navigate the Snyk Web UI](navigate-the-snyk-web-ui.md)
 
 ## Supported languages
 

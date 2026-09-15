@@ -1,5 +1,6 @@
 ---
 description: How to ignore unmanaged resources in Snyk IaC drift detection
+nav_context: agnostic
 ---
 
 # Ignore unmanaged resources

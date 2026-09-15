@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Eclipse plugin uses folder trust before scanning new folders
+nav_context: classic
 ---
 
 # Eclipse plugin folder trust

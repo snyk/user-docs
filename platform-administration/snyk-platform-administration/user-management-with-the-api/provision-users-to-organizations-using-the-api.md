@@ -1,5 +1,6 @@
 ---
 description: How to provision SSO users to Snyk Organizations and grant permissions before they log in, using the API
+nav_context: classic
 ---
 
 # Provision users to Organizations using the API

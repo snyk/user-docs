@@ -1,5 +1,6 @@
 ---
 description: How to create an Azure Function App for the Snyk to New Relic webhook integration
+nav_context: agnostic
 ---
 
 # Create an Azure Function App

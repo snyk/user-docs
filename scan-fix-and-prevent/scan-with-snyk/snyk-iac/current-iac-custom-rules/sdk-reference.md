@@ -1,5 +1,6 @@
 ---
 description: Reference for the Snyk IaC custom rules SDK
+nav_context: agnostic
 ---
 
 # SDK reference

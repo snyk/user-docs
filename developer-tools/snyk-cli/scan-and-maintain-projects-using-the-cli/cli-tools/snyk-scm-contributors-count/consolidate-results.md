@@ -1,5 +1,6 @@
 ---
 description: How to use the consolidateResults command
+nav_context: agnostic
 ---
 
 # Consolidate results

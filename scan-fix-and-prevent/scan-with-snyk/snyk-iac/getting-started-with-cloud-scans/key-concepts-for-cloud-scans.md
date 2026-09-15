@@ -1,5 +1,6 @@
 ---
 description: Key concepts for Snyk cloud scans
+nav_context: agnostic
 ---
 
 # Key concepts for cloud scans

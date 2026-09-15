@@ -1,5 +1,6 @@
 ---
 description: How to configure the AWS provider for Snyk IaC drift detection
+nav_context: classic
 ---
 
 # Configure AWS provider

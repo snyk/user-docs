@@ -1,5 +1,6 @@
 ---
 description: How to pause Snyk API and Web scans
+nav_context: classic
 ---
 
 # Pause scans

@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Slack endpoints, including request parameters and response schemas
+---
+
 # Slack
 
 {% hint style="info" %}

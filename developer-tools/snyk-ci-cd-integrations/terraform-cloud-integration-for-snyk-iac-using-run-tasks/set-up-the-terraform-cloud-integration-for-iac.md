@@ -1,5 +1,6 @@
 ---
 description: How to set up the Terraform Cloud run task integration for Snyk IaC
+nav_context: classic
 ---
 
 # Set up the Terraform Cloud integration for IaC

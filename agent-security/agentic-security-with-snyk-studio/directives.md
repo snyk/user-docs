@@ -1,3 +1,10 @@
+---
+description: >-
+  How directives govern the way AI coding assistants follow your security
+  policy and standards
+nav_context: classic
+---
+
 # Directives
 
 Directives allow security and engineering teams to govern how AI coding assistants operate across your organization, ensuring adherence to security policy, code standards, and approved workflows.

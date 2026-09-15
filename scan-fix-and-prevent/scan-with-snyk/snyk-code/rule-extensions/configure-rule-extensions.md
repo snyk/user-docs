@@ -1,5 +1,6 @@
 ---
 description: How to configure Snyk Code Rule Extensions from the Group settings in the Snyk Web UI
+nav_context: classic
 ---
 
 # Configure Rule Extensions

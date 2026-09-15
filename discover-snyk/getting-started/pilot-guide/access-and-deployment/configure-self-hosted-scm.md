@@ -1,5 +1,6 @@
 ---
 description: How to connect self-hosted SCMs to Snyk through Snyk Broker for source code hosted in a private network
+nav_context: agnostic
 ---
 
 # Configure self-hosted SCM

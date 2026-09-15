@@ -1,5 +1,6 @@
 ---
 description: How to review Snyk scan coverage, including the Group-level SCM integration and the Inventory
+nav_context: classic
 ---
 
 # Review scan coverage

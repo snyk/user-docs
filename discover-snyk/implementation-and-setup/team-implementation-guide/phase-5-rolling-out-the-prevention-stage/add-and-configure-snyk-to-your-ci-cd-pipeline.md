@@ -1,5 +1,8 @@
 ---
-description: How to add Snyk to your CI/CD pipeline as a gatekeeper that fails builds on new vulnerabilities
+nav_context: agnostic
+description: >-
+  How to add Snyk to your CI/CD pipeline as a gatekeeper that fails builds on
+  new vulnerabilities
 ---
 
 # Add and configure Snyk to your CI/CD pipeline
@@ -17,7 +20,7 @@ A benefit of adding tests to your pipeline is that you do not need to import the
 When adding Snyk to a build pipeline, there are common options:
 
 * Using the specific [pipeline integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations) for your tool.
-* Using the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli) and running the specific commands directly.
+* Using the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli) and running the specific commands directly.
 
 Each option has benefits - using an existing pipeline integration may be faster and easier to configure, but using the Snyk CLI will give you a greater range of options and flexibility in your "fail" criteria.
 

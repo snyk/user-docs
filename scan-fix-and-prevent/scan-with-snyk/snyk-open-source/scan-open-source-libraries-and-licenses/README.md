@@ -1,5 +1,6 @@
 ---
 description: How to scan open source libraries and licenses with Snyk Open Source
+nav_context: classic
 ---
 
 # Scan open-source libraries and licenses
@@ -9,7 +10,7 @@ You can scan your open-source libraries using Snyk Open Source:
 * In the Snyk Web UI
 * With your [IDE](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions)
 * With a [CI/CD integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations)
-* Through the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source)
+* Through the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source)
 * Through the [Snyk API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1)
 
 ## View vulnerabilities in your open-source libraries

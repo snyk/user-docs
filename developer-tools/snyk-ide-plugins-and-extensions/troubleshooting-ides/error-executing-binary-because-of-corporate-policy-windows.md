@@ -1,5 +1,6 @@
 ---
 description: How to resolve Snyk binary execution errors from AppData restrictions on Windows
+nav_context: agnostic
 ---
 
 # Error executing binary because of corporate policy (Windows)

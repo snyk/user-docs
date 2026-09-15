@@ -1,5 +1,6 @@
 ---
 description: Troubleshooting and limitations for Snyk custom PR templates
+nav_context: agnostic
 ---
 
 # Troubleshooting and limitations for custom PR templates

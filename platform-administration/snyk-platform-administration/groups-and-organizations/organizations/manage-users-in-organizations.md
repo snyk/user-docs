@@ -1,5 +1,6 @@
 ---
 description: How to manage members of a Snyk Organization from the Members settings, based on your role permissions
+nav_context: classic
 ---
 
 # Manage users in Organizations

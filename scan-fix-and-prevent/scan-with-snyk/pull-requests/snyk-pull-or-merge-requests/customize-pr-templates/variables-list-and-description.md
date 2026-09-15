@@ -1,5 +1,6 @@
 ---
 description: The variables available for Snyk custom PR templates
+nav_context: agnostic
 ---
 
 # Variables list and description

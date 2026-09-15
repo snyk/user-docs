@@ -1,5 +1,6 @@
 ---
 description: How to verify domain ownership with a TXT file for Snyk API and Web
+nav_context: classic
 ---
 
 # Verify domain with TXT file

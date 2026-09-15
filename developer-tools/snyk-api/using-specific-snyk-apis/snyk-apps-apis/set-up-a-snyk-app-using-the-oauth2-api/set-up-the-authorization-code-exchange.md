@@ -1,5 +1,6 @@
 ---
 description: How to exchange an authorization code for a token in a Snyk App
+nav_context: agnostic
 ---
 
 # Set up the authorization code exchange

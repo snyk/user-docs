@@ -1,5 +1,6 @@
 ---
 description: Troubleshooting articles for Snyk IDE plugins and extensions
+nav_context: agnostic
 ---
 
 # Troubleshooting IDEs

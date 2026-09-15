@@ -1,5 +1,6 @@
 ---
 description: The report types available in Snyk API and Web
+nav_context: agnostic
 ---
 
 # Report types

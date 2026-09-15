@@ -1,5 +1,6 @@
 ---
 description: How to set up a OneLogin SAML application and connect it to Snyk for SSO
+nav_context: classic
 ---
 
 # OneLogin SAML Application setup

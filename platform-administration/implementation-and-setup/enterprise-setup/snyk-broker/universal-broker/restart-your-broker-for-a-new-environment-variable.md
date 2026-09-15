@@ -1,5 +1,6 @@
 ---
 description: How to restart the Broker to apply a new environment variable, and the exception for Kubernetes deployments
+nav_context: agnostic
 ---
 
 # Restart your Broker for a new environment variable

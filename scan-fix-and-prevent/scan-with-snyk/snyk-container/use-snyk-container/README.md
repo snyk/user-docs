@@ -1,5 +1,6 @@
 ---
 description: How to use Snyk Container to scan and monitor images
+nav_context: agnostic
 ---
 
 # Use Snyk Container

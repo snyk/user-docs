@@ -1,3 +1,10 @@
+---
+description: >-
+  How to access Snyk Studio in Windsurf with the Snyk Security plugin or a
+  direct install
+nav_context: classic
+---
+
 # Windsurf guide
 
 Access [Snyk Studio](../../), including Snyk's MCP server, in Windsurf to secure code generated with agentic workflows through an LLM. This can be achieved by using the Snyk Security plugin or installing Snyk Studio directly. For most users, we recommend accessing Snyk Studio using the Snyk Security plugin.
@@ -55,7 +62,7 @@ Once authenticated, Snyk Studio should be triggered whenever new code is generat
 ## Prerequisites
 
 * [Install Windsurf](windsurf-guide.md#install-windsurf)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](windsurf-guide.md#install-the-snyk-mcp-server-in-windsurf)
 
 ### Install Windsurf
@@ -157,4 +164,4 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.

@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk GitHub SCM integration, including prerequisites and Broker for private repositories
+nav_context: classic
 ---
 
 # GitHub

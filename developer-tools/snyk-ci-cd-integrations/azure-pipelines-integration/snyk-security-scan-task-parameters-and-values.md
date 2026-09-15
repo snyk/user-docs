@@ -1,5 +1,6 @@
 ---
 description: The configuration parameters and values for the Snyk Security Scan task in Azure Pipelines
+nav_context: classic
 ---
 
 # Snyk Security Scan task parameters and values

@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with the Nexus Container Registry
+nav_context: classic
 ---
 
 # Integrate with Nexus Container Registry

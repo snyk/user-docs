@@ -1,5 +1,6 @@
 ---
 description: How Snyk detects and prioritizes malicious packages
+nav_context: agnostic
 ---
 
 # Malicious packages

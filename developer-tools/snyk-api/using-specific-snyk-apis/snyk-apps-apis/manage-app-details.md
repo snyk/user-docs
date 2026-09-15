@@ -1,5 +1,6 @@
 ---
 description: How to list and manage Snyk Apps created by an Organization
+nav_context: agnostic
 ---
 
 # Manage App details

@@ -1,5 +1,6 @@
 ---
 description: How to set up Snyk SSO with your existing identity provider, including the information needed to establish trust
+nav_context: classic
 ---
 
 # Set up Snyk Single Sign-On (SSO)

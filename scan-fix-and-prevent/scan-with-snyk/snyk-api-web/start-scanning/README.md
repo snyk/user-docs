@@ -1,5 +1,6 @@
 ---
 description: How to start scanning targets with Snyk API and Web
+nav_context: agnostic
 ---
 
 # Start scanning

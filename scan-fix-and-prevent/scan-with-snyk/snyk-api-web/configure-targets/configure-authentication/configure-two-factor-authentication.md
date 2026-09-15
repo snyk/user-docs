@@ -1,5 +1,6 @@
 ---
 description: How to configure two-factor authentication for Snyk API and Web targets
+nav_context: classic
 ---
 
 # Two-factor authentication

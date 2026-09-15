@@ -1,5 +1,6 @@
 ---
 description: Environment variables to configure the Snyk Broker client for Bitbucket Server and Data Center with basic authentication
+nav_context: agnostic
 ---
 
 # Bitbucket Server/Data Center - environment variables for Snyk Broker Basic Auth

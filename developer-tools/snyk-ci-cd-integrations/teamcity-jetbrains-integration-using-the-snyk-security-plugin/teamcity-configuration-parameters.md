@@ -1,4 +1,5 @@
 ---
+nav_context: agnostic
 description: The Snyk settings and configuration parameters for the TeamCity integration
 ---
 
@@ -37,7 +38,7 @@ This page provides information about [Snyk settings](teamcity-configuration-para
 ## Additional parameters
 
 * Optional
-* Enter additional CLI options as necessary. See the [CLI documentation](../../snyk-cli/) and [cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/).
+* Enter additional CLI options as necessary. See the [CLI documentation](../../snyk-cli/overview.md) and [cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/).
 
 ## Snyk tool settings
 

@@ -1,5 +1,6 @@
 ---
 description: Guide to implementing Snyk for a team on the Team plan, covering discovery, configuration, visibility, and a fix strategy
+nav_context: agnostic
 ---
 
 # Team implementation guide

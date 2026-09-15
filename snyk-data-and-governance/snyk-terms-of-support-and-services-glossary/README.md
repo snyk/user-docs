@@ -1,5 +1,6 @@
 ---
 description: Glossary of terms for Snyk support plans and success service offerings purchased on an Order Form
+nav_context: agnostic
 ---
 
 # Snyk terms of support and services glossary

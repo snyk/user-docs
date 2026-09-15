@@ -1,5 +1,6 @@
 ---
 description: The information shown on Snyk issue cards
+nav_context: classic
 ---
 
 # Issue card information

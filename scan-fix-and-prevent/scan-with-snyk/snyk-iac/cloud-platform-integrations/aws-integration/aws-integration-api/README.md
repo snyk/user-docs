@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk AWS integration using the API
+nav_context: agnostic
 ---
 
 # AWS Integration: API

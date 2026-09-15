@@ -1,5 +1,6 @@
 ---
 description: How to remove an imported repository from a Project
+nav_context: classic
 ---
 
 # Remove imported repository from a Project

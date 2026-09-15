@@ -1,4 +1,5 @@
 ---
+nav_context: agnostic
 description: The Snyk Export API specifications, columns, and filters
 ---
 
@@ -531,24 +532,26 @@ At least one date filter (`introduced` for the `issues` dataset or `updated` for
 
 #### **Findings Context**
 
-| Column name          | Description                                                                             |
-| -------------------- | --------------------------------------------------------------------------------------- |
-| `FINDING_EVENT_ID`   | Unique identifier for the prevention event                                              |
-| `GROUP_PUBLIC_ID`    | UUID of the Snyk Group                                                                  |
-| `ORG_PUBLIC_ID`      | UUID of the Snyk Organization                                                           |
-| `GIT_REPO`           | Name of the Git repository where the scan was run                                       |
-| `GIT_BRANCH`         | Branch scanned                                                                          |
-| `FINDING_TITLE`      | Display title of the finding                                                            |
-| `EVENT_TYPE`         | One of `new`, `persisting`, or `fixed`                                                  |
-| `EVENT_TIMESTAMP`    | Timestamp when the prevention event occurred                                            |
-| `EFFECTIVE_SEVERITY` | Computed severity: `CRITICAL`, `HIGH`, `MEDIUM`, or `LOW`                               |
-| `PRODUCT_NAME`       | The Snyk product that detected the finding (e.g., `Snyk Code`)                          |
-| `SDLC_STAGE`         | Where in the developer workflow the event was detected: `IDE`, `CLI`, `MCP`, or `OTHER` |
-| `IS_SUPPRESSED`      | `true` if the finding was suppressed at the time of the event                           |
-| `PROBLEM_ID`         | Snyk Vulnerability Database ID that uniquely identifies the vulnerability.              |
-| `PROBLEM_TITLE`      | Name of the Snyk discovered vulnerability.                                              |
-| `CVE`                | CVE identifier, if applicable                                                           |
-| `CWE`                | CWE identifier, if applicable                                                           |
-| `TEST_USER_NAME`     | Display name of the user who triggered the scan                                         |
-| `TEST_USER_EMAIL`    | Email of the user who triggered the scan                                                |
-| `UPDATED_AT`         | Timestamp when this record was last updated in the data pipeline                        |
+| Column name          | Description                                                                                                |
+| -------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `FINDING_EVENT_ID`   | Unique identifier for the prevention event                                                                 |
+| `GROUP_PUBLIC_ID`    | UUID of the Snyk Group                                                                                     |
+| `ORG_PUBLIC_ID`      | UUID of the Snyk Organization                                                                              |
+| `FINDING_BRANCH_KEY` | Uniquely identifies a finding on a specific repository branch                                              |
+| `FINDING_ASSET_KEY`  | Stable per-finding fingerprint that identifies the same finding across scans for the same asset/repository |
+| `GIT_REPO`           | Name of the Git repository where the scan was run                                                          |
+| `GIT_BRANCH`         | Branch scanned                                                                                             |
+| `FINDING_TITLE`      | Display title of the finding                                                                               |
+| `EVENT_TYPE`         | One of `new`, `persisting`, or `fixed`                                                                     |
+| `EVENT_TIMESTAMP`    | Timestamp when the prevention event occurred                                                               |
+| `EFFECTIVE_SEVERITY` | Computed severity: `CRITICAL`, `HIGH`, `MEDIUM`, or `LOW`                                                  |
+| `PRODUCT_NAME`       | The Snyk product that detected the finding (e.g., `Snyk Code`)                                             |
+| `SDLC_STAGE`         | Where in the developer workflow the event was detected: `IDE`, `CLI`, `MCP`, or `OTHER`                    |
+| `IS_SUPPRESSED`      | `true` if the finding was suppressed at the time of the event                                              |
+| `PROBLEM_ID`         | Snyk Vulnerability Database ID that uniquely identifies the vulnerability.                                 |
+| `PROBLEM_TITLE`      | Name of the Snyk discovered vulnerability.                                                                 |
+| `CVE`                | CVE identifier, if applicable                                                                              |
+| `CWE`                | CWE identifier, if applicable                                                                              |
+| `TEST_USER_NAME`     | Display name of the user who triggered the scan                                                            |
+| `TEST_USER_EMAIL`    | Email of the user who triggered the scan                                                                   |
+| `UPDATED_AT`         | Timestamp when this record was last updated in the data pipeline                                           |

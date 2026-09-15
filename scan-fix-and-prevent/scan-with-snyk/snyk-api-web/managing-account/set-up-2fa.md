@@ -1,5 +1,6 @@
 ---
 description: How to set up two-factor authentication in Snyk API and Web
+nav_context: classic
 ---
 
 # Set up two-factor authentication

@@ -1,5 +1,6 @@
 ---
 description: How to add the POST method in AWS API Gateway to connect Snyk to Slack
+nav_context: agnostic
 ---
 
 # AWS API Gateway: add the POST method to connect Snyk to Slack

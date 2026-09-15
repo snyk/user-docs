@@ -1,5 +1,6 @@
 ---
 description: The actions available for Snyk security policies
+nav_context: agnostic
 ---
 
 # Security policy actions

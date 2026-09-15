@@ -1,5 +1,6 @@
 ---
 description: How to write Snyk IaC custom rules using the SDK
+nav_context: classic
 ---
 
 # Writing rules using the SDK

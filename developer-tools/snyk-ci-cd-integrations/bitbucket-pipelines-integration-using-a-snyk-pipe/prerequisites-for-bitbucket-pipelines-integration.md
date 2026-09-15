@@ -1,5 +1,6 @@
 ---
 description: Prerequisites for setting up the Snyk Bitbucket Pipelines pipe integration
+nav_context: agnostic
 ---
 
 # Prerequisites for Bitbucket Pipelines integration

@@ -1,5 +1,6 @@
 ---
 description: How Snyk Broker high availability mode runs several independent Broker clients to spread requests
+nav_context: classic
 ---
 
 # High availability mode

@@ -1,5 +1,6 @@
 ---
 description: How to view Snyk Open Source vulnerability results in the Visual Studio Code extension
+nav_context: classic
 ---
 
 # Analysis results: Snyk Open Source

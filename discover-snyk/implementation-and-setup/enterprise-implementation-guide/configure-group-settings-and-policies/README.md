@@ -1,5 +1,6 @@
 ---
 description: How to plan Snyk account structure and policies at the Group level for asset management, access control, and reporting
+nav_context: agnostic
 ---
 
 # Configure Group settings and policies

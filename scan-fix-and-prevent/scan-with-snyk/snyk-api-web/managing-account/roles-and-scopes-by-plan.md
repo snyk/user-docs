@@ -1,5 +1,6 @@
 ---
 description: The Snyk API and Web roles and scopes by plan
+nav_context: agnostic
 ---
 
 # Roles and scopes by plan

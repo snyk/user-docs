@@ -1,5 +1,6 @@
 ---
 description: How to understand Snyk Container results from the CLI
+nav_context: classic
 ---
 
 # Understand Snyk Container CLI results

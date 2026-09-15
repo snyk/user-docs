@@ -1,5 +1,6 @@
 ---
 description: How to manage and remediate your Snyk vulnerability backlog by prioritizing on risk and operationalizing fixes
+nav_context: agnostic
 ---
 
 # Manage and remediate issues

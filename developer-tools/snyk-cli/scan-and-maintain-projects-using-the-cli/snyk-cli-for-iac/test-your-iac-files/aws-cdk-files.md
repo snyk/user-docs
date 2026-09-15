@@ -1,5 +1,6 @@
 ---
 description: How to test AWS CDK files with Snyk IaC using the CLI
+nav_context: agnostic
 ---
 
 # AWS CDK files

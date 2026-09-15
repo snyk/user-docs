@@ -1,4 +1,5 @@
 ---
+nav_context: agnostic
 description: A summary of Snyk CLI commands and options
 ---
 
@@ -14,7 +15,7 @@ This page only summarizes the CLI commands and the options for each command. For
 
 ## Description
 
-The Snyk CLI is a build-time tool to find and fix known vulnerabilities in your projects. For a more detailed description of Snyk CLI and Snyk, see [Snyk CLI](./). For an introduction on how to use the Snyk CLI, see [Getting started with the CLI](getting-started-with-the-snyk-cli.md).
+The Snyk CLI is a build-time tool to find and fix known vulnerabilities in your projects. For a more detailed description of Snyk CLI and Snyk, see [Snyk CLI](overview.md). For an introduction on how to use the Snyk CLI, see [Getting started with the CLI](getting-started-with-the-snyk-cli.md).
 
 ## Available CLI commands
 
@@ -49,6 +50,10 @@ Print the name of the `snyk code` command with its help option: `snyk code test`
 ### [`snyk code test`](commands/code-test.md)
 
 Test source code for any known security issues (Static Application Security Testing).
+
+### [`snyk secrets test`](commands/secrets-test.md)
+
+Scan source code for hardcoded secrets, such as API keys, passwords, and tokens.
 
 ### [`snyk container`](commands/container.md)
 
@@ -85,6 +90,10 @@ Generate exclude policy rules to be used by `snyk iac describe`.
 ### [`snyk ignore`](commands/ignore.md)
 
 Modify the `.snyk` policy to ignore stated issues.
+
+### [`snyk ignore create`](commands/ignore-create.md)
+
+Create an ignore for a Snyk Code finding using Consistent Ignores for Snyk Code. This command is an Early Access feature.
 
 ### [`snyk log4shell`](commands/log4shell.md)
 
@@ -124,6 +133,8 @@ The following is a list of the sub-commands for Snyk CLI commands. Each sub-comm
 
 `environment`: subcommand of [`config`](commands/config.md)
 
+`create`: subcommand of [`ignore`](commands/ignore.md)
+
 ## Configure the Snyk CLI
 
 You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](configure-the-snyk-cli/).
@@ -140,6 +151,7 @@ Exit codes for the `test` commands are all the same. See the exit codes in the f
 * [`snyk container test` exit codes](commands/container-test.md#exit-codes)
 * [`snyk iac test` exit codes](commands/iac-test.md#exit-codes)
 * [`snyk code test` exit codes](commands/code-test.md#exit-codes)
+* [`snyk secrets test` exit codes](commands/secrets-test.md#exit-codes)
 
 Additional CLI commands have exit codes as listed in the following help docs:
 
@@ -162,7 +174,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--detection-depth=<DEPTH>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`iac test`](commands/iac-test.md), [`sbom`](commands/sbom.md)
 
-`--exclude=<NAME>[,<NAME>]...>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`sbom`](commands/sbom.md)
+`--exclude=<NAME>[,<NAME>]...>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`sbom`](commands/sbom.md), [`secrets test`](commands/secrets-test.md)
 
 `--prune-repeated-subdependencies`, `-p`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`sbom`](commands/sbom.md)
 
@@ -172,7 +184,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--dev`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`sbom`](commands/sbom.md)
 
-`--org=<ORG_ID>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`iac describe`](commands/iac-describe.md), [`sbom`](commands/sbom.md), [`container sbom`](commands/container-sbom.md), [`aibom`](commands/aibom.md)
+`--org=<ORG_ID>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`iac describe`](commands/iac-describe.md), [`sbom`](commands/sbom.md), [`container sbom`](commands/container-sbom.md), [`aibom`](commands/aibom.md), [`secrets test`](commands/secrets-test.md)
 
 `--file=<FILE>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md),[`sbom test`](commands/sbom-test.md)
 
@@ -190,29 +202,29 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--project-name=<PROJECT_NAME>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md)
 
-`--target-reference=<TARGET_REFERENCE>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`iac test`](commands/iac-test.md), [`container monitor`](commands/container-monitor.md)
+`--target-reference=<TARGET_REFERENCE>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`iac test`](commands/iac-test.md), [`container monitor`](commands/container-monitor.md), [`secrets test`](commands/secrets-test.md)
 
 `--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`iac describe`](commands/iac-describe.md), [`ignore`](commands/ignore.md)
 
-`--json`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`iac describe`](commands/iac-describe.md), [`sbom test`](commands/sbom-test.md)
+`--json`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`iac describe`](commands/iac-describe.md), [`sbom test`](commands/sbom-test.md), [`secrets test`](commands/secrets-test.md)
 
-`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md), [`sbom`](commands/sbom.md)
+`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md), [`sbom`](commands/sbom.md), [`secrets test`](commands/secrets-test.md)
 
-`--sarif`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md)
+`--sarif`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md), [`secrets test`](commands/secrets-test.md)
 
-`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md)
+`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md), [`secrets test`](commands/secrets-test.md)
 
-`--severity-threshold=<low|medium|high|critical>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md), [`sbom test`](commands/sbom-test.md)
+`--severity-threshold=<low|medium|high|critical>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md), [`sbom test`](commands/sbom-test.md), [`secrets test`](commands/secrets-test.md), [`aibom test`](commands/aibom-test.md)
 
 `--fail-on=<all|upgradable|patchable>`: [`container test`](commands/container-test.md), [`test`](commands/test.md)
 
-`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md)
+`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`secrets test`](commands/secrets-test.md)
 
-`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md)
+`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`secrets test`](commands/secrets-test.md)
 
-`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md)
+`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`secrets test`](commands/secrets-test.md)
 
-`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md)
+`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`secrets test`](commands/secrets-test.md)
 
 `--tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md)
 
@@ -224,8 +236,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 ## `snyk aibom` command options
 
+`--enriched`: [snyk aibom](commands/aibom.md), [snyk aibom test](commands/aibom-test.md)\
 `--html`\
-`--json-file-output`: [snyk aibom](commands/aibom.md)
+`--json-file-output`: [snyk aibom](commands/aibom.md), [snyk aibom test](commands/aibom-test.md)\
+`--severity-threshold=<low|medium|high|critical>`: [snyk aibom test](commands/aibom-test.md)
 
 ## `snyk auth` command options
 
@@ -326,6 +340,23 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--reason=<REASON>`: [`ignore`](commands/ignore.md)
 
 `--path=<PATH_TO_RESOURCE>`: [`ignore`](commands/ignore.md)
+
+## `snyk ignore create` command options
+
+`--finding-id=<FINDING_ID>`\
+`--ignore-type=<not-vulnerable|wont-fix|temporary-ignore>`\
+`--reason=<REASON>`\
+`--expiration=<YYYY-MM-DD|never>`\
+`--org=<ORG_ID>`\
+`--remote-repo-url=<URL>`: [`ignore create`](commands/ignore-create.md)
+
+## `snyk secrets test` command options
+
+`--include-ignores`: [`secrets test`](commands/secrets-test.md)
+
+`--report`: [`secrets test`](commands/secrets-test.md)
+
+`--target-name=<TARGET_NAME>`: [`secrets test`](commands/secrets-test.md)
 
 ## `snyk sbom` and `snyk container sbom` command options
 

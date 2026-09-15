@@ -1,5 +1,6 @@
 ---
 description: Snyk-maintained scripts and solutions for specific Snyk API use cases
+nav_context: agnostic
 ---
 
 # Solutions for specific use cases

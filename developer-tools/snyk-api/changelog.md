@@ -1,3 +1,118 @@
+## 2026-03-25 - Updated 2026-09-01
+
+### GET - `/orgs` - Updated
+- for the `query` request parameter `name`, the minLength was increased from `0` to `1`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### POST - `/orgs/{org_id}/projects/bulk-delete` - Added
+- Delete up to 100 projects in one request. Each project is reported in
+`meta.deleted` or `meta.failed`, so a partially successful request is
+still a 200. A project that does not exist in the org is ignored, and
+appears in neither list.
+
+#### Required permissions
+
+- `View Projects (org.project.read)`
+
+- `Remove Projects (org.project.delete)`
+
+## 2026-03-25 - Updated 2026-08-25
+
+### GET - `/orgs/{org_id}/policies` - Updated
+- added the non-success response with the status `500`
+
+
+## 2026-03-25 - Updated 2026-08-17
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the new optional `query` request parameter `include_code_flows`
+
+- added the optional property `data/items/attributes/coordinates/items/code_flows` to the response with the `200` status
+
+- added the optional property `data/items/attributes/coordinates/items/code_flows_omitted` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the new optional `query` request parameter `include_code_flows`
+
+- added the optional property `data/attributes/coordinates/items/code_flows` to the response with the `200` status
+
+- added the optional property `data/attributes/coordinates/items/code_flows_omitted` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the new optional `query` request parameter `include_code_flows`
+
+- added the optional property `data/items/attributes/coordinates/items/code_flows` to the response with the `200` status
+
+- added the optional property `data/items/attributes/coordinates/items/code_flows_omitted` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the new optional `query` request parameter `include_code_flows`
+
+- added the optional property `data/attributes/coordinates/items/code_flows` to the response with the `200` status
+
+- added the optional property `data/attributes/coordinates/items/code_flows_omitted` to the response with the `200` status
+
+
+## 2026-03-25 - Updated 2026-07-29
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the new `secrets` enum value to the `data/items/attributes/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the new `secrets` enum value to the `data/attributes/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the new `secrets` enum value to the `data/items/attributes/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the new `secrets` enum value to the `data/attributes/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+---
+nav_context: agnostic
+---
+## 2026-03-25 - Updated 2026-07-27
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Updated
+- added the required property `data/attributes/created_at` to the response with the `201` status
+
+- added the required property `data/attributes/updated_at` to the response with the `201` status
+
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Updated
+- added the required property `data/items/attributes/created_at` to the response with the `200` status
+
+- added the required property `data/items/attributes/updated_at` to the response with the `200` status
+
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Updated
+- added the required property `data/attributes/created_at` to the response with the `200` status
+
+- added the required property `data/attributes/updated_at` to the response with the `200` status
+
+
+
+### GET - `/tenants/{tenant_id}/brokers/deployments` - Updated
+- added the required property `data/items/attributes/created_at` to the response with the `200` status
+
+- added the required property `data/items/attributes/updated_at` to the response with the `200` status
+
+
 ## 2026-03-25 - Updated 2026-07-14
 
 ### POST - `/groups/{group_id}/secrets/rule_extensions` - Added

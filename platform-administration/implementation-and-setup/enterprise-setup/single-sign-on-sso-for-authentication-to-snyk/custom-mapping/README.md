@@ -1,5 +1,6 @@
 ---
 description: How Snyk custom mapping dynamically assigns users to Groups and Organizations based on identity provider data
+nav_context: classic
 ---
 
 # Custom mapping

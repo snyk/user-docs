@@ -1,5 +1,6 @@
 ---
 description: Templates for Snyk custom roles, with titles and permissions mapped to responsibilities across the development lifecycle
+nav_context: agnostic
 ---
 
 # Custom role templates

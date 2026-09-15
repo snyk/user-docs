@@ -1,5 +1,6 @@
 ---
 description: How to set a Snyk API token to read-only permissions
+nav_context: agnostic
 ---
 
 # Snyk API token permissions users can control

@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with the Quay Container Registry
+nav_context: classic
 ---
 
 # Integrate with Quay Container Registry

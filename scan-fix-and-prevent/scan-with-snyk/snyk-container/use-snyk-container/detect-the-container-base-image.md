@@ -1,5 +1,6 @@
 ---
 description: How Snyk Container detects the base image of a container
+nav_context: classic
 ---
 
 # Detect the container base image

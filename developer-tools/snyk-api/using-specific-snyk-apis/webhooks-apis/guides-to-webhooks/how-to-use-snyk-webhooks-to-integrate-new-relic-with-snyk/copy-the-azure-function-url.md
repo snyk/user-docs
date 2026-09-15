@@ -1,5 +1,6 @@
 ---
 description: How to copy the Azure Function URL for the Snyk to New Relic integration
+nav_context: classic
 ---
 
 # Copy the Azure Function URL

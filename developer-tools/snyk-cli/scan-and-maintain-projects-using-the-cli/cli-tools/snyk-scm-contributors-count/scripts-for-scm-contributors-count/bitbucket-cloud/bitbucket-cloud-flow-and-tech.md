@@ -1,5 +1,6 @@
 ---
 description: How the scm-contributors-count tool counts Bitbucket Cloud contributors
+nav_context: agnostic
 ---
 
 # Bitbucket Cloud - Flow and Tech

@@ -1,5 +1,6 @@
 ---
 description: How Snyk counts billable assets managed through Snyk Essentials
+nav_context: agnostic
 ---
 
 # How Snyk counts assets

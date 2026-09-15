@@ -1,5 +1,6 @@
 ---
 description: Overview of the Snyk Kubernetes integration
+nav_context: classic
 ---
 
 # Overview of Kubernetes integration

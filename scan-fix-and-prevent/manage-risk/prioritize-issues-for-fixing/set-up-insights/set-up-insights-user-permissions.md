@@ -1,5 +1,6 @@
 ---
 description: The user permissions required to set up Snyk Insights
+nav_context: agnostic
 ---
 
 # Set up Insights: user permissions

@@ -1,5 +1,6 @@
 ---
 description: How to identify the Organization and Group for Projects using the Snyk API
+nav_context: agnostic
 ---
 
 # Organization and Group identification for Projects using the API

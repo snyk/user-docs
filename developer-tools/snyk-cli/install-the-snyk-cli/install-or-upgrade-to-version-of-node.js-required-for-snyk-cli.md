@@ -1,5 +1,6 @@
 ---
 description: How to install or upgrade to the Node.js version required for the Snyk CLI
+nav_context: agnostic
 ---
 
 # Install or upgrade to version of Node.js required for Snyk CLI

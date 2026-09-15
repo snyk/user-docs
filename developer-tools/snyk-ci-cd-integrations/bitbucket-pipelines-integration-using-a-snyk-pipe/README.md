@@ -1,5 +1,6 @@
 ---
 description: How Snyk integrates with Bitbucket Pipelines using a Snyk pipe to scan your code
+nav_context: classic
 ---
 
 # Bitbucket Pipelines integration using a Snyk pipe

@@ -1,5 +1,6 @@
 ---
 description: How to expose a public URL for the AWS Lambda function to receive Snyk webhooks
+nav_context: agnostic
 ---
 
 # AWS Lambda setup: expose a public URL

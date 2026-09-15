@@ -2,6 +2,7 @@
 description: >-
   How to set up the Snyk Bitbucket Cloud App, the default Bitbucket Cloud
   integration
+nav_context: classic
 ---
 
 # Bitbucket Cloud App

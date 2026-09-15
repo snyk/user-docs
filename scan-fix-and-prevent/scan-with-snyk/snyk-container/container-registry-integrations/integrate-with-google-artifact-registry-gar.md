@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with Google Artifact Registry (GAR)
+nav_context: classic
 ---
 
 # Integrate with Google Artifact Registry (GAR)

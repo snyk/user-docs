@@ -1,5 +1,6 @@
 ---
 description: How to fix vulnerabilities using the Snyk CLI
+nav_context: classic
 ---
 
 # Fix vulnerabilities using the Snyk CLI

@@ -1,4 +1,5 @@
 ---
+nav_context: agnostic
 description: How to add a Snyk Open Source scan stage to AWS CodePipeline with CodeBuild
 ---
 
@@ -100,7 +101,7 @@ Using the [Snyk CLI](../snyk-cli/commands/) in CodeBuild gives you full access t
 
 ### Next Steps
 
-Refer to the [Snyk CLI](../snyk-cli/) documentation to incorporate additional security scans into your CI/CD pipeline.
+Refer to the [Snyk CLI](../snyk-cli/overview.md) documentation to incorporate additional security scans into your CI/CD pipeline.
 
 ## Conclusion
 
