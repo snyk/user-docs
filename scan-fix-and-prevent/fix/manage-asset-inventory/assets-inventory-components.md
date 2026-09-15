@@ -139,12 +139,12 @@ The Controls logos can have one of the following states:
 
 | Logo                                                                                  | Description                                                                      |
 | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| <img src="../../.gitbook/assets/coverage-controls.png" alt="" data-size="original">   | The Snyk product was executed.                                                   |
-| <img src="../../.gitbook/assets/coverage-controls-2.png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
-| <img src="../../.gitbook/assets/coverage-controls-3.png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
-| <img src="../../.gitbook/assets/coverage-controls-4.png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
-| <img src="../../.gitbook/assets/coverage-controls-5.png" alt="" data-size="original"> | The Snyk product was executed and failed with issues.                            |
-| <img src="../../.gitbook/assets/coverage-controls-6.png" alt="" data-size="original"> | The Snyk product was executed and failed due to not being covered by the policy. |
+| <img src="../../.gitbook/assets/coverage-controls.png" alt="Control logo: the Snyk product was executed" data-size="original">   | The Snyk product was executed.                                                   |
+| <img src="../../.gitbook/assets/coverage-controls-2.png" alt="Control logo: the Snyk product was executed but with issues" data-size="original"> | The Snyk product was executed but with issues.                                   |
+| <img src="../../.gitbook/assets/coverage-controls-3.png" alt="Control logo: the Snyk product should have been executed but was not" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
+| <img src="../../.gitbook/assets/coverage-controls-4.png" alt="Control logo: the Snyk product was executed and failed" data-size="original"> | The Snyk product was executed and failed.                                        |
+| <img src="../../.gitbook/assets/coverage-controls-5.png" alt="Control logo: the Snyk product was executed and failed with issues" data-size="original"> | The Snyk product was executed and failed with issues.                            |
+| <img src="../../.gitbook/assets/coverage-controls-6.png" alt="Control logo: the Snyk product was executed and failed because it is not covered by the policy" data-size="original"> | The Snyk product was executed and failed due to not being covered by the policy. |
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.
 

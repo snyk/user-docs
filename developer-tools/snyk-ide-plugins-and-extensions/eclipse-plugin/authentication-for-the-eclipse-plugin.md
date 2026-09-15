@@ -13,7 +13,7 @@ Snyk supports the following protocols for authentication:
 * Personal Access Token
 * Snyk API token (Legacy)
 
-<figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-plugin-eclipse.png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Eclipse</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-plugin-eclipse.png" alt="Authentication methods available in the Snyk plugin in Eclipse"><figcaption><p>Authentication methods available in the Snyk plugin in Eclipse</p></figcaption></figure>
 
 ## Steps to authenticate using the OAuth 2.0 protocol
 
@@ -25,11 +25,11 @@ After the plugin is installed, follow these steps to authenticate:
    \
    When you are finished with the settings on this page, click **Next**.
 
-<figure><img src="../../.gitbook/assets/SCR-20240822-mgxw.png" alt="" width="563"><figcaption><p>Snyk endpoint configuration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20240822-mgxw.png" alt="Snyk endpoint configuration" width="563"><figcaption><p>Snyk endpoint configuration</p></figcaption></figure>
 
 2. On the next page, follow the prompts, then click **Finish**.
 
-<figure><img src="../../.gitbook/assets/SCR-20240822-mibb.png" alt="" width="563"><figcaption><p>Additional information and finish</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20240822-mibb.png" alt="Additional information and finish" width="563"><figcaption><p>Additional information and finish</p></figcaption></figure>
 
 3. A new browser page opens, requiring you to log in to your Snyk account.
 4. In the next prompt, the Snyk IDE plugin requests access to act on your behalf. Click **Grant app access**.
@@ -57,7 +57,7 @@ To authenticate using the Personal Access Token, follow these steps:
    (On Windows/Linux navigate to **Window** > **Preferences** > **Snyk**)
 2.  Set the **Authentication Method** to **Use Personal Access Token**.
 
-    <figure><img src="../../.gitbook/assets/steps-authenticate-using-personal-access-token-2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-personal-access-token-2.png" alt="Authenticating the Eclipse plugin with a Personal Access Token"><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4. Create your **Personal Access Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
 5. Add the token in the **Token** field.
@@ -75,11 +75,11 @@ To authenticate using the API token, follow these steps:
    (On Windows/Linux navigate to **Window** > **Preferences** > **Snyk**)
 2.  Set the **Authentication Method** to **API token**.
 
-    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token-2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token-2.png" alt="Selecting the API token authentication method in the Eclipse preferences"><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token.png" alt="Authenticating the Eclipse plugin with a Snyk API token"><figcaption></figcaption></figure>
 5. The API token is automatically updated in the **API Token field**.
 6. Click **Apply and Close**.
 
