@@ -3,6 +3,8 @@ description: How to review Snyk scan coverage, including the Group-level SCM int
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Review scan coverage
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

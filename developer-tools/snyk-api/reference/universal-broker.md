@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Universal Broker endpoints, including request parameters and response schemas
+---
+
 # Universal Broker
 
 {% hint style="info" %}

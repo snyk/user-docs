@@ -1,6 +1,8 @@
 ---
-description: How Snyk GitHub Actions set up Snyk and check for vulnerabilities in your pipeline
 nav_context: classic
+description: >-
+  How Snyk GitHub Actions set up Snyk and check for vulnerabilities in your
+  pipeline
 ---
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}
@@ -9,9 +11,11 @@ nav_context: classic
 
 ## Overview of GitHub Actions Integration
 
-Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using Snyk to check for vulnerabilities in your GitHub projects. These actions are based on the [Snyk CLI](../../snyk-cli/), and you can use [all of its options and capabilities](../../snyk-cli/cli-commands-and-options-summary.md) with the `args` in the [properties](./#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
+Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using Snyk to check for vulnerabilities in your GitHub projects. These actions are based on the [Snyk CLI](../../snyk-cli/overview.md), and you can use [all of its options and capabilities](../../snyk-cli/cli-commands-and-options-summary.md) with the `args` in the [properties](./#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
 
 There is also a [Snyk Setup Action](snyk-setup-action.md).
+
+If your organization uses a Snyk region other than the default, visit [Regional API endpoints](regional-api-endpoints.md).
 
 For more information, see the [GitHub Actions feature](https://github.com/features/actions) page and the [GitHub custom actions](https://docs.github.com/en/actions/creating-actions/about-actions) documentation.
 
@@ -24,24 +28,47 @@ For detailed information about the Setup Action and examples, see [Snyk Setup Ac
 ### GitHub Actions for Open Source languages and package managers
 
 * [Snyk CocoaPods Action](snyk-cocoapods-action.md)
-* [Snyk dotNET Action](snyk-dotnet-action.md)
+* Snyk Elixir-1.18 Action
 * [Snyk Golang Action](snyk-golang-action.md)
 * [Snyk Gradle Action](snyk-gradle-action.md)
-* [Snyk Gradle-jdk11 Action](snyk-gradle-jdk11-action.md)
-* [Snyk Gradle-jdk12 Action](snyk-gradle-jdk12-action.md)
-* [Snyk Gradle-jdk14 Action](snyk-gradle-jdk14-action.md)
-* [Snyk Gradle-jdk16 Action](snyk-gradle-jdk16-action.md)
-* [Snyk Gradle-jdk17 Action](snyk-gradle-jdk17-action.md)
+* Snyk Gradle-8-jdk17 Action
+* Snyk Gradle-9-jdk17 Action
+* Snyk Gradle-8-jdk21 Action
+* Snyk Gradle-9-jdk21 Action
+* Snyk Gradle-8-jdk24 Action
+* Snyk Gradle-9-jdk24 Action
 * [Snyk Maven Action](snyk-maven-action.md)
 * [Snyk Maven-3-jdk-11 Action](snyk-maven-3-jdk-11-action.md)
+* Snyk Maven-3-jdk-17 Action
+* Snyk Maven-3-jdk-21 Action
+* Snyk Maven-3-jdk-24 Action
 * [Snyk Node Action](snyk-node-action.md)
 * [Snyk PHP Action](snyk-php-action.md)
 * [Snyk Python Action](snyk-python-action.md)
-* [Snyk Python-3.6 Action](snyk-python-3.6-action.md)
-* [Snyk Python-3.7 Action](snyk-python-3.7-action.md)
-* [Snyk Python-3.8 Action](snyk-python-3.8-action.md)
+* Snyk Python-3.9 Action
+* Snyk Python-3.10 Action
+* Snyk Python-3.11 Action
+* Snyk Python-3.12 Action
 * [Snyk Ruby Action](snyk-ruby-action.md)
-* [Snyk Scala Action](snyk-scala-action.md)
+* Snyk SBT1.10.0-Scala3.4.2 Action
+
+### Deprecated GitHub Actions
+
+The following actions are deprecated and no longer supported. Use the actions listed in the preceding sections instead.
+
+* Snyk dotNET Action
+* Snyk Gradle-jdk11 Action
+* Snyk Gradle-jdk12 Action
+* Snyk Gradle-jdk14 Action
+* Snyk Gradle-jdk16 Action
+* Snyk Gradle-jdk17 Action
+* Snyk Gradle-jdk21 Action
+* Snyk Maven-3-jdk-20 Action
+* Snyk Maven-3-jdk-22 Action
+* Snyk Python-3.6 Action
+* Snyk Python-3.7 Action
+* Snyk Python-3.8 Action
+* Snyk Scala Action
 
 ### GitHub Actions for Snyk Container and Snyk Infrastructure as Code
 

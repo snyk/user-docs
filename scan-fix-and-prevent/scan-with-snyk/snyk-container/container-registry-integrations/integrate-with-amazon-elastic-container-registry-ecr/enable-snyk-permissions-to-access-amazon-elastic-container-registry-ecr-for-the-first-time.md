@@ -5,11 +5,11 @@ nav_context: classic
 
 # Enable Snyk permissions to access Amazon Elastic Container Registry (ECR) for the first time
 
+This process explains how to set up a resource role in AWS and the necessary policies. For additional information, see the [Amazon ECR documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr_managed_policies.html).
+
 {% hint style="warning" %}
 When you connect to the ECR integration, ensure that the us-east-2 region is activated. This is required for the STS (Security Token Service) to work properly. For more information, see the [related support article](https://support.snyk.io/s/article/Connecting-to-ECR-Integration-gives-error-Could-not-connect-to-ECR-Please-ensure-your-credentials-are-correctly-configured).
 {% endhint %}
-
-This process explains how to set up a resource role in AWS and the necessary policies. For additional information, see the [Amazon ECR documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr_managed_policies.html).
 
 1. [Log in](https://console.aws.amazon.com/iam/home?#/policies) to the AWS Management Console.
 2. Navigate to the IAM service.

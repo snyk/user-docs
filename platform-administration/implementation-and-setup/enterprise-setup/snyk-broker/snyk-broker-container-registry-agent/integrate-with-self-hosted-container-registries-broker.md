@@ -3,6 +3,8 @@ description: How to integrate self-hosted container registries with Snyk Broker,
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with self-hosted container registries
 
 {% hint style="info" %}

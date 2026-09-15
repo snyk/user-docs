@@ -5,13 +5,13 @@ nav_context: agnostic
 
 # Snyk Learn - Learning Admin
 
+To use [Snyk Learn Access Controls](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/developer-education-with-snyk-learn/snyk-learn/snyk-learn-access-controls) beyond the default Snyk Group and Organization Admin roles, a Snyk Group Admin must create a custom role.
+
 {% hint style="info" %}
 **Feature availability**
 
 This role requires the [Snyk Learn Assignments](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/developer-education-with-snyk-learn/snyk-learn/snyk-learn-assignments) feature, which is part of the Learning Management add-on. For more information, contact your Snyk account team.
 {% endhint %}
-
-To use [Snyk Learn Access Controls](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/developer-education-with-snyk-learn/snyk-learn/snyk-learn-access-controls) beyond the default Snyk Group and Organization Admin roles, a Snyk Group Admin must create a custom role.
 
 To create this role, enable the following permissions in the relevant categories:
 

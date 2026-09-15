@@ -1,6 +1,8 @@
 ---
-description: Snyk support for Scala with Snyk Code and Snyk Open Source, including SCM import, CLI and IDE testing, and supported frameworks
 nav_context: agnostic
+description: >-
+  Snyk support for Scala with Snyk Code and Snyk Open Source, including SCM
+  import, CLI and IDE testing, and supported frameworks
 ---
 
 # Scala
@@ -42,7 +44,6 @@ For Scala, the following frameworks and libraries are supported:
 
 For an overview of the supported security rules, visit [Scala rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/scala-rules).
 
-
 For Scala with Snyk Code, the following file format is supported: `.scala`
 
 Available features:
@@ -71,7 +72,7 @@ For sbt, Snyk provides: CLI support, SCM support, and license scanning.
 
 ### CLI support for Scala
 
-The [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli) uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin, which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.
+The [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli) uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin, which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.
 
 However, the recommended method of calling the plugin in sbt 1.4+ is not compatible with Snyk. Use the legacy method, `addSbtPlugin()` instead. Snyk recommends installing the `sbt-dependency-graph` as a [global plugin](https://www.scala-sbt.org/1.x/docs/Using-Plugins.html#Global+plugins) so you can use it in any `sbt` project.
 

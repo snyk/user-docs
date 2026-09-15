@@ -3,6 +3,8 @@ description: How to find and take Snyk Learn lessons and learning paths from the
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Your learning
 
 ## Finding learning opportunities

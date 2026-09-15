@@ -3,6 +3,8 @@ description: How to remove members from Snyk Groups and Organizations programmat
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Remove members from Groups and Orgs using the API
 
 To remove members from Groups and Organizations programmatically from user accounts, you can use the API as explained in the steps that follow. You cannot use these API calls to remove service accounts.

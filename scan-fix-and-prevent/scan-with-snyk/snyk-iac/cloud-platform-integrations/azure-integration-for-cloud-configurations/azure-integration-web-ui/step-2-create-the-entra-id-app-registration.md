@@ -5,12 +5,12 @@ nav_context: classic
 
 # Step 2: Create the Entra ID app registration
 
+To scan an Azure subscription, Snyk takes the permissions of a service principal with a [Reader](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#reader) role that allows Snyk to scan the configuration of your subscription resources.
+
 {% hint style="info" %}
 **Recap**\
 You have downloaded the Terraform template declaring the [Azure Active Directory (AD) application registration](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-registration), [federated identity credential](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation), and [service principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) for Snyk. Now you need to provision the infrastructure.
 {% endhint %}
-
-To scan an Azure subscription, Snyk takes the permissions of a service principal with a [Reader](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#reader) role that allows Snyk to scan the configuration of your subscription resources.
 
 Additionally, Snyk has a security feature that locks the federated credential for a subscription and tenant to the Organization that onboards it. This ensures that nobody can guess the credential's name and onboard it into a separate Organization to see those resources.
 

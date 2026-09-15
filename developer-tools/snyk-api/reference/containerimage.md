@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the ContainerImage endpoints, including request parameters and response schemas
+---
+
 # ContainerImage
 
 {% hint style="info" %}

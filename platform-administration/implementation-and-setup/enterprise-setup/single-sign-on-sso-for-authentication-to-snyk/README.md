@@ -3,6 +3,8 @@ description: How Snyk supports Single Sign-On (SSO) authentication through your 
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Single Sign-On (SSO) for authentication to Snyk
 
 {% hint style="info" %}

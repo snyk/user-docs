@@ -3,6 +3,8 @@ description: How to install and configure Snyk Broker for Jira using Docker
 nav_context: classic
 ---
 
+{% include "../../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Jira - install and configure using Docker
 
 Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md).

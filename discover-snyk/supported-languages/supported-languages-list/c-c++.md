@@ -1,7 +1,11 @@
 ---
-description: Snyk support for C and C++ with Snyk Code and Snyk Open Source, including CLI and IDE testing and supported frameworks and libraries
 nav_context: classic
+description: >-
+  Snyk support for C and C++ with Snyk Code and Snyk Open Source, including CLI
+  and IDE testing and supported frameworks and libraries
 ---
+
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
 
 # C/C++
 
@@ -56,7 +60,6 @@ For Conan, Snyk supports [conan.io](https://conan.io/center) as a package regist
 ## C/C++ for Snyk Code
 
 For an overview of the supported security rules, visit [C/C++ rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/c-c++-rules).
-
 
 For C/C++ for Snyk Code, the embedded operating system is Linux. Support for Windows is limited.
 

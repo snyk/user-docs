@@ -5,11 +5,11 @@ nav_context: agnostic
 
 # Snyk Python-3.7 action
 
+This page provides examples of using the Snyk GitHub Action for [Python (3.7)](https://github.com/snyk/actions/tree/master/python-3.7). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
+
 {% hint style="warning" %}
 This image has been removed on 12 Aug 2024. It is highly recommended that users consider migrating to a newer action to ensure continued support and up-to-date functionality. If you are currently using this image, plan an upgrade as soon as possible to avoid any disruptions in your workflow after this date.
 {% endhint %}
-
-This page provides examples of using the Snyk GitHub Action for [Python (3.7)](https://github.com/snyk/actions/tree/master/python-3.7). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
 ## Snyk Python (3.7) Action
 

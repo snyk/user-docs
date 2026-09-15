@@ -1,6 +1,8 @@
 ---
-description: How to run a Snyk scan in the JetBrains plugin once it is configured, authenticated, and trusted
 nav_context: classic
+description: >-
+  How to run a Snyk scan in the JetBrains plugin once it is configured,
+  authenticated, and trusted
 ---
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}
@@ -45,19 +47,18 @@ By default, all levels are selected. You must select at least one.
 
 Snyk severity icons have the following meaning:
 
-| ![](<../../.gitbook/assets/severity-filter-2.png>) Critical severity | May allow attackers to access sensitive data and run code on your application.                                                               |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../.gitbook/assets/severity-filter.png>) High severity         | May allow attackers to access sensitive data on your application.                                                                            |
-| ![](<../../.gitbook/assets/severity-filter-3.png>) Medium severity       | May allow attackers under some conditions to access sensitive data on your application.                                                      |
-| ![](<../../.gitbook/assets/overview-results.png>) Low severity          | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![](../../.gitbook/assets/severity-filter-2.png) Critical severity | May allow attackers to access sensitive data and run code on your application.                                                               |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](../../.gitbook/assets/severity-filter.png) High severity       | May allow attackers to access sensitive data on your application.                                                                            |
+| ![](../../.gitbook/assets/severity-filter-3.png) Medium severity   | May allow attackers under some conditions to access sensitive data on your application.                                                      |
+| ![](../../.gitbook/assets/overview-results.png) Low severity       | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 ### Filter by issue type
 
 Snyk reports the following types of issues:
 
 * Open Source issues: found in open source dependencies. For details, see the section [Snyk Open Source issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-open-source-issues).
-* Code Security issues: found in your application’s source code. For details, see the section [Snyk Code security vulnerabilities and quality issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-code-security-vulnerabilities-and-quality-issues).
-* Code Quality issues: found in your application source code. For details, see the section [Snyk Code security vulnerabilities and quality issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-code-security-vulnerabilities-and-quality-issues).
+* Code Security issues: found in your application’s source code. For details, see the section [Snyk Code security vulnerabilities](run-an-analysis-with-the-jetbrains-plugin.md#snyk-code-security-vulnerabilities).
 * Infrastructure as Code issues: found in infrastructure as code files. For details, see the section [Snyk Infrastructure as Code issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-infrastructure-as-code-issues).
 * Container issues: found in images sourced from Kubernetes workload files. For details, see the section [Snyk Container issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-container-issues).
 
@@ -109,13 +110,9 @@ You can change the base branch or base folder by following these steps, as illus
 
 ## Available Snyk issue types
 
-### Snyk Code security vulnerabilities and quality issues
+### Snyk Code security vulnerabilities
 
-Snyk Code analysis shows a list of security vulnerabilities and code quality issues found in your application code.
-
-{% hint style="info" %}
-Effective beginning on June 24, 2025, Snyk Code Quality issues will no longer be provided.
-{% endhint %}
+Snyk Code analysis shows a list of security vulnerabilities found in your application code.
 
 For more details and examples of fixes others used to fix the issue, select the security vulnerability or the code security issue.
 
@@ -141,6 +138,10 @@ The Snyk JetBrains IDE plugin will no longer detect container images specified i
 
 The JetBrains plugin scans Kubernetes configuration files and searches for container images. Vulnerabilities are found quickly using the extracted container images and comparative analysis against the latest information from the [Snyk Vulnerability Database](https://security.snyk.io).
 
-Snyk Container analysis shows each of the security vulnerabilities that might affect your image. To see more detailed information, select a vulnerability.
+Snyk Container analysis shows all security vulnerabilities that might affect your image. To see more detailed information, select a vulnerability.
 
 A comparison table shows the severity levels, such as critical or high. This shows the difference in vulnerabilities between the current image and the image recommended by Snyk, with the same characteristics sorted by severity. This helps you decide if you want to upgrade your image to the recommended one and increase the level of confidence in the image you are running in production.
+
+{% hint style="info" %}
+To use the Ignore Approval Workflow with JetBrains, follow the steps in [View analysis results from Visual Studio Code extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension).
+{% endhint %}

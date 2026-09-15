@@ -3,6 +3,8 @@ description: How to obtain the API tokens and credentials required to set up Sny
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Obtain the tokens required to set up Snyk Broker
 
 {% hint style="info" %}

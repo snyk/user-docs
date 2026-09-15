@@ -3,6 +3,8 @@ description: How to manage members of a Snyk Organization from the Members setti
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Manage users in Organizations
 
 In the **Organization** where you want to manage users, select the **Members** menu option.

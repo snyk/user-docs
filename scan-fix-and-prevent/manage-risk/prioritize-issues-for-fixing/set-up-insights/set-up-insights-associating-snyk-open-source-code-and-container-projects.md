@@ -1,6 +1,6 @@
 ---
-description: How to associate Snyk Open Source, Code, and Container Projects for Insights
 nav_context: classic
+description: How to associate Snyk Open Source, Code, and Container Projects for Insights
 ---
 
 # Set up Insights: associating Snyk Open Source, Code, and Container Projects
@@ -16,10 +16,10 @@ The Set up Insights UI displays a variety of asset types, including but not limi
 * Container images
 * Scanned artifacts
 
-These assets are directly linked to the ones displayed on the [Snyk Inventory](../../../manage-assets/assets-inventory-components.md) view.
+These assets are directly linked to the ones displayed on the [Snyk Inventory](../../../fix/manage-asset-inventory/assets-inventory-components.md) view.
 
 {% hint style="info" %}
-For more details regarding supported assets, you can navigate to the [Asset](../../../manage-assets/assets-inventory-components.md#asset) and [Issue](../../../manage-assets/assets-inventory-components.md#issues) pages.
+For more details regarding supported assets, you can navigate to the [Asset](../../../fix/manage-asset-inventory/assets-inventory-components.md#asset) and [Issue](../../../fix/manage-asset-inventory/assets-inventory-components.md#issues) pages.
 {% endhint %}
 
 The container image is the build artifact that is deployed and running on your Kubernetes cluster, so Snyk can map your application from its source code to its deployed state by understanding the following:
