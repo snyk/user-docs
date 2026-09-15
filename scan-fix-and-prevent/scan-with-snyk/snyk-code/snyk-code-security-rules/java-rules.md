@@ -29,6 +29,7 @@ Each rule includes the following information.
 | Android Fragment Injection                                   | CWE-470          | OWASP:A05:2025                                            |
 | Use of Hardcoded Passwords                                   | CWE-798, CWE-259 | OWASP:A07:2025                                            |
 | Hardcoded Secret                                             | CWE-547          | OWASP:A02:2025                                            |
+| HTTP Strict Transport Security (HSTS) Disabled               | CWE-693          | OWASP:A06:2025                                            |
 | Improper Neutralization of CRLF Sequences in HTTP Headers    | CWE-113          | OWASP:A05:2025                                            |
 | Disabled Neutralization of CRLF Sequences in HTTP Headers    | CWE-113          | OWASP:A05:2025                                            |
 | Inadequate Padding for AES encryption                        | CWE-326          | OWASP:A04:2025                                            |

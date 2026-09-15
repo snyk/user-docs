@@ -32,3 +32,4 @@ Each rule includes the following information.
 | Use of Insufficiently Random Values                         | CWE-330          | OWASP:A04:2025                                      |
 | Use of Password Hash With Insufficient Computational Effort | CWE-916          | OWASP:A04:2025                                      |
 | Use of a Broken or Risky Cryptographic Algorithm            | CWE-327          | OWASP:A04:2025                                      |
+| XPath Injection                                             | CWE-643          | OWASP:A05:2025                                      |
