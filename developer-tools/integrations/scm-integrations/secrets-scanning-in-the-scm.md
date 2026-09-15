@@ -1,3 +1,9 @@
+---
+description: >-
+  How Snyk Secrets detects hard-coded secrets in your SCM repositories and
+  pull requests
+---
+
 # Secrets scanning in the SCM
 
 {% hint style="info" %}

@@ -1,3 +1,8 @@
+---
+description: >-
+  How to view, edit, and delete your Continuous Offensive Security targets
+---
+
 # Manage Targets
 
 Manage your configured targets on the targets page. It lists your managed targets and allows direct actions.

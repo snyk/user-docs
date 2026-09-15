@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the SecretsRuleExtensions endpoints, including request parameters and response schemas
+---
+
 # SecretsRuleExtensions
 
 {% hint style="info" %}

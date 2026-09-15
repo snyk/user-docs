@@ -1,4 +1,5 @@
 ---
+description: How to set up Snyk Studio and the Snyk MCP server in Qodo
 nav_context: classic
 ---
 

@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Projects endpoints, including request parameters and response schemas
+---
+
 # Projects
 
 {% hint style="info" %}

@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to configure Agentic Development Security and install it on one machine
+  or across your company
 nav_context: classic
 ---
 

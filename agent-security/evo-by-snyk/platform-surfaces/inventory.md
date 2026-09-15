@@ -1,4 +1,7 @@
 ---
+description: >-
+  How Inventory presents the AI assets discovered across your environment with
+  their assessed risk
 nav_context: agnostic
 ---
 

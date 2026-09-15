@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to use Evo chat to explore your inventory, manage policies, and generate
+  reports in natural language
 nav_context: classic
 ---
 

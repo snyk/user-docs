@@ -1,4 +1,5 @@
 ---
+description: How to enable Snyk Evo for your Tenant, add members, and assign roles
 nav_context: classic
 ---
 

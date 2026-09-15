@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to integrate Snyk Evo with Anthropic's Claude Enterprise to inventory AI
+  assets
 nav_context: classic
 ---
 

@@ -1,4 +1,7 @@
 ---
+description: >-
+  How Agentic Development Security secures the AI agents that build your
+  software
 nav_context: agnostic
 ---
 

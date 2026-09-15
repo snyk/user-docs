@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to save Evo chat views as reports that update automatically as your data
+  changes
 nav_context: classic
 ---
 

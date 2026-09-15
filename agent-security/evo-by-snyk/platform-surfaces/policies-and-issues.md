@@ -1,4 +1,6 @@
 ---
+description: >-
+  How Evo policies govern AI use and raise issues when an asset violates them
 nav_context: classic
 ---
 

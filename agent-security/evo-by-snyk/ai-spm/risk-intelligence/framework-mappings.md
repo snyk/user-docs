@@ -1,3 +1,7 @@
+---
+description: How Snyk maps attacker goals to four industry governance frameworks
+---
+
 # Framework mappings
 
 Map Snyk findings to your existing governance frameworks. Snyk cross-references each identified attacker goal with four industry frameworks. This allows you to align security findings with the controls, control families, or risk categories your governance process already tracks.

@@ -434,7 +434,7 @@ Use Snyk PR Checks to prevent new security issues from entering your codebase by
 
 ### Priority Score
 
-Snyk scores issues, including vulnerabilities and licenses for Open Source, to help prioritize the treatment of each one. Scores are based on multiple factors, including the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/priority-score).
+A score from 0 to 1,000 that ranks how urgently you need to fix an issue, where a higher score means a more urgent issue. Snyk calculates it from multiple factors, including severity, exploit maturity, reachability, and the availability of a fix. It applies to both vulnerabilities and license issues. Unlike [Severity](glossary.md#severity), the Priority Score is a rank with no defined bands, so a score does not correspond to Critical, High, Medium, or Low. Priority Score applies to Snyk Code and Snyk IaC issues, and to Snyk Open Source and Snyk Container issues when [Risk Score](glossary.md#risk-score) is not enabled. Visit [Priority Score](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/priority-score) and [Priority Score vs Risk Score](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/priority-score-vs-risk-score).
 
 ### Project
 
@@ -490,9 +490,9 @@ A repository asset is created by discovering the repositories directly in the SC
 
 A cloud infrastructure entity such as an AWS S3 bucket, Identity and Access Management (IAM) role, or Virtual Private Cloud (VPC) flow log.
 
-### Risk score
+### Risk Score
 
-A value assigned to an issue, ranging from 0 to 1,000, representing the risk imposed on your environment.
+A score from 0 to 1,000 that represents the risk an issue imposes on your environment, based on the potential impact and the likelihood of exploitation. A higher score means greater risk. Like the [Priority Score](glossary.md#priority-score), the Risk Score is a rank with no defined bands, so a score does not correspond to a severity level. Risk Score is in Early Access for Snyk Open Source and Snyk Container, applies to vulnerabilities but not to license issues, and you enable it through Snyk Preview. Where it applies, the Risk Score replaces the Priority Score after the next retest. Visit [Risk Score](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/risk-score) and [Priority Score vs Risk Score](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/priority-score-vs-risk-score).
 
 ### Rule
 
@@ -562,7 +562,7 @@ A non-human identity used to authenticate automated processes, such as CI/CD pip
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/severity-levels).
+A level indicating the assessed risk of an issue: Critical, High, Medium, or Low. Each level maps to a defined score range. Snyk determines severity for vulnerabilities from the CVSS Base Score, and for IaC+ misconfigurations from the CCSS Base Score. Snyk Code uses High, Medium, and Low, and does not natively assign Critical. License issues use High, Medium, Low, and None, set by your license policy rather than by a CVSS score. Severity is one of the factors that feed the [Priority Score](glossary.md#priority-score) and the [Risk Score](glossary.md#risk-score), which rank issues but do not map to severity levels. Visit [Severity levels](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/severity-levels).
 
 ### Skill (Snyk Studio)
 

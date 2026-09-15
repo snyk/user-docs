@@ -1,6 +1,8 @@
 ---
-description: How to view your Snyk plan and billing details on the Your Plan page, available on Enterprise plans
 nav_context: classic
+description: >-
+  How to view your Snyk plan and billing details on the Your Plan page,
+  available on Enterprise plans
 ---
 
 # Plan and billing
@@ -21,12 +23,12 @@ The **Your Plan** page consolidates your plan information to show your entitleme
 To access the Your Plan page, you must have the Tenant Admin role on an Enterprise plan.
 {% endhint %}
 
-Navigate to **Group** **Settings** > **Plan and billing** > **Your Plan** from your Tenant to view your plan, contract details, and included capabilities.
+In the **scope selector** at the top of the page, select your Tenant. Navigate to **Settings** > **Plan and billing** > **Your Plan** to view your plan, contract details, and included capabilities.
 
 The page header summarizes your plan:
 
 * **Plan**: The name of your current plan, for example, Enterprise.
-* **Marketplace**: Snyk displays a badge if your organization purchases through a cloud marketplace, showing whether you transact through the AWS Marketplace or the Google Cloud Marketplace. If you do not purchase through a marketplace, no badge is shown.&#x20;
+* **Marketplace**: Snyk displays a badge if your organization purchases through a cloud marketplace, showing whether you transact through the AWS Marketplace or the Google Cloud Marketplace. If you do not purchase through a marketplace, no badge is shown.
 * **Term**: Your contract and renewal date. The page shows "Renews" followed by the date, or "Expired" if your contract has ended.
 * **Data residency**: The region where Snyk hosts your data.
 

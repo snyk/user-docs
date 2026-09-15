@@ -1,6 +1,6 @@
 ---
-description: How to get started with Snyk API and Web dynamic application security testing
 nav_context: classic
+description: How to get started with Snyk API and Web dynamic application security testing
 ---
 
 # Getting started with Snyk API & Web
@@ -40,7 +40,7 @@ After creating your account, Snyk displays [best practices for deploying dynamic
    * **Target name**: Enter a descriptive name (for example, "Example")
    * **Target URL**: Enter the URL to scan (for example, `https://example.com`)
 5. When you add a target, Snyk verifies that you own the domain. Snyk performs extensive security tests that can appear as malicious attacks. Domain verification proves that you own the domain and are authorized to run security tests.
-   1. The onboarding flow automatically verifies ownership when possible. If automatic verification is not available, you must prove ownership manually through the guided process. Alternatively, you can install a scanning agent to reach internal targets. For more information, see how to [verify domain ownership](../configure-targets/verify-domain-ownership/README.md) and [how to install a scanning agent](../start-scanning/overview-scanning-agent/install-scanning-agent.md).
+   1. The onboarding flow automatically verifies ownership when possible. If automatic verification is not available, you must prove ownership manually through the guided process. Alternatively, you can install a scanning agent to reach internal targets. For more information, see how to [verify domain ownership](../configure-targets/verify-domain-ownership/) and [how to install a scanning agent](../start-scanning/overview-scanning-agent/install-scanning-agent.md).
 6. Click **Next** after configuring domain verification or the scanning agent.
 7. Click **Scan** to start scanning your target.
 8. A success page confirms that your scan started.
@@ -49,13 +49,13 @@ After creating your account, Snyk displays [best practices for deploying dynamic
 
 The **Scan Overview** page shows the progress of your scan.
 
-<figure><img src="../../../.gitbook/assets/getting-started-with-snyk-api-web-scan-results-page.png" alt="Scan Overview page showing scan progress"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/scan_started.png" alt=""><figcaption></figcaption></figure>
 
 While the scan runs, you can download the preliminary crawling report to review coverage so far. Then, after the scan completes, download the full crawling report.
 
-The **crawling report** shows URLs discovered and tested, HTTP request method, and HTTP response codes for each URL.
+Amongst other information, the **crawling report** shows, for each URL discovered, the **HTTP request method** and **response codes**, whether the request was **authenticated** or not, whether the endpoint was sent to the scanner for **further tests** or simply **crawled**, and why.
 
-<figure><img src="../../../.gitbook/assets/getting-started-with-snyk-api-web-crawling-report.png" alt="Crawling report with discovered URLs and HTTP status codes"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/crawling (2).png" alt=""><figcaption></figcaption></figure>
 
 Use this information to verify that the scanner reached all intended parts of your application and identify any access issues.
 

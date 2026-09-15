@@ -1,4 +1,6 @@
 ---
+description: >-
+  How the Discovery agent maps the AI assets in your code with an AI-BOM scan
 nav_context: agnostic
 ---
 

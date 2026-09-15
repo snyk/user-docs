@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the OpenSourceSettings endpoints, including request parameters and response schemas
+---
+
 # OpenSourceSettings
 
 {% hint style="info" %}

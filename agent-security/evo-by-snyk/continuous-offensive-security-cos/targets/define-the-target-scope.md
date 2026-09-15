@@ -1,3 +1,9 @@
+---
+description: >-
+  How the target scope bounds where Continuous Offensive Security agents can
+  send requests
+---
+
 # Define the Target Scope
 
 The scope defines how far agents may go. It is the boundary between the application you authorized for testing and everything else on the internet.
