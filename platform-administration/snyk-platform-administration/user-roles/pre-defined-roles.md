@@ -59,6 +59,7 @@ This table details the Tenant-level permissions that apply to each pre-defined r
 | ----------------------------------- | -------------------- | -------------------- | -------------------- |
 | View Tenant                         | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
 | Edit Tenant                         | :heavy\_check\_mark: |                      |                      |
+| Access Evo Platform                 | :heavy\_check\_mark: |                      |                      |
 | List Group                          | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
 | View Membership                     | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
 | Edit Membership                     | :heavy\_check\_mark: |                      |                      |
