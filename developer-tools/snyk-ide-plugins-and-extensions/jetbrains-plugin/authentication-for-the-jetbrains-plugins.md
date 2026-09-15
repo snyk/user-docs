@@ -3,6 +3,8 @@ description: How to authenticate the Snyk JetBrains plugin, including the suppor
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Authentication for the JetBrains plugin
 
 To scan your Projects, you must authenticate with Snyk.

@@ -3,6 +3,8 @@ description: How to view Snyk Open Source vulnerability results in the Visual St
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Analysis results: Snyk Open Source
 
 Snyk Open Source analysis shows vulnerabilities in your code with every scan. The scan runs in the background and is enabled by default.

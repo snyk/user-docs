@@ -3,6 +3,8 @@ description: How to set up the Snyk Slack app, the recommended replacement for t
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Slack app
 
 {% hint style="warning" %}

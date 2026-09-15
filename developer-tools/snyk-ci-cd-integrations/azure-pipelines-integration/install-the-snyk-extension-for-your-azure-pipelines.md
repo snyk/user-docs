@@ -3,6 +3,8 @@ description: How to install the Snyk extension for Azure Pipelines from the Visu
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Install the Snyk extension for your Azure pipelines
 
 To start using the Snyk task as part of your pipeline build, from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Snyk.snyk-security-scan), install the extension into your Azure DevOps instance for your Organization.

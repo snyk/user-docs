@@ -3,6 +3,8 @@ nav_context: classic
 description: Legacy configuration for the Snyk JetBrains plugin and IDE proxy, kept available for versions before the unified IDE configuration dialog
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configuration for the Snyk JetBrains plugin and IDE proxy
 
 {% hint style="info" %}

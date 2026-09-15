@@ -3,6 +3,8 @@ description: How to set up the Snyk GitHub Server App integration for self-hoste
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitHub Server App
 
 {% hint style="info" %}

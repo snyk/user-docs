@@ -3,6 +3,8 @@ description: How Snyk GitHub Read-only Projects monitor public GitHub repositori
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitHub Read-only Projects
 
 ### How GitHub Read-only Projects work

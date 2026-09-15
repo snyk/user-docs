@@ -3,6 +3,8 @@ description: How to integrate New Relic with Snyk using webhooks
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # How to use Snyk Webhooks to integrate New Relic with Snyk
 
 New Relic Security API is the most recent approach to having New Relic send any type of security-related information into the New Relic platform. This API is part of New Relic's Vulnerability Management capabilities.

@@ -3,6 +3,8 @@ description: How to forward Snyk events to CrowdStrike Falcon Next-Gen SIEM, in 
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # CrowdStrike Falcon Next-Gen SIEM
 
 {% hint style="info" %}

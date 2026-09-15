@@ -3,6 +3,8 @@ description: How to authenticate the Snyk Eclipse plugin, including the supporte
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Authentication for the Eclipse plugin
 
 To scan your Projects, you must authenticate with Snyk.

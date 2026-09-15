@@ -3,6 +3,8 @@ description: How to configure Azure Function environment variables for the Snyk 
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure Azure Function environment variables
 
 For more information about configuration of Azure Function environment variables, see the Microsoft Azure Functions documentation article [Manage your function app](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal).

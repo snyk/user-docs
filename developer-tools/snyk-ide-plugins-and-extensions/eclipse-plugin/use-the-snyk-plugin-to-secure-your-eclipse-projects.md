@@ -3,6 +3,8 @@ description: How to scan and fix vulnerabilities in your Eclipse Projects with t
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Use the Snyk plugin to secure your Eclipse projects
 
 After the Eclipse plugin is downloaded and authentication is complete, the plugin starts the workspace scan. You may notice a confirmation that a workspace scan is starting. Alternatively, you can trigger a workspace scan from the context menu of your Project, or from the Snyk View.

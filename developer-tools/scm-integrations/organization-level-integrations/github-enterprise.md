@@ -3,6 +3,8 @@ description: How to set up the Snyk GitHub Enterprise SCM integration, available
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitHub Enterprise
 
 {% hint style="info" %}

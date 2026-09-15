@@ -3,6 +3,8 @@ description: How to set up the Snyk GitHub SCM integration, including prerequisi
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitHub
 
 ### Prerequisites for GitHub integration

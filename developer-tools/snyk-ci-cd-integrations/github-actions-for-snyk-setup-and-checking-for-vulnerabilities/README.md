@@ -5,6 +5,8 @@ description: >-
   pipeline
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitHub actions for Snyk setup and checking for vulnerabilities
 
 ## Overview of GitHub Actions Integration

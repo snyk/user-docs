@@ -3,6 +3,8 @@ description: Reference for Snyk Essentials integration availability, sync times,
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Essentials integrations reference
 
 The **Integrations** page, under **Settings** > **Integrations**, shows all active integrations, including any data automatically synced from your existing Snyk Organizations.

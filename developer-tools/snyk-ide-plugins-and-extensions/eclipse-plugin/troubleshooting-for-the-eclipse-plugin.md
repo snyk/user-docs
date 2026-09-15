@@ -3,6 +3,8 @@ description: How to troubleshoot the Snyk Eclipse plugin, including unsupported 
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Troubleshooting for the Eclipse plugin
 
 {% hint style="warning" %}

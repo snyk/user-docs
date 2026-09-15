@@ -3,6 +3,8 @@ description: How to set up the Snyk Azure Repositories integration for Azure Dev
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Azure Repositories (TFS)
 
 {% hint style="info" %}

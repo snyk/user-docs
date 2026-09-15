@@ -3,6 +3,8 @@ description: How to copy the Azure Function URL for the Snyk to New Relic integr
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Copy the Azure Function URL
 
 Select the appropriate Azure Function and copy the Function URL. You need this URL in the next step, in order to [Create a Snyk Webhook](create-a-snyk-webhook.md).

@@ -3,6 +3,8 @@ description: The configuration parameters and values for the Snyk Security Scan 
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Security Scan task parameters and values
 
 The following describes the Snyk task configuration fields on the configuration panel in Azure Pipelines, the associated parameters for Azure Pipelines integration, and the valid values.

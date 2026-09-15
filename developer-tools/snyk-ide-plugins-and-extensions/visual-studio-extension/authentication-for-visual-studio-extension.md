@@ -3,6 +3,8 @@ description: How to authenticate the Snyk Visual Studio extension, including the
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Authentication for Visual Studio extension
 
 To scan your Projects, you must authenticate with Snyk.

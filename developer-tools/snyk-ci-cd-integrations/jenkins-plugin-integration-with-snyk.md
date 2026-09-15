@@ -5,6 +5,8 @@ description: >-
   monitor Projects
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Jenkins plugin integration with Snyk
 
 Snyk offers a native plugin for Jenkins that is based on the [Snyk CLI](../snyk-cli/overview.md), to test and monitor Projects for vulnerabilities in your pipelines.

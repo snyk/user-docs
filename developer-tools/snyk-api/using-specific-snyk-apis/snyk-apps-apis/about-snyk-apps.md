@@ -3,6 +3,8 @@ description: What Snyk Apps are and how they extend Snyk functionality through i
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # About Snyk Apps
 
 Snyk Apps are integrations that extend the functionality of the Snyk platform, allowing you to create a Snyk experience to suit your specific needs.

@@ -3,6 +3,8 @@ description: How to forward Snyk platform events to AWS CloudTrail Lake, availab
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # AWS CloudTrail Lake
 
 {% hint style="info" %}

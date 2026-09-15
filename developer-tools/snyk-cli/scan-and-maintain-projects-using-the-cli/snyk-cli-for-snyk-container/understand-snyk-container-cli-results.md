@@ -3,6 +3,8 @@ description: How to understand Snyk Container results from the CLI
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Understand Snyk Container CLI results
 
 ## Vulnerability information

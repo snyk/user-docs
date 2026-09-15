@@ -3,6 +3,8 @@ description: How to set up user authorization when connecting accounts to a Snyk
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Set up to authorize users
 
 When users connect their Snyk account to your App, they must authorize access to their chosen Organization or Group and approve the requested scopes. This process starts when you direct users to the Snyk Apps authorization web page and pass the appropriate parameters: `https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectURI}&state={state}&code_challenge={codeChallenge}&code_challenge_method=S256`

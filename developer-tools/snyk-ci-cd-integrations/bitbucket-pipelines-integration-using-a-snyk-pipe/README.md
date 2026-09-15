@@ -3,6 +3,8 @@ description: How Snyk integrates with Bitbucket Pipelines using a Snyk pipe to s
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Bitbucket Pipelines integration using a Snyk pipe
 
 Snyk integrates with Bitbucket Pipelines using a Snyk pipe, seamlessly scanning your application dependencies and Docker images for security vulnerabilities as part of the continuous integration/continuous delivery (CI/CD) workflow.

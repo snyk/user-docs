@@ -5,6 +5,8 @@ description: >-
   you develop
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Visual Studio extension
 
 ## Scan early, fix as you develop: elevate your security posture

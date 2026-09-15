@@ -3,6 +3,8 @@ description: How to configure the GitLab integration for Snyk Essentials at the 
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitLab for Snyk Essentials
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.

@@ -3,6 +3,8 @@ description: How to install or upgrade the Snyk Security plugin in TeamCity
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # TeamCity integration: install the Snyk plugin
 
 Follow these steps to install or upgrade the Snyk Security plugin. When the installation is complete, you can add a Snyk step to your Projects.

@@ -3,6 +3,8 @@ description: How to set up the Snyk Slack integration, with the Slack App recomm
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Slack integration
 
 {% hint style="warning" %}
