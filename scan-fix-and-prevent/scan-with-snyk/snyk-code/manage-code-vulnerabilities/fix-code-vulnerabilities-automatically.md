@@ -11,14 +11,14 @@ DeepCode AI Fix is now Snyk Agent Fix.
 As of May 2026, Snyk Agent Fix has been upgraded to a new agentic architecture for significantly higher fix accuracy and broader language support.
 {% endhint %}
 
-Snyk Agent Fix provides production-ready code fixes to address security vulnerabilities and code quality flaws detected by Snyk Code. It offers full rule coverage for all supported languages.
+Snyk Agent Fix provides production-ready code fixes to address security vulnerabilities detected by Snyk Code. It offers full rule coverage for all supported languages.
 
 Snyk Agent Fix uses an agentic architecture that combines Snyk proprietary security intelligence with advanced large language models (LLMs). Key advantages include:
 
 * Dynamic few-shot prompting: Instead of relying on fine-tuning, the architecture uses the Snyk database of more than 35,000 expert-written fixes to provide real-world context to the LLM during inference. Every sample includes vulnerable code from real open-source projects and fixes written by Snyk security experts.
 * Agentic retries: If a generated fix fails a Snyk Code scan, the system analyzes the error, feeds it back into the model, and generates a corrected version.
 
-Snyk Agent Fix remediates vulnerabilities across your entire stack without language-specific fine-tuning. By using a prompt-based agentic reasoning model, Snyk Agent Fix supports all languages supported by Snyk Code: Apex, C, C++, C#, Go, Java, JavaScript, PHP, Python, Ruby, Swift, and TypeScript.
+Snyk Agent Fix remediates vulnerabilities across your stack without language-specific fine-tuning. By using a prompt-based agentic reasoning model, Snyk Agent Fix supports every language that Snyk Code supports. For the current list, see [Supported languages, package managers, and frameworks](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
 
 ## How Snyk Agent Fix works
 
@@ -51,7 +51,7 @@ Snyk automatically generates fixes for eligible vulnerabilities in your codebase
 To see the latest fix suggestions:
 
 1. Enable automated fixes in Snyk Preview in your [IDE plugin or extension](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions).
-2. Save your files and [trigger a scan](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli).
+2. Save your files and [trigger a scan](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli).
 
 To generate a fix:
 

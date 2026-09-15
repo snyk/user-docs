@@ -1555,6 +1555,15 @@
           "$ref": "#/components/schemas/DateInterval"
         }
       },
+      "ComponentIdParam": {
+        "description": "Component ID whose Findings should be listed or converted into a\ndocument.",
+        "in": "path",
+        "name": "component_id",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      },
       "ConnectionId": {
         "description": "Connection ID",
         "in": "path",
@@ -1671,6 +1680,16 @@
         "description": "Deployment ID",
         "in": "path",
         "name": "deployment_id",
+        "required": true,
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "DocumentIdParam": {
+        "description": "ID of a completed Findings document.",
+        "in": "path",
+        "name": "document_id",
         "required": true,
         "schema": {
           "format": "uuid",
@@ -1962,6 +1981,16 @@
           },
           "maxItems": 100,
           "type": "array"
+        },
+        "style": "form"
+      },
+      "IncludeCodeFlows": {
+        "description": "A filter to include data flows for Code issues.",
+        "in": "query",
+        "name": "include_code_flows",
+        "schema": {
+          "default": false,
+          "type": "boolean"
         },
         "style": "form"
       },
@@ -5604,6 +5633,7 @@
             "type": "string"
           },
           "risk_factors": {
+            "deprecated": true,
             "description": "Runtime context that indicates increased asset risk",
             "items": {
               "type": "string"
@@ -5662,6 +5692,21 @@
           "last_seen_at": {
             "description": "When the asset was last seen (i.e., confirmed to exist) via any discovery source.\nUpdated on every upsert operation.\n",
             "format": "date-time",
+            "type": "string"
+          },
+          "org_ids": {
+            "description": "Every org the asset belongs to within the requested scope, sourced from the\nasset scope summary: a tenant-scoped read lists all orgs in the tenant, a\ngroup-scoped read only those under the group, and an org-scoped read only\nthe requested org. Only populated for scan-backed asset types (container\nimages and SBOMs); omitted for repository assets.\n",
+            "items": {
+              "format": "uuid",
+              "type": "string"
+            },
+            "maxItems": 10000,
+            "type": "array"
+          },
+          "origin_timestamp": {
+            "description": "The asset's source-defined timestamp — when the underlying artifact was created at its origin (e.g. a container image's build time or an SBOM's generation time). Distinct from created_at, which is when the asset record was created in Snyk. Null when unknown.",
+            "format": "date-time",
+            "nullable": true,
             "type": "string"
           },
           "risk_score": {
@@ -7442,6 +7487,82 @@
         },
         "required": [
           "integrations"
+        ],
+        "type": "object"
+      },
+      "BulkDeleteProjectRef": {
+        "additionalProperties": false,
+        "description": "A JSON:API resource identifier naming an existing project to delete.\n",
+        "properties": {
+          "id": {
+            "description": "Project ID.",
+            "example": "331ba0db-5d40-486e-ac6b-8865c98a3e15",
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "project"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "id"
+        ],
+        "type": "object"
+      },
+      "BulkDeletedProject": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "description": "Project ID.",
+            "example": "331ba0db-5d40-486e-ac6b-8865c98a3e15",
+            "format": "uuid",
+            "type": "string"
+          },
+          "name": {
+            "description": "Project name.",
+            "example": "snyk/goof",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ],
+        "type": "object"
+      },
+      "BulkFailedProject": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "description": "Project ID.",
+            "example": "331ba0db-5d40-486e-ac6b-8865c98a3e15",
+            "format": "uuid",
+            "type": "string"
+          },
+          "name": {
+            "description": "Project name.",
+            "example": "snyk/goof",
+            "type": "string"
+          },
+          "reason": {
+            "description": "Why the project was not deleted.\n\n- `exclusion_limit_reached`: the target already holds the maximum\n  number of exclusions, so no more can be added.\n- `exclusion_failed`: the exclusion could not be recorded, for\n  example because the project has no single path to exclude.\n- `delete_failed`: the project itself could not be deleted. Any\n  exclusion asked for was already recorded.\n",
+            "enum": [
+              "exclusion_limit_reached",
+              "exclusion_failed",
+              "delete_failed"
+            ],
+            "example": "delete_failed",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "reason"
         ],
         "type": "object"
       },
@@ -9332,6 +9453,33 @@
         ],
         "type": "object"
       },
+      "CreateFindingsDocumentRequestBody": {
+        "description": "Request body for creating a new findings document.",
+        "properties": {
+          "data": {
+            "properties": {
+              "attributes": {
+                "$ref": "#/components/schemas/FindingsDocumentAttributes"
+              },
+              "type": {
+                "enum": [
+                  "findings_document_requests"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "attributes"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "data"
+        ],
+        "type": "object"
+      },
       "CreateGroupMembershipRequestBody": {
         "properties": {
           "data": {
@@ -10714,6 +10862,15 @@
           }
         },
         "type": "object"
+      },
+      "DocumentFormat": {
+        "description": "Available formats findings can be converted into.",
+        "enum": [
+          "sarif",
+          "cyclonedx",
+          "snyk_schema"
+        ],
+        "type": "string"
       },
       "DotnetSettings": {
         "additionalProperties": false,
@@ -12779,6 +12936,21 @@
                       },
                       "type": "array"
                     },
+                    "insights": {
+                      "allOf": [
+                        {
+                          "description": "Insights to be used when triaging a vulnerability.",
+                          "properties": {
+                            "triage_advice": {
+                              "description": "Advice for triaging this vulnerability.",
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ],
+                      "description": "Insights to be used when triaging the vulnerability."
+                    },
                     "is_disputed": {
                       "default": false,
                       "description": "Indicates if the vulnerability is formally disputed.\nA vulnerability's claim (e.g., that it's a security flaw, or the scope/impact) is\n**disputed** when one party, often the vendor or a security professional, formally\nchallenges the assertion.\nMost cybersecurity public listings, such as CVE, have a defined process\nallowing vendors or researchers to officially challenge the validity\nof a reported issue, leading to this 'DISPUTED' status being formally annotated.",
@@ -12807,6 +12979,11 @@
                     "modified_at": {
                       "description": "Timestamp indicating when the vulnerability was last modified (anything\nfrom typo to version change). When the vulnerability is first added, this\nfield and published will be (almost) identical.",
                       "format": "date-time",
+                      "type": "string"
+                    },
+                    "module_name": {
+                      "description": "The module within the dependency.",
+                      "example": "ansi-regex",
                       "type": "string"
                     },
                     "package_full_name": {
@@ -12911,6 +13088,10 @@
                                     "description": "Class containing the function.",
                                     "type": "string"
                                   },
+                                  "file_path": {
+                                    "description": "Vulnerable File Path",
+                                    "type": "string"
+                                  },
                                   "function_name": {
                                     "description": "Vulnerable function name.",
                                     "type": "string"
@@ -12940,6 +13121,53 @@
                       },
                       "description": "Known vulnerable functions in software packages.",
                       "type": "object"
+                    },
+                    "vulnerable_functions_list": {
+                      "description": "Known vulnerable functions in software packages.\nNew version of the vulnerable_functions field to match\nusing an array in upstream services.",
+                      "items": {
+                        "description": "Information about a function known to be vulnerable in a software package.",
+                        "properties": {
+                          "function_id": {
+                            "allOf": [
+                              {
+                                "description": "Identify a vulnerable function in a software package.",
+                                "properties": {
+                                  "class_name": {
+                                    "description": "Class containing the function.",
+                                    "type": "string"
+                                  },
+                                  "file_path": {
+                                    "description": "Vulnerable File Path",
+                                    "type": "string"
+                                  },
+                                  "function_name": {
+                                    "description": "Vulnerable function name.",
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "function_name"
+                                ],
+                                "type": "object"
+                              }
+                            ],
+                            "description": "Vulnerable function."
+                          },
+                          "versions": {
+                            "description": "Package versions in which the function is vulnerable.",
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "required": [
+                          "function_id",
+                          "versions"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
                     }
                   },
                   "required": [
@@ -14079,6 +14307,97 @@
           "secrets"
         ],
         "type": "string"
+      },
+      "FindingsDocumentAttributes": {
+        "description": "Attributes for creating a new findings document.",
+        "properties": {
+          "component_id": {
+            "description": "The ID of the component to generate a document for.",
+            "type": "string"
+          },
+          "format": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DocumentFormat"
+              }
+            ],
+            "description": "Desired output format for the generated Findings document."
+          },
+          "test_id": {
+            "description": "The ID of the test to generate a document for.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "format",
+          "test_id"
+        ],
+        "type": "object"
+      },
+      "FindingsDocumentJobAttributes": {
+        "description": "FindingsDocumentJobAttributes represents the attributes of a\nFindings-document-generation Job resource.",
+        "properties": {
+          "component_id": {
+            "description": "The ID of the component to generate a document for.",
+            "type": "string"
+          },
+          "created_at": {
+            "description": "Creation time of the job resource.",
+            "format": "date-time",
+            "type": "string"
+          },
+          "format": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DocumentFormat"
+              }
+            ],
+            "description": "The format requested for the generated document."
+          },
+          "status": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestExecutionStates"
+              }
+            ],
+            "description": "State of the document conversion job, whether it is pending, running, complete or errored."
+          },
+          "test_id": {
+            "description": "The ID of the test to generate a document for.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "format",
+          "created_at",
+          "test_id"
+        ],
+        "type": "object"
+      },
+      "FindingsDocumentJobData": {
+        "description": "FindingsDocumentJobData represents a Findings-document Job resource\nobject.",
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/FindingsDocumentJobAttributes"
+          },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "findings_document_jobs"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "attributes",
+          "type"
+        ],
+        "type": "object"
       },
       "FixAction": {
         "description": "Different fix formats in which the fix action is represented. We distinguish between advice and diff formats.\n\nAdvice - Fix advice in a display only / informational format. These are highly product line specific, so they have their own model.\n- upgradePackageAdvice: Upgrade a direct package from one version to a newer one that resolves the vulnerability.\n- pinPackageAdvice: Pin a package at a specific version.\n\nDiff - Fix suggestions in the unified diff format that introduce code changes\nto remediate the vulnerability. Can be used to represent fix actions for any product line.",
@@ -17323,6 +17642,101 @@
             "description": "Where the issue originated, specific to issue type. Details on what\ncode, package, etc introduced the issue. An issue may be caused by\nmore than one coordinate.\n",
             "items": {
               "properties": {
+                "code_flows": {
+                  "description": "The data flows in an application which may trigger a vulnerability.\nOnly populated on Code issues when include_code_flows=true and data flows\nin the issues API are enabled for the tenant.\n",
+                  "items": {
+                    "description": "The flow of data from source to sink which can trigger a SAST vulnerability.\n",
+                    "properties": {
+                      "thread_flows": {
+                        "items": {
+                          "description": "A thread of execution data flows through.\n",
+                          "properties": {
+                            "locations": {
+                              "items": {
+                                "description": "One step of the data flow.\n",
+                                "properties": {
+                                  "file": {
+                                    "description": "A path to the file containing this issue, relative to the root of the project target,\nformatted using POSIX separators.\n",
+                                    "maximum": 2048,
+                                    "minimum": 1,
+                                    "type": "string"
+                                  },
+                                  "region": {
+                                    "properties": {
+                                      "end": {
+                                        "properties": {
+                                          "column": {
+                                            "minimum": 0,
+                                            "type": "integer"
+                                          },
+                                          "line": {
+                                            "minimum": 0,
+                                            "type": "integer"
+                                          }
+                                        },
+                                        "required": [
+                                          "line",
+                                          "column"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      "start": {
+                                        "properties": {
+                                          "column": {
+                                            "minimum": 0,
+                                            "type": "integer"
+                                          },
+                                          "line": {
+                                            "minimum": 0,
+                                            "type": "integer"
+                                          }
+                                        },
+                                        "required": [
+                                          "line",
+                                          "column"
+                                        ],
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "start",
+                                      "end"
+                                    ],
+                                    "type": "object"
+                                  }
+                                },
+                                "required": [
+                                  "file",
+                                  "region"
+                                ],
+                                "type": "object"
+                              },
+                              "minItems": 1,
+                              "type": "array"
+                            }
+                          },
+                          "required": [
+                            "locations"
+                          ],
+                          "type": "object"
+                        },
+                        "minItems": 1,
+                        "type": "array"
+                      }
+                    },
+                    "required": [
+                      "thread_flows"
+                    ],
+                    "type": "object"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "code_flows_omitted": {
+                  "default": false,
+                  "description": "Indicates if a Code issue contains a code flow that exceeded the 20 KB\n(20,480 byte) serialization limit and was omitted from the response.\nWhen true, code_flows is omitted from the response.\n",
+                  "type": "boolean"
+                },
                 "created_at": {
                   "description": "The time when this coordinate was created.",
                   "format": "date-time",
@@ -22743,7 +23157,7 @@
             "type": "string"
           },
           "type": {
-            "description": "The JSON:API resource type",
+            "description": "The JSON:API resource type.",
             "enum": [
               "project"
             ],
@@ -31436,10 +31850,10 @@
                                 ]
                               },
                               {
-                                "attribute": "risk_factors",
+                                "attribute": "sources",
                                 "operator": "in",
                                 "values": [
-                                  "Deployed"
+                                  "github"
                                 ]
                               }
                             ]
@@ -32792,7 +33206,7 @@
     },
     "/groups/{group_id}/inventory/assets/groups": {
       "get": {
-        "description": "Returns a list of valid group field names that can be used for grouping assets within a group context.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "description": "Returns a list of valid group field names that can be used for grouping assets within a group context.\nCommon fields such as `class` and `org_id` (the Snyk organization that discovered the asset) apply to\nevery asset type; grouping by `org_id` returns one bucket per organization in the group.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
         "operationId": "getGroupFieldsGroup",
         "parameters": [
           {
@@ -32911,7 +33325,7 @@
     },
     "/groups/{group_id}/inventory/assets/groups/{group_field_id}/values": {
       "get": {
-        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\nGrouping by `org_id` buckets assets by the Snyk organization that discovered them:\none bucket per organization at group or tenant scope, and a single bucket at org scope.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
         "operationId": "getGroupValuesGroup",
         "parameters": [
           {
@@ -33883,6 +34297,9 @@
           },
           {
             "$ref": "#/components/parameters/Ignored"
+          },
+          {
+            "$ref": "#/components/parameters/IncludeCodeFlows"
           }
         ],
         "responses": {
@@ -34655,6 +35072,9 @@
           },
           {
             "$ref": "#/components/parameters/PathIssueId20240123"
+          },
+          {
+            "$ref": "#/components/parameters/IncludeCodeFlows"
           }
         ],
         "responses": {
@@ -36567,6 +36987,9 @@
           },
           "404": {
             "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
           }
         },
         "summary": "Get group level policies (Early Access)",
@@ -60949,6 +61372,7 @@
             "name": "name",
             "schema": {
               "maxLength": 100,
+              "minLength": 1,
               "type": "string"
             }
           },
@@ -71076,6 +71500,358 @@
         "x-stability-level": "stable"
       }
     },
+    "/orgs/{org_id}/document_jobs/{job_id}": {
+      "get": {
+        "description": "Get a Document Conversion job.\n\nThe Findings API is Asynchronous, and Document conversions begun through the API\nare assigned a Job ID which references the in-progress document conversion. The\nJob ID is provided in a successful response from the CreateTestFindingsDoc or CreateComponentFindingsDoc\nendpoint.\n\nThis endpoint is used to poll for the status of a document conversion using its\nassociated Job ID.\n\nWhen the Job is Finished and the Document is ready for consumption,\na Related link will be populated in the response with a link to the finished document along\nwith its id that can be used to call the getDocument endpoint.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getFindingsDocumentJob",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "description": "Snyk Org ID under which to run or query information\nabout a Job or Test.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Job ID returned from the Test API to query.",
+            "in": "path",
+            "name": "job_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/FindingsDocumentJobData"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful API response with a single resource",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "303": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/FindingsDocumentJobData"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Redirect to another resource after async processing.",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "location": {
+                "required": true,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get a findings-document job. (Early Access)",
+        "tags": [
+          "Findings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/documents/{document_id}": {
+      "get": {
+        "description": "Get a completed findings document.\n\nA Document returned through this endpoint is intended to\nbe findings converted to a specified document type using the\nDocument ID returned from the getFindingsDocumentJob endpoint.\n\nThe document's raw bytes are streamed back directly in the response body.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getDocument",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "description": "Snyk Org ID under which to run or query information\nabout a Job or Test.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/DocumentIdParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "format": "binary",
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Response from the Findings API to download a completed document."
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get a completed findings document. (Early Access)",
+        "tags": [
+          "Findings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
     "/orgs/{org_id}/ecosystems/{ecosystem}/packages/{package_name}": {
       "get": {
         "description": "Get package metadata for a specific package from an ecosystem.\n\n**Important:** The security section of `package_health` refers to the `latest_version` of the package, not all versions. Since the `overall_rating` is computed from all health sections (including security), it is also influenced by the latest version's security data.\n\n**Supported Ecosystems:** npm, pypi, maven, nuget, golang\n\n#### Required permissions\n\n- `View Organization (org.read)`",
@@ -71468,6 +72244,205 @@
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-10-15",
         "x-stability-level": "stable"
+      }
+    },
+    "/orgs/{org_id}/findings/documents": {
+      "post": {
+        "description": "Create a new findings document using a TestID and non-required ComponentID.\n\nProvide a test ID to start the process for converting this test's\nfindings (or a component's findings with an additional component ID)into a document of a given\nformat (SARIF or CycloneDX). A Job ID is returned that can be used to poll for the completion of the\ndocument conversion via GetFindingsDocumentJob.\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `Test packages (org.package.test)`",
+        "operationId": "createTestFindingsDoc",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "description": "Snyk Org ID under which to run or query information\nabout a Job or Test.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateFindingsDocumentRequestBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/FindingsDocumentJobAttributes"
+                        },
+                        "id": {
+                          "format": "uuid",
+                          "type": "string"
+                        },
+                        "type": {
+                          "enum": [
+                            "findings_document_jobs"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "id",
+                        "attributes"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "The request has been accepted for processing, but processing has not yet completed.",
+            "headers": {
+              "content-location": {
+                "description": "A pointer to the newly created Test resource",
+                "required": true,
+                "schema": {
+                  "format": "string",
+                  "type": "string"
+                }
+              },
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Create a new findings document. (Early Access)",
+        "tags": [
+          "Findings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/inventory/assets": {
@@ -71960,7 +72935,7 @@
     },
     "/orgs/{org_id}/inventory/assets/groups": {
       "get": {
-        "description": "Returns a list of valid group field names that can be used for grouping assets within an org context.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Returns a list of valid group field names that can be used for grouping assets within an org context.\nCommon fields such as `class` and `org_id` (the Snyk organization that discovered the asset) apply to\nevery asset type; within a single org, grouping by `org_id` returns a single bucket.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "getGroupFieldsOrg",
         "parameters": [
           {
@@ -72079,7 +73054,7 @@
     },
     "/orgs/{org_id}/inventory/assets/groups/{group_field_id}/values": {
       "get": {
-        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\nGrouping by `org_id` buckets assets by the Snyk organization that discovered them:\none bucket per organization at group or tenant scope, and a single bucket at org scope.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "getGroupValuesOrg",
         "parameters": [
           {
@@ -73342,6 +74317,9 @@
           },
           {
             "$ref": "#/components/parameters/Ignored"
+          },
+          {
+            "$ref": "#/components/parameters/IncludeCodeFlows"
           }
         ],
         "responses": {
@@ -74114,6 +75092,9 @@
           },
           {
             "$ref": "#/components/parameters/PathIssueId20240123"
+          },
+          {
+            "$ref": "#/components/parameters/IncludeCodeFlows"
           }
         ],
         "responses": {
@@ -76813,6 +77794,9 @@
           },
           "404": {
             "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
           }
         },
         "summary": "Get org-level policies",
@@ -77732,6 +78716,157 @@
         "x-snyk-api-resource": "projects",
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-05-31",
+        "x-stability-level": "stable"
+      }
+    },
+    "/orgs/{org_id}/projects/bulk-delete": {
+      "post": {
+        "description": "Delete up to 100 projects in one request. Each project is reported in\n`meta.deleted` or `meta.failed`, so a partially successful request is\nstill a 200. A project that does not exist in the org is ignored, and\nappears in neither list.\n\n#### Required permissions\n\n- `View Projects (org.project.read)`\n\n- `Remove Projects (org.project.delete)`",
+        "operationId": "deleteOrgProjects",
+        "parameters": [
+          {
+            "description": "The ID of the org that the projects belong to.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "data": {
+                    "description": "The projects to delete, at most 100 per request.",
+                    "items": {
+                      "$ref": "#/components/schemas/BulkDeleteProjectRef"
+                    },
+                    "maxItems": 100,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "meta": {
+                    "additionalProperties": false,
+                    "description": "Options that apply to this request.",
+                    "properties": {
+                      "exclude_from_future_scans": {
+                        "default": false,
+                        "description": "Before deleting each project, exclude its target file\n(the manifest or lockfile path in the repository) from\nfuture scans of the same target reference, so it is not\nre-imported or retested.\n\nOnly projects backed by a single file in an SCM\nrepository are excluded. The rest are deleted as normal.\nA project whose exclusion cannot be recorded is not\ndeleted and is reported in `meta.failed`.\n",
+                        "type": "boolean"
+                      }
+                    },
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "data"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "meta": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "deleted": {
+                          "description": "The projects that were deleted.",
+                          "items": {
+                            "$ref": "#/components/schemas/BulkDeletedProject"
+                          },
+                          "type": "array"
+                        },
+                        "failed": {
+                          "description": "The projects that were not deleted, and why.",
+                          "items": {
+                            "$ref": "#/components/schemas/BulkFailedProject"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "required": [
+                        "deleted",
+                        "failed"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "meta"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "A summary of the results of the operation",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Delete several projects in one request.",
+        "tags": [
+          "Projects"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15"
+        ],
+        "x-snyk-api-resource": "project_bulk_delete",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
         "x-stability-level": "stable"
       }
     },
@@ -83498,6 +84633,174 @@
         "summary": "Get a test. (Early Access)",
         "tags": [
           "Tests"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/tests/{test_id}/components/{component_id}/findings": {
+      "get": {
+        "description": "List findings for a Component.\n\nTest Findings are scanner-agnostic representations of\nvulnerabilities and organization-level policy breaches.\nWhen Snyk runs a Test, the results of that Test are\nformatted into Findings.\n\nThis endpoint returns pages of Findings associated with\na given Component ID. Findings are returned in sorted order by\nID, with page size equal to the provided Limit query parameter.\nPage size is 10 Findings by default if no parameter is provided.\n\nNote that the Findings returned from this endpoint are only the\nFindings that are _not_ suppressed by policy and are _not_\nin violation of a set Test threshold (like Severity or Risk Score).\n\nTo retrieve the next (or previous) page of Findings, utilize the\nNext and Prev links returned in the response.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "listComponentFindings",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.PaginatedRequest.starting_after"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.PaginatedRequest.ending_before"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.PaginatedRequest.limit"
+          },
+          {
+            "description": "Snyk Org ID under which to run or query information\nabout a Job or Test.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/TestIdParam"
+          },
+          {
+            "$ref": "#/components/parameters/ComponentIdParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "$ref": "#/components/schemas/FindingData"
+                      },
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.PaginatedLinks"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful API response for a paginated collection.",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "List findings for a component. (Early Access)",
+        "tags": [
+          "Findings"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -114883,7 +116186,7 @@
             "$ref": "#/components/parameters/RsqlFilter"
           },
           {
-            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n",
+            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n- `sbom_name` - SBOM name (SBOMs only)\n- `format` - SBOM format/standard (SBOMs only)\n- `document_version` - SBOM document version (SBOMs only)\n- `sbom_created_at` - SBOM creation timestamp (SBOMs only)\n",
             "example": "-created_at",
             "in": "query",
             "name": "sort",
@@ -115346,7 +116649,7 @@
     },
     "/tenants/{tenant_id}/inventory/assets/groups": {
       "get": {
-        "description": "Returns a list of valid group field names that can be used for grouping assets.\nEach field includes its name, data type, and which asset types it applies to.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
+        "description": "Returns a list of valid group field names that can be used for grouping assets.\nEach field includes its name, data type, and which asset types it applies to.\nCommon fields such as `class` and `org_id` (the Snyk organization that discovered\nthe asset) apply to every asset type.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
         "operationId": "getGroupFieldsTenant",
         "parameters": [
           {
@@ -115466,7 +116769,7 @@
     },
     "/tenants/{tenant_id}/inventory/assets/groups/{group_field_id}/values": {
       "get": {
-        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
+        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\nGrouping by `org_id` buckets assets by the Snyk organization that discovered them:\none bucket per organization at group or tenant scope, and a single bucket at org scope.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
         "operationId": "getGroupValuesTenant",
         "parameters": [
           {
@@ -115745,7 +117048,7 @@
             }
           },
           {
-            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n",
+            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n- `sbom_name` - SBOM name (SBOMs only)\n- `format` - SBOM format/standard (SBOMs only)\n- `document_version` - SBOM document version (SBOMs only)\n- `sbom_created_at` - SBOM creation timestamp (SBOMs only)\n",
             "in": "query",
             "name": "sort",
             "schema": {

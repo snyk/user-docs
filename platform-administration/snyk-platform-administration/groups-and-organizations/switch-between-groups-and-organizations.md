@@ -45,4 +45,4 @@ If you are an existing user, you can switch between the new and classic navigati
 
 The default `<ORG_ID>` is the currently preferred Organization in your [Account settings](https://app.snyk.io/account).
 
-See [How to select the Organization to use in the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli) for more information.
+See [How to select the Organization to use in the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli) for more information.

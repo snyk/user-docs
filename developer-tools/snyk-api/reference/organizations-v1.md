@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Organizations (v1) endpoints, including request parameters and response schemas
+---
+
 # Organizations (v1)
 
 {% hint style="info" %}

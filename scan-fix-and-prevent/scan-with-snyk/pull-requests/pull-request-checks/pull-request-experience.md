@@ -1,15 +1,9 @@
 ---
-description: The Snyk Pull Request check experience for developers
 nav_context: classic
+description: The Snyk Pull Request check experience for developers
 ---
 
 # Pull Request experience
-
-{% hint style="info" %}
-**Release status**
-
-As part of the Pull Request experience, Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features).
-{% endhint %}
 
 The Pull Request experience builds on the foundational [Pull Request Checks](./) functionality. It streamlines the security review process by reducing the need to switch between different developer tools and providing contextually relevant feedback within your Source Code Manager (SCM) interface.
 
@@ -90,13 +84,6 @@ For GitLab and Azure Repos, consider the following conditions:
 For Brokered integrations, the Data Flow section in the inline comments is available only for GitHub, GitHub Cloud App, Bitbucket Cloud, and Bitbucket Connect App.
 
 ## Snyk Agent fix in the PR
-
-{% hint style="info" %}
-**Release status**
-
-Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features).\
-Snyk Agent fix in the PR will work only on inline comments created after the feature is enabled.
-{% endhint %}
 
 The Snyk Agent fix in the PR feature enables the user to request and apply fixes for vulnerabilities identified by the Snyk Code pull request check and posted as inline comments. By enabling this feature, the user is able to interact with inline comments in the following way:
 

@@ -1,6 +1,8 @@
 ---
-description: How to configure Snyk SCM and CI/CD integrations for your Organization, including recommended settings
 nav_context: agnostic
+description: >-
+  How to configure Snyk SCM and CI/CD integrations for your Organization,
+  including recommended settings
 ---
 
 # Configure integrations
@@ -31,7 +33,7 @@ The CLI provides:
 * Supports private packages without having to configure an additional integration, providing that your build environment will have access to your private packages.
 * Give visibility to components that are pushed to production by either breaking builds and reporting to Snyk or only reporting to Snyk.
 
-There are several [CI/CD integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations) available, or you can use the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli) as part of your pipeline, in order to have more flexibility in the tests you are running.
+There are several [CI/CD integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations) available, or you can use the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli) as part of your pipeline, in order to have more flexibility in the tests you are running.
 
 In the initial phase, Snyk recommends using the “monitor” feature to import information into Snyk so you can see any discovered issues (unless you are already importing your repos using a source control integration to achieve this). Later, when you want to start gating/blocking new vulnerabilities from being added, you can introduce “test” features - initially failing builds on critical issues and then gradually adapting the fail criteria over time.
 

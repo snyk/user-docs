@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to install Snyk Studio in Gemini CLI using the hooks-based or
+  rules-based approach
 nav_context: classic
 ---
 
@@ -157,7 +160,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
 
 Run `/mcp list` to confirm the Snyk MCP Server is connected.
 

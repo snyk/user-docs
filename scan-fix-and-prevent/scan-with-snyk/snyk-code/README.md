@@ -11,7 +11,7 @@ Snyk Code is a developer-first static application security testing (SAST) soluti
 
 * Snyk web UI (including [PR checks](../pull-requests/pull-request-checks/))
 * [Snyk IDE](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions)
-* [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli)
+* [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli)
 * [Snyk API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/snyk-api)
 
 The following table shows the Snyk Code features, including analysis, managing security issues in your code, and facilitating remediations within your development environment.
@@ -54,7 +54,7 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
 Snyk Code analysis can be applied to every pull request you create in your Git repository before you merge it into the target branch. See [PR Checks](../pull-requests/pull-request-checks/).
 {% endhint %}
 
-* CLI and CI/CD: [Using the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code) helps you find and fix security flaws in your code on your local machine or in your CI/CD.
+* CLI and CI/CD: [Using the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code) helps you find and fix security flaws in your code on your local machine or in your CI/CD.
 * APIs and extensibility: Query Code Projects and issues using the Snyk [REST API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference).
 * Notifications: [Integrate with Jira](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration) to export data to Jira issues.
 

@@ -17,11 +17,11 @@ The Snyk Risk Score is a single value assigned to an issue, applied by automatic
 
 Risk score remains the same over time if the contributing factors do not change. However, some contributing factors, such as the Exploit Prediction Scoring System (EPSS), can potentially change frequently. The number of days since the vulnerability was first published is also a factor and causes the score to change once, when the number of days becomes more than one year, and the likelihood subscore decreases.
 
-Since real risk is scarce, you should expect a significant drift in the distribution of scores, as can be seen in this example of Project score distributions:
+Because genuinely high-risk issues are rare, expect the distribution of scores to shift significantly, as in the following example of Project score distributions:
 
 <div data-full-width="false"><figure><img src="../../.gitbook/assets/example-project-scores-distribution.png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure></div>
 
-Risk Score replaces the Priority Score directly. See the [priority score docs](priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled.
+When you enable Risk Score, it replaces the Priority Score for Snyk Open Source and Snyk Container issues. Snyk Code and Snyk IaC issues continue to use the Priority Score. To learn how to work with either score in the Web UI, the API, and Reports, visit [Priority Score](priority-score.md).
 
 Risk Score is not available in the CLI.
 
@@ -138,10 +138,10 @@ User-defined Project attribute representing the subjective business impact of th
 | `Low`                | Impact subscore decreases significantly. |
 
 {% hint style="info" %}
-When you apply a business criticality attribute to a Project, a retest is required for the Risk Scores to incorporate the new data. When no Business Criticality is assigned, the Impact subscore will not be affected.
+When you apply a business criticality attribute to a Project, you must retest the Project for the Risk Score to incorporate the new data.
 {% endhint %}
 
-When the business criticality for a Project is not configured, the `high` default value is used so that the subscore remains unaffected.
+When business criticality is not configured for a Project, Snyk uses the `high` default value, so the Impact subscore remains unaffected.
 
 ### Objective likelihood risk factors
 
@@ -151,10 +151,10 @@ Represents the existence and maturity of any public exploit retrieved and valida
 
 | Possible input value | Score impact                             |
 | -------------------- | ---------------------------------------- |
-| `No Known Exploit`   | Impact subscore decreases significantly. |
-| `Proof of Concept`   | Impact subscore decreases slightly.      |
-| `Functional`         | Impact subscore increases.               |
-| `High`               | Impact subscore increases significantly. |
+| `No Known Exploit`   | Likelihood subscore decreases significantly. |
+| `Proof of Concept`   | Likelihood subscore decreases slightly.      |
+| `Functional`         | Likelihood subscore increases.               |
+| `High`               | Likelihood subscore increases significantly. |
 
 #### EPSS score
 

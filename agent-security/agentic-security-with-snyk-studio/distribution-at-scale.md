@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to distribute Snyk Studio as a managed utility across your development
+  teams
 nav_context: classic
 ---
 
@@ -46,7 +49,7 @@ Snyk updates the Snyk CLI and MCP server regularly with features and fixes. You 
 
 <summary><strong>Yes</strong>, enable auto-updates for Snyk CLI/MCP versions.</summary>
 
-You need to keep the Snyk CLI on the latest version using MDM, which depends on your [chosen installation method](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli).
+You need to keep the Snyk CLI on the latest version using MDM, which depends on your [chosen installation method](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli).
 
 </details>
 
@@ -54,7 +57,7 @@ You need to keep the Snyk CLI on the latest version using MDM, which depends on 
 
 <summary><strong>No</strong>, manually update Snyk CLI/MCP versions after internal testing.</summary>
 
-* If you are deploying alongside Cursor, Windsurf, Antigravity, VS Code, Gemini CLI, or Claude CLI, [install a specific CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) and run `snyk mcp config --tool=[ade_name]` where `[ade_name]` is one of the following:
+* If you are deploying alongside Cursor, Windsurf, Antigravity, VS Code, Gemini CLI, or Claude CLI, [install a specific CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) and run `snyk mcp config --tool=[ade_name]` where `[ade_name]` is one of the following:
   * `cursor`
   * `windsurf`
   * `antigravity`
@@ -65,7 +68,7 @@ You need to keep the Snyk CLI on the latest version using MDM, which depends on 
 
     To deploy, complete the following steps:
 
-    1. [Install a specific CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli).
+    1. [Install a specific CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli).
     2. Configure the MCP server for your ADE.
     3. Write the rule files. This step is optional and varies by ADE.
 
@@ -73,13 +76,13 @@ You need to keep the Snyk CLI on the latest version using MDM, which depends on 
 
 ### Do you want to enable Secure at inception directives?
 
-[Secure at inception directives](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-directives) guide the coding assistant on how and when to scan generated code and automatically fix security issues. You can configure whether you use these directives, the content, and how strictly you want them enforced.
+[Secure at inception directives](directives.md#secure-at-inception-directives) guide the coding assistant on how and when to scan generated code and automatically fix security issues. You can configure whether you use these directives, the content, and how strictly you want them enforced.
 
 <details>
 
 <summary><strong>Yes</strong>, enable Secure at inception directives.</summary>
 
-* If you use Claude Code, Codex CLI, Cursor, or Gemini CLI, use the [Snyk Studio installer](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/getting-started-with-snyk-studio#install-snyk-studio-for-ades-with-hooks-support) to automatically configure the directives.
+* If you use Claude Code, Codex CLI, Cursor, or Gemini CLI, use the [Snyk Studio installer](getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-with-hooks-support) to automatically configure the directives.
 * If you deploy Snyk Studio into any other coding assistant or want to customize the Secure at inception directives, write the directives to the appropriate directory for your assistant. You can apply directives at the user level or the repository level.
   * User-level directives: These apply to all repositories. For Windsurf, add rules to the `global_rules.md` file. For macOS or Linux, this file is located in the `~/.codeium/windsurf/directory`. For Windows, this file is located in the `%USERPROFILE%\.codeium\windsurf\` directory. Cursor does not support programmatic user-level rules.
   * If you use administrative consoles to manage directives, they must remain in sync across your development environments.
@@ -131,7 +134,7 @@ The following example details deployment steps for "Example Company":
 * Yes, enable Secure at inception directives.
 * No, do not allow developers to modify directive settings.
 
-This results in a straightforward deployment where the [Snyk Studio installer](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/getting-started-with-snyk-studio#install-snyk-studio-for-ades-with-hooks-support) can configure the hooks (guardrail directives), skills, MCP server, and commands. The configuration is enforced as frequently as the MDM script runs.
+This results in a straightforward deployment where the [Snyk Studio installer](getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-with-hooks-support) can configure the hooks (guardrail directives), skills, MCP server, and commands. The configuration is enforced as frequently as the MDM script runs.
 
 ### Development and rollout steps
 
