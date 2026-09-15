@@ -5,6 +5,8 @@ description: >-
   including Early Access code analysis on Enterprise plans
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Dart and Flutter
 
 {% hint style="info" %}

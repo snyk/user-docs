@@ -5,6 +5,8 @@ description: >-
   and IDE testing and supported frameworks and libraries
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # C/C++
 
 {% hint style="info" %}

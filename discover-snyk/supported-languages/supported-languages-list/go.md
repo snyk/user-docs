@@ -5,6 +5,8 @@ description: >-
   CLI and IDE testing, and supported frameworks
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Go
 
 ## Applicability and integration

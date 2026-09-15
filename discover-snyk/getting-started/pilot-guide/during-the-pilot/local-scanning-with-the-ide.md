@@ -3,6 +3,8 @@ description: How to scan code locally with the Snyk IDE plugin, using VS Code as
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Local scanning with the IDE
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
