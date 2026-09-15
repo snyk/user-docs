@@ -3,6 +3,8 @@ description: How to install and configure Snyk Broker for Bitbucket Server and D
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Bitbucket Server/Data Center - install and configure using Docker
 
 Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).

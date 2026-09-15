@@ -3,6 +3,8 @@ description: How to set up Snyk SSO with your existing identity provider, includ
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Set up Snyk Single Sign-On (SSO)
 
 Set up Single Sign-On (SSO) to allow your developers and teams easy access to Snyk through your existing SSO provider.

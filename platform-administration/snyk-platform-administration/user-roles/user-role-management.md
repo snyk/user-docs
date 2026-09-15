@@ -3,6 +3,8 @@ description: How to manage Snyk pre-defined and custom user roles, available on 
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # User role management
 
 {% hint style="info" %}

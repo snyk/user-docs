@@ -3,6 +3,8 @@ description: Custom role template for a Team Lead, an Organization Admin who can
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Team Lead role template
 
 A Team Lead is equivalent to the default [**Organization Admin**](../pre-defined-roles.md) rol&#x65;**,** providing additional capabilities to customize or change user permissions for other users.\

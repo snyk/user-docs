@@ -3,6 +3,8 @@ description: The basic steps to install and configure the Universal Broker, from
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Basic steps to install and configure Universal Broker
 
 {% hint style="info" %}

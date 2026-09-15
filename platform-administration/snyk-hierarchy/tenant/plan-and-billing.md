@@ -5,6 +5,8 @@ description: >-
   available on Enterprise plans
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Plan and billing
 
 ## Your Plan

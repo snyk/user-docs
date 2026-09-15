@@ -3,6 +3,8 @@ description: Overview of Snyk platform administration, including managing Tenant
 nav_context: classic
 ---
 
+{% include ".gitbook/includes/new-navigation-banner.md" %}
+
 # Overview
 
 {% hint style="info" %}
