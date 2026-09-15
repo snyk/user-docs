@@ -1,6 +1,8 @@
 ---
-description: How to test Maven and Gradle Projects for Java and Kotlin with the Snyk CLI, including supported manifest files
 nav_context: agnostic
+description: >-
+  How to test Maven and Gradle Projects for Java and Kotlin with the Snyk CLI,
+  including supported manifest files
 ---
 
 # CLI support for Java and Kotlin
@@ -264,7 +266,7 @@ For more details on unmanaged Jars, [Scan all unmanaged JAR files](https://app.g
 
 ### Testing containers
 
-Snyk automatically looks for application (such as open source, maven, and npm) vulnerabilities as part of a container scan. Snyk recommends integrating via CLI or Registry earlier in the pipeline and use this as an additional signal or insight into what is in production. [Snyk CLI for container security](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container).
+Snyk automatically looks for application (such as open source, maven, and npm) vulnerabilities as part of a container scan. Snyk recommends integrating via CLI or Registry earlier in the pipeline and use this as an additional signal or insight into what is in production. [Snyk CLI for container security](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container).
 
 To test Infrastructure as Code, [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/).
 

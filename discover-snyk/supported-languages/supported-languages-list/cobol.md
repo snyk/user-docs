@@ -1,29 +1,25 @@
 ---
-description: Snyk support for COBOL with Snyk Code, available in Early Access on Enterprise plans, including CICS frameworks and supported dialects
+description: Snyk Code support for COBOL, including CICS frameworks and supported dialects
 nav_context: agnostic
 ---
 
 # COBOL
 
 {% hint style="info" %}
-COBOL is supported only for Snyk Code.
+Snyk supports COBOL only in Snyk Code.
 {% endhint %}
 
 ## COBOL for Snyk Code
-
-{% hint style="info" %}
-Code analysis support for COBOL is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
-{% endhint %}
 
 For an overview of the supported security rules, visit [COBOL rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules).
 
 ### Supported frameworks and libraries
 
-For COBOL with Snyk Code, Snyk supports the CICS frameworks and libraries.
+For COBOL, Snyk Code supports CICS frameworks and libraries.
 
 ### Supported dialects and formats
 
-* IBM Enterprise COBOL for z/OS (v4.2+)
+* IBM Enterprise COBOL for z/OS version 4.2 and later
 * Micro Focus COBOL
 * GNU COBOL
 * OpenCOBOL
@@ -33,7 +29,7 @@ For COBOL with Snyk Code, Snyk supports the CICS frameworks and libraries.
 
 ### Supported file formats
 
-The following file formats are supported: `.cbl`, `.ccp`, `.cob`, `.cpy`.
+Snyk Code supports the following file formats: `.cbl`, `.ccp`, `.cob`, `.cpy`.
 
 ### Available features
 

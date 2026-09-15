@@ -1,3 +1,9 @@
+---
+description: >-
+  How to create custom regex rules that detect secrets specific to your
+  Organization
+---
+
 # Custom RegEx for Secrets
 
 Snyk Secrets lets you define custom regular expressions (regex) to detect secrets that are specific to your Organization, such as database passwords. You can scope a custom regex rule to a **Group** or one or more **Organizations**.

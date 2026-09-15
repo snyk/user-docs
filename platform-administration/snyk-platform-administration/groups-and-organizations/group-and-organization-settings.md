@@ -31,6 +31,5 @@ At the Organization level, select **Settings** to manage Organization settings a
 * **Snyk Code**: Enable Snyk Code; see the [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code) documentation for details.
 * **Snyk IaC:** Enable Snyk Iac, detecting configuration files, and rules. Select severity levels for configurations scanned. See the [IaC ](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/scan-your-iac-source-code)documentation for details.
 * **Usage**: See the [Usage settings](usage-settings.md) page for details.
-* **Notifications**: See the [Manage notifications](../manage-notifications.md) page for details.
-* **Snyk Preview**: See the [Snyk Preview page](../snyk-preview.md) for details.
-
+* **Notifications**: Visit the [Manage notifications](../manage-notifications.md) page for details.
+* **Snyk Preview**: Visit the [Snyk Preview page](../snyk-preview.md) for details.

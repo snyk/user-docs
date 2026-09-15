@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to set up Snyk Studio and the Snyk MCP server in Factory Terminal and
+  IDE
 nav_context: classic
 ---
 

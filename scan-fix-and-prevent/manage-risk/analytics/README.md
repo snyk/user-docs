@@ -1,6 +1,6 @@
 ---
-description: How Snyk Analytics reports on your security posture and program
 nav_context: new
+description: How Snyk Analytics reports on your security posture and program
 ---
 
 # Analytics
@@ -40,4 +40,3 @@ Users with Group access can view data for the Organizations associated with thos
 ### Organization-level analytics
 
 Snyk restricts access based on Organization-level permissions in both predefined and custom roles.
-

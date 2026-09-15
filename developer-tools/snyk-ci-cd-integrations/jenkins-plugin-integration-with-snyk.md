@@ -1,14 +1,16 @@
 ---
-description: How to use the native Snyk Jenkins plugin, based on the Snyk CLI, to test and monitor Projects
 nav_context: classic
+description: >-
+  How to use the native Snyk Jenkins plugin, based on the Snyk CLI, to test and
+  monitor Projects
 ---
 
 # Jenkins plugin integration with Snyk
 
-Snyk offers a native plugin for Jenkins that is based on the [Snyk CLI](../snyk-cli/), to test and monitor Projects for vulnerabilities in your pipelines.
+Snyk offers a native plugin for Jenkins that is based on the [Snyk CLI](../snyk-cli/overview.md), to test and monitor Projects for vulnerabilities in your pipelines.
 
 {% hint style="warning" %}
-The Snyk Jenkins plugin supports Snyk Open Source. If you plan to include Snyk Code, Snyk Container, and Snyk IaC scans in your pipeline, use the generic [Snyk CLI](../snyk-cli/).
+The Snyk Jenkins plugin supports Snyk Open Source. If you plan to include Snyk Code, Snyk Container, and Snyk IaC scans in your pipeline, use the generic [Snyk CLI](../snyk-cli/overview.md).
 {% endhint %}
 
 For more information, [see the Snyk Jenkins Plugin repository](https://github.com/jenkinsci/snyk-security-scanner-plugin).
@@ -61,7 +63,7 @@ If you are in a region other than `SNYK-US-01`, which uses the `https://api.snyk
 * Click **Add**.
 * Set the name to `SNYK_API` and the value to the custom endpoint.
 
-For more information, see [Configure Snyk CLI to connect to Snyk API](../cli-ide-and-ci-cd-integrations/snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md).
+For more information, see [Configure Snyk CLI to connect to Snyk API](../snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md).
 
 ## Configure a Snyk PAT or API token credential
 

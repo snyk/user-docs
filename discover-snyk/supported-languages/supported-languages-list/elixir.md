@@ -1,6 +1,8 @@
 ---
-description: Snyk support for Elixir with Snyk Open Source, including CLI and IDE testing, the Mix and Hex package managers, and SBOM testing
 nav_context: agnostic
+description: >-
+  Snyk support for Elixir with Snyk Open Source, including CLI and IDE testing,
+  the Mix and Hex package managers, and SBOM testing
 ---
 
 # Elixir
@@ -36,7 +38,7 @@ The **Snyk Fix PR** feature is not available for Elixir. This means that you wil
 To scan your dependencies, you must first install Elixir and Mix. For details, [see the Elixir installation instructions](https://elixir-lang.org/install.html).
 {% endhint %}
 
-Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli).
+Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli).
 
 Mix is a build tool that compiles, tests, and creates Elixir projects. Mix manages dependencies by integrating with the Hex package manager.
 

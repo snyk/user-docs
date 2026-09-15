@@ -25,7 +25,6 @@ You can [manage users of a Tenant](manage-users-in-a-tenant.md) through the **Me
 If you are a member of more than one Tenant, you can switch between them by selecting the Tenant name.
 {% endhint %}
 
-
 ### Tenant members
 
 To view the users of a Tenant, select **Members**.

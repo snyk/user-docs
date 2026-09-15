@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the SBOM endpoints, including request parameters and response schemas
+---
+
 # SBOM
 
 {% hint style="info" %}
