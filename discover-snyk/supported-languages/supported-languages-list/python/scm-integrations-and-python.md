@@ -3,6 +3,8 @@ description: How Snyk scans Python Projects through SCM integrations, including 
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # SCM integration support for Python
 
 {% hint style="warning" %}

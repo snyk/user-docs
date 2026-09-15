@@ -3,6 +3,8 @@ description: Snyk Groups, which contain Organizations and let teams manage colla
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Groups
 
 Snyk Groups make it easier for you to work in teams. Groups can contain many Organizations, and each Organization can contain many collaborators and Projects.

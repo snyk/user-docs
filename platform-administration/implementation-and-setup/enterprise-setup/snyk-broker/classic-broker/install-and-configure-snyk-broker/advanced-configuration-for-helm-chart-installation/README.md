@@ -5,12 +5,12 @@ nav_context: agnostic
 
 # Advanced configuration for Helm Chart installation
 
+When you set up Snyk Broker using Helm, you can set advanced parameters as explained on the following pages:
+
 {% hint style="info" %}
 **Multi-tenant settings for regions other than the default**\
 When you set up Snyk Broker for use in regions other than the default, additional environment variables with specific URLs are required. For the URLs and examples, see [Regional hosting and data residency, Broker URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-server-urls).
 {% endhint %}
-
-When you set up Snyk Broker using Helm, you can set advanced parameters as explained on the following pages:
 
 * [Custom additional options for Broker Helm Chart installation](custom-additional-options-for-broker-helm-chart-installation.md)
 * [Ingress options with Snyk Broker Helm installation](ingress-options-with-snyk-broker-helm-installation.md)

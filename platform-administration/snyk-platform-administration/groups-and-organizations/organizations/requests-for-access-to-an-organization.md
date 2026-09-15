@@ -3,6 +3,8 @@ description: How users request access to a Snyk Organization and how administrat
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Requests for access to an Organization
 
 Users who are not members of a Snyk Organization can request access.

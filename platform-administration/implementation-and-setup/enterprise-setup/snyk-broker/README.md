@@ -3,6 +3,8 @@ description: Snyk Broker, an open-source proxy that securely connects Snyk to on
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Broker
 
 {% hint style="info" %}

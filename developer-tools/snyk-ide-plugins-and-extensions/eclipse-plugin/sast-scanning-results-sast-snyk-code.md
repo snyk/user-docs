@@ -1,6 +1,6 @@
 ---
-description: How to view Snyk Code SAST scanning results in the Eclipse plugin
 nav_context: classic
+description: How to view Snyk Code SAST scanning results in the Eclipse plugin
 ---
 
 # SAST scanning results (SAST, Snyk Code)
@@ -12,8 +12,12 @@ In the Eclipse plugin version 2.0.0 and later, Snyk has enhanced integrations wi
 
 <figure><img src="../../.gitbook/assets/snyk-code-findings-displayed-eclipse.png" alt=""><figcaption><p>Snyk Code findings displayed in Eclipse</p></figcaption></figure>
 
-In addition to this, the **Snyk Results** view offers detailed issue descriptions, including the **Data Flow** and **Remediation** suggestions. In this view, you can start and stop scans, filter issues, and more.&#x20;
+In addition to this, the **Snyk Results** view offers detailed issue descriptions, including the **Data Flow** and **Remediation** suggestions. In this view, you can start and stop scans, filter issues, and more.
 
 To filter issues in the **Snyk Results** view, click the three vertical dots menu at the top right of the view, and then select any combination of options from the **Severity**, **Snyk Product**, **Issues Status**, and **Fixability** submenus to customize your filter.
 
 <figure><img src="../../.gitbook/assets/snyk-code-findings-displayed-snyk-view.png" alt=""><figcaption><p>Snyk Code findings displayed in the Snyk View</p></figcaption></figure>
+
+{% hint style="info" %}
+To use the Ignore Approval Workflow with Eclipse, follow the steps in [View analysis results from Visual Studio Code extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension).
+{% endhint %}

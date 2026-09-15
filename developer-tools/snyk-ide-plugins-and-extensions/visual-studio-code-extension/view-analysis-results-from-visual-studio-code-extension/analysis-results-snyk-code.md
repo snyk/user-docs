@@ -1,15 +1,11 @@
 ---
-description: How to view Snyk Code security and quality results in the Visual Studio Code extension
+description: How to view Snyk Code security results in the Visual Studio Code extension
 nav_context: classic
 ---
 
 # Analysis results: Snyk Code
 
-Snyk Code analysis shows security vulnerabilities and quality issues in your code with every scan.
-
-{% hint style="info" %}
-Effective beginning on June 24, 2025, Snyk Code Quality issues will no longer be provided.
-{% endhint %}
+Snyk Code analysis shows security vulnerabilities in your code with every scan.
 
 ## Snyk Code vulnerability window
 

@@ -1,13 +1,13 @@
 ---
-description: How to use a labeling policy to categorize assets in Snyk Essentials
 nav_context: agnostic
+description: How to use a labeling policy to categorize assets in Snyk Essentials
 ---
 
 # Labeling policy
 
 ## Labeling policy
 
-Categorize and label repository assets with [asset labels](../../../../manage-assets/assets-inventory-components.md#tags). You can use the **Set Asset Labels** action to mark the repositories to which the filter criteria you have set apply.
+Categorize and label repository assets with [asset labels](../../../../fix/manage-asset-inventory/assets-inventory-components.md#tags). You can use the **Set Asset Labels** action to mark the repositories to which the filter criteria you have set apply.
 
 Snyk Essentials has a number of pre-defined system labels that can be used for filtering and setting labels with policies. User-defined custom labels can be created using policies. You can create a Set Asset Label policy action and define a custom tag by typing your tag in the tag search bar and selecting **Create new: `label_name`**. In this example the `label_name` is payment.
 

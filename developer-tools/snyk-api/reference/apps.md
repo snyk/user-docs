@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Apps endpoints, including request parameters and response schemas
+---
+
 # Apps
 
 {% hint style="info" %}

@@ -1,11 +1,13 @@
 ---
-description: How to use the Snyk Maven plugin, based on the Snyk CLI, to scan and monitor your Projects
 nav_context: agnostic
+description: >-
+  How to use the Snyk Maven plugin, based on the Snyk CLI, to scan and monitor
+  your Projects
 ---
 
 # Maven plugin integration with Snyk
 
-Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin) based on the [Snyk CLI](../snyk-cli/). This plugin allows you to scan and monitor your Maven dependencies for vulnerabilities.
+Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin) based on the [Snyk CLI](../snyk-cli/overview.md). This plugin allows you to scan and monitor your Maven dependencies for vulnerabilities.
 
 See all releases in the [Maven Central Repository](https://search.maven.org/artifact/io.snyk/snyk-maven-plugin).
 
@@ -103,7 +105,7 @@ You must provide a Snyk API token to access Snyk services. You can do so by:
 
 * Providing `apiToken` in your configuration using a variable.
 * Providing a `SNYK_TOKEN` environment variable.
-* Authenticating using the CLI  `snyk auth` command before using this plugin.
+* Authenticating using the CLI `snyk auth` command before using this plugin.
 
 ### `skip` \[boolean]
 
@@ -121,7 +123,7 @@ When this variable is set to `true`, if the Snyk CLI tool indicates that action 
 
 ### `args` \[array\<string>]
 
-This plugin uses the [Snyk CLI](../snyk-cli/), so you can pass any supported arguments using `<args>`. See the example that follows.
+This plugin uses the [Snyk CLI](../snyk-cli/overview.md), so you can pass any supported arguments using `<args>`. See the example that follows.
 
 For a list of supported CLI options, see the [CLI commands and options summary](../snyk-cli/cli-commands-and-options-summary.md).
 

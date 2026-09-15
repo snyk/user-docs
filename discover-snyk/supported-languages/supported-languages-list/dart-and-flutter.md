@@ -1,7 +1,11 @@
 ---
-description: Snyk support for Dart and Flutter with Snyk Code and Snyk Open Source, including Early Access code analysis on Enterprise plans
 nav_context: classic
+description: >-
+  Snyk support for Dart and Flutter with Snyk Code and Snyk Open Source,
+  including Early Access code analysis on Enterprise plans
 ---
+
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Dart and Flutter
 

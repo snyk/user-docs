@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the TenantRole endpoints, including request parameters and response schemas
+---
+
 # TenantRole
 
 {% hint style="info" %}

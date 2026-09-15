@@ -3,6 +3,8 @@ description: 'Phase 2 of the Snyk team implementation: name and configure your O
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Phase 2: Configure your Organization
 
 ## Name your Organization

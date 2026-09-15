@@ -3,6 +3,8 @@ description: How to connect development tools in a Snyk template Organization to
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Connect your development tools
 
 To roll out Snyk efficiently at scale, your first major milestone is configuring a Template Organization. Rather than setting up every new team from scratch, this template acts as your master blueprint. By configuring your core tools, source control integrations, and default security behaviors here first, you establish a standardized baseline that can be easily cloned, either manually or using the API, across your entire business.

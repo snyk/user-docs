@@ -3,6 +3,8 @@ description: How to create and use Snyk service accounts with OAuth 2.0, availab
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Service accounts using OAuth 2.0
 
 {% hint style="info" %}
@@ -32,7 +34,7 @@ The `access_token` has a short time-to-live and must be refreshed once it expire
 
 ### Authenticate with the Snyk CLI
 
-You can also use the `client_secret` and the `client_id` to authenticate with the Snyk CLI. For details, see the [`snyk auth`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/auth) command help.
+You can also use the `client_secret` and the `client_id` to authenticate with the Snyk CLI. For details, see the [`snyk auth`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/auth) command help.
 
 ## Create OAuth service accounts through the UI
 

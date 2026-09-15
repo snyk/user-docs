@@ -20,7 +20,7 @@ For more information, see the [Snyk CLI repository](https://github.com/snyk/cli)
 {% hint style="info" %}
 **Snyk Secrets support**
 
-Snyk Secrets does not support CI/CD plugin integrations. For CI/CD-time secret scanning, use [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli) directly in your pipeline.
+Snyk Secrets does not support CI/CD plugin integrations. For CI/CD-time secret scanning, use [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli) directly in your pipeline.
 {% endhint %}
 
 ## Adopting a CI/CD integration

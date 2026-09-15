@@ -1,6 +1,8 @@
 ---
-description: How Snyk releases features through stages from alpha to general availability, and what each stage means for access and documentation.
 nav_context: agnostic
+description: >-
+  How Snyk releases features through stages from alpha to general availability,
+  and what each stage means for access and documentation.
 ---
 
 # Snyk release process
@@ -42,13 +44,12 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
   * SCM integration for uv
 * Reports
   * [Repositories tested in CI/CD report](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#repositories-tested-in-ci-cd-report)
-* [Snyk 2.0 platform improvements](snyk-2.0-platform-improvements.md)
+* [Navigate the Snyk Web UI](../navigate-the-snyk-web-ui.md)
 
 ### Deprecated features
 
 Deprecated features are outdated and will be removed in the future. The documentation page will announce the transition of a feature to Deprecated six months before its start date.
 
-* Snyk Code Quality is deprecated.
 * Snyk Code Local Engine is deprecated.
 * Apps API has the following deprecated endpoints:
   * **Revoke app bot authorization** endpoint

@@ -31,15 +31,5 @@ At the Organization level, select **Settings** to manage Organization settings a
 * **Snyk Code**: Enable Snyk Code; see the [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code) documentation for details.
 * **Snyk IaC:** Enable Snyk Iac, detecting configuration files, and rules. Select severity levels for configurations scanned. See the [IaC ](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/scan-your-iac-source-code)documentation for details.
 * **Usage**: See the [Usage settings](usage-settings.md) page for details.
-* **Notifications**: See the [Manage notifications](../manage-notifications.md) page for details.
-* **Snyk Preview**: See the [Snyk Preview page](../snyk-preview.md) for details.
-
-{% hint style="info" %}
-**Snyk 2.0 (Early Access)**
-
-In the Snyk 2.0 UI, **Settings** is the unified area for all Group and Organization settings, depending on the area you choose using the scope selector at the top of the page.
-
-Snyk 2.0 introduces UI enhancements to the platform navigation and is available in Early Access. This is being rolled out gradually, so not all users see the new navigation at the same time.
-
-If you're an existing user, you can switch between the new and classic navigation at any time using the toggle in your user profile menu. For more information, visit [Snyk 2.0 platform improvements](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-2.0-platform-improvements).
-{% endhint %}
+* **Notifications**: Visit the [Manage notifications](../manage-notifications.md) page for details.
+* **Snyk Preview**: Visit the [Snyk Preview page](../snyk-preview.md) for details.

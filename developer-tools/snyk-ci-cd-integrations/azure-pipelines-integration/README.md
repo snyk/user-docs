@@ -1,6 +1,8 @@
 ---
-description: How to add security scanning to Azure Pipelines with the Snyk Security Scan task
 nav_context: agnostic
+description: >-
+  How to add security scanning to Azure Pipelines with the Snyk Security Scan
+  task
 ---
 
 # Azure Pipelines integration using the Snyk Security Scan task
@@ -10,7 +12,7 @@ Snyk enables security across the Microsoft Azure ecosystem, including Azure Pipe
 The Snyk Security Scan task is available for all languages supported by Snyk and Azure DevOps.
 
 {% hint style="info" %}
-The Snyk Security Scan task supports Snyk Open Source, Snyk Container, and Snyk Code. If you plan to include other products in your pipeline, use the [Snyk CLI](../../snyk-cli/).
+The Snyk Security Scan task supports Snyk Open Source, Snyk Container, and Snyk Code. If you plan to include other products in your pipeline, use the [Snyk CLI](../../snyk-cli/overview.md).
 {% endhint %}
 
 Ready-to-use tasks for Azure Pipelines can be inserted quickly and directly from the Azure interface, enabling you to customize and automate your pipelines with no extra coding. Among the tasks included is the Snyk task.

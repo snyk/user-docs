@@ -1,3 +1,7 @@
+---
+description: Snyk API reference for the Custom Base Images endpoints, including request parameters and response schemas
+---
+
 # Custom Base Images
 
 {% hint style="info" %}

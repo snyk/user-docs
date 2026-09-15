@@ -1,6 +1,8 @@
 ---
-description: How to test Python Projects with the Snyk CLI, including setting the Python version and preparing pip dependencies before scanning
 nav_context: agnostic
+description: >-
+  How to test Python Projects with the Snyk CLI, including setting the Python
+  version and preparing pip dependencies before scanning
 ---
 
 # CLI support for Python
