@@ -21,17 +21,7 @@ Here is a list of all the available inventory tabs:
 * **Teams**: SCM repository assets grouped by teams. Only SCM organizations with teams and repositories assigned to a team appear on this layout.
 * **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk Essentials.
 
-Each inventory tab may include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory layout.
-
-{% hint style="info" %}
-**Snyk 2.0 (Early Access)**
-
-In the Snyk 2.0 UI, your asset inventory is at the top-level of **Inventory**.
-
-Snyk 2.0 introduces UI enhancements to the platform navigation and is available in Early Access. This is being rolled out gradually, so not all users see the new navigation at the same time.
-
-If you are an existing user, you can switch between the new and classic navigation at any time using the toggle in your user profile menu. For more information, visit [Snyk 2.0 platform improvements](/broken/spaces/L7HyJj9FsK1W4pNt8Gzl/pages/SrUlxzQBndMqThxlcua5).
-{% endhint %}
+Each inventory tab can include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory layout.
 
 ## Assets overview
 
