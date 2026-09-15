@@ -5,14 +5,14 @@ nav_context: classic
 
 # npm Teams and npm Enterprise integration
 
+Snyk can use custom npm Teams and npm Enterprise repositories with npm and Yarn Projects.
+
 {% hint style="info" %}
 **Feature availability**\
 This feature is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 This guide is relevant for Snyk Web UI integrations only. The Snyk CLI already supports Yarn and npm projects with private npm Teams and npm Enterprise registries.
 {% endhint %}
-
-Snyk can use custom npm Teams and npm Enterprise repositories with npm and Yarn Projects.
 
 This enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
 

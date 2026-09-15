@@ -5,6 +5,8 @@ nav_context: agnostic
 
 # Ignore vulnerabilities using the Snyk CLI
 
+Sometimes, Snyk alerts you to a vulnerability that has no update or Snyk patch available, or that you do not believe to be currently exploitable in your application. When this happens you may want to tell Snyk to ignore the vulnerability for a certain period of time.
+
 {% hint style="info" %}
 For [Snyk Open Source](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source), these options work by default.
 
@@ -14,8 +16,6 @@ For [Snyk Infrastructure as Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2
 
 For [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code), see [Excluding directories and files from the Snyk Code CLI test](snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md).
 {% endhint %}
-
-Sometimes, Snyk alerts you to a vulnerability that has no update or Snyk patch available, or that you do not believe to be currently exploitable in your application. When this happens you may want to tell Snyk to ignore the vulnerability for a certain period of time.
 
 You can ignore a specific vulnerability in a project using the `snyk ignore` command.
 

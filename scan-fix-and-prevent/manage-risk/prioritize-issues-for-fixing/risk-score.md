@@ -5,6 +5,8 @@ nav_context: classic
 
 # Risk Score
 
+The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.
+
 {% hint style="info" %}
 **Release status**
 
@@ -12,8 +14,6 @@ Risk Score is in Early Access and available for Snyk Open Source and Snyk Contai
 
 Use [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
-
-The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.
 
 Risk score remains the same over time if the contributing factors do not change. However, some contributing factors, such as the Exploit Prediction Scoring System (EPSS), can potentially change frequently. The number of days since the vulnerability was first published is also a factor and causes the score to change once, when the number of days becomes more than one year, and the likelihood subscore decreases.
 

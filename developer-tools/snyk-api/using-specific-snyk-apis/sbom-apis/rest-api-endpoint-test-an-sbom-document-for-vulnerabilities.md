@@ -5,6 +5,8 @@ nav_context: agnostic
 
 # Test an SBOM document for vulnerabilities
 
+Snyk offers a [collection of API endpoints](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests) to asynchronously test a software bill of materials (SBOM) document. You can use these endpoints to learn more about the vulnerabilities impacting your SBOM and its packages.
+
 {% hint style="info" %}
 **Feature availability**
 
@@ -12,8 +14,6 @@ The Snyk REST API is available only for Enterprise plans. For more information, 
 
 These endpoints are beta API versions. Some of the functionality may change. For more information, see the [Versioning](../../rest-api/about-the-rest-api.md#versioning) information for the REST API.
 {% endhint %}
-
-Snyk offers a [collection of API endpoints](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests) to asynchronously test a software bill of materials (SBOM) document. You can use these endpoints to learn more about the vulnerabilities impacting your SBOM and its packages.
 
 {% hint style="info" %}
 Supported SBOM formats are [CycloneDX](https://cyclonedx.org/) 1.4/1.5/1.6 JSON and [SPDX](https://spdx.dev/) 2.3 JSON.
