@@ -65,15 +65,15 @@ Example of setting to the latest Git tag:
 
 ### `--project-tags=<TAG>[,<TAG>]...>`
 
-This can be used in combination with the `--report` option.
+Use this option in combination with the `--report` option.
 
-Set the project tags to one or more values (comma-separated key value pairs with an "=" separator).
+Set the Project tags to one or more values (comma-separated key-value pairs with an "=" separator).
 
 Example: `--project-tags=department=finance,team=alpha`
 
-To clear the project tags set `--project-tags=`
+To clear the Project tags, set `--project-tags=`
 
-For more information including allowable characters see [Project tags](https://docs.snyk.io/snyk-platform-administration/snyk-projects/project-tags)
+For more information, including allowable characters, visit [Project tags](../../../platform-administration/snyk-platform-administration/groups-and-organizations/project-tags.md).
 
 ### `--remote-repo-url=<URL>`
 
