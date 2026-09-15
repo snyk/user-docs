@@ -3,6 +3,8 @@ description: 'Step 3: create and scan a cloud environment for Azure in the Web U
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Step 3: Create and scan a Cloud Environment for Azure (Web UI)
 
 {% hint style="info" %}

@@ -3,6 +3,8 @@ description: How to switch the Snyk API and Web scan profile
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Switch the scan profile
 
 Switch between different scan profiles for your targets.

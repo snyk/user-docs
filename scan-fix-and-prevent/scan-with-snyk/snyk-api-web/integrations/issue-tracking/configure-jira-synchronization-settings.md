@@ -3,6 +3,8 @@ description: How to configure Jira synchronization settings for Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure Jira synchronization settings
 
 You can connect Snyk API & Web with either Jira Cloud or your own Jira Server instance. This gives you two-way synchronization of your findings with Jira by integrating Snyk with your existing bug tracker or task manager.

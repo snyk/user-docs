@@ -3,6 +3,8 @@ description: How Snyk automatically creates Project collections
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Automatically created Project collections
 
 {% hint style="info" %}

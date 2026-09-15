@@ -3,6 +3,8 @@ description: How to configure Snyk Code for your Organization
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure Snyk Code
 
 ## Conditions

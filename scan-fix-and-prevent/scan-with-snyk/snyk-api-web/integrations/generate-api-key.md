@@ -3,6 +3,8 @@ description: How to generate an API key for Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Generate API key
 
 Learn how to generate API keys to integrate with Snyk API & Web.

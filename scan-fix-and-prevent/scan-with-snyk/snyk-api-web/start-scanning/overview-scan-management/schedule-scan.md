@@ -3,6 +3,8 @@ description: How to schedule a Snyk API and Web scan
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Schedule scan
 
 You can set up a schedule so that scans start automatically on specific dates and times.

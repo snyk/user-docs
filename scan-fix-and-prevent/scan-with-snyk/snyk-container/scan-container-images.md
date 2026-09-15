@@ -3,6 +3,8 @@ description: How to scan container images with Snyk Container
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Scan container images
 
 Snyk Container helps you find and fix vulnerabilities in container images, based on container registry scans.

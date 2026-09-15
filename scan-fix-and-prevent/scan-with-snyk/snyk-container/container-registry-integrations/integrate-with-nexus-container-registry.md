@@ -3,6 +3,8 @@ description: How to integrate Snyk Container with the Nexus Container Registry
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Nexus Container Registry
 
 {% hint style="info" %}

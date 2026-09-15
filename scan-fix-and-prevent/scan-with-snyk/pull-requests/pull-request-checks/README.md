@@ -3,6 +3,8 @@ description: How Snyk Pull Request checks block new vulnerabilities in pull requ
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Pull Request checks
 
 ## Introduction to automated security scans with PR checks

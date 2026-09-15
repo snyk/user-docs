@@ -3,6 +3,8 @@ description: How Snyk patches fix vulnerabilities when no upgrade is available
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk patches to fix vulnerabilities
 
 ## Introduction to patches

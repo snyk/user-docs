@@ -3,6 +3,8 @@ description: How to install a Snyk API and Web scanning agent
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Install a scanning agent
 
 Install a Scanning Agent to scan your internal applications with minimal changes to network and security configurations.

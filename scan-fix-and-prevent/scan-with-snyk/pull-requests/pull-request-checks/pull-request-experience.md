@@ -3,6 +3,8 @@ nav_context: classic
 description: The Snyk Pull Request check experience for developers
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Pull Request experience
 
 The Pull Request experience builds on the foundational [Pull Request Checks](./) functionality. It streamlines the security review process by reducing the need to switch between different developer tools and providing contextually relevant feedback within your Source Code Manager (SCM) interface.

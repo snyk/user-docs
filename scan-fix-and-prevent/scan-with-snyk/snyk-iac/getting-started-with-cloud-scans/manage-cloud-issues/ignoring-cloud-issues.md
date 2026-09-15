@@ -3,6 +3,8 @@ description: How to ignore cloud issues in Snyk
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Ignoring cloud issues
 
 You can ignore a cloud [issue](./) from the Snyk Web UI.

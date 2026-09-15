@@ -3,6 +3,8 @@ description: How to install the SDK for writing Snyk IaC custom rules
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Install the SDK
 
 ​Install the SDK using one of these options:

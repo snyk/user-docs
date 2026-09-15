@@ -3,6 +3,8 @@ description: How to import targets for Snyk API and Web scanning
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Import targets
 
 Import multiple targets to your Snyk API & Web account using JSON, CSV, or YAML files instead of adding targets individually through the interface.

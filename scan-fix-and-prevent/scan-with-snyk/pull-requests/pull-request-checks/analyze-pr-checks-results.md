@@ -3,6 +3,8 @@ description: How to analyze Snyk Pull Request check results
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Analyze PR checks results
 
 ## PR checks results

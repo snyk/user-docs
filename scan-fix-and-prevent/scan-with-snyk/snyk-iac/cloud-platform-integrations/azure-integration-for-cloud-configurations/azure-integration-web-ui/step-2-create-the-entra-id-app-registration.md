@@ -3,6 +3,8 @@ description: 'Step 2: create the Entra ID app registration for the Snyk Azure in
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Step 2: Create the Entra ID app registration
 
 To scan an Azure subscription, Snyk takes the permissions of a service principal with a [Reader](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#reader) role that allows Snyk to scan the configuration of your subscription resources.

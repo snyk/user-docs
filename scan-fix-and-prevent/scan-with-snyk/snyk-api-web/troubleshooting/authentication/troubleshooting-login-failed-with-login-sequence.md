@@ -3,6 +3,8 @@ description: How to troubleshoot a failed login with a login sequence in Snyk AP
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Troubleshoot login failed with login sequence
 
 In targets with authentication, Snyk API & Web must log in to reach areas reserved for authenticated users. If scans fail to log in using a login sequence for complex authentication flows, follow these troubleshooting steps.

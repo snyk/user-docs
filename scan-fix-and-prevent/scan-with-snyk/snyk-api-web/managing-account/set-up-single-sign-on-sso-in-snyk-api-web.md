@@ -3,6 +3,8 @@ description: How to set up single sign-on (SSO) in Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Set up single sign-on (SSO)
 
 Learn how to configure your company's Single Sign-On to log in to the Snyk API & Web app.

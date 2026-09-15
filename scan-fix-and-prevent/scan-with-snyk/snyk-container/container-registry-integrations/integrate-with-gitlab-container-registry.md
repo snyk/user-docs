@@ -3,6 +3,8 @@ description: How to integrate Snyk Container with the GitLab Container Registry
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with GitLab Container Registry
 
 Snyk integrates with GitLab Container Registry to enable you to import your container images and monitor them for vulnerabilities.

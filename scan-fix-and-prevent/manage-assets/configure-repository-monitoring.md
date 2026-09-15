@@ -3,6 +3,8 @@ description: How to configure repository monitoring in Snyk
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure repository monitoring
 
 {% hint style="info" %}

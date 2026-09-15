@@ -3,6 +3,8 @@ description: How to write Snyk IaC custom rules using the SDK
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Writing rules using the SDK
 
 To get you started with the SDK, you will learn how to:

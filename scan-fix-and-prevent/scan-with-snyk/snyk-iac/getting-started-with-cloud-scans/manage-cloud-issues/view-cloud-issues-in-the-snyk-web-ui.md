@@ -3,6 +3,8 @@ description: How to view cloud issues in the Snyk Web UI
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # View cloud issues in the Snyk Web UI
 
 You can view cloud issues for an Organization through the Snyk Web UI.

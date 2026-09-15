@@ -3,6 +3,8 @@ description: How to enable automatic Snyk Fix PRs
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Enable automatic Fix PRs
 
 {% hint style="info" %}

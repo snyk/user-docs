@@ -3,6 +3,8 @@ description: How Consistent Ignores for Snyk Code work in the CLI
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Consistent Ignores for Snyk Code CLI
 
 Ignores are taken into account in the Snyk CLI when `snyk code test` is run.

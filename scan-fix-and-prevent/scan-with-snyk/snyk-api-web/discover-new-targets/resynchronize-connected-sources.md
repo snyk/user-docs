@@ -3,6 +3,8 @@ description: How to resynchronize connected sources in Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Resynchronize with connected sources
 
 You can scan a Cloudflare or AWS connection for asset discovery by setting up the respective integration on the **Integrations** page. Visit [Scan a Cloudflare connection for asset discovery](scan-cloudflare-connection-asset-discovery.md) and [Scan an AWS connection for asset discovery](scan-aws-connection-asset-discovery.md) to learn more.

@@ -3,6 +3,8 @@ description: Snyk Code Local Engine is deprecated; reference information for exi
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Code Local Engine
 
 {% include "../../.gitbook/includes/release-status-snyk-code-local-engine.md" %}

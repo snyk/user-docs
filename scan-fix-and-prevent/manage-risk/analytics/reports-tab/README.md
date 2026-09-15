@@ -3,6 +3,8 @@ description: How to use the Reports tab in Snyk Analytics
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Reports tab
 
 {% hint style="info" %}

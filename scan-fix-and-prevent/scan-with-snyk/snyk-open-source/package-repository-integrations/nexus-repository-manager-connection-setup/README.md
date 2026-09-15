@@ -3,6 +3,8 @@ description: How to connect Snyk to a Nexus Repository Manager
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Nexus repository manager connection setup
 
 Connecting Nexus repository manager enables Snyk to resolve all direct and transitive dependencies of packages hosted on the Nexus registry and calculate a more complete, accurate dependency graph and related vulnerabilities.

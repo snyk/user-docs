@@ -3,6 +3,8 @@ description: How to configure Snyk Code Rule Extensions from the Group settings 
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure Rule Extensions
 
 Rule Extensions are managed at the **Group** level in the Snyk Web UI, under **Group settings → Snyk Code**. You need the [UI access permissions](rule-extensions-permissions.md#permissions-for-ui-access) to reach these screens.

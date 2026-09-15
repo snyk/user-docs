@@ -3,6 +3,8 @@ description: How to get started with teams in Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Get started with teams
 
 Plan and manage target scans between different teams in your organization.

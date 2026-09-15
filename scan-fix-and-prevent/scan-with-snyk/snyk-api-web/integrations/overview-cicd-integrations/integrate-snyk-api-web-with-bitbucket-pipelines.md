@@ -3,6 +3,8 @@ description: How to integrate Snyk API and Web with Bitbucket Pipelines
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Bitbucket Pipelines
 
 This guide provides step-by-step instructions for integrating Snyk API & Web into your Bitbucket Pipelines.

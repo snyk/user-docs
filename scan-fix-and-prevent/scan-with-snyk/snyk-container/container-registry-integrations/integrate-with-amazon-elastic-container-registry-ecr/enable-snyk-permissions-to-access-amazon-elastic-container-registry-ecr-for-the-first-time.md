@@ -3,6 +3,8 @@ description: How to enable Snyk permissions to access Amazon ECR for the first t
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Enable Snyk permissions to access Amazon Elastic Container Registry (ECR) for the first time
 
 This process explains how to set up a resource role in AWS and the necessary policies. For additional information, see the [Amazon ECR documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr_managed_policies.html).

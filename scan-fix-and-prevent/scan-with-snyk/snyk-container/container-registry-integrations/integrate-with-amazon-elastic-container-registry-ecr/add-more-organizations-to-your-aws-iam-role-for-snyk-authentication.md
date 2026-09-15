@@ -3,6 +3,8 @@ description: How to add more Organizations to your AWS IAM role for Snyk authent
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Add more Organizations to your AWS IAM role for Snyk authentication
 
 After creating an AWS IAM role for Snyk, you can add more Organizations to the same role for repeated use.

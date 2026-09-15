@@ -3,6 +3,8 @@ description: How to configure the Snyk integration for Amazon ECR
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure integration for Amazon Elastic Container Registry (ECR)
 
 This page explains how to enable integration between one Amazon ECR registry and a Snyk Organization and start managing your image security. To integrate with multiple registries, create a unique Organization for each one.

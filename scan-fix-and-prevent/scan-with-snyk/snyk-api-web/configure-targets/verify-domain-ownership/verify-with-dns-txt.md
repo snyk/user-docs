@@ -2,6 +2,8 @@
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Verify with DNS TXT record
 
 Verify domain ownership by adding a TXT record to your DNS configuration.

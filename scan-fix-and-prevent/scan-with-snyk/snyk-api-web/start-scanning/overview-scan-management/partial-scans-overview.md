@@ -3,6 +3,8 @@ description: How to run partial Snyk API and Web scans
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Run partial scans
 
 To test only a subset of your Web target, run partial scans in Snyk API & Web.

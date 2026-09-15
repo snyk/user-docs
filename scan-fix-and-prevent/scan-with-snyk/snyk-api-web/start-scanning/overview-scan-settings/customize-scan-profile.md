@@ -3,6 +3,8 @@ description: How to customize a Snyk API and Web scan profile
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Customize a scan profile
 
 Snyk API & Web provides a variety of [built-in scan profiles](built-in-scan-profiles.md) to choose from and define how Snyk scans your targets. Each built-in scan profile is a group of scanning conditions that Snyk pre-configures to provide certain pre-defined scanning behaviors.

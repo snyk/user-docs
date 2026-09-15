@@ -3,6 +3,8 @@ description: How Snyk Container detects application vulnerabilities in container
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Detect application vulnerabilities in container images
 
 In one scan, Snyk can detect the vulnerabilities in your application dependencies from container images, as well as from the operating system.

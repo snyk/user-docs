@@ -3,6 +3,8 @@ description: How to implement asset policies in Snyk Essentials
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Implement policies
 
 All policies that you add to a project help you to better monitor your assets and automate the business context by always receiving notifications about occurring changes.

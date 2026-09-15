@@ -3,6 +3,8 @@ description: How Snyk Code finds and fixes security vulnerabilities in your sour
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Code
 
 ## Overview

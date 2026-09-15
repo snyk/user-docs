@@ -3,6 +3,8 @@ nav_context: classic
 description: How to configure basic authentication for Snyk API and Web targets
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Basic authentication
 
 Configure basic authentication to scan targets protected by HTTP Basic Access Authentication.

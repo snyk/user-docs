@@ -3,6 +3,8 @@ description: How to integrate Snyk Container with Google Container Registry (GCR
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Google Container Registry (GCR)
 
 Snyk integrates with Google Container Registry (GCR) so you can import your Projects, monitor your containers for vulnerabilities, and fix vulnerabilities as you work. Snyk tests the Projects you have imported for any known security vulnerabilities at a frequency you control. GCR integration works similarly to other Snyk integrations.&#x20;

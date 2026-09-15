@@ -3,6 +3,8 @@ description: How to update a Snyk cloud environment
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Update a cloud environment
 
 You can update the following attributes for a [cloud environment](../key-concepts-for-cloud-scans.md#environments):

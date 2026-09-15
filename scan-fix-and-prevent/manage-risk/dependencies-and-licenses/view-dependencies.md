@@ -3,6 +3,8 @@ description: How to view the dependencies of a Snyk Project as a bill of materia
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # View dependencies
 
 The **Dependencies** tab acts as a Bill Of Materials (BOM) for all dependencies in all Projects in the selected Organization. This allows you to quickly and easily identify which Projects have a specific version of a dependency.

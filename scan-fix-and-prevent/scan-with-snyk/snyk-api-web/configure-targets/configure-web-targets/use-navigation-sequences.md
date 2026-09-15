@@ -3,6 +3,8 @@ description: How to use navigation sequences for Snyk API and Web web targets
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Use navigation sequences
 
 Guide the scanner to specific application states and complex areas of your web application using navigation sequences.

@@ -3,6 +3,8 @@ description: How to configure private NuGet repositories for .NET with Snyk
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Private NuGet repositories for .NET configuration
 
 {% hint style="info" %}

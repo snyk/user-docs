@@ -3,6 +3,8 @@ description: How to set up image scanning for Snyk Insights
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Set up Insights: image scanning
 
 To determine the risk factors and prioritize your Code, Open Source, and Container issues, you must scan your container images using [Snyk Container](../../../scan-with-snyk/snyk-container/).

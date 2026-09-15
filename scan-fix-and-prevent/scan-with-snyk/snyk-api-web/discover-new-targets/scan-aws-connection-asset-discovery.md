@@ -3,6 +3,8 @@ description: How to scan an AWS connection for asset discovery in Snyk API and W
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Scan an AWS connection for asset discovery
 
 Organizations often lack visibility into all their assets (web pages and APIs), which can lead to overlooked vulnerabilities and inadvertent security exposure. With Snyk API & Web asset discovery, you can identify your organization's assets and protect them before they become a liability.

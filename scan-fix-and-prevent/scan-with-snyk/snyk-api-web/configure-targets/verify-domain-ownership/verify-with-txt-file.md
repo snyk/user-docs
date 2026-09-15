@@ -3,6 +3,8 @@ description: How to verify domain ownership with a TXT file for Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Verify domain with TXT file
 
 Verify domain ownership by adding a `.txt` file to your website's root directory.

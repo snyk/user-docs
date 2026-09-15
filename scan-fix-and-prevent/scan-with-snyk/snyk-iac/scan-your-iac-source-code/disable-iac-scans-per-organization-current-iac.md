@@ -3,6 +3,8 @@ description: How to disable Snyk IaC scans for an Organization
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Disable IaC scans per Organization
 
 {% hint style="info" %}

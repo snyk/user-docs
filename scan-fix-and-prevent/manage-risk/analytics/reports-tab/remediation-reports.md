@@ -3,6 +3,8 @@ description: The remediation reports in Snyk Analytics
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Remediation reports
 
 The Remediation reports section includes the following reports:

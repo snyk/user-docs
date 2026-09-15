@@ -5,6 +5,8 @@ description: >-
   risk
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Essentials
 
 Snyk Essentials helps AppSec teams better operationalize and scale the use of Snyk with broad application visibility and security coverage management.

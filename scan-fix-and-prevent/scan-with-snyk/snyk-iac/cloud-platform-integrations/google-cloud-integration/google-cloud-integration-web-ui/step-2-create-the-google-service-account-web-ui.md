@@ -3,6 +3,8 @@ description: 'Step 2: create the Google service account for the Snyk integration
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Step 2: Create the Google service account (Web UI)
 
 {% hint style="info" %}

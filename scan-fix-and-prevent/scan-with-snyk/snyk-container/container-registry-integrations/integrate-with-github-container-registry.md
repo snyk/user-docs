@@ -3,6 +3,8 @@ description: How to integrate Snyk Container with the GitHub Container registry
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with GitHub Container registry
 
 Snyk integrates with the GitHub Container registry to enable you to import your container images and monitor them for vulnerabilities.

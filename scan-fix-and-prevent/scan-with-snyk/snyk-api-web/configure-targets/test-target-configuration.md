@@ -3,6 +3,8 @@ description: How to test a target configuration in Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Test target configuration
 
 Test your target configuration before running a scan to avoid common issues that lead to failed scans or incomplete results.

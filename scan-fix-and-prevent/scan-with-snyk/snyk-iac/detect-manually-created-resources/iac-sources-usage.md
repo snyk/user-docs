@@ -3,6 +3,8 @@ description: How to use IaC sources with Snyk drift detection
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # IAC sources usage
 
 ## **Supported IaC sources**

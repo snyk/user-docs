@@ -3,6 +3,8 @@ description: How to verify domain ownership for Snyk API and Web targets
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Verify domain ownership
 
 Verify domain ownership to authorize security testing on your domain.

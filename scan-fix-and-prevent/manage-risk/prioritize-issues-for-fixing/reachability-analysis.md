@@ -3,6 +3,8 @@ description: How Snyk reachability analysis prioritizes vulnerabilities in calle
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Reachability analysis
 
 {% hint style="info" %}

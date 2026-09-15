@@ -3,6 +3,8 @@ description: How to integrate Snyk Container with the Quay Container Registry
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Quay Container Registry
 
 Snyk integrates with Quay Container Registry to enable you to import your container images and monitor them for vulnerabilities.

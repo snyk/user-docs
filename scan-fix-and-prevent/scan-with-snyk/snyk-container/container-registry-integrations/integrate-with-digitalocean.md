@@ -3,6 +3,8 @@ description: How to integrate Snyk Container with DigitalOcean Container Registr
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with DigitalOcean
 
 Snyk integrates with DigitalOcean to enable you to import your container images and monitor them for vulnerabilities.

@@ -3,6 +3,8 @@ description: How to configure Postman authentication for Snyk API and Web target
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Postman authentication
 
 Configure authentication to scan an API using a Postman collection.

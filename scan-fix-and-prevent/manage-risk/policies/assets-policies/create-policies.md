@@ -3,6 +3,8 @@ nav_context: classic
 description: How to create asset policies in Snyk Essentials
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Create policies
 
 Snyk Essentials includes a powerful policy editor for creating and modifying policies.

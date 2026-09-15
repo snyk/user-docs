@@ -3,6 +3,8 @@ description: How to add users to Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Add users
 
 Learn how to add team members to your Snyk API & Web account.

@@ -3,6 +3,8 @@ description: How to configure your integration to find security issues in Terraf
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure your integration to find security issues in your Terraform files
 
 Snyk tests and monitors your Terraform files from your source code repositories, guiding you with advice on how you can better secure your cloud environment--catching misconfigurations before you push to production and helping you to fix them.

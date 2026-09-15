@@ -3,6 +3,8 @@ description: How to configure Postman Collection targets for Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure Postman Collection targets
 
 Use Postman Collections to define API endpoints for scanning with Snyk API & Web.

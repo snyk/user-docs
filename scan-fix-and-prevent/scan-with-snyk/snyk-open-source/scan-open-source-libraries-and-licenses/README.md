@@ -3,6 +3,8 @@ description: How to scan open source libraries and licenses with Snyk Open Sourc
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Scan open-source libraries and licenses
 
 You can scan your open-source libraries using Snyk Open Source:

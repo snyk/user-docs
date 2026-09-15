@@ -3,6 +3,8 @@ nav_context: classic
 description: How to get started with Snyk API and Web dynamic application security testing
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Getting started with Snyk API & Web
 
 Learn how to start scanning web applications for security vulnerabilities using Snyk API & Web.

@@ -5,6 +5,8 @@ description: >-
   Dashboard, Issues Detail, and Risk Exposure reports
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Exposure and coverage reports
 
 The Exposure and coverage reports section includes the following reports:

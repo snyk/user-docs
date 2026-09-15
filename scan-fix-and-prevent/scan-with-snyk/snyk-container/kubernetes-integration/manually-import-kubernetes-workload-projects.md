@@ -3,6 +3,8 @@ description: How to manually import Kubernetes workload Projects into Snyk
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Manually import Kubernetes workload Projects
 
 Using the same integration ID, you can import multiple clusters to one Snyk Organization by giving clusters a unique cluster name during installation.

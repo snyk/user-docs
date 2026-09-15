@@ -3,6 +3,8 @@ description: How to use Snyk Custom Base Image Recommendations to reduce vulnera
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Use Custom Base Image Recommendations
 
 {% hint style="info" %}

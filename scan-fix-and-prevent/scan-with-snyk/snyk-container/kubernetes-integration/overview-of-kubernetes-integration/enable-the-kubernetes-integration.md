@@ -3,6 +3,8 @@ description: How to enable the Snyk Kubernetes integration
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Enable the Kubernetes integration
 
 {% hint style="info" %}

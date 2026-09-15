@@ -3,6 +3,8 @@ description: How to create a Snyk security policy and its rules
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Create a security policy and rules
 
 To create a new security policy, navigate to **Policies** in your Group menu, and in the Policies manager, expand the **Security policies** category and click **Add new policy**. For details, see [View policies](../view-create-and-modify-policies.md).
