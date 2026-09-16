@@ -1,3 +1,9 @@
+---
+description: >-
+  The snyk secrets test command, which scans for hard-coded secrets and
+  credentials
+---
+
 # Secrets test
 
 ## Prerequisites

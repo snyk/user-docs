@@ -2,8 +2,9 @@
 description: Migration guide from the V1 List all Projects endpoint to the REST API
 nav_context: agnostic
 ---
-
 # List all Projects V1 API to REST API migration guide (completed migration)
+
+This guide maps the retired List all Projects V1 API endpoint to its REST API equivalent. The migration is complete, so use it as a reference for reading older integrations rather than as a task to perform.
 
 {% hint style="warning" %}
 **End of life**
