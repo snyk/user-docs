@@ -221,7 +221,7 @@ To configure a container registry sync using the Snyk web UI:
 3. Select a predefined policy, for example, **New images only** or **Newest by count**, or write your own policy.
 4. Select additional options, such as pruning out-of-policy images.
 
-<figure><img src="../../../.gitbook/assets/Container_create_auto-sync_rule.png" alt=""><figcaption><p>Example of a regular expression policy</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Container_create_auto-sync_rule.png" alt="Example of a regular expression policy"><figcaption><p>Example of a regular expression policy</p></figcaption></figure>
 
 Click **Continue**.
 

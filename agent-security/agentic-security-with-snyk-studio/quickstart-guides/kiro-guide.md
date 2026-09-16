@@ -26,7 +26,7 @@ Navigate to the Powers panel in your Kiro agentic development environment.
 
 Click **Add Custom Power**. When the pop-up appears, select **Import Power from GitHub**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Add a Custom Power in Kiro by importing from GitHub</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="Add a Custom Power in Kiro by importing from GitHub"><figcaption><p>Add a Custom Power in Kiro by importing from GitHub</p></figcaption></figure>
 
 When prompted, copy and paste the following URL path into the window:
 

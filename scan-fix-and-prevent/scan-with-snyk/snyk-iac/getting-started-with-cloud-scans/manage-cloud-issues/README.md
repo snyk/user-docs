@@ -11,7 +11,7 @@ When Snyk scans a cloud environment, it tests infrastructure configurations agai
 
 Any IaC or cloud misconfiguration Snyk finds is reported as an issue. The [cloud issues page](view-cloud-issues-in-the-snyk-web-ui.md) in the Snyk Web UI provides details about each issue, including status, severity, impact, associated resources, and other information.
 
-<figure><img src="../../../../.gitbook/assets/snyk-cloud-issues-page-3.png" alt=""><figcaption><p>Cloud issues page in the Web UI</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/snyk-cloud-issues-page-3.png" alt="Cloud issues page in the Web UI"><figcaption><p>Cloud issues page in the Web UI</p></figcaption></figure>
 
 ## Understanding issues
 

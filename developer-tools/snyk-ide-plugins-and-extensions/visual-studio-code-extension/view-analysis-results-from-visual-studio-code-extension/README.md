@@ -60,9 +60,9 @@ In Visual Studio Code version 2.21.0 and later, you can choose any folder as you
 
 To apply the filter and see only the new issues, use the **total** or **new** toggle in the summary panel.
 
-<figure><img src="../../../.gitbook/assets/summary-panel-toggle-shows-total-number-issues-number.png" alt=""><figcaption><p>Summary panel with a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/summary-panel-toggle-shows-total-number-issues-number.png" alt="Summary panel with a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder"><figcaption><p>Summary panel with a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/net-new-issues-filter-enabled-after-user-clicks-total-new.png" alt=""><figcaption><p>Net new issues filter enabled after the user clicks on the total/new issues toggle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/net-new-issues-filter-enabled-after-user-clicks-total-new.png" alt="Net new issues filter enabled after the user clicks on the total/new issues toggle"><figcaption><p>Net new issues filter enabled after the user clicks on the total/new issues toggle</p></figcaption></figure>
 
 You can also enable the net new issues feature in the [scan configuration](./#scan-configuration) settings for the extension.
 

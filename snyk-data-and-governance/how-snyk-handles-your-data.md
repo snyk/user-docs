@@ -116,7 +116,7 @@ Your account is subject to contract terms that might restrict your ability to en
 
 ### Snyk Learn
 
-<figure><img src=".gitbook/assets/SnykLearn.png" alt=""><figcaption><p>Snyk Learn</p></figcaption></figure>
+<figure><img src=".gitbook/assets/SnykLearn.png" alt="Snyk Learn"><figcaption><p>Snyk Learn</p></figcaption></figure>
 
 #### User data
 
@@ -132,7 +132,7 @@ Snyk maintains important safeguards regarding the data processed by Snyk Assist:
 
 ### Snyk API & Web
 
-<figure><img src=".gitbook/assets/Api-Web.png" alt=""><figcaption><p>Snyk Web &#x26; API</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Api-Web.png" alt="Snyk Web &#x26; API"><figcaption><p>Snyk Web &#x26; API</p></figcaption></figure>
 
 Snyk API & Web accesses and scans your web applications and APIs to identify security vulnerabilities through dynamic application security testing (DAST).
 
@@ -166,11 +166,11 @@ Snyk puts the following safeguards in place to ensure data is secure:
 
 ## Snyk certifications
 
-<figure><img src=".gitbook/assets/Soc2.png" alt=""><figcaption><p>Soc 2 Type 2 AICPA Soc</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Soc2.png" alt="Soc 2 Type 2 AICPA Soc"><figcaption><p>Soc 2 Type 2 AICPA Soc</p></figcaption></figure>
 
 Snyk is certified to ISO 27001:2022 with the additional objective controls of ISO 27017:2015.
 
-<figure><img src=".gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
+<figure><img src=".gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="ISO 27001 Schellman certification" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
 
 ## Privacy compliance
 

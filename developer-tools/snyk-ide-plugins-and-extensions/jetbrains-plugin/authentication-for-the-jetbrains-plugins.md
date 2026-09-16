@@ -19,7 +19,7 @@ Snyk supports the following protocols for authentication:
 Before authenticating, ensure your region is properly set. For more details, see [IDEs URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-plugin-jetbrains-ides.png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Jetbrains IDEs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-plugin-jetbrains-ides.png" alt="Authentication methods available in the Snyk plugin in Jetbrains IDEs"><figcaption><p>Authentication methods available in the Snyk plugin in Jetbrains IDEs</p></figcaption></figure>
 
 ## Steps to authenticate using the OAuth 2.0 protocol
 
@@ -27,7 +27,7 @@ Follow the next steps to authenticate:
 
 1. After the extension is installed, click the Snyk icon in the navigation bar, then click **Trust project and scan**.
 
-<figure><img src="../../.gitbook/assets/snyk-icon-connect-trust.png" alt=""><figcaption><p>Snyk icon and connect and trust</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-icon-connect-trust.png" alt="Snyk icon and connect and trust"><figcaption><p>Snyk icon and connect and trust</p></figcaption></figure>
 
 2. A new browser window opens, requiring you to log in to your Snyk account.
 3. In the next prompt, the Snyk IDE plugin requests access to act on your behalf. Click **Grant app access**.

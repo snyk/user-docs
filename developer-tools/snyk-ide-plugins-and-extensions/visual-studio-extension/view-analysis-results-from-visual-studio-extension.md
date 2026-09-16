@@ -21,7 +21,7 @@ Filter by severity by selecting one or more of the severities when you open the 
 
 Users can configure the Snyk extension using the **Solution settings** in the **Options**.
 
-<figure><img src="../../.gitbook/assets/add-parameter-solution-settings.png" alt=""><figcaption><p>Add the -d parameter in the Solution settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/add-parameter-solution-settings.png" alt="Add the -d parameter in the Solution settings"><figcaption><p>Add the -d parameter in the Solution settings</p></figcaption></figure>
 
 ## Net new Issues versus all issues
 
@@ -35,13 +35,13 @@ In version 2.1.0 and later, you can choose **any folder** as your base for scann
 
 To apply the filter and only see the new issues, use the **total/new** toggle in the summary panel.
 
-<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/toggle-summary-panel-show-total-number-issues-number-issues.png" alt="" width="375"><figcaption><p>Toggle in summary panel to show the total number of issues<br>and the number of issues in the checked out branch or current folder</p></figcaption></figure></div>
+<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/toggle-summary-panel-show-total-number-issues-number-issues.png" alt="Toggle in summary panel to show the total number of issuesand the number of issues in the checked out branch or current folder" width="375"><figcaption><p>Toggle in summary panel to show the total number of issues<br>and the number of issues in the checked out branch or current folder</p></figcaption></figure></div>
 
 You can also enable net new issues feature in the [scan settings](visual-studio-extension-configuration-environment-variables-and-proxy.md#scan-configuration) for the Visual Studio extension.
 
 For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as shown in the screen image that follows:
 
-<figure><img src="../../.gitbook/assets/successful-state-net-new-issiues-found.png" alt="" width="481"><figcaption><p>Successful state, no net new issiues found</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/successful-state-net-new-issiues-found.png" alt="Successful state, no net new issiues found" width="481"><figcaption><p>Successful state, no net new issiues found</p></figcaption></figure>
 
 ## Changing the base branch
 
@@ -53,7 +53,7 @@ You can change the base branch or base folder by following these steps, as illus
 2. Click on the top-level node in the Issues tree to change the branch or directory.
 3. Use the dropdown selection to choose any branch or reference folder.
 
-<figure><img src="../../.gitbook/assets/change-reference-branch-reference-directory-calculation-new.png" alt=""><figcaption><p>Change the reference branch or reference directory for calculation of new new issues.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/change-reference-branch-reference-directory-calculation-new.png" alt="Change the reference branch or reference directory for calculation of new new issues."><figcaption><p>Change the reference branch or reference directory for calculation of new new issues.</p></figcaption></figure>
 
 {% hint style="info" %}
 To use Ignore Approval Workflow with Visual Studio, follow the steps in [View analysis results from Visual Studio Code extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension).

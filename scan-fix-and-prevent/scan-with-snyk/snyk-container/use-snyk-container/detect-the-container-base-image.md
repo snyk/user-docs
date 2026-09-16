@@ -34,7 +34,7 @@ Snyk supports only a subset of official Docker images. If you need help, contact
 
 When you scan a Docker image in Snyk, you can see the instruction in the image layer that introduces the vulnerability. You do not need to perform any action at this point.
 
-<figure><img src="../../../.gitbook/assets/docker_image_details_image_layer.png" alt=""><figcaption><p>Image layer information for a Docker image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docker_image_details_image_layer.png" alt="Image layer information for a Docker image"><figcaption><p>Image layer information for a Docker image</p></figcaption></figure>
 
 ## Snyk Container recommendations for upgrading base images
 
@@ -44,7 +44,7 @@ This allows you to see vulnerability counts in minor and major upgrades and in a
 
 You can see the base image vulnerabilities in your Project among the vulnerabilities added by your instructions, sorted by their priority score.
 
-<figure><img src="../../../.gitbook/assets/base-image2.png" alt=""><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/base-image2.png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
 
 You can also filter only the base image vulnerabilities using the **Base image** option under the **Image Layer** filter.
 

@@ -19,6 +19,6 @@ The steps follow to **download the IaC template**.
 2. Select **AWS**.
 3. In the **Add AWS Environment** modal, select the **Terraform** button to download a `snyk-permissions-aws.tf` file or **CloudFormation** to download a `snyk-permissions-aws.yml` file:
 
-<figure><img src="../../../../../.gitbook/assets/snyk-cloud-onboard-aws-ui-download-buttons.png" alt=""><figcaption><p>The Add AWS Environment modal</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/snyk-cloud-onboard-aws-ui-download-buttons.png" alt="The Add AWS Environment modal"><figcaption><p>The Add AWS Environment modal</p></figcaption></figure>
 
 You can now proceed to [Step 2: Create the Snyk IAM role (Web UI)](step-2-create-the-snyk-iam-role.md).

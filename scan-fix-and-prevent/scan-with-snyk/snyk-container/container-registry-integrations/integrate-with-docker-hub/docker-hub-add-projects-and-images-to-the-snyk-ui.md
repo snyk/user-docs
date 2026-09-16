@@ -36,7 +36,7 @@ When repositories and images are imported, a confirmation appears in green at th
 
 You can also filter to view only Docker Hub Projects.
 
-<figure><img src="../../../../.gitbook/assets/projects_docker_hub_project.png" alt=""><figcaption><p>Example of a Docker Hub Project</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/projects_docker_hub_project.png" alt="Example of a Docker Hub Project"><figcaption><p>Example of a Docker Hub Project</p></figcaption></figure>
 
 Docker Hub integration works like other Snyk integrations. To continue to monitor, fix and manage your Projects, see the relevant pages in the Snyk documentation.
 

@@ -19,7 +19,7 @@ Snyk Assist enhances your learning experience within the Snyk Learn platform by:
 * Delivering context-aware replies based on Snyk's extensive knowledge base.
 * Suggesting relevant follow-on learning opportunities available within Snyk Learn, Snyk Docs and the Snyk Blog.
 
-<figure><img src="../.gitbook/assets/snyk-assist-snyk-learn.png" alt=""><figcaption><p>Snyk Assist on Snyk Learn</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/snyk-assist-snyk-learn.png" alt="Snyk Assist on Snyk Learn"><figcaption><p>Snyk Assist on Snyk Learn</p></figcaption></figure>
 
 ## How Snyk Assist works
 
@@ -68,7 +68,7 @@ To enable Snyk Assist for your Group:
 
 After Snyk Assist is enabled, it is visible and accessible on Snyk Learn for the users belonging to that specific Group.
 
-<figure><img src="../.gitbook/assets/snyk-assist-settings-page.png" alt=""><figcaption><p>Snyk Assist settings page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/snyk-assist-settings-page.png" alt="Snyk Assist settings page"><figcaption><p>Snyk Assist settings page</p></figcaption></figure>
 
 ## Data Handling and Safeguards
 

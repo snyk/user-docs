@@ -16,7 +16,7 @@ The cloud environments table displays the following information for each environ
 * Kind (for example, AWS, Google, Azure, CLI)
 * Date onboarded
 
-<figure><img src="../../../../.gitbook/assets/snyk-cloud-environments-page.png" alt=""><figcaption><p>The Snyk environments page in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/snyk-cloud-environments-page.png" alt="The Snyk environments page in the Snyk Web UI"><figcaption><p>The Snyk environments page in the Snyk Web UI</p></figcaption></figure>
 
 ## Add a cloud environment
 

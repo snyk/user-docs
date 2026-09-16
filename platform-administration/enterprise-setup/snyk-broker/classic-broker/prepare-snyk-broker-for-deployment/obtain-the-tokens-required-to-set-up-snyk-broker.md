@@ -46,4 +46,4 @@ After your Broker token is generated, it is displayed on the Web UI. Follow thes
 2. In the selected Organization, select **Integration**. Find the Integration to which you want to connect Snyk Broker, and click the **Settings** icon.
 3. On the **Settings** page of the selected Integration, in the **Broker Credentials** section, copy the Broker token from the **Token** box and save it for future use:
 
-<figure><img src="../../../../.gitbook/assets/Snyk Broker - Broker Token - box.png" alt=""><figcaption><p>Copy the Broker token</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Broker - Broker Token - box.png" alt="Copy the Broker token"><figcaption><p>Copy the Broker token</p></figcaption></figure>

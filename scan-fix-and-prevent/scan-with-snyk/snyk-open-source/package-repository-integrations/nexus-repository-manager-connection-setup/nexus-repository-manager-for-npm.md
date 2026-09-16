@@ -30,7 +30,7 @@ If you have not previously connected to Nexus Repository Manager you will be ask
 
 Follow the steps on the tabs below, according to your version of Nexus.
 
-<figure><img src="../../../../.gitbook/assets/configure-nexus-registry.png" alt=""><figcaption><p>Configure Nexus registry</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/configure-nexus-registry.png" alt="Configure Nexus registry"><figcaption><p>Configure Nexus registry</p></figcaption></figure>
 
 {% tabs %}
 {% tab title="Nexus 3" %}

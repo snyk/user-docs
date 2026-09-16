@@ -103,7 +103,7 @@ To confirm the extension was installed, run the following command in the Gemini 
 /extensions list
 ```
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Result of the /extensions list terminal command</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26).png" alt="Result of the /extensions list terminal command"><figcaption><p>Result of the /extensions list terminal command</p></figcaption></figure>
 
 To install Snyk Studio manually, use the method that best suits your operating system and local development environment.
 
