@@ -1,6 +1,6 @@
 ---
-description: How to allow Snyk API and Web scanner IPs in your WAF
 nav_context: agnostic
+description: How to allow Snyk API and Web scanner IPs in your WAF
 ---
 
 # Configure IPs in WAFs
@@ -8,6 +8,8 @@ nav_context: agnostic
 Snyk API & Web uses specific public IP addresses to scan your targets. If you use a Web Application Firewall (WAF) in front of your target, it can block scan requests and cause the scan to fail. To avoid that, configure the WAF to allow Snyk IP addresses.
 
 For a list of Snyk IP addresses, visit [Scanner IP address](scanner-ip-address.md).
+
+Allow the target scan addresses only. The out-of-band addresses on that page receive connections from your systems and do not need to be allowed in a WAF in front of your target.
 
 ## Configure Cloudflare WAF
 

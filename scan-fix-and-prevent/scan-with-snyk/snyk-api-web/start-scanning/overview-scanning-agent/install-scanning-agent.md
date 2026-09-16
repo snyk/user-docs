@@ -1,11 +1,13 @@
 ---
-description: How to install a Snyk API and Web scanning agent
 nav_context: classic
+description: How to install a Snyk API and Web scanning agent
 ---
+
+# Install a scanning agent
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# Install a scanning agent
+## Install a scanning agent
 
 Install a Scanning Agent to scan your internal applications with minimal changes to network and security configurations.
 
@@ -16,14 +18,14 @@ Installing the Scanning Agent involves the following steps:
 1. Create the Scanning Agent Token in your Snyk API & Web account.
 2. Install the Scanning Agent on your network.
 
-## Prerequisites
+### Prerequisites
 
 Ensure you have the following before you begin:
 
 * An active Snyk API & Web account with permissions to create Scanning Agents.
-* The minimal system resources and specific network requirements listed in the [Farcaster Agent GitHub Repository README](https://github.com/Probely/farcaster-onprem-agent/blob/main/README.md).
+* The minimal system resources and specific network requirements are listed in the [Farcaster Agent GitHub Repository README](https://github.com/Probely/farcaster-onprem-agent/blob/main/README.md). That table also covers the out-of-band callback server, which confirms Log4Shell-style vulnerabilities by receiving a connection from the scanned system. Allow its hostname as well as its IP address. The target scan and asset discovery addresses are not in that table; they are listed in [Scanner IP address](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/start-scanning/overview-scan-access-and-connectivity/scanner-ip-address).
 
-## Create the Scanning Agent Token
+### Create the Scanning Agent Token
 
 To create the Scanning Agent Token in your Snyk API & Web account:
 
@@ -32,10 +34,7 @@ To create the Scanning Agent Token in your Snyk API & Web account:
    1. Type the name of the Scanning Agent.
    2. If the Scanning Agent is restricted to targets of some teams, select the check box and choose those teams from the dropdown.
 3. Click **Generate**.
-
-<figure><img src="../../../../.gitbook/assets/install-scanning-agent-add-agent-dialog.png" alt="Add Scanning Agent dialog showing agent token and installation options"><figcaption></figcaption></figure>
-
-1. A pop-up window displays important information that, for security reasons, does not appear again. Do the following:
+4. A pop-up window displays important information that, for security reasons, does not appear again. Do the following:
    * Under **AGENT TOKEN**, copy and save the token securely.
    * Under **Installation**, navigate to the tabs for the way you want to install the agent:
      * **DOCKER** - To use Docker, copy and save securely the following:
@@ -49,13 +48,13 @@ To create the Scanning Agent Token in your Snyk API & Web account:
        2. The Kubernetes command to create the agent token secret.
        3. The Kubernetes command to deploy the agent pod.
 
-## Install the Scanning Agent on your network
+### Install the Scanning Agent on your network
 
 After creating the token, install the Snyk API & Web Scanning Agent on your network. The Scanning Agent, also known as the _Farcaster Agent_, is open source and available on the official [Farcaster Agent GitHub repository](https://github.com/Probely/farcaster-onprem-agent/?tab=readme-ov-file#installation).
 
 You can install the agent using Docker, Docker-Compose, Kubernetes, Windows, or Linux. For detailed instructions on how to install the agent, follow the [installation guidance](https://github.com/Probely/farcaster-onprem-agent/blob/main/README.md#installation) in the GitHub repository.
 
-### Example: Install the agent using Docker on Linux
+#### Example: Install the agent using Docker on Linux
 
 Before installing the agent container on a Linux system, you can check that your host can run it by running the following command:
 
@@ -96,6 +95,6 @@ Running...
 
 After the agent is up and running, you can set the Scanning Agent in your targets as described in [Scan internal applications with a Scanning Agent](scan-internal-applications.md), and run scans on those targets to scan your internal applications.
 
-## Troubleshooting
+### Troubleshooting
 
 If you have issues downloading the agent configuration, are unable to connect, have proxy configuration issues, or experience performance issues, check the [troubleshooting guidance](https://github.com/Probely/farcaster-onprem-agent/blob/main/README.md#troubleshooting) in the GitHub repository.
