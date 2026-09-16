@@ -61110,6 +61110,7 @@
     },
     "/learn/catalog": {
       "get": {
+        "deprecated": true,
         "description": "Returns lessons and learning paths. Optional filters narrow lessons by\nCWE, CVE, Snyk rule, and/or ecosystem.\n\nMultiple identifier params are ANDed by default. Set `best_match=true` for\npriority match: `rules`, then `cves`, then `cwes` (first bucket with\nhits wins). `ecosystem` is applied after identifier matching.\n\nWith filters active, a learning path is returned only if it contains a\nmatching lesson; `attributes.lesson_ids` lists those lessons only.\n\nFor `cwes`, `cves`, and `rules`, pass multiple values comma-separated in\none parameter (e.g. `?cwes=CWE-79,CWE-89`). Repeated parameters\n(e.g. `?cwes=CWE-79\u0026cwes=CWE-89`) are not accepted.\n",
         "operationId": "listLearnCatalog",
         "parameters": [
@@ -61223,6 +61224,7 @@
         "x-snyk-documentation": {
           "category": "learn"
         },
+        "x-snyk-sunset-eligible": "2026-12-31",
         "x-stability-level": "beta"
       }
     },
@@ -76380,9 +76382,11 @@
         "x-snyk-documentation": {
           "category": "learn"
         },
+        "x-snyk-sunset-eligible": "2026-12-31",
         "x-stability-level": "beta"
       },
       "get": {
+        "deprecated": true,
         "description": "Allows an admin to obtain a comprehensive list of all assignments within their organization.\n\n#### Required permissions\n\n- `View Organization assignments (org.learn_assignment.read)`",
         "operationId": "listOrgAssignments",
         "parameters": [
@@ -76486,9 +76490,11 @@
         "x-snyk-documentation": {
           "category": "learn"
         },
+        "x-snyk-sunset-eligible": "2026-12-31",
         "x-stability-level": "beta"
       },
       "patch": {
+        "deprecated": true,
         "description": "Allows an admin to update the due date for existing assignments within their organization.\n\n#### Required permissions\n\n- `Edit assignments (org.learn_assignment.edit)`",
         "operationId": "updateOrgAssignments",
         "parameters": [
@@ -76596,9 +76602,11 @@
         "x-snyk-documentation": {
           "category": "learn"
         },
+        "x-snyk-sunset-eligible": "2026-12-31",
         "x-stability-level": "beta"
       },
       "post": {
+        "deprecated": true,
         "description": "Allows an admin to create assignments in bulk for all or a subset of users within their organization.\n\n#### Required permissions\n\n- `Create assignments (org.learn_assignment.create)`",
         "operationId": "createOrgAssignments",
         "parameters": [
@@ -76678,11 +76686,13 @@
         "x-snyk-documentation": {
           "category": "learn"
         },
+        "x-snyk-sunset-eligible": "2026-12-31",
         "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/learn/assignments/bulk_delete": {
       "post": {
+        "deprecated": true,
         "description": "Allows an admin to delete multiple assignments within their organization.\n\n**Note**: Assignments that are part of a Learning Program cannot be deleted through this endpoint.\n\n#### Required permissions\n\n- `Delete assignments (org.learn_assignment.delete)`",
         "operationId": "deleteOrgAssignmentsBulk",
         "parameters": [
@@ -76791,11 +76801,13 @@
         "x-snyk-documentation": {
           "category": "learn"
         },
+        "x-snyk-sunset-eligible": "2026-12-31",
         "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/learn/progress/catalog": {
       "get": {
+        "deprecated": true,
         "description": "Retrieves aggregated counts of users' lesson or learning path statuses (completed, in progress, todo) across all catalog resources for an organization.\n\n#### Required permissions\n\n- `View Organization Snyk Learn Reports (org.learn_report.read)`",
         "operationId": "getCatalogProgress",
         "parameters": [
@@ -76902,11 +76914,13 @@
         "x-snyk-documentation": {
           "category": "learn"
         },
+        "x-snyk-sunset-eligible": "2026-12-31",
         "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/learn/progress/users": {
       "get": {
+        "deprecated": true,
         "description": "Retrieves detailed learning progress status per user, including completion dates and history for each catalog resource.\n\n#### Required permissions\n\n- `View Organization Snyk Learn Reports (org.learn_report.read)`",
         "operationId": "getUsersProgress",
         "parameters": [
@@ -77028,6 +77042,7 @@
         "x-snyk-documentation": {
           "category": "learn"
         },
+        "x-snyk-sunset-eligible": "2026-12-31",
         "x-stability-level": "beta"
       }
     },
