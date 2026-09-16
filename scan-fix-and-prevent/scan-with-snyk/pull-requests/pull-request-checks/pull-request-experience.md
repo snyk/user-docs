@@ -25,7 +25,7 @@ Snyk Agent fix in the PR enables action to be taken based on the previous featur
 
 ### User role requirement
 
-To configure and manage the pull request experience, the user must be a [Group Admin](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles#group-level-permissions). This is to ensure access to all integrations for setup as the pull request experience is configured at the Organization level.
+To configure and manage the pull request experience, the user must be a [Group Admin](https://docs.snyk.io/platform-administration/user-management/pre-defined-roles#group-level-permissions). This is to ensure access to all integrations for setup as the pull request experience is configured at the Organization level.
 
 ### Pull request checks enablement
 
@@ -48,7 +48,7 @@ In addition to the general SCM and PR Checks prerequisites, certain features in 
 
 ### SCM permission and access scope requirements
 
-The pull request experience integrates with various SCM platforms, each with specific requirements for a successful configuration with Snyk. Your existing SCM integration setup will work with the Pull Request experience out of the box, except for GitHub (OAuth) which requires an additional Fix PR token. For additional information, see [User permissions and access scopes](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/user-permissions-and-access-scopes).
+The pull request experience integrates with various SCM platforms, each with specific requirements for a successful configuration with Snyk. Your existing SCM integration setup will work with the Pull Request experience out of the box, except for GitHub (OAuth) which requires an additional Fix PR token. For additional information, see [User permissions and access scopes](https://docs.snyk.io/developer-tools/integrations/scm-integrations/user-permissions-and-access-scopes).
 
 {% hint style="info" %}
 For information on which SCM integrations are supported in each pull request experience feature, see the individual feature sections: [Issue Summary Comment](pull-request-experience.md#issue-summary-comment), [Inline Comments](pull-request-experience.md#inline-comments), and [Snyk Agent Fix in the PR](pull-request-experience.md#snyk-agent-fix-in-the-pr).
@@ -101,7 +101,7 @@ The Snyk Agent fix in the PR feature enables the user to request and apply fixes
 ### Exceptions
 
 * The `@snyk /fix` command can be used only for automatically fixable vulnerabilities, identified in the inline comments with a zap icon and command description. See [fix-code-vulnerabilities-automatically.md](../../snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md "mention") for supported languages and limitations.
-* Fixes expire after the time displayed in each suggestion, in accordance with the [How Snyk handles your data #Cache retention period related to vulnerability source data](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
+* Fixes expire after the time displayed in each suggestion, in accordance with the [How Snyk handles your data #Cache retention period related to vulnerability source data](https://docs.snyk.io/snyk-data-and-governance/how-snyk-handles-your-data#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
 * Snyk Agent fix in the PR is not supported for [Snyk Code Local Engine](../../snyk-code/snyk-code-local-engine.md).
 * The `@snyk /fix` and `@snyk /apply #` commands can be used only as replies to the Inline Comments created by Snyk, commands created on other comment threads will not be processed.
 
@@ -113,7 +113,7 @@ For detailed descriptions on troubleshooting scenarios and their relevant resolu
 
 ### Block pull requests based on Snyk findings
 
-A PR test is configured to be optional or blocking within your source control management platform, such as GitHub’s branch protection rules. To learn more about issue prevention, visit [Enable and configure Snyk on PRs](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/team-implementation-guide/phase-5-rolling-out-the-prevention-stage/enable-and-configure-snyk-on-prs).
+A PR test is configured to be optional or blocking within your source control management platform, such as GitHub’s branch protection rules. To learn more about issue prevention, visit [Enable and configure Snyk on PRs](https://docs.snyk.io/implementation-guides/team-implementation-guide/phase-5-rolling-out-the-prevention-stage/enable-and-configure-snyk-on-prs).
 
 ### Handle false positives
 

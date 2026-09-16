@@ -10,7 +10,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Qodo to secure code 
 ## Prerequisites
 
 * [Install the code assistant extension](qodo-guide.md#install-qodo)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](qodo-guide.md#install-the-snyk-mcp-server-in-qodo)
 
 ### Install Qodo
@@ -50,7 +50,7 @@ full path option:
 }
 ```
 
-For the full path option, if the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
+For the full path option, if the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
 
 The following example shows a Snyk MCP Server that was successfully configured.
 
@@ -88,7 +88,7 @@ Qodo is then able to gather all the security scanning results, both code (SAST) 
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [Qodo best practices](https://docs.qodo.ai/qodo-ide/code-intelligence/best-practices). Append the following contents to the rules file at `best_practices.md`:
 

@@ -11,7 +11,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Gemini Code Assist t
 ## Prerequisites
 
 * [Install the code assistant extension](gemini-code-assist-guide.md#install-gemini-code-assist)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](gemini-code-assist-guide.md#install-the-snyk-mcp-server-in-gemini-code-assist)
 
 ### Install Gemini Code Assist
@@ -71,7 +71,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
 
 You might need to reload the IDE window for the changes to apply. In VS Code, do this by opening the Command Palette and choosing Developer: Reload Window.
 
@@ -103,7 +103,7 @@ Gemini indicates that this request is related to security vulnerability scanning
 
 ### Gemini Code Assist security rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for Gemini Code Assist rules. Following the [documentation proposal for Gemini Code Assist style guide](https://developers.google.com/gemini-code-assist/docs/customize-gemini-behavior-github), append the following contents to the rules file at `.gemini/styleguide.md`:
 

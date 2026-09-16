@@ -18,7 +18,7 @@ For installation instructions, visit [Getting started with Snyk Studio](../getti
 ### Prerequisites
 
 * [Install the Codex CLI](codex-cli-guide.md#install-codex-cli)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](codex-cli-guide.md#install-the-snyk-mcp-server-in-codex-cli-using-npx)
 
 ### Install Codex CLI
@@ -100,7 +100,7 @@ Codex CLI will invoke Snyk scanning, provide output and insights based on the re
 
 ### Secure at inception rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [Codex CLI's AGENTS.md context file](https://github.com/openai/codex?tab=readme-ov-file#memory--project-docs). Add the following contents to the `AGENTS.md` file in your root directory of your Project:
 

@@ -12,7 +12,7 @@ nav_context: classic
 
 The GitHub Server App is available only for Enterprise plans.
 
-This feature supports self-hosted instances of GitHub and Snyk [Universal Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker). For instructions, see [GitHub Server App for Universal Broker](../scm-integrations-and-snyk-broker.md#github-server-app-for-universal-broker).
+This feature supports self-hosted instances of GitHub and Snyk [Universal Broker](https://docs.snyk.io/platform-administration/snyk-broker/universal-broker). For instructions, see [GitHub Server App for Universal Broker](../scm-integrations-and-snyk-broker.md#github-server-app-for-universal-broker).
 {% endhint %}
 
 ### Prerequisites for the GitHub Server App

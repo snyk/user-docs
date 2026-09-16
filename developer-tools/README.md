@@ -57,15 +57,15 @@ Snyk IDE plugins and extensions rely on the [Snyk CLI](snyk-cli/overview.md) and
 
 Snyk also connects with:
 
-* Package repositories and gatekeepers — [Artifactory Gatekeeper Plugin](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin), [package repository integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations)
-* [Container registries](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations)
+* Package repositories and gatekeepers — [Artifactory Gatekeeper Plugin](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin), [package repository integrations](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations)
+* [Container registries](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/container-registry-integrations)
 * [Event forwarding](integrations/event-forwarding/)
 * [Jira and Slack integrations](integrations/jira-and-slack-integrations/)
 * [Partner integrations](integrations/partner-integrations.md)
-* [Reporting and BI integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share)
+* [Reporting and BI integrations](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share)
 
 For Snyk Essentials-specific integration availability, sync times, and connection statuses, visit [Snyk Essentials integrations reference](integrations/snyk-essentials-integrations-reference.md).
 
 ## AI-assisted development
 
-To secure AI coding assistants and agentic workflows, visit the [Agent security](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/) section — it covers Snyk Studio and the Snyk MCP Server.
+To secure AI coding assistants and agentic workflows, visit the [Agent security](https://docs.snyk.io/agent-security) section — it covers Snyk Studio and the Snyk MCP Server.

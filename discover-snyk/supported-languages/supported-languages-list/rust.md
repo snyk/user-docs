@@ -14,7 +14,7 @@ Rust is supported for Snyk Code (full support) and for Snyk Open Source (limited
 ## Rust for Snyk Code
 
 {% hint style="info" %}
-Code analysis support for Rust is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
+Code analysis support for Rust is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-hierarchy/snyk-preview).
 {% endhint %}
 
 ### Supported frameworks and libraries
@@ -54,7 +54,7 @@ For Rust with Snyk Code, the following frameworks and libraries are supported:
 {% endcolumn %}
 {% endcolumns %}
 
-For an overview of the supported security rules, visit [Rust rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/rust-rules).
+For an overview of the supported security rules, visit [Rust rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/rust-rules).
 
 ### Supported file formats
 
@@ -76,8 +76,8 @@ For Rust with Snyk Open Source, the following are supported:
 
 ### Available features
 
-* Test your SBOM containing `cargo` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command or API.
-* Test your individual Rust packages using the [List issues for a package](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package) API.
+* Test your SBOM containing `cargo` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command or API.
+* Test your individual Rust packages using the [List issues for a package](https://docs.snyk.io/developer-tools/snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package) API.
 
 {% hint style="info" %}
 SCM import and the standard CLI commands `snyk test`, `snyk monitor` are not available.
@@ -99,15 +99,15 @@ To do this:
 Alternatively, you can use the REST API, as follows:
 
 * Use the REST API to `POST` the SBOM document to the `sbom_tests` endpoint.
-* Retrieve the results by calling the `sbom_tests/{job_id}` endpoint. For more information, visit [SBOM](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/sbom) and [Test an SBOM document for vulnerabilities](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities).
+* Retrieve the results by calling the `sbom_tests/{job_id}` endpoint. For more information, visit [SBOM](https://docs.snyk.io/developer-tools/snyk-api/reference/sbom) and [Test an SBOM document for vulnerabilities](https://docs.snyk.io/developer-tools/snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities).
 
 ### Scan Rust dependencies individually using the API
 
-To test your individual Rust packages from the Cargo package manager, you can use the [List issues for a package](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues) API. You can obtain the PURL from the metadata section of the package on [crates.io](http://crates.io) and it must adhere to the [purl specification](https://github.com/package-url/purl-spec).
+To test your individual Rust packages from the Cargo package manager, you can use the [List issues for a package](https://docs.snyk.io/developer-tools/snyk-api/reference/issues) API. You can obtain the PURL from the metadata section of the package on [crates.io](http://crates.io) and it must adhere to the [purl specification](https://github.com/package-url/purl-spec).
 
 Before using it in the API, ensure you URL encode it. For example, `pkg:cargo/sd@0.1.0` becomes `pkg%3Acargo%2Fsd%400.1.0`
 
-This reports only the direct vulnerabilities for that package. For more information, visit [List issues for a package](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package).
+This reports only the direct vulnerabilities for that package. For more information, visit [List issues for a package](https://docs.snyk.io/developer-tools/snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package).
 
 ### Gating commits and PRs
 

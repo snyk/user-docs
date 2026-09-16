@@ -10,7 +10,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Amazon Q to secure c
 ## Prerequisites
 
 * [Install the code assistant extension](amazon-q-guide.md#install-amazon-q)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](amazon-q-guide.md#install-the-snyk-mcp-server-in-the-amazon-q-ide-extension)
 
 ### Install Amazon Q
@@ -69,7 +69,7 @@ Amazon Q is then able to gather all the security scanning results, both code (SA
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for creating project rules for use with [Amazon Q Developer chat](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-project-rules.html). Append the following contents to the rules file at `.amazonq/rules/amazonq-rules.md`:
 

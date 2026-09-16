@@ -282,7 +282,7 @@ Bitbucket users must add language tags manually.
 Snyk Universal Broker improves the management of Broker deployments by supporting multiple connections of any type with a single running client (or replica group). Credentials remain in your network and are securely referenced without being transmitted to Snyk. Use Universal Broker to enable Snyk to scan repositories, container registries, or other assets hosted behind your firewall without exposing your internal network.
 
 {% hint style="info" %}
-If you prefer to use helm charts for Broker configuration or are configuring a CR agent, Snyk recommends you use [Classic Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker).
+If you prefer to use helm charts for Broker configuration or are configuring a CR agent, Snyk recommends you use [Classic Broker](https://docs.snyk.io/platform-administration/snyk-broker/classic-broker).
 {% endhint %}
 
 {% stepper %}

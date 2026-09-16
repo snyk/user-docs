@@ -10,7 +10,7 @@ nav_context: classic
 In addition to providing fix advice, Snyk enables you create automatic or manual pull requests for supported package managers and ecosystems. To create PRs automatically in implementations with Snyk Broker, your administrator must upgrade to v4.55.0 or later.
 
 {% hint style="info" %}
-For the basic steps in fixing vulnerabilities, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To ensure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supported-for-fix-pull-requests-or-merge-requests) and [Supported browsers](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#supported-browsers) pages.
+For the basic steps in fixing vulnerabilities, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To ensure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supported-for-fix-pull-requests-or-merge-requests) and [Supported browsers](https://docs.snyk.io/getting-started-guides/getting-started#supported-browsers) pages.
 {% endhint %}
 
 {% hint style="info" %}
@@ -61,7 +61,7 @@ Snyk provides a report for Enterprise customers that gives an overview of how [F
 
 ## Snyk SCM webhooks
 
-To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
+To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations).
 
 Snyk uses these webhooks to:
 

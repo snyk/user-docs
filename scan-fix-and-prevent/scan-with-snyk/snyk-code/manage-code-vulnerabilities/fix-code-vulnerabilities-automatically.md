@@ -20,14 +20,14 @@ Snyk Agent Fix uses an agentic architecture that combines Snyk proprietary secur
 * Dynamic few-shot prompting: Instead of relying on fine-tuning, the architecture uses the Snyk database of more than 35,000 expert-written fixes to provide real-world context to the LLM during inference. Every sample includes vulnerable code from real open-source projects and fixes written by Snyk security experts.
 * Agentic retries: If a generated fix fails a Snyk Code scan, the system analyzes the error, feeds it back into the model, and generates a corrected version.
 
-Snyk Agent Fix remediates vulnerabilities across your stack without language-specific fine-tuning. By using a prompt-based agentic reasoning model, Snyk Agent Fix supports every language that Snyk Code supports. For the current list, see [Supported languages, package managers, and frameworks](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
+Snyk Agent Fix remediates vulnerabilities across your stack without language-specific fine-tuning. By using a prompt-based agentic reasoning model, Snyk Agent Fix supports every language that Snyk Code supports. For the current list, see [Supported languages, package managers, and frameworks](https://docs.snyk.io/supported-languages/supported-languages-package-managers-and-frameworks).
 
 ## How Snyk Agent Fix works
 
 {% hint style="info" %}
 Snyk Agent Fix does not use customer code to train underlying models, add to datasets, or improve performance.
 
-For more information, see [How Snyk handles your data](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
+For more information, see [How Snyk handles your data](https://docs.snyk.io/snyk-data-and-governance/how-snyk-handles-your-data).
 {% endhint %}
 
 The agentic flow involves a feedback loop between the static analysis engine and the generative model.
@@ -38,8 +38,8 @@ The agentic flow involves a feedback loop between the static analysis engine and
 
 Before enabling Snyk Agent Fix, ensure you:
 
-* Enable [Snyk Code](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
-* Install the Snyk IDE plugin for [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022), [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations), or [JetBrains IDEs](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin).
+* Enable [Snyk Code](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
+* Install the Snyk IDE plugin for [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022), [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations), or [JetBrains IDEs](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin).
 
 To enable the feature for only a specific Organization, use the Organization-level settings.
 
@@ -52,8 +52,8 @@ Snyk automatically generates fixes for eligible vulnerabilities in your codebase
 
 To see the latest fix suggestions:
 
-1. Enable automated fixes in Snyk Preview in your [IDE plugin or extension](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions).
-2. Save your files and [trigger a scan](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli).
+1. Enable automated fixes in Snyk Preview in your [IDE plugin or extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions).
+2. Save your files and [trigger a scan](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli).
 
 To generate a fix:
 

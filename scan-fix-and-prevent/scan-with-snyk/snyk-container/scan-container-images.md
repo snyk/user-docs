@@ -12,8 +12,8 @@ Snyk Container helps you find and fix vulnerabilities in container images, based
 You can scan your container images using Snyk Container:
 
 * In the [Snyk Web UI](use-snyk-container/)
-* Through the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container)
-* With [Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker) (for self-hosted container registries)
+* Through the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container)
+* With [Broker](https://docs.snyk.io/platform-administration/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker) (for self-hosted container registries)
 
 ## **Prerequisites for using Snyk Container in the Web UI**
 
@@ -22,7 +22,7 @@ Before scanning your container images with Snyk Container, ensure you:
 * Create or log in to a Snyk account.
 * Set up an integration with a supported container registry, such as Docker Hub. See [Container security integrations](container-registry-integrations/).
 
-For more information, see [Getting started](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started).
+For more information, see [Getting started](https://docs.snyk.io/getting-started-guides/getting-started).
 
 ## View vulnerabilities in your container images
 

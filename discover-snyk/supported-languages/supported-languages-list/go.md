@@ -42,7 +42,7 @@ For Go, Snyk supports [Go Modules](https://go.dev/ref/mod) and [dep](https://git
 
 ## Go for Snyk Code
 
-For an overview of the supported security rules, visit [Go rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/go-rules).
+For an overview of the supported security rules, visit [Go rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/go-rules).
 
 For Go with Snyk Code, Snyk supports:
 
@@ -63,7 +63,7 @@ Available features for Go Projects with dependencies managed by Go Modules and d
 * PR checks
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:golang` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command.
+* Test your app's SBOM and packages using `pkg:golang` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) command.
 
 {% hint style="info" %}
 If the **Snyk Fix PR** feature is enabled, this means that you will be notified if the PR checks fail when the following conditions are met:
@@ -137,7 +137,7 @@ To enable full source code analysis, adjust your settings as follows:
 
 <figure><img src="../../.gitbook/assets/enable-full-source-code-analysis.png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
 
-For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
+For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](https://docs.snyk.io/snyk-data-and-governance/how-snyk-handles-your-data).
 
 **Private modules**
 

@@ -14,7 +14,7 @@ The Snyk Risk Score is a single value assigned to an issue, applied by automatic
 
 Risk Score is in Early Access and available for Snyk Open Source and Snyk Container, for all Snyk plans. If you want to set it up in your Group, contact your Snyk account team.
 
-Use [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
+Use [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-hierarchy/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
 
 Risk score remains the same over time if the contributing factors do not change. However, some contributing factors, such as the Exploit Prediction Scoring System (EPSS), can potentially change frequently. The number of days since the vulnerability was first published is also a factor and causes the score to change once, when the number of days becomes more than one year, and the likelihood subscore decreases.
@@ -78,7 +78,7 @@ The Exploit Prediction Scoring System (EPSS) is updated daily.
 
 Contextual likelihood factors then increase or decrease the likelihood subscore:
 
-* Reachability (for Snyk Open Source - visit [Supported languages list](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list))
+* Reachability (for Snyk Open Source - visit [Supported languages list](https://docs.snyk.io/supported-languages/supported-languages-list))
 * Transitive depth
 
 ## Risk factors drill down

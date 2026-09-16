@@ -12,14 +12,14 @@ Snyk event forwarding integrations allow you to push Snyk platform events direct
 Snyk supports sending two different types of events:
 
 1. **Snyk issue events** - these events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.
-2. **Snyk platform audit events** - these events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Audit logs](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group).
+2. **Snyk platform audit events** - these events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Audit logs](https://docs.snyk.io/platform-administration/user-management/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group).
 
 {% hint style="info" %}
 The **Snyk issue** event type does not include Snyk Cloud issues.
 {% endhint %}
 
 {% hint style="info" %}
-The **Snyk platform audit** event type is available with Snyk Enterprise plans. See [Pricing plans](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/trial-limitations) for details.
+The **Snyk platform audit** event type is available with Snyk Enterprise plans. See [Pricing plans](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/trial-limitations) for details.
 {% endhint %}
 
 ## Supported integrations

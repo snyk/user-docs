@@ -48,14 +48,14 @@ You can also find additional advice and details further down on the Project deta
 
 ## Fixing vulnerabilities based on scan results using Snyk CLI
 
-For information about fixing vulnerabilities, see [Fix vulnerabilities using the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/fix-vulnerabilities-using-the-snyk-cli).
+For information about fixing vulnerabilities, see [Fix vulnerabilities using the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/fix-vulnerabilities-using-the-snyk-cli).
 
 ## Apply fixes
 
 To apply fixes, you can:
 
 * Click **Fix this vulnerability** on a specific [issue card](../../../snyk-platform-administration/snyk-projects/issue-card-information.md) on the relevant Project page.
-* If you are using a [Source code integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations):
+* If you are using a [Source code integration](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations):
   * Click **Open a fix PR** on the Project page.
   * Use [automated pull requests](../../pull-requests/snyk-pull-or-merge-requests/enable-automatic-fix-prs.md) when new fixes become available that help you to fix a vulnerability.
 

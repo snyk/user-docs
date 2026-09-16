@@ -45,7 +45,7 @@ Snyk creates two roles with Evo access in your tenant when a Tenant Admin first 
 
 To limit user access to specific Organizations, see Restrict access to specific Organizations.
 
-For more information, visit [Manage users in a Tenant](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant/manage-users-in-a-tenant).
+For more information, visit [Manage users in a Tenant](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/manage-users-in-a-tenant).
 
 ### Restrict access to specific Organizations
 
@@ -54,7 +54,7 @@ Users with Organization-scoped access see only the assets and issues within the 
 The Tenant Viewer role is the only role limited by Organization. To scope user access:
 
 * Assign the user the Tenant Viewer role.
-* Remove Tenant Member with Evo access or Tenant Viewer with Evo access if the user holds one. These roles grant access to the entire tenant. The user retains unrestricted access until you remove the role. To change a role, visit [Manage users in a Tenant](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant/manage-users-in-a-tenant).
+* Remove Tenant Member with Evo access or Tenant Viewer with Evo access if the user holds one. These roles grant access to the entire tenant. The user retains unrestricted access until you remove the role. To change a role, visit [Manage users in a Tenant](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/manage-users-in-a-tenant).
 * Add the user to each Organization that requires access to Evo data. Ensure the role includes the View Evo Organization permission. Organization Admin and Organization Collaborator include this permission.
 
 #### Restricted actions

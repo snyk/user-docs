@@ -29,13 +29,13 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 
 ### Early Access features
 
-* [Snyk GitHub Cloud App](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github-cloud-app)
-* [Automatically created Project collections](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/automatically-created-project-collections)
-* [Fix code vulnerabilities automatically](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically)
+* [Snyk GitHub Cloud App](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/github-cloud-app)
+* [Automatically created Project collections](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/automatically-created-project-collections)
+* [Fix code vulnerabilities automatically](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically)
 * Risk Management
-  * [Risk Score](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/risk-score)
-  * [Reachability analysis](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/reachability-analysis)
-  * [Breakability risk levels](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/breakability-risk-levels)
+  * [Risk Score](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/risk-score)
+  * [Reachability analysis](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/reachability-analysis)
+  * [Breakability risk levels](https://docs.snyk.io/scan-fix-and-prevent/fix/snyk-pull-or-merge-requests/breakability-risk-levels)
 * Universal Broker
 * Language support
   * [Snyk CLI pnpm support](../supported-languages/supported-languages-list/javascript/#support-for-pnpm)
@@ -43,7 +43,7 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
   * [CLI support for uv](../supported-languages/supported-languages-list/python/support-for-uv.md)
   * SCM integration for uv
 * Reports
-  * [Repositories tested in CI/CD report](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#repositories-tested-in-ci-cd-report)
+  * [Repositories tested in CI/CD report](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/prevention-reports#repositories-tested-in-ci-cd-report)
 * [Navigate the Snyk Web UI](../navigate-the-snyk-web-ui.md)
 
 ### Deprecated features
@@ -53,30 +53,30 @@ Deprecated features are outdated and will be removed in the future. The document
 * Snyk Code Local Engine is deprecated.
 * Apps API has the following deprecated endpoints:
   * **Revoke app bot authorization** endpoint
-    * The [Revoke app bot authorization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#deprecated-revoke-app-bot-authorization) endpoint is deprecated.
-    * Use the [Revoke app authorization for a Snyk Group with install ID](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#revoke-app-authorization-for-a-snyk-group-with-install-id) endpoint.
+    * The [Revoke app bot authorization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-revoke-app-bot-authorization) endpoint is deprecated.
+    * Use the [Revoke app authorization for a Snyk Group with install ID](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#revoke-app-authorization-for-a-snyk-group-with-install-id) endpoint.
   * **Create a new app for an organization** endpoint
-    * The [Create a new app for an organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#deprecated-create-a-new-app-for-an-organization) endpoint is deprecated.
-    * Use the [Create a new Snyk App for an organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#create-a-new-snyk-app-for-an-organization) endpoint.
+    * The [Create a new app for an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-create-a-new-app-for-an-organization) endpoint is deprecated.
+    * Use the [Create a new Snyk App for an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#create-a-new-snyk-app-for-an-organization) endpoint.
   * **Get a list of apps created by an organization** endpoint
-    * The [Get a list of apps created by an organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#deprecated-get-a-list-of-apps-created-by-an-organization) endpoint is deprecated.
-    * Use the new [Get a list of apps created by an organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#get-a-list-of-apps-created-by-an-organization) endpoint.
+    * The [Get a list of apps created by an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-get-a-list-of-apps-created-by-an-organization) endpoint is deprecated.
+    * Use the new [Get a list of apps created by an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#get-a-list-of-apps-created-by-an-organization) endpoint.
   * **Update app attributes that are name, redirect URIs, and access token time to live** endpoint
-    * The [Update app attributes that are name, redirect URIs, and access token time to live](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#deprecated-update-app-attributes-that-are-name-redirect-uris-and-access-token-time-to-live) endpoint is deprecated.
-    * Use the [Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#update-app-creation-attributes-such-as-name-redirect-uris-and-access-token-time-to-live-using-the-ap) endpoint.
+    * The [Update app attributes that are name, redirect URIs, and access token time to live](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-update-app-attributes-that-are-name-redirect-uris-and-access-token-time-to-live) endpoint is deprecated.
+    * Use the [Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#update-app-creation-attributes-such-as-name-redirect-uris-and-access-token-time-to-live-using-the-ap) endpoint.
   * **Get an app by client id** endpoint
-    * The [Get an app by client id](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#deprecated-get-an-app-by-client-id) endpoint is deprecated.
-    * Use the [Get a Snyk App by its App ID](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#get-a-snyk-app-by-its-app-id) endpoint.
+    * The [Get an app by client id](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-get-an-app-by-client-id) endpoint is deprecated.
+    * Use the [Get a Snyk App by its App ID](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#get-a-snyk-app-by-its-app-id) endpoint.
   * **Delete an app** endpoint
-    * The [Delete an app](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#deprecated-delete-an-app) endpoint is deprecated.
-    * Use the [Delete a Snyk App by its App ID](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#delete-an-app-by-its-app-id) endpoint.
+    * The [Delete an app](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-delete-an-app) endpoint is deprecated.
+    * Use the [Delete a Snyk App by its App ID](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#delete-an-app-by-its-app-id) endpoint.
   * **Manage client secrets for an app** endpoint
-    * The [Manage client secrets for an app](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#deprecated-manage-client-secrets-for-an-app) endpoint is deprecated.
-    * Use the [Manage client secret for non-interactive Snyk App installations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#manage-client-secret-for-non-interactive-snyk-app-installations) endpoint.
+    * The [Manage client secrets for an app](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-manage-client-secrets-for-an-app) endpoint is deprecated.
+    * Use the [Manage client secret for non-interactive Snyk App installations](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#manage-client-secret-for-non-interactive-snyk-app-installations) endpoint.
   * **Get a list of app bots authorized to an organization** endpoint
-    * The [Get a list of app bots authorized to an organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#deprecated-get-a-list-of-app-bots-authorized-to-an-organization) endpoint is deprecated.
-    * Use the [Get a list of apps installed for an organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-endpoints-index-and-tips#get-a-list-of-apps-installed-for-an-organization) endpoint.
-  * [Integration with Google Container Registry (GCR)](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-google-container-registry-gcr) is deprecated.
+    * The [Get a list of app bots authorized to an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-get-a-list-of-app-bots-authorized-to-an-organization) endpoint is deprecated.
+    * Use the [Get a list of apps installed for an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#get-a-list-of-apps-installed-for-an-organization) endpoint.
+  * [Integration with Google Container Registry (GCR)](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-google-container-registry-gcr) is deprecated.
 
 ### End of support features
 
@@ -88,4 +88,4 @@ The documentation page will announce the transition of a feature to End of Suppo
 
 A feature can also be the subject of an end-of-life event, meaning that the feature or capability impacted by this process ceases to exist and is removed from the product and public documentation.
 
-API endpoints have a dedicated section for the end-of-life process and also provide details about the migration steps. Navigate to the [API End of Life process and migration guides](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-end-of-life-eol-process-and-migration-guides) for more details.
+API endpoints have a dedicated section for the end-of-life process and also provide details about the migration steps. Navigate to the [API End of Life process and migration guides](https://docs.snyk.io/developer-tools/snyk-api/api-end-of-life-eol-process-and-migration-guides) for more details.

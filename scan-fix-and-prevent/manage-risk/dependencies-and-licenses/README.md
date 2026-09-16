@@ -17,5 +17,5 @@ For both dependencies and licenses, you can filter by Project or other filter cr
 * From the **Filters** dropdown, check the applicable boxes to filter by [Severity level](../prioritize-issues-for-fixing/severity-levels.md) or Project type.
 
 {% hint style="info" %}
-Results from the Dockerfile Project type are filtered out by default in the filter criteria as they can result in duplication of results from scans of the images resulting from building the Dockerfiles. To match results from [Reporting API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/reporting-api-v1) calls, either filter out Dockerfiles from the API results or turn on Dockerfiles in the Project type column of the filter.
+Results from the Dockerfile Project type are filtered out by default in the filter criteria as they can result in duplication of results from scans of the images resulting from building the Dockerfiles. To match results from [Reporting API](https://docs.snyk.io/developer-tools/snyk-api/reference/reporting-api-v1) calls, either filter out Dockerfiles from the API results or turn on Dockerfiles in the Project type column of the filter.
 {% endhint %}

@@ -10,7 +10,7 @@ This page provides an example of using the API to set up a GitHub connection wit
 Using the `snyk-broker-config` CLI tool is recommended for an easier experience. The API allows for automation and more control, and also requires a clear understanding of Broker deployments, credentials, connections, and integrations.
 
 {% hint style="info" %}
-In any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary, for example, `api.eu.snyk.io`. For a list of URLs, see [API URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#api-urls).
+In any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary, for example, `api.eu.snyk.io`. For a list of URLs, see [API URLs](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#api-urls).
 {% endhint %}
 
 ### Prerequisites
@@ -53,7 +53,7 @@ curl --location --request POST 'https://api.snyk.io/rest/orgs/ORG_ID/apps/instal
 }'
 ```
 
-Use the endpoint [Install a Snyk App to this Organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/apps#post-orgs-org_id-apps-installs) as the source of truth for the exact request and response schema.
+Use the endpoint [Install a Snyk App to this Organization](https://docs.snyk.io/developer-tools/snyk-api/reference/apps#post-orgs-org_id-apps-installs) as the source of truth for the exact request and response schema.
 
 Save the values needed in later steps:
 
@@ -110,7 +110,7 @@ At this point, you can start running the Broker client.
 
 ## Run your Broker deployment <a href="#run-your-broker-deployment_1" id="run-your-broker-deployment_1"></a>
 
-Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed. For a list of URLs, see [Broker server URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-server-urls).
+Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed. For a list of URLs, see [Broker server URLs](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#broker-server-urls).
 
 Use the `CLIENT_ID` and `CLIENT_SECRET` values returned when you installed the Broker app.
 

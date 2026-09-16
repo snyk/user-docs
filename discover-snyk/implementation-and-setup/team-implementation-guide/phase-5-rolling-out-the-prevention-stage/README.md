@@ -25,7 +25,7 @@ If you are not already blocking vulnerabilities, start by blocking the differenc
 
 This eases developers into the process, as they only take responsibility for vulnerabilities directly related to their changes.
 
-To block new issues, you can use PR checks. For details, see [Run PR Checks](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks).
+To block new issues, you can use PR checks. For details, see [Run PR Checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks).
 
 ### Communicate exception processes
 

@@ -54,6 +54,6 @@ Automatically created collections have no management options available:
 
 ## Limitations of Automated Collections
 
-* Automated Collections does not detect [SAST](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#sast) scans pushed to the Snyk Web UI using the `snyk code test --report --project-name="name"` command.
+* Automated Collections does not detect [SAST](https://docs.snyk.io/glossary#sast) scans pushed to the Snyk Web UI using the `snyk code test --report --project-name="name"` command.
 * This feature supports only GitHub, GitHub Enterprise, GitLab, Bitbucket Cloud, and Azure integration scans.
 * This feature does not support Snyk Container.
