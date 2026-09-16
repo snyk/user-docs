@@ -95,3 +95,19 @@ Return results in SARIF format. Example: `snyk secrets test --sarif`
 ### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
 Save test output in SARIF format directly to the `<OUTPUT_FILE_PATH>` file, regardless of whether you use the `--sarif` option. Use this option to display human-readable output in `stdout` while saving the SARIF output to a file. If you run multiple scans, such as Secrets and Code scans, the SARIF output includes data only from the most recently completed scan. If you run multiple scans sequentially and specify the same `--sarif-file-output` file path, each subsequent scan overwrites the previous SARIF file. To keep results separate, save each scan to a different SARIF output file.
+
+### `--html`
+
+Return results in HTML format. Example: `snyk secrets test --html`
+
+### `--html-file-output=<OUTPUT_FILE_PATH>`
+
+Save test output in HTML format directly to the specified file, regardless of whether you use the `--html` option. Example: `snyk secrets test --html-file-output=detected-secrets.html`
+
+### `--toon`
+
+Return results in TOON (Token-Oriented Object Notation) format, a compact, token-efficient alternative to JSON intended for consumption by LLMs and AI agents. Example: `snyk secrets test --toon`
+
+### `--toon-file-output=<OUTPUT_FILE_PATH>`
+
+Save test output in TOON format directly to the specified file, regardless of whether you use the `--toon` option. Example: `snyk secrets test --toon-file-output=detected-secrets.toon`

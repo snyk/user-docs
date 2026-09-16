@@ -220,6 +220,26 @@ This is especially useful if you want to display the human-readable test output 
 
 When running multiple scans, such as SCA and Code scans, the SARIF output includes data only from the most recently completed scan. If you run multiple scans sequentially and specify the same `--sarif-file-output` file path, each subsequent scan overwrites the previous SARIF file. To keep results separate, save each scan to a different SARIF output file.
 
+### `--html`
+
+Return results in HTML format.
+
+### `--html-file-output=<OUTPUT_FILE_PATH>`
+
+Save test output in HTML format directly to the specified file, regardless of whether or not you use the `--html` option.
+
+Example: `$ snyk test --html-file-output=results.html`
+
+### `--toon`
+
+Return results in TOON (Token-Oriented Object Notation) format, a compact, token-efficient alternative to JSON intended for consumption by LLMs and AI agents.
+
+### `--toon-file-output=<OUTPUT_FILE_PATH>`
+
+Save test output in TOON format directly to the specified file, regardless of whether or not you use the `--toon` option.
+
+Example: `$ snyk test --toon-file-output=results.toon`
+
 ### `--severity-threshold=<low|medium|high|critical>`
 
 Report only vulnerabilities at the specified level or higher.
