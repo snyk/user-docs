@@ -29,7 +29,7 @@ Scope is a permission boundary, not a to-do list. Within the scope you define, a
 
 ## The allowlist
 
-Your main URL is in scope automatically. Everything else must be listed.
+Your main URL is in scope automatically. List any other hosts or paths on the allowlist—for example `api.example.com` or `api.example.com/v2`.
 
 Work through this checklist for your application:
 
@@ -39,7 +39,7 @@ Work through this checklist for your application:
 | **Your identity provider**, such as Okta or GitHub | If the login flow redirects off your main domain and the provider is out of scope, the redirect is rejected and authentication fails, so agents never get past the login page |
 | **Your CDN**                                       | Agents cannot render pages correctly without the assets they reference                                                                                                        |
 | **External JavaScript sources**                    | Application behavior defined in externally hosted scripts is invisible if those scripts cannot load                                                                           |
-| **Any other host in the same application**         | Separate hostnames for admin interfaces, file uploads, websockets, or authentication services                                                                                 |
+| **Any other host or path in the same application** | Separate hostnames for admin interfaces, file uploads, websockets, or authentication services                                                                                 |
 
 ### Worked example
 
@@ -54,7 +54,7 @@ With `api.example.com` omitted, agents would crawl the front end, watch its API 
 
 ## The reject list
 
-The reject list names hosts and paths agents must never touch. Like the allowlist, it is enforced at the proxy.
+The allowlist and reject list both use hosts and paths. The reject list names what agents must never touch. Both lists are enforced at the proxy.
 
 The reject list always wins. If something matches both the allowlist and the reject list, it is rejected. You can therefore put a broad host in the allowlist and carve specific paths out of it, without having to enumerate every permitted path.
 
