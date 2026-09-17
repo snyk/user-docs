@@ -47,7 +47,7 @@ See the usage disclaimer [here](https://snyk.io/policies/snyk-assist-disclaimer)
 Snyk Assist is accessible directly within the Snyk Learn interface for users with access to the platform, and where your Snyk admin has enabled the functionality.
 
 1. Navigate to [Snyk Learn](https://learn.snyk.io).
-2. Click the **Snyk Assist** icon <img src="../.gitbook/assets/using-snyk-assist.png" alt="" data-size="line"> to open the chat window. This is found in the bottom right of the page.
+2. Click the **Snyk Assist** icon <img src="../.gitbook/assets/using-snyk-assist.png" alt="Snyk Assist chat within the Snyk Learn interface" data-size="line"> to open the chat window. This is found in the bottom right of the page.
 3. Type your questions about Snyk products or application security concepts into the chat prompt.
 
 Snyk Assist will answer based on its knowledge base, potentially including links to relevant documentation, Learn lessons, and Snyk blogs.

@@ -45,4 +45,4 @@ curl --request GET \
 
 Set the Custom Endpoint to https://api.us.snyk.io in the IDE extension settings before authenticating. For example, in VS Code looks like this:
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdpXh6Us6U_mzXGtnWRqfCVIsao_BQrMyi9Y2rbWhvbcEJKZMl3497yDG6GPUe9zrXDLgoChd-KafUhoLID5gqsy50X8PHD34kJ5XALvZZb5xG6UZUmxrxXCkr5cslSk63Msi_L?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdpXh6Us6U_mzXGtnWRqfCVIsao_BQrMyi9Y2rbWhvbcEJKZMl3497yDG6GPUe9zrXDLgoChd-KafUhoLID5gqsy50X8PHD34kJ5XALvZZb5xG6UZUmxrxXCkr5cslSk63Msi_L?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Custom Endpoint setting in the Snyk IDE extension settings"><figcaption></figcaption></figure>

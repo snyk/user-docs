@@ -47,7 +47,7 @@ For each matching project, you can see:
 
 This requires active Snyk Code projects in your preferred Organization.
 
-<figure><img src="../../.gitbook/assets/requires-active-snyk-code-projects-preferred-organization.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requires-active-snyk-code-projects-preferred-organization.png" alt="Vulnerabilities in your code, drawn from active Snyk Code Projects"><figcaption></figcaption></figure>
 
 ## Assigned learning
 

@@ -29,7 +29,7 @@ Add the Snyk entry to `~/.factory/mcp.json`. To learn more, visit the official [
 }  
 ```
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (22).png" alt="Snyk entry added to the Factory MCP configuration file"><figcaption></figcaption></figure></div>
 
 ### Authenticate
 

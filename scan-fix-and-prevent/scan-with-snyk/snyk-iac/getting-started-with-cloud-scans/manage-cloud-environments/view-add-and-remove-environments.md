@@ -22,7 +22,7 @@ The cloud environments table displays the following information for each environ
 
 To add a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../../cloud-platform-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../../cloud-platform-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../../cloud-platform-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt="Add environment dropdown on the cloud environments page"><figcaption></figcaption></figure>
 
 You can also add an environment using the Snyk API:
 
@@ -38,6 +38,6 @@ To remove a cloud environment:
 2. Select **Remove**.
 3. In the confirmation modal, select **Yes, remove**.
 
-<figure><img src="../../../../.gitbook/assets/snyk-cloud-remove-env-ui.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/snyk-cloud-remove-env-ui.png" alt="Removing a cloud environment"><figcaption></figcaption></figure>
 
 You can also remove an environment using the [Snyk API](remove-a-cloud-environment.md#api).
