@@ -224,9 +224,11 @@ When running multiple scans, such as SCA and Code scans, the SARIF output includ
 
 Return results in HTML format.
 
+Example: `$ snyk test --html`
+
 ### `--html-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in HTML format directly to the specified file, regardless of whether or not you use the `--html` option.
+Save test output in HTML format directly to the specified file, regardless of whether you use the `--html` option.
 
 Example: `$ snyk test --html-file-output=results.html`
 
