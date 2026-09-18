@@ -236,9 +236,11 @@ Example: `$ snyk test --html-file-output=results.html`
 
 Return results in TOON (Token-Oriented Object Notation) format, a compact, token-efficient alternative to JSON intended for consumption by LLMs and AI agents.
 
+Example: `$ snyk test --toon`
+
 ### `--toon-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in TOON format directly to the specified file, regardless of whether or not you use the `--toon` option.
+Save test output in TOON format directly to the specified file, regardless of whether you use the `--toon` option.
 
 Example: `$ snyk test --toon-file-output=results.toon`
 
