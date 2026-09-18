@@ -54,11 +54,11 @@ There are two types of dual or multiple licenses:
 
 * OR **-** If Snyk recognizes two licenses marked with `OR`being used in a package, this means the customer can comply with either of the licenses.
 
-<figure><img src="../../../.gitbook/assets/example-license-npm.png" alt="" width="184"><figcaption><p>Example of an OR license in npm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/example-license-npm.png" alt="Example of an OR license in npm" width="184"><figcaption><p>Example of an OR license in npm</p></figcaption></figure>
 
 * AND **-** If the license explicitly has `AND`, customers must comply with all (dual or multiple) licenses.
 
-<figure><img src="../../../.gitbook/assets/example-license-npm-2.png" alt="" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/example-license-npm-2.png" alt="Example of an AND license in npm" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
 
 In both of these cases, Snyk displays the severity of the license with the highest severity when displaying issues, where all licenses have a severity.
 

@@ -18,13 +18,13 @@ Issue cards appear on the details page for a Project. You can use available opti
 
 Dependency cards show details for a specific dependency, its associated vulnerabilities or license issues, and actions you can take.
 
-<figure><img src="../../.gitbook/assets/PR-checks-fix-dependencies-issue.png" alt=""><figcaption><p>Issue card for the npmconf vulnerability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/PR-checks-fix-dependencies-issue.png" alt="Issue card for the npmconf vulnerability"><figcaption><p>Issue card for the npmconf vulnerability</p></figcaption></figure>
 
 The dependency card provides a [Header section](issue-card-information.md#header-section) and [Body section](issue-card-information.md#expanded-vulnerability-section) with information as explained in the next sections of this documentation.
 
 ### Header section
 
-<figure><img src="../../.gitbook/assets/Projects-issue-card-header.png" alt=""><figcaption><p>jsonwebtoken issue card header</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Projects-issue-card-header.png" alt="jsonwebtoken issue card header"><figcaption><p>jsonwebtoken issue card header</p></figcaption></figure>
 
 * [Severity level](../../manage-risk/prioritize-issues-for-fixing/severity-levels.md): for example, **High**. For dependencies with multiple severity levels, the severity shown in the header is the maximum of all listed issues under that dependency.
 * Dependency name: for example, **jsonwebtoken** or **libxmljs2**.
@@ -33,7 +33,7 @@ The dependency card provides a [Header section](issue-card-information.md#header
 
 ### Expanded vulnerability section
 
-<figure><img src="../../.gitbook/assets/Project-issues-expanded-vuln-section.png" alt=""><figcaption><p>jsonwebtoken issue card body details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Project-issues-expanded-vuln-section.png" alt="jsonwebtoken issue card body details"><figcaption><p>jsonwebtoken issue card body details</p></figcaption></figure>
 
 * **Issue Name**: the vulnerability name, in this case "Authentication bypass".
 * Type: **VULNERABILITY** or LICENSE ISSUE

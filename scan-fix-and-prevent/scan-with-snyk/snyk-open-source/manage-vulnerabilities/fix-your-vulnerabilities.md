@@ -24,7 +24,7 @@ For Snyk Open Source, on the **Issues** tab, the results are displayed as follow
 * Different versions are listed and can be expanded to show the full list of vulnerabilities remediated in that specific version.
 * All vulnerabilities contain contextual information to help you prioritize the issues and start fixing them.
 
-<figure><img src="../../../.gitbook/assets/OS-fix-vulns-issues-in-project.png" alt=""><figcaption><p>Example of issues diplayed on the Issues tab for a Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/OS-fix-vulns-issues-in-project.png" alt="Example of issues diplayed on the Issues tab for a Project"><figcaption><p>Example of issues diplayed on the Issues tab for a Project</p></figcaption></figure>
 
 ## View fix advice
 
@@ -39,7 +39,7 @@ The summary area groups advice by package, and is displayed based on the best av
 * All vulnerability names and severity details affecting that package
 * The recommended fix, a link to the recommended fix for this package and its listed vulnerabilities: either the specific version to which to upgrade or the name of the patch.
 
-<figure><img src="../../../.gitbook/assets/project_details_fixes.png" alt=""><figcaption><p>Upgradable issues tab</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project_details_fixes.png" alt="Upgradable issues tab"><figcaption><p>Upgradable issues tab</p></figcaption></figure>
 
 You can also find additional advice and details further down on the Project details page:
 

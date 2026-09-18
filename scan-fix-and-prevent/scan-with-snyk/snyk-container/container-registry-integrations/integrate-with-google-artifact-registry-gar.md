@@ -65,7 +65,7 @@ You can now connect your Git repo to this Project in order to use your Dockerfil
 
 GAR files are indicated with a unique icon. You can now filter to view only those Projects.
 
-<figure><img src="../../../.gitbook/assets/examples-gcr-projects.png" alt=""><figcaption><p>Examples of GAR Projects</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/examples-gcr-projects.png" alt="Examples of GAR Projects"><figcaption><p>Examples of GAR Projects</p></figcaption></figure>
 
 {% hint style="info" %}
 For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. You must re-import the image. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).

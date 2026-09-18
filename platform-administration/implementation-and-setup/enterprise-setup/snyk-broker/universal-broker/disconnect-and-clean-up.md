@@ -21,7 +21,7 @@ The `snyk-broker-config introduction` command walk you through this flow and ind
 * Before you delete a credentials reference, you must delete the connection(s) using it.
 * Before you delete a deployment, you must delete all connections and credentials references.
 
-<figure><img src="../../../../.gitbook/assets/Universal-Broker-data-model.png" alt=""><figcaption><p>Universal Broker resource data model illustrating child items to delete before parent items</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Universal-Broker-data-model.png" alt="Universal Broker resource data model illustrating child items to delete before parent items"><figcaption><p>Universal Broker resource data model illustrating child items to delete before parent items</p></figcaption></figure>
 
 ## Disconnect an integration
 

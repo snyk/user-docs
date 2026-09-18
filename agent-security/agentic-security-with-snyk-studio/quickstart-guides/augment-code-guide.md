@@ -37,7 +37,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The MCP Server starts automatically. The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt="Snyk MCP server configured and started in Augment Code"><figcaption></figcaption></figure>
 
 As a one-time setup, authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
 
@@ -55,7 +55,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Augment Code indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt="Augment Code calling the Snyk MCP server for a vulnerability scan"><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules
 
@@ -71,4 +71,4 @@ The following is a suggested instruction for Augment Code user guidelines:
 - Repeat this process until no issues are found.
 ```
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt="Secure at inception rules added to the Augment Code configuration"><figcaption></figcaption></figure>

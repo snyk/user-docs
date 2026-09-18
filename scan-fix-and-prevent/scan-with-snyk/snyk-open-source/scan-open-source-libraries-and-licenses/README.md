@@ -31,7 +31,7 @@ For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. 
 
 Navigate to the **Issues** card for a Project.
 
-<figure><img src="../../../.gitbook/assets/OS-issues-tab-in-os-project.png" alt=""><figcaption><p>Issues tab in an Open Source Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/OS-issues-tab-in-os-project.png" alt="Issues tab in an Open Source Project"><figcaption><p>Issues tab in an Open Source Project</p></figcaption></figure>
 
 To fix vulnerabilities:
 

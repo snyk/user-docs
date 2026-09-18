@@ -51,6 +51,6 @@ When scanning Dockerfiles, Snyk can provide vulnerability information and base i
 
 After you [integrate your Git repository with Snyk](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations), any Dockerfiles in that repository are automatically identified and shown in the Web UI as Projects.
 
-<figure><img src="../../../.gitbook/assets/dockerfiles_projects.png" alt=""><figcaption><p>Dockerfiles displayed in the Project list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dockerfiles_projects.png" alt="Dockerfiles displayed in the Project list"><figcaption><p>Dockerfiles displayed in the Project list</p></figcaption></figure>
 
 For details about detecting vulnerable base images in containers and fix recommendations, see [Detect the container base image](../use-snyk-container/detect-the-container-base-image.md).

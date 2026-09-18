@@ -377,7 +377,7 @@ ORDER BY pct_prs_with_failed_checks DESC, pct_prs_with_overridden_checks DESC
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/output-format-sql-query-prs-failed-pr-checks-prs-overridden.png" alt=""><figcaption><p>Output format of SQL query for % of PRs with failed PR checks and % of PRs with overridden PR checks by repository</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-sql-query-prs-failed-pr-checks-prs-overridden.png" alt="Output format of SQL query for % of PRs with failed PR checks and % of PRs with overridden PR checks by repository"><figcaption><p>Output format of SQL query for % of PRs with failed PR checks and % of PRs with overridden PR checks by repository</p></figcaption></figure>
 
 ## PR checks by status over time
 
@@ -412,9 +412,9 @@ ORDER BY week_starting ASC
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/output-format-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-3.png" alt="Query output format"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/output-format-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-2.png" alt="Query output format"><figcaption></figcaption></figure>
 
 ## Repository PR check adoption
 
@@ -606,4 +606,4 @@ ORDER BY repository_name
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/output-format.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format.png" alt="Query output format"><figcaption></figcaption></figure>

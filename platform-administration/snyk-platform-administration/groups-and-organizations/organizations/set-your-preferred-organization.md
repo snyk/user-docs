@@ -19,11 +19,11 @@ Follow these steps to change your Preferred Organization:
 
 1\. On the Snyk Web UI, click your Account icon at the bottom left corner of the screen. Then click **Account settings**:
 
-<figure><img src="../../../.gitbook/assets/account-settings.png" alt=""><figcaption><p>Account settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/account-settings.png" alt="Account settings"><figcaption><p>Account settings</p></figcaption></figure>
 
 2\. On the **Account Settings** page, in the **Preferred Organization** section, open the Organization dropdown list to display a list of the Organizations to which you have access, and select the Organization you want to set as your Preferred Organization:
 
-<figure><img src="../../../.gitbook/assets/account-settings-preferred-org.png" alt=""><figcaption><p>Change your Preferred Organization</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/account-settings-preferred-org.png" alt="Change your Preferred Organization"><figcaption><p>Change your Preferred Organization</p></figcaption></figure>
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 

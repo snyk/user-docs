@@ -20,7 +20,7 @@ For more information about test frequency settings, see [Project actions](https:
 
 The **Test Usage** section shows how many tests you are using over the current billing period:
 
-<figure><img src="../../.gitbook/assets/usage_test_usage.png" alt=""><figcaption><p>Test usage data</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/usage_test_usage.png" alt="Test usage data"><figcaption><p>Test usage data</p></figcaption></figure>
 
 {% hint style="info" %}
 Test limits vary for Snyk products and plans.
@@ -58,7 +58,7 @@ For more information on billable events and credits for the Snyk Platform Access
 
 At the Tenant level, navigate to **Billing and Usage** to view credit consumption and usage patterns across all Groups and Organizations within the selected Tenant. The **Billing and Usage** dashboard also provides an overview of which Snyk products and Projects consume your credits.
 
-<figure><img src="../../.gitbook/assets/billing_and_usage_dashboard.png" alt=""><figcaption><p>Billing and Usage dashboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/billing_and_usage_dashboard.png" alt="Billing and Usage dashboard"><figcaption><p>Billing and Usage dashboard</p></figcaption></figure>
 
 The **Billing and Usage** dashboard provides the following information:
 
@@ -74,4 +74,4 @@ You may need to enable certain capabilities at the Tenant level to begin using S
 
 You can also see a breakdown of your credit usage and filter the information by Group, Snyk product, or date range.
 
-<figure><img src="../../.gitbook/assets/billing_and_usage_dahsboard_credit_breakdown.png" alt=""><figcaption><p>Example of credit usage breakdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/billing_and_usage_dahsboard_credit_breakdown.png" alt="Example of credit usage breakdown"><figcaption><p>Example of credit usage breakdown</p></figcaption></figure>

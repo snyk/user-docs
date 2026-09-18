@@ -103,7 +103,7 @@ To confirm the extension was installed, run the following command in the Gemini 
 /extensions list
 ```
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Result of the /extensions list terminal command</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26).png" alt="Result of the /extensions list terminal command"><figcaption><p>Result of the /extensions list terminal command</p></figcaption></figure>
 
 To install Snyk Studio manually, use the method that best suits your operating system and local development environment.
 
@@ -164,7 +164,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 Run `/mcp list` to confirm the Snyk MCP Server is connected.
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt="Output of /mcp list confirming the Snyk MCP server is connected"><figcaption></figcaption></figure>
 
 </details>
 

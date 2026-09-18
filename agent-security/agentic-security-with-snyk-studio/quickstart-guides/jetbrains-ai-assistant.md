@@ -35,7 +35,7 @@ If you have the Snyk CLI installed, open **Settings/Preferences** > **Tools** > 
 
 If you have the Snyk CLI installed and accessible on your system path add the following command.
 
-<figure><img src="../../.gitbook/assets/image2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2.png" alt="Snyk MCP server command using the pre-installed Snyk CLI"><figcaption></figcaption></figure>
 
 If the snyk command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
 
@@ -47,7 +47,7 @@ Open Settings/Preferences ▸ Tools ▸ AI Assistant ▸ Model Context Protocol 
 
 If you have the Node.js npx executable installed in your environment, add the following command:
 
-<figure><img src="../../.gitbook/assets/image1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image1.png" alt="Snyk MCP server command using the Node.js npx executable"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 JetBrains AI Assistant may have issues with the snyk\_trust function, needed before a dependency check (SCA scan). To fix this, add --disable-trust to the MCP command.
@@ -59,7 +59,7 @@ Reload the IDE window for the changes to apply.
 
 Verify that the Snyk MCP Server is available by checking the Status column in the MCP configuration and requesting it to list the tools it has available.
 
-<figure><img src="../../.gitbook/assets/image3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image3.png" alt="Status column confirming the Snyk MCP server is available"><figcaption></figcaption></figure>
 
 \
 As a one-time setup, authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.

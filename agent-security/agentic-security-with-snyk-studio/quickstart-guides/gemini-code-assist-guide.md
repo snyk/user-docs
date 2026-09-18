@@ -77,7 +77,7 @@ You might need to reload the IDE window for the changes to apply. In VS Code, do
 
 Next, you can verify that the Snyk MCP Server is available by enabling Agent mode on Gemini Code Assist and requesting it to list the tools it has available:
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28).png" alt="Snyk MCP server available in Gemini Code Assist agent mode"><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
@@ -99,7 +99,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Gemini indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29).png" alt="Gemini calling the Snyk MCP server for a vulnerability scan"><figcaption></figcaption></figure>
 
 ### Gemini Code Assist security rules
 
@@ -123,4 +123,4 @@ The following is a suggested instruction for Gemini Code Assist rules. Following
 
 You can add these rules using VS Code **UI Settings** and locate the **Geminicodeassist: Rules** configuration:
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30).png" alt="Gemini Code Assist rules configuration in the VS Code settings"><figcaption></figcaption></figure>

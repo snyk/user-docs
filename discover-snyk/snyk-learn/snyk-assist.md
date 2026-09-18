@@ -19,7 +19,7 @@ Snyk Assist enhances your learning experience within the Snyk Learn platform by:
 * Delivering context-aware replies based on Snyk's extensive knowledge base.
 * Suggesting relevant follow-on learning opportunities available within Snyk Learn, Snyk Docs and the Snyk Blog.
 
-<figure><img src="../.gitbook/assets/snyk-assist-snyk-learn.png" alt=""><figcaption><p>Snyk Assist on Snyk Learn</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/snyk-assist-snyk-learn.png" alt="Snyk Assist on Snyk Learn"><figcaption><p>Snyk Assist on Snyk Learn</p></figcaption></figure>
 
 ## How Snyk Assist works
 
@@ -47,7 +47,7 @@ See the usage disclaimer [here](https://snyk.io/policies/snyk-assist-disclaimer)
 Snyk Assist is accessible directly within the Snyk Learn interface for users with access to the platform, and where your Snyk admin has enabled the functionality.
 
 1. Navigate to [Snyk Learn](https://learn.snyk.io).
-2. Click the **Snyk Assist** icon <img src="../.gitbook/assets/using-snyk-assist.png" alt="" data-size="line"> to open the chat window. This is found in the bottom right of the page.
+2. Click the **Snyk Assist** icon <img src="../.gitbook/assets/using-snyk-assist.png" alt="Snyk Assist chat within the Snyk Learn interface" data-size="line"> to open the chat window. This is found in the bottom right of the page.
 3. Type your questions about Snyk products or application security concepts into the chat prompt.
 
 Snyk Assist will answer based on its knowledge base, potentially including links to relevant documentation, Learn lessons, and Snyk blogs.
@@ -68,7 +68,7 @@ To enable Snyk Assist for your Group:
 
 After Snyk Assist is enabled, it is visible and accessible on Snyk Learn for the users belonging to that specific Group.
 
-<figure><img src="../.gitbook/assets/snyk-assist-settings-page.png" alt=""><figcaption><p>Snyk Assist settings page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/snyk-assist-settings-page.png" alt="Snyk Assist settings page"><figcaption><p>Snyk Assist settings page</p></figcaption></figure>
 
 ## Data Handling and Safeguards
 
