@@ -42,6 +42,7 @@ The following table shows agent support by operating system. A check mark (✓) 
 | Claude Desktop | ✓         | ✗            | —             | —                | ✓           | ✗              |
 | Cursor         | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
 | VS Code        | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
+| Github Copilot | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
 | Windsurf       | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
 | Kiro           | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
 | Gemini CLI     | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
