@@ -1,0 +1,53 @@
+name: Merge IDE compatibility matrix PRs
+
+# Approves and merges the daily IDE plugin compatibility matrix PR opened by
+# the Team IDE automation, but only when the PR matches a strict envelope:
+# right author, only the matrix file changed, table rows only, all checks green.
+#
+# Each PR regenerates the whole matrix, so the PRs are competing full-file
+# snapshots rather than incremental edits. Only the newest qualifying PR is
+# merged; older ones are closed as superseded. Merging oldest-first would
+# publish stale matrix data over newer data.
+#
+# Merges directly once checks are green rather than using auto-merge: the
+# upstream job force-pushes on same-day re-runs, and with auto-merge armed the
+# branch content could change after the approval was given.
+
+on:
+  schedule:
+    # 06:00 UTC daily. The automation opens its PR between roughly 02:20 and
+    # 04:50 UTC, so this leaves headroom for the PR to exist and its checks
+    # to finish.
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Evaluate the envelope and report, but do not approve or merge'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: merge-compatibility-matrix
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out scripts
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+          sparse-checkout-cone-mode: false
+
+      - name: Approve and merge qualifying matrix PR
+        env:
+          # PAT of a @snyk/design-content_docs member. The built-in
+          # GITHUB_TOKEN cannot satisfy the CODEOWNERS review requirement,
+          # so the approval must come from a real code owner identity.
+          GH_TOKEN: ${{ secrets.DOCS_MATRIX_MERGE_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: bash .github/scripts/merge-compatibility-matrix.sh
