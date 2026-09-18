@@ -72,6 +72,6 @@ Machines appear automatically after you install Agentic Development Security hoo
 
 Agent Behavior Governance is available only as an open preview and is not generally available (GA). The product will be limited in the following ways:
 
-* Rate limit: Each entitlement in open preview will be limited to 10k behavioral guardrail requests (hook calls) per calendar day per Tenant.
+* Rate limit: Each entitlement in open preview will be limited to 5k behavioral guardrail requests (hook calls) per calendar day per machine.
 * Data retention limi&#x74;_:_ Data is retained for seven days. During the preview, the data retention setting is fixed at seven days and cannot be changed.
 * Product support: This experimental preview is subject to change. It is a try-out experience and should not be used in production. On-call and service availability will be limited during this period. This means there is limited support for feedback and feature requests.
