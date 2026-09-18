@@ -9,9 +9,9 @@ Agentic workflows accelerate software development and innovation but introduce s
 Snyk Studio connects the Snyk platform, your development environment, and your AI tools in interconnected layers:
 
 * A [default, hooks-based approach](getting-started-with-snyk-studio.md) to ensure agents generate secure code.
-* AI agents or [ADEs](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#ade): Agentic development environments that enable developers to interact with coding agents, which can integrate with Snyk Studio to drive security.
-* [Directives](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#directive): Hooks, skills, rules, and commands provided to coding assistants to guide them on coding and security standards.
-* [Snyk MCP Server](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#snyk-mcp-server): An MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI.
+* AI agents or [ADEs](https://docs.snyk.io/glossary#ade): Agentic development environments that enable developers to interact with coding agents, which can integrate with Snyk Studio to drive security.
+* [Directives](https://docs.snyk.io/glossary#directive): Hooks, skills, rules, and commands provided to coding assistants to guide them on coding and security standards.
+* [Snyk MCP Server](https://docs.snyk.io/glossary#snyk-mcp-server): An MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI.
 * The Snyk platform: Security intelligence from Snyk products (Snyk Code, Snyk Open Source, and more) which can be used to identify security issues and drive resolutions.
 
 ## Coding assistant support

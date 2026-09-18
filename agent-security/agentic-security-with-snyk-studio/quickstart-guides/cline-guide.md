@@ -10,7 +10,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Cline to secure code
 ## Prerequisites
 
 * [Install Cline](cline-guide.md#install-cline)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](cline-guide.md#install-the-snyk-mcp-server-in-cline-using-npx)
 
 ### Install Cline
@@ -107,7 +107,7 @@ Cline will invoke Snyk scanning, provide output and insights based on the result
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [Cline rules](https://docs.cline.bot/features/cline-rules). Open the Rules and Workflows menu using the bottom chat navigation from Cline.
 

@@ -62,7 +62,7 @@ As a package registry, [rubygems.org](https://rubygems.org/) is supported.
 
 ## Ruby for Snyk Code
 
-For an overview of the supported security rules, visit [Ruby rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/ruby-rules).
+For an overview of the supported security rules, visit [Ruby rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/ruby-rules).
 
 For Ruby with Snyk Code, the following file formats are supported: `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
 
@@ -85,7 +85,7 @@ Available features:
 
 * Fix PRs
 * License scanning
-* Test your app's SBOM and packages using `pkg:gem` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
+* Test your app's SBOM and packages using `pkg:gem` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
 
 ### Bundler support
 
@@ -104,7 +104,7 @@ Snyk requires both files to be present to correctly test, monitor, and fix Ruby 
 
 ### Private Gem sources
 
-If your Gemfile needs access to private Gem sources, see [Private gem sources for Ruby configuration](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration).
+If your Gemfile needs access to private Gem sources, see [Private gem sources for Ruby configuration](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration).
 
 Using private Gem sources should work normally when you are using the Snyk CLI.
 

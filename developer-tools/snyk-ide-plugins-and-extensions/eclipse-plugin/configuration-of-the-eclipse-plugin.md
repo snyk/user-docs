@@ -19,7 +19,7 @@ You can set the following global configuration settings in the Snyk preferences.
 
 <figure><img src="../../.gitbook/assets/snyk-preferences.png" alt=""><figcaption><p>Snyk preferences</p></figcaption></figure>
 
-* **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDEs URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
+* **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDEs URLs](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#ides-urls).\
   Snyk automatically redirects multi-tenant users who do not belong to the `SNYK-US-01` region to the correct domain, using their authentication email. Snyk does not redirect users who must use a custom URL, such as companies with single-tenant setups.
 * **Allow unknown certificate authorities**: Disable certificate checks for SSL connections.
 * **Authentication Method**: Select to override the default OAuth2 authentication in order to use a Snyk API token. Snyk recommends keeping this setting off because the default OAuth2 authentication is more secure.

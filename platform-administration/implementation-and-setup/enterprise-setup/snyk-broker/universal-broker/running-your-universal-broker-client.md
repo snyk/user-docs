@@ -15,7 +15,7 @@ Ensure you have all of the [prerequisites](prerequisites-for-universal-broker.md
 * Valid integration credentials required by your connections such as MY\_GITHUB\_TOKEN If references are missing, the connection will not be established, and an error entry will be logged in the Broker client logs.
 {% endhint %}
 
-If you are not using `app.snyk.io` (for example, if you log into https://app.eu.snyk.io), you will need to target the Broker server for your region by using the following in your Docker run command `-e BROKER_SERVER_URL=https://broker.region.snyk.io \` .  For details, visit [Broker URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-server-urls).
+If you are not using `app.snyk.io` (for example, if you log into https://app.eu.snyk.io), you will need to target the Broker server for your region by using the following in your Docker run command `-e BROKER_SERVER_URL=https://broker.region.snyk.io \` .  For details, visit [Broker URLs](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#broker-server-urls).
 
 ## Docker Compose example
 

@@ -18,7 +18,7 @@ Snyk supports the following protocols for authentication:
 For all authentication methods, Snyk uses the [Secret Storage API](https://code.visualstudio.com/api/references/vscode-api#SecretStorage) to store the token securely. This storage uses the keychain of the system to manage the token.
 
 {% hint style="warning" %}
-Before authenticating, ensure you have set your region properly. For details, see [IDEs URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).
+Before authenticating, ensure you have set your region properly. For details, see [IDEs URLs](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#ides-urls).
 {% endhint %}
 
 ## Steps to authenticate using the OAuth 2.0 protocol

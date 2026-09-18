@@ -8,7 +8,7 @@ nav_context: agnostic
 Snyk provides Snyk Studio usage analytics in the following report types:
 
 * Snyk Studio Adoption
-* [Developer IDE and CLI usage](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#developer-ide-and-cli-usage-report)
+* [Developer IDE and CLI usage](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/prevention-reports#developer-ide-and-cli-usage-report)
 
 Select the report name for more details on the report type.
 

@@ -34,8 +34,8 @@ Configure the Group-level integration by following these steps:
 <figure><img src="../../../../.gitbook/assets/configure-group-level-integration.png" alt=""><figcaption></figcaption></figure>
 
 * Search and select the GitHub integration
-* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate GitLab using Snyk Essentials](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations/gitlab-for-snyk-essentials#gitlab-integrate-using-snyk-apprisk) page.
-* If relevant, you can also include the Backstage catalog. See the [Backstage file for SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations#backstage-file-for-scm-integrations) page for more details.
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate GitLab using Snyk Essentials](https://docs.snyk.io/developer-tools/integrations/scm-integrations/group-level-integrations/gitlab-for-snyk-essentials#gitlab-integrate-using-snyk-apprisk) page.
+* If relevant, you can also include the Backstage catalog. See the [Backstage file for SCM integrations](https://docs.snyk.io/developer-tools/integrations/scm-integrations/application-context-for-scm-integrations#backstage-file-for-scm-integrations) page for more details.
 
 {% hint style="info" %}
 After the integration is configured, the Group-level integration shifts to a **Partially connected** status. During the next synchronization, it will transition to the connected state, and the Inventory view will be filled with data from the GitHub source.
@@ -49,7 +49,7 @@ Configure the Organization-level integration by following these steps:
 * Navigate to the Organization-level
 * Open **Integrations**
 * Search and select the GitLab integration
-* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [GitLab integration settings](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/gitlab) page.
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [GitLab integration settings](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/gitlab) page.
 
 <figure><img src="../../../../.gitbook/assets/configure-organization-level-integration.png" alt=""><figcaption></figcaption></figure>
 

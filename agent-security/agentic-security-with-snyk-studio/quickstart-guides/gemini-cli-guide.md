@@ -160,7 +160,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
 
 Run `/mcp list` to confirm the Snyk MCP Server is connected.
 
@@ -176,7 +176,7 @@ You will not be prompted to authenticate if you already authenticated with the S
 
 #### Set Gemini CLI Rules for alternate installations
 
-To practice [Secure at inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting directives that align the LLM for secure code generation and workflows.
+To practice [Secure at inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting directives that align the LLM for secure code generation and workflows.
 
 Append one of the following contents to the context file at `~/.gemini/GEMINI.md`
 

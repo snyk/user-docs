@@ -11,7 +11,7 @@ Snyk supports COBOL only in Snyk Code.
 
 ## COBOL for Snyk Code
 
-For an overview of the supported security rules, visit [COBOL rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules).
+For an overview of the supported security rules, visit [COBOL rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules).
 
 ### Supported frameworks and libraries
 

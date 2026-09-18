@@ -7,7 +7,7 @@ nav_context: agnostic
 
 ## Default roles
 
-A key consideration when setting up Snyk is determining which [default user roles](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles) align with your needs.
+A key consideration when setting up Snyk is determining which [default user roles](https://docs.snyk.io/platform-administration/user-management/pre-defined-roles) align with your needs.
 
 The Team plan has the following fixed roles in Snyk, each with a fixed set of permissions. These permissions cannot be changed on the Team plan.
 
