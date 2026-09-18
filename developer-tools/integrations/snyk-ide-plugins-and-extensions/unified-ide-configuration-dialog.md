@@ -11,7 +11,7 @@ nav_context: classic
 
 You can use only one IDE configuration dialog to configure all your IDEs.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-07-08 at 10.43.36.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-07-08 at 10.43.36.png" alt="The unified IDE configuration dialog"><figcaption></figcaption></figure>
 
 ## Tabs
 

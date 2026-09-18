@@ -84,7 +84,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following example shows a Snyk MCP Server that was successfully configured and started:
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39).png" alt="Snyk MCP server configured and started in Kiro"><figcaption></figcaption></figure>
 
 ## Authenticate and trust the Project directory
 
@@ -92,7 +92,7 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (40).png" alt="Authenticating and trusting the Project directory in Kiro"><figcaption></figcaption></figure>
 
 If you need to authenticate and trust the current directory, then proceed and complete the process.
 

@@ -35,7 +35,7 @@ When the form is completed, click **Add integration**. After this step is done, 
 
 If this is the first time you have set up an Amazon EventBridge integration for your Organization, you will be prompted to complete the Snyk App authorization flow.
 
-<figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-auth.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-auth.png" alt="Snyk App authorization prompt for the Amazon EventBridge integration" width="375"><figcaption></figcaption></figure>
 
 After completing the authorization flow, you will be redirected to the settings page for the integration.
 

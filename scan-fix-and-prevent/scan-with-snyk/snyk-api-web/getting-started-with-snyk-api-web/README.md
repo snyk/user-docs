@@ -51,13 +51,13 @@ After creating your account, Snyk displays [best practices for deploying dynamic
 
 The **Scan Overview** page shows the progress of your scan.
 
-<figure><img src="../../../.gitbook/assets/scan_started.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/scan_started.png" alt="Scan Overview page showing scan progress"><figcaption></figcaption></figure>
 
 While the scan runs, you can download the preliminary crawling report to review coverage so far. Then, after the scan completes, download the full crawling report.
 
 Amongst other information, the **crawling report** shows, for each URL discovered, the **HTTP request method** and **response codes**, whether the request was **authenticated** or not, whether the endpoint was sent to the scanner for **further tests** or simply **crawled**, and why.
 
-<figure><img src="../../../.gitbook/assets/crawling (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/crawling (2).png" alt="Crawling report listing each discovered URL and its HTTP request method"><figcaption></figcaption></figure>
 
 Use this information to verify that the scanner reached all intended parts of your application and identify any access issues.
 

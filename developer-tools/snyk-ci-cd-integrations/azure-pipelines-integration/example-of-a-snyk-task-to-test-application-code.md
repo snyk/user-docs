@@ -15,4 +15,4 @@ The configuration panel appears as follows:
 
 The following shows the same configuration once you have added it to your pipeline.
 
-<figure><img src="../../.gitbook/assets/example-snyk-task-test-application-code.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/example-snyk-task-test-application-code.png" alt="Snyk task to test application code, as added to the pipeline"><figcaption></figcaption></figure>

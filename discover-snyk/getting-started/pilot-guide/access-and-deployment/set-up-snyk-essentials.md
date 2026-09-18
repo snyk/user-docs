@@ -18,4 +18,4 @@ nav_context: classic
 
 Verify that Snyk Essentials is configured by navigating to the Group level > Integrations. If not set up yet, follow the in-product instructions for your SCM(s).
 
-<figure><img src="../../../.gitbook/assets/configuration-steps.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/configuration-steps.png" alt="Snyk Essentials configuration under Group-level Integrations"><figcaption></figcaption></figure>

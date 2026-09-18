@@ -41,11 +41,11 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (341).png" alt="Amazon Q prompting to authenticate and trust the Project directory"><figcaption></figcaption></figure>
 
 If you need to authenticate and trust the current directory, then proceed and complete the process.
 
-<figure><img src="../../.gitbook/assets/image (342).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (342).png" alt="Completing the authenticate and trust prompt"><figcaption></figcaption></figure>
 
 ## Examples
 
@@ -61,11 +61,11 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Amazon Q indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt="Amazon Q calling the Snyk MCP server for a vulnerability scan"><figcaption></figcaption></figure>
 
 Amazon Q is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="Amazon Q reporting combined code and dependency scan results"><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules
 
@@ -73,7 +73,7 @@ To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl
 
 The following is a suggested instruction for creating project rules for use with [Amazon Q Developer chat](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-project-rules.html). Append the following contents to the rules file at `.amazonq/rules/amazonq-rules.md`:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="Secure at inception rules added to the Amazon Q project rules"><figcaption></figcaption></figure>
 
 {% code title=".amazonq/rules/amazonq-rules.md" overflow="wrap" %}
 ```

@@ -164,7 +164,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 Run `/mcp list` to confirm the Snyk MCP Server is connected.
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt="Output of /mcp list confirming the Snyk MCP server is connected"><figcaption></figcaption></figure>
 
 </details>
 

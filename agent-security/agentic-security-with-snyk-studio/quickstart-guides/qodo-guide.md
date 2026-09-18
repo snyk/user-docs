@@ -54,7 +54,7 @@ For the full path option, if the `snyk` command is not available, add it by foll
 
 The following example shows a Snyk MCP Server that was successfully configured.
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41).png" alt="Snyk MCP server configured in Qodo"><figcaption></figcaption></figure>
 
 For additional MCP configuration options on VS Code and troubleshooting, consult the official [VS Code MCP server documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
@@ -64,11 +64,11 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt="Snyk MCP server running a workflow in Qodo"><figcaption></figcaption></figure>
 
 If you need to authenticate and trust the current directory, then proceed and complete the process.
 
-<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt="Completing the authenticate and trust prompt"><figcaption></figcaption></figure>
 
 ## Examples
 

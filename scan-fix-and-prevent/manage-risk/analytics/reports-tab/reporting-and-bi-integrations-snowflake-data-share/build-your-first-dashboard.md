@@ -412,9 +412,9 @@ ORDER BY week_starting ASC
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/output-format-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-3.png" alt="Query output format"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/output-format-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-2.png" alt="Query output format"><figcaption></figcaption></figure>
 
 ## Repository PR check adoption
 
@@ -606,4 +606,4 @@ ORDER BY repository_name
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/output-format.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format.png" alt="Query output format"><figcaption></figcaption></figure>

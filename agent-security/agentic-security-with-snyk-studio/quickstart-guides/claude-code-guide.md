@@ -31,11 +31,11 @@ This command:
 * Sets up Snyk Studio in Claude Code.
 * Configures Snyk Studio's Secure at inception directives in Claude Code's global rules file.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-01-09 at 3.23.45 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-01-09 at 3.23.45 PM.png" alt="Snyk MCP server installed in Claude Code with npx"><figcaption></figcaption></figure>
 
 To verify installation, use the `/mcp` command within Claude:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-01-09 at 3.26.38 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-01-09 at 3.26.38 PM.png" alt="Output of the /mcp command confirming the Snyk MCP server"><figcaption></figcaption></figure>
 
 Select **View Tools** to look at all of the commands and tooling Snyk uses as part of its execution. The descriptions also include instructions specific for the LLM. These are capitalized to help you differentiate. These tools include:
 
@@ -160,9 +160,9 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following examples shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../.gitbook/assets/image (372).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (372).png" alt="Snyk MCP server configured and started in Claude Code" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt="Snyk MCP server configured and started in Claude Code" width="563"><figcaption></figcaption></figure>
 
 For additional MCP configuration options on Claude Code and troubleshooting, visit the official [Claude Code MCP documentation](https://docs.anthropic.com/en/docs/claude-code/mcp).
 
@@ -172,7 +172,7 @@ For additional MCP configuration options on Claude Code and troubleshooting, vis
 
 As a one-time setup, you need to authenticate and trust the current Project directory.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt="Authenticating and trusting the Project directory in Claude Code"><figcaption></figcaption></figure>
 
 ## Uninstall Snyk Studio
 
@@ -188,7 +188,7 @@ To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl
 
 The following is a suggested instruction for creating project rules for use with [Claude Code md files](https://www.anthropic.com/engineering/claude-code-best-practices). Append the following contents to the rules file at `CLAUDE.md`:
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt="Secure at inception directives added to a Claude Code md file"><figcaption></figcaption></figure>
 
 {% code title="CLAUDE.md" overflow="wrap" %}
 ```

@@ -20,9 +20,9 @@ Each issue contains a severity icon that has the following meaning:
 
 | Critical severity                                                   | May allow attackers access to sensitive data and to run code on your application.                                                            |
 | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](../../../.gitbook/assets/severity-filter.png) High severity     | May allow attackers access to sensitive data on your application.                                                                            |
-| ![](../../../.gitbook/assets/severity-filter-3.png) Medium severity | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
-| ![](../../../.gitbook/assets/overview-results.png) Low severity     | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![High severity icon](../../../.gitbook/assets/severity-filter.png) High severity     | May allow attackers access to sensitive data on your application.                                                                            |
+| ![Medium severity icon](../../../.gitbook/assets/severity-filter-3.png) Medium severity | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
+| ![Low severity icon](../../../.gitbook/assets/overview-results.png) Low severity     | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 ## Scan configuration
 

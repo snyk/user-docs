@@ -15,4 +15,4 @@ When populated with the most common settings, the configuration panel in Azure l
 
 The following shows the same configuration once you have added it to your pipeline.
 
-![](../../.gitbook/assets/example-snyk-task-container-pipeline.png)
+![Snyk task for a container image pipeline, as added to the pipeline](../../.gitbook/assets/example-snyk-task-container-pipeline.png)

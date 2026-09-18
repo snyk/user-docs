@@ -37,4 +37,4 @@ Navigate to the page for the Learning Path that you completed and click the **Do
 
 #### Lesson completion example
 
-<figure><img src="../../.gitbook/assets/lesson-completion-example.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/lesson-completion-example.png" alt="Download certificate button on a completed Learning Path"><figcaption></figcaption></figure>

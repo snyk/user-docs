@@ -54,7 +54,7 @@ To authenticate using the Personal Access token, follow these steps:
 1. Navigate to **Settings** > **Tools** > **Snyk**.
 2.  Set the **Authentication Method** to **Use Personal Access Token**.
 
-    <figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-plugin-jetbrains-ides.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-plugin-jetbrains-ides.png" alt="Authentication methods available in the JetBrains plugin settings"><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4. Create your **Personal Access Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
 5. Add the token in the **Token** field.
@@ -69,11 +69,11 @@ To authenticate, follow these steps:
 1. In the JetBrains plugin, navigate to **Settings** > **Tools** > **Snyk**.
 2.  Set the **Authentication Method** to **API token**.
 
-    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token-3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token-3.png" alt="Selecting the API token authentication method"><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token.png" alt="API token field populated after authentication"><figcaption></figcaption></figure>
 5. The API token is automatically updated in the **API Token field**.
 6. Click **Apply** or **OK**.
 
