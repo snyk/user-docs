@@ -18,7 +18,7 @@ Access [Snyk Studio](../../), including Snyk's MCP server, in Windsurf to secure
 
 ### Enable "Secure At Inception"
 
-Once installation completes, a modal will appear prompting you to opt-in to Snyk Studio's "[Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive)." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's **Settings** page.
+Once installation completes, a modal will appear prompting you to opt-in to Snyk Studio's "[Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive)." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's **Settings** page.
 
 <figure><img src="../../.gitbook/assets/image (31).png" alt="Modal prompting to opt in to Secure at Inception"><figcaption></figcaption></figure>
 
@@ -46,10 +46,10 @@ As part of the authentication flow, you'll be asked to either sign up or sign in
 _For new users_, select the preferred sign up method and agree to the terms on the next screen. Once you've successfully authenticated, you'll be instructed to return to your IDE.
 
 {% hint style="info" %}
-In order to use Snyk Studio, specifically Snyk's SAST scanning capabilities, you'll need to enable [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to our [data retention policy](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code. [More details on plans](https://snyk.io/plans/)
+In order to use Snyk Studio, specifically Snyk's SAST scanning capabilities, you'll need to enable [Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to our [data retention policy](https://docs.snyk.io/snyk-data-and-governance/how-snyk-handles-your-data). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code. [More details on plans](https://snyk.io/plans/)
 {% endhint %}
 
-For existing user&#x73;_,_ select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM will prompt you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
+For existing user&#x73;_,_ select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM will prompt you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
 
 ### Run Snyk Studio
 
@@ -62,7 +62,7 @@ Once authenticated, Snyk Studio should be triggered whenever new code is generat
 ## Prerequisites
 
 * [Install Windsurf](windsurf-guide.md#install-windsurf)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](windsurf-guide.md#install-the-snyk-mcp-server-in-windsurf)
 
 ### Install Windsurf
@@ -101,7 +101,7 @@ Windsurf is then able to gather all the security scanning results, both code (SA
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [Windsurf rules](https://docs.windsurf.com/windsurf/cascade/memories#rules). Append the following contents to the rules file at `global_rules.md`:
 
@@ -164,4 +164,4 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.

@@ -42,14 +42,14 @@ As a one-time setup, authenticate and trust the Project directory. If required, 
 If you are a new user, select the preferred sign-up method and agree to the terms on the next screen. After authentication, return to your Terminal/IDE.
 
 {% hint style="info" %}
-To use Snyk Studio, specifically the SAST scanning capabilities, you must enable [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code).
+To use Snyk Studio, specifically the SAST scanning capabilities, you must enable [Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code).
 
-Snyk Code analyzes your code for vulnerabilities, temporarily clones the repository, and uploads your code. Cloned or uploaded code is cached according to the Snyk [data retention policy](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
+Snyk Code analyzes your code for vulnerabilities, temporarily clones the repository, and uploads your code. Cloned or uploaded code is cached according to the Snyk [data retention policy](https://docs.snyk.io/snyk-data-and-governance/how-snyk-handles-your-data).
 
 With the Snyk Free Plan, Snyk Code offers unlimited scans for Open Source Projects, and limited tests for first-party code. To learn more about our available plans, visit [Plans and Pricing](https://snyk.io/plans/).
 {% endhint %}
 
-For existing user&#x73;_,_ select the login method associated with your account. If you do not already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also enable it directly in the Snyk settings. To learn more, visit [Enable Snyk Code](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
+For existing user&#x73;_,_ select the login method associated with your account. If you do not already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also enable it directly in the Snyk settings. To learn more, visit [Enable Snyk Code](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
 
 ### Run Snyk Studio
 
@@ -87,7 +87,7 @@ Factory is then able to gather all the security scanning results, both code (SAS
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [Factory AGENTS.md](https://docs.factory.ai/cli/configuration/agents-md). Append the following contents to the rules file at `AGENTS.md`:
 

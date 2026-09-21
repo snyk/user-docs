@@ -5,7 +5,7 @@ nav_context: agnostic
 
 # Troubleshoot fixing vulnerabilities with Snyk Open Source
 
-When you find a vulnerability, you have the opportunity to report that vulnerability to Snyk. For details, see [Disclosure of a vulnerability in an open-source package](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/disclosure-of-a-vulnerability-in-an-open-source-package).
+When you find a vulnerability, you have the opportunity to report that vulnerability to Snyk. For details, see [Disclosure of a vulnerability in an open-source package](https://docs.snyk.io/snyk-data-and-governance/disclosure-of-a-vulnerability-in-an-open-source-package).
 
 ## Unable to open a pull request or merge request for issues found by Snyk
 
@@ -19,13 +19,13 @@ Snyk can generate Fix Pull Requests (Fix PRs) or Merge Requests (MRs) for depend
 
 Snyk supports creating Fix PRs or MRs for the following languages:
 
-* [Maven](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle#maven)
-* [.NET (NuGet)](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/.net)
-* [npm](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-npm)
-* [pnpm](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-pnpm)
-* [Python](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python)
-* [Ruby](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/ruby)
-* [Yarn](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-yarn)
+* [Maven](https://docs.snyk.io/supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle#maven)
+* [.NET (NuGet)](https://docs.snyk.io/supported-languages/supported-languages-list/.net)
+* [npm](https://docs.snyk.io/supported-languages/supported-languages-list/javascript#support-for-npm)
+* [pnpm](https://docs.snyk.io/supported-languages/supported-languages-list/javascript#support-for-pnpm)
+* [Python](https://docs.snyk.io/supported-languages/supported-languages-list/python)
+* [Ruby](https://docs.snyk.io/supported-languages/supported-languages-list/ruby)
+* [Yarn](https://docs.snyk.io/supported-languages/supported-languages-list/javascript#support-for-yarn)
 
 ## Languages supported for Upgrade Pull Requests or Merge Requests
 
@@ -33,7 +33,7 @@ Snyk can generate Upgrade Pull Requests (Upgrade PRs) or Merge Requests (MRs) fo
 
 Snyk supports generating Upgrade PRs or MRs for the following languages:
 
-* [npm](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-npm)
-* [pnpm](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#scanning-pnpm-workspaces)
-* [Yarn](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-yarn)
-* [Maven](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle#maven)
+* [npm](https://docs.snyk.io/supported-languages/supported-languages-list/javascript#support-for-npm)
+* [pnpm](https://docs.snyk.io/supported-languages/supported-languages-list/javascript#scanning-pnpm-workspaces)
+* [Yarn](https://docs.snyk.io/supported-languages/supported-languages-list/javascript#support-for-yarn)
+* [Maven](https://docs.snyk.io/supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle#maven)

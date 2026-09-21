@@ -49,9 +49,9 @@ To analyze multiple manifest files, see [Scan multiple manifest files](use-optio
 
 The way Snyk analyzes the file and builds the tree varies depending on the following:
 
-* The [language and package manager](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks) you use, as determined by the manifest file type
+* The [language and package manager](https://docs.snyk.io/supported-languages/supported-languages-package-managers-and-frameworks) you use, as determined by the manifest file type
 * The method of scanning, using the [Snyk CLI](../../overview.md), or importing a Project using a [Git repository integration](../../../scm-integrations/organization-level-integrations/)
 
 See [Use options to customize the snyk test command](use-options-to-customize-the-snyk-test-command.md) for tips on running `snyk test` with commonly used options.
 
-See [Supported languages, package managers, and frameworks](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks) for more information about supported languages.
+See [Supported languages, package managers, and frameworks](https://docs.snyk.io/supported-languages/supported-languages-package-managers-and-frameworks) for more information about supported languages.

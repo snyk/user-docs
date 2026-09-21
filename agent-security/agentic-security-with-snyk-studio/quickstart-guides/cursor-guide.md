@@ -47,9 +47,9 @@ As part of the authentication flow, you'll be asked to either sign up or sign in
 
 For new users, select the preferred sign up method and agree to the terms on the next screen. Once you've successfully authenticated, you'll be instructed to return to your IDE.
 
-To use Snyk Studio, specifically Snyk's SAST scanning capabilities, you must [enable Snyk Code](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to Snyk's [data retention policy](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code.
+To use Snyk Studio, specifically Snyk's SAST scanning capabilities, you must [enable Snyk Code](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to Snyk's [data retention policy](https://docs.snyk.io/snyk-data-and-governance/how-snyk-handles-your-data). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code.
 
-For existing users, select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
+For existing users, select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
 
 If you are enabling Snyk Code for the first time, you must import or re-import existing projects in order to properly scan them.
 
@@ -132,7 +132,7 @@ Cursor is then able to gather all the security scanning results, both code (SAST
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [Cursor rules](https://docs.cursor.com/en/context/rules). Append the following contents to the rules file at `.cursor/rules`:
 

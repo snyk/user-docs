@@ -5,7 +5,7 @@ nav_context: agnostic
 
 # Consistent Ignores for Snyk Code API
 
-You can manage ignores individually through the [Snyk Policies API (REST)](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/policies).
+You can manage ignores individually through the [Snyk Policies API (REST)](https://docs.snyk.io/developer-tools/snyk-api/reference/policies).
 
 The SARIF output from Snyk CLI contains the `snyk/asset/finding/v1` identifier used to manage ignores at the start of the Early Access program.
 

@@ -17,7 +17,7 @@ At the Group level, you can set up and customize your Snyk Essentials integratio
 * [BitBucket](bitbucket-for-snyk-essentials.md)
 
 {% hint style="info" %}
-If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - Snyk Essentials](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/using-snyk-essentials-with-snyk-broker).
+If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - Snyk Essentials](https://docs.snyk.io/platform-administration/snyk-broker/using-snyk-essentials-with-snyk-broker).
 {% endhint %}
 
 The Integrations page at the Group-level shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
@@ -46,14 +46,14 @@ See the [Integration syncing time](../../integrations/integrate-with-snyk.md#int
 
 ### Prerequisites
 
-To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles#group-level-permissions).
+To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](https://docs.snyk.io/platform-administration/user-management/pre-defined-roles#group-level-permissions).
 
 ### Wildcard SCM integration
 
 The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.
 
 {% hint style="info" %}
-The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/using-snyk-essentials-with-snyk-broker).
+The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](https://docs.snyk.io/platform-administration/snyk-broker/using-snyk-essentials-with-snyk-broker).
 {% endhint %}
 
 You can use the wildcards while setting up your integration using the **Integrations** page:

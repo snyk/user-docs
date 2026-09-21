@@ -80,7 +80,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
 
 The following example shows a Snyk MCP Server that was successfully configured and started:
 
@@ -112,7 +112,7 @@ Kiro is then able to gather all the security scanning results, both code (SAST) 
 
 ### Secure at inception directive
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows. If you installed Snyk Studio via the Kiro power, this step was already done for you.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows. If you installed Snyk Studio via the Kiro power, this step was already done for you.
 
 The following is a suggested instruction for [Kiro Agent Steering](https://kiro.dev/docs/steering/). Append the following contents to an Agent Steering file:
 

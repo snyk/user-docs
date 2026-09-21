@@ -10,7 +10,7 @@ nav_context: classic
 {% hint style="info" %}
 **Release status**
 
-The CrowdStrike Falcon Next-Gen SIEM integration is in [Early Access](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features), and is available only with Snyk Enterprise plans. To learn more, visit [Plans and pricing](https://snyk.io/plans/).
+The CrowdStrike Falcon Next-Gen SIEM integration is in [Early Access](https://docs.snyk.io/snyk-release-process#early-access-features), and is available only with Snyk Enterprise plans. To learn more, visit [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Integrate Snyk vulnerability data into the [CrowdStrike Falcon® platform](https://www.crowdstrike.com/en-us/platform/next-gen-siem/) for unified security visibility across application and endpoint domains. For example, you can detect when a critical vulnerability is introduced in a deployed container image due to a newly discovered CVE in an open-source dependency.
@@ -25,7 +25,7 @@ The process for setting up this integration consists of:
 
 * A CrowdStrike subscription for Falcon Next-Gen SIEM or Falcon Next-Gen SIEM 10GB.
 * Connector Manager access to the Falcon console for the relevant CID.
-* A Snyk user account with [permissions](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management) to edit and view Group integrations.
+* A Snyk user account with [permissions](https://docs.snyk.io/platform-administration/user-management/user-role-management) to edit and view Group integrations.
 
 ## Configure the CrowdStrike Data Connector
 

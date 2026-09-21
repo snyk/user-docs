@@ -83,7 +83,7 @@ The Snyk Consultant will run a 60-minute training session for Customer’s Devel
 
 #### Repository import
 
-The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) through the UI import functionality, the [API Import tool](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import), or the Snyk CLI.
+The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) through the UI import functionality, the [API Import tool](https://docs.snyk.io/developer-tools/snyk-apps/tool-snyk-api-import), or the Snyk CLI.
 
 #### SCM integration settings
 
@@ -91,7 +91,7 @@ The Snyk Consultant will work with the Customer to configure SCM integration set
 
 #### SCM Broker installation
 
-The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment).
+The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](https://docs.snyk.io/platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment).
 
 #### Single pipeline configuration (direct Integration or CLI)
 
@@ -107,7 +107,7 @@ The Snyk Consultant will educate the Customer on understanding Snyk Open Source 
 
 ### Target initiatives - Snyk Open Source configuration
 
-<table><thead><tr><th width="300">Snyk Open Source configuration</th><th width="306">Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations">supported SCM integration</a> (GitHub, Azure Repos, Bitbucket, GitLab) or Snyk CLI</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Single pipeline configuration (direct integration OR CLI)</td><td>Configure a pipeline to run <code>snyk test</code> and <code>snyk monitor</code>.</td></tr><tr><td>SBOM Walkthrough (CLI and API)</td><td>Gain an understanding of generating an SBOM through Snyk using the CLI and API.</td></tr><tr><td>Interpreting and actioning Open Source results</td><td>Gain an understanding of how to view Open Source results in Snyk Reporting along with managing issues.</td></tr></tbody></table>
+<table><thead><tr><th width="300">Snyk Open Source configuration</th><th width="306">Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations">supported SCM integration</a> (GitHub, Azure Repos, Bitbucket, GitLab) or Snyk CLI</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Single pipeline configuration (direct integration OR CLI)</td><td>Configure a pipeline to run <code>snyk test</code> and <code>snyk monitor</code>.</td></tr><tr><td>SBOM Walkthrough (CLI and API)</td><td>Gain an understanding of generating an SBOM through Snyk using the CLI and API.</td></tr><tr><td>Interpreting and actioning Open Source results</td><td>Gain an understanding of how to view Open Source results in Snyk Reporting along with managing issues.</td></tr></tbody></table>
 
 ## Snyk Code configuration
 
@@ -115,7 +115,7 @@ The Snyk Consultant will educate the Customer on understanding Snyk Open Source 
 
 #### Repository import
 
-The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) either through the UI import functionality or through the [API Import tool](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import).
+The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) either through the UI import functionality or through the [API Import tool](https://docs.snyk.io/developer-tools/snyk-apps/tool-snyk-api-import).
 
 #### SCM integration settings
 
@@ -123,7 +123,7 @@ The Snyk Consultant will work with the Customer to configure SCM integration set
 
 #### SCM Broker installation
 
-The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment).
+The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](https://docs.snyk.io/platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment).
 
 #### Interpreting and actioning Code results
 
@@ -131,7 +131,7 @@ The Snyk Consultant will educate the Customer on understanding Snyk Code results
 
 ### Target initiatives - Snyk Code configuration
 
-<table><thead><tr><th width="250">Snyk Code Configuration</th><th>Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations">supported SCM Integration</a> (GitHub, Azure Repos, Bitbucket, GitLab).</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Interpreting and actioning Code results</td><td>Gain an understanding of how to view Code results in Snyk Reporting along with managing issues.</td></tr></tbody></table>
+<table><thead><tr><th width="250">Snyk Code Configuration</th><th>Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations">supported SCM Integration</a> (GitHub, Azure Repos, Bitbucket, GitLab).</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Interpreting and actioning Code results</td><td>Gain an understanding of how to view Code results in Snyk Reporting along with managing issues.</td></tr></tbody></table>
 
 ## Snyk Container configuration
 
@@ -159,7 +159,7 @@ The Snyk Consultant will educate the Customer on how to use the Snyk Custom Base
 
 ### Target initiatives - Snyk Container configuration
 
-<table><thead><tr><th width="269">Snyk Container Configuration</th><th>Outcome</th></tr></thead><tbody><tr><td>Single Broker Container Registry installation and configuration</td><td>Install Broker and CR Agent in a pre-determined customer environment based on [Snyk Broker system requirements](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment).</td></tr><tr><td>Container Registry import (up to 50 targets)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://snyk.io/integrations/?type=container-registries">Supported Container Registry</a>.</td></tr><tr><td>Interpreting and actioning Container results</td><td>Gain an understanding of how to view Container results in Snyk Reporting along with managing issues.</td></tr><tr><td>Single CI/CD CLI integration</td><td>Configure a single pipeline to <code>test</code> and <code>monitor</code> for Snyk Container.</td></tr><tr><td>Custom Base Images walkthrough</td><td>Gain an understanding of how to use the Custom Base Image Recommendations functionality.</td></tr></tbody></table>
+<table><thead><tr><th width="269">Snyk Container Configuration</th><th>Outcome</th></tr></thead><tbody><tr><td>Single Broker Container Registry installation and configuration</td><td>Install Broker and CR Agent in a pre-determined customer environment based on [Snyk Broker system requirements](https://docs.snyk.io/platform-administration/implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment).</td></tr><tr><td>Container Registry import (up to 50 targets)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://snyk.io/integrations/?type=container-registries">Supported Container Registry</a>.</td></tr><tr><td>Interpreting and actioning Container results</td><td>Gain an understanding of how to view Container results in Snyk Reporting along with managing issues.</td></tr><tr><td>Single CI/CD CLI integration</td><td>Configure a single pipeline to <code>test</code> and <code>monitor</code> for Snyk Container.</td></tr><tr><td>Custom Base Images walkthrough</td><td>Gain an understanding of how to use the Custom Base Image Recommendations functionality.</td></tr></tbody></table>
 
 ## Snyk IaC Configuration
 
@@ -167,7 +167,7 @@ The Snyk Consultant will educate the Customer on how to use the Snyk Custom Base
 
 #### Repository import
 
-The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) through the UI import functionality, the [API Import tool](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import), or the Snyk CLI.
+The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) through the UI import functionality, the [API Import tool](https://docs.snyk.io/developer-tools/snyk-apps/tool-snyk-api-import), or the Snyk CLI.
 
 #### IaC Settings
 
@@ -175,7 +175,7 @@ The Snyk Consultant will work with the Customer to configure IaC settings based 
 
 #### SCM Broker Installation
 
-The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment).
+The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](https://docs.snyk.io/platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment).
 
 #### Single Pipeline CI/CD CLI configuration
 
@@ -201,19 +201,19 @@ The Snyk Consultant will educate the Customer on understanding Snyk IaC results 
 
 #### Web Target configuration, including authenticated scans
 
-The Snyk Consultant will work with the Customer to configure [Web Targets](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-api-web/configure-targets/configure-web-targets) (up to three web applications) to be scanned by Snyk API & Web. This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
+The Snyk Consultant will work with the Customer to configure [Web Targets](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-web-targets) (up to three web applications) to be scanned by Snyk API & Web. This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
 
 #### API Target configuration
 
-The Snyk Consultant will work with the Customer to [configure API collections](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets) (maximum of one collection) to be scanned by Snyk API & Web, using a Postman Collection or OpenAPI definition.
+The Snyk Consultant will work with the Customer to [configure API collections](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets) (maximum of one collection) to be scanned by Snyk API & Web, using a Postman Collection or OpenAPI definition.
 
 #### Domain Ownership Verification
 
-The Snyk Consultant will work with the Customer to complete [Domain Ownership Verification](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-api-web/configure-targets/verify-domain-ownership) for one domain. This can be achieved by a .txt file, a TXT record, a CNAME record, or a meta tag.
+The Snyk Consultant will work with the Customer to complete [Domain Ownership Verification](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/verify-domain-ownership) for one domain. This can be achieved by a .txt file, a TXT record, a CNAME record, or a meta tag.
 
 #### Scanning Agent configuration
 
-The Snyk Consultant will work with the Customer to configure the [Scanning Agent](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-api-web/start-scanning/overview-scanning-agent) using Docker, Docker-Compose, or Kubernetes. This is required only if there are Targets to be scanned that are not internet-accessible, and there is a maximum of one agent to be configured.
+The Snyk Consultant will work with the Customer to configure the [Scanning Agent](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/start-scanning/overview-scanning-agent) using Docker, Docker-Compose, or Kubernetes. This is required only if there are Targets to be scanned that are not internet-accessible, and there is a maximum of one agent to be configured.
 
 #### Target scanning in CI/CD configuration
 
@@ -225,7 +225,7 @@ The Snyk Consultant will work with the Customer to configure a single issue tick
 
 #### Review of Target Scan Results
 
-The Snyk Consultant will educate the Customer on understanding [DAST scan results](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-api-web/review-and-fix) for Web and API Targets in the Snyk API & Web UI, including the different reporting functionality that is available in the tool.
+The Snyk Consultant will educate the Customer on understanding [DAST scan results](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/review-and-fix) for Web and API Targets in the Snyk API & Web UI, including the different reporting functionality that is available in the tool.
 
 ### Target initiatives - Snyk API & Web configuration
 

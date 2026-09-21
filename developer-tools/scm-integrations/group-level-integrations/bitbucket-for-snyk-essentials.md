@@ -27,7 +27,7 @@ After manually setting up the languages in your Bitbucket project, Snyk can auto
 
 ## Prerequisites <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
 
-To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles#group-level-permissions).
+To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](https://docs.snyk.io/platform-administration/user-management/pre-defined-roles#group-level-permissions).
 
 ## Integrate using Snyk Essentials <a href="#bitbucket-integrate-using-snyk-apprisk" id="bitbucket-integrate-using-snyk-apprisk"></a>
 
@@ -40,7 +40,7 @@ To configure a Group-level integration, you must be a Group Admin or have a cust
       For **Bitbucket Server**:
    3. **Username**: Your Bitbucket Server username.
    4. **App Password**: In your Bitbucket account, navigate to **Settings** > **Personal Bitbucket settings** > **App passwords** and create a password with these permissions: **Account: Read** and **Projects: Read**.
-4. **Broker Token** (mandatory for Bitbucket Server not reachable through the Internet): [Obtain your Broker token for Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker) and paste it here.
+4. **Broker Token** (mandatory for Bitbucket Server not reachable through the Internet): [Obtain your Broker token for Snyk Broker](https://docs.snyk.io/platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker) and paste it here.
 5. **Backstage Catalog** (optional): To sync your catalog, visit the [Backstage file for SCM Integrations](../application-context-for-scm-integrations/)&#x20;
 
 ## API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>

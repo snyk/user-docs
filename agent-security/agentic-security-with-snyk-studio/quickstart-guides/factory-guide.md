@@ -10,7 +10,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Factory to secure co
 ## Prerequisites
 
 * [Install Factory](factory-guide.md#install-factory)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](factory-guide.md#install-the-snyk-mcp-server-in-factory)
 
 ### Install Factory
@@ -41,7 +41,7 @@ Create or edit the MCP configuration file `~/Library/Application Support/Factory
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
 
 #### Install with Node.js and `npx`
 
@@ -101,7 +101,7 @@ Factory is then able to gather all the security scanning results, both code (SAS
 
 ### "Secure at inception" rules <a href="#secure-at-inception-rules" id="secure-at-inception-rules"></a>
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [creating memories with Factory](https://docs.factory.ai/user-guides/memory/understanding-memory#adding-new-facts):
 

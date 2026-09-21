@@ -14,7 +14,7 @@ Snyk notifies you automatically when new issues are found in the Projects you ar
 Snyk can send notifications in the following ways:
 
 * By email, if you have configured [email notifications in your account settings](https://app.snyk.io/account/notifications).
-* By Slack, if you have set up [Slack integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/slack-integration).
+* By Slack, if you have set up [Slack integration](https://docs.snyk.io/developer-tools/integrations/jira-and-slack-integrations/slack-integration).
 
 Snyk also sends you a weekly update summarizing the security status across all of your Organizations.
 
@@ -43,7 +43,7 @@ Snyk provides controls to manage your own notifications. Administrators can mana
 Weekly notification emails are sent only to Organization users, so Group Admins must add themselves as Organization members for the Organizations where they need to receive the emails.
 {% endhint %}
 
-You can also send notifications for an Organization to a designated Slack channel. For details, see [Slack integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/slack-integration).
+You can also send notifications for an Organization to a designated Slack channel. For details, see [Slack integration](https://docs.snyk.io/developer-tools/integrations/jira-and-slack-integrations/slack-integration).
 
 ### Notification precedence rules
 

@@ -24,7 +24,7 @@ The command to run the Snyk MCP server is `npx -y snyk@latest mcp -t stdio`. Add
 
 <figure><img src="../../.gitbook/assets/2025-11-05_11-22-43.png" alt="Snyk MCP server command added to the Devin configuration"><figcaption></figcaption></figure>
 
-Select **Add a new secret** and add your API token. To learn more, visit [How to obtain your personal token](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api#how-to-obtain-your-personal-access-token). You must use `SNYK_TOKEN` for the **Secret Name** and **Environment Variable** name.
+Select **Add a new secret** and add your API token. To learn more, visit [How to obtain your personal token](https://docs.snyk.io/developer-tools/snyk-api/authentication-for-api#how-to-obtain-your-personal-access-token). You must use `SNYK_TOKEN` for the **Secret Name** and **Environment Variable** name.
 
 {% hint style="warning" %}
 The `SNYK_TOKEN` **Secret** is stored securely and referenced with `$SNYK_TOKEN`. Do not put your full Snyk token in the **Environment Variables** section.
@@ -36,7 +36,7 @@ Finally, you can optionally add the `--disable-trust` argument to the command, a
 
 <figure><img src="../../.gitbook/assets/2025-11-05_11-24-48.png" alt="Optional disable-trust argument added to the MCP server command"><figcaption></figcaption></figure>
 
-The Snyk MCP Server includes a folder trust mechanism that helps safeguard users from executing Snyk on untrusted code. To learn more, visit [Visual Studio workspace trust](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-workspace-trust). Without this option, the Snyk MCP Server will open a browser window asking the user to trust the folder path that Snyk is attempting to scan. Devin will complete this process automatically using its built-in web browser, so you may want to add `--disable-trust` to skip this process.
+The Snyk MCP Server includes a folder trust mechanism that helps safeguard users from executing Snyk on untrusted code. To learn more, visit [Visual Studio workspace trust](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-workspace-trust). Without this option, the Snyk MCP Server will open a browser window asking the user to trust the folder path that Snyk is attempting to scan. Devin will complete this process automatically using its built-in web browser, so you may want to add `--disable-trust` to skip this process.
 
 ## Examples
 
@@ -60,7 +60,7 @@ Devin is then able to gather all the security scanning results, both code (SAST)
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows. The rules can be added to [Devin Knowledge](https://docs.devin.ai/product-guides/knowledge).
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows. The rules can be added to [Devin Knowledge](https://docs.devin.ai/product-guides/knowledge).
 
 The following is a suggested instruction for Devin Knowledge:
 

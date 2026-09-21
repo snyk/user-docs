@@ -23,4 +23,4 @@ To use the Snyk CLI and IDEs with the Local Engine, provide your Snyk account te
 
 ## Regional endpoints
 
-Broker deployments that route through the Local Engine need the Broker Server URL and the `deeproxy` verification endpoint for your Snyk region. Both are listed in [Broker with Snyk Code Local Engine (SCLE)](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-with-snyk-code-local-engine-scle).
+Broker deployments that route through the Local Engine need the Broker Server URL and the `deeproxy` verification endpoint for your Snyk region. Both are listed in [Broker with Snyk Code Local Engine (SCLE)](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#broker-with-snyk-code-local-engine-scle).

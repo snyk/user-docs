@@ -6,7 +6,7 @@ nav_context: agnostic
 # Objective-C rules
 
 {% hint style="info" %}
-Code analysis support for Objective-C is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
+Code analysis support for Objective-C is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-hierarchy/snyk-preview).
 {% endhint %}
 
 Each rule includes the following information.

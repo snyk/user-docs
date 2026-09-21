@@ -10,7 +10,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Goose CLI to secure 
 ## Prerequisites
 
 * [Install the Goose CLI](goose-cli-guide.md#install-goosecli)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP Server in Goose CLI using npx command](goose-cli-guide.md#install-the-snyk-mcp-server-in-goose-cli-using-npx-command) or [Install the Goose MCP Server in Goose CLI using Snyk CLI](goose-cli-guide.md#install-the-snyk-mcp-server-in-goose-cli-using-snyk-cli)
 
 ### Install GooseCLI
@@ -93,7 +93,7 @@ Goose CLI invokes Snyk scanning, providing output, and insights based on the res
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction to use with [Goose CLI recipes](https://block.github.io/goose/docs/guides/recipes/session-recipes) or with [Goose hints file](https://block.github.io/goose/docs/guides/using-goosehints). Add the following contents to the `.goosehints` file in the root directory of the Project:
 

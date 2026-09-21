@@ -10,7 +10,7 @@ Add Snyk Studio to Augment Code to secure code generated with agentic workflows 
 ## Prerequisites
 
 * [Install the code assistant extension](https://www.augmentcode.com/)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](augment-code-guide.md#install-the-snyk-mcp-server-in-augment-code)
 
 ### Install Augment Code
@@ -31,7 +31,7 @@ Install the Snyk MCP Server using the method that best suits your operating syst
 * Name: Snyk
 * Command: /absolute/path/to/snyk mcp -t stdio
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
 
 ## Setting up the Snyk MCP Server
 
@@ -59,7 +59,7 @@ Augment Code indicates that this request is related to security vulnerability sc
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for Augment Code user guidelines:
 

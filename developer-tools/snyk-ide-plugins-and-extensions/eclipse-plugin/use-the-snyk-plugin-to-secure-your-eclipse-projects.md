@@ -31,7 +31,7 @@ To hide low-severity issues, navigate to **View** > **Severity** and clear **Low
 
 ## Issue View Options
 
-[Code Consistent Ignores](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) filters issues to help teams focus on critical tasks. After you create an ignore, Snyk applies it to all tests and branches.
+[Code Consistent Ignores](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) filters issues to help teams focus on critical tasks. After you create an ignore, Snyk applies it to all tests and branches.
 
 {% hint style="info" %}
 These filters do not apply if you disable **Code Consistent Ignores** for the Organization.

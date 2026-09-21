@@ -17,7 +17,7 @@ Ensure that the Group-level SCM integration is configured. Navigate to the Group
 
 ## Review the Inventory
 
-The first page of the Inventory provides an overview of your most important repositories and identifies coverage gaps, showing which repos have been tested with Snyk and which have not. See the [Inventory menu](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets) page for more details.
+The first page of the Inventory provides an overview of your most important repositories and identifies coverage gaps, showing which repos have been tested with Snyk and which have not. See the [Inventory menu](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets) page for more details.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9jbqqPfkZH6PvNz2pBcNtNKgfphy1GayWURCQnmGxFvQG5cw4vcYcsOpPF78ztH8xjcJKkRWKty4lNlC63bN0S8qP-qcU_EOpvbnbBEaPIgadfRnnVilbYlvR8Uk7U6n6fWyhRw?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Inventory overview showing coverage gaps across repositories"><figcaption></figcaption></figure>
 
@@ -46,6 +46,6 @@ The asset class is a great way to filter on the most critical repositories in yo
 {% hint style="info" %}
 Additional Resources
 
-* [Manage assets](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets)
+* [Manage assets](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets)
 * [Product Training: Snyk Essentials](https://learn.snyk.io/catalog/?type=product-training\&topics=Snyk+Essentials)
 {% endhint %}

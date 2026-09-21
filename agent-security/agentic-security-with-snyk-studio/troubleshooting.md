@@ -39,7 +39,7 @@ Some MCP hosts, such as the client application integrating with the Snyk MCP ser
 Use these mitigation strategies to resolve the issue:
 
 * Start the Snyk MCP server in `sse` transport mode instead of `stdio`: `snyk mcp -t sse --experimental` and set the URL in your `mcpconfig.json` file.
-* Authenticate with Snyk by supplying your authentication token through the `SNYK_TOKEN=<TOKEN>` environment variable. To obtain your token, generate a **Snyk Personal Access Token** or retrieve your **Snyk API Token** directly from the Snyk web interface. For details on **Personal Access Token**, see [Authentication for API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api), for details on **Snyk API Token**, see [Obtain and use your Snyk API token](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
+* Authenticate with Snyk by supplying your authentication token through the `SNYK_TOKEN=<TOKEN>` environment variable. To obtain your token, generate a **Snyk Personal Access Token** or retrieve your **Snyk API Token** directly from the Snyk web interface. For details on **Personal Access Token**, see [Authentication for API](https://docs.snyk.io/developer-tools/snyk-api/authentication-for-api), for details on **Snyk API Token**, see [Obtain and use your Snyk API token](https://docs.snyk.io/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 
 ## Snyk Organization configuration
 

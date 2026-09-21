@@ -17,4 +17,4 @@ To use Snyk Container from the CLI, see the following pages:
 * [Understand Snyk Container CLI results](understand-snyk-container-cli-results.md)
 * [Advanced use of Snyk Container CLI](advanced-use-of-snyk-container-cli.md)
 
-For more information, see [Detect application vulnerabilities in container images](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images).
+For more information, see [Detect application vulnerabilities in container images](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images).

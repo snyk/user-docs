@@ -23,14 +23,14 @@ Key considerations regarding how the `.snyk` file is used are as follows:
 
 ## How to create the `.snyk` file
 
-You can create the `.snyk` file by using the `snyk ignore` command. For details, visit the [Ignore](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/ignore) command CLI help.
+You can create the `.snyk` file by using the `snyk ignore` command. For details, visit the [Ignore](https://docs.snyk.io/developer-tools/snyk-cli/commands/ignore) command CLI help.
 
 If you do not have an existing `.snyk` file, you can create one and populate it with the following code:\
 `# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
 `version: v1.25.0`
 
 * You must set the `version` to `v1.25.0` as this is the current policy schema version.
-* The ignore block or blocks must follow the relevant syntax as shown in the [description of the `ignore` command](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/ignore#usage-and-description) or the examples on this page.
+* The ignore block or blocks must follow the relevant syntax as shown in the [description of the `ignore` command](https://docs.snyk.io/developer-tools/snyk-cli/commands/ignore#usage-and-description) or the examples on this page.
 
 For more information, see [Syntax of the `.snyk` file](the-.snyk-file.md#syntax-of-the-.snyk-file).
 
@@ -97,11 +97,11 @@ Snyk Secrets supports the `exclude` option in both the Snyk CLI and SCM integrat
 
 In both cases, if the `.snyk` file is missing, empty, or cannot be parsed, the scan continues without the exclusions.
 
-For details, visit [Exclude files and directories from a scan](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli#exclude-files-and-directories-from-a-scan) for the Snyk CLI and [Exclude files and directories from SCM secrets scans](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/secrets-scanning-in-the-scm#exclude-files-and-directories-from-scm-secrets-scans) for SCM integrations.
+For details, visit [Exclude files and directories from a scan](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli#exclude-files-and-directories-from-a-scan) for the Snyk CLI and [Exclude files and directories from SCM secrets scans](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm#exclude-files-and-directories-from-scm-secrets-scans) for SCM integrations.
 
 ## Use the `.snyk` file with Snyk IaC
 
-For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file). For more information, see [Ignore unmanaged resources](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/ignore-unmanaged-resources.md).
+For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file). For more information, see [Ignore unmanaged resources](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/ignore-unmanaged-resources.md).
 
 ## Use the `.snyk` file with Snyk Open Source
 
@@ -124,11 +124,11 @@ When you include the `.snyk` file in your code repository and the `language-sett
 If the `.snyk` file was not present when you first imported the Project, you must re-import it.
 {% endhint %}
 
-For more information about Python version support, see [Python version support](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python#technical-specifications).
+For more information about Python version support, see [Python version support](https://docs.snyk.io/supported-languages/supported-languages-list/python#technical-specifications).
 
 For more information about using the `.snyk` file with Open Source Projects, see the following:
 
-[Ignore vulnerabilities using the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli)
+[Ignore vulnerabilities using the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli)
 
 [Error message: Ignoring via the CLI is not enabled for this organization. Please ignore issues via our website](https://support.snyk.io/s/article/Error-message-Ignoring-via-the-CLI-is-not-enabled-for-this-organization-Please-ignore-issues-via-our-website)
 
@@ -145,14 +145,14 @@ language-settings:
   python: "3.7"
 ```
 
-For more information, see [Setting Python version in Git Projects](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python/scm-integrations-and-python#set-the-python-version-in-git-projects).
+For more information, see [Setting Python version in Git Projects](https://docs.snyk.io/supported-languages/supported-languages-list/python/scm-integrations-and-python#set-the-python-version-in-git-projects).
 
 #### Set vulnerability ignore rules
 
 {% hint style="warning" %}
 The `expires` field is optional. If you need a permanent ignore, omit the field.
 
-To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:flag\_mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/ignore#expiry-less-than-expiry-greater-than).
+To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:flag\_mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](https://docs.snyk.io/developer-tools/snyk-cli/commands/ignore#expiry-less-than-expiry-greater-than).
 {% endhint %}
 
 Ignore a specific vulnerability for a given path:

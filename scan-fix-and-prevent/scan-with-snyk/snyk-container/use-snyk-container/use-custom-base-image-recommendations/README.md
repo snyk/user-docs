@@ -81,7 +81,7 @@ The following steps explain how to configure custom base images. The team that i
 4. If you want Snyk to use this image as a source to determine the best upgrade path, enable **Include in recommendations**.
 
 {% hint style="info" %}
-You can also do this using the API endpoint [Create a Custom Base Image from an existing container Project](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/custom-base-images#custom_base_images).
+You can also do this using the API endpoint [Create a Custom Base Image from an existing container Project](https://docs.snyk.io/developer-tools/snyk-api/reference/custom-base-images#custom_base_images).
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/enable_CBIR.png" alt="Custom Base Image toggle enabled"><figcaption><p>Enable Custom Base Image</p></figcaption></figure>

@@ -16,7 +16,7 @@ Snyk supports the following protocols for authentication:
 * Snyk API token (Legacy)
 
 {% hint style="warning" %}
-Before authenticating, ensure your region is properly set. For more details, see [IDEs URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).
+Before authenticating, ensure your region is properly set. For more details, see [IDEs URLs](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#ides-urls).
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-plugin-jetbrains-ides.png" alt="Authentication methods available in the Snyk plugin in Jetbrains IDEs"><figcaption><p>Authentication methods available in the Snyk plugin in Jetbrains IDEs</p></figcaption></figure>
@@ -80,7 +80,7 @@ To authenticate, follow these steps:
 The analysis starts automatically.
 
 {% hint style="info" %}
-Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
+Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://docs.snyk.io/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 {% endhint %}
 
 ## How to switch accounts

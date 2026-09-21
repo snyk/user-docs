@@ -46,10 +46,10 @@ Project views can be created by any user in an Organization, while Project colle
 * Delete
 * Edit
 
-For more information, see [Pre-defined roles](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles).
+For more information, see [Pre-defined roles](https://docs.snyk.io/platform-administration/user-management/pre-defined-roles).
 {% endhint %}
 
-In the Snyk Web UI and [API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/collection), you can:
+In the Snyk Web UI and [API](https://docs.snyk.io/developer-tools/snyk-api/reference/collection), you can:
 
 * Create collections using filters and selecting Projects individually
 * View all of the collections that have been created on a collections listing page

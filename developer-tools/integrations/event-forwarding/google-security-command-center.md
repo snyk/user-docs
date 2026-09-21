@@ -12,7 +12,7 @@ The Google Cloud Security Command Center (SCC) integration sends Snyk issues to 
 {% hint style="info" %}
 **Release status**
 
-The Google Cloud Security Command Center integration is in [Early Access](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features), and is available only with Snyk Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
+The Google Cloud Security Command Center integration is in [Early Access](https://docs.snyk.io/snyk-release-process#early-access-features), and is available only with Snyk Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Use the following instructions to set up the integration:
@@ -28,7 +28,7 @@ Service Accounts are not available at the Organization level in Google Cloud IAM
 
 ## Prerequisites
 
-* A Snyk user account with [permissions](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management) to edit and view Group integrations
+* A Snyk user account with [permissions](https://docs.snyk.io/platform-administration/user-management/user-role-management) to edit and view Group integrations
 * A Google Cloud organization with Security Command Center enabled. See the Google Cloud [Activate Security Command Center](https://cloud.google.com/security-command-center/docs/activate-scc-for-an-organization) page for more details on how to enable it.
 * You must [enable the SCC API](https://console.cloud.google.com/apis/library) in the same Project as the Service Account
 

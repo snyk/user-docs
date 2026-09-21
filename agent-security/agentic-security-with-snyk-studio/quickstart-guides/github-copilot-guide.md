@@ -36,7 +36,7 @@ Selecting an **Execution Frequency** triggers an authentication request. You can
 The authentication flow asks you to sign up or log in on the Snyk website, and a browser window opens. New users select a sign-up method and agree to the terms on the next screen. After you authenticate, Snyk instructs you to return to your IDE.
 
 {% hint style="info" %}
-To use Snyk Studio, specifically Snyk's SAST scanning capabilities, you'll need to enable [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code). To use Snyk Studio, specifically its SAST scanning, you must enable Snyk Code. Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository or uploads your code. Snyk caches cloned or uploaded code according to the [Snyk data retention policy](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data). On the Snyk Free plan, Snyk Code offers unlimited scans for open-source projects and limited tests for first-party code. To learn more, visit [Snyk plans](https://snyk.io/plans/).
+To use Snyk Studio, specifically Snyk's SAST scanning capabilities, you'll need to enable [Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code). To use Snyk Studio, specifically its SAST scanning, you must enable Snyk Code. Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository or uploads your code. Snyk caches cloned or uploaded code according to the [Snyk data retention policy](https://docs.snyk.io/snyk-data-and-governance/how-snyk-handles-your-data). On the Snyk Free plan, Snyk Code offers unlimited scans for open-source projects and limited tests for first-party code. To learn more, visit [Snyk plans](https://snyk.io/plans/).
 {% endhint %}
 
 Existing users select the login method associated with their account. If you do not have access to Snyk Code, you are prompted to enable it before your first scan. You can also enable it in **Settings**.
@@ -54,7 +54,7 @@ Free users have a limited number of scans. If you reach the limit, Snyk recommen
 ### Prerequisites
 
 * [Install the code assistant extension](github-copilot-guide.md#install-github-copilot)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](github-copilot-guide.md#install-the-snyk-mcp-server-in-github-copilot)
 
 ### Install GitHub Copilot
@@ -120,7 +120,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
@@ -164,7 +164,7 @@ Copilot then gathers all the security scan results, both code (SAST) and depende
 
 ### Secure at inception rules
 
-To practice [Secure at Inception](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [GitHub Copilot custom instructions](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions). Append the following contents to the rules file at `.github/copilot-instructions.md`:
 

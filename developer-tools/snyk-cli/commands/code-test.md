@@ -57,7 +57,7 @@ Example: `--project-tags=department=finance,team=alpha`
 
 To clear all project tags, set `--project-tags=`.
 
-For more information about valid characters, visit [Project tags](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-tags).
+For more information about valid characters, visit [Project tags](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/project-tags).
 
 ### `--target-name=<TARGET_NAME>`
 

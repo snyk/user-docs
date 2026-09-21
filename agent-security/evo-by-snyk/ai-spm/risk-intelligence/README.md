@@ -43,7 +43,7 @@ The Model Risk Score is not a percentage or a failure rate. A score of 300 does 
 {% endhint %}
 
 {% hint style="info" %}
-The Model Risk Score applies to AI models in Evo. It is a different measure from the Snyk platform Risk Score, which prioritizes Snyk Open Source and Snyk Container issues. The two share a 0 to 1,000 range but are not comparable. To learn about the platform score, visit [Risk Score](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/risk-score).
+The Model Risk Score applies to AI models in Evo. It is a different measure from the Snyk platform Risk Score, which prioritizes Snyk Open Source and Snyk Container issues. The two share a 0 to 1,000 range but are not comparable. To learn about the platform score, visit [Risk Score](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/risk-score).
 {% endhint %}
 
 ### Severity
