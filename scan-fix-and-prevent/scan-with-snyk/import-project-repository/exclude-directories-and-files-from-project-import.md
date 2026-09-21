@@ -9,7 +9,7 @@ nav_context: classic
 
 If you import a Project through an SCM integration, add the folders to exclude in the **Exclude folders** field of the import window.
 
-<figure><img src="https://lh7-us.googleusercontent.com/stHVnzk1ZuP6oUm0zAImt0zROcajuZMm5iB4qX7vTbHkjPWklSgD9NxUdZ6UGgT1kV-dBjrcLyOp0SP1CqFzbNuq9S7qgl4cOD6T9UwuWlEk5SWVHUiHRlO-KfAyq_UppnGNvE67p7ZsSwuWok0_2RM" alt=""><figcaption><p>Exclude folders</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/stHVnzk1ZuP6oUm0zAImt0zROcajuZMm5iB4qX7vTbHkjPWklSgD9NxUdZ6UGgT1kV-dBjrcLyOp0SP1CqFzbNuq9S7qgl4cOD6T9UwuWlEk5SWVHUiHRlO-KfAyq_UppnGNvE67p7ZsSwuWok0_2RM" alt="Exclude folders"><figcaption><p>Exclude folders</p></figcaption></figure>
 
 When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the `.snyk` file. The `.snyk` file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The `.snyk` file should be created in the repository you intend to import.
 
@@ -109,7 +109,7 @@ Your repository is imported to Snyk, without the directories and files you selec
 
 You have a repository called `snyk-goof`, which you want to test for vulnerabilities using Snyk Code. After you import his repository to Snyk, you get a list of ten detected vulnerability issues, which were found in three files.
 
-<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Before Exclude.png" alt=""><figcaption><p>Vulnerabilities detected found in three files</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Before Exclude.png" alt="Vulnerabilities detected found in three files"><figcaption><p>Vulnerabilities detected found in three files</p></figcaption></figure>
 
 Now you want to exclude the `app.js` and `db.js` files from the Snyk Code analysis. To achieve that, you do the following:
 

@@ -13,7 +13,7 @@ Snyk now configures all IDEs through the [new unified configuration dialog](../.
 
 Navigate to **Preferences** > **Tools** > **Snyk** to set the following configurations for the plugin:
 
-<figure><img src="../../.gitbook/assets/configuration-snyk-jetbrains-plugin-ide-proxy.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configuration-snyk-jetbrains-plugin-ide-proxy.png" alt="Snyk settings under Preferences, Tools, Snyk in a JetBrains IDE"><figcaption></figcaption></figure>
 
 ## General settings
 
@@ -34,7 +34,7 @@ Navigate to **Preferences** > **Tools** > **Snyk** to set the following configur
 * **Issue View Options**: Filter issues by their [Code Consistent Ignores](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) status. These filters do not apply if you disable **Code Consistent Ignores** for the Organization.
 * **All Issues vs Net New Issues**: Specify whether to see all issues or only net new issues. The latter requires an SCM integration, where it compares findings with those in the base branch.
 
-<figure><img src="../../.gitbook/assets/all-issues-vs-net-new-issues-specify-whether-see-all-issues.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/all-issues-vs-net-new-issues-specify-whether-see-all-issues.png" alt="General settings, including the all issues and net new issues options"><figcaption></figcaption></figure>
 
 ## Project settings
 
@@ -42,7 +42,7 @@ Navigate to **Preferences** > **Tools** > **Snyk** to set the following configur
 * **Auto-select Organization**: When enabled, Snyk automatically selects the most appropriate Organization for your Project based on context in your repository and your authentication. If an Organization is configured manually, this feature is overridden. If no appropriate Organization can be automatically identified, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used as a fallback.
 * **Preferred Organization**: Specify the Organization (ID or name) for Snyk to run scans against for this specific IDE Project. Retrieve the Organization ID from the Organization settings in the Snyk Web UI: `https://app.snyk.io/org/[ORG_NAME]/manage/settings` and copy the ID from the Organization ID section. If the Organization value is blank or invalid, the value from the global Organization field is used.
 
-<figure><img src="../../.gitbook/assets/project-settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-settings.png" alt="Project settings for the Snyk JetBrains plugin"><figcaption></figcaption></figure>
 
 ## Executable settings
 

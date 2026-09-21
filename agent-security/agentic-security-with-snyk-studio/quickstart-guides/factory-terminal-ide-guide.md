@@ -29,7 +29,7 @@ Add the Snyk entry to `~/.factory/mcp.json`. To learn more, visit the official [
 }  
 ```
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (22).png" alt="Snyk entry added to the Factory MCP configuration file"><figcaption></figcaption></figure></div>
 
 ### Authenticate
 
@@ -77,11 +77,11 @@ Scan this directory for code security & dependency vulnerabilities and security 
 ```
 {% endcode %}
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>Droid prompt to scan code for SAS and SCA issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt="Droid prompt to scan code for SAS and SCA issues"><figcaption><p>Droid prompt to scan code for SAS and SCA issues</p></figcaption></figure>
 
 Factory indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Factory call to Snyk MCP Server</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt="Factory call to Snyk MCP Server"><figcaption><p>Factory call to Snyk MCP Server</p></figcaption></figure>
 
 Factory is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found.
 

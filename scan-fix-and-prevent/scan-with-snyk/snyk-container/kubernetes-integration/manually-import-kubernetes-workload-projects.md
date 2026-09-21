@@ -30,7 +30,7 @@ In the Snyk Web UI, navigate to the **Projects** page, and click **Add projects*
 
 On the import screen that appears, all namespaces from the Kubernetes environment are displayed on the left, and the relevant namespace workloads are displayed on the right.
 
-<figure><img src="../../../.gitbook/assets/uuid-3a8568e0-b5a4-34af-d612-83466b206882-en.png" alt=""><figcaption><p>Kubernetes workloads import screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uuid-3a8568e0-b5a4-34af-d612-83466b206882-en.png" alt="Kubernetes workloads import screen"><figcaption><p>Kubernetes workloads import screen</p></figcaption></figure>
 
 Snyk purposely ignores scanning certain namespaces that Snyk believes are internal to Kubernetes (any namespace starting with kube-\*). Therefore, those namespaces do not appear in the list, and neither do the workloads that those namespaces contain. You can see the full list of ignored namespaces in the [kubernetes-monitor internal-workspaces file](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts).
 

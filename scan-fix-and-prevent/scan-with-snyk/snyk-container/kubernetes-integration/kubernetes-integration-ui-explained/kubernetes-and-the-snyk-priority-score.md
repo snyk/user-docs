@@ -23,7 +23,7 @@ The Kubernetes integration collects information about how workloads are configur
 
 To see the factors taken into consideration for the Priority Score of each vulnerability, hover over the score.
 
-![](../../../../.gitbook/assets/hover_priority_score.png)
+![Priority Score breakdown shown on hover](../../../../.gitbook/assets/hover_priority_score.png)
 
 The rationale is based on the fact that a vulnerability that is present in a poorly configured workload scores higher than the same vulnerability found in a well-configured workload.
 

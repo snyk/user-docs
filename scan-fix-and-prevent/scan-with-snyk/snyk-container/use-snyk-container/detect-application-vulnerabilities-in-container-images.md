@@ -79,7 +79,7 @@ Depending on your Project settings, Snyk scans the image regularly. Based on you
 
 You can set the scan frequency for each Project. The default is daily testing. To update the scan frequency, navigate to the **Settings** tab on the Project page and select the frequency from the dropdown. The options are **never**, **daily**, or **weekly**.
 
-<figure><img src="../../../.gitbook/assets/scan_frequency.png" alt=""><figcaption><p>Update scan frequency</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/scan_frequency.png" alt="Update scan frequency"><figcaption><p>Update scan frequency</p></figcaption></figure>
 
 ## Supported container registries
 

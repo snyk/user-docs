@@ -210,7 +210,7 @@ For a full list of supported options, see the CLI help docs for `test`, `monitor
 
 When the `--reachability=true` option is used, Reachability results are returned in human readable format by default, with **Reachability** as a property of each finding.
 
-<figure><img src="../../.gitbook/assets/human-readable-output.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/human-readable-output.png" alt="Human-readable Reachability output from the Snyk CLI"><figcaption></figcaption></figure>
 
 If the `--reachability=true` option is not used, the **Reachability** property does not appear in the command outpu&#x74;**.**
 

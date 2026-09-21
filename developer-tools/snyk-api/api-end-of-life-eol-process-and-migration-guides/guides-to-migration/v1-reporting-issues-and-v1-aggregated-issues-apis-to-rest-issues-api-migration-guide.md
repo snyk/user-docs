@@ -3,8 +3,9 @@ hidden: true
 description: Migration guide from the V1 Issues APIs to the REST Issues API
 nav_context: agnostic
 ---
-
 # V1 Issues APIs to REST Issues API migration guide
+
+This guide maps the V1 Issues endpoints to the REST Issues API, and describes what changes in the request and the response when you migrate.
 
 {% hint style="info" %}
 This page applies to the following V1  API endpoints:

@@ -89,7 +89,7 @@ The unenriched repositories banner highlights repositories not discovered by you
 
 You can filter unenriched repositories directly from the banner by selecting the repository count.
 
-<figure><img src="../../.gitbook/assets/inventory_all_assets_no_of_repos.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inventory_all_assets_no_of_repos.png" alt="Unenriched repository banner showing the repository count"><figcaption></figcaption></figure>
 
 #### Unenriched assets with Group SCM integration
 
@@ -111,7 +111,7 @@ To resolve this issue, select the unenriched repositories that are not being dis
 
 Example:
 
-<figure><img src="../../.gitbook/assets/assets-discovered-group-organization-level-integrations.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/assets-discovered-group-organization-level-integrations.png" alt="Assets not discovered by a Group or Organization-level integration"><figcaption></figcaption></figure>
 
 Check if the repository still exists in the SCM. If it was deleted, remove the asset by deleting its Snyk target.
 

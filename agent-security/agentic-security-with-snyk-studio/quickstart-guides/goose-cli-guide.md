@@ -25,7 +25,7 @@ To install the Snyk MCP Server using the Goose CLI interactive session, proceed 
 
 *   Start an interactive Goose configuration wizard by running the `goose configure` command:\\
 
-    <figure><img src="../../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (288).png" alt="Goose CLI interactive session used to add the Snyk MCP server"><figcaption></figcaption></figure>
 * From the configuration menu, chose **Add Extension.**
 * Choose **Command-line extension (run a local command or script).**
 * Name this extension **Snyk Security.**
@@ -34,7 +34,7 @@ To install the Snyk MCP Server using the Goose CLI interactive session, proceed 
 
 A complete Goose configuration walkthrough should look as follows:
 
-<figure><img src="../../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (289).png" alt="Completed Goose configuration walkthrough"><figcaption></figcaption></figure>
 
 Start or resume your Goose session with the Snyk MCP server enabled.
 
@@ -69,11 +69,11 @@ You can explicitly prompt to authenticate your account as follows:
 Authenticate my Snyk account
 ```
 
-<figure><img src="../../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (291).png" alt="Prompting Goose CLI to authenticate the Snyk account"><figcaption></figcaption></figure>
 
 If you are not authenticated, this prompt opens a browser for you to authenticate to the Snyk Web UI, and then you can continue with the agent.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt="Browser opened to authenticate to the Snyk Web UI" width="375"><figcaption></figcaption></figure>
 
 ## Examples
 
@@ -89,7 +89,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Goose CLI invokes Snyk scanning, providing output, and insights based on the results that Snyk returned:
 
-<figure><img src="../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (292).png" alt="Goose CLI reporting the results of a Snyk scan"><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules
 

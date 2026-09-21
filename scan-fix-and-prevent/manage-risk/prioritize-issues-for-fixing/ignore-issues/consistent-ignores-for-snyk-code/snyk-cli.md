@@ -27,7 +27,7 @@ Repository context is required for asset-scoped ignores to take effect. Policy-b
 
 The CLI display output hides ignored results by default when you run `snyk code test`. It displays only unignored results and a summary table with the total number of issues (open and ignored).
 
-<figure><img src="../../../../.gitbook/assets/snyk-cli-default-behaviour.png" alt=""><figcaption><p>Snyk CLI default ignore behavior</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/snyk-cli-default-behaviour.png" alt="Snyk CLI default ignore behavior"><figcaption><p>Snyk CLI default ignore behavior</p></figcaption></figure>
 
 ## View ignores in Snyk CLI
 
@@ -35,7 +35,7 @@ After running `snyk code test`, the CLI displays a hint about using the `--inclu
 
 Running `snyk code test --include-ignores` shows ignored results with their metadata below the open results.
 
-<figure><img src="../../../../.gitbook/assets/display-ignores-snyk-cli.png" alt=""><figcaption><p>Ignores in Snyk CLI</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/display-ignores-snyk-cli.png" alt="Ignores in Snyk CLI"><figcaption><p>Ignores in Snyk CLI</p></figcaption></figure>
 
 ## View JSON output
 
@@ -57,8 +57,8 @@ As ignores are taken into account in Snyk CLI, the same applies when Snyk CLI is
 
 The following example shows how Snyk Code detected high-severity hardcoded secrets, causing a GitHub Action workflow to fail with the exit code `1`.
 
-<figure><img src="../../../../.gitbook/assets/snyk-code-github-actions-exit-code-1.png" alt=""><figcaption><p>High severity hardcoded secreted detected causing GitHub Action workflow to fail with exit code 1</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/snyk-code-github-actions-exit-code-1.png" alt="High severity hardcoded secreted detected causing GitHub Action workflow to fail with exit code 1"><figcaption><p>High severity hardcoded secreted detected causing GitHub Action workflow to fail with exit code 1</p></figcaption></figure>
 
 In a scenario with ignores applied through Group Policies, Snyk Code has successfully completed the scan, resulting in zero open issues, with the exit code `0`.
 
-<figure><img src="../../../../.gitbook/assets/snyk-code-github-action-exit-code-0.png" alt=""><figcaption><p>High severity issues ignored causing GitHub Action workflow to succeed with exit code 0</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/snyk-code-github-action-exit-code-0.png" alt="High severity issues ignored causing GitHub Action workflow to succeed with exit code 0"><figcaption><p>High severity issues ignored causing GitHub Action workflow to succeed with exit code 0</p></figcaption></figure>

@@ -163,4 +163,4 @@ To select a channel from the IDE, choose a CLI release channel using the dropdow
 
 However, Snyk also recommends the **stable** channel as the default for IDE users.
 
-<figure><img src="../.gitbook/assets/Choose a CLI release channel.png" alt=""><figcaption><p>Choose a CLI release channel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Choose a CLI release channel.png" alt="Choose a CLI release channel"><figcaption><p>Choose a CLI release channel</p></figcaption></figure>

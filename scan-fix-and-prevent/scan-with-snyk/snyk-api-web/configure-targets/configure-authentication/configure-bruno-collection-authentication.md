@@ -28,7 +28,7 @@ Create two top-level folders in your Bruno Collection, one for authentication an
 
 1.  Add the authentication request to the `auth` folder and validate that the test passed.<br>
 
-    <figure><img src="../../../../.gitbook/assets/configure-bruno-authentication-folder-auth.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/configure-bruno-authentication-folder-auth.png" alt="Authentication and logout-detection folders in a Bruno collection"><figcaption></figcaption></figure>
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Snyk API &#x26; Web uses the result of this test to notify you that the login failed and instruct the scanner to run the logout detection request.</p></div>
 2.  Add the check token request to the `logout-detection` folder. Then navigate to the **Scripts** tab of the request and add the following test in the **Post Response** to validate that your token is still valid:<br>
@@ -40,7 +40,7 @@ Create two top-level folders in your Bruno Collection, one for authentication an
     });
     ```
 
-    <figure><img src="../../../../.gitbook/assets/configure-bruno-authentication-folder-logout.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/configure-bruno-authentication-folder-logout.png" alt="Check token request configured in the logout-detection folder"><figcaption></figcaption></figure>
 
 ### Test and export the collection
 

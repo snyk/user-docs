@@ -47,13 +47,13 @@ arn:aws:iam::123412341234:role/snyk-cloud-role
 3. In the left sidebar, select **Roles**.
 4. On the **Roles** page, search for `snyk-cloud-role` or substitute the name of your role if you changed it:
 
-<figure><img src="../../../../../.gitbook/assets/snyk-cloud-console-find-arn.png" alt=""><figcaption><p>Search for the name of your role in the AWS Management Console</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/snyk-cloud-console-find-arn.png" alt="Search for the name of your role in the AWS Management Console"><figcaption><p>Search for the name of your role in the AWS Management Console</p></figcaption></figure>
 
 5\. Select the role.
 
 6\. On the role details page, in the **Summary** section, find and copy the ARN:
 
-<figure><img src="../../../../../.gitbook/assets/snyk-cloud-console-copy-arn.png" alt=""><figcaption><p>Copy the role ARN in the AWS Management Console</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/snyk-cloud-console-copy-arn.png" alt="Copy the role ARN in the AWS Management Console"><figcaption><p>Copy the role ARN in the AWS Management Console</p></figcaption></figure>
 
 ## Create and scan the AWS Environment
 
@@ -62,7 +62,7 @@ arn:aws:iam::123412341234:role/snyk-cloud-role
 3. Select **Approve and begin scan**.
 4. You will  see a confirmation message: "AWS environment successfully added." Select **Add another environment** to return to the **Add AWS Environment** modal and onboard a new account, or select **Go to settings** if you are finished:
 
-<figure><img src="../../../../../.gitbook/assets/snyk-cloud-onboard-aws-ui-success.png" alt=""><figcaption><p>Success message after adding an AWS environment in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/snyk-cloud-onboard-aws-ui-success.png" alt="Success message after adding an AWS environment in the Snyk Web UI"><figcaption><p>Success message after adding an AWS environment in the Snyk Web UI</p></figcaption></figure>
 
 ## What's next?
 

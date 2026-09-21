@@ -9,7 +9,7 @@ nav_context: classic
 
 Set the **Issue Type** filter on [Snyk reports](../../manage-risk/analytics/reports-tab/#snyk-reporting-filters) to **Configuration** to view issues in your IaC configuration files.
 
-<figure><img src="../../.gitbook/assets/Issue type filter - Configuration.png" alt=""><figcaption><p>The <strong>Issue type</strong> filter set to <strong>Configuration</strong>.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Issue type filter - Configuration.png" alt="The Issue type filter set to Configuration."><figcaption><p>The <strong>Issue type</strong> filter set to <strong>Configuration</strong>.</p></figcaption></figure>
 
 You can also use this filter on the **Issues** page to view your IaC issues across all of your Projects.
 

@@ -25,7 +25,7 @@ The instructions on this page explain how to enable integration between one Arti
    * **Username and Password -** use your Artifactory login credentials. If you're using SSO configuration, you must generate an access token in Artifactory and use the token details to login.
    * **Container registry name -** the full registry URL: `<subdomain>.jfrog.io/artifactory/api/docker/<repo-name>`
 
-<figure><img src="https://user-images.githubusercontent.com/112600/144875482-078b715e-2834-469b-9983-7e88a65f175e.png" alt="" width="375"><figcaption><p>Artifactory account credentials</p></figcaption></figure>
+<figure><img src="https://user-images.githubusercontent.com/112600/144875482-078b715e-2834-469b-9983-7e88a65f175e.png" alt="Artifactory account credentials" width="375"><figcaption><p>Artifactory account credentials</p></figcaption></figure>
 
 4. Click **Save Changes**. A confirmation appears.
 

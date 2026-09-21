@@ -17,7 +17,7 @@ You can configure both [Global settings](configuration-of-the-eclipse-plugin.md#
 
 You can set the following global configuration settings in the Snyk preferences.
 
-<figure><img src="../../.gitbook/assets/snyk-preferences.png" alt=""><figcaption><p>Snyk preferences</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-preferences.png" alt="Snyk preferences"><figcaption><p>Snyk preferences</p></figcaption></figure>
 
 * **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDEs URLs](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#ides-urls).\
   Snyk automatically redirects multi-tenant users who do not belong to the `SNYK-US-01` region to the correct domain, using their authentication email. Snyk does not redirect users who must use a custom URL, such as companies with single-tenant setups.
@@ -66,4 +66,4 @@ You can specify Project-specific scan settings on the **Snyk** page in the **Pro
 * **Auto-select Organization**: When enabled, Snyk automatically selects the most appropriate Organization for your Project based on context in your repository and your authentication. If an Organization is configured manually, this feature is overridden. If no appropriate Organization can be automatically identified, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used as a fallback.
 * **Project Organization**: Specify the Organization (ID or name) for Snyk to target when running scans in this particular IDE Project. Retrieve the Organization ID from the Organization settings in the Snyk Web UI: `https://app.snyk.io/org/[ORG_NAME]/manage/settings` and copy the ID from the Organization ID section. If the Organization is provided manually, automatic Organization selection is overridden. If the Organization value is blank or invalid, the global Organization field value is used.
 
-<figure><img src="../../.gitbook/assets/snyk-project-specific-properties-page-allowing-entry-scan.png" alt=""><figcaption><p>Snyk Project-specific properties page, allowing entry of scan parameters and specific organization settings for the Project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-project-specific-properties-page-allowing-entry-scan.png" alt="Snyk Project-specific properties page, allowing entry of scan parameters and specific organization settings for the Project"><figcaption><p>Snyk Project-specific properties page, allowing entry of scan parameters and specific organization settings for the Project</p></figcaption></figure>

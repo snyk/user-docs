@@ -45,7 +45,7 @@ Before you begin, check the [Prerequisites for automated PR Checks](configure-pu
 4. Click a Project name to open it and select **package.json** to check for open-source and licensing issues.
 5. In the **Issues** tab, find the dependency or specific vulnerability and, if a fix is available, click the **Upgrade to X.X.X** button at the bottom of the card and select **Fix this vulnerability**. For example, the jsonwebtoken can be upgraded from version 0.4.0 to version 5.0.0, fixing a number of vulnerabilities.
 
-<figure><img src="../../../.gitbook/assets/PR-checks-fix-dependencies-issue.png" alt=""><figcaption><p>Updating a dependency to remediate the Authentication Bypass issue and others found in version 5.0.0.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/PR-checks-fix-dependencies-issue.png" alt="Updating a dependency to remediate the Authentication Bypass issue and others found in version 5.0.0."><figcaption><p>Updating a dependency to remediate the Authentication Bypass issue and others found in version 5.0.0.</p></figcaption></figure>
 
 6. (Optional) Select **Fix these vulnerabilities** at the top of the page to fix all dependency vulnerabilities with one pull request.
 
@@ -53,7 +53,7 @@ Before you begin, check the [Prerequisites for automated PR Checks](configure-pu
 
 Confirm your selected issue and click **Open a Fix PR** to open a pull request in the GitHub integration.
 
-<figure><img src="../../../.gitbook/assets/PR-checks-triggering-fix-pr.png" alt=""><figcaption><p>Triggering a Fix PR for an individual issue in the dependencies project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/PR-checks-triggering-fix-pr.png" alt="Triggering a Fix PR for an individual issue in the dependencies project"><figcaption><p>Triggering a Fix PR for an individual issue in the dependencies project</p></figcaption></figure>
 
 ### Analyze PR checks result and set status
 

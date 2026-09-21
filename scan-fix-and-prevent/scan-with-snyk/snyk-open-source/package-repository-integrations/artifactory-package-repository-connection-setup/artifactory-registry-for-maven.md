@@ -31,7 +31,7 @@ You can choose whether to use Artifactory as a mirror or as an additional reposi
 
 ## Mirrors
 
-<figure><img src="../../../../.gitbook/assets/maven-settings-choose-type.png" alt=""><figcaption><p>Maven settings, choose Type</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/maven-settings-choose-type.png" alt="Maven settings, choose Type"><figcaption><p>Maven settings, choose Type</p></figcaption></figure>
 
 Choose a value for the Type, either **Direct** or, if you are using authentication, **Integration.**
 
@@ -55,4 +55,4 @@ Repositories are configured in the same way as [Mirrors](artifactory-registry-fo
 
 Retest a Project with private dependencies hosted in Artifactory. Ensure the dependencies appear in the Project's Dependencies tab and Snyk identifies relevant vulnerabilities.
 
-<figure><img src="../../../../.gitbook/assets/testing-the-artifactory-for-maven-integration-in-the-dependencies-tab.png" alt=""><figcaption><p>The Dependencies tree view of a manifest file</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/testing-the-artifactory-for-maven-integration-in-the-dependencies-tab.png" alt="The Dependencies tree view of a manifest file"><figcaption><p>The Dependencies tree view of a manifest file</p></figcaption></figure>

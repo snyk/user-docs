@@ -25,7 +25,7 @@ Agent Behavior Governance secures what agents do as they run. It works within th
 
 ## Supported agents
 
-Claude Code, Codex, and Cursor.
+Claude Code, Codex, Cursor, and Github Copilot.
 
 ## How it works
 

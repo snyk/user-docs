@@ -2,8 +2,9 @@
 description: Support and limitations for the Terraform AWS provider.
 nav_context: agnostic
 ---
-
 # Terraform AWS Provider support
+
+Snyk IaC scans Terraform files that use the AWS provider. Version 4.0.0 of the provider changed how S3 buckets are defined, which affects how Snyk reports issues against them.
 
 {% hint style="success" %}
 Version 4.0.0 of the AWS Terraform Provider introduced changes in how S3 services are defined. With v4.0, the definition of S3 services is now spread across several resource blocks within Terraform. If you defined an instance of an S3 bucket across multiple files, this update is a breaking change and may have negatively impacted your security results from Snyk IaC.

@@ -67,7 +67,7 @@ To navigate to the Group level notification settings:
 2. Select **Settings**.
 3. Select **Notifications**.
 
-<figure><img src="../.gitbook/assets/settings_notifications.png" alt=""><figcaption><p>Notification settings at the Group level</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/settings_notifications.png" alt="Notification settings at the Group level"><figcaption><p>Notification settings at the Group level</p></figcaption></figure>
 
 #### Group defaults for issue alert emails
 
@@ -116,7 +116,7 @@ To navigate to the Organization-level notification settings:
 2. Select **Settings**.
 3. Select **Notifications**.
 
-<figure><img src="../.gitbook/assets/notifications_organization-settings.png" alt=""><figcaption><p>Notification settings at the Organization level</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/notifications_organization-settings.png" alt="Notification settings at the Organization level"><figcaption><p>Notification settings at the Organization level</p></figcaption></figure>
 
 #### Organization defaults for issue alert emails
 
@@ -150,7 +150,7 @@ To override these settings, change your notification preferences:
 1. Select the dropdown next to your name.
 2. Select **Notification preferences**.
 
-<figure><img src="../.gitbook/assets/notifications_account-settings.png" alt=""><figcaption><p>Notification settings at the Account level</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/notifications_account-settings.png" alt="Notification settings at the Account level"><figcaption><p>Notification settings at the Account level</p></figcaption></figure>
 
 The Account Settings page allows you to change the types of notifications for each Organization to which you belong. You can also customize the notifications for individual Projects.
 

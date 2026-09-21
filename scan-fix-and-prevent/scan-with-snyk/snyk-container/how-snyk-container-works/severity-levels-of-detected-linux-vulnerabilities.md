@@ -25,7 +25,7 @@ Snyk supports relative importance in Ubuntu, Debian, Red Hat Enterprise Linux (R
 
 For each issue, information appears on the Project page, under **Security information**.
 
-<figure><img src="../../../.gitbook/assets/project_page_security_information.png" alt=""><figcaption><p>Security information on a Project page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project_page_security_information.png" alt="Security information on a Project page"><figcaption><p>Security information on a Project page</p></figcaption></figure>
 
 ## External information sources for relative importance
 
@@ -42,4 +42,4 @@ To provide information for the distribution, Snyk uses the following external so
 
 To create a report showing only NVD Score and Severity (without the Linux-maintainer rating), add the NVD Score and NVD Severity columns in the Issues Detail report.
 
-<figure><img src="../../../.gitbook/assets/container-NVD-report.png" alt=""><figcaption><p>Example of a report with NVD Score and NVD Severity</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/container-NVD-report.png" alt="Example of a report with NVD Score and NVD Severity"><figcaption><p>Example of a report with NVD Score and NVD Severity</p></figcaption></figure>

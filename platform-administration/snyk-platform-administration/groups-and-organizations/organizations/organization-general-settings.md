@@ -9,7 +9,7 @@ nav_context: classic
 
 To view and modify settings for your Organization, be sure you are in your Organization and navigate to **Settings** > **General**:
 
-<figure><img src="../../../.gitbook/assets/settings_org_settings_general.png" alt=""><figcaption><p>Organization general settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings_org_settings_general.png" alt="Organization general settings"><figcaption><p>Organization general settings</p></figcaption></figure>
 
 In the Organization general settings, you can view and modify the following:
 

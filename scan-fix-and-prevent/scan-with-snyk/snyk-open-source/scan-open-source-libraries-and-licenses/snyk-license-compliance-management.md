@@ -40,7 +40,7 @@ You can create and edit multiple license policies for Organizations. For details
 
 Snyk’s [Git-based integrations ](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/OS-issues-overview-with-license-issues-filter.png" alt=""><figcaption><p>Issues overview with the "License issues" filter applied</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/OS-issues-overview-with-license-issues-filter.png" alt="Issues overview with the &quot;License issues&quot; filter applied"><figcaption><p>Issues overview with the "License issues" filter applied</p></figcaption></figure></div>
 
 The example below shows a high-severity issue under the GPL-2.0 license, with accompanying instructions as defined in the license's policies.
 

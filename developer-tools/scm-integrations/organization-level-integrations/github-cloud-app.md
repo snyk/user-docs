@@ -54,7 +54,7 @@ Log in to your Snyk account and navigate to the Integrations section in the Snyk
 
 Select the **GitHub Cloud App** tile.
 
-<figure><img src="../../.gitbook/assets/github-cloud-app-tile-integrations-page.png" alt=""><figcaption><p>GitHub Cloud App tile on the Integrations page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github-cloud-app-tile-integrations-page.png" alt="GitHub Cloud App tile on the Integrations page"><figcaption><p>GitHub Cloud App tile on the Integrations page</p></figcaption></figure>
 
 In the confirmation modal, select **Configure GitHub Cloud App**.
 
@@ -62,7 +62,7 @@ In the confirmation modal, select **Configure GitHub Cloud App**.
 
 You are then asked to authorize the app to act on your user’s behalf. The app uses this information to check which GitHub organizations you are authorized to install the app in.
 
-<figure><img src="../../.gitbook/assets/user-authorization-app.png" alt="" width="375"><figcaption><p>User authorization for the app</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-authorization-app.png" alt="User authorization for the app" width="375"><figcaption><p>User authorization for the app</p></figcaption></figure>
 
 When the install screen in GitHub opens, you can select the GitHub organization where you wish to install the app.
 

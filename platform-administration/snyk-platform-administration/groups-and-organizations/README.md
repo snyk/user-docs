@@ -11,7 +11,7 @@ nav_context: classic
 
 Snyk has a hierarchy that allows you to control access to Snyk scanning and features.
 
-<figure><img src="../../.gitbook/assets/Enterprise.png" alt=""><figcaption><p>The Snyk hierarchy for Enterprise plans</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Enterprise.png" alt="The Snyk hierarchy for Enterprise plans"><figcaption><p>The Snyk hierarchy for Enterprise plans</p></figcaption></figure>
 
 * **Account:** Users must log in to their Snyk account to scan and view or modify any settings and scan
 * [**Tenants**](tenant/): A Tenant encompasses the entire Snyk workspace of your company, team, and individual users. You have one Tenant that encompasses all your Snyk work items: Groups, Organizations, Targets, Projects, and all their adjacent entities, for example, Snyk features, Tags, Collections, and so on.

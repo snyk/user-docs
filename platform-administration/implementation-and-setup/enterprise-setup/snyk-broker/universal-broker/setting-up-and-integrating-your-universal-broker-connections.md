@@ -11,7 +11,7 @@ The following diagram illustrates installing the Snyk Broker App, which facilita
 
 In the diagram, GitHub connection 123 is integrated with Organization A using integration X and Organization B using integration Y. Jira connection 456 is integrated with Organization C using integration Z.
 
-<figure><img src="../../../../.gitbook/assets/Universal-Broker-deployment-connections (1).png" alt=""><figcaption><p>Universal Broker connections</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Universal-Broker-deployment-connections (1).png" alt="Universal Broker connections"><figcaption><p>Universal Broker connections</p></figcaption></figure>
 
 ## Create deployments and connections
 

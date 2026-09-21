@@ -379,6 +379,7 @@
     * [Set up single sign-on (SSO)](scan-with-snyk/snyk-api-web/managing-account/set-up-single-sign-on-sso-in-snyk-api-web.md)
     * [Generate and use audit log reports](scan-with-snyk/snyk-api-web/managing-account/generate-and-use-audit-log-reports.md)
     * [Enhancing your security with AI](scan-with-snyk/snyk-api-web/managing-account/enhancing-your-security-with-ai.md)
+    * [Add a custom CA certificate](scan-with-snyk/snyk-api-web/managing-account/add-a-custom-ca-certificate.md)
 * [Snyk Secrets](scan-with-snyk/snyk-secrets/README.md)
   * [Custom RegEx for Secrets](scan-with-snyk/snyk-secrets/custom-regex-for-secrets.md)
   * [Secrets Pull Requests status checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/secrets-pull-request-checks)

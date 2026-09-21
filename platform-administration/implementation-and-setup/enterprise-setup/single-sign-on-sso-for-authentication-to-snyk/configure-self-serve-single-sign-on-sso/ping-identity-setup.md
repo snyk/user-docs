@@ -13,7 +13,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 
 1.  In the left menu, select your **Group**, then **Settings**.
 
-    <figure><img src="../../../../.gitbook/assets/group-settings-sso-2.png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/group-settings-sso-2.png" alt="Entity ID and ACS URL under the Group SSO settings" width="375"><figcaption></figcaption></figure>
 2.  Select **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
     <figure><img src="../../../../.gitbook/assets/group-settings-sso.png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>

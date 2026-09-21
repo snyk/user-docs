@@ -2,8 +2,9 @@
 description: How to install and configure the Classic Snyk Broker using Docker
 nav_context: agnostic
 ---
-
 # Install and configure Broker using Docker
+
+Run Snyk Broker as a Docker container to connect Snyk to systems inside your network without exposing them to the internet.
 
 {% hint style="info" %}
 [Broker version 4.205.1](https://github.com/snyk/broker/blob/cb4f89e05eb42605f076321b952cdb7e57bf4111/config.default.json#L8) has been [released](https://updates.snyk.io). In this version, all `ACCEPT` rule flags will be enabled by default. This reduces needed configuration. If you do not want a specific `ACCEPT` rule flag to be enabled, you can opt out of the default `ACCEPT` all behavior by adding `ACCEPT_=false` to your Broker client configuration.

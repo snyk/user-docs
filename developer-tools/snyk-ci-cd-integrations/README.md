@@ -4,8 +4,9 @@ description: >-
   How to integrate Snyk into CI/CD pipelines, with the Snyk CLI recommended for
   flexibility
 ---
-
 # Snyk CI/CDs
+
+Snyk integrates with continuous integration and continuous delivery (CI/CD) pipelines so you can fail a build, or report on it, when a scan finds issues.
 
 {% hint style="info" %}
 Snyk recommends using the CLI for CI/CD integrations for the following reasons:

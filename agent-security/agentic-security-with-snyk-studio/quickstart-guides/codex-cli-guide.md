@@ -68,7 +68,7 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt="Snyk MCP server running a workflow in Codex CLI"><figcaption></figcaption></figure>
 
 You can explicitly prompt to authenticate your account as follows:
 
@@ -76,11 +76,11 @@ You can explicitly prompt to authenticate your account as follows:
 Authenticate my Snyk account
 ```
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt="Prompting Codex CLI to authenticate the Snyk account"><figcaption></figcaption></figure>
 
 If you are not authenticated, this prompt opens a browser for you to authenticate to the Snyk Web UI, and then you can continue with the agent.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt="Browser opened to authenticate to the Snyk Web UI" width="375"><figcaption></figcaption></figure>
 
 ## Examples
 
@@ -96,7 +96,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Codex CLI will invoke Snyk scanning, provide output and insights based on the results that Snyk returned:
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt="Codex CLI reporting the results of a Snyk scan"><figcaption></figcaption></figure>
 
 ### Secure at inception rules
 

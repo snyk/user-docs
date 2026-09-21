@@ -112,7 +112,7 @@ The Type is the scanning method to use for a particular Project, such as Static 
 
 To perform an action at bulk on your Projects, first select the Projects and then choose to **Delete**, **Activate,** or **Deactivate** the Projects.
 
-<figure><img src="../../.gitbook/assets/delete-selected-projects.png" alt="" width="352"><figcaption><p>Deleting Projects in bulk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/delete-selected-projects.png" alt="Deleting Projects in bulk" width="352"><figcaption><p>Deleting Projects in bulk</p></figcaption></figure>
 
 Click **Delete** to remove Projects from the **Projects** listing page and the Target-level aggregates.
 

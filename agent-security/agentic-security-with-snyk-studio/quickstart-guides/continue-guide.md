@@ -67,7 +67,7 @@ The following example shows a Snyk MCP Server that was successfully configured a
 
 The MCP Server attempts to start automatically. The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt="Snyk MCP server configured and started in Continue"><figcaption></figcaption></figure>
 
 As a one-time setup, authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
 
@@ -87,11 +87,11 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Continue indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt="Continue calling the Snyk MCP server for a vulnerability scan"><figcaption></figcaption></figure>
 
 Continue is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found:
 
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (370).png" alt="Continue reporting combined code and dependency scan results"><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules <a href="#secure-at-inception-rules" id="secure-at-inception-rules"></a>
 

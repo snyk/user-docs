@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to verify domain ownership for a Snyk API & Web target with a DNS TXT
+  record
 nav_context: classic
 ---
 
