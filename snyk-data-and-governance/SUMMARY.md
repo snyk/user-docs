@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Working with Snyk](working-with-snyk.md)
+* [Working with Snyk](README.md)
 * [How Snyk handles your data](how-snyk-handles-your-data.md)
 * [How Snyk incorporates generative AI into the platform](how-snyk-incorporates-generative-ai-into-the-platform.md)
 * [Regional hosting and data residency](regional-hosting-and-data-residency.md)
