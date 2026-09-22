@@ -9,6 +9,8 @@ nav_context: classic
 
 This example shows how to configure user roles after you have [configured OneLogin SSO for Snyk](../../set-up-snyk-single-sign-on-sso.md).
 
+You need permissions in OneLogin to create roles and edit application parameters, and a Snyk contact who can turn on custom mapping for your Group. Self-serve SSO does not accommodate custom mapping, so any step on the Snyk side must be performed by your Snyk contact. See [Custom mapping](../) for the requirements and the role assertion format.
+
 OneLogin has the concept of groups and roles. However, OneLogin does not support the assignment of multiple groups to a user.
 
 Therefore, roles will be assigned to users directly instead of indirectly through groups.
@@ -27,3 +29,5 @@ Therefore, roles will be assigned to users directly instead of indirectly throug
     Ensure that the checkbox **Include in SAML assertion** is checked. **Save**.\\
 
     <figure><img src="https://lh3.googleusercontent.com/fnsu9d998jEzxyzuIfHl3JSZHBh5iXsPATUj9jL_SZsFoFPFvvus_JyyY3YAeey5ZMtC9oCuhtjrmSMKAVlY8Tq_Sjf9plgDWagoFuLBQX2U0vbFPU76fNvpjSkpJdgL0JsPhXwq3ngBlgJvdsidoyM" alt="OneLogin Edit Field roles"><figcaption><p>OneLogin Edit Field roles</p></figcaption></figure>
+
+Custom mapping is not active until Snyk turns it on for your Group. After Snyk confirms it is active, the mapping works when a user assigned to a Snyk role in OneLogin logs in and receives that role in Snyk.
