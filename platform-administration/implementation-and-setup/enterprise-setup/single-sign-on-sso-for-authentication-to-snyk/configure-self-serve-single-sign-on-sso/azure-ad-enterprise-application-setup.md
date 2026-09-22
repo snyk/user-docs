@@ -9,6 +9,8 @@ nav_context: classic
 
 This example shows setting up an Entra ID (formerly Azure AD) Enterprise Application and connecting this to Snyk to facilitate SSO. To configure your Azure Enterprise Application to use SSO with Snyk, first obtain an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
 
+You need the Group Admin role on a Snyk Enterprise plan, self-serve SSO turned on for your Group, and permissions in Entra ID to create an Enterprise application. To turn on self-serve SSO, contact your Snyk account team or [Snyk Support](https://support.snyk.io). Self-serve SSO does not support [custom role mapping](../custom-mapping/).
+
 1.  From the dropdown at the top left select **GROUP OVERVIEW** and then the cog icon (top right corner) to get to your group settings.
 
     <figure><img src="../../../../.gitbook/assets/select-group-overview.png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
@@ -58,6 +60,8 @@ This example shows setting up an Entra ID (formerly Azure AD) Enterprise Applica
     <figure><img src="../../../../.gitbook/assets/claim1.png" alt="Azure claim settings"><figcaption><p>Azure claim settings</p></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/profile-attributes-section.png" alt="Profile attributes section"><figcaption><p>Profile attributes section</p></figcaption></figure>
+
+The connection works when a user in your Entra ID directory logs in through the direct URL at the top of step 3 of the Snyk SSO settings, or through the [generic SSO login](https://app.snyk.io/login/sso), and the name, email address, and role Snyk records for that user match the values Entra ID sends.
 
 If you wish to add signature verification of the incoming Snyk request:
 
