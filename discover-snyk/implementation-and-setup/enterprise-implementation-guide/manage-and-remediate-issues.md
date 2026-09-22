@@ -72,3 +72,5 @@ Use the **Reports** tab to audit your progress using:
 * **Issues summary**: View the **Risk Breakdown** to see open, new, and resolved issues.
 * **Adoption tracking**: Identify which Organizations are most active in resolving issues to recognize successful teams or provide extra support where needed.
 * **Organization reports**: Allow local admins to identify recurring vulnerabilities common across their specific repositories.
+
+This stage is working when the total backlog trends downward in the **Reports** tab over successive reporting periods, with resolved issues outpacing new ones.

@@ -7,6 +7,8 @@ nav_context: agnostic
 
 Follow these steps to make a simple call to the REST API using `curl` in the command line.
 
+You need `curl` available in your command line and membership of an Organization where you have Projects you can list.
+
 1. Log in to [Snyk](https://snyk.io/).
 2. In your account, use the left navigation to find an **Organization** where you have Projects you can list.
 3. Navigate to your **Organization Settings**, and on the **General** settings page, find your **Organization ID** and copy the value.
@@ -19,6 +21,8 @@ curl --request GET \
 --header "Content-Type: application/vnd.api+json" \
 --header "Authorization: token API_TOKEN"
 ```
+
+A successful call returns the `200` status code with a `data` array listing the Projects in the Organization.
 
 {% hint style="info" %}
 The API URL to use when calling an API is different for different regions. For a complete list, see [API URLs](https://docs.snyk.io/developer-tools/snyk-api/rest-api/about-the-rest-api#api-urls).
