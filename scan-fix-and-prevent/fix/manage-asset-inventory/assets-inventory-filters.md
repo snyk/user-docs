@@ -3,13 +3,13 @@ nav_context: classic
 description: How to filter the Snyk assets inventory
 ---
 
-{% include "../.gitbook/includes/new-navigation-banner.md" %}
-
 # Assets inventory filters
+
+## Assets inventory filters
 
 From the **Inventory** > **All Assets** tab, you can use the search bar to look for specific keywords across assets. Results can include the asset name and data retrieved from the **Attributes** tab of an asset.
 
-## Quick filters
+### Quick filters
 
 Quick filters are predefined filters that you can apply to assets. Available quick filters:
 
@@ -20,7 +20,7 @@ Quick filters are predefined filters that you can apply to assets. Available qui
 
 You can change or add additional filters by clicking **Advanced Filters**.
 
-## Advanced filters
+### Advanced filters
 
 Using advanced filters, you can define and apply filters to assets based on specific criteria. For details on how to define filters, see [Define filters](../../manage-risk/policies/assets-policies/create-policies.md#define-filters).
 
@@ -83,7 +83,7 @@ The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Ow
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the application context catalog was configured.
 
-## Filtering using the unenriched repository banner
+### Filtering using the unenriched repository banner
 
 The unenriched repositories banner highlights repositories not discovered by your Group-level SCM integration. These assets are instead discovered through Organization-level integrations or Snyk targets.
 
@@ -91,7 +91,7 @@ You can filter unenriched repositories directly from the banner by selecting the
 
 <figure><img src="../../.gitbook/assets/inventory_all_assets_no_of_repos.png" alt="Unenriched repository banner showing the repository count"><figcaption></figcaption></figure>
 
-#### Unenriched assets with Group SCM integration
+**Unenriched assets with Group SCM integration**
 
 If you use a Group-level integration, the banner shows assets not discovered through that integration. Although the integration is in place, some assets are not being pulled in. Possible reasons for unrenriched assets:
 
@@ -101,9 +101,9 @@ If you use a Group-level integration, the banner shows assets not discovered thr
 * The SCM Organization is not explicitly configured in the Group-level integration.
 * Assets detected by a non-SCM vendor.
 
-## Troubleshooting
+### Troubleshooting
 
-### The assets are not discovered by Group or Organization-level integrations.
+#### The assets are not discovered by Group or Organization-level integrations.
 
 The assets are not discovered by Group or Organization-level integrations, but are discovered only through Snyk targets (for example, CLI Projects or old deleted repositories).
 
@@ -117,7 +117,7 @@ Check if the repository still exists in the SCM. If it was deleted, remove the a
 
 If the repository was imported but not rediscovered, ensure the Group and Organization-level permissions for the SCM integration are correct.
 
-### The assets are discovered by Organization-level integrations, but not by Group-level integrations
+#### The assets are discovered by Organization-level integrations, but not by Group-level integrations
 
 If the assets are discovered by Organization-level integrations but not by Group-level integrations:
 
@@ -125,7 +125,7 @@ If the assets are discovered by Organization-level integrations but not by Group
 * Compare permissions between Group- and Organization-level integrations.
 * Confirm if the asset was discovered through a different vendor integration.
 
-### Deeper analysis of asset source
+#### Deeper analysis of asset source
 
 For deeper analysis, use the dashboard to see where assets are discovered and how they are enriched. Use the advanced filters to display only assets that have a source other than Snyk (for example, GitHub).
 

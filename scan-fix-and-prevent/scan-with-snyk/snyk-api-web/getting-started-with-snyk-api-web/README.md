@@ -3,13 +3,15 @@ nav_context: classic
 description: How to get started with Snyk API and Web dynamic application security testing
 ---
 
+# Getting started with Snyk API & Web
+
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# Getting started with Snyk API & Web
+## Getting started with Snyk API & Web
 
 Learn how to start scanning web applications for security vulnerabilities using Snyk API & Web.
 
-## Overview
+### Overview
 
 This guide walks you through the essential steps to begin using Snyk API & Web for security scanning:
 
@@ -18,7 +20,7 @@ This guide walks you through the essential steps to begin using Snyk API & Web f
 3. Review scan coverage
 4. Analyze findings
 
-## Sign up for Snyk API & Web
+### Sign up for Snyk API & Web
 
 Create your account in Snyk API & Web to start scanning:
 
@@ -29,7 +31,7 @@ Create your account in Snyk API & Web to start scanning:
 3. Check your email for a verification message and click **Verify email**.
 4. Complete the registration form and click **Create account**.
 
-## Complete the onboarding flow
+### Complete the onboarding flow
 
 After creating your account, Snyk displays [best practices for deploying dynamic application security testing (DAST)](best-practices-for-deploying-dast.md) and guides you through the initial setup:
 
@@ -47,7 +49,7 @@ After creating your account, Snyk displays [best practices for deploying dynamic
 7. Click **Scan** to start scanning your target.
 8. A success page confirms that your scan started.
 
-## Review scan coverage
+### Review scan coverage
 
 The **Scan Overview** page shows the progress of your scan.
 
@@ -57,11 +59,11 @@ While the scan runs, you can download the preliminary crawling report to review 
 
 Amongst other information, the **crawling report** shows, for each URL discovered, the **HTTP request method** and **response codes**, whether the request was **authenticated** or not, whether the endpoint was sent to the scanner for **further tests** or simply **crawled**, and why.
 
-<figure><img src="../../../.gitbook/assets/crawling (2).png" alt="Crawling report listing each discovered URL and its HTTP request method"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/crawling (1).png" alt="Crawling report listing each discovered URL and its HTTP request method"><figcaption></figcaption></figure>
 
 Use this information to verify that the scanner reached all intended parts of your application and identify any access issues.
 
-## Analyze findings
+### Analyze findings
 
 The **Scan Findings** page displays all security vulnerabilities identified during the scan.
 
@@ -73,7 +75,7 @@ Click a finding in the findings list to view its CVSS score, vulnerability descr
 
 This information helps you understand the severity and impact of each vulnerability so you can prioritize and plan remediation work.
 
-## Next steps
+### Next steps
 
 You can now scan applications, identify vulnerabilities, and plan security improvements.
 
