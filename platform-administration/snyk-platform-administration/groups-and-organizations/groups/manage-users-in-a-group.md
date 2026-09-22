@@ -13,6 +13,8 @@ nav_context: classic
 Groups are available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
+Managing Group members requires the **Group Admin** role. Being a Group Member does not grant the rights to change Group membership.
+
 Select the **Group** where you want to manage users and the **Members** menu option to manage your Group members.
 
 As a Group Admin you can do the following:
@@ -67,6 +69,10 @@ To delete a member from the Group:
 
 1. Click the trash icon next to the user.
 2. Click **Delete member** from the Group you are managing.
+
+The user no longer appears on the Group members page.
+
+[ACTION REQUIRED: state whether deleting a Group member also removes that user from the Organizations in the Group, or leaves their Organization memberships in place. The page does not say, and this is the question the reader has at this step.]
 
 ## Filter and sort views of Group members
 

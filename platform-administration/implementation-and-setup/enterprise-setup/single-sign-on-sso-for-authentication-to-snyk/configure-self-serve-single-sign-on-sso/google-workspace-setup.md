@@ -11,6 +11,8 @@ This example shows setting up an Google Workspace SAML application and connectin
 
 For details in addition to the information provided on this page, see [Set up your own custom SAML app](https://support.google.com/a/answer/6087519).
 
+You need the Group Admin role on a Snyk Enterprise plan, self-serve SSO turned on for your Group, and administrator access to the Google Workspace admin console. To turn on self-serve SSO, contact your Snyk account team or [Snyk Support](https://support.snyk.io). Self-serve SSO does not support [custom role mapping](../custom-mapping/).
+
 Start by logging into the Google Workspace [admin area](https://admin.google.com).
 
 1.  Go to **Apps** and then click **Web and mobile apps**.
@@ -46,6 +48,8 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
 
     <figure><img src="../../../../.gitbook/assets/enable-sso-app-organization.png" alt="Enable SSO app for the organization"><figcaption><p>Enable SSO app for the organization</p></figcaption></figure>
 11. Finalize the setup by going back to the Snyk portal and decide how new users should be processed when signing in. Choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.
-12. Then add the previously created **email** app attribute to both **Email** and **Username** and save the configuration. If you wish to populate the full name you may configure a custom attribute in Google Workspace.
+12. Then add the previously created **email** app attribute to both **Email** and **Username** and save the configuration. To populate the full name, configure a custom attribute in Google Workspace.
 
     <figure><img src="../../../../.gitbook/assets/tie-together-attributes-google-snyk.png" alt="Tie together attributes from Google to Snyk"><figcaption><p>Tie together attributes from Google to Snyk</p></figcaption></figure>
+
+The connection works when a user in your Google Workspace directory logs in through the direct URL at the top of step 3 of the Snyk SSO settings, or through the [generic SSO login](https://app.snyk.io/login/sso), and the email address and username Snyk records for that user match the values Google Workspace sends.
