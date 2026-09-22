@@ -1,5 +1,4 @@
 ---
-description: The four surfaces that make up the Evo platform
 nav_context: agnostic
 ---
 
@@ -11,3 +10,5 @@ Evo organizes the product into four main surfaces:
 * [Policies & issues](policies-and-issues.md): The rules that govern AI usage and the issues raised when assets violate them.
 * [Reports](reports.md): How your AI security posture changes over time.
 * [Evo chat](evo-chat.md): A conversational way to explore your data and take action.
+
+The [Evo MCP server](evo-mcp-server/) covers inventory, policies, and issues. The MCP server can help you explore your data and take action similar to the Evo chat.

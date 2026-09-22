@@ -42,6 +42,8 @@
 * [Overview](evo-by-snyk/overview.md)
 * [Access and authentication](evo-by-snyk/access-and-authentication.md)
 * [Platform surfaces](evo-by-snyk/platform-surfaces/README.md)
+  * [Evo MCP Server](evo-by-snyk/platform-surfaces/evo-mcp-server/README.md)
+    * [Common Use Cases](evo-by-snyk/platform-surfaces/evo-mcp-server/common-use-cases.md)
   * [Inventory](evo-by-snyk/platform-surfaces/inventory.md)
   * [Policies & issues](evo-by-snyk/platform-surfaces/policies-and-issues.md)
   * [Reports](evo-by-snyk/platform-surfaces/reports.md)
