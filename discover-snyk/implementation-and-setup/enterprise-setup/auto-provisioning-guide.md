@@ -60,6 +60,10 @@ The company name you enter here will be used to create the [Tenant](https://docs
 
 Provisioning will also create a [Group](https://docs.snyk.io/platform-administration/snyk-hierarchy/groups) and a default [Organization](https://docs.snyk.io/platform-administration/snyk-hierarchy/organizations) using the same name.
 
+{% hint style="warning" %}
+Choose this name carefully. It sets the Group and Organization URL slugs, and the Group slug is used in your SAML Entity ID if you later configure single sign-on. Changing the display name afterwards does not change the URL slug or the internal name used by the Snyk CLI; to change a slug you must raise a Snyk Support ticket.
+{% endhint %}
+
 ### Step 2: Choose where to host the account
 
 <div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/available-hosting-regions.png" alt="Available hosting regions" width="375"><figcaption><p>Available hosting regions</p></figcaption></figure></div>
