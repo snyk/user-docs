@@ -44,8 +44,8 @@
 ## Getting started guides
 
 * [Getting started](getting-started/README.md)
-* [Structure your account for high application performance](snyk-platform-administration/structure-your-account-for-high-application-performance.md)
 * [Start scanning](scan-with-snyk/start-scanning.md)
+* [Structure your account for high application performance](snyk-platform-administration/structure-your-account-for-high-application-performance.md)
 * [Getting started with the REST API](snyk-api/rest-api/getting-started-with-the-rest-api.md)
 
 ## Implementation guides
