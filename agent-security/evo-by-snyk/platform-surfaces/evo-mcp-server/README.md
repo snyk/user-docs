@@ -90,13 +90,10 @@ This opens your browser to complete the authorization flow. Codex stores the cre
 On first use, the MCP client opens an authorization page in your browser.
 
 1. Log in to Snyk.
-2. If you belong to more than one Tenant, select the Tenant to connect to. Complete the selection within five minutes, or the selection expires and you must reconnect.
-3. Review the requested Evo permissions and approve the app.
-4. Return to the MCP client and use an Evo MCP tool.
+2. Review the requested Evo permissions and approve the app.
+3. Return to the MCP client and use an Evo MCP tool.
 
 The agent runs as you, with your identity and your permissions.
-
-Each connection is bound to one Tenant. To work in a different Tenant, disconnect Evo MCP in your client and authorize again.
 
 The service requests the `org.read` OAuth scope to identify you and discover your Organizations. This scope does not grant access to Evo data. Access to Evo data comes from your Tenant role, which Snyk checks on every request. The service also validates your Snyk access token before every MCP request and uses that token for all downstream calls.
 
@@ -151,9 +148,17 @@ Some examples of what the tools support:
 
 For multi-step workflows that combine Evo MCP with other MCP servers, visit [Common use cases](common-use-cases.md).
 
-## Limits
+## Supported features
 
-### Rate limits
+The Evo MCP server supports the following:
+
+* Querying AI assets in your inventory and the relationships between them
+* Querying policies and the issues they raise
+* Creating and updating custom policies
+
+Preview features are not available through the MCP server.
+
+## Rate limits
 
 Snyk applies rate limits per Snyk user. The limits are shared across every client and connection you use in the same region.
 
@@ -166,25 +171,11 @@ Snyk applies unauthenticated limits per source IP address.
 
 When you exceed a limit, the server returns an HTTP 429 response with a `Retry-After` header. Wait the number of seconds in the header, then retry.
 
-### Response size
-
-Each response from a query tool is limited to 16KiB. When a result exceeds the limit, the server returns a partial result marked `response_budget_limited`. Narrow the question, for example by adding filters, to get the remaining results.
-
-`resolve_values` returns up to 100 matching values. When a result reaches that number, the server marks it `possibly_truncated`. Use a more specific name to find the value you need.
-
-### Scope
-
-The MCP server covers inventory, policies, and issues. Reports are not available through the MCP server. To work with reports, use [Reports](../reports.md) in Evo.
-
 ## Troubleshooting
 
 ### Authorization page does not open
 
 Verify that your MCP client supports OAuth for remote Streamable HTTP servers. Check that the configured endpoint includes `/mcp`.
-
-### Tenant selection expired
-
-The authorization flow waits five minutes for you to select a Tenant. Reconnect Evo MCP in your MCP client to start the authorization flow again.
 
 ### Request returns HTTP 401
 
@@ -192,7 +183,7 @@ The access token is missing, expired, or invalid. Disconnect and reconnect Evo M
 
 ### Tool call returns permission_denied
 
-Your Tenant role does not include Evo access, or you no longer belong to the Tenant this connection is bound to. Ask your Tenant Admin to assign a role with Evo access, then reconnect. To connect to a different Tenant, disconnect Evo MCP and authorize again.
+Your Tenant role does not include Evo access. Ask your Tenant Admin to assign a role with Evo access, then reconnect Evo MCP in your MCP client.
 
 ### Write tools return unsupported_client
 
