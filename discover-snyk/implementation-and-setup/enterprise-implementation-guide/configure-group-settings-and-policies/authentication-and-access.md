@@ -9,7 +9,7 @@ nav_context: classic
 
 ## Set up SSO
 
-Configure SSO with an account that has Group administration permissions on a Snyk Enterprise plan. Snyk turns on the self-serve SSO option for your Group on request, so contact your Snyk account team or Snyk Support before you start. Without it, the **SSO** option is not available in your Group settings.
+Configure SSO with an account that has Group administration permissions on a Snyk Enterprise plan. Snyk turns on the self-serve SSO option for your Group on request, so contact your Snyk account team or Snyk Support before you start.
 
 {% stepper %}
 {% step %}
