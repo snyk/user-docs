@@ -13,7 +13,7 @@
 
 # https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
 
-* snyk/teams/monetization-adoption_adoption
+* snyk/monetization-adoption_adoption
 * @snyk/design-content_docs
 tools/api-docs-generator/* @snyk/platformeng_api
 .github/workflows/* @snyk/platformeng_api @snyk/design-content_docs
