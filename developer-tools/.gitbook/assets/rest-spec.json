@@ -24322,6 +24322,12 @@
             "nullable": true,
             "type": "boolean"
           },
+          "branch": {
+            "description": "The repository branch that this asset represents",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
           "default_branch_name": {
             "description": "Default branch name",
             "maxLength": 256,
@@ -24377,6 +24383,12 @@
             "nullable": true,
             "type": "string"
           },
+          "revision": {
+            "description": "Most recent revision for this repository asset; for git, the commit SHA",
+            "maxLength": 64,
+            "nullable": true,
+            "type": "string"
+          },
           "scm_id": {
             "description": "SCM-specific identifier (GitHub numeric ID, GitLab project ID, etc.)",
             "maxLength": 256,
@@ -24391,6 +24403,12 @@
           },
           "scm_project": {
             "description": "SCM project name",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "scm_source": {
+            "description": "SCM source, differentiating between providers and instances (e.g. github)",
             "maxLength": 256,
             "nullable": true,
             "type": "string"
