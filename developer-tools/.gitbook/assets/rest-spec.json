@@ -14344,6 +14344,7 @@
           },
           "test_id": {
             "description": "The ID of the test to generate a document for.",
+            "format": "uuid",
             "type": "string"
           }
         },
@@ -14365,6 +14366,10 @@
             "format": "date-time",
             "type": "string"
           },
+          "error": {
+            "description": "An error message to inform the customer of any issues that\nhappened while processing the job.",
+            "type": "string"
+          },
           "format": {
             "allOf": [
               {
@@ -14383,6 +14388,7 @@
           },
           "test_id": {
             "description": "The ID of the test to generate a document for.",
+            "format": "uuid",
             "type": "string"
           }
         },
