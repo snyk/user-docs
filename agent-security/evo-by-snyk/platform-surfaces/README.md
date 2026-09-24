@@ -11,4 +11,4 @@ Evo organizes the product into four main surfaces:
 * [Reports](reports.md): How your AI security posture changes over time.
 * [Evo chat](evo-chat.md): A conversational way to explore your data and take action.
 
-The [Evo MCP server](evo-mcp-server/) covers inventory, policies, and issues. The MCP server can help you explore your data and take action similar to the Evo chat.
+The [Evo MCP server](evo-mcp-server/README.md) covers inventory, policies, and issues. The MCP server can help you explore your data and take action similar to the Evo chat.
