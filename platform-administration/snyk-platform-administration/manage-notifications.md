@@ -135,17 +135,23 @@ To set the defaults for issue alert emails:
 * Check the **License violations** box to set the default for all Projects in this Organization to generate alert emails for new license issues or remediations.
 * If either the **Vulnerabilities** or **License violations** boxes are checked, indicate the severity of issues for which Snyk should send alert emails by selecting **All severities** or **Critical and high severity** from the drop-down Projects list.
 
+Select **Save Settings**.
+
 #### Organization defaults for weekly report emails
 
 Weekly report emails are notifications Snyk sends to provide a summary of the vulnerability status across all Projects and Organizations to which a user belongs.
 
 Select the **Email notifications** checkbox under **Weekly report** to set the default for Organization members to receive weekly summary emails.
 
+Select **Save Settings**.
+
 #### Organization defaults for usage alerts
 
 Usage alert emails are notifications Snyk sends to warn you when you are approaching usage limits.
 
 Set default usage alerts for your Organization. Select the **Approaching test limit** checkbox to ensure members receive usage alert emails by default.
+
+Select **Save Settings**.
 
 ## Change personal notification preferences
 
