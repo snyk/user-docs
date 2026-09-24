@@ -70,9 +70,11 @@ To delete a member from the Group:
 1. Click the trash icon next to the user.
 2. Click **Delete member** from the Group you are managing.
 
-The user no longer appears on the Group members page.
+Snyk removes the user from the Group and from every Organization in the Group, so they lose access to the Group, its Organizations, and their Projects. The user no longer appears on the Group members page.
 
-[ACTION REQUIRED: state whether deleting a Group member also removes that user from the Organizations in the Group, or leaves their Organization memberships in place. The page does not say, and this is the question the reader has at this step.]
+{% hint style="info" %}
+To delete a Group membership using the API, set `cascade=true`. Without it, the request fails with a `409` error while the user is still a member of an Organization in the Group.
+{% endhint %}
 
 ## Filter and sort views of Group members
 

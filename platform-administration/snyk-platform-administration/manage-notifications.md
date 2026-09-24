@@ -82,7 +82,7 @@ To set the defaults for issue alert emails:
 3. If you select the **Vulnerabilities** or **License** **Violations** checkboxes, indicate the issue severity for Snyk alert emails by selecting **All severities** or **Critical and high severity** from the drop-down list.
 4. To change the default settings for organizations, change the **Vulnerabilities**, **License** **Violations**, and **Severity** settings next to the Organization name. When you create new Organizations in this Group, these settings apply by default to any user who has not updated their personal notifications.
 
-[ACTION REQUIRED: state what confirms the change. This page does not say whether notification settings save automatically or require a save action, and no other page in the corpus states it.]
+The Group notifications page has no save button. Your changes take effect when you check or clear a box.
 
 #### Group defaults for weekly report emails
 
