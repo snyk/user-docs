@@ -60,7 +60,6 @@ The following classic items now live elsewhere in the new interface.
 | ------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | Organizations                         | Scope selector > **Organization** dropdown                  | Open the **Organization** dropdown, then select an Organization or **+ Create new Organization** |
 | Tenant / Group / Organization headers | Scope selector                                              | Use the three dropdowns from left to right                                                       |
-| Dashboard                             | **Analytics**                                               | Navigate to **Analytics** for the overview page, or to **Analytics** > **Reports** for Project and dependency detail |
 | Dependencies                          | **Analytics** > **Reports** > **Dependencies and licenses** | Navigate to **Analytics** > **Reports**, or press **⌘K** and enter `dependencies`                |
 | Ignore requests                       | **Issues** > **Ignore requests**                            | Navigate to **Issues**, then select the **Ignore requests** tab                                  |
 | Cloud                                 | **More from Snyk** > **Cloud**                              | Select **More from Snyk** at the bottom of the side menu, then select **Cloud**                  |
@@ -71,7 +70,7 @@ The following classic items now live elsewhere in the new interface.
 | Help                                  | Side menu                                                   | Click **Help** in the side menu                                                                  |
 
 {% hint style="info" %}
-The Organization **Dashboard** is not available in the new navigation. Snyk replaced it with the scope selector and the **Analytics** overview page, which is available only to Tenant users at the Tenant level. For Project, issue, and dependency detail, navigate to **Analytics** > **Reports**.
+The Organization **Dashboard** from the classic navigation has no equivalent in the new navigation.
 {% endhint %}
 
 New areas without a direct classic equivalent:
