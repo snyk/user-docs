@@ -52,4 +52,4 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
 
     <figure><img src="../../../../.gitbook/assets/tie-together-attributes-google-snyk.png" alt="Tie together attributes from Google to Snyk"><figcaption><p>Tie together attributes from Google to Snyk</p></figcaption></figure>
 
-The connection works when a user in your Google Workspace directory logs in through the direct URL at the top of step 3 of the Snyk SSO settings, or through the [generic SSO login](https://app.snyk.io/login/sso), and the email address and username Snyk records for that user match the values Google Workspace sends.
+The connection works when a user in your Google Workspace directory logs in through the direct URL at the top of **Step 3** on the Snyk SSO settings page, or through the [generic SSO login](https://app.snyk.io/login/sso), and the email address and username Snyk records for that user match the values Google Workspace sends.

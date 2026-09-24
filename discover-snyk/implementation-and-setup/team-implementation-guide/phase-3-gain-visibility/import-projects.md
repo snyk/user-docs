@@ -16,9 +16,9 @@ Depending on the integrations you have configured, and the language / package ma
 
 The best import route varies based on the languages and package managers in your tech stack.
 
-Here are some key points to determine the best starting point.
+Complete [Configure integrations](../phase-2-configure-your-organization/configure-integrations.md) before you import, and use an account with the **Add Project** permission for your Organization, such as Org Admin or Org Collaborator.
 
-Complete [Configure integrations](../phase-2-configure-your-organization/configure-integrations.md) before you import, and use an account with permissions to edit and view the integrations for your Organization.
+Here are some key points to determine the best starting point.
 
 ## Getting started with Snyk
 

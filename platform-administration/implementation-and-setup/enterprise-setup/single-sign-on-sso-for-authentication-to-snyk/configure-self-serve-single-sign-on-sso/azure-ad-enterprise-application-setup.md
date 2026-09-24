@@ -61,7 +61,7 @@ You need the Group Admin role on a Snyk Enterprise plan, self-serve SSO turned o
 
     <figure><img src="../../../../.gitbook/assets/profile-attributes-section.png" alt="Profile attributes section"><figcaption><p>Profile attributes section</p></figcaption></figure>
 
-The connection works when a user in your Entra ID directory logs in through the direct URL at the top of step 3 of the Snyk SSO settings, or through the [generic SSO login](https://app.snyk.io/login/sso), and the name, email address, and role Snyk records for that user match the values Entra ID sends.
+The connection works when a user in your Entra ID directory logs in through the direct URL at the top of **Step 3** on the Snyk SSO settings page, or through the [generic SSO login](https://app.snyk.io/login/sso), the name and email address Snyk records for that user match the values Entra ID sends, and the user has the role you chose for new users.
 
 If you wish to add signature verification of the incoming Snyk request:
 

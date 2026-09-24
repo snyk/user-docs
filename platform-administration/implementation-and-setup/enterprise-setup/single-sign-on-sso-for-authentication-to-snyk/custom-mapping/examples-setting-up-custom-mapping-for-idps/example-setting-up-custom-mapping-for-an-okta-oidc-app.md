@@ -9,7 +9,7 @@ nav_context: classic
 
 Follow these steps to configure an integration for an Okta OIDC application.
 
-You need permissions in Okta to create app integrations and to edit the profile editor, and a Snyk contact who can turn on custom mapping for your Group. Complete the SSO information worksheet for Okta before you start. Snyk turns on custom mapping only after you finish the setup steps, so contact your Snyk account team or [Snyk Support](https://support.snyk.io) when you have finished. See [Custom mapping](../) for the requirements and the role assertion format.
+You need permissions in Okta to create app integrations and to edit user profiles in the **Profile Editor**. Complete the [SSO information worksheet](../../set-up-snyk-single-sign-on-sso.md#resources-for-sso-setup) for Okta before you start. Snyk turns on custom mapping only after you finish the setup steps, so contact your Snyk account team or [Snyk Support](https://support.snyk.io) when you have finished. See [Custom mapping](../) for the requirements and the role assertion format.
 
 ## Create an Okta OIDC app
 
@@ -55,4 +55,4 @@ If you wish to set up custom mapping, move on to the next section of this guide.
     <figure><img src="../../../../../.gitbook/assets/adding-snyk-roles.png" alt="Adding Snyk roles"><figcaption><p>Adding Snyk roles</p></figcaption></figure>
 4. Repeat the preceding steps for all your applicable Okta groups to assign the org name and role combination to each user within each configured group.
 
-Custom mapping is not active until Snyk turns it on for your Group. After Snyk confirms it is active, the mapping works when a user in a configured Okta group logs in and receives the role named in their `roles` attribute, in the Organization named in the assertion.
+Custom mapping is not active until Snyk turns it on for your Group. After Snyk confirms it is active, the mapping works when a user in a configured Okta group logs in and receives the roles in their `roles` attribute, at the scope and target each assertion names.

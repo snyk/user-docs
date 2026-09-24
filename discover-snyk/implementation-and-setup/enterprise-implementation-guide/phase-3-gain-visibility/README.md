@@ -9,7 +9,7 @@ nav_context: classic
 
 Gaining visibility over your Organization security begins with importing Projects. This process allows Snyk to monitor your code, dependencies, containers, and infrastructure.
 
-Complete [Create your Snyk structure](../create-your-snyk-structure.md) before you start this phase. You also need an Organization to import into and an account with permissions to edit and view the integrations for that Organization.
+Complete [Create your Snyk structure](../create-your-snyk-structure.md) before you start this phase. You also need an Organization to import into and an account with the **Add Project** permission for that Organization, such as Org Admin or Org Collaborator.
 
 There are several ways you can import Projects, depending on your tech stack and package managers:
 
@@ -60,7 +60,7 @@ The Snyk CLI provides granular scanning and is typically implemented in build sc
    * Open Source: `snyk test --all-projects --org=org-id`
 4. Review results locally or in the Snyk web UI.
 
-The scan succeeds when the command returns its results in the terminal.
+The scan succeeds when the command returns its results in the terminal. If you also run `snyk monitor`, the Project appears in the **Projects** listing.
 
 ## Import Projects using Snyk API
 
@@ -74,7 +74,7 @@ Use the API to trigger scans and handle results programmatically across a large 
 2. Call the Snyk API in your pipelines.
 3. Handle the results programmatically to trigger downstream actions.
 
-[ACTION REQUIRED: state what confirms a successful API import. This page does not name an endpoint or a response, and no other page states the success signal for this path, so it cannot be sourced from the corpus.]
+The import succeeds when the [Import targets](https://docs.snyk.io/developer-tools/snyk-api/reference/import-projects-v1) call returns `201` with a URL to poll, and polling **Get import job details** returns `success: true` for each manifest processed.
 
 ## Add Projects tags and attributes
 

@@ -62,4 +62,4 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
     <figure><img src="../../../../.gitbook/assets/enable-assign-application-users.png" alt="Enable and assign the application to users"><figcaption><p>Enable and assign the application to users</p></figcaption></figure>
 15. Verify you can log in, either with the direct URL at the top of **Step 3 Snyk SSO settings** (not shown in the image) or by going to the [generic SSO login](https://app.snyk.io/login/sso).
 
-The connection works when a user assigned to the application logs in through the direct URL at the top of the Snyk SSO settings **Step 3**, or through the [generic SSO login](https://app.snyk.io/login/sso), and the name, email address, and role Snyk records for that user match the values Ping Identity sends.
+The connection works when a user assigned to the application logs in through the direct URL at the top of **Step 3** on the Snyk SSO settings page, or through the [generic SSO login](https://app.snyk.io/login/sso), the name and email address Snyk records for that user match the values Ping Identity sends, and the user has the role you chose for new users.

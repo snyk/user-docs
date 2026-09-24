@@ -21,7 +21,7 @@ To enable a feature using Snyk Preview:
 2. Select **Enable feature preview** to enable or disable a feature.
 3. Click **Save changes**.
 
-[ACTION REQUIRED: state what the reader sees after saving — a confirmation message, the setting staying on, or the feature becoming available immediately. Neither this page nor any other page in the corpus states it.]
+After you save, the feature is on for the Organization or, if you turned it on at the Group level, for every Organization in the Group.
 
 <figure><img src="../.gitbook/assets/org_settings_snyk_preview.png" alt="Snyk Preview"><figcaption><p>Snyk Preview</p></figcaption></figure>
 

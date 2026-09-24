@@ -68,7 +68,7 @@ Use the following filters to refine your asset groups:
 
 ## **Creating a policy**
 
-Create policies with an account that has Group administration permissions. Asset policies also require Snyk Essentials.
+This procedure creates an asset policy, which requires Snyk Essentials and the **Group Admin** role, or a custom role with the **Create policies** permission.
 
 To create a policy:
 
