@@ -171,7 +171,9 @@ To edit asset class, select the **Class** value in the **Overview** tab to open 
 
 #### Image content tab
 
-The Image content tab shows the provenance attestations Snyk found for the image. A provenance attestation is a signed record, produced by your build system, of where an image came from — the source repository, the commit, and how it was built. Snyk reads these attestations during a scan and displays them alongside the image.
+The Image content tab shows the provenance attestations Snyk found for the image. A provenance attestation is a signed record, produced by your build system, of where an image came from — the source repository, the commit, and how it was built. Snyk reads these attestations from BuildKit-style OCI attestations during a scan and displays them alongside the image.
+
+Provenance attestations provide compliance evidence that your images were built through sanctioned pipelines, and help you route remediation to the team that owns the build. By surfacing the source repository and commit, you can trace any vulnerability back to the code change that introduced it and assign remediation to the responsible team.
 
 An image can have more than one attestation; the most recent is marked **Latest**. Each card shows:
 
