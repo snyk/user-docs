@@ -1,8 +1,8 @@
 ---
-description: >-
-  How to configure Agentic Development Security and install it on one machine
-  or across your company
 nav_context: classic
+description: >-
+  How to configure Agentic Development Security and install it on one machine or
+  across your company
 ---
 
 # Activation and deployment
@@ -33,9 +33,13 @@ Under **Products**, select the products to roll out:
 
 By default, each product stays on the latest version and updates automatically.
 
+After you select the products, click **Save & Publish**. Publishing writes the configuration manifest that the installer reads when it runs.
+
 ## Install
 
-Follow the on-screen instructions to install on a local machine or through your MDM tool.
+The manifest is the published record of which products your Tenant has selected. The installer fetches it each time it runs. Follow the on-screen instructions to install on a local machine or through your MDM tool.
+
+Before you install, ensure that you have published the configuration. If you changed the product selection since then, click **Save & Publish** again before you install.
 
 ### What the installer does
 
@@ -61,17 +65,15 @@ Recommended for MDM-managed deployments.
 The ADS installer reconciles each machine with the products you select in ADS settings. Unselect a product, and the installer removes it on the next run, whether you trigger it manually or your MDM does.
 
 1. In ADS settings, unselect the product.
-2. Run the installer again. There is no separate apply step: re-running the install is what applies the change.
-   * On a single machine: run the install command shown in **Settings** page in Evo
+2. Click **Save & Publish**, then run the installer again. Publishing updates the manifest, and the next installer run applies it.
+   * On a single machine: run the install command shown on the **Settings** page in Evo.
    * Across a fleet: re-push the installer through your MDM tool, using the same command or package you deploy with today.
    * If you have a scheduled installer run, you can wait for the next scheduled run.
 
-This is the recommended path for MDM deployments; it requires no change to your MDM scripts or policies.
+This path requires no change to your MDM scripts or policies.
 
 {% hint style="warning" %}
-The installer removes any unselected products on the next run, including a run you start for an unrelated reason.
-
-Disabling a product stops it from running but leaves its files on the machine. Use `uninstall` to remove the files.
+Unselecting a product stops it from being installed on new machines and stops it from running on existing machines. The product files stay on the machine. Use `uninstall` to remove them.
 {% endhint %}
 
 ### Removing an ADS product from a machine
@@ -79,7 +81,7 @@ Disabling a product stops it from running but leaves its files on the machine. U
 Use the `uninstall` command when you are working on a single machine rather than a fleet.
 
 {% hint style="info" %}
-The `uninstall` command lives in the ADS installer, which is not left on the machine if you used the install command on the **Settings** page. The install command on the **Settings** page downloads the installer to a temporary location and removes it once the install finishes, and the installer is not copied into the ADS install directory. The ADS installer is needed to use the `uninstall` command
+The `uninstall` command lives in the ADS installer, which is not left on the machine if you used the install command on the **Settings** page. The install command on the **Settings** page downloads the installer to a temporary location and removes it once the install finishes, and the installer is not copied into the ADS install directory. The ADS installer is needed to use the `uninstall` command.
 {% endhint %}
 
 Run the installer with `uninstall` and pass a component flag to specify what to remove:
@@ -88,9 +90,9 @@ Run the installer with `uninstall` and pass a component flag to specify what to 
 <PATH_TO_INSTALLER> uninstall --tenant-id <TENANT_ID> --push-key <PUSH_KEY> --<FLAG>
 ```
 
-Replace \<PATH\_TO\_INSTALLER> with the install command from the **Settings** page. It contains the correct installer binary for your operating system and architecture. **Remove** the step at the end of the command that deletes the installer. For Mac OS/ Linux remove `&& rm -f /tmp/snyk-ads-installer-macos-arm64` (this command removal applies to Mac OS/ Linux only)
+Replace \<PATH\_TO\_INSTALLER> with the install command from the **Settings** page. It contains the correct installer binary for your operating system and architecture. Remove the step at the end of the command that deletes the installer. On macOS or Linux, remove `&& rm -f /tmp/snyk-ads-installer-macos-arm64`.
 
-Replace `<FLAG>` with `--scan`, `--guard`, or `--studio` as shown in the table below.
+Replace `<FLAG>` with `--scan`, `--guard`, or `--studio` as shown in the following table.
 
 | ADS product                                | Flag       |
 | ------------------------------------------ | ---------- |
@@ -98,8 +100,6 @@ Replace `<FLAG>` with `--scan`, `--guard`, or `--studio` as shown in the table b
 | **Agent Behavior Governance**              | `--guard`  |
 | **Snyk Studio** (Trusted Output Assurance) | `--studio` |
 
-Omitting the component flags removes all three ADS products.
-
-`uninstall` with no `--scan`, `--guard`, or `--studio` flag removes Machines, Agent Behavior Governance, and Snyk Studio.
+If you omit the component flag, `uninstall` removes all three ADS products: Machines, Agent Behavior Governance, and Snyk Studio.
 
 `sudo` is not required.
