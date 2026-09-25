@@ -33,8 +33,8 @@ The top scope selector replaces the classic sidebar headers for **Tenant**, **Gr
 
 ### Tenant scope
 
-* **Security and access:** Members. View and manage all users in the Tenant. Assign Tenant-level roles: **Tenant Admin**, **Tenant Viewer**, or **Tenant Member**.
-* **Plan and billing:** Your plan and billing, including contract details and licensed capabilities (Enterprise plans only).
+* **Security and access:** Members, Capability Access. View and manage all users in the Tenant, and control which capabilities are available across the Tenant. Assign Tenant-level roles: **Tenant Admin**, **Tenant Viewer**, or **Tenant Member**.
+* **Plan and billing:** Your Plan, Credit breakdown, including contract details, licensed capabilities, and credit usage (Enterprise plans only).
 
 ### Group scope
 
@@ -57,7 +57,7 @@ The top scope selector replaces the classic sidebar headers for **Tenant**, **Gr
 The following classic items now live elsewhere in the new interface.
 
 | Classic navigation                    | New location                                                | How to get there                                                                                 |
-| ------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| ------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | Organizations                         | Scope selector > **Organization** dropdown                  | Open the **Organization** dropdown, then select an Organization or **+ Create new Organization** |
 | Tenant / Group / Organization headers | Scope selector                                              | Use the three dropdowns from left to right                                                       |
 | Dependencies                          | **Analytics** > **Reports** > **Dependencies and licenses** | Navigate to **Analytics** > **Reports**, or press **⌘K** and enter `dependencies`                |
