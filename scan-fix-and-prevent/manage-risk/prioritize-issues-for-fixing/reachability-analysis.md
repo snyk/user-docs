@@ -82,7 +82,7 @@ Reachability analysis is supported in the following integrations:
 | [Bitbucket Server](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/bitbucket-data-center-server)                               | General Availability |
 | [GitLab](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/gitlab)                                                               | General Availability |
 | [Azure Repos](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/azure-repositories-tfs)                                          | General Availability |
-| [Brokered connections](https://docs.snyk.io/platform-administrationsnyk-broker/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests)          | General Availability |
+| [Brokered connections](https://docs.snyk.io/platform-administration/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests)          | General Availability |
 | [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli)                                                                                                                | Early Access         |
 | [AWS CodePipeline integration with CodeBuild](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage) | Early Access         |
 | [Azure Pipelines](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/azure-pipelines-integration)                                                          | Early Access         |
