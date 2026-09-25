@@ -9,6 +9,8 @@ nav_context: classic
 
 ## Set up SSO
 
+Configure SSO with an account that has Group administration permissions on a Snyk Enterprise plan. Snyk turns on the self-serve SSO option for your Group on request, so contact your Snyk account team or Snyk Support before you start.
+
 {% stepper %}
 {% step %}
 #### Configure SSO settings at the Group level
@@ -60,6 +62,8 @@ If you need to define specific permissions before users first log in, use the Sn
 * Control the user footprint from day one.
 {% endstep %}
 {% endstepper %}
+
+SSO is working when a user from your directory logs in through the direct URL in step 3 of the Group **SSO** settings page, and the name, email address, and role Snyk records for that user match the values your IdP sends.
 
 ## Set pre-defined user roles
 

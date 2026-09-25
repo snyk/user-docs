@@ -68,6 +68,8 @@ Use the following filters to refine your asset groups:
 
 ## **Creating a policy**
 
+This procedure creates an asset policy, which requires Snyk Essentials and the **Group Admin** role, or a custom role with the **Create policies** permission.
+
 To create a policy:
 
 1. In the Snyk web UI, navigate to **Policies** > **New policy**.
@@ -77,6 +79,8 @@ To create a policy:
    * Trigger an action: Apply a change or notification to filtered assets.
    * Logic node: Combine multiple filters before triggering an action.
 5. Click **Save**.
+
+The new policy appears in the policy list and runs automatically within three hours. To apply it immediately, click **Run** in the policy view.
 
 ## **Common use cases**
 

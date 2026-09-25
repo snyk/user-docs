@@ -24,8 +24,10 @@ Any step on the Snyk side in setting up the Enterprise application must be perfo
     **roles**: `Group Names`\\
 
     <figure><img src="../../../../../.gitbook/assets/add-roles-array.png" alt="Add roles array"><figcaption><p>Add roles array</p></figcaption></figure>
-3.  In the left menu, select **Identities/Groups** and add the Snyk Groups needed following the syntax explained on the [Cusom Mapping Option](../) page.
+3.  In the left menu, select **Identities/Groups** and add the Snyk Groups needed following the syntax explained on the [Custom mapping](../) page.
 
     <figure><img src="../../../../../.gitbook/assets/adding-example-group.png" alt="Adding an example Group"><figcaption><p>Adding an example Group</p></figcaption></figure>
-4. If you so not select a **Population** at the bottom of the previous screen, ensure that you assign the Group to the user(s) who should be part of the role assignment in Snyk. If you select a **Population**, all users in that population will inherit the permissions of the assigned Snyk role.
-5. To finalize the process, reach out to your Snyk contact to validate that the SAML payload contains the role array and to enable the custom mapping feature.
+4. If you do not select a **Population** at the bottom of the previous screen, assign the Group to the users who take part in the role assignment in Snyk. If you select a **Population**, all users in that population inherit the permissions of the assigned Snyk role.
+5. To finalize the process, ask your Snyk contact to validate that the SAML payload contains the role array and to turn on the custom mapping feature.
+
+Custom mapping is not active until Snyk turns it on for your Group. After Snyk confirms it is active, the mapping works when a user in a mapped Ping Identity group logs in and receives the Snyk role named in that group, at the scope and target the assertion names.

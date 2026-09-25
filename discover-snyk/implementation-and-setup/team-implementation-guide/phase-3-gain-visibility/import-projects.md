@@ -16,6 +16,8 @@ Depending on the integrations you have configured, and the language / package ma
 
 The best import route varies based on the languages and package managers in your tech stack.
 
+Complete [Configure integrations](../phase-2-configure-your-organization/configure-integrations.md) before you import, and use an account with the **Add Project** permission for your Organization, such as Org Admin or Org Collaborator.
+
 Here are some key points to determine the best starting point.
 
 ## Getting started with Snyk
@@ -40,6 +42,8 @@ For a small number of applications, typically under a hundred:
    2. Enable them once a steady state is reached and blocking is desired.
 3. From the **Projects** page, add the Projects.
 4. Monitor results in Git code repositories.
+
+The import succeeds when the repositories you added appear as Projects on the **Projects** page and Snyk reports their issues.
 
 For hundreds or thousands of repositories:
 
@@ -76,5 +80,7 @@ To use the Snyk CLI:
        Replace `[org-id]` with the ID of your Organization.
    * For Container and Infrastructure as Code scans, see [Container](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/scan-container-images) and [Infrastructure as Code](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-iac), as this will vary based on the type being scanned.
 5. Review results either locally when running `snyk test`, or on the Snyk Web UI when using `monitor` or report.
+
+The CLI is working when `snyk test` returns its results in the terminal and, after `snyk monitor`, the Project appears on the **Projects** page.
 
 For demonstrations of various pipeline integrations, see [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples).

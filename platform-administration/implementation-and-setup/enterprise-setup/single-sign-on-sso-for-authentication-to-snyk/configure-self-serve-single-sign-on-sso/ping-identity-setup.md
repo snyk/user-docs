@@ -9,6 +9,8 @@ nav_context: classic
 
 This page explains how to set up a Ping Identity Application and connect it to Snyk to facilitate SSO.
 
+You need the Group Admin role on a Snyk Enterprise plan, self-serve SSO turned on for your Group, and permissions in Ping Identity to create an application. To turn on self-serve SSO, contact your Snyk account team or [Snyk Support](https://support.snyk.io). Self-serve SSO does not support [custom role mapping](../custom-mapping/).
+
 Before configuring your Ping Identity Application to use SSO with Snyk, obtain an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk. Then follow these steps:
 
 1.  In the left menu, select your **Group**, then **Settings**.
@@ -55,7 +57,9 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 13. Change the profile attributes to the attribute names you entered in Ping Identity then click **Save changes.**\\
 
     <figure><img src="../../../../.gitbook/assets/step-snyk-sso-settings.png" alt="Step 3 Snyk SSO settings"><figcaption><p>Step 3 Snyk SSO settings</p></figcaption></figure>
-14. Verify you can log in, either with the direct URL at the top of **Step 3 Snyk SSO settings** (not shown in the image) or by going to the [generic SSO login](https://app.snyk.io/login/sso).
-15. As a final step, enable the application and assign it to users.
+14. Enable the application and assign it to users.
 
     <figure><img src="../../../../.gitbook/assets/enable-assign-application-users.png" alt="Enable and assign the application to users"><figcaption><p>Enable and assign the application to users</p></figcaption></figure>
+15. Verify you can log in, either with the direct URL at the top of **Step 3 Snyk SSO settings** (not shown in the image) or by going to the [generic SSO login](https://app.snyk.io/login/sso).
+
+The connection works when a user assigned to the application logs in through the direct URL at the top of **Step 3** on the Snyk SSO settings page, or through the [generic SSO login](https://app.snyk.io/login/sso), the name and email address Snyk records for that user match the values Ping Identity sends, and the user has the role you chose for new users.
