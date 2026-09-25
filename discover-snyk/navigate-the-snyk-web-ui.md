@@ -66,7 +66,7 @@ The following classic items now live elsewhere in the new interface.
 | Custom rules                          | **Settings** > **Snyk Code** > **Rule Extensions**          | Set the scope selector to a Group, then navigate to **Settings** > **Snyk Code**. Snyk manages Rule Extensions at the Group level |
 | Integrations                          | **Settings** > **Integrations**                             | Navigate to **Settings** > **Integrations**                                                      |
 | Members                               | **Settings** > **Security and access** > **Members**        | Navigate to **Settings** > **Security and access** > **Members**                                 |
-| Product updates                       | Side menu                                                   | Click **Product updates** in the Side menu                                                       |
+| Product updates                       | Side menu                                                   | Click **Product updates** in the side menu                                                       |
 | Help                                  | Side menu                                                   | Click **Help** in the side menu                                                                  |
 
 {% hint style="info" %}
