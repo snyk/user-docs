@@ -259,6 +259,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--target-name=<TARGET_NAME>`: [`code test`](commands/code-test.md)
 
+`--html`: [`code test`](commands/code-test.md)
+
+`--html-file-output=<OUTPUT_FILE_PATH>`: [`code test`](commands/code-test.md)
+
 ## `snyk config environment` command option
 
 `--no-check` [snyk config environment](commands/config-environment.md)
