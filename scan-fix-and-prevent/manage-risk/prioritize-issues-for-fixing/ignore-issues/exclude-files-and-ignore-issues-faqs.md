@@ -24,7 +24,6 @@ To ignore a Snyk Code finding, use one of the following supported methods:
 
 * Ignore the finding on its issue card in the Snyk Web UI. This is the method to use for a single finding. For details, see [Ignore issues in the Snyk Web UI](./#ignore-issues-in-the-snyk-web-ui).
 * Create the ignore with the `snyk ignore create` command. This command is an Early Access feature of the Ignore Approval Workflow. For details, visit [Ignore create](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/ignore-create).
-* Ignore findings in bulk with a Snyk Code Security policy at the Group level, matching on CWE, Snyk Code rule ID, or severity. This method is available to Enterprise customers. For details, see [Manage ignores at the Group level through Snyk Code Security policies](consistent-ignores-for-snyk-code/#manage-ignores-at-the-group-level-through-snyk-code-security-policies).
 
 With [Consistent Ignores for Snyk Code](consistent-ignores-for-snyk-code/), these ignores also apply when you run `snyk code test` in the CLI, in your IDE, and in pull request checks. To display the ignored findings, run `snyk code test --include-ignores`.
 
@@ -52,7 +51,7 @@ The `snyk-to-html` tool displays all issues for Code scans, whether the issues a
 
 No. The `ignore` block in the `.snyk` file does not accept a Snyk Code rule ID, and there is no `.snyk` syntax for ignoring a Code finding by rule ID and file path. The `ignore` block applies to Snyk Open Source, Snyk Container, and Snyk IaC issues only.
 
-To ignore Snyk Code findings by rule ID, use a Snyk Code Security policy at the Group level. You can find the rule ID in the SARIF output of `snyk code test --sarif`. For details, see [Manage ignores at the Group level through Snyk Code Security policies](consistent-ignores-for-snyk-code/#manage-ignores-at-the-group-level-through-snyk-code-security-policies).
+To ignore a specific Snyk Code finding, use the Snyk Web UI or the `snyk ignore create` command. For details, see [How do I ignore issues and vulnerabilities in Code (SAST) scans?](#how-do-i-ignore-issues-and-vulnerabilities-in-code-sast-scans)
 
 ### How do I avoid scanning certain files for Container scans?
 
