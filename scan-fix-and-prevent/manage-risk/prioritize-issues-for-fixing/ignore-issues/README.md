@@ -148,7 +148,7 @@ To ignore a Snyk Code finding, use one of the following methods:
 
 <table><thead><tr><th width="180">Method</th><th>When to use it</th></tr></thead><tbody><tr><td>Snyk Web UI</td><td>Ignore a single finding from its issue card. For details, see <a href="./#ignore-issues-in-the-snyk-web-ui">Ignore issues in the Snyk Web UI</a>.</td></tr><tr><td><code>snyk ignore create</code></td><td>Ignore a finding from the command line. This command is an Early Access feature of the Ignore Approval Workflow. For details, visit <a href="https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/ignore-create">Ignore create</a>.</td></tr></tbody></table>
 
-With [Consistent Ignores for Snyk Code](consistent-ignores-for-snyk-code/), these ignores apply everywhere Snyk Code runs: the Snyk Web UI, the CLI, your IDE, and pull request checks.
+With [Consistent Ignores for Snyk Code](consistent-ignores-for-snyk-code/), these ignores apply everywhere Snyk Code runs: the Snyk Web UI, the CLI, the IDE, and pull request checks. Ignores created with `snyk ignore create` apply only to CLI and IDE test runs; they do not apply to SCM (stateful) tests run through the Import API, and they do not support CLI Upload projects. A policy scoped by Project attributes does not apply in the CLI or IDE when no Snyk Project is available. To find the Snyk Code rule ID to use in a policy, run `snyk code test --sarif`.
 
 ### View ignored Snyk Code findings
 
