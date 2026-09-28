@@ -7,7 +7,7 @@ nav_context: classic
 
 # Consistent Ignores for Snyk Code
 
-Snyk Code Consistent Ignores helps your teams focus on important tasks by filtering out distractions. It ensures that once an ignore is created, it is consistently respected regardless of how and where the test is run and what branch is being tested.
+Snyk Code Consistent Ignores helps your teams focus on important tasks by filtering out distractions. After you ignore a finding, Snyk applies the ignore to that finding across the repository: in every branch and integration, in the Snyk CLI and Snyk IDE plugins, and in pull request checks.
 
 By filtering out false positives, inapplicable threats, and accepted risks, your security teams can prioritize fixing real problems, and developers can code without interruptions.
 
@@ -18,6 +18,22 @@ Enable Snyk Code Consistent Ignores for your Group or Organization in the Snyk W
 ## Disable Snyk Code Consistent Ignores
 
 Any ignores created or converted with the feature enabled will not be automatically converted back to Project-based ignores. You can recreate them manually after disabling the feature.
+
+## How Consistent Ignores match findings
+
+Snyk attaches a Consistent Ignore to the repository-level identifier of a finding (`snyk/asset/finding/v1`), not to a file path and line number.
+
+Each time Snyk Code tests the repository, Snyk matches the results to the findings it already tracks for that repository. This applies to tests from every branch, the Snyk CLI, Snyk IDE plugins, and pull request checks. When code moves or changes, Snyk matches the finding to its existing identifier where it can, so the ignore continues to apply.
+
+Deleting a branch Project or a target does not delete Consistent Ignores and does not reopen ignored findings. The ignores remain in place for the repository.
+
+## If an ignored finding appears as open again
+
+In some cases, Snyk cannot match a finding to the identifier that its ignore is attached to, and the finding appears as **Open** again. The original ignore is not deleted.
+
+1. [Ignore the finding again](./#create-an-ignore) from its issue card.
+2. [Retest the Project](../../../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/#retesting-code-repository) to update the issue status.
+3. If ignored findings reappear repeatedly, contact Snyk Support with the Organization, the Project, and the URLs of the affected issues.
 
 ## User roles
 
