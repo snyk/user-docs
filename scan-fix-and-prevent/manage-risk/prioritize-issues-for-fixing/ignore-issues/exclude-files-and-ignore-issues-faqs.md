@@ -20,15 +20,11 @@ This document collects questions the support team receives frequenty and provide
 
 You cannot use the `.snyk` file to ignore a specific Snyk Code finding. For Snyk Code, the `.snyk` file excludes files and directories from the scan; it does not suppress individual findings.
 
-To ignore a Snyk Code finding, use one of the following supported methods:
+To ignore a Snyk Code finding, use one of the methods in [How to ignore a Snyk Code finding](./#how-to-ignore-a-snyk-code-finding).
 
-* Ignore the finding on its issue card in the Snyk Web UI. This is the method to use for a single finding. For details, see [Ignore issues in the Snyk Web UI](./#ignore-issues-in-the-snyk-web-ui).
-* Create the ignore with the `snyk ignore create` command. This command is an Early Access feature of the Ignore Approval Workflow. For details, visit [Ignore create](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/ignore-create).
-
-With [Consistent Ignores for Snyk Code](consistent-ignores-for-snyk-code/), these ignores also apply when you run `snyk code test` in the CLI, in your IDE, and in pull request checks. To display the ignored findings, run `snyk code test --include-ignores`.
+With [Consistent Ignores for Snyk Code](consistent-ignores-for-snyk-code/), ignores created with `snyk ignore create` apply to CLI and IDE test runs. They do not apply to SCM (stateful) tests run through the Import API, and they do not support CLI Upload projects. A policy scoped by Project attributes does not apply in the CLI or IDE when no Snyk Project is available. To display ignored findings, run `snyk code test --include-ignores`.
 
 The `snyk-to-html` tool displays all issues for Code scans, whether the issues are ignored or not.
-
 ### How do I avoid scanning certain files for Open Source scans?
 
 * Use the --`exclude` option when scanning with the CLI to omit scanning directories or files but not paths. This option excludes all directories or all files with specified names. For details, see [the --exclude option](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/test#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than) in the CLI `test` command help.
