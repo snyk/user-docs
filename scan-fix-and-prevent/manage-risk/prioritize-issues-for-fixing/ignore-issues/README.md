@@ -152,7 +152,7 @@ With [Consistent Ignores for Snyk Code](consistent-ignores-for-snyk-code/), thes
 
 ### View ignored Snyk Code findings
 
-The CLI hides ignored findings by default. To display them, run `snyk code test --include-ignores`. The ignore metadata is available in the `suppressions` module of the SARIF output. For details, see [Consistent Ignores for Snyk Code CLI](consistent-ignores-for-snyk-code/snyk-cli.md).
+With Consistent Ignores for Snyk Code enabled and the correct Organization selected, the CLI hides ignored findings by default. To display them, run `snyk code test --include-ignores`. The ignore metadata is available in the `suppressions` module of the SARIF output. For details, see [Consistent Ignores for Snyk Code CLI](consistent-ignores-for-snyk-code/snyk-cli.md).
 
 ### How Snyk Code matches ignored findings
 
