@@ -18,10 +18,13 @@ This document collects questions the support team receives frequenty and provide
 
 ### How do I ignore issues and vulnerabilities in Code (SAST) scans?
 
-* To ignore a code vulnerability, import the Project into the Snyk UI, and use the ignore button.
-* You cannot use the `.snyk` file to ignore issues in Code scans.
-* The `snyk-to-html` tool will display all issues for Code scans whether the issues are ignored or not.
+You cannot use the `.snyk` file to ignore a specific Snyk Code finding. For Snyk Code, the `.snyk` file excludes files and directories from the scan; it does not suppress individual findings.
 
+To ignore a Snyk Code finding, use one of the methods in [How to ignore a Snyk Code finding](./#how-to-ignore-a-snyk-code-finding).
+
+With [Consistent Ignores for Snyk Code](consistent-ignores-for-snyk-code/), ignores created with `snyk ignore create` apply to CLI and IDE test runs. They do not apply to SCM (stateful) tests run through the Import API, and they do not support CLI Upload projects. A policy scoped by Project attributes does not apply in the CLI or IDE when no Snyk Project is available. To display ignored findings, run `snyk code test --include-ignores`.
+
+The `snyk-to-html` tool displays all issues for Code scans, whether the issues are ignored or not.
 ### How do I avoid scanning certain files for Open Source scans?
 
 * Use the --`exclude` option when scanning with the CLI to omit scanning directories or files but not paths. This option excludes all directories or all files with specified names. For details, see [the --exclude option](https://docs.snyk.io/developer-tools/snyk-cli/commands/test#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than) in the CLI `test` command help.
@@ -39,6 +42,12 @@ This document collects questions the support team receives frequenty and provide
 * The Exclude Folders option in the import windows in the Web UI does not apply for Code scans.
 * The `.snyk` file does not apply for excluding files and directories from IDE scanning of Code.
 * For Code and Container scans only., you can use exclusion globs in API import, including an import with the `snyk-api-import` tool. This exclusion works the same way as an SCM integration exclusion.
+
+### Can I ignore a Snyk Code finding by rule ID in the `.snyk` file?
+
+No. The `ignore` block in the `.snyk` file does not accept a Snyk Code rule ID, and there is no `.snyk` syntax for ignoring a Code finding by rule ID and file path. The `ignore` block applies to Snyk Open Source, Snyk Container, and Snyk IaC issues only.
+
+To ignore a specific Snyk Code finding, use the Snyk Web UI or the `snyk ignore create` command. For details, see [How do I ignore issues and vulnerabilities in Code (SAST) scans?](#how-do-i-ignore-issues-and-vulnerabilities-in-code-sast-scans)
 
 ### How do I avoid scanning certain files for Container scans?
 
