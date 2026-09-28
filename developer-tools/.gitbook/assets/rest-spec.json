@@ -1297,6 +1297,19 @@
           "type": "string"
         }
       },
+      "AccountTypeFilter": {
+        "description": "Filter the response by the account type of the member. Defaults to \"user\" when omitted.",
+        "in": "query",
+        "name": "account_type",
+        "schema": {
+          "default": "user",
+          "enum": [
+            "user",
+            "service"
+          ],
+          "type": "string"
+        }
+      },
       "AggregateGroupValues": {
         "description": "Per-field aggregate function override for meta fields.\nAll fields default to `last` when not specified.\n`max`/`min` compute the SQL MAX/MIN across all assets in the group (scalar fields only).\n`first`/`last` returns the value from the single asset with the earliest/latest\nupdated_at in the group (all field types).\n`sum` computes the total across all assets (numeric fields, issues, labels, tags).\n",
         "explode": true,
@@ -117774,6 +117787,9 @@
           },
           {
             "$ref": "#/components/parameters/RoleFilter"
+          },
+          {
+            "$ref": "#/components/parameters/AccountTypeFilter"
           }
         ],
         "responses": {
