@@ -60,6 +60,7 @@ This table details the Tenant-level permissions that apply to each pre-defined r
 |                                     | Tenant Admin         | Tenant Viewer        | Tenant Member        |
 | ----------------------------------- | -------------------- | -------------------- | -------------------- |
 | View Tenant                         | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| Download Packages Through Snyk's Supply Chain Registry | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
 | Edit Tenant                         | :heavy\_check\_mark: |                      |                      |
 | Access Evo Platform                 | :heavy\_check\_mark: |                      |                      |
 | List Group                          | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
@@ -77,3 +78,7 @@ This table details the Tenant-level permissions that apply to each pre-defined r
 | View Support Community Cases        | :heavy\_check\_mark: |                      |                      |
 | View Snyk Learn Learning Programs   | :heavy\_check\_mark: |                      |                      |
 | Modify Snyk Learn Learning Programs | :heavy\_check\_mark: |                      |                      |
+
+The **Download Packages Through Snyk's Supply Chain Registry** permission (`tenant.supplychain.registry.read`) allows you to read package metadata and download packages through the Snyk supply chain registry. All three pre-defined Tenant roles include this permission, so you can configure package managers with a personal access token (PAT). Your Tenant must also have access to the supply chain registry feature.
+
+Existing custom Tenant roles do not receive this permission automatically. Add the permission to existing custom Tenant roles whose users need registry access.
