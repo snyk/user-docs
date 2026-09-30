@@ -217,6 +217,7 @@
   * [LanguagesSettings](snyk-api/reference/languagessettings.md)
   * [Learn](snyk-api/reference/learn.md)
   * [Licenses (v1)](snyk-api/reference/licenses-v1.md)
+  * [Model](snyk-api/reference/model.md)
   * [Monitor (v1)](snyk-api/reference/monitor-v1.md)
   * [OpenSourceSettings](snyk-api/reference/opensourcesettings.md)
   * [Organizations (v1)](snyk-api/reference/organizations-v1.md)
