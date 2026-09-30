@@ -1,0 +1,69 @@
+name: Check cross-space links
+
+on:
+  pull_request:
+    paths:
+      - '**.md'
+
+permissions:
+  contents: read
+
+jobs:
+  check-cross-space-links:
+    name: cross-space-links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check links in Markdown changed in this pull request
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          # Only Markdown files added or modified by this pull request.
+          mapfile -t changed < <(
+            git diff --name-only --diff-filter=AM "$BASE_SHA" "$HEAD_SHA" -- '*.md'
+          )
+
+          if [ "${#changed[@]}" -eq 0 ]; then
+            echo "No Markdown files changed."
+            exit 0
+          fi
+
+          if python3 tools/cross-space-link-check/check-cross-space-links.py "${changed[@]}" > result.txt 2>&1; then
+            cat result.txt
+            echo "### Cross-space links: none found" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          cat result.txt
+
+          # Report each finding as an error annotation on the changed line.
+          while IFS= read -r finding; do
+            case "$finding" in
+              *:*:\ relative\ link\ crosses\ into\ *) ;;
+              *) continue ;;
+            esac
+            file=${finding%%:*}
+            rest=${finding#*:}
+            line=${rest%%:*}
+            echo "::error file=${file},line=${line}::Relative link points into another docs section. GitBook renders it as a github.com URL. Use an absolute https://docs.snyk.io/... URL instead."
+          done < result.txt
+
+          {
+            echo "### Cross-space links"
+            echo
+            echo "These relative links point into a different docs section:"
+            echo
+            echo '```'
+            cat result.txt
+            echo '```'
+            echo
+            echo "Each root section is a separate GitBook space, so these links render as github.com URLs on docs.snyk.io."
+            echo "Replace each one with the page's absolute https://docs.snyk.io/... URL."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          # Fail: these links are broken on the published site.
+          exit 1

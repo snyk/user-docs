@@ -39,7 +39,7 @@ The agent follows the same core flow regardless of the entry point:
 ### For Snyk CLI
 
 * A Snyk account with Snyk Open Source or Snyk Code enabled.
-* The Snyk CLI. Visit [Install the Snyk CLI](../../developer-tools/snyk-cli/install-the-snyk-cli/).
+* The Snyk CLI. Visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli).
 * An LLM API key from one of the following providers: Anthropic, OpenAI, Vertex AI, LiteLLM, or Ollama.
 
 ## Set up the Remediation Agent
@@ -122,7 +122,7 @@ Restart your coding assistant for the updated MCP configuration to take effect. 
 
 ## Use `snyk fix --agentic`
 
-The Snyk Studio installer installs the CLI automatically. If you skipped the installer, visit [Install the Snyk CLI](../../developer-tools/snyk-cli/install-the-snyk-cli/) for installation options.
+The Snyk Studio installer installs the CLI automatically. If you skipped the installer, visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) for installation options.
 
 The agentic CLI flow requires an LLM provider API key. Set one of the following environment variables before running the command:
 
@@ -139,7 +139,7 @@ snyk fix --agentic --experimental --sca [path]
 snyk fix --agentic --experimental --sast [path]
 ```
 
-For the full command reference, including all flags, visit [Fix](../../developer-tools/snyk-cli/commands/fix.md).
+For the full command reference, including all flags, visit [Fix](https://docs.snyk.io/developer-tools/snyk-cli/commands/fix).
 
 ## Snyk intelligence injected by the Remediation Agent
 
