@@ -28,9 +28,7 @@ The `snyk-to-html` tool displays all issues for Code scans, whether the issues a
 ### How do I avoid scanning certain files for Open Source scans?
 
 * Use the --`exclude` option when scanning with the CLI to omit scanning directories or files but not paths. This option excludes all directories or all files with specified names. For details, see [the --exclude option](https://docs.snyk.io/developer-tools/snyk-cli/commands/test#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than) in the CLI `test` command help.
-*   If you import a Project through an SCM integration, add the exclusions, folders only, to the bottom of the import window; see [Stage 2: Import Project](https://docs.snyk.io/developer-tools/integrations/scm-integrations/deployment-recommendations#stage-2-import-projects) in Git repositories deployment recommendations.\\
-
-    <figure><img src="https://lh7-us.googleusercontent.com/stHVnzk1ZuP6oUm0zAImt0zROcajuZMm5iB4qX7vTbHkjPWklSgD9NxUdZ6UGgT1kV-dBjrcLyOp0SP1CqFzbNuq9S7qgl4cOD6T9UwuWlEk5SWVHUiHRlO-KfAyq_UppnGNvE67p7ZsSwuWok0_2RM" alt="Exclude folders"><figcaption><p>Exclude folders</p></figcaption></figure>
+*   If you import a Project through an SCM integration, add the folders to exclude in the **Exclude folders** field of the import window. You can exclude folders only. For details, see [Stage 2: Import Project](https://docs.snyk.io/developer-tools/integrations/scm-integrations/deployment-recommendations#stage-2-import-projects) in Git repositories deployment recommendations.
 * You cannot use an `exclude` block in a `.snyk` file for Open Source scans except for unmanaged scans. For details, see [Ignore files or folders using glob expression - Snyk Code and `unmanaged`only](https://docs.snyk.io/developer-tools/snyk-cli/commands/ignore#ignore-files-or-folders-using-glob-expression-snyk-code-and-unmanaged-only).
 
 ### How do I avoid scanning certain files for Code scans?
