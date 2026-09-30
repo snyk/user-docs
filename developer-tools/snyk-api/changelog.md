@@ -1,3 +1,30 @@
+## 2026-03-25 - Updated 2026-09-30
+
+### POST - `/orgs/{org_id}/export` - Updated
+- added the new optional request property `data/attributes/filters/effective_severity`
+
+- added the new optional request property `data/attributes/filters/event`
+
+- added the new optional request property `data/attributes/filters/event_type`
+
+- added the new optional request property `data/attributes/filters/git_branch`
+
+- added the new optional request property `data/attributes/filters/git_repo`
+
+- added the new optional request property `data/attributes/filters/is_suppressed`
+
+- added the new optional request property `data/attributes/filters/sdlc_stage`
+
+- added the new optional request property `data/attributes/filters/test_user_email`
+
+
+
+### POST - `/groups/{group_id}/export` - Updated
+- removed the enum value `prevented` of the request property `data/attributes/filters/event_type/items/`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `fixed` enum value to the request property `data/attributes/filters/event_type/items/`
+
+
 ## 2026-03-25 - Updated 2026-09-01
 
 ### GET - `/orgs` - Updated
