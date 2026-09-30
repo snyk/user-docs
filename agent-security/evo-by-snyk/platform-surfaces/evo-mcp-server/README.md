@@ -97,9 +97,9 @@ The service requests the following read scope:
 
 The service validates the Snyk access token before every MCP request, and uses that token for all downstream calls.
 
-Available tools
+## Available tools
 
-Evo MCP advertises eight tools: six read tools and two write tools. Which tools you see depends on your permissions. Users with read access see the six read tools. Users with write access see all eight. The write tools are not listed at all for users who cannot use them.
+Evo MCP advertises eleven tools: eight read tools and three write tools. Which tools you see depends on your permissions. Users with read access see the eight read tools. Users with write access see all eleven. The write tools are not listed at all for users who cannot use them.
 
 ### Schema Discovery
 
@@ -129,6 +129,20 @@ Evo MCP advertises eight tools: six read tools and two write tools. Which tools 
 | `create_policy`  | Creates a new custom policy for your Tenant. Requires write access and explicit approval in your client.                                    |
 | `update_policy`  | Updates an existing custom policy by UUID. Requires write access and explicit approval in your client. You can update only custom policies. |
 
+### MCP server allow list
+
+| Tool                           | Description                                                                                                                                   |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `find_approvable_mcp_servers`  | Looks up MCP servers by name, package name, or URL, covering both servers detected in your environment and known servers in Snyk's catalogue. |
+| `get_mcp_server_allow_list`    | Returns your Organization's current MCP server allow list.                                                                                    |
+| `update_mcp_server_allow_list` | Adds servers to, or removes them from, your allow list. Requires write access and explicit approval in your client.                           |
+
+{% hint style="info" %}
+The allow list and policies are separate. Adding an MCP server to the allow list is not the same as writing a policy, and `create_policy` does not add anything to the allow list.
+
+Changing the allow list does not change whether unapproved MCP servers are blocked. That setting is managed in Evo.
+{% endhint %}
+
 ## What can you ask
 
 Some examples of what the tools support:
@@ -136,6 +150,8 @@ Some examples of what the tools support:
 * Which models are we running, and from which vendors and countries?
 * Which assets have the most critical policy violations?
 * Show me the policies governing our estate, then add a condition to one of them.
+* Which MCP servers is my fleet using, and which of them are not on my allow list?
+* Add these approved MCP servers to my allow list.
 
 ## Limits
 
