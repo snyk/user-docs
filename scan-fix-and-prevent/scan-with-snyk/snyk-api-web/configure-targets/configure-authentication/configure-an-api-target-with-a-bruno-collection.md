@@ -1,5 +1,5 @@
 ---
-description: How to configure a Snyk API and Web target using a Bruno Collection in OpenCollection format
+description: How to configure a Snyk API & Web target using a Bruno Collection in OpenCollection format
 nav_context: classic
 ---
 

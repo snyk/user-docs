@@ -1,5 +1,5 @@
 ---
-description: How to configure Postman Collection targets for Snyk API and Web
+description: How to configure Postman Collection targets for Snyk API & Web
 nav_context: classic
 ---
 

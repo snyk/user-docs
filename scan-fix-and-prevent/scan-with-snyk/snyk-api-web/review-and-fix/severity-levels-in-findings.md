@@ -1,5 +1,5 @@
 ---
-description: The severity levels of Snyk API and Web findings
+description: The severity levels of Snyk API & Web findings
 nav_context: agnostic
 ---
 

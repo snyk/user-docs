@@ -1,5 +1,5 @@
 ---
-description: How to manage credentials for Snyk API and Web targets
+description: How to manage credentials for Snyk API & Web targets
 nav_context: classic
 ---
 

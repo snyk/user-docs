@@ -1,5 +1,5 @@
 ---
-description: How to interpret target scan results in Snyk API and Web
+description: How to interpret target scan results in Snyk API & Web
 nav_context: agnostic
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: How to run partial Snyk API and Web scans
+description: How to run partial Snyk API & Web scans
 nav_context: classic
 ---
 

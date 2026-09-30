@@ -1,5 +1,5 @@
 ---
-description: How to assign Snyk API and Web vulnerabilities to a team member
+description: How to assign Snyk API & Web vulnerabilities to a team member
 nav_context: classic
 ---
 

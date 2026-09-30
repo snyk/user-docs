@@ -1,5 +1,5 @@
 ---
-description: The roles and permissions in Snyk API and Web
+description: The roles and permissions in Snyk API & Web
 nav_context: agnostic
 ---
 

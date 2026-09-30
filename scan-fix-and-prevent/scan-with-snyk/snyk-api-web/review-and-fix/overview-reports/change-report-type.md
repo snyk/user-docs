@@ -1,5 +1,5 @@
 ---
-description: How to change the report type in Snyk API and Web
+description: How to change the report type in Snyk API & Web
 nav_context: classic
 ---
 

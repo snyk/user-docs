@@ -1,5 +1,5 @@
 ---
-description: How to identify Snyk API and Web scanner requests
+description: How to identify Snyk API & Web scanner requests
 nav_context: agnostic
 ---
 

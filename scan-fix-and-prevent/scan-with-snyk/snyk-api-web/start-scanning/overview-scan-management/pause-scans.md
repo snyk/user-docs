@@ -1,5 +1,5 @@
 ---
-description: How to pause Snyk API and Web scans
+description: How to pause Snyk API & Web scans
 nav_context: classic
 ---
 

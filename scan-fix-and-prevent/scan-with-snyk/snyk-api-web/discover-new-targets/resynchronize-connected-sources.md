@@ -1,5 +1,5 @@
 ---
-description: How to resynchronize connected sources in Snyk API and Web
+description: How to resynchronize connected sources in Snyk API & Web
 nav_context: classic
 ---
 

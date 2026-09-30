@@ -1,5 +1,5 @@
 ---
-description: How to resolve network timeout errors in Snyk API and Web
+description: How to resolve network timeout errors in Snyk API & Web
 nav_context: agnostic
 ---
 

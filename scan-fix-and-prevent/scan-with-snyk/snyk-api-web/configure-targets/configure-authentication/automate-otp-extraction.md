@@ -1,5 +1,5 @@
 ---
-description: How to automate OTP extraction for Snyk API and Web authentication
+description: How to automate OTP extraction for Snyk API & Web authentication
 nav_context: classic
 ---
 

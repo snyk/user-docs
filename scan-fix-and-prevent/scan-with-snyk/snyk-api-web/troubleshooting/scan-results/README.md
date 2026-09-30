@@ -1,5 +1,5 @@
 ---
-description: How to troubleshoot Snyk API and Web scan results
+description: How to troubleshoot Snyk API & Web scan results
 nav_context: agnostic
 ---
 

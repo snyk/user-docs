@@ -1,5 +1,5 @@
 ---
-description: How to configure message-level encryption for Snyk API and Web targets
+description: How to configure message-level encryption for Snyk API & Web targets
 nav_context: classic
 ---
 

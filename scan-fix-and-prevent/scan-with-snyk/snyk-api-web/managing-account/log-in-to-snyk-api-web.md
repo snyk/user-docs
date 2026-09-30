@@ -1,5 +1,5 @@
 ---
-description: How to log in to Snyk API and Web
+description: How to log in to Snyk API & Web
 nav_context: classic
 ---
 

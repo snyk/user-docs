@@ -1,5 +1,5 @@
 ---
-description: Whether you can scan a production site with Snyk API and Web
+description: Whether you can scan a production site with Snyk API & Web
 nav_context: agnostic
 ---
 
