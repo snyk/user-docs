@@ -1,0 +1,80 @@
+name: Check links
+
+on:
+  pull_request:
+    paths:
+      - '**.md'
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    name: links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check links in Markdown changed in this pull request
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          # Only Markdown files added or modified by this pull request.
+          mapfile -t changed < <(
+            git diff --name-only --diff-filter=AM "$BASE_SHA" "$HEAD_SHA" -- '*.md'
+          )
+
+          if [ "${#changed[@]}" -eq 0 ]; then
+            echo "No Markdown files changed."
+            exit 0
+          fi
+
+          status=0
+          python3 tools/link-check/check-links.py "${changed[@]}" > result.txt 2>&1 || status=$?
+          cat result.txt
+
+          if [ ! -s result.txt ]; then
+            echo "### Links: no problems found" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          # Report each finding as an annotation on the changed line.
+          # Format: file:line: severity: kind: message: target
+          while IFS= read -r finding; do
+            case "$finding" in
+              *:*:\ error:\ *) level=error ;;
+              *:*:\ warning:\ *) level=warning ;;
+              *) continue ;;
+            esac
+            file=${finding%%:*}
+            rest=${finding#*:}
+            line=${rest%%:*}
+            detail=${rest#*: }
+            case "$detail" in
+              *cross-space:*) hint="Use an absolute https://docs.snyk.io/... URL for links between sections." ;;
+              *missing:*) hint="Update the path to the page's current location." ;;
+              *github:*) hint="Use a relative link inside the section, or a https://docs.snyk.io/... URL across sections." ;;
+              *gitbook-app:*) hint="Use the page's https://docs.snyk.io/... URL." ;;
+              *) hint="" ;;
+            esac
+            echo "::${level} file=${file},line=${line}::${detail#* } ${hint}"
+          done < result.txt
+
+          {
+            echo "### Links"
+            echo
+            echo "Links in this pull request do not resolve to a docs.snyk.io page:"
+            echo
+            echo '```'
+            cat result.txt
+            echo '```'
+            echo
+            echo "Each root section is a separate GitBook space. Relative links into another section, relative links to missing files, and github.com file links all render as GitHub URLs on docs.snyk.io."
+            echo "GitBook editor links (app.gitbook.com) are warnings: they break when the target page moves."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          # Fail on errors only; warnings do not block the merge.
+          exit "$status"
