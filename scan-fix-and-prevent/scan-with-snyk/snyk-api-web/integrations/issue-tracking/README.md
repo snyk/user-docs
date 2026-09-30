@@ -1,5 +1,5 @@
 ---
-description: How Snyk API and Web integrates with issue tracking tools
+description: How Snyk API & Web integrates with issue tracking tools
 nav_context: agnostic
 ---
 

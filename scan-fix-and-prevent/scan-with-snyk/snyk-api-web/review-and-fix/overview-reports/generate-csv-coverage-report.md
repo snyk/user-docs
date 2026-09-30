@@ -1,5 +1,5 @@
 ---
-description: How to generate a CSV coverage report in Snyk API and Web
+description: How to generate a CSV coverage report in Snyk API & Web
 nav_context: classic
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: How to review scan login attempts in Snyk API and Web
+description: How to review scan login attempts in Snyk API & Web
 nav_context: agnostic
 ---
 

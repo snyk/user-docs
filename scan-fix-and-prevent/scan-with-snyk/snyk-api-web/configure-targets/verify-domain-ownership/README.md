@@ -1,5 +1,5 @@
 ---
-description: How to verify domain ownership for Snyk API and Web targets
+description: How to verify domain ownership for Snyk API & Web targets
 nav_context: classic
 ---
 

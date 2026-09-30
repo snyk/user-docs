@@ -1,5 +1,5 @@
 ---
-description: How to schedule a Snyk API and Web scan
+description: How to schedule a Snyk API & Web scan
 nav_context: classic
 ---
 

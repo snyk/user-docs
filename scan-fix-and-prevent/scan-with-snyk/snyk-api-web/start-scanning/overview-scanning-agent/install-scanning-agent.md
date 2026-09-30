@@ -1,6 +1,6 @@
 ---
 nav_context: classic
-description: How to install a Snyk API and Web scanning agent
+description: How to install a Snyk API & Web scanning agent
 ---
 
 # Install a scanning agent

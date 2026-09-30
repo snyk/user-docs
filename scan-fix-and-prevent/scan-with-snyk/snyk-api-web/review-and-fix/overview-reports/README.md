@@ -1,5 +1,5 @@
 ---
-description: Overview of Snyk API and Web reports
+description: Overview of Snyk API & Web reports
 nav_context: agnostic
 ---
 

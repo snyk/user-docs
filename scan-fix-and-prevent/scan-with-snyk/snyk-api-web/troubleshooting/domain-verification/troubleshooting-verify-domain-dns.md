@@ -1,5 +1,5 @@
 ---
-description: How to troubleshoot domain verification with DNS in Snyk API and Web
+description: How to troubleshoot domain verification with DNS in Snyk API & Web
 nav_context: classic
 ---
 

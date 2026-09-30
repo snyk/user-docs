@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with Jenkins
+description: How to integrate Snyk API & Web with Jenkins
 nav_context: classic
 ---
 

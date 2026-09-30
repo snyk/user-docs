@@ -1,5 +1,5 @@
 ---
-description: How to generate a Snyk API and Web scan report
+description: How to generate a Snyk API & Web scan report
 nav_context: classic
 ---
 

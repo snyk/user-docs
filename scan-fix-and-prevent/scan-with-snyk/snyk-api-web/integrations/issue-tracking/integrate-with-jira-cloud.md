@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with Jira Cloud
+description: How to integrate Snyk API & Web with Jira Cloud
 nav_context: classic
 ---
 

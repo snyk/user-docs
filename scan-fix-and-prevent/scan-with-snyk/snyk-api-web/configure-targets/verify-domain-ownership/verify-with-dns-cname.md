@@ -1,5 +1,5 @@
 ---
-description: How to verify domain ownership with a DNS CNAME record for Snyk API and Web
+description: How to verify domain ownership with a DNS CNAME record for Snyk API & Web
 nav_context: classic
 ---
 

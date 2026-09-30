@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with Jira Server
+description: How to integrate Snyk API & Web with Jira Server
 nav_context: classic
 ---
 

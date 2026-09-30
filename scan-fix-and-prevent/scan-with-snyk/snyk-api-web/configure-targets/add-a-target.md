@@ -1,5 +1,5 @@
 ---
-description: How to add a target for Snyk API and Web scanning
+description: How to add a target for Snyk API & Web scanning
 nav_context: classic
 ---
 

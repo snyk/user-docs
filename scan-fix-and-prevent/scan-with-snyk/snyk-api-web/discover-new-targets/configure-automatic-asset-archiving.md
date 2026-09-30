@@ -1,5 +1,5 @@
 ---
-description: How to configure automatic asset archiving in Snyk API and Web
+description: How to configure automatic asset archiving in Snyk API & Web
 nav_context: classic
 ---
 

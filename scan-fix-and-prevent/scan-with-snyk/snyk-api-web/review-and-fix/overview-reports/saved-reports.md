@@ -1,5 +1,5 @@
 ---
-description: How to use saved reports in Snyk API and Web
+description: How to use saved reports in Snyk API & Web
 nav_context: classic
 ---
 

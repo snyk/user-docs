@@ -1,5 +1,5 @@
 ---
-description: How the Snyk API and Web scanning agent works
+description: How the Snyk API & Web scanning agent works
 nav_context: agnostic
 ---
 
