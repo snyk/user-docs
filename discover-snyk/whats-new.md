@@ -11,6 +11,48 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## September 2026
+
+### Evo by Snyk
+
+* Evo MCP Server is now generally available. Evo by Snyk documents a hosted remote MCP server with regional endpoints, setup for Cursor, Claude Code, and Codex, and eight read tools and three write tools for querying and managing assets, issues, and policies. See [Evo MCP Server](https://docs.snyk.io/agent-security/evo-by-snyk/platform-surfaces/evo-mcp-server).
+* Agent Behavior Governance and Agent Supply Chain Security now list GitHub Copilot as a supported agent. See [Agent Behavior Governance](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/agent-behavior-governance) and [Agent Supply Chain Security](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/agent-supply-chain-security).
+* Activation documentation now covers the **Save & Publish** step before you install the agent, and the `--scan`, `--guard`, and `--studio` uninstall flags for removing individual products. See [Activation and deployment](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/activation-and-deployment).
+
+### Snyk API
+
+* The Export API documents new filters for the `prevention_events` dataset, including `event_type`, `effective_severity`, `sdlc_stage`, `git_repo`, and `git_branch`. See [Export API: Specifications, columns, and filters](https://docs.snyk.io/developer-tools/snyk-api/using-specific-snyk-apis/export-api-specifications-columns-and-filters).
+* The Model API reference page is now in the Snyk API table of contents. See [Model](https://docs.snyk.io/developer-tools/snyk-api/reference/model).
+
+### Snyk API & Web
+
+* Scanning Agents now report a status of **Connected over UDP**, **Connected over TCP**, or **Disconnected**, and a new Scanning Agent details page shows availability, outages, and the targets that use the agent. See [Scan internal applications](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/start-scanning/overview-scanning-agent/scan-internal-applications).
+* A new page explains how to upload a custom CA certificate in PEM format under **Scan Settings**, so Snyk API & Web can scan targets that use a private PKI. See [Add a custom CA certificate](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/managing-account/add-a-custom-ca-certificate).
+* Snyk API & Web documents the hostnames, IP addresses, and ports used for optional out-of-band vulnerability checks, and removes the deprecated IP addresses. See [Scanner IP address](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/start-scanning/overview-scan-access-and-connectivity/scanner-ip-address).
+
+### Snyk Code
+
+* Snyk Code documentation now states that the `.snyk` file excludes files from scans but cannot ignore a finding. To ignore a finding, use the Snyk Web UI or `snyk ignore create`. See [Ignore issues](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues).
+* Snyk Code now supports Java analysis for Java versions up to SE 25. See [Java and Kotlin](https://docs.snyk.io/supported-languages/supported-languages-list/java-and-kotlin).
+* Snyk Code removed the fix examples from the fix analysis and Priority Score pages. See [Priority Score](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/priority-score).
+
+### Snyk Container
+
+* Snyk Container documents that Go standard library vulnerabilities are reported in container scans starting October 5, 2026. See [Application vulnerabilities in Snyk Container and Snyk Open Source](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/how-snyk-container-works/application-vulnerabilities-in-snyk-container-and-snyk-open-source).
+* The container image inventory lists the minimum versions for base inventory (Snyk CLI 1.1303.0) and for provenance attestations (Snyk CLI 1.1307.0 or `snyk-monitor` 2.23.24), and notes that images scanned with earlier versions need a re-scan. See [Container image inventory](https://docs.snyk.io/scan-fix-and-prevent/fix/container-image-inventory).
+
+### Snyk Integrations
+
+* Snyk documents how to configure IP allowlists for the GitHub Cloud App at the Organization and Enterprise levels. See [GitHub Cloud App](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/github-cloud-app).
+* The Snyk Essentials GitHub setup guide now clarifies that the integration uses a classic personal access token (PAT) and adds guidance on generating it from a GitHub Billing Admin account. See [GitHub for Snyk Essentials](https://docs.snyk.io/developer-tools/integrations/scm-integrations/group-level-integrations/github-for-snyk-essentials).
+
+### Other updates
+
+* The Snyk Credits plan is now the Snyk Platform Subscription plan, and Snyk announces rate changes 30 days in advance in the Billing and Usage dashboard. See [Snyk Platform credits](https://docs.snyk.io/snyk-data-and-governance/snyk-platform-access-credits).
+* The "Where things moved" table adds Ignore requests, Cloud, and Custom rules, and notes that the classic Organization Dashboard has no equivalent in the new navigation. See [Navigate the Snyk Web UI](https://docs.snyk.io/navigate-the-snyk-web-ui).
+* Snyk documents that deleting a Group member removes the user from every Organization in the Group, and that deleting a Group membership through the API requires `cascade=true`. See [Manage users in a Group](https://docs.snyk.io/platform-administration/snyk-hierarchy/groups/manage-users-in-a-group).
+* A new guide covers migrating from legacy to v2 custom mapping. See [Migrating from legacy to v2 custom mapping](https://docs.snyk.io/platform-administration/user-management/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/migrating-from-legacy-to-v2-custom-mapping).
+
 ## August 2026
 
 ### Snyk Agent Security
