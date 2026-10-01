@@ -623,7 +623,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 #### Snyk Essentials
 
 * The Integrations UI at the Group level has been enhanced to improve readability and actionability and provide inline instructions and inline profile helpers.
-* Group-level [Integrations documentation](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk#integrations-syncing-time) has been updated with new, more accurate sync times.
+* Group-level [Integrations documentation](https://docs.snyk.io/developer-tools/integrations/snyk-essentials-integrations-reference#integrations-syncing-time) has been updated with new, more accurate sync times.
 * The [asset filter](https://docs.snyk.io/scan-fix-and-prevent/prevent/policies/assets-policies/create-policies) documentation has been consolidated into one section, and it now links to all relevant areas, such as Inventory and Asset Policy filters.
 
 #### Other updates
