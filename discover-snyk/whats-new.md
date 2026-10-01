@@ -48,6 +48,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Other updates
 
+* Snyk Assist, an in-product AI assistant for product, security, and account questions, is now in Early Access on the Snyk Enterprise plan. Open it from the top-right corner of the Snyk Web UI in the new navigation. Group Admins manage it from **Settings** > **Products and features**. See [Snyk Assist](https://docs.snyk.io/navigate-the-snyk-web-ui#snyk-assist).
 * The Snyk Credits plan is now the Snyk Platform Subscription plan, and you can use your credits across all generally available Snyk capabilities. Snyk announces rate changes, including new products and pricing adjustments, 30 days in advance in the Billing and Usage dashboard. The Snyk Platform Access plan is no longer available to purchase or enroll in. See [Snyk Platform credits](https://docs.snyk.io/snyk-data-and-governance/snyk-platform-access-credits).
 * The **Your Plan** page is now under **Settings** > **Plan and billing** after you select your Tenant in the scope selector. See [Plan and billing](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/plan-and-billing).
 * Usage settings now explain that you can check your test limits and usage under **Usage** in your Organization settings, and that limits on Enterprise plans are set by your contract. See [Usage settings](https://docs.snyk.io/platform-administration/snyk-hierarchy/usage-settings).
