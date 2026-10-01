@@ -21,3 +21,18 @@ Snyk is dedicated to the secure and responsible handling of user data, with a st
 *   [**Snyk Terms of Support and Services Glossary**](snyk-terms-of-support-and-services-glossary/)
 
     Snyk provides this glossary to outline the scope of support, service level agreements (SLAs), confidentiality commitments, and the responsibilities of Snyk and its customers for transparent and clear service expectations.
+*   [**Snyk Platform credits**](snyk-platform-access-credits.md)
+
+    How the Snyk Platform Subscription plan consolidates capabilities into flexible, usage-based credits.
+*   [**What counts as a test?**](what-counts-as-a-test.md)
+
+    How Snyk counts tests against your plan limits, and what does not apply under credit-based licenses.
+*   [**How Snyk counts assets**](how-does-snyk-count-assets.md)
+
+    How Snyk counts billable assets managed through Snyk Essentials.
+*   [**How Snyk incorporates generative AI into the platform**](how-snyk-incorporates-generative-ai-into-the-platform.md)
+
+    How Snyk uses generative AI across its platform, including the third-party models that power its AI features.
+*   [**Snyk for Government (US)**](snyk-for-government-us.md)
+
+    Snyk for Government (US), which helps US federal agencies develop securely within their existing workflows.

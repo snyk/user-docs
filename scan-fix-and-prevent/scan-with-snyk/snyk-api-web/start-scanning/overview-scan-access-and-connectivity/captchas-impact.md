@@ -1,5 +1,5 @@
 ---
-description: How CAPTCHAs affect Snyk API and Web scans
+description: How CAPTCHAs affect Snyk API & Web scans
 nav_context: agnostic
 ---
 

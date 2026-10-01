@@ -1,5 +1,5 @@
 ---
-description: How to set up single sign-on (SSO) in Snyk API and Web
+description: How to set up single sign-on (SSO) in Snyk API & Web
 nav_context: classic
 ---
 

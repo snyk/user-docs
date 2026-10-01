@@ -1,5 +1,5 @@
 ---
-description: How to configure extra hosts for Snyk API and Web web targets
+description: How to configure extra hosts for Snyk API & Web web targets
 nav_context: classic
 ---
 

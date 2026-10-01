@@ -1,5 +1,5 @@
 ---
-description: How permissions work in Snyk API and Web
+description: How permissions work in Snyk API & Web
 nav_context: agnostic
 ---
 

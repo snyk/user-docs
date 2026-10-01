@@ -1,6 +1,6 @@
 ---
 nav_context: agnostic
-description: How to allow Snyk API and Web scanner IPs in your WAF
+description: How to allow Snyk API & Web scanner IPs in your WAF
 ---
 
 # Configure IPs in WAFs

@@ -1,6 +1,6 @@
 ---
 nav_context: agnostic
-description: How to configure authentication for Snyk API and Web targets
+description: How to configure authentication for Snyk API & Web targets
 ---
 
 # Authentication

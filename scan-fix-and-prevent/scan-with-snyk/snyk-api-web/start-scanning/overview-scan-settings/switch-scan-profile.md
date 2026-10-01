@@ -1,5 +1,5 @@
 ---
-description: How to switch the Snyk API and Web scan profile
+description: How to switch the Snyk API & Web scan profile
 nav_context: classic
 ---
 

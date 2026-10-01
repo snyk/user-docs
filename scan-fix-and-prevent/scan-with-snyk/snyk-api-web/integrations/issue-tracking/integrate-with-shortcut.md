@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with Shortcut
+description: How to integrate Snyk API & Web with Shortcut
 nav_context: classic
 ---
 

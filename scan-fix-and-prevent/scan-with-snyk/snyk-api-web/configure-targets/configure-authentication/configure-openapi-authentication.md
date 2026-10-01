@@ -1,5 +1,5 @@
 ---
-description: How to configure OpenAPI authentication for Snyk API and Web targets
+description: How to configure OpenAPI authentication for Snyk API & Web targets
 nav_context: classic
 ---
 

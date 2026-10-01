@@ -33,8 +33,8 @@ The top scope selector replaces the classic sidebar headers for **Tenant**, **Gr
 
 ### Tenant scope
 
-* **Security and access:** Members. View and manage all users in the Tenant. Assign Tenant-level roles: **Tenant Admin**, **Tenant Viewer**, or **Tenant Member**.
-* **Plan and billing:** Your plan and billing, including contract details and licensed capabilities (Enterprise plans only).
+* **Security and access:** Members, Capability Access. View and manage all users in the Tenant, and control which capabilities are available across the Tenant. Assign Tenant-level roles: **Tenant Admin**, **Tenant Viewer**, or **Tenant Member**.
+* **Plan and billing:** Your Plan, Credit breakdown, including contract details, licensed capabilities, and credit usage (Enterprise plans only).
 
 ### Group scope
 
@@ -57,14 +57,21 @@ The top scope selector replaces the classic sidebar headers for **Tenant**, **Gr
 The following classic items now live elsewhere in the new interface.
 
 | Classic navigation                    | New location                                                | How to get there                                                                                 |
-| ------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| ------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | Organizations                         | Scope selector > **Organization** dropdown                  | Open the **Organization** dropdown, then select an Organization or **+ Create new Organization** |
 | Tenant / Group / Organization headers | Scope selector                                              | Use the three dropdowns from left to right                                                       |
 | Dependencies                          | **Analytics** > **Reports** > **Dependencies and licenses** | Navigate to **Analytics** > **Reports**, or press **⌘K** and enter `dependencies`                |
+| Ignore requests                       | **Issues** > **Ignore requests**                            | Navigate to **Issues**, then select the **Ignore requests** tab                                  |
+| Cloud                                 | **More from Snyk** > **Cloud**                              | Select **More from Snyk** at the bottom of the side menu, then select **Cloud**                  |
+| Custom rules                          | **Settings** > **Snyk Code** > **Rule Extensions**          | Set the scope selector to a Group, then navigate to **Settings** > **Snyk Code**. Snyk manages Rule Extensions at the Group level |
 | Integrations                          | **Settings** > **Integrations**                             | Navigate to **Settings** > **Integrations**                                                      |
 | Members                               | **Settings** > **Security and access** > **Members**        | Navigate to **Settings** > **Security and access** > **Members**                                 |
-| Product updates                       | Side menu                                                   | Click **Product updates** in the Side menu                                                       |
+| Product updates                       | Side menu                                                   | Click **Product updates** in the side menu                                                       |
 | Help                                  | Side menu                                                   | Click **Help** in the side menu                                                                  |
+
+{% hint style="info" %}
+The Organization **Dashboard** from the classic navigation has no equivalent in the new navigation.
+{% endhint %}
 
 New areas without a direct classic equivalent:
 

@@ -1,6 +1,6 @@
 ---
 nav_context: classic
-description: How to get started with Snyk API and Web dynamic application security testing
+description: How to get started with Snyk API & Web dynamic application security testing
 ---
 
 # Getting started with Snyk API & Web

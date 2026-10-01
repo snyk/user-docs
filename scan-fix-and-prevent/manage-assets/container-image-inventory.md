@@ -30,9 +30,9 @@ Issues from all scan sources are merged and deduplicated, so you see one count p
 
 Depending on how you scan containers, take the following steps to ensure your images appear in the inventory:
 
-- **CLI users** — Upgrade to Snyk CLI version 1.1303.0 or later (which bundles an updated snyk-docker-plugin) and re-run `snyk container monitor` for your images.
+- **CLI users** — Upgrade to Snyk CLI version 1.1303.0 or later (which bundles an updated snyk-docker-plugin) and re-run `snyk container monitor` for your images. Provenance attestations require Snyk CLI version 1.1307.0 or later. See [Prerequisites](container-image-inventory.md#prerequisites).
 - **Container Registry integrations** — Newly imported images automatically populate the inventory. Existing Projects appear in the inventory when they are retested, either manually from the UI or on a recurring test schedule.
-- **Kubernetes (`snyk-monitor`)** — Upgrade `snyk-monitor` in your cluster to a version bundled with the updated snyk-docker-plugin, then redeploy your application to the cluster.
+- **Kubernetes (`snyk-monitor`)** — Upgrade `snyk-monitor` in your cluster to version 2.23.24 or later, then redeploy your application to the cluster.
 
 {% hint style="warning" %}
 Not all existing Projects have the metadata required to compute the new asset identity. To fully populate the inventory for existing Projects, CLI and Kubernetes users must upgrade and re-scan.
@@ -279,7 +279,7 @@ The existing Projects view for containers remains unchanged.
 | **Backfilling existing Projects** | Not all existing Projects have the metadata required to compute the new asset identity. CLI and Kubernetes users must upgrade to the latest Snyk CLI or `snyk-monitor` and re-scan to populate the inventory for existing images. |
 | **Base image inference** | Base image detection is heuristic-based (parsing the Dockerfile if present, or matching layer hashes against a known image index). Results may vary across Projects that scanned the same image differently (for example, with or without the Dockerfile). |
 | **Asset class sync** | Changing an asset's class in the new Container image inventory does not propagate to the old inventory. The two inventories can therefore show different class values for the same asset. |
-| **Provenance attestations require a re-scan** | Attestations are read during a scan. Images scanned before provenance support was released show no attestations until they are scanned again, and only images whose build system produces attestations will populate this tab. |
+| **Provenance attestations require a re-scan** | Attestations are read during a scan. Images scanned with a Snyk CLI version earlier than 1.1307.0, or a `snyk-monitor` version earlier than 2.23.24, show no attestations until you re-scan them with a supported version. Attestations update on every re-scan, not only when the underlying image changes. Only images whose build system produces attestations populate this tab. |
 
 ## FAQs
 

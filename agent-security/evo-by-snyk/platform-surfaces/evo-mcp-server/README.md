@@ -101,12 +101,9 @@ The service requests the `org.read` OAuth scope to identify you and discover you
 
 Evo MCP advertises eight tools: six read tools and two write tools. Which tools you see depends on your Tenant role:
 
-| Tenant role                               | Available tools                    |
-| ----------------------------------------- | ---------------------------------- |
-| Tenant Viewer                             | The six read tools                 |
-| Tenant Admin, or a role with Evo access   | All eight tools                    |
+## Available tools
 
-The write tools are not listed at all for users who cannot use them. For the full list of roles, visit [Access and authentication](../../access-and-authentication.md#add-members).
+Evo MCP advertises eleven tools: eight read tools and three write tools. Which tools you see depends on your permissions. Users with read access see the eight read tools. Users with write access see all eleven. The write tools are not listed at all for users who cannot use them.
 
 ### Schema discovery
 
@@ -136,7 +133,19 @@ The write tools are not listed at all for users who cannot use them. For the ful
 | `create_policy`  | Creates a new custom policy for your Tenant. Requires write access and explicit approval in your client.                                    |
 | `update_policy`  | Updates an existing custom policy by UUID. Requires write access and explicit approval in your client. You can update only custom policies. |
 
-The write tools ask for your approval through MCP elicitation, a client feature that prompts you to confirm an action. Your client must support elicitation to use `create_policy` and `update_policy`. If you do not respond within five minutes, the request times out and nothing is written.
+### MCP server allow list
+
+| Tool                           | Description                                                                                                                                   |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `find_approvable_mcp_servers`  | Looks up MCP servers by name, package name, or URL, covering both servers detected in your environment and known servers in Snyk's catalogue. |
+| `get_mcp_server_allow_list`    | Returns your Organization's current MCP server allow list.                                                                                    |
+| `update_mcp_server_allow_list` | Adds servers to, or removes them from, your allow list. Requires write access and explicit approval in your client.                           |
+
+{% hint style="info" %}
+The allow list and policies are separate. Adding an MCP server to the allow list is not the same as writing a policy, and `create_policy` does not add anything to the allow list.
+
+Changing the allow list does not change whether unapproved MCP servers are blocked. That setting is managed in Evo.
+{% endhint %}
 
 ## What can you ask
 
@@ -145,6 +154,8 @@ Some examples of what the tools support:
 * Which models are we running, and from which vendors and countries?
 * Which assets have the most critical policy violations?
 * Show me the policies governing our estate, then add a condition to one of them.
+* Which MCP servers is my fleet using, and which of them are not on my allow list?
+* Add these approved MCP servers to my allow list.
 
 For multi-step workflows that combine Evo MCP with other MCP servers, visit [Common use cases](common-use-cases.md).
 

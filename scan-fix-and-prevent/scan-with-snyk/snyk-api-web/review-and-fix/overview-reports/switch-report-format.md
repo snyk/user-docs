@@ -1,5 +1,5 @@
 ---
-description: How to switch the report format in Snyk API and Web
+description: How to switch the report format in Snyk API & Web
 nav_context: classic
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: How to export table data to CSV in Snyk API and Web
+description: How to export table data to CSV in Snyk API & Web
 nav_context: classic
 ---
 

@@ -11,15 +11,17 @@ nav_context: classic
 [Snyk IDE plugins](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions) also have preview features. These preview features are separate from Snyk Preview and can be found in the documentation for the IDE-specific plugin.
 {% endhint %}
 
-Snyk Preview lets you enable new features that may not be available to all customers by default.
+Snyk Preview lets you enable new features that are not available to all customers by default.
 
-Users with Admin permissions can use Snyk Preview at the Organization and Group levels.
+You need Admin permissions at the Group or Organization level to change Snyk Preview settings.
 
 To enable a feature using Snyk Preview:
 
 1. At either the Group or Organization level, select **Settings** > **Snyk Preview**.
 2. Select **Enable feature preview** to enable or disable a feature.
 3. Click **Save changes**.
+
+After you save, the feature is on for the Organization or, if you turned it on at the Group level, for every Organization in the Group.
 
 <figure><img src="../.gitbook/assets/org_settings_snyk_preview.png" alt="Snyk Preview"><figcaption><p>Snyk Preview</p></figcaption></figure>
 

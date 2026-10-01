@@ -1,5 +1,5 @@
 ---
-description: How to scan Snyk API and Web targets in bulk
+description: How to scan Snyk API & Web targets in bulk
 nav_context: classic
 ---
 

@@ -82,10 +82,16 @@ To create your Snyk personal access token:
 4. Highlight and copy your personal access token.
 
 {% hint style="info" %}
+A personal access token expires after a maximum of 90 days; you cannot create one that lives longer. Set a reminder to rotate it, or your CLI and IDE authentication stops working. You can hold up to three active tokens at a time, so you can create a replacement before the current one expires.
+
 For more information, visit [Personal Access Tokens](https://docs.snyk.io/developer-tools/snyk-api/authentication-for-api/personal-access-tokens-pats).
 {% endhint %}
 
 #### Legacy API Tokens
+
+{% hint style="warning" %}
+Snyk does not recommend this method. Legacy API tokens never expire, which is a security risk. Use a personal access token instead. This section is here for existing workflows that still rely on a legacy token.
+{% endhint %}
 
 To obtain your personal Snyk API token:
 

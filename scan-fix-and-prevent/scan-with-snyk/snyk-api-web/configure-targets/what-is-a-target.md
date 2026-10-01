@@ -1,5 +1,5 @@
 ---
-description: What a target is in Snyk API and Web scanning
+description: What a target is in Snyk API & Web scanning
 nav_context: agnostic
 ---
 

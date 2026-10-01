@@ -1,5 +1,5 @@
 ---
-description: How to enforce two-factor authentication for all Snyk API and Web users
+description: How to enforce two-factor authentication for all Snyk API & Web users
 nav_context: classic
 ---
 

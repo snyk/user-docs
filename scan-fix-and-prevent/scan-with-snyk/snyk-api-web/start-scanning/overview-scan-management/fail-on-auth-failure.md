@@ -1,5 +1,5 @@
 ---
-description: How to fail a Snyk API and Web scan on authentication failure
+description: How to fail a Snyk API & Web scan on authentication failure
 nav_context: classic
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: Best practices for deploying Snyk API and Web DAST scanning
+description: Best practices for deploying Snyk API & Web DAST scanning
 nav_context: agnostic
 ---
 
