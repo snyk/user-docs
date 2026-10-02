@@ -6,9 +6,7 @@ description: >-
 
 # Fix (`snyk fix --agentic`)
 
-{% hint style="info" %}
 `snyk fix --agentic` is a new LLM-driven command. It is distinct from the legacy `snyk fix` command, which used a deterministic fix engine and is deprecated.
-{% endhint %}
 
 ## Prerequisites
 
@@ -36,9 +34,7 @@ Pass exactly one of `--sca`, `--sast`, or `--container`. The `--experimental` fl
 
 For conceptual documentation about the Remediation Agent, including setup instructions and supported IDEs, visit [Remediation Agent](../../../scan-fix-and-prevent/fix/remediation-agent.md).
 
-{% hint style="warning" %}
 The Remediation Agent is under rapid development. Some options on this page are available only in the latest preview release of the Snyk CLI. Run `snyk version` to check which version you have.
-{% endhint %}
 
 ## Exit codes
 
