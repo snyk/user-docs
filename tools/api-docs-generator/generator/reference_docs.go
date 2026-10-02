@@ -28,48 +28,75 @@ func GenerateReferenceDocs(cfg *config.Config, docsBasePath string) error {
 		return err
 	}
 
-	summary := make([]string, len(aggregatedDocs))
 	err = clearDir(path.Join(docsBasePath, cfg.Output.APIReferencePath))
 	if err != nil {
 		return err
 	}
 
-	for label, operations := range aggregatedDocs {
-		destinationPath := path.Join(docsBasePath, cfg.Output.APIReferencePath, labelToFileName(label))
-		summary = append(summary, fmt.Sprintf("* [%s](%s)\n", label, path.Join(cfg.Output.APIReferencePath, labelToFileName(label))))
-
-		err = renderReferenceDocsPage(destinationPath, label, docsBasePath, operations, cfg.CategoryContext)
-		if err != nil {
-			return err
-		}
-	}
-	sort.Strings(summary)
-
-	matches, err := matchCurrentSummary(path.Join(docsBasePath, cfg.Output.SummaryPath), summary)
+	summaryPath := path.Join(docsBasePath, cfg.Output.SummaryPath)
+	referenceDir, err := filepath.Rel(path.Dir(summaryPath), path.Join(docsBasePath, cfg.Output.APIReferencePath))
 	if err != nil {
 		return err
 	}
 
-	if !matches {
-		fmt.Printf("generated menu for summary:\n")
-		fmt.Printf("%s", strings.Join(summary, ""))
+	pages := groupPagesByFileName(aggregatedDocs)
+	entries := make([]summaryEntry, 0, len(pages))
+	for fileName, page := range pages {
+		destinationPath := path.Join(docsBasePath, cfg.Output.APIReferencePath, fileName)
+		entries = append(entries, summaryEntry{label: page.label, link: path.Join(referenceDir, fileName)})
+
+		err = renderReferenceDocsPage(destinationPath, page.label, docsBasePath, page.operations, cfg.CategoryContext)
+		if err != nil {
+			return err
+		}
+	}
+
+	changes, err := syncSummary(summaryPath, referenceDir, entries)
+	if err != nil {
+		return err
+	}
+	if !changes.empty() {
+		fmt.Printf("updated %s:\n", cfg.Output.SummaryPath)
+		for _, label := range changes.added {
+			fmt.Printf("+ %s\n", label)
+		}
+		for _, label := range changes.removed {
+			fmt.Printf("- %s\n", label)
+		}
 	}
 
 	return nil
 }
 
-func matchCurrentSummary(summaryPath string, summary []string) (bool, error) {
-	contents, err := os.ReadFile(summaryPath)
-	if err != nil {
-		return false, fmt.Errorf("failed to read summary file: %w", err)
+type referencePage struct {
+	label      string
+	operations []operationPath
+}
+
+// groupPagesByFileName merges labels that render to the same file, such as the
+// "OpenSourceSettings" and "OpensourceSettings" tags. Rendering them
+// separately would make the second overwrite the first, dropping its endpoints
+// from the docs depending on map iteration order.
+//
+// The page takes the label that sorts first, so the choice is stable across runs.
+func groupPagesByFileName(aggregatedDocs map[string][]operationPath) map[string]referencePage {
+	labels := make([]string, 0, len(aggregatedDocs))
+	for label := range aggregatedDocs {
+		labels = append(labels, label)
 	}
-	currentSummary := string(contents)
-	for _, menuItem := range summary {
-		if !strings.Contains(currentSummary, menuItem) {
-			return false, nil
+	sort.Strings(labels)
+
+	pages := make(map[string]referencePage)
+	for _, label := range labels {
+		fileName := labelToFileName(label)
+		page, found := pages[fileName]
+		if !found {
+			page.label = label
 		}
+		page.operations = append(page.operations, aggregatedDocs[label]...)
+		pages[fileName] = page
 	}
-	return true, nil
+	return pages
 }
 
 func clearDir(dirName string) error {
