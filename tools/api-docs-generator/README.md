@@ -10,6 +10,7 @@ By default the utility will:
 1. Fetch the latest rest specification from `api.snyk.io` and update the copy in the docs repo
 2. Use the v1 specification in the docs repo as a source of truth for the API documentation
 3. Generate the API documentation in the `developer-tools/snyk-api/reference` directory based on the v1 and REST specs
+4. Update the Reference section of `developer-tools/SUMMARY.md` so it lists every generated page. GitBook only shows pages that `SUMMARY.md` lists, so without this a new page would not appear in the docs site navigation. Entries for new pages are added in alphabetical order, entries for pages that are no longer generated are removed, and labels already in `SUMMARY.md` are kept, so you can edit their capitalization by hand.
 
 ## Usage
 
