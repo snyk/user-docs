@@ -82,8 +82,10 @@ Remediate Snyk Container vulnerabilities by editing a single Dockerfile: bump th
 
 ### `--provider=<PROVIDER>`
 
-LLM provider to use.\
-Allowed values: `anthropic`, `openai`, `bedrock`, `vertex`, `litellm`, `ollama`\
+LLM provider to use.
+
+Allowed values: `anthropic`, `openai`, `bedrock`, `vertex`, `litellm`, `ollama`
+
 Default: `anthropic`
 
 Example: `snyk fix --agentic --experimental --sca --provider=openai`
@@ -102,41 +104,50 @@ Example: `snyk fix --agentic --experimental --sca --dry-run`
 
 ### `--auto-approve`
 
-Run without prompting.\
+Run without prompting.
+
 **Important:** In addition to approving fixes, this option trusts the folder, continues after test failures, skips advisories, and approves partial plans when the agent reaches a budget warning.
 
 ### `--issue-ids=<ID>[,<ID>]...`
 
-Comma-separated list of IDs to fix, accepting both SCA vulnerability IDs and SAST finding IDs.\
+Comma-separated list of IDs to fix, accepting both SCA vulnerability IDs and SAST finding IDs.
+
 **Note:** Requires `--auto-approve`, and does not combine with `--exclude-ids`. The command exits with a nonzero code if any requested ID is not fixed.
 
 Example: `snyk fix --agentic --experimental --sca --issue-ids=SNYK-JS-FOO-123,SNYK-JS-BAR-456`
 
 ### `--exclude-ids=<ID>[,<ID>]...`
 
-Comma-separated list of IDs to prune from the run, so the agent fixes everything except these. Accepts both SCA vulnerability IDs and SAST finding IDs.\
+Comma-separated list of IDs to prune from the run, so the agent fixes everything except these. Accepts both SCA vulnerability IDs and SAST finding IDs.
+
 **Note:** Requires `--auto-approve`, and does not combine with `--issue-ids`. An SCA fix group is skipped only when all of its IDs are excluded.
 
 ### `--severity-threshold=<SEVERITY>`
 
-Fix only vulnerabilities at or above this severity.\
-Allowed values: `low`, `medium`, `high`, `critical`\
+Fix only vulnerabilities at or above this severity.
+
+Allowed values: `low`, `medium`, `high`, `critical`
+
 **Note:** Requires `--auto-approve`.
 
 Example: `snyk fix --agentic --experimental --sca --severity-threshold=high`
 
 ### `--severity-filter=<SEVERITY>[,<SEVERITY>]...`
 
-Fix only vulnerabilities whose severity is exactly one of these.\
-Allowed values: `low`, `medium`, `high`, `critical`\
+Fix only vulnerabilities whose severity is exactly one of these.
+
+Allowed values: `low`, `medium`, `high`, `critical`
+
 **Note:** Unlike `--severity-threshold`, this is an exact match, and it applies to interactive runs as well as auto-approved ones.
 
 Example: `snyk fix --agentic --experimental --sca --severity-filter=high,critical`
 
 ### `--breakability-filter=<RATING>[,<RATING>]...`
 
-Fix only SCA fixes whose assessed breakability is exactly one of these.\
-Allowed values: `low`, `medium`, `high`\
+Fix only SCA fixes whose assessed breakability is exactly one of these.
+
+Allowed values: `low`, `medium`, `high`
+
 **Note:** Applies to Snyk Open Source only, so it skips the SAST leg.
 
 Example: `snyk fix --agentic --experimental --sca --breakability-filter=low`
@@ -147,8 +158,10 @@ Skip the Snyk Breakability API and use the local heuristic only.
 
 ### `--enable-revert`
 
-Roll a fix's edits back when it fails, instead of keeping them.\
-Default: off, so failed fixes are kept and reported\
+Roll a fix's edits back when it fails, instead of keeping them.
+
+Default: off, so failed fixes are kept and reported
+
 **Note:** A test failure always keeps the fix.
 
 ### `--fix-report=<PATH>`
@@ -157,17 +170,20 @@ Write a JSON report of fixed and not-fixed vulnerabilities, including ID, title,
 
 ### `--ci`
 
-Produce plain output suited to a CI log, with no colors or spinner.\
+Produce plain output suited to a CI log, with no colors or spinner.
+
 **Note:** This option also disables parent-package fix discovery.
 
 ### `--agent-max-iterations=<N>`
 
-Cap how many iterations the agent runs per fix.\
+Cap how many iterations the agent runs per fix.
+
 Default: `0`, which uses the built-in limit of 50
 
 ### `--max-validation-attempts=<N>`
 
-Cap the number of validation retry attempts per fix. After this many failed test runs, the agent skips the fix and moves on.\
+Cap the number of validation retry attempts per fix. After this many failed test runs, the agent skips the fix and moves on.
+
 Default: `0`, which uses the built-in default
 
 ### `--additional-params="<PARAMS>"`
