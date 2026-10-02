@@ -4,7 +4,7 @@ description: >-
   fixes
 ---
 
-# Fix (`snyk fix --agentic`)
+# Fix
 
 `snyk fix --agentic` is a new LLM-driven command. It is distinct from the legacy `snyk fix` command, which used a deterministic fix engine and is deprecated.
 
@@ -48,6 +48,10 @@ Possible exit codes and their meaning:
 
 You can use environment variables to configure the Snyk CLI and set variables for connecting with the Snyk API. For more information see [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli)
 
+## Code execution warning
+
+Before scanning your code, review the [Code execution warning for Snyk CLI](https://docs.snyk.io/snyk-cli/code-execution-warning-for-snyk-cli)
+
 ## Debug
 
 Use the `-d` option to output the debug logs.
@@ -78,7 +82,9 @@ Remediate Snyk Container vulnerabilities by editing a single Dockerfile: bump th
 
 ### `--provider=<PROVIDER>`
 
-LLM provider to use. Accepted values: `anthropic` (default), `openai`, `bedrock`, `vertex`, `litellm`, `ollama`.
+LLM provider to use.\
+Allowed values: `anthropic`, `openai`, `bedrock`, `vertex`, `litellm`, `ollama`\
+Default: `anthropic`
 
 Example: `snyk fix --agentic --experimental --sca --provider=openai`
 
@@ -113,21 +119,24 @@ Comma-separated list of IDs to prune from the run, so the agent fixes everything
 
 ### `--severity-threshold=<SEVERITY>`
 
-Fix only vulnerabilities at or above this severity. Accepted values: `low`, `medium`, `high`, `critical`.\
+Fix only vulnerabilities at or above this severity.\
+Allowed values: `low`, `medium`, `high`, `critical`\
 **Note:** Requires `--auto-approve`.
 
 Example: `snyk fix --agentic --experimental --sca --severity-threshold=high`
 
 ### `--severity-filter=<SEVERITY>[,<SEVERITY>]...`
 
-Fix only vulnerabilities whose severity is exactly one of these. Accepted values: `low`, `medium`, `high`, `critical`.\
+Fix only vulnerabilities whose severity is exactly one of these.\
+Allowed values: `low`, `medium`, `high`, `critical`\
 **Note:** Unlike `--severity-threshold`, this is an exact match, and it applies to interactive runs as well as auto-approved ones.
 
 Example: `snyk fix --agentic --experimental --sca --severity-filter=high,critical`
 
 ### `--breakability-filter=<RATING>[,<RATING>]...`
 
-Fix only SCA fixes whose assessed breakability is exactly one of these. Accepted values: `low`, `medium`, `high`.\
+Fix only SCA fixes whose assessed breakability is exactly one of these.\
+Allowed values: `low`, `medium`, `high`\
 **Note:** Applies to Snyk Open Source only, so it skips the SAST leg.
 
 Example: `snyk fix --agentic --experimental --sca --breakability-filter=low`
@@ -138,7 +147,8 @@ Skip the Snyk Breakability API and use the local heuristic only.
 
 ### `--enable-revert`
 
-Roll a fix's edits back when it fails, instead of keeping them. Off by default, so failed fixes are kept and reported.\
+Roll a fix's edits back when it fails, instead of keeping them.\
+Default: off, so failed fixes are kept and reported\
 **Note:** A test failure always keeps the fix.
 
 ### `--fix-report=<PATH>`
@@ -152,11 +162,13 @@ Produce plain output suited to a CI log, with no colors or spinner.\
 
 ### `--agent-max-iterations=<N>`
 
-Cap how many iterations the agent runs per fix. `0` uses the built-in default of 50.
+Cap how many iterations the agent runs per fix.\
+Default: `0`, which uses the built-in limit of 50
 
 ### `--max-validation-attempts=<N>`
 
-Cap the number of validation retry attempts per fix. After this many failed test runs, the agent skips the fix and moves on. `0` uses the built-in default.
+Cap the number of validation retry attempts per fix. After this many failed test runs, the agent skips the fix and moves on.\
+Default: `0`, which uses the built-in default
 
 ### `--additional-params="<PARAMS>"`
 
