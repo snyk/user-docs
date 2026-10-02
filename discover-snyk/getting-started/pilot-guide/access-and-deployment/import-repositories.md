@@ -24,11 +24,11 @@ After you set up your SCM integration, import repositories to Snyk.
 
 The import starts immediately. To monitor progress, click **View import logs** on the **Projects** page.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcAbYAUF2UkQGgLSwX6fogOh42iosfEe_vyNjhY9wH-SOM_HZCQRxQNQRiI8jPGtcOaHP8ts3C8GoZpfRBLislwqtjgS_TuwUf01rH9gf6W0xxdC0Mq2Tflw3qDdTomfd5n6121?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Import progress shown in the import logs"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-import-logs-new-navigation.png" alt="Import progress shown in the import logs"><figcaption></figcaption></figure>
 
 All imported repositories appear on the **Projects** page.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeaN56eVc58YuGp2c_pQ2Eo_6D5G3ms6bWCs17pk1zYHXCrgPDY6mH6T-0wWCfmdnp9ot55q6f9TznZMBtpl_KYAsUxp78NBdiu1zraOY9fSp7ArsfANKxKoDBMkLqA3hVyBM9j?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Imported repositories listed on the Projects page"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-list-new-navigation.png" alt="Imported repositories listed on the Projects page"><figcaption></figcaption></figure>
 
 Continue monitoring the import in the import logs, or select an imported repository to start reviewing its vulnerabilities.
 
