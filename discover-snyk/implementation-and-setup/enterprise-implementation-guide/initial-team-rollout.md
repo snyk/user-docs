@@ -1,9 +1,7 @@
 ---
 description: How to run an initial Snyk team rollout, inviting stakeholders and integrating security into their workflows
-nav_context: classic
+nav_context: new
 ---
-
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Initial team rollout
 
@@ -28,7 +26,7 @@ Managing notifications ensures that developers only see high-priority issues tha
 * Once the environment is stable, enable notifications in bulk for **High** and **Critical** severities only.
 * Disable all email notifications for new Organizations.
 
-Navigate to **Group** > **Settings** to view the notification defaults overview.
+Switch to your Group in the scope selector, then navigate to **Settings** > **Group settings** > **Notifications** to view the notification defaults.
 
 ## Announce Snyk to your teams
 

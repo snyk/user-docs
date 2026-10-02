@@ -1,9 +1,7 @@
 ---
 description: How Snyk auto-provisions accounts for Pilot and Enterprise plans, including the setup questions you answer first
-nav_context: classic
+nav_context: agnostic
 ---
-
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Auto-provisioning guide
 
