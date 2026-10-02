@@ -28,9 +28,9 @@ The `snyk fix --agentic` command is an LLM-driven vulnerability remediation comm
 
 Choose what to remediate with a product flag:
 
-* `--sca` — Snyk Open Source. Fixes vulnerable dependencies by bumping versions and adding overrides.
-* `--sast` — Snyk Code. Applies Snyk Agent Fix suggestions for source code vulnerabilities and rescans to confirm the vulnerability is resolved.
-* `--container` — Snyk Container. Bumps Dockerfile base images and patches OS packages, then builds and rescans the image to verify the result.
+* `--sca`: Snyk Open Source. Fixes vulnerable dependencies by bumping versions and adding overrides.
+* `--sast`: Snyk Code. Applies Snyk Agent Fix suggestions for source code vulnerabilities and rescans to confirm the vulnerability is resolved.
+* `--container`: Snyk Container. Bumps Dockerfile base images and patches OS packages, then builds and rescans the image to verify the result.
 
 Pass exactly one of `--sca`, `--sast`, or `--container`. The `--experimental` flag is required alongside `--agentic`.
 
