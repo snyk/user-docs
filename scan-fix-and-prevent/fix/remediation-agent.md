@@ -177,11 +177,15 @@ snyk fix --agentic --experimental --container [path]
 
 An interactive run prompts you for each fix. These options change that. For what each option does and how they combine, visit [Fix](../../developer-tools/snyk-cli/commands/fix.md).
 
-* Run without prompting: `--auto-approve`. It does more than approve fixes, so read its entry in the reference before you use it.
+* Run without prompting: `--auto-approve`. It has side effects, described in the warning that follows this list.
 * Choose which vulnerabilities to fix: `--issue-ids`, `--exclude-ids`, `--severity-threshold`, `--severity-filter`, and `--breakability-filter`.
 * Preview or adjust the run: `--dry-run` and `--no-breakability`.
 
 The `--issue-ids`, `--exclude-ids`, and `--severity-threshold` options require `--auto-approve`.
+
+{% hint style="warning" %}
+`--auto-approve` does more than approve fixes. It also trusts the folder, continues after test failures, skips advisories, and approves partial plans when the agent reaches a budget warning. Review every change before you merge it.
+{% endhint %}
 
 ## Fix container vulnerabilities
 
