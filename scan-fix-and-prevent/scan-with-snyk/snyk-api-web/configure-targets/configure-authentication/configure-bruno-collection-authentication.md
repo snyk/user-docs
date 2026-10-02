@@ -1,17 +1,21 @@
 ---
-description: How to configure authentication for a Snyk API & Web scan that uses a Bruno Collection, including dynamic token generation
 nav_context: classic
+description: >-
+  How to configure authentication for a Snyk API and Web scan that uses a Bruno
+  Collection, including dynamic token generation
 ---
+
+# Configure Bruno Collection Authentication
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# Configure Bruno Collection Authentication
+## Configure Bruno Collection Authentication
 
 Configure authentication to scan an API using a Bruno collection.
 
 Configure Snyk API & Web to run authenticated requests that use dynamically generated tokens (through a script). If scans take longer and your token expires, configure Snyk API & Web to detect logout and generate a new token.
 
-## Example scenario
+### Example scenario
 
 This guide uses a Bruno Collection example with the following requests:
 
@@ -22,7 +26,7 @@ This guide uses a Bruno Collection example with the following requests:
 
 For configuring 1, 2 and 3, follow the example in [Configure an API target with a Bruno Collection](configure-an-api-target-with-a-bruno-collection.md).
 
-### Configure your Bruno collection for authentication
+#### Configure your Bruno collection for authentication
 
 Create two top-level folders in your Bruno Collection, one for authentication and one for logout detection. Include test scripts to verify that authentication works and tokens remain valid:
 
@@ -42,11 +46,11 @@ Create two top-level folders in your Bruno Collection, one for authentication an
 
     <figure><img src="../../../../.gitbook/assets/configure-bruno-authentication-folder-logout.png" alt="Check token request configured in the logout-detection folder"><figcaption></figcaption></figure>
 
-### Test and export the collection
+#### Test and export the collection
 
 After configuring all requests, run the collection to test it. If no issues occur, export the collection.
 
-## Add or update your Bruno target
+### Add or update your Bruno target
 
 Add the Bruno target using the Bruno collection you exported. If your target is already configured in Snyk API & Web, update its schema:
 
@@ -56,11 +60,11 @@ Add the Bruno target using the Bruno collection you exported. If your target is 
 4. Upload the updated Bruno collection.
 5. Save your changes and add the required environment variables.
 
-## Configure Bruno target authentication
+### Configure Bruno target authentication
 
 After configuring the Bruno environment values, configure your target's custom authentication:
 
-1. Select the **Authentication** tab and locate the **API TARGET AUTHENTICATION** section.
+1. Select the **Authentication** tab and locate the **TOKEN AUTHENTICATION** > **Collection-defined login sequence** section.
 2. Select the **AUTHENTICATION FOLDER**. After selection, the form updates to show the remaining fields.
 3. Configure the authentication variables:
    1. **VARIABLE TYPE**: Select how the variable is scoped in your Bruno Collection. This must match how the variable is set in your collection's test script:
@@ -75,7 +79,7 @@ After configuring the Bruno environment values, configure your target's custom a
 5. Optionally, select the checkbox: **When login fails, fail the scan immediately and notify me**.
 6. Click **Save** and ensure the authentication toggle is set to **On**.
 
-## Configure Bruno logout detection (optional)
+### Configure Bruno logout detection (optional)
 
 Adding logout detection helps Snyk API & Web to determine if the session ended, and try to authenticate again to proceed with the scan:
 
