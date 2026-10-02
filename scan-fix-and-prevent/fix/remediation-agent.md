@@ -45,8 +45,8 @@ The agent follows the same core flow at every entry point:
 
 ## Entry points
 
-* Agentic IDE (ADE): run `/snyk-fix` in your coding assistant to scan the Project and fix the top vulnerability. Run `/snyk-batch-fix` to address several vulnerabilities in one pass. Install the `/snyk-fix` skill before you use it. The Snyk Studio installer installs it, or you can follow the [studio-recipes](https://github.com/snyk/studio-recipes/tree/main) setup instructions.
-* Snyk CLI: run `snyk fix --agentic` in your terminal for an interactive, human-in-the-loop remediation flow without an IDE.
+* [Agentic IDE (ADE)](#set-up-in-an-agentic-ide): run `/snyk-fix` in your coding assistant to scan the Project and fix the top vulnerability. Run `/snyk-batch-fix` to address several vulnerabilities in one pass. Install the `/snyk-fix` skill before you use it. The Snyk Studio installer installs it, or you can follow the [studio-recipes](https://github.com/snyk/studio-recipes/tree/main) setup instructions.
+* [Snyk CLI](#fix-vulnerabilities-from-the-snyk-cli): run `snyk fix --agentic` in your terminal for an interactive, human-in-the-loop remediation flow without an IDE.
 
 `/snyk-batch-fix` is an ADE skill rather than a CLI command. To fix several vulnerabilities from the CLI, use `--auto-approve`.
 
