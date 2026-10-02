@@ -1,23 +1,24 @@
 ---
-description: How to interpret target scan results in Snyk API & Web
 nav_context: agnostic
+description: How to interpret target scan results in Snyk API & Web
 ---
 
 # Interpret target scan results
 
-After setting up your target at Snyk API & Web, you can start a scan and access the scan details to visualize the progress and results with real-time updates.
+After setting up your target in Snyk API & Web, you can start a scan and view scan details to visualize progress and results with real-time updates.
 
 On this page, you find three valuable sections to analyze and interpret a target scan:
 
 * **Overview** tab, with the Risk, Status, Settings, and Details of the scan.
 * **Findings** tab, with the list of vulnerabilities found by the scanner.
+* **Coverage** tab, with the URLs the crawler found, the decision for each, and the reason for any URL that was not tested.
 * **Reports** section, with a couple of options for reports about the scan.
 
 This article provides all the details on these sections.
 
 ## Overview
 
-The **Risk** section shows the counter of vulnerabilities found and the compliance tags. If a target does not meet the required checklist for compliance, the tags are red.
+The **Risk** section shows the vulnerability count and the compliance tags. If a target does not meet the required compliance checklist, the tags are red.
 
 The **Status** section shows all the relevant information about the scan date (when it started and ended), its duration, status, and whether the login was successful. This section also lets you download the crawling report, or the provisory crawling report if the scan is still running.
 

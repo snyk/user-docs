@@ -309,6 +309,7 @@
       * [CAPTCHAs impact](scan-with-snyk/snyk-api-web/start-scanning/overview-scan-access-and-connectivity/captchas-impact.md)
   * [Review and fix](scan-with-snyk/snyk-api-web/review-and-fix/README.md)
     * [Interpret target scan results](scan-with-snyk/snyk-api-web/review-and-fix/interpret-target-scan-results.md)
+    * [Interpret coverage results](scan-with-snyk/snyk-api-web/review-and-fix/interpret-coverage-results.md)
     * [HTTP status codes in target scans](scan-with-snyk/snyk-api-web/review-and-fix/http-status-codes-in-target-scans.md)
     * [Severity levels in findings](scan-with-snyk/snyk-api-web/review-and-fix/severity-levels-in-findings.md)
     * [Finding states](scan-with-snyk/snyk-api-web/review-and-fix/finding-states.md)
