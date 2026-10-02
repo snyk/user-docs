@@ -82,7 +82,7 @@ Example: `snyk fix --agentic --experimental --sca --provider=openai`
 
 ### `--model=<MODEL>`
 
-Model ID, which overrides the provider's default model. Required for Ollama, for example `llama3.1`. For Vertex AI, use a Gemini or Claude model name, for example `gemini-2.5-flash`. For Amazon Bedrock, model IDs depend on your account and region, and newer Claude models are often reachable only through a cross-region inference profile.
+Model ID, which overrides the provider's default model. Required for Ollama, for example `llama3.1`. For Vertex AI, use a Gemini or Claude model name, for example `gemini-2.5-flash`. For Amazon Bedrock, visit [Configure a model provider](../../../scan-fix-and-prevent/fix/remediation-agent.md#configure-a-model-provider).
 
 Example: `snyk fix --agentic --experimental --sca --provider=ollama --model=llama3.1`
 
