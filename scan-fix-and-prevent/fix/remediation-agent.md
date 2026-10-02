@@ -149,7 +149,7 @@ The agentic CLI flow runs against a model you supply. Pick a provider with `--pr
 | `--provider` | Authentication | Required configuration | Optional configuration |
 |---|---|---|---|
 | `anthropic` (default) | API key | `ANTHROPIC_API_KEY` | `ANTHROPIC_BASE_URL` to route through a gateway |
-| `openai` | API key | `OPENAI_API_KEY` | — |
+| `openai` | API key | `OPENAI_API_KEY` | None |
 | `bedrock` | The standard AWS credential chain, so no API key | AWS credentials the SDK can resolve, such as a profile or an instance role | `AWS_REGION` to pin the region |
 | `vertex` | Google Application Default Credentials, so no API key. Authenticate with `gcloud auth application-default login` | `GOOGLE_CLOUD_PROJECT` and `GOOGLE_CLOUD_LOCATION` | `VERTEX_AUTH_TOKEN` for a gateway that expects a bearer token, and `VERTEX_BASE_URL` |
 | `litellm` | A LiteLLM virtual key. The proxy holds the real provider credentials | `LITELLM_BASE_URL`, which must use HTTPS | `LITELLM_API_KEY` |
@@ -196,7 +196,7 @@ For the full command reference, including all flags, visit [Fix](../../developer
 * Base image upgrades. The agent updates the base image reference in the final stage's `FROM` instruction. When that reference is built from global `ARG` defaults, the agent edits the `ARG` default values rather than the structure of the `FROM` lines. Verification confirms that the upgraded image keeps a runtime user equivalent to the original, so a base image bump does not silently change the user your container runs as.
 * OS package upgrades. The agent patches operating system packages in the image. The run presents the available package upgrades and you select which ones to apply.
 
-Verification builds the image and rescans it, so a candidate Dockerfile that no longer builds is rejected rather than reported as a fix.
+Verification builds the image and rescans it, so the agent rejects a candidate Dockerfile that no longer builds instead of reporting it as a fix.
 
 {% hint style="info" %}
 The container flow selects fixes at the Dockerfile and package level rather than per vulnerability, so it does not accept `--issue-ids`, `--exclude-ids`, `--severity-threshold`, or `--severity-filter`. Passing any of them ends the run before the scan starts. `--container` also requires `--agentic`.
