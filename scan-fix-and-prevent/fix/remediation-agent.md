@@ -7,7 +7,7 @@ description: >-
 # Remediation Agent
 
 {% hint style="info" %}
-The Remediation Agent is in Open Preview. To turn it on, visit [Snyk Preview](../../platform-administration/snyk-platform-administration/snyk-preview.md) or ask your Snyk account team.
+The Remediation Agent is in [Early Access](../../discover-snyk/getting-started/snyk-release-process.md#early-access-features). To turn it on, visit [Snyk Preview](../../platform-administration/snyk-platform-administration/snyk-preview.md) or ask your Snyk account team.
 {% endhint %}
 
 The Remediation Agent is an LLM-driven tool that automates vulnerability remediation in your Snyk Projects. It scans a Project, generates a fix plan enriched with Snyk security intelligence, applies the fix, and verifies the result. It runs in your coding assistant or in the Snyk CLI.
@@ -17,34 +17,6 @@ The Remediation Agent is under rapid development. Some options on this page are 
 
 The bring-your-own-model provider integrations are the newest part of the feature. Treat their configuration as unstable.
 {% endhint %}
-
-## How it works
-
-Traditional vulnerability remediation requires a developer to review each finding, decide on a fix, apply it, and verify the outcome. The Remediation Agent automates that cycle.
-
-The agent follows the same core flow at every entry point:
-
-1. Scan: Snyk scans the Project for vulnerabilities with Snyk Open Source (SCA), Snyk Code (SAST), or Snyk Container.
-2. Plan: The agent builds a fix plan enriched with Snyk security intelligence, including breakability signals for SCA fixes.
-3. Fix: The agent applies the fix. For SCA, it bumps dependency versions or adds overrides. For SAST, it applies Snyk Agent Fix suggestions to the source code. For containers, it edits the Dockerfile.
-4. Verify: The agent rescans to confirm the vulnerability is resolved, and runs the tests that exist in the application, such as unit tests. When a fix introduces a problem, the agent reports the outcome.
-
-## Breaking change assessment
-
-Before the agent changes an open-source dependency, Snyk assesses whether the version upgrade is likely to break your build. The agent receives that assessment along with what to watch for if the upgrade does break something. Breakability applies to open source dependencies only, so SAST and container fixes carry no breakability rating.
-
-How much the agent does on its own depends on where you run it. In an agentic IDE, the agent proceeds automatically when there is no breakability risk. In the CLI, the agent prompts you to choose what to fix unless you run it with `--auto-approve`.
-
-{% hint style="info" %}
-The breaking change assessment is in preview. When it is unavailable, the agent falls back to a local heuristic assessment.
-{% endhint %}
-
-## Entry points
-
-* Agentic IDE (ADE): run `/snyk-fix` in your coding assistant to scan the Project and fix the top vulnerability. Run `/snyk-batch-fix` to address several vulnerabilities in one pass. Install the `/snyk-fix` skill before you use it. The Snyk Studio installer installs it, or you can follow the [studio-recipes](https://github.com/snyk/studio-recipes/tree/main) setup instructions.
-* Snyk CLI: run `snyk fix --agentic` in your terminal for an interactive, human-in-the-loop remediation flow without an IDE.
-
-`/snyk-batch-fix` is an ADE skill rather than a CLI command. To fix several vulnerabilities from the CLI, use `--auto-approve`.
 
 ## Prerequisites
 
@@ -60,7 +32,35 @@ The breaking change assessment is in preview. When it is unavailable, the agent 
 * The Snyk CLI. Visit [Install the Snyk CLI](../../developer-tools/snyk-cli/install-the-snyk-cli/README.md).
 * Access to a model provider. Visit [Configure a model provider](#configure-a-model-provider).
 
-## Set up the Remediation Agent
+## How it works
+
+Traditional vulnerability remediation requires a developer to review each finding, decide on a fix, apply it, and verify the outcome. The Remediation Agent automates that cycle.
+
+The agent follows the same core flow at every entry point:
+
+1. Scan: Snyk scans the Project for vulnerabilities with Snyk Open Source (SCA), Snyk Code (SAST), or Snyk Container.
+2. Plan: The agent builds a fix plan enriched with Snyk security intelligence, including breakability signals for SCA fixes.
+3. Fix: The agent applies the fix. For SCA, it bumps dependency versions or adds overrides. For SAST, it applies Snyk Agent Fix suggestions to the source code. For containers, it edits the Dockerfile.
+4. Verify: The agent rescans to confirm the vulnerability is resolved, and runs the tests that exist in the application, such as unit tests. When a fix introduces a problem, the agent reports the outcome.
+
+## Entry points
+
+* Agentic IDE (ADE): run `/snyk-fix` in your coding assistant to scan the Project and fix the top vulnerability. Run `/snyk-batch-fix` to address several vulnerabilities in one pass. Install the `/snyk-fix` skill before you use it. The Snyk Studio installer installs it, or you can follow the [studio-recipes](https://github.com/snyk/studio-recipes/tree/main) setup instructions.
+* Snyk CLI: run `snyk fix --agentic` in your terminal for an interactive, human-in-the-loop remediation flow without an IDE.
+
+`/snyk-batch-fix` is an ADE skill rather than a CLI command. To fix several vulnerabilities from the CLI, use `--auto-approve`.
+
+## Breaking change assessment
+
+Before the agent changes an open-source dependency, Snyk assesses whether the version upgrade is likely to break your build. The agent receives that assessment along with what to watch for if the upgrade does break something. Breakability applies to open source dependencies only, so SAST and container fixes carry no breakability rating.
+
+How much the agent does on its own depends on where you run it. In an agentic IDE, the agent proceeds automatically when there is no breakability risk. In the CLI, the agent prompts you to choose what to fix unless you run it with `--auto-approve`. Visit [Scope the run](#scope-the-run) for the options that control this.
+
+{% hint style="info" %}
+The breaking change assessment is in preview. When it is unavailable, the agent falls back to a local heuristic assessment.
+{% endhint %}
+
+## Set up in an agentic IDE
 
 {% stepper %}
 {% step %}
@@ -175,19 +175,13 @@ snyk fix --agentic --experimental --container [path]
 
 ### Scope the run
 
-An interactive run prompts you for each fix. Narrow what the agent touches with these options:
+An interactive run prompts you for each fix. These options change that. For what each option does and how they combine, visit [Fix](../../developer-tools/snyk-cli/commands/fix.md).
 
-| Option | Effect |
-|---|---|
-| `--auto-approve` | Applies fixes without prompting. It also trusts the folder, continues after test failures, skips advisories, and approves partial plans when the agent reaches a budget warning. |
-| `--issue-ids=<ID>[,<ID>]` | Fixes only these vulnerabilities. Requires `--auto-approve`. |
-| `--exclude-ids=<ID>[,<ID>]` | Fixes everything except these. Requires `--auto-approve`, and does not combine with `--issue-ids`. |
-| `--severity-filter=<SEVERITY>` | Fixes only vulnerabilities at exactly these severities, from `low`, `medium`, `high`, and `critical`. Unlike `--severity-threshold`, this is an exact match, and it applies to interactive runs as well as auto-approved ones. |
-| `--breakability-filter=<RATING>` | Fixes only SCA fixes at exactly these breakability ratings, from `low`, `medium`, and `high`. SCA only, so it skips the SAST leg. |
-| `--no-breakability` | Skips the Snyk Breakability API and uses the local heuristic only. |
-| `--dry-run` | Shows the fix plan without changing any files. |
+* Run without prompting: `--auto-approve`. It does more than approve fixes, so read its entry in the reference before you use it.
+* Choose which vulnerabilities to fix: `--issue-ids`, `--exclude-ids`, `--severity-threshold`, `--severity-filter`, and `--breakability-filter`.
+* Preview or adjust the run: `--dry-run` and `--no-breakability`.
 
-For the full command reference, including all flags, visit [Fix](../../developer-tools/snyk-cli/commands/fix.md).
+The `--issue-ids`, `--exclude-ids`, and `--severity-threshold` options require `--auto-approve`.
 
 ## Fix container vulnerabilities
 
@@ -199,7 +193,7 @@ For the full command reference, including all flags, visit [Fix](../../developer
 Verification builds the image and rescans it, so the agent rejects a candidate Dockerfile that no longer builds instead of reporting it as a fix.
 
 {% hint style="info" %}
-The container flow selects fixes at the Dockerfile and package level rather than per vulnerability, so it does not accept `--issue-ids`, `--exclude-ids`, `--severity-threshold`, or `--severity-filter`. Passing any of them ends the run before the scan starts. `--container` also requires `--agentic`.
+The container flow selects fixes at the Dockerfile and package level rather than per vulnerability, so it does not accept the options that select individual vulnerabilities. Passing any of them ends the run before the scan starts. The [Fix](../../developer-tools/snyk-cli/commands/fix.md) reference lists them. `--container` also requires `--agentic`.
 {% endhint %}
 
 ## Best practices
@@ -210,4 +204,4 @@ The container flow selects fixes at the Dockerfile and package level rather than
 
 ## Get help
 
-Send feedback on outcomes to Snyk through your account manager or through [Snyk Support](https://support.snyk.io). Your input shapes the feature while it is in Open Preview.
+Send feedback on outcomes to Snyk through your account manager or through [Snyk Support](https://support.snyk.io). Your input shapes the feature while it is in Early Access.
