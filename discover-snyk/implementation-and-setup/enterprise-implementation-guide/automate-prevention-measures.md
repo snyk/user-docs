@@ -1,9 +1,7 @@
 ---
 description: How to automate Snyk prevention and gating to stop new vulnerabilities from entering your applications
-nav_context: classic
+nav_context: new
 ---
-
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Automate prevention measures
 
@@ -68,8 +66,8 @@ Adding Snyk to your pipeline acts as a gatekeeper:
 **Key decision**: Move security upstream. Test base images before developers use them to ensure all derived containers start from a secure foundation.
 {% endhint %}
 
-* **Container registry**: Run Snyk container tests when creating custom base images. Snyk Container (**Detect Dockerfiles**) is enabled for Organizations by default. To disable it, navigate to the Dockerfile tile under your Org-level SCM integration **Settings**.
-* **IaC**: Integrate with workflows like Terraform Cloud to scan configuration files before deployment. IaC is enabled for Organizations by default. To disable it, navigate to Organization **Settings** > **Snyk IaC**.
+* **Container registry**: Run Snyk container tests when creating custom base images. Snyk Container (**Detect Dockerfiles**) is enabled for Organizations by default. To disable it, navigate to **Settings** > **Integrations** at Organization scope, select your SCM integration, and use the Dockerfile tile.
+* **IaC**: Integrate with workflows like Terraform Cloud to scan configuration files before deployment. IaC is enabled for Organizations by default. To disable it, navigate to **Settings** > **Products and features** > **Snyk IaC** at Organization scope.
 
 ## Announce prevention measures
 
