@@ -1291,6 +1291,7 @@
     },
     "parameters": {
       "Accept": {
+        "description": "Accept header",
         "in": "header",
         "name": "Accept",
         "schema": {
