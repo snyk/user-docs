@@ -234,6 +234,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--reachability-filter=<reachable|no-info|not-applicable>`: [`test`](commands/test.md),[`monitor`](commands/monitor.md), [`sbom test`](commands/sbom-test.md)
 
+`--html`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`secrets test`](commands/secrets-test.md)
+
+`--html-file-output=<OUTPUT_FILE_PATH>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`secrets test`](commands/secrets-test.md)
+
 ## `snyk aibom` command options
 
 `--enriched`: [snyk aibom](commands/aibom.md), [snyk aibom test](commands/aibom-test.md)\
