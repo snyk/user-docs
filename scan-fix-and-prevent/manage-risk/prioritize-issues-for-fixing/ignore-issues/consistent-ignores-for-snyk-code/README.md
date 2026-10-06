@@ -25,15 +25,23 @@ Snyk attaches a Consistent Ignore to the repository-level identifier of a findin
 
 Each time Snyk Code tests the repository, Snyk matches the results to the findings it already tracks for that repository. This applies to tests from every branch, the Snyk CLI, Snyk IDE plugins, and pull request checks. When code moves or changes, Snyk matches the finding to its existing identifier where it can, so the ignore continues to apply.
 
+Snyk Code records file paths relative to the directory that a test starts from, and uses the path as one of the signals when it matches a finding. Tests of one repository that start from different directories report the same file under different paths.
+
 Deleting a branch Project or a target does not delete Consistent Ignores and does not reopen ignored findings. The ignores remain in place for the repository.
 
 ## If an ignored finding appears as open again
 
-In some cases, Snyk cannot match a finding to the identifier that its ignore is attached to, and the finding appears as **Open** again. The original ignore is not deleted.
+Snyk cannot always match a finding to the identifier that its ignore is attached to. Two setups cause this most often:
+
+* Tests of one repository that start from different directories, for example the repository root in a pipeline and a module directory on a developer machine.
+* Repositories that contain duplicate copies of their source files, such as a baseline or build output directory.
+
+In these cases, Snyk can attach the ignore to the finding at a different path. The original finding appears as **Open** again, and the finding at the other path is suppressed. Snyk does not move the ignore back automatically. The original ignore is not deleted.
 
 1. [Ignore the finding again](./#create-an-ignore) from its issue card.
 2. [Retest the Project](../../../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/#retesting-code-repository) to update the issue status.
-3. If ignored findings reappear repeatedly, contact Snyk Support with the Organization, the Project, and the URLs of the affected issues.
+3. Review ignored findings in duplicate directories, and exclude those directories from tests where possible.
+4. If ignored findings reappear repeatedly, contact Snyk Support with the Organization, the Project, and the URLs of the affected issues.
 
 ## User roles
 
