@@ -231,7 +231,7 @@ Configure additional integrations to build a complete inventory of your code-bas
 To start building your inventory:
 
 1. In the Snyk web UI, use the scope selector to switch to your Group.
-2. Navigate to **Settings** > **Integrations** > **All integrations** to view your existing connections or add new ones. [ACTION REQUIRED: the classic path was Inventory > Integrations. The new Group Inventory has no Integrations tab. Confirm that asset-discovery integrations are managed from Settings > Integrations > All integrations.]
+2. Navigate to **Settings** > **Integrations** > **All integrations** to view your existing connections or add new ones. 
 {% endstep %}
 
 {% step %}
