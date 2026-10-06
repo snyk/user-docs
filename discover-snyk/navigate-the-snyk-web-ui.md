@@ -26,7 +26,7 @@ The side menu groups the main areas of Snyk:
 The top scope selector replaces the classic sidebar headers for **Tenant**, **Group**, and **Organization**. It shows your current location as three segments, from left to right:
 
 * **Tenant**: switch between the Tenants you can access.
-* **Group**: the Group in the selected Tenant. [ACTION REQUIRED: confirm how users switch Groups and enter Group scope. Captures on October 2, 2026 show the Group segment without a dropdown arrow in Tenants that have one Group.]
+* **Group**: the Group in the selected Tenant. 
 * **Organization**: switch between the Organizations in the selected Group. At Group scope, this segment shows **All Organizations**.
 
 The **Organization** dropdown is searchable. To create an Organization, open the **Organization** dropdown and click **+ Create new Organization**.
@@ -41,7 +41,7 @@ The **Organization** dropdown is searchable. To create an Organization, open the
 * **Group settings:** General, Notifications.
 * **Security and access:** SSO, Member roles, Service accounts, Members.
 * **Products and features:** Snyk IaC, Snyk Agent Fix, Snyk Open Source, Snyk Code, Snyk Assist, and other licensed products.
-* **Plan and billing:** Usage. [ACTION REQUIRED: confirm which plans also show Your plan and billing and Available plans. An Enterprise Group captured on October 2, 2026 showed only Usage.]
+* **Plan and billing:** Usage. 
 * **Integrations:** General, Snyk Broker, All integrations.
 * **Snyk Preview:** enable controls for preview features.
 
