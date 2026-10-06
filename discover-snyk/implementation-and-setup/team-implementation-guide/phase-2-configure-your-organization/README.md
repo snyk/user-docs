@@ -11,7 +11,7 @@ This step is easiest performed prior to purchasing the license. If you did not, 
 
 ### Changing the name prior to purchase
 
-Open the **Organization** dropdown in the scope selector and click **+ Create new Organization**. Then purchase a Team plan for the new Organization. [ACTION REQUIRED: confirm the new-navigation location for purchasing a Team plan. The classic path was Settings-Plans and Billing.]
+Open the **Organization** dropdown in the scope selector and click **+ Create new Organization**. Then purchase a Team plan for the new Organization.
 
 ### Changing the name after purchase
 
