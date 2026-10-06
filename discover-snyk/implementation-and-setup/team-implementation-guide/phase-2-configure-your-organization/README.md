@@ -29,7 +29,7 @@ You must contact Snyk support and submit a ticket to update the url slug. This c
 
 ### License policy (optional)
 
-Snyk comes with a default policy. You can find this under **Settings-Licenses** [ACTION REQUIRED: confirm the new-navigation location for license policies. No Licenses entry appears in the Organization Settings menu.] if your team wants to add custom text when an issue is found or change severities for specific licenses.
+Snyk comes with a default policy. You can find this under **Group** > **Policies** > **License policies** > **Snyk Default License Policy**. 
 
 Administrators can set license policies to define Snyk behavior for treating license issues. For example, you can allow or disallow packages with certain license types to avoid using packages containing incompatible licenses.
 
