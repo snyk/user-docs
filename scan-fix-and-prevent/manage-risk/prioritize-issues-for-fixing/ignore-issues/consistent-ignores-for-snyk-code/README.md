@@ -108,3 +108,7 @@ Project retests typically occur on a nightly or weekly basis, but you can also r
 1. Log in to the Snyk Web UI and navigate to your Group and Organization.
 2. Open a Project and find an issue card.
 3. Select **Edit Ignore**, change the values, and then **Confirm**.
+
+{% hint style="info" %}
+Once an ignore request has been processed, the **Ignore reason** is disabled and cannot be edited. You can still edit the ignore type and expiration.
+{% endhint %}
