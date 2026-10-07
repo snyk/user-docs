@@ -7,7 +7,7 @@ nav_context: classic
 
 # Consistent Ignores for Snyk Code
 
-Snyk Code Consistent Ignores helps your teams focus on important tasks by filtering out distractions. It ensures that once an ignore is created, it is consistently respected regardless of how and where the test is run and what branch is being tested.
+Snyk Code Consistent Ignores helps your teams focus on important tasks by filtering out distractions. After you ignore a finding, Snyk applies the ignore to that finding across the repository: in every branch and integration, in the Snyk CLI and Snyk IDE plugins, and in pull request checks.
 
 By filtering out false positives, inapplicable threats, and accepted risks, your security teams can prioritize fixing real problems, and developers can code without interruptions.
 
@@ -18,6 +18,30 @@ Enable Snyk Code Consistent Ignores for your Group or Organization in the Snyk W
 ## Disable Snyk Code Consistent Ignores
 
 Any ignores created or converted with the feature enabled will not be automatically converted back to Project-based ignores. You can recreate them manually after disabling the feature.
+
+## How Consistent Ignores match findings
+
+Snyk attaches a Consistent Ignore to the repository-level identifier of a finding (`snyk/asset/finding/v1`), not to a file path and line number.
+
+Each time Snyk Code tests the repository, Snyk matches the results to the findings it already tracks for that repository. This applies to tests from every branch, the Snyk CLI, Snyk IDE plugins, and pull request checks. When code moves or changes, Snyk matches the finding to its existing identifier where it can, so the ignore continues to apply.
+
+Snyk Code records file paths relative to the directory that a test starts from, and uses the path as one of the signals when it matches a finding. Tests of one repository that start from different directories report the same file under different paths.
+
+Deleting a branch Project or a target does not delete Consistent Ignores and does not reopen ignored findings. The ignores remain in place for the repository.
+
+## If an ignored finding appears as open again
+
+Snyk cannot always match a finding to the identifier that its ignore is attached to. Two setups cause this most often:
+
+* Tests of one repository that start from different directories, for example the repository root in a pipeline and a module directory on a developer machine.
+* Repositories that contain duplicate copies of their source files, such as a baseline or build output directory.
+
+In these cases, Snyk can attach the ignore to the finding at a different path. The original finding appears as **Open** again, and the finding at the other path is suppressed. Snyk does not move the ignore back automatically. The original ignore is not deleted.
+
+1. [Ignore the finding again](./#create-an-ignore) from its issue card.
+2. [Retest the Project](../../../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/#retesting-code-repository) to update the issue status.
+3. Review ignored findings in duplicate directories, and exclude those directories from tests where possible.
+4. If ignored findings reappear repeatedly, contact Snyk Support with the Organization, the Project, and the URLs of the affected issues.
 
 ## User roles
 
