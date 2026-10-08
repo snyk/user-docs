@@ -23,13 +23,13 @@ The side menu groups the main areas of Snyk:
 
 ## Scope selector
 
-The top scope selector replaces the classic sidebar headers for **Tenant**, **Group**, and **Organization**. It contains three dropdowns:
+The top scope selector replaces the classic sidebar headers for **Tenant**, **Group**, and **Organization**. It shows your current location as three segments, from left to right:
 
 * **Tenant**: switch between the Tenants you can access.
-* **Group**: switch between the Groups in the selected Tenant.
-* **Organization**: switch between the Organizations in the selected Group. Select All Organizations to view the Group-level context.\
-  \
-  Each dropdown is searchable. To create an **Organization**, open the **Organization** dropdown and select **+ Create new Organization**.
+* **Group**: the Group in the selected Tenant. 
+* **Organization**: switch between the Organizations in the selected Group. At Group scope, this segment shows **All Organizations**.
+
+The **Organization** dropdown is searchable. To create an Organization, open the **Organization** dropdown and click **+ Create new Organization**.
 
 ### Tenant scope
 
@@ -40,16 +40,18 @@ The top scope selector replaces the classic sidebar headers for **Tenant**, **Gr
 
 * **Group settings:** General, Notifications.
 * **Security and access:** SSO, Member roles, Service accounts, Members.
-* **Products and features:** Snyk Agent Fix, Snyk Open Source, Snyk Code, Snyk Assist, and other licensed products.
-* **Plan and billing:** Your plan and billing, Available plans.
+* **Products and features:** Snyk IaC, Snyk Agent Fix, Snyk Open Source, Snyk Code, Snyk Assist, and other licensed products.
+* **Plan and billing:** Usage. 
 * **Integrations:** General, Snyk Broker, All integrations.
+* **Snyk Preview:** enable controls for preview features.
 
 ### Organization scope
 
 * **Organization settings:** General, Service accounts, Notifications, Automated collections.
 * **Security and access:** Members.
-* **Products and features:** Snyk Open Source, Snyk Code, Snyk Container, Snyk IaC, Snyk Assist, and other licensed products.
-* **Integrations:** General, Snyk Broker, Authorized Snyk Apps, All integrations, and individual integrations such as ECR and GitHub.
+* **Products and features:** Snyk Open Source, Snyk Code, Snyk Agent Fix, Snyk Container, Snyk IaC, and other licensed products.
+* **Plan and billing:** Usage.
+* **Integrations:** General, Snyk Broker, Authorized Snyk Apps, All integrations, Cloud environments, and individual integrations such as ECR and GitHub.
 * **Snyk Preview:** enable controls for preview features.
 
 ## Where things moved
@@ -59,7 +61,7 @@ The following classic items now live elsewhere in the new interface.
 | Classic navigation                    | New location                                                | How to get there                                                                                 |
 | ------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | Organizations                         | Scope selector > **Organization** dropdown                  | Open the **Organization** dropdown, then select an Organization or **+ Create new Organization** |
-| Tenant / Group / Organization headers | Scope selector                                              | Use the three dropdowns from left to right                                                       |
+| Tenant / Group / Organization headers | Scope selector                                              | Use the three segments from left to right                                                        |
 | Dependencies                          | **Analytics** > **Reports** > **Dependencies and licenses** | Navigate to **Analytics** > **Reports**, or press **⌘K** and enter `dependencies`                |
 | Ignore requests                       | **Issues** > **Ignore requests**                            | Navigate to **Issues**, then select the **Ignore requests** tab                                  |
 | Cloud                                 | **More from Snyk** > **Cloud**                              | Select **More from Snyk** at the bottom of the side menu, then select **Cloud**                  |
@@ -79,7 +81,7 @@ New areas without a direct classic equivalent:
 | --------------------- | ----------------------------------------------- | -------------------------------------------------------------------- |
 | **Projects**          | Side menu                                       | Top-level entry to the Snyk Projects list                            |
 | **Navigation search** | Opens over any page                             | Jump to any page by name using **⌘K** or **Ctrl+K**                  |
-| **Inventory**         | Side menu                                       | Unified view of your assets, starting with Container Images and SBOM |
+| **Inventory**         | Side menu                                       | Unified view of your assets, starting with Container Images          |
 | **Snyk Assist**       | Top-right corner, next to **Navigation search** | In-product AI assistant for product, security, and account questions |
 
 ## Switch between new and classic navigation

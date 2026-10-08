@@ -1,9 +1,7 @@
 ---
 description: How to gain visibility by importing Projects so Snyk monitors your code, dependencies, containers, and infrastructure
-nav_context: classic
+nav_context: new
 ---
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Gain visibility by importing repositories
 
@@ -31,12 +29,12 @@ Use this method to connect repositories for automatic scanning. This is the pref
 
 To do this:
 
-1. In the Snyk web UI, navigate to **Settings** > **Integrations**.
+1. In the Snyk web UI, select your Organization in the scope selector, then navigate to **Settings** > **Integrations** > **All integrations**.
 2. Connect to your SCM code repositories using the specific tile.
 3. Configure the integration settings:
    * Disable automatic fixes and PR/Merge checks during initial onboarding.
    * Enable these features after reaching a steady state.
-4. Add Projects from the Projects listing in the web UI.
+4. Select **Projects** in the side menu and click **Add projects**.
 5. Monitor results directly in your SCM repositories.
 
 The import succeeds when each repository you selected appears as a Project in the **Projects** listing and Snyk reports its issues.
@@ -70,7 +68,7 @@ Use the API to trigger scans and handle results programmatically across a large 
 **Key decision**: Identify which pipelines require real-time issue identification at scale.
 {% endhint %}
 
-1. In the Snyk web UI, navigate to **Settings** > **Service Accounts** and generate an API token.
+1. In the Snyk web UI, navigate to **Settings** > **Organization settings** > **Service accounts** and generate an API token.
 2. Call the Snyk API in your pipelines.
 3. Handle the results programmatically to trigger downstream actions.
 

@@ -1,31 +1,33 @@
 ---
 description: How to review Snyk scan coverage, including the Group-level SCM integration and the Inventory
-nav_context: classic
+nav_context: new
 ---
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Review scan coverage
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
-## Check ‌the Group-level SCM integration
+## Check the Group-level SCM integration
 
-Ensure that the Group-level SCM integration is configured. Navigate to the Group level, open the Integrations tab, and find your SCM in the Integration Hub. Follow the instructions for your SCM.
+Ensure that the Group-level SCM integration is configured.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfVcJKkJhYj17m0dkLnJ1DQNQsyDyfPkRJ-9Gjkf84-XGQuqVuEOY2NCKWd8E_24KByHwmAZY2kUVs8jWzYX_pCpVMRbuwskqNCiAjz7e1dsDmaLzOmWTQL0je9gaf2IHvNFE8dfA?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Group-level SCM integration on the Integrations tab"><figcaption></figcaption></figure>
+1. In the Snyk Web UI, use the scope selector at the top of the page to switch to your Group.
+2. Navigate to **Settings** > **Integrations** > **All integrations** and find your SCM.
+3. Follow the instructions for your SCM.
+
+<figure><img src="../../../.gitbook/assets/configure-group-level-integration.png" alt="Group-level SCM integrations in Settings, All integrations"><figcaption></figcaption></figure>
 
 ## Review the Inventory
 
-The first page of the Inventory provides an overview of your most important repositories and identifies coverage gaps, showing which repos have been tested with Snyk and which have not. See the [Inventory menu](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets) page for more details.
+At Group scope, select **Inventory** in the side menu. The **Overview** tab shows your most important repositories and identifies coverage gaps: which repositories Snyk has tested and which it has not. For details, visit [Manage assets](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets).
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9jbqqPfkZH6PvNz2pBcNtNKgfphy1GayWURCQnmGxFvQG5cw4vcYcsOpPF78ztH8xjcJKkRWKty4lNlC63bN0S8qP-qcU_EOpvbnbBEaPIgadfRnnVilbYlvR8Uk7U6n6fWyhRw?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Inventory overview showing coverage gaps across repositories"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/group-inventory-overview-new-navigation.png" alt="Inventory Overview tab showing coverage gaps across repositories"><figcaption></figcaption></figure>
 
-The **All Assets** page shows a complete list of all repositories, including the number of issues for each repo, which Snyk tests have run, tags ingested from the SCM, developers who contribute to this repo, and the repository freshness.
+The **All Assets** tab lists every repository, with the number of issues, the Snyk tests that have run, tags ingested from the SCM, contributing developers, and repository freshness.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcmljy-ooiInsutXG8MAz5nwwTDGFlODl6YGUnbdx942g-RUiuVDMExkkAXG0cCPkcbsh6uT-eJdURlItkQSUZfxGHbYUhLlxqNMI0IFDIX2paJE45ywN6kX3zB2SMlZ_rg4cqb?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="All Assets page listing every repository with its issue count"><figcaption></figcaption></figure>
 
-Click on the 'Not tested' section of the first pie chart on the overview page, or use coverage filters on the 'All Assets' page to view all repositories that the selected Snyk product has not tested.
+To view the repositories that a Snyk product has not tested, click the **Not tested** section of the first chart on the **Overview** tab, or use the coverage filters on the **All Assets** tab.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdlF4lPPJwbjSsf6AuZGzPERNXWKLi6gUWCF7JO0jOiYCgNYtHsqkvzxCIkx6-Ea5Kl9pF1VItX100Eo-ZN8MquDnUNfzUC2_C6f2p29TIv_5zOLNBfPumkBg0BrSf3bmCLDk2tXQ?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Filtering the Inventory to repositories that are not tested"><figcaption></figcaption></figure>
 

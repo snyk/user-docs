@@ -1,40 +1,36 @@
 ---
 description: How to import repositories into Snyk from your SCM integration to start scanning your Projects
-nav_context: classic
+nav_context: new
 ---
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Import repositories
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
-After setting up your SCM integration, you are ready to import repositories to Snyk. If you have not imported any repos yet, click on the **Import projects** button to start.
+After you set up your SCM integration, import repositories to Snyk.
 
-* Open the Snyk Web UI
-* Navigate to the Organization-level
-* Open **Dashboard**
-* Select **Import projects**
+1. In the Snyk Web UI, use the scope selector at the top of the page to select your Organization.
+2. Select **Projects** in the side menu, then click **Add projects**.
 
 <figure><img src="../../../.gitbook/assets/import-repositories.png" alt="Starting a repository import in the Snyk Web UI"><figcaption></figcaption></figure>
 
-Alternatively, you can start the import from the Integrations tab and select the integration that you just configured:
+3. Select the integration that you configured. Alternatively, navigate to **Settings** > **Integrations** > **All integrations** and select the integration from there.
 
-<figure><img src="../../../.gitbook/assets/configure-organization-level-integration.png" alt="Starting an import from the Integrations tab"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/configure-organization-level-integration.png" alt="Starting an import from the integrations list"><figcaption></figcaption></figure>
 
-* Select the repositories that you want to import and click **Add selected repositories**
+4. Select the repositories that you want to import and click **Add selected repositories**.
 
 <figure><img src="../../../.gitbook/assets/select-repositories-want-import-click-add-selected.png" alt="Selecting the repositories to import"><figcaption></figcaption></figure>
 
-* The import begins immediately, which can be monitored in the Import Log:
+The import starts immediately. To monitor progress, click **View import logs** on the **Projects** page.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcAbYAUF2UkQGgLSwX6fogOh42iosfEe_vyNjhY9wH-SOM_HZCQRxQNQRiI8jPGtcOaHP8ts3C8GoZpfRBLislwqtjgS_TuwUf01rH9gf6W0xxdC0Mq2Tflw3qDdTomfd5n6121?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Import progress shown in the Import Log"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-import-logs-new-navigation.png" alt="Import progress shown in the import logs"><figcaption></figcaption></figure>
 
-* All imported repos become visible on the Projects page:
+All imported repositories appear on the **Projects** page.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeaN56eVc58YuGp2c_pQ2Eo_6D5G3ms6bWCs17pk1zYHXCrgPDY6mH6T-0wWCfmdnp9ot55q6f9TznZMBtpl_KYAsUxp78NBdiu1zraOY9fSp7ArsfANKxKoDBMkLqA3hVyBM9j?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Imported repositories listed on the Projects page"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-list-new-navigation.png" alt="Imported repositories listed on the Projects page"><figcaption></figcaption></figure>
 
-You can either continue monitoring the import by returning to the import logs or select one of the imported repositories to start reviewing the issues.
+Continue monitoring the import in the import logs, or select an imported repository to start reviewing its vulnerabilities.
 
 {% hint style="info" %}
 Additional resources
