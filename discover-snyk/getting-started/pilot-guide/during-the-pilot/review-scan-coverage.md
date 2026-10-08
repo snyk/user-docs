@@ -15,13 +15,13 @@ Ensure that the Group-level SCM integration is configured.
 2. Navigate to **Settings** > **Integrations** > **All integrations** and find your SCM.
 3. Follow the instructions for your SCM.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfVcJKkJhYj17m0dkLnJ1DQNQsyDyfPkRJ-9Gjkf84-XGQuqVuEOY2NCKWd8E_24KByHwmAZY2kUVs8jWzYX_pCpVMRbuwskqNCiAjz7e1dsDmaLzOmWTQL0je9gaf2IHvNFE8dfA?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Group-level SCM integration on the Integrations tab"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/configure-group-level-integration.png" alt="Group-level SCM integrations in Settings, All integrations"><figcaption></figcaption></figure>
 
 ## Review the Inventory
 
 At Group scope, select **Inventory** in the side menu. The **Overview** tab shows your most important repositories and identifies coverage gaps: which repositories Snyk has tested and which it has not. For details, visit [Manage assets](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets).
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9jbqqPfkZH6PvNz2pBcNtNKgfphy1GayWURCQnmGxFvQG5cw4vcYcsOpPF78ztH8xjcJKkRWKty4lNlC63bN0S8qP-qcU_EOpvbnbBEaPIgadfRnnVilbYlvR8Uk7U6n6fWyhRw?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Inventory overview showing coverage gaps across repositories"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/group-inventory-overview-new-navigation.png" alt="Inventory Overview tab showing coverage gaps across repositories"><figcaption></figcaption></figure>
 
 The **All Assets** tab lists every repository, with the number of issues, the Snyk tests that have run, tags ingested from the SCM, contributing developers, and repository freshness.
 
