@@ -12,7 +12,7 @@ description: >-
 
 To use the `snyk fix --agentic` command:
 
-* Install the latest version of the [Snyk CLI](../install-the-snyk-cli/README.md)
+* Install Snyk CLI v1.1307.4 or later. Visit [Install or update the Snyk CLI](../install-the-snyk-cli/README.md).
 * [Authenticate](auth.md) your machine with the Snyk CLI using `snyk auth`
 * Configure access to an LLM provider. Not every provider uses an API key. Visit [Remediation Agent](../../../scan-fix-and-prevent/fix/remediation-agent.md) for the supported providers and their setup instructions.
 
@@ -22,7 +22,7 @@ To use the `snyk fix --agentic` command:
 
 ## Description
 
-The `snyk fix --agentic` command is an LLM-driven vulnerability remediation command. It scans your Project for vulnerabilities, generates a fix plan enriched with Snyk security intelligence, and walks you through applying and verifying each fix interactively. Use `--auto-approve` to apply fixes without prompting.
+The `snyk fix --agentic` command scans your Project for vulnerabilities, generates a fix plan, and walks you through applying and verifying each fix. Use `--auto-approve` to apply fixes without prompting.
 
 Choose what to remediate with a product flag:
 
@@ -32,9 +32,9 @@ Choose what to remediate with a product flag:
 
 Pass exactly one of `--sca`, `--sast`, or `--container`. The `--experimental` flag is required alongside `--agentic`.
 
-Visit [Remediation Agent](../../../scan-fix-and-prevent/fix/remediation-agent.md) for conceptual documentation, including setup instructions and supported IDEs.
+Visit [Remediation Agent](../../../scan-fix-and-prevent/fix/remediation-agent.md) for setup instructions and supported IDEs.
 
-The Remediation Agent is under rapid development. Some options on this page are available only in the latest preview release of the Snyk CLI. Run `snyk version` to check which version you have.
+Some options on this page are available only in the latest preview release of the Snyk CLI. Run `snyk version` to check your version.
 
 ## Exit codes
 
@@ -64,25 +64,25 @@ Enable the LLM-driven fix flow. Required to use this command in agentic mode.
 
 ### `--experimental`
 
-Required alongside `--agentic`. Acknowledges the release status of the command.
+Acknowledge the release status of the command. Required alongside `--agentic`.
 
 ### `--sca`
 
-Remediate Snyk Open Source (dependency) vulnerabilities. Mutually exclusive with `--sast` and `--container`.
+Fix Snyk Open Source (dependency) vulnerabilities. Mutually exclusive with `--sast` and `--container`.
 
 ### `--sast`
 
-Remediate Snyk Code (source code) vulnerabilities. Mutually exclusive with `--sca` and `--container`.
+Fix Snyk Code (source code) vulnerabilities. Mutually exclusive with `--sca` and `--container`.
 
 ### `--container`
 
-Remediate Snyk Container vulnerabilities by editing a single Dockerfile: bump the base image and patch OS packages. Mutually exclusive with `--sca` and `--sast`, and requires `--agentic`.
+Fix Snyk Container vulnerabilities by editing a single Dockerfile: bump the base image and patch OS packages. Mutually exclusive with `--sca` and `--sast`, and requires `--agentic`.
 
 **Note:** Because the container flow selects fixes at the Dockerfile and package level rather than per vulnerability, it does not accept `--issue-ids`, `--exclude-ids`, `--severity-threshold`, or `--severity-filter`. Passing any of them ends the run before the scan starts.
 
 ### `--provider=<PROVIDER>`
 
-LLM provider to use.\
+Set the LLM provider to use.\
 Allowed values: `anthropic`, `openai`, `bedrock`, `vertex`, `litellm`, `ollama`\
 Default: `anthropic`
 
@@ -90,7 +90,7 @@ Example: `snyk fix --agentic --experimental --sca --provider=openai`
 
 ### `--model=<MODEL>`
 
-Model ID, which overrides the provider's default model. Required for Ollama, for example `llama3.1`. For Vertex AI, use a Gemini or Claude model name, for example `gemini-2.5-flash`. Visit [Configure a model provider](../../../scan-fix-and-prevent/fix/remediation-agent.md#configure-a-model-provider) for Amazon Bedrock model ID guidance.
+Set the model ID, which overrides the provider's default model. Required for Ollama, for example `llama3.1`. For Vertex AI, use a Gemini or Claude model name, for example `gemini-2.5-flash`. Visit [Configure a model provider](../../../scan-fix-and-prevent/fix/remediation-agent.md#configure-a-model-provider) for Amazon Bedrock model ID guidance.
 
 Example: `snyk fix --agentic --experimental --sca --provider=ollama --model=llama3.1`
 
@@ -107,14 +107,14 @@ Run without prompting.\
 
 ### `--issue-ids=<ID>[,<ID>]...`
 
-Comma-separated list of IDs to fix, accepting both SCA vulnerability IDs and SAST finding IDs.\
+Fix only the listed IDs, as a comma-separated list. Accepts both SCA vulnerability IDs and SAST finding IDs.\
 **Note:** Requires `--auto-approve`, and does not combine with `--exclude-ids`. The command exits with a nonzero code if any requested ID is not fixed.
 
 Example: `snyk fix --agentic --experimental --sca --issue-ids=SNYK-JS-FOO-123,SNYK-JS-BAR-456`
 
 ### `--exclude-ids=<ID>[,<ID>]...`
 
-Comma-separated list of IDs to prune from the run, so the agent fixes everything except these. Accepts both SCA vulnerability IDs and SAST finding IDs.\
+Exclude the listed IDs from the run, as a comma-separated list, so the agent fixes everything else. Accepts both SCA vulnerability IDs and SAST finding IDs.\
 **Note:** Requires `--auto-approve`, and does not combine with `--issue-ids`. An SCA fix group is skipped only when all of its IDs are excluded.
 
 ### `--severity-threshold=<SEVERITY>`
@@ -162,20 +162,46 @@ Produce plain output suited to a CI log, with no colors or spinner.\
 
 ### `--agent-max-iterations=<N>`
 
-Cap how many iterations the agent runs per fix.\
+Limit how many iterations the agent runs per fix.\
 Default: `0`, which uses the built-in limit of 50
 
 ### `--max-validation-attempts=<N>`
 
-Cap the number of validation retry attempts per fix. After this many failed test runs, the agent skips the fix and moves on.\
+Limit the number of validation retry attempts per fix. After this many failed test runs, the agent skips the fix and moves on.\
 Default: `0`, which uses the built-in default
 
 ### `--additional-params="<PARAMS>"`
 
-Extra arguments forwarded to the Snyk Open Source scan.
+Pass extra arguments to the Snyk Open Source scan.
 
 Example: `snyk fix --agentic --experimental --sca --additional-params="--exclude=vendor --detection-depth=3"`
 
 ### `-d`, `--debug`
 
 Print debug information to stderr.
+
+## Examples for the `snyk fix` command
+
+### Fix open source dependencies interactively
+
+```bash
+snyk fix --agentic --experimental --sca
+```
+
+### Preview a fix plan
+
+```bash
+snyk fix --agentic --experimental --sca --dry-run
+```
+
+### Use a local model
+
+```bash
+snyk fix --agentic --experimental --sca --provider=ollama --model=llama3.1
+```
+
+### Fix container vulnerabilities
+
+```bash
+snyk fix --agentic --experimental --container
+```
