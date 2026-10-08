@@ -1,5 +1,5 @@
 ---
-description: The vulnerabilities Snyk API and Web detects
+description: The vulnerabilities Snyk API & Web detects
 nav_context: agnostic
 ---
 

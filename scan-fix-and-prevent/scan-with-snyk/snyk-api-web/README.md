@@ -1,5 +1,5 @@
 ---
-description: How Snyk API and Web performs dynamic application security testing (DAST)
+description: How Snyk API & Web performs dynamic application security testing (DAST)
 nav_context: agnostic
 ---
 

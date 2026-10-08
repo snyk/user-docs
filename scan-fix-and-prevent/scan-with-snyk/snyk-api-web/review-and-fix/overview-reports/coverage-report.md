@@ -1,6 +1,6 @@
 ---
 nav_context: classic
-description: The Snyk API and Web coverage report
+description: The Snyk API & Web coverage report
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

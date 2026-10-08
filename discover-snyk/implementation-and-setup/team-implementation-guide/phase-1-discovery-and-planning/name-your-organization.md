@@ -1,9 +1,7 @@
 ---
 description: How to name your Snyk Organization and plan your account structure of Groups and Organizations
-nav_context: classic
+nav_context: agnostic
 ---
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Name your Organization
 

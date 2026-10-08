@@ -1,5 +1,5 @@
 ---
-description: Overview of asset discovery in Snyk API and Web
+description: Overview of asset discovery in Snyk API & Web
 nav_context: classic
 ---
 

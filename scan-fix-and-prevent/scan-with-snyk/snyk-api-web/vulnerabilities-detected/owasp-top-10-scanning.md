@@ -1,5 +1,5 @@
 ---
-description: How Snyk API and Web scans for the OWASP Top 10
+description: How Snyk API & Web scans for the OWASP Top 10
 nav_context: agnostic
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: How to use navigation sequences for Snyk API and Web web targets
+description: How to use navigation sequences for Snyk API & Web web targets
 nav_context: classic
 ---
 

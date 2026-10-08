@@ -1,6 +1,6 @@
 ---
 nav_context: agnostic
-description: The scanner IP addresses used by Snyk API and Web
+description: The scanner IP addresses used by Snyk API & Web
 ---
 
 # Scanner IP address

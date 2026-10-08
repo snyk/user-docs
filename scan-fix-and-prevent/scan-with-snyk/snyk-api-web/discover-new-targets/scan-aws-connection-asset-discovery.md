@@ -1,5 +1,5 @@
 ---
-description: How to scan an AWS connection for asset discovery in Snyk API and Web
+description: How to scan an AWS connection for asset discovery in Snyk API & Web
 nav_context: classic
 ---
 

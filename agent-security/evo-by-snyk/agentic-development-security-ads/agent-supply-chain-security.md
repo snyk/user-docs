@@ -1,8 +1,8 @@
 ---
+nav_context: agnostic
 description: >-
   How Agent Supply Chain Security assesses the MCP servers, skills, and tools
   your agents use
-nav_context: agnostic
 ---
 
 # Agent Supply Chain Security
@@ -22,7 +22,7 @@ It assesses skills from their files.
 
 ## Setup
 
-To activate and deploy Agent Supply Chain Security, visit [Activation and deployment](activation-and-deployment.md).
+To activate and deploy Agent Supply Chain Security, visit [Activation and deployment](activation-and-deployment/).
 
 {% hint style="info" %}
 To view Agent Supply Chain Security data, you must have a Tenant role with full Evo access. Snyk discovers these assets on end users' machines. Because these assets do not belong to a Snyk Organization, users restricted to specific Organizations cannot see this data. Visit [Access and authentication](../access-and-authentication.md) for more information.

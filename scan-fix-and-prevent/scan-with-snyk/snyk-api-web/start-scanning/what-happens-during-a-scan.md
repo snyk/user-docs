@@ -1,6 +1,6 @@
 ---
 nav_context: agnostic
-description: What happens during a Snyk API and Web scan
+description: What happens during a Snyk API & Web scan
 ---
 
 # What happens during a scan

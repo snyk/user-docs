@@ -15,9 +15,14 @@ Enabling PR Checks blocks Pull Requests that introduce new vulnerabilities. Snyk
 
 1. In the Snyk Web UI, use the scope selector at the top of the page to select your Organization.
 2. Navigate to **Settings** > **Integrations**, then select your SCM integration, for example, **GitHub**.
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXey76C-t0VJCjNUT9sOKfcbwxZR0mzyka0AMKwdaL1Sbp8HwS_rI0mRsU0maIyAe5zjeHfcMKkDZ9k_MguVPwddry4-a3MbBE_cdb1xJoR5Q5rx7SgCsbjJAzYEgxRcU-B5XeMFpg?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Snyk PR Status Checks option in the integration settings"><figcaption></figcaption></figure>
+
 3. In the **Snyk PR Status Checks** section, enable PR Checks for both Open Source and Code, and define fail conditions for each.
 4. Save the changes. If you have already imported repositories, apply the changes to all overridden Projects.
 5. Enable inline comments for a more integrated developer experience. For details, visit [Pull Request experience](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/pull-request-experience).
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfNXo0IULol0ix0VcJ34oOd87JGOdtq4g49PyoUx_pVFpqj5E1GSz0j8Atiu0Ehyk6APwTHfx6xNPqa5ye9-2w9YEMSUwiAhpw0yFEVaecvalkF4eXQz01inGYGPSGEPJvUuIaWDA?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="PR Checks enabled for Open Source and Code"><figcaption></figcaption></figure>
 
 ## Use PR Checks
 

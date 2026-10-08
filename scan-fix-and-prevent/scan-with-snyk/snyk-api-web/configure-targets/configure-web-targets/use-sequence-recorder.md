@@ -1,5 +1,5 @@
 ---
-description: How to use the sequence recorder for Snyk API and Web web targets
+description: How to use the sequence recorder for Snyk API & Web web targets
 nav_context: classic
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: How to troubleshoot a failed login with a login sequence in Snyk API and Web
+description: How to troubleshoot a failed login with a login sequence in Snyk API & Web
 nav_context: classic
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with ServiceNow
+description: How to integrate Snyk API & Web with ServiceNow
 nav_context: classic
 ---
 

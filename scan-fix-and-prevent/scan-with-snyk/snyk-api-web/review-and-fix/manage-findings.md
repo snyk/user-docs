@@ -1,5 +1,5 @@
 ---
-description: How to manage Snyk API and Web findings
+description: How to manage Snyk API & Web findings
 nav_context: classic
 ---
 

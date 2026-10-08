@@ -1,8 +1,8 @@
 ---
+nav_context: agnostic
 description: >-
   How Trusted Output Assurance secures AI-assisted development before insecure
   code reaches production
-nav_context: agnostic
 ---
 
 # Trusted Output Assurance
@@ -25,7 +25,7 @@ Then use these guides based on what you need:
 
 * [Getting started with Snyk Studio](../../agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md) to install and configure Snyk Studio
 * [Directives](../../agentic-security-with-snyk-studio/directives.md) to guide agent behavior with hooks, rules, skills, and commands
-* [Activation and deployment](activation-and-deployment.md) to roll out Agentic Development Security, including Trusted Output Assurance, across your organization
+* [Activation and deployment](activation-and-deployment/) to roll out Agentic Development Security, including Trusted Output Assurance, across your organization
 
 ## Supported workflows
 

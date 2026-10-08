@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with Azure DevOps Boards
+description: How to integrate Snyk API & Web with Azure DevOps Boards
 nav_context: classic
 ---
 

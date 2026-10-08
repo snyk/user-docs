@@ -1,6 +1,6 @@
 ---
 nav_context: classic
-description: How to configure basic authentication for Snyk API and Web targets
+description: How to configure basic authentication for Snyk API & Web targets
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

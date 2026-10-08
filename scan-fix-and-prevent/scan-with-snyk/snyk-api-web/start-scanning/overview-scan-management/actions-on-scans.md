@@ -1,5 +1,5 @@
 ---
-description: The actions you can take on Snyk API and Web scans
+description: The actions you can take on Snyk API & Web scans
 nav_context: agnostic
 ---
 

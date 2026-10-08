@@ -11,9 +11,14 @@ Invite members to the Organization you configured.
 
 1. In the Snyk Web UI, use the scope selector at the top of the page to select your Organization.
 2. Navigate to **Settings** > **Security and access** > **Members**, then click **Add members**.
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe6P7669ej0bL4iuB8Pd11GrdcUsHeJ-nQecaPBtWm5Mp54Plg6-v-pDXZie_Pk5xoWXVBQ5FGYkToUktULXW-lZ-tw6oGoHfxETcxyyY0lcLiYN9rHqodclO5fADlEB7QF8wB7wg?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Adding team member email addresses to invite them to an Organization"><figcaption></figcaption></figure>
+
 3. Enter the email addresses of your team members.
 4. Select a role for the members from the dropdown.
 5. Click **Send invite**.
+
+New members receive a welcome email from Snyk with a link to sign up and join your Organization.
 
 New members receive a welcome email from Snyk with a link to sign up and join your Organization.
 

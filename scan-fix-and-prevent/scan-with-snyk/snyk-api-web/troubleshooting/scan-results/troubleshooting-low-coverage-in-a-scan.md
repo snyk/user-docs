@@ -1,5 +1,5 @@
 ---
-description: How to troubleshoot low coverage in a Snyk API and Web scan
+description: How to troubleshoot low coverage in a Snyk API & Web scan
 nav_context: classic
 ---
 

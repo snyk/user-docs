@@ -1,12 +1,16 @@
 ---
-description: Snyk API reference for the OpensourceSettings endpoints, including request parameters and response schemas
+description: Snyk API reference for the OpenSourceSettings endpoints, including request parameters and response schemas
 ---
 
-# OpensourceSettings
+# OpenSourceSettings
 
 {% hint style="info" %}
 This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 {% endhint %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/settings/opensource" method="get" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
 
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/settings/opensource/{ecosystem}/private-registries" method="patch" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)

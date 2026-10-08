@@ -1,5 +1,5 @@
 ---
-description: Overview of Snyk API and Web CI/CD integrations
+description: Overview of Snyk API & Web CI/CD integrations
 nav_context: agnostic
 ---
 
