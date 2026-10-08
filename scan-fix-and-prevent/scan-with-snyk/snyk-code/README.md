@@ -36,7 +36,7 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
 * Coding issues: Finds problems such as dead code, branches that are predefined, and branches having the same code on each side.
 * Control flow: Identifies null dereference or race conditions by modeling each possible control flow in the application.
 * Data flow: Follows the flow of data within the application from the source to the sink. Combined with AI-based learning of external insecure data sources, data sinks, and sanitation functions, this enables a strong taint analysis.
-* Hardcoded secrets: Hardcoded secrets detection rules are invoked during SAST scans but do not act as a standalone secrets scanning tool. For dedicated secrets scanning, use [Snyk Secrets](../snyk-secrets/README.md).
+* Hardcoded secrets: Hardcoded secrets detection rules are invoked during SAST scans but do not act as a standalone secrets scanning tool. For how these rules decide what to report, see [Snyk Code secrets detection](snyk-code-security-rules/README.md#snyk-code-secrets-detection). For dedicated secrets scanning, use [Snyk Secrets](../snyk-secrets/README.md).
 
 <figure><img src="../../.gitbook/assets/Introduction - AI Engine - Hardcoded secrets.png" alt="Hardcoded secret found"><figcaption><p>Hardcoded secret found</p></figcaption></figure>
 
