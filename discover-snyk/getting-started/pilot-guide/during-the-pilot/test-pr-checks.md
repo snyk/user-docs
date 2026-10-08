@@ -30,19 +30,13 @@ After PR Checks are enabled, you will begin to see new PRs decorated with three 
 
 * code/snyk: Snyk Code vulnerabilities
 * license/snyk: Open Source license issues
-* security/snyk: Open Source vulnerabilities\\
-
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfLnXujzF5V7LkTvXBaKbFsnRtrc2HGhM37B1Ij58a8O_UcLNamCOEf6aMckN27doPl2Vj3RUpdcWlAphmKKGt7QpNKTzcP62QaD3jITRBe8kta0whoIyp5Tk660eScfa6XwzVM?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="A pull request decorated with Snyk checks"><figcaption></figcaption></figure>
+* security/snyk: Open Source vulnerabilities
 
 Try introducing a vulnerability in the PR so that you can walk through a scenario where a check fails. From the PR, clicking on the details of any failed check presents the list of issues that have been introduced in the PR.
 
 Click into the full details of the issue to better understand the vulnerability and get remediation advice. In the situation where you need to force the check to pass, either to get a hotfix out or if you accept the risk, you can click **Mark as successful in SCM**. This button is only available to Org Admins. For Org Collaborators, this option is grayed out. See the [User role management](https://docs.snyk.io/platform-administration/user-management/user-role-management) page for more details.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoGMM6QgygOIslguUEnVLg4cDB7CaerOKKY44EjPjgD6GL3znT8QS2-9-T8G5d6MEkLA4fPaGTth5saE_UuB4wiA08Wnep-RPFr39_u1G6sm2Mr0XWQYyyCVMiBrgfZJ1k8DVqjQ?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Full issue detail with remediation advice in a PR check"><figcaption></figcaption></figure>
-
 With ‌inline comments enabled, you will see comments added for each Snyk Code vulnerability identified.
-
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXesXBwkre6Tst7YogJVBdoXPS3DwSe_D4i2zvLirtRjd7wwDGVcT07oNaaJ1PykRHUQir4xi0nRGtcEYAE96KtZiFrfA4HK7l4-rwVCUYp8SqS-xVkQ22b8eOh1QaSGQnpHeziz?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Inline comments added for each Snyk Code vulnerability"><figcaption></figcaption></figure>
 
 Try fixing the vulnerability in a follow-up commit, push the commit, and verify that the Snyk checks re-run and are passing.
 
