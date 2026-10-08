@@ -34,6 +34,6 @@ The Snyk Code rules report hardcoded secrets and credentials in these cases:
 
 The rules match on the name and the shape of the code, and they check the value, for example its length.
 
-Snyk Code reads source code files in supported languages and does not read comments. Findings appear as **Hardcoded Secret** or **Use of Hardcoded Credentials** issues, with CWE-259, CWE-321, CWE-547, or CWE-798, depending on the rule. For the rules in each language, see the language pages in this section.
+Snyk Code reads source code files in supported languages. Findings appear as **Hardcoded Secret** or **Use of Hardcoded Credentials** issues, with CWE-259, CWE-321, CWE-547, or CWE-798, depending on the rule. For the rules in each language, see the language pages in this section.
 
 To scan all plain text files for secrets, use [Snyk Secrets](../../snyk-secrets/README.md). To suppress a Snyk Code finding, see [Consistent Ignores for Snyk Code](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/README.md).
