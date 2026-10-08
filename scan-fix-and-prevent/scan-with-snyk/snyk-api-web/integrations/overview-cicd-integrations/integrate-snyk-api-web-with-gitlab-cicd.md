@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with GitLab CI/CD
+description: How to integrate Snyk API & Web with GitLab CI/CD
 nav_context: classic
 ---
 

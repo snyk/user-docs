@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk SAST and Snyk API and Web DAST findings
+description: How to integrate Snyk SAST and Snyk API & Web DAST findings
 nav_context: classic
 ---
 

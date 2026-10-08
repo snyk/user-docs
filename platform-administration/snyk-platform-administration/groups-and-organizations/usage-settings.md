@@ -27,7 +27,7 @@ Test limits vary for Snyk products and plans.
 
 For the Free plan, the limits are: Open Source, 400 tests; Code, 100 tests; IaC, 300 tests; Container, 100 tests.
 
-See the [Plans and pricing page](https://snyk.io/plans/) for more details. See [What counts as a test?](https://docs.snyk.io/snyk-data-and-governance/what-counts-as-a-test) for details of how Snyk counts tests.
+To see the limits that apply to you and how much of them you have used, open **Usage** in your Organization settings. On an Enterprise plan, your limits are set by your contract rather than published here; your Snyk account team can confirm them. See the [Plans and pricing page](https://snyk.io/plans/) for more details. See [What counts as a test?](https://docs.snyk.io/snyk-data-and-governance/what-counts-as-a-test) for details of how Snyk counts tests.
 {% endhint %}
 
 ## Contributing developers

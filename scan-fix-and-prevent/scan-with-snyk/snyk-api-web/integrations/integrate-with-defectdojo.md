@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with DefectDojo
+description: How to integrate Snyk API & Web with DefectDojo
 nav_context: classic
 ---
 

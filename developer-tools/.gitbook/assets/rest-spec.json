@@ -1291,9 +1291,23 @@
     },
     "parameters": {
       "Accept": {
+        "description": "Accept header",
         "in": "header",
         "name": "Accept",
         "schema": {
+          "type": "string"
+        }
+      },
+      "AccountTypeFilter": {
+        "description": "Filter the response by the account type of the member. Defaults to \"user\" when omitted.",
+        "in": "query",
+        "name": "account_type",
+        "schema": {
+          "default": "user",
+          "enum": [
+            "user",
+            "service"
+          ],
           "type": "string"
         }
       },
@@ -1913,6 +1927,15 @@
           "type": "string"
         }
       },
+      "HasRiskAssessmentFilter": {
+        "description": "When true, return only models that have risk scores; when false, only models without them.\n",
+        "example": true,
+        "in": "query",
+        "name": "has_risk_assessment",
+        "schema": {
+          "type": "boolean"
+        }
+      },
       "HasUsersAssigned": {
         "description": "returns current memberships of the role in the meta relationships section",
         "in": "query",
@@ -2070,6 +2093,16 @@
           "$ref": "#/components/schemas/EnvironmentKind"
         }
       },
+      "LastUpdatedAfterFilter": {
+        "description": "Return only models whose `last_updated` is after this date and time. `last_updated` is when the model's data was last updated in Snyk's Risk Database.\n",
+        "example": "2025-01-01T00:00:00Z",
+        "in": "query",
+        "name": "last_updated_after",
+        "schema": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
       "LessonEcosystem": {
         "description": "Filter lessons by ecosystem. `all` has no effect. `npm` matches\n`javascript`. Values not in the enum (e.g. `maven`) are rejected.\n",
         "in": "query",
@@ -2166,6 +2199,27 @@
           "type": "array"
         },
         "style": "form"
+      },
+      "ModelIdParam": {
+        "description": "The ID of the model in Snyk's Risk Database.",
+        "example": "0b7a2c1e-5d3f-4e8a-9c6b-1f2e3d4c5b6a",
+        "in": "path",
+        "name": "model_id",
+        "required": true,
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "ModelNameFilter": {
+        "description": "Return only the model with this name: its source ID, an alias, or a provider-prefixed name, for example, `openai/gpt-4`. Matching is case-insensitive.\n",
+        "example": "meta-llama/Llama-3.1-8B-Instruct",
+        "in": "query",
+        "name": "model_name",
+        "schema": {
+          "minLength": 1,
+          "type": "string"
+        }
       },
       "Name": {
         "description": "Filter resources by name (multi-value, comma-separated)",
@@ -2467,6 +2521,25 @@
           "type": "string"
         }
       },
+      "ProviderFilter": {
+        "description": "Return only models whose provider slug matches one of the given values (case-insensitive). Comma-separated, e.g. provider=openai,anthropic.\n",
+        "example": [
+          "openai",
+          "anthropic"
+        ],
+        "explode": false,
+        "in": "query",
+        "name": "provider",
+        "schema": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "style": "form"
+      },
       "QueryExpand": {
         "description": "Expand the response with additional fields. When set to `count`, the response will include a `meta` object containing a `total_count` field with the total number of organizations in the group, ignoring any filters applied to the original query.",
         "in": "query",
@@ -2624,6 +2697,15 @@
           "type": "array"
         },
         "style": "form"
+      },
+      "RiskAssessmentCompleteFilter": {
+        "description": "When true, return only models whose risk assessment is complete; when false, only models whose assessment is missing or partial.\n",
+        "example": true,
+        "in": "query",
+        "name": "risk_assessment_complete",
+        "schema": {
+          "type": "boolean"
+        }
       },
       "RoleFilter": {
         "description": "Filter the response for results only with the specified role.",
@@ -2935,6 +3017,17 @@
         "required": true,
         "schema": {
           "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "TenantIdParam": {
+        "description": "Tenant ID",
+        "example": "e4a039e5-968b-4f1a-b190-caf3514243b5",
+        "in": "path",
+        "name": "tenant_id",
+        "required": true,
+        "schema": {
           "format": "uuid",
           "type": "string"
         }
@@ -6728,6 +6821,18 @@
             },
             "type": "array"
           },
+          "effective_severity": {
+            "items": {
+              "enum": [
+                "CRITICAL",
+                "HIGH",
+                "MEDIUM",
+                "LOW"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
           "empty_project_tags": {
             "enum": [
               "include",
@@ -6742,8 +6847,37 @@
             },
             "type": "array"
           },
+          "event": {
+            "$ref": "#/components/schemas/FilterDateRange"
+          },
+          "event_type": {
+            "items": {
+              "enum": [
+                "new",
+                "persisting",
+                "fixed"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "git_branch": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "git_repo": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
           "introduced": {
             "$ref": "#/components/schemas/FilterDateRange"
+          },
+          "is_suppressed": {
+            "type": "boolean"
           },
           "issue_status": {
             "items": {
@@ -6806,6 +6940,24 @@
             "type": "array"
           },
           "reachability": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sdlc_stage": {
+            "items": {
+              "enum": [
+                "IDE",
+                "CLI",
+                "MCP",
+                "OTHER"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "test_user_email": {
             "items": {
               "type": "string"
             },
@@ -14344,6 +14496,7 @@
           },
           "test_id": {
             "description": "The ID of the test to generate a document for.",
+            "format": "uuid",
             "type": "string"
           }
         },
@@ -14365,6 +14518,10 @@
             "format": "date-time",
             "type": "string"
           },
+          "error": {
+            "description": "An error message to inform the customer of any issues that\nhappened while processing the job.",
+            "type": "string"
+          },
           "format": {
             "allOf": [
               {
@@ -14383,6 +14540,7 @@
           },
           "test_id": {
             "description": "The ID of the test to generate a document for.",
+            "format": "uuid",
             "type": "string"
           }
         },
@@ -14753,6 +14911,29 @@
         },
         "required": [
           "data"
+        ],
+        "type": "object"
+      },
+      "GetModelResponseBody": {
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/ModelResource"
+          },
+          "jsonapi": {
+            "$ref": "#/components/schemas/JsonApi"
+          },
+          "links": {
+            "$ref": "#/components/schemas/Links"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ModelMeta"
+          }
+        },
+        "required": [
+          "data",
+          "jsonapi",
+          "links"
         ],
         "type": "object"
       },
@@ -15491,68 +15672,9 @@
           },
           {
             "properties": {
-              "effective_severity": {
-                "items": {
-                  "enum": [
-                    "CRITICAL",
-                    "HIGH",
-                    "MEDIUM",
-                    "LOW"
-                  ],
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "event": {
-                "$ref": "#/components/schemas/FilterDateRange"
-              },
-              "event_type": {
-                "items": {
-                  "enum": [
-                    "new",
-                    "persisting",
-                    "prevented"
-                  ],
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "git_branch": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "git_repo": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "is_suppressed": {
-                "type": "boolean"
-              },
               "orgs": {
                 "items": {
                   "format": "uuid",
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "sdlc_stage": {
-                "items": {
-                  "enum": [
-                    "IDE",
-                    "CLI",
-                    "MCP",
-                    "OTHER"
-                  ],
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "test_user_email": {
-                "items": {
                   "type": "string"
                 },
                 "type": "array"
@@ -19280,6 +19402,47 @@
         ],
         "type": "object"
       },
+      "ListModelsMeta": {
+        "additionalProperties": false,
+        "description": "Present when meta_count=with, or when your tenant is entitled to Evo Risk Intelligence and at least one model on the page has risk scores.\n",
+        "properties": {
+          "count": {
+            "description": "Total number of models matching the filters. Present only when meta_count=with.",
+            "example": 42,
+            "type": "integer"
+          },
+          "risk_taxonomy": {
+            "$ref": "#/components/schemas/RiskTaxonomy"
+          }
+        },
+        "type": "object"
+      },
+      "ListModelsResponseBody": {
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "items": {
+              "$ref": "#/components/schemas/ModelResource"
+            },
+            "type": "array"
+          },
+          "jsonapi": {
+            "$ref": "#/components/schemas/JsonApi"
+          },
+          "links": {
+            "$ref": "#/components/schemas/PaginatedLinks"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ListModelsMeta"
+          }
+        },
+        "required": [
+          "data",
+          "jsonapi",
+          "links"
+        ],
+        "type": "object"
+      },
       "ListOrgsInGroupMeta": {
         "additionalProperties": false,
         "description": "Additional information about the list of organizations. Only populated when `expand=count` is supplied as a query parameter.",
@@ -19715,6 +19878,385 @@
           }
         ]
       },
+      "ModelAttributes": {
+        "description": "AI model with public and private risk data",
+        "properties": {
+          "access_info": {
+            "properties": {
+              "api_available": {
+                "example": true,
+                "type": "boolean"
+              },
+              "cost_tier": {
+                "enum": [
+                  "free",
+                  "low",
+                  "medium",
+                  "high",
+                  "enterprise"
+                ],
+                "example": "medium",
+                "type": "string"
+              },
+              "license_name": {
+                "example": "Llama-3.1",
+                "type": "string"
+              },
+              "license_type": {
+                "enum": [
+                  "open-source",
+                  "proprietary",
+                  "research-only",
+                  "non-commercial",
+                  "commercial"
+                ],
+                "example": "proprietary",
+                "type": "string"
+              },
+              "self_hostable": {
+                "example": true,
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "api_available",
+              "self_hostable",
+              "license_type"
+            ],
+            "type": "object"
+          },
+          "architectures": {
+            "example": [
+              "LlamaForCausalLM"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "capability_assessment": {
+            "properties": {
+              "eci_score": {
+                "description": "Epoch Capabilities Index score. Omitted when unknown.",
+                "example": 128.5,
+                "type": "number"
+              }
+            },
+            "type": "object"
+          },
+          "context_length": {
+            "description": "Maximum context window in tokens.",
+            "example": 131072,
+            "type": "number"
+          },
+          "country_of_origin": {
+            "description": "ISO 3166-1 alpha-2 country code of the provider.",
+            "example": "US",
+            "maxLength": 2,
+            "minLength": 2,
+            "type": "string"
+          },
+          "has_risk_assessment": {
+            "description": "Whether the model has risk scores. Available regardless of entitlement.",
+            "example": true,
+            "type": "boolean"
+          },
+          "inputs": {
+            "example": [
+              "text"
+            ],
+            "items": {
+              "enum": [
+                "text",
+                "image",
+                "audio",
+                "video",
+                "tabular",
+                "embeddings",
+                "category",
+                "3d",
+                "any"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "last_updated": {
+            "description": "When the model's data was last updated in Snyk's Risk Database. Omitted when unknown.\n",
+            "example": "2024-09-25T17:00:57Z",
+            "format": "date-time",
+            "type": "string"
+          },
+          "model_family": {
+            "example": "llama-3-1",
+            "type": "string"
+          },
+          "model_type": {
+            "example": "llama",
+            "type": "string"
+          },
+          "model_variant": {
+            "example": "llama-3-1-8b-instruct",
+            "type": "string"
+          },
+          "outputs": {
+            "example": [
+              "text"
+            ],
+            "items": {
+              "enum": [
+                "text",
+                "image",
+                "audio",
+                "video",
+                "tabular",
+                "embeddings",
+                "category",
+                "3d",
+                "any"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "parameters": {
+            "description": "Approximate parameter count as published upstream.",
+            "example": "8B",
+            "type": "string"
+          },
+          "pipeline_tag": {
+            "enum": [
+              "text-generation",
+              "text2text-generation",
+              "text-classification",
+              "token-classification",
+              "question-answering",
+              "table-question-answering",
+              "fill-mask",
+              "summarization",
+              "translation",
+              "conversational",
+              "sentence-similarity",
+              "feature-extraction",
+              "zero-shot-classification",
+              "image-classification",
+              "object-detection",
+              "image-segmentation",
+              "image-to-text",
+              "image-to-image",
+              "depth-estimation",
+              "image-feature-extraction",
+              "mask-generation",
+              "zero-shot-image-classification",
+              "zero-shot-object-detection",
+              "video-classification",
+              "unconditional-image-generation",
+              "keypoint-detection",
+              "automatic-speech-recognition",
+              "audio-classification",
+              "text-to-speech",
+              "text-to-audio",
+              "audio-to-audio",
+              "voice-activity-detection",
+              "text-to-image",
+              "text-to-video",
+              "text-to-3d",
+              "image-to-video",
+              "image-to-3d",
+              "visual-question-answering",
+              "document-question-answering",
+              "image-text-to-text",
+              "video-text-to-text",
+              "any-to-any",
+              "tabular-classification",
+              "tabular-regression",
+              "reinforcement-learning",
+              "robotics",
+              "graph-ml",
+              "other"
+            ],
+            "example": "text-generation",
+            "type": "string"
+          },
+          "provider": {
+            "description": "The provider slug, e.g. openai. Filterable via the provider query parameter.",
+            "example": "meta",
+            "type": "string"
+          },
+          "provider_name": {
+            "example": "Meta Llama",
+            "type": "string"
+          },
+          "release_date": {
+            "description": "When the model was first published upstream. Omitted when unknown.",
+            "example": "2024-07-18T08:56:00Z",
+            "format": "date-time",
+            "type": "string"
+          },
+          "risk_assessment": {
+            "items": {
+              "properties": {
+                "attacker_goals": {
+                  "items": {
+                    "properties": {
+                      "name": {
+                        "description": "Attacker goal name, described in `meta.risk_taxonomy`.",
+                        "example": "insecure_code_generation",
+                        "type": "string"
+                      },
+                      "score": {
+                        "example": 579,
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "score"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "name": {
+                  "description": "Risk sub-category name, described in `meta.risk_taxonomy`.",
+                  "example": "code_generation",
+                  "type": "string"
+                },
+                "score": {
+                  "example": 579,
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "score"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "risk_assessment_complete": {
+            "description": "Whether the model's risk assessment is complete. A model can have some risk scores while its assessment is still partial. Available regardless of entitlement.\n",
+            "example": true,
+            "type": "boolean"
+          },
+          "source_id": {
+            "description": "The model's identifier at its source, e.g. a Hugging Face repository ID.",
+            "example": "meta-llama/Llama-3.1-8B-Instruct",
+            "type": "string"
+          },
+          "source_url": {
+            "example": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+            "type": "string"
+          },
+          "tasks": {
+            "example": [
+              "text-generation"
+            ],
+            "items": {
+              "enum": [
+                "text-generation",
+                "text2text-generation",
+                "text-classification",
+                "token-classification",
+                "question-answering",
+                "table-question-answering",
+                "fill-mask",
+                "summarization",
+                "translation",
+                "conversational",
+                "sentence-similarity",
+                "feature-extraction",
+                "zero-shot-classification",
+                "image-classification",
+                "object-detection",
+                "image-segmentation",
+                "image-to-text",
+                "image-to-image",
+                "depth-estimation",
+                "image-feature-extraction",
+                "mask-generation",
+                "zero-shot-image-classification",
+                "zero-shot-object-detection",
+                "video-classification",
+                "unconditional-image-generation",
+                "keypoint-detection",
+                "automatic-speech-recognition",
+                "audio-classification",
+                "text-to-speech",
+                "text-to-audio",
+                "audio-to-audio",
+                "voice-activity-detection",
+                "text-to-image",
+                "text-to-video",
+                "text-to-3d",
+                "image-to-video",
+                "image-to-3d",
+                "visual-question-answering",
+                "document-question-answering",
+                "image-text-to-text",
+                "video-text-to-text",
+                "any-to-any",
+                "tabular-classification",
+                "tabular-regression",
+                "reinforcement-learning",
+                "robotics",
+                "graph-ml",
+                "other"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "source_id",
+          "inputs",
+          "outputs",
+          "has_risk_assessment",
+          "risk_assessment_complete",
+          "access_info",
+          "risk_assessment",
+          "capability_assessment"
+        ],
+        "type": "object"
+      },
+      "ModelMeta": {
+        "additionalProperties": false,
+        "description": "Present only when your tenant is entitled to Evo Risk Intelligence and the model has risk scores.\n",
+        "properties": {
+          "risk_taxonomy": {
+            "$ref": "#/components/schemas/RiskTaxonomy"
+          }
+        },
+        "type": "object"
+      },
+      "ModelResource": {
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/ModelAttributes"
+          },
+          "id": {
+            "description": "The ID of the model in Snyk's Risk Database.",
+            "example": "0b7a2c1e-5d3f-4e8a-9c6b-1f2e3d4c5b6a",
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "model"
+            ],
+            "example": "model",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "attributes",
+          "type"
+        ],
+        "type": "object"
+      },
       "NexusAttributes": {
         "properties": {
           "required": {
@@ -20141,6 +20683,18 @@
             },
             "type": "array"
           },
+          "effective_severity": {
+            "items": {
+              "enum": [
+                "CRITICAL",
+                "HIGH",
+                "MEDIUM",
+                "LOW"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
           "empty_project_tags": {
             "enum": [
               "include",
@@ -20155,8 +20709,37 @@
             },
             "type": "array"
           },
+          "event": {
+            "$ref": "#/components/schemas/FilterDateRange"
+          },
+          "event_type": {
+            "items": {
+              "enum": [
+                "new",
+                "persisting",
+                "fixed"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "git_branch": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "git_repo": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
           "introduced": {
             "$ref": "#/components/schemas/FilterDateRange"
+          },
+          "is_suppressed": {
+            "type": "boolean"
           },
           "issue_status": {
             "items": {
@@ -20219,6 +20802,24 @@
             "type": "array"
           },
           "reachability": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sdlc_stage": {
+            "items": {
+              "enum": [
+                "IDE",
+                "CLI",
+                "MCP",
+                "OTHER"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "test_user_email": {
             "items": {
               "type": "string"
             },
@@ -24322,6 +24923,12 @@
             "nullable": true,
             "type": "boolean"
           },
+          "branch": {
+            "description": "The repository branch that this asset represents",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
           "default_branch_name": {
             "description": "Default branch name",
             "maxLength": 256,
@@ -24377,6 +24984,12 @@
             "nullable": true,
             "type": "string"
           },
+          "revision": {
+            "description": "Most recent revision for this repository asset; for git, the commit SHA",
+            "maxLength": 64,
+            "nullable": true,
+            "type": "string"
+          },
           "scm_id": {
             "description": "SCM-specific identifier (GitHub numeric ID, GitLab project ID, etc.)",
             "maxLength": 256,
@@ -24391,6 +25004,12 @@
           },
           "scm_project": {
             "description": "SCM project name",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "scm_source": {
+            "description": "SCM source, differentiating between providers and instances (e.g. github)",
             "maxLength": 256,
             "nullable": true,
             "type": "string"
@@ -24741,6 +25360,75 @@
         ],
         "type": "object"
       },
+      "RiskAttackerGoal": {
+        "additionalProperties": false,
+        "properties": {
+          "description": {
+            "example": "Generate code containing security vulnerabilities when asked for help with coding tasks",
+            "type": "string"
+          },
+          "display_name": {
+            "example": "Insecure code generation",
+            "type": "string"
+          },
+          "name": {
+            "description": "Matches the `risk_assessment` attacker goal name.",
+            "example": "insecure_code_generation",
+            "type": "string"
+          },
+          "taxonomy_mappings": {
+            "additionalProperties": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "description": "External framework references (e.g. OWASP LLM, NIST, MITRE ATLAS) keyed by framework.",
+            "example": {
+              "LLM": [
+                "LLM05"
+              ]
+            },
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "display_name",
+          "description"
+        ],
+        "type": "object"
+      },
+      "RiskCategory": {
+        "additionalProperties": false,
+        "properties": {
+          "description": {
+            "example": "Does it compromise code security?",
+            "type": "string"
+          },
+          "display_name": {
+            "example": "Code Security",
+            "type": "string"
+          },
+          "name": {
+            "example": "code_security",
+            "type": "string"
+          },
+          "sub_categories": {
+            "items": {
+              "$ref": "#/components/schemas/RiskSubCategory"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "display_name",
+          "description",
+          "sub_categories"
+        ],
+        "type": "object"
+      },
       "RiskFactor": {
         "discriminator": {
           "mapping": {
@@ -24799,6 +25487,53 @@
         "required": [
           "value",
           "model"
+        ],
+        "type": "object"
+      },
+      "RiskSubCategory": {
+        "additionalProperties": false,
+        "properties": {
+          "attacker_goals": {
+            "items": {
+              "$ref": "#/components/schemas/RiskAttackerGoal"
+            },
+            "type": "array"
+          },
+          "description": {
+            "example": "Vulnerabilities introduced when the agent writes code",
+            "type": "string"
+          },
+          "display_name": {
+            "example": "Code Generation",
+            "type": "string"
+          },
+          "name": {
+            "description": "Matches the `risk_assessment` name.",
+            "example": "code_generation",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "display_name",
+          "description",
+          "attacker_goals"
+        ],
+        "type": "object"
+      },
+      "RiskTaxonomy": {
+        "additionalProperties": false,
+        "description": "The risk taxonomy in Snyk's Risk Database. Describes the sub-category and attacker goal names scored in `risk_assessment`. Every level is ordered by name. Returned only when your tenant is entitled to Evo Risk Intelligence and there are risk scores in the response.\n",
+        "properties": {
+          "categories": {
+            "items": {
+              "$ref": "#/components/schemas/RiskCategory"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "categories"
         ],
         "type": "object"
       },
@@ -61932,6 +62667,240 @@
               }
             }
           },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "example": {
+                    "errors": [
+                      {
+                        "detail": "Permission denied for this resource",
+                        "status": "403"
+                      }
+                    ],
+                    "jsonapi": {
+                      "version": "1.0"
+                    }
+                  },
+                  "properties": {
+                    "errors": {
+                      "example": [
+                        {
+                          "detail": "Permission denied for this resource",
+                          "status": "403"
+                        }
+                      ],
+                      "items": {
+                        "additionalProperties": false,
+                        "example": {
+                          "detail": "Not Found",
+                          "status": "404"
+                        },
+                        "properties": {
+                          "code": {
+                            "description": "An application-specific error code, expressed as a string value.",
+                            "example": "entity-not-found",
+                            "type": "string"
+                          },
+                          "detail": {
+                            "description": "A human-readable explanation specific to this occurrence of the problem.",
+                            "example": "The request was missing these required fields: ...",
+                            "type": "string"
+                          },
+                          "id": {
+                            "description": "A unique identifier for this particular occurrence of the problem.",
+                            "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "links": {
+                            "additionalProperties": false,
+                            "description": "A link that leads to further details about this particular occurrence of the problem.",
+                            "example": {
+                              "about": "https://example.com/about_this_error"
+                            },
+                            "properties": {
+                              "about": {
+                                "example": "https://example.com/api/resource",
+                                "oneOf": [
+                                  {
+                                    "description": "A string containing the link’s URL.",
+                                    "example": "https://example.com/api/resource",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "additionalProperties": false,
+                                    "example": {
+                                      "href": "https://example.com/api/resource"
+                                    },
+                                    "properties": {
+                                      "href": {
+                                        "description": "A string containing the link’s URL.",
+                                        "example": "https://example.com/api/resource",
+                                        "type": "string"
+                                      },
+                                      "meta": {
+                                        "additionalProperties": true,
+                                        "description": "Free-form object that may contain non-standard information.",
+                                        "example": {
+                                          "key1": "value1",
+                                          "key2": {
+                                            "sub_key": "sub_value"
+                                          },
+                                          "key3": [
+                                            "array_value1",
+                                            "array_value2"
+                                          ]
+                                        },
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "href"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "meta": {
+                            "additionalProperties": true,
+                            "example": {
+                              "key": "value"
+                            },
+                            "type": "object"
+                          },
+                          "source": {
+                            "additionalProperties": false,
+                            "example": {
+                              "pointer": "/data/attributes"
+                            },
+                            "properties": {
+                              "parameter": {
+                                "description": "A string indicating which URI query parameter caused the error.",
+                                "example": "param1",
+                                "type": "string"
+                              },
+                              "pointer": {
+                                "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                                "example": "/data/attributes",
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "status": {
+                            "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                            "example": "400",
+                            "pattern": "^[45]\\d\\d$",
+                            "type": "string"
+                          },
+                          "title": {
+                            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                            "example": "Bad request",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "detail"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "example": {
+                        "version": "1.0"
+                      },
+                      "properties": {
+                        "version": {
+                          "description": "Version of the JSON API specification this server supports.",
+                          "example": "1.0",
+                          "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "version"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad Request: A parameter provided as a part of the request was invalid.",
+            "headers": {
+              "deprecation": {
+                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
+                "example": "2021-07-01T00:00:00Z",
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
+                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
+                "schema": {
+                  "format": "uuid",
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
           "404": {
             "content": {
               "application/vnd.api+json": {
@@ -64132,6 +65101,240 @@
               },
               "sunset": {
                 "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "example": {
+                    "errors": [
+                      {
+                        "detail": "Permission denied for this resource",
+                        "status": "403"
+                      }
+                    ],
+                    "jsonapi": {
+                      "version": "1.0"
+                    }
+                  },
+                  "properties": {
+                    "errors": {
+                      "example": [
+                        {
+                          "detail": "Permission denied for this resource",
+                          "status": "403"
+                        }
+                      ],
+                      "items": {
+                        "additionalProperties": false,
+                        "example": {
+                          "detail": "Not Found",
+                          "status": "404"
+                        },
+                        "properties": {
+                          "code": {
+                            "description": "An application-specific error code, expressed as a string value.",
+                            "example": "entity-not-found",
+                            "type": "string"
+                          },
+                          "detail": {
+                            "description": "A human-readable explanation specific to this occurrence of the problem.",
+                            "example": "The request was missing these required fields: ...",
+                            "type": "string"
+                          },
+                          "id": {
+                            "description": "A unique identifier for this particular occurrence of the problem.",
+                            "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "links": {
+                            "additionalProperties": false,
+                            "description": "A link that leads to further details about this particular occurrence of the problem.",
+                            "example": {
+                              "about": "https://example.com/about_this_error"
+                            },
+                            "properties": {
+                              "about": {
+                                "example": "https://example.com/api/resource",
+                                "oneOf": [
+                                  {
+                                    "description": "A string containing the link’s URL.",
+                                    "example": "https://example.com/api/resource",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "additionalProperties": false,
+                                    "example": {
+                                      "href": "https://example.com/api/resource"
+                                    },
+                                    "properties": {
+                                      "href": {
+                                        "description": "A string containing the link’s URL.",
+                                        "example": "https://example.com/api/resource",
+                                        "type": "string"
+                                      },
+                                      "meta": {
+                                        "additionalProperties": true,
+                                        "description": "Free-form object that may contain non-standard information.",
+                                        "example": {
+                                          "key1": "value1",
+                                          "key2": {
+                                            "sub_key": "sub_value"
+                                          },
+                                          "key3": [
+                                            "array_value1",
+                                            "array_value2"
+                                          ]
+                                        },
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "href"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "meta": {
+                            "additionalProperties": true,
+                            "example": {
+                              "key": "value"
+                            },
+                            "type": "object"
+                          },
+                          "source": {
+                            "additionalProperties": false,
+                            "example": {
+                              "pointer": "/data/attributes"
+                            },
+                            "properties": {
+                              "parameter": {
+                                "description": "A string indicating which URI query parameter caused the error.",
+                                "example": "param1",
+                                "type": "string"
+                              },
+                              "pointer": {
+                                "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                                "example": "/data/attributes",
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "status": {
+                            "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                            "example": "400",
+                            "pattern": "^[45]\\d\\d$",
+                            "type": "string"
+                          },
+                          "title": {
+                            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                            "example": "Bad request",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "detail"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "example": {
+                        "version": "1.0"
+                      },
+                      "properties": {
+                        "version": {
+                          "description": "Version of the JSON API specification this server supports.",
+                          "example": "1.0",
+                          "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "version"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad Request: A parameter provided as a part of the request was invalid.",
+            "headers": {
+              "deprecation": {
+                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
+                "example": "2021-07-01T00:00:00Z",
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
+                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
+                "schema": {
+                  "format": "uuid",
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
               }
             }
           },
@@ -117750,6 +118953,9 @@
           },
           {
             "$ref": "#/components/parameters/RoleFilter"
+          },
+          {
+            "$ref": "#/components/parameters/AccountTypeFilter"
           }
         ],
         "responses": {
@@ -117991,6 +119197,1631 @@
         "x-snyk-api-resource": "memberships",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-09-03~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/tenants/{tenant_id}/risk_db/models": {
+      "get": {
+        "description": "List AI models in Snyk's Risk Database, with their metadata and risk scores.\nResults are sorted by `last_updated`, most recent first.\n\nRisk scores, capability scores, licensing, and country of origin are returned\nonly if your tenant is entitled to Evo Risk Intelligence. Otherwise, these\nfields are empty or omitted.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
+        "operationId": "listModels",
+        "parameters": [
+          {
+            "description": "The requested version of the endpoint to process the request",
+            "example": "2024-10-15",
+            "in": "query",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "description": "Requested API version",
+              "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/TenantIdParam"
+          },
+          {
+            "$ref": "#/components/parameters/ProviderFilter"
+          },
+          {
+            "$ref": "#/components/parameters/HasRiskAssessmentFilter"
+          },
+          {
+            "$ref": "#/components/parameters/RiskAssessmentCompleteFilter"
+          },
+          {
+            "$ref": "#/components/parameters/LastUpdatedAfterFilter"
+          },
+          {
+            "$ref": "#/components/parameters/ModelNameFilter"
+          },
+          {
+            "$ref": "#/components/parameters/StartingAfter"
+          },
+          {
+            "$ref": "#/components/parameters/EndingBefore"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          },
+          {
+            "description": "Include a count of the total matching items in the response meta",
+            "example": "with",
+            "in": "query",
+            "name": "meta_count",
+            "schema": {
+              "enum": [
+                "with"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListModelsResponseBody"
+                }
+              }
+            },
+            "description": "The models have been successfully retrieved.",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "example": {
+                    "errors": [
+                      {
+                        "detail": "Permission denied for this resource",
+                        "status": "403"
+                      }
+                    ],
+                    "jsonapi": {
+                      "version": "1.0"
+                    }
+                  },
+                  "properties": {
+                    "errors": {
+                      "example": [
+                        {
+                          "detail": "Permission denied for this resource",
+                          "status": "403"
+                        }
+                      ],
+                      "items": {
+                        "additionalProperties": false,
+                        "example": {
+                          "detail": "Not Found",
+                          "status": "404"
+                        },
+                        "properties": {
+                          "code": {
+                            "description": "An application-specific error code, expressed as a string value.",
+                            "example": "entity-not-found",
+                            "type": "string"
+                          },
+                          "detail": {
+                            "description": "A human-readable explanation specific to this occurrence of the problem.",
+                            "example": "The request was missing these required fields: ...",
+                            "type": "string"
+                          },
+                          "id": {
+                            "description": "A unique identifier for this particular occurrence of the problem.",
+                            "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "links": {
+                            "additionalProperties": false,
+                            "description": "A link that leads to further details about this particular occurrence of the problem.",
+                            "example": {
+                              "about": "https://example.com/about_this_error"
+                            },
+                            "properties": {
+                              "about": {
+                                "example": "https://example.com/api/resource",
+                                "oneOf": [
+                                  {
+                                    "description": "A string containing the link’s URL.",
+                                    "example": "https://example.com/api/resource",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "additionalProperties": false,
+                                    "example": {
+                                      "href": "https://example.com/api/resource"
+                                    },
+                                    "properties": {
+                                      "href": {
+                                        "description": "A string containing the link’s URL.",
+                                        "example": "https://example.com/api/resource",
+                                        "type": "string"
+                                      },
+                                      "meta": {
+                                        "additionalProperties": true,
+                                        "description": "Free-form object that may contain non-standard information.",
+                                        "example": {
+                                          "key1": "value1",
+                                          "key2": {
+                                            "sub_key": "sub_value"
+                                          },
+                                          "key3": [
+                                            "array_value1",
+                                            "array_value2"
+                                          ]
+                                        },
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "href"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "meta": {
+                            "additionalProperties": true,
+                            "example": {
+                              "key": "value"
+                            },
+                            "type": "object"
+                          },
+                          "source": {
+                            "additionalProperties": false,
+                            "example": {
+                              "pointer": "/data/attributes"
+                            },
+                            "properties": {
+                              "parameter": {
+                                "description": "A string indicating which URI query parameter caused the error.",
+                                "example": "param1",
+                                "type": "string"
+                              },
+                              "pointer": {
+                                "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                                "example": "/data/attributes",
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "status": {
+                            "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                            "example": "400",
+                            "pattern": "^[45]\\d\\d$",
+                            "type": "string"
+                          },
+                          "title": {
+                            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                            "example": "Bad request",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "detail"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "example": {
+                        "version": "1.0"
+                      },
+                      "properties": {
+                        "version": {
+                          "description": "Version of the JSON API specification this server supports.",
+                          "example": "1.0",
+                          "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "version"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad Request: A parameter provided as a part of the request was invalid.",
+            "headers": {
+              "deprecation": {
+                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
+                "example": "2021-07-01T00:00:00Z",
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
+                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
+                "schema": {
+                  "format": "uuid",
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "example": {
+                    "errors": [
+                      {
+                        "detail": "Permission denied for this resource",
+                        "status": "403"
+                      }
+                    ],
+                    "jsonapi": {
+                      "version": "1.0"
+                    }
+                  },
+                  "properties": {
+                    "errors": {
+                      "example": [
+                        {
+                          "detail": "Permission denied for this resource",
+                          "status": "403"
+                        }
+                      ],
+                      "items": {
+                        "additionalProperties": false,
+                        "example": {
+                          "detail": "Not Found",
+                          "status": "404"
+                        },
+                        "properties": {
+                          "code": {
+                            "description": "An application-specific error code, expressed as a string value.",
+                            "example": "entity-not-found",
+                            "type": "string"
+                          },
+                          "detail": {
+                            "description": "A human-readable explanation specific to this occurrence of the problem.",
+                            "example": "The request was missing these required fields: ...",
+                            "type": "string"
+                          },
+                          "id": {
+                            "description": "A unique identifier for this particular occurrence of the problem.",
+                            "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "links": {
+                            "additionalProperties": false,
+                            "description": "A link that leads to further details about this particular occurrence of the problem.",
+                            "example": {
+                              "about": "https://example.com/about_this_error"
+                            },
+                            "properties": {
+                              "about": {
+                                "example": "https://example.com/api/resource",
+                                "oneOf": [
+                                  {
+                                    "description": "A string containing the link’s URL.",
+                                    "example": "https://example.com/api/resource",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "additionalProperties": false,
+                                    "example": {
+                                      "href": "https://example.com/api/resource"
+                                    },
+                                    "properties": {
+                                      "href": {
+                                        "description": "A string containing the link’s URL.",
+                                        "example": "https://example.com/api/resource",
+                                        "type": "string"
+                                      },
+                                      "meta": {
+                                        "additionalProperties": true,
+                                        "description": "Free-form object that may contain non-standard information.",
+                                        "example": {
+                                          "key1": "value1",
+                                          "key2": {
+                                            "sub_key": "sub_value"
+                                          },
+                                          "key3": [
+                                            "array_value1",
+                                            "array_value2"
+                                          ]
+                                        },
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "href"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "meta": {
+                            "additionalProperties": true,
+                            "example": {
+                              "key": "value"
+                            },
+                            "type": "object"
+                          },
+                          "source": {
+                            "additionalProperties": false,
+                            "example": {
+                              "pointer": "/data/attributes"
+                            },
+                            "properties": {
+                              "parameter": {
+                                "description": "A string indicating which URI query parameter caused the error.",
+                                "example": "param1",
+                                "type": "string"
+                              },
+                              "pointer": {
+                                "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                                "example": "/data/attributes",
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "status": {
+                            "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                            "example": "400",
+                            "pattern": "^[45]\\d\\d$",
+                            "type": "string"
+                          },
+                          "title": {
+                            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                            "example": "Bad request",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "detail"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "example": {
+                        "version": "1.0"
+                      },
+                      "properties": {
+                        "version": {
+                          "description": "Version of the JSON API specification this server supports.",
+                          "example": "1.0",
+                          "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "version"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Not Found: The resource being operated on could not be found or you do not have permission to access it.",
+            "headers": {
+              "deprecation": {
+                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
+                "example": "2021-07-01T00:00:00Z",
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
+                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
+                "schema": {
+                  "format": "uuid",
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "example": {
+                    "errors": [
+                      {
+                        "detail": "Permission denied for this resource",
+                        "status": "403"
+                      }
+                    ],
+                    "jsonapi": {
+                      "version": "1.0"
+                    }
+                  },
+                  "properties": {
+                    "errors": {
+                      "example": [
+                        {
+                          "detail": "Permission denied for this resource",
+                          "status": "403"
+                        }
+                      ],
+                      "items": {
+                        "additionalProperties": false,
+                        "example": {
+                          "detail": "Not Found",
+                          "status": "404"
+                        },
+                        "properties": {
+                          "code": {
+                            "description": "An application-specific error code, expressed as a string value.",
+                            "example": "entity-not-found",
+                            "type": "string"
+                          },
+                          "detail": {
+                            "description": "A human-readable explanation specific to this occurrence of the problem.",
+                            "example": "The request was missing these required fields: ...",
+                            "type": "string"
+                          },
+                          "id": {
+                            "description": "A unique identifier for this particular occurrence of the problem.",
+                            "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "links": {
+                            "additionalProperties": false,
+                            "description": "A link that leads to further details about this particular occurrence of the problem.",
+                            "example": {
+                              "about": "https://example.com/about_this_error"
+                            },
+                            "properties": {
+                              "about": {
+                                "example": "https://example.com/api/resource",
+                                "oneOf": [
+                                  {
+                                    "description": "A string containing the link’s URL.",
+                                    "example": "https://example.com/api/resource",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "additionalProperties": false,
+                                    "example": {
+                                      "href": "https://example.com/api/resource"
+                                    },
+                                    "properties": {
+                                      "href": {
+                                        "description": "A string containing the link’s URL.",
+                                        "example": "https://example.com/api/resource",
+                                        "type": "string"
+                                      },
+                                      "meta": {
+                                        "additionalProperties": true,
+                                        "description": "Free-form object that may contain non-standard information.",
+                                        "example": {
+                                          "key1": "value1",
+                                          "key2": {
+                                            "sub_key": "sub_value"
+                                          },
+                                          "key3": [
+                                            "array_value1",
+                                            "array_value2"
+                                          ]
+                                        },
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "href"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "meta": {
+                            "additionalProperties": true,
+                            "example": {
+                              "key": "value"
+                            },
+                            "type": "object"
+                          },
+                          "source": {
+                            "additionalProperties": false,
+                            "example": {
+                              "pointer": "/data/attributes"
+                            },
+                            "properties": {
+                              "parameter": {
+                                "description": "A string indicating which URI query parameter caused the error.",
+                                "example": "param1",
+                                "type": "string"
+                              },
+                              "pointer": {
+                                "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                                "example": "/data/attributes",
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "status": {
+                            "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                            "example": "400",
+                            "pattern": "^[45]\\d\\d$",
+                            "type": "string"
+                          },
+                          "title": {
+                            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                            "example": "Bad request",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "detail"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "example": {
+                        "version": "1.0"
+                      },
+                      "properties": {
+                        "version": {
+                          "description": "Version of the JSON API specification this server supports.",
+                          "example": "1.0",
+                          "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "version"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Internal Server Error: An error was encountered while attempting to process the request.",
+            "headers": {
+              "deprecation": {
+                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
+                "example": "2021-07-01T00:00:00Z",
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
+                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
+                "schema": {
+                  "format": "uuid",
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "List models (Early Access)",
+        "tags": [
+          "Model"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "risk_db",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/tenants/{tenant_id}/risk_db/models/{model_id}": {
+      "get": {
+        "description": "Get a single AI model from Snyk's Risk Database by ID, with its metadata and risk scores.\nTo look a model up by name, list models with the `model_name` filter.\n\nRisk scores, capability scores, licensing, and country of origin are returned\nonly if your tenant is entitled to Evo Risk Intelligence. Otherwise, these\nfields are empty or omitted.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
+        "operationId": "getModel",
+        "parameters": [
+          {
+            "description": "The requested version of the endpoint to process the request",
+            "example": "2024-10-15",
+            "in": "query",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "description": "Requested API version",
+              "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/TenantIdParam"
+          },
+          {
+            "$ref": "#/components/parameters/ModelIdParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetModelResponseBody"
+                }
+              }
+            },
+            "description": "The model has been successfully retrieved.",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "example": {
+                    "errors": [
+                      {
+                        "detail": "Permission denied for this resource",
+                        "status": "403"
+                      }
+                    ],
+                    "jsonapi": {
+                      "version": "1.0"
+                    }
+                  },
+                  "properties": {
+                    "errors": {
+                      "example": [
+                        {
+                          "detail": "Permission denied for this resource",
+                          "status": "403"
+                        }
+                      ],
+                      "items": {
+                        "additionalProperties": false,
+                        "example": {
+                          "detail": "Not Found",
+                          "status": "404"
+                        },
+                        "properties": {
+                          "code": {
+                            "description": "An application-specific error code, expressed as a string value.",
+                            "example": "entity-not-found",
+                            "type": "string"
+                          },
+                          "detail": {
+                            "description": "A human-readable explanation specific to this occurrence of the problem.",
+                            "example": "The request was missing these required fields: ...",
+                            "type": "string"
+                          },
+                          "id": {
+                            "description": "A unique identifier for this particular occurrence of the problem.",
+                            "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "links": {
+                            "additionalProperties": false,
+                            "description": "A link that leads to further details about this particular occurrence of the problem.",
+                            "example": {
+                              "about": "https://example.com/about_this_error"
+                            },
+                            "properties": {
+                              "about": {
+                                "example": "https://example.com/api/resource",
+                                "oneOf": [
+                                  {
+                                    "description": "A string containing the link’s URL.",
+                                    "example": "https://example.com/api/resource",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "additionalProperties": false,
+                                    "example": {
+                                      "href": "https://example.com/api/resource"
+                                    },
+                                    "properties": {
+                                      "href": {
+                                        "description": "A string containing the link’s URL.",
+                                        "example": "https://example.com/api/resource",
+                                        "type": "string"
+                                      },
+                                      "meta": {
+                                        "additionalProperties": true,
+                                        "description": "Free-form object that may contain non-standard information.",
+                                        "example": {
+                                          "key1": "value1",
+                                          "key2": {
+                                            "sub_key": "sub_value"
+                                          },
+                                          "key3": [
+                                            "array_value1",
+                                            "array_value2"
+                                          ]
+                                        },
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "href"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "meta": {
+                            "additionalProperties": true,
+                            "example": {
+                              "key": "value"
+                            },
+                            "type": "object"
+                          },
+                          "source": {
+                            "additionalProperties": false,
+                            "example": {
+                              "pointer": "/data/attributes"
+                            },
+                            "properties": {
+                              "parameter": {
+                                "description": "A string indicating which URI query parameter caused the error.",
+                                "example": "param1",
+                                "type": "string"
+                              },
+                              "pointer": {
+                                "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                                "example": "/data/attributes",
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "status": {
+                            "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                            "example": "400",
+                            "pattern": "^[45]\\d\\d$",
+                            "type": "string"
+                          },
+                          "title": {
+                            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                            "example": "Bad request",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "detail"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "example": {
+                        "version": "1.0"
+                      },
+                      "properties": {
+                        "version": {
+                          "description": "Version of the JSON API specification this server supports.",
+                          "example": "1.0",
+                          "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "version"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad Request: A parameter provided as a part of the request was invalid.",
+            "headers": {
+              "deprecation": {
+                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
+                "example": "2021-07-01T00:00:00Z",
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
+                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
+                "schema": {
+                  "format": "uuid",
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "example": {
+                    "errors": [
+                      {
+                        "detail": "Permission denied for this resource",
+                        "status": "403"
+                      }
+                    ],
+                    "jsonapi": {
+                      "version": "1.0"
+                    }
+                  },
+                  "properties": {
+                    "errors": {
+                      "example": [
+                        {
+                          "detail": "Permission denied for this resource",
+                          "status": "403"
+                        }
+                      ],
+                      "items": {
+                        "additionalProperties": false,
+                        "example": {
+                          "detail": "Not Found",
+                          "status": "404"
+                        },
+                        "properties": {
+                          "code": {
+                            "description": "An application-specific error code, expressed as a string value.",
+                            "example": "entity-not-found",
+                            "type": "string"
+                          },
+                          "detail": {
+                            "description": "A human-readable explanation specific to this occurrence of the problem.",
+                            "example": "The request was missing these required fields: ...",
+                            "type": "string"
+                          },
+                          "id": {
+                            "description": "A unique identifier for this particular occurrence of the problem.",
+                            "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "links": {
+                            "additionalProperties": false,
+                            "description": "A link that leads to further details about this particular occurrence of the problem.",
+                            "example": {
+                              "about": "https://example.com/about_this_error"
+                            },
+                            "properties": {
+                              "about": {
+                                "example": "https://example.com/api/resource",
+                                "oneOf": [
+                                  {
+                                    "description": "A string containing the link’s URL.",
+                                    "example": "https://example.com/api/resource",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "additionalProperties": false,
+                                    "example": {
+                                      "href": "https://example.com/api/resource"
+                                    },
+                                    "properties": {
+                                      "href": {
+                                        "description": "A string containing the link’s URL.",
+                                        "example": "https://example.com/api/resource",
+                                        "type": "string"
+                                      },
+                                      "meta": {
+                                        "additionalProperties": true,
+                                        "description": "Free-form object that may contain non-standard information.",
+                                        "example": {
+                                          "key1": "value1",
+                                          "key2": {
+                                            "sub_key": "sub_value"
+                                          },
+                                          "key3": [
+                                            "array_value1",
+                                            "array_value2"
+                                          ]
+                                        },
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "href"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "meta": {
+                            "additionalProperties": true,
+                            "example": {
+                              "key": "value"
+                            },
+                            "type": "object"
+                          },
+                          "source": {
+                            "additionalProperties": false,
+                            "example": {
+                              "pointer": "/data/attributes"
+                            },
+                            "properties": {
+                              "parameter": {
+                                "description": "A string indicating which URI query parameter caused the error.",
+                                "example": "param1",
+                                "type": "string"
+                              },
+                              "pointer": {
+                                "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                                "example": "/data/attributes",
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "status": {
+                            "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                            "example": "400",
+                            "pattern": "^[45]\\d\\d$",
+                            "type": "string"
+                          },
+                          "title": {
+                            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                            "example": "Bad request",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "detail"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "example": {
+                        "version": "1.0"
+                      },
+                      "properties": {
+                        "version": {
+                          "description": "Version of the JSON API specification this server supports.",
+                          "example": "1.0",
+                          "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "version"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Not Found: The resource being operated on could not be found or you do not have permission to access it.",
+            "headers": {
+              "deprecation": {
+                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
+                "example": "2021-07-01T00:00:00Z",
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
+                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
+                "schema": {
+                  "format": "uuid",
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "example": {
+                    "errors": [
+                      {
+                        "detail": "Permission denied for this resource",
+                        "status": "403"
+                      }
+                    ],
+                    "jsonapi": {
+                      "version": "1.0"
+                    }
+                  },
+                  "properties": {
+                    "errors": {
+                      "example": [
+                        {
+                          "detail": "Permission denied for this resource",
+                          "status": "403"
+                        }
+                      ],
+                      "items": {
+                        "additionalProperties": false,
+                        "example": {
+                          "detail": "Not Found",
+                          "status": "404"
+                        },
+                        "properties": {
+                          "code": {
+                            "description": "An application-specific error code, expressed as a string value.",
+                            "example": "entity-not-found",
+                            "type": "string"
+                          },
+                          "detail": {
+                            "description": "A human-readable explanation specific to this occurrence of the problem.",
+                            "example": "The request was missing these required fields: ...",
+                            "type": "string"
+                          },
+                          "id": {
+                            "description": "A unique identifier for this particular occurrence of the problem.",
+                            "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "links": {
+                            "additionalProperties": false,
+                            "description": "A link that leads to further details about this particular occurrence of the problem.",
+                            "example": {
+                              "about": "https://example.com/about_this_error"
+                            },
+                            "properties": {
+                              "about": {
+                                "example": "https://example.com/api/resource",
+                                "oneOf": [
+                                  {
+                                    "description": "A string containing the link’s URL.",
+                                    "example": "https://example.com/api/resource",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "additionalProperties": false,
+                                    "example": {
+                                      "href": "https://example.com/api/resource"
+                                    },
+                                    "properties": {
+                                      "href": {
+                                        "description": "A string containing the link’s URL.",
+                                        "example": "https://example.com/api/resource",
+                                        "type": "string"
+                                      },
+                                      "meta": {
+                                        "additionalProperties": true,
+                                        "description": "Free-form object that may contain non-standard information.",
+                                        "example": {
+                                          "key1": "value1",
+                                          "key2": {
+                                            "sub_key": "sub_value"
+                                          },
+                                          "key3": [
+                                            "array_value1",
+                                            "array_value2"
+                                          ]
+                                        },
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "href"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "meta": {
+                            "additionalProperties": true,
+                            "example": {
+                              "key": "value"
+                            },
+                            "type": "object"
+                          },
+                          "source": {
+                            "additionalProperties": false,
+                            "example": {
+                              "pointer": "/data/attributes"
+                            },
+                            "properties": {
+                              "parameter": {
+                                "description": "A string indicating which URI query parameter caused the error.",
+                                "example": "param1",
+                                "type": "string"
+                              },
+                              "pointer": {
+                                "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                                "example": "/data/attributes",
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "status": {
+                            "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                            "example": "400",
+                            "pattern": "^[45]\\d\\d$",
+                            "type": "string"
+                          },
+                          "title": {
+                            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                            "example": "Bad request",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "detail"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "example": {
+                        "version": "1.0"
+                      },
+                      "properties": {
+                        "version": {
+                          "description": "Version of the JSON API specification this server supports.",
+                          "example": "1.0",
+                          "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "version"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Internal Server Error: An error was encountered while attempting to process the request.",
+            "headers": {
+              "deprecation": {
+                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
+                "example": "2021-07-01T00:00:00Z",
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
+                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
+                "schema": {
+                  "format": "uuid",
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get a model (Early Access)",
+        "tags": [
+          "Model"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "risk_db",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
       }
     },

@@ -1,60 +1,80 @@
 ---
-description: How to scan internal applications with a Snyk API and Web scanning agent
 nav_context: classic
+description: How to scan internal applications with a Snyk API & Web Scanning Agent
 ---
-
-{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Scan internal applications
 
-Scan your internal applications with the Snyk API & Web Scanning Agent, a secure, clean, and straightforward solution to scan non-public applications.
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
 
-## What is a Scanning Agent for?
+## Scan internal applications
 
-The Snyk Scanning Agent lets you scan internal applications for vulnerabilities without exposing them to the internet or even to Snyk IP addresses. It is the ideal approach to scan any application that is only reachable from within your network, including development, staging, pre-release, and internal production applications that support your business.
+Scan your internal applications with the Snyk API & Web Scanning Agent. The Scanning Agent creates an encrypted tunnel between Snyk API & Web and your network, so you do not expose your applications to the internet.
 
-You can use a single Scanning Agent to scan multiple internal targets, but you can also have different Scanning Agents, each one reaching a part of your network. There is no need for a single Scanning Agent to connect to the whole network.
+### What is a Scanning Agent for?
 
-## How does a Scanning Agent work?
+A Scanning Agent lets you scan internal applications for vulnerabilities without exposing them to the internet or to Snyk IP addresses. Use it to scan any application reachable only from within your network, including development, staging, pre-release, and internal production applications.&#x20;
 
-A Scanning Agent creates an encrypted and authenticated tunnel where traffic flows securely between Snyk API & Web and your network.
+A single Scanning Agent can scan multiple internal targets. You can also use several Scanning Agents, each reaching a different part of your network.
 
-To ensure Snyk meets your security expectations, Snyk follows these principles:
+### How does a Scanning Agent work?
 
-* All code is open source and [publicly available](https://github.com/Probely/farcaster-onprem-agent/).
+A Scanning Agent creates an encrypted, authenticated tunnel between Snyk API & Web and your network.
+
+Snyk follows these security principles:
+
+* All code is open source and available in the [Snyk API & Web GitHub repositories](https://github.com/Probely/farcaster-onprem-agent/).
 * You have complete control over the Scanning Agent, including the right to change it.
-* Snyk API & Web cannot access the Scanning Agent.
+* Snyk cannot access the Scanning Agent.
 * The Scanning Agent runs in containers with the least required privileges.
-* All traffic is encrypted end-to-end.
-* The Scanning Agent does not open any network port.
+* The Scanning Agent encrypts all traffic end-to-end.
+* The Scanning Agent does not open any network ports.
 
-## Install a Scanning Agent
+### Install a Scanning Agent
 
-To install a Scanning Agent, refer to [Install a Scanning Agent](install-scanning-agent.md) and the installation reference and source code for the installer available in the [Snyk API & Web GitHub repositories](https://github.com/Probely/farcaster-onprem-agent/).
+To install a Scanning Agent, visit [Install a Scanning Agent](install-scanning-agent.md). The installation reference and the installer source code are in the [Snyk API & Web GitHub repositories](https://github.com/Probely/farcaster-onprem-agent/).
 
-## Scan a target with a Scanning Agent
+### Scan a target with a Scanning Agent
 
-When a Scanning Agent is configured and running, you must choose which targets use it:
+After you configure a Scanning Agent and it is running, assign it to targets:
 
-1. In Snyk API & Web, navigate to the **Targets** menu.
-2. Identify the target in the list for which you want to set the Scanning Agent and click the **gear icon** to open its settings.
-3. Under the **Scanner** tab, navigate to the **SCANNING AGENT** section and select the Scanning Agent you want to use.
+1. In Snyk API & Web, navigate to **Targets**.
+2. Find the target in the list and click the gear icon to open its settings.
+3. On the **Scanner** tab, in the **Scanning Agent** section, select the Scanning Agent to use.
 4. Click **Save**.
 
-Click **Unlink** to remove the Scanning Agent for the target.
+To remove the Scanning Agent from a target, click **Unlink**.
 
-You can also assign or remove a Scanning Agent to or from multiple targets in the targets list. Select the targets you want to configure, and the options appear.
+To assign or remove a Scanning Agent for multiple targets, select the targets in the targets list, then click **Assign scanning agent** or **Remove agent**.
 
-<figure><img src="../../../../.gitbook/assets/scan-internal-applications-bulk-assign.png" alt="Bulk assign or remove scanning agents from multiple targets"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-09-28 at 14.04.50.png" alt="Targets list with a target selected and the Assign scanning agent and Remove agent buttons highlighted"><figcaption><p>Bulk-assign or remove a Scanning Agent from the targets list</p></figcaption></figure>
 
-Targets configured to use a Scanning Agent show a cloud icon.
+In the targets list, targets that use a Scanning Agent show a cloud icon.
 
-## Scanning Agent status
+### Scanning Agent status
 
 A Scanning Agent can have one of the following statuses:
 
-| Status                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Connected             | The scanning agent is connected. It was working in the last 180 seconds.                                                                                                                                                                                                                                                                                                                                                                                    |
-| Connected with issues | The scanning agent is connected, but it can have poor network performance if it uses, for example, an HTTP proxy or a direct TCP connection to Snyk API & Web. For more information, visit the [TCP Meltdown](https://web.archive.org/web/20220103191127/http://sites.inka.de/bigred/devel/tcp-tcp.html) problem and check the documentation on [launching the agent](https://github.com/Probely/farcaster-onprem-agent?tab=readme-ov-file#launch-the-agent). |
-| Disconnected          | The scanning agent is disconnected, possibly due to misconfiguration. Check the scanning agent configuration or the firewall rules, for example. For more information, check the [Installation](https://github.com/Probely/farcaster-onprem-agent?tab=readme-ov-file#installation) and [Network Requirements](https://github.com/Probely/farcaster-onprem-agent?tab=readme-ov-file#network-requirements) documentation.                                        |
+| Status                         | Description                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Connected** **over** **UDP** | The Scanning Agent has worked within the last 180 seconds.                                                                                                                                                                                                                                                                                                  |
+| **Connected** **over** **TCP** | UDP is unavailable on your network, so the tunnel uses TCP. Scans still run. For better throughput, allow outbound UDP on port 443.                                                                                                                                                                                                                         |
+| **Disconnected**               | Misconfiguration can cause this status. Check the Scanning Agent configuration and the firewall rules. For more information, visit [Installation](https://github.com/Probely/farcaster-onprem-agent?tab=readme-ov-file#installation) and [Network Requirements](https://github.com/Probely/farcaster-onprem-agent?tab=readme-ov-file#network-requirements). |
+
+The Scanning Agent status appears in the following places:
+
+* the Scanning Agents list
+* the Scanning Agent details page
+* the targets list
+* the target details page
+* the Scanning Agent tooltip in target settings
+
+### View Scanning Agent details
+
+To open the details page of a Scanning Agent, click it in the Scanning Agent list. The page shows:
+
+* **Scanning Agent information:** status, last seen time, traffic from the last 24 hours, Agent ID, and so on.
+* **Connection stability:** availability, number of disconnections, longest outage, and most recent outage over a date range you choose, with a per-day view. Snyk calculates availability only for the time it monitored the Scanning Agent.
+* **Scope:** the teams the Scanning Agent serves.
+* **Targets using this agent:** every target assigned to the Scanning Agent, with its last scan and status.
+

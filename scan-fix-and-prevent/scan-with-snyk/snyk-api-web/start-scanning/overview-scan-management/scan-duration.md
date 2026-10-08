@@ -1,5 +1,5 @@
 ---
-description: How scan duration works for Snyk API and Web scans
+description: How scan duration works for Snyk API & Web scans
 nav_context: agnostic
 ---
 

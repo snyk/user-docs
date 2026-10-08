@@ -7,7 +7,7 @@ description: >-
 # Remediation Agent
 
 {% hint style="info" %}
-The Remediation Agent is in [Early Access](../../discover-snyk/getting-started/snyk-release-process.md#early-access-features). To turn it on, visit [Snyk Preview](../../platform-administration/snyk-platform-administration/snyk-preview.md) or ask your Snyk account team.
+The Remediation Agent is in [Early Access](https://docs.snyk.io/discover-snyk/getting-started/snyk-release-process#early-access-features). To turn it on, visit [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-platform-administration/snyk-preview) or ask your Snyk account team.
 {% endhint %}
 
 The Remediation Agent is an LLM-driven tool that automates vulnerability remediation in your Snyk Projects. It scans a Project, generates a fix plan enriched with Snyk security intelligence, applies the fix, and verifies the result. It runs in your coding assistant or in the Snyk CLI.
@@ -29,7 +29,7 @@ The bring-your-own-model provider integrations are the newest part of the featur
 ### Snyk CLI
 
 * A Snyk account with Snyk Open Source, Snyk Code, or Snyk Container enabled.
-* The Snyk CLI. Visit [Install the Snyk CLI](../../developer-tools/snyk-cli/install-the-snyk-cli/README.md).
+* The Snyk CLI. Visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli).
 * Access to a model provider. Visit [Configure a model provider](#configure-a-model-provider).
 
 ## How it works
@@ -140,7 +140,7 @@ Restart your coding assistant so the updated MCP configuration takes effect. Aft
 
 ## Fix vulnerabilities from the Snyk CLI
 
-The Snyk Studio installer installs the CLI for you. If you skipped the installer, visit [Install the Snyk CLI](../../developer-tools/snyk-cli/install-the-snyk-cli/README.md) for the other installation options.
+The Snyk Studio installer installs the CLI for you. If you skipped the installer, visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) for the other installation options.
 
 ### Configure a model provider
 
@@ -175,7 +175,7 @@ snyk fix --agentic --experimental --container [path]
 
 ### Scope the run
 
-An interactive run prompts you for each fix. These options change that. For what each option does and how they combine, visit [Fix](../../developer-tools/snyk-cli/commands/fix.md).
+An interactive run prompts you for each fix. These options change that. For what each option does and how they combine, visit [Fix](https://docs.snyk.io/developer-tools/snyk-cli/commands/fix).
 
 * Run without prompting: `--auto-approve`. It has side effects, described in the warning that follows this list.
 * Choose which vulnerabilities to fix: `--issue-ids`, `--exclude-ids`, `--severity-threshold`, `--severity-filter`, and `--breakability-filter`.
@@ -197,7 +197,7 @@ The `--issue-ids`, `--exclude-ids`, and `--severity-threshold` options require `
 Verification builds the image and rescans it, so the agent rejects a candidate Dockerfile that no longer builds instead of reporting it as a fix.
 
 {% hint style="info" %}
-The container flow selects fixes at the Dockerfile and package level rather than per vulnerability, so it does not accept the options that select individual vulnerabilities. Passing any of them ends the run before the scan starts. The [Fix](../../developer-tools/snyk-cli/commands/fix.md) reference lists them. `--container` also requires `--agentic`.
+The container flow selects fixes at the Dockerfile and package level rather than per vulnerability, so it does not accept the options that select individual vulnerabilities. Passing any of them ends the run before the scan starts. The [Fix](https://docs.snyk.io/developer-tools/snyk-cli/commands/fix) reference lists them. `--container` also requires `--agentic`.
 {% endhint %}
 
 ## Best practices

@@ -1,8 +1,8 @@
 ---
+nav_context: agnostic
 description: >-
   How Agentic Development Security secures the AI agents that build your
   software
-nav_context: agnostic
 ---
 
 # Agentic Development Security (ADS)
@@ -10,7 +10,7 @@ nav_context: agnostic
 {% hint style="info" %}
 **Feature availability**
 
-Agent Behavior Governance is in open preview. As such it is not connected to the platform surfaces (Inventory, Policies & issues, Reports, and Evo chat) and comes with limitations described [here](agent-behavior-governance.md#open-preview-limits).
+Agent Behavior Governance is in open preview. As such it is not connected to the platform surfaces (Inventory, Policies & issues, Reports, and Evo chat) and comes with limitations described [here](agent-behavior-governance/#open-preview-limits).
 {% endhint %}
 
 Agentic Development Security (ADS) secures the AI agents that build software. AI coding assistants and development agents pull in external tools, take actions across systems, and generate code. ADS secures three parts of that activity: what agents use, what they do, and what they generate.

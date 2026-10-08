@@ -1,5 +1,5 @@
 ---
-description: How to configure RAML API targets for Snyk API and Web
+description: How to configure RAML API targets for Snyk API & Web
 nav_context: classic
 ---
 

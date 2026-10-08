@@ -1,5 +1,5 @@
 ---
-description: How Snyk API and Web uses AI and machine learning to enhance security scanning
+description: How Snyk API & Web uses AI and machine learning to enhance security scanning
 nav_context: agnostic
 ---
 

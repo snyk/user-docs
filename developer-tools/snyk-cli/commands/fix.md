@@ -14,7 +14,7 @@ To use the `snyk fix --agentic` command:
 
 * Install Snyk CLI v1.1307.4 or later. Visit [Install or update the Snyk CLI](../install-the-snyk-cli/README.md).
 * [Authenticate](auth.md) your machine with the Snyk CLI using `snyk auth`
-* Configure access to an LLM provider. Not every provider uses an API key. Visit [Remediation Agent](../../../scan-fix-and-prevent/fix/remediation-agent.md) for the supported providers and their setup instructions.
+* Configure access to an LLM provider. Not every provider uses an API key. Visit [Remediation Agent](https://docs.snyk.io/scan-fix-and-prevent/fix/remediation-agent) for the supported providers and their setup instructions.
 
 ## Usage
 
@@ -32,7 +32,7 @@ Choose what to remediate with a product flag:
 
 Pass exactly one of `--sca`, `--sast`, or `--container`. The `--experimental` flag is required alongside `--agentic`.
 
-Visit [Remediation Agent](../../../scan-fix-and-prevent/fix/remediation-agent.md) for setup instructions and supported IDEs.
+Visit [Remediation Agent](https://docs.snyk.io/scan-fix-and-prevent/fix/remediation-agent) for setup instructions and supported IDEs.
 
 Some options on this page are available only in the latest preview release of the Snyk CLI. Run `snyk version` to check your version.
 
@@ -90,7 +90,7 @@ Example: `snyk fix --agentic --experimental --sca --provider=openai`
 
 ### `--model=<MODEL>`
 
-Set the model ID, which overrides the provider's default model. Required for Ollama, for example `llama3.1`. For Vertex AI, use a Gemini or Claude model name, for example `gemini-2.5-flash`. Visit [Configure a model provider](../../../scan-fix-and-prevent/fix/remediation-agent.md#configure-a-model-provider) for Amazon Bedrock model ID guidance.
+Set the model ID, which overrides the provider's default model. Required for Ollama, for example `llama3.1`. For Vertex AI, use a Gemini or Claude model name, for example `gemini-2.5-flash`. Visit [Configure a model provider](https://docs.snyk.io/scan-fix-and-prevent/fix/remediation-agent#configure-a-model-provider) for Amazon Bedrock model ID guidance.
 
 Example: `snyk fix --agentic --experimental --sca --provider=ollama --model=llama3.1`
 

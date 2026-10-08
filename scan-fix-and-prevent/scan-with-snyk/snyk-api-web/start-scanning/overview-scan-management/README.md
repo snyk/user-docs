@@ -1,5 +1,5 @@
 ---
-description: How to manage Snyk API and Web scans
+description: How to manage Snyk API & Web scans
 nav_context: agnostic
 ---
 

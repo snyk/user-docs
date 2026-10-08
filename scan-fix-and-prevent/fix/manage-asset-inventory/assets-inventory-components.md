@@ -3,9 +3,9 @@ nav_context: classic
 description: The components of each Snyk assets inventory layout
 ---
 
-{% include "../.gitbook/includes/new-navigation-banner.md" %}
-
 # Assets inventory components
+
+## Assets inventory components
 
 Each inventory layout is presented in a table format, detailing the available key attributes:
 
@@ -23,7 +23,7 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Organizations](assets-inventory-components.md#organizations)
 * [Visibility](assets-inventory-components.md#visibility)
 
-## Asset
+### Asset
 
 Assets in Snyk Essentials are meaningful, real-world components in an application’s SDLC. The following asset types are available:
 
@@ -38,25 +38,25 @@ The Asset column incorporates the name of the repository asset, package, scanned
 
 You can copy the name of an asset or browse the repository. Each asset has a menu at the end of the row. Click the menu, then select **Copy** to copy the URL or **Browse** to navigate to the asset repository.
 
-### Repository assets
+#### Repository assets
 
 Repository assets represent SCM repositories. A repository asset is created by discovering the repositories directly in the SCM, when such integration is configured. Alternatively, a repository asset can be created by scanning a repository, (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository (in Snyk, this means filling in the `gitRemoteURL` parameter).
 
 If you scan the code locally using CLI, with no association to a repository, then a repository asset will not be created. For more details about CLI commands, see [Scanning methods](../../scan-with-snyk/snyk-essentials.md#scanning-methods).
 
-### Container Image assets
+#### Container Image assets
 
 You can identify a container image based on the Image ID. If multiple container images have the same Image ID, then only one image asset is generated for that Image ID, enriched with information from all the identified container images for that ID.
 
 Snyk Essentials retrieves all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../../scan-with-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md) page for more details.
 
-### Packages
+#### Packages
 
 Packages in Snyk Essentials are defined as software or libraries that are managed by package management systems.
 
 Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk Essentials to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
 
-### Scanned artifacts
+#### Scanned artifacts
 
 A scanned artifact in Snyk Essentials is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.
 
@@ -64,7 +64,7 @@ Scanned artifacts provide users with visibility into what Snyk Essentials detect
 
 You can find scanned artifacts in the Inventory Type view, but they are not supported by Policies. Scanned artifacts may include duplicates due to missing identifying information.
 
-## Asset tabs
+### Asset tabs
 
 The asset information is divided into the following tabs:
 
@@ -73,7 +73,7 @@ The asset information is divided into the following tabs:
 * [Related Projects](assets-inventory-components.md#related-projects)
 * [Attributes](assets-inventory-components.md#attributes)
 
-### Summary
+#### Summary
 
 The Summary tab is a concentrated view of asset properties. The Summary screen presents you with the following information:
 
@@ -95,11 +95,11 @@ The Summary tab is a concentrated view of asset properties. The Summary screen p
 After you apply the filters, the assets list will only display the assets that directly match the filter conditions, and, if available, a list of children assets related to the selected one is displayed, with the information shown in a table format, with a focus on the following topics: Asset (name), Issues, Controls, Class.
 {% endhint %}
 
-### Related Assets
+#### Related Assets
 
 The Related assets tab provides a detailed view of assets related to the selected one. Use this tab to assess scanning coverage or asset ownership. You can see the details of a related asset by clicking on one of them. Usually, these are Package assets. When looking at Related Assets, you can notice a link to the parent repository at the top. If you click on the parent asset link, you will revert to the initial view of the parent asset.
 
-### Related Projects
+#### Related Projects
 
 The Related Projects tab provides a collection of Snyk Projects that are associated with a specific asset within the platform. These projects are arranged in a table format, enabling you to view relevant information that assists in managing and assessing vulnerabilities related to the asset. Each Project is displayed with the following details:
 
@@ -112,11 +112,11 @@ The Related Projects tab provides a collection of Snyk Projects that are associa
 
 ‌Projects are sorted by Target, Target Reference, and Tested date. This makes it easy to find related Projects to monitor and fix.
 
-### Attributes
+#### Attributes
 
 The Attributes tab shows miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
-## Issues
+### Issues
 
 The Issues column is designed to present a comprehensive list of issues that have been identified within your assets. These findings are the result of scans performed by Snyk as well as internal tools you may have deployed. This detailed list not only helps in understanding the security posture of your assets but also in prioritizing remediation efforts based on the severity and impact of each issue. By having visibility into these issues, you can take proactive steps toward improving the overall security of your applications and infrastructure.
 
@@ -133,36 +133,36 @@ The **Issues** column from the Asset view is designed to present an aggregated c
 
 This classification streamlines prioritization, helping you focus on critical areas and optimize remediation.
 
-## Coverage Controls
+### Coverage Controls
 
 The Controls column displays all of the Snyk products that were executed on a specific repository asset. This column displays, in circles, a logo for each Snyk product. The logo icon itself has an indication of the highest severity of issues from this source. For example, if the highest severity issue is **C** (critical), you can see a red dot on the control icon.
 
 The Controls logos can have one of the following states:
 
-| Logo                                                                                  | Description                                                                      |
-| ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| <img src="../../.gitbook/assets/coverage-controls.png" alt="Control logo: the Snyk product was executed" data-size="original">   | The Snyk product was executed.                                                   |
-| <img src="../../.gitbook/assets/coverage-controls-2.png" alt="Control logo: the Snyk product was executed but with issues" data-size="original"> | The Snyk product was executed but with issues.                                   |
-| <img src="../../.gitbook/assets/coverage-controls-3.png" alt="Control logo: the Snyk product should have been executed but was not" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
-| <img src="../../.gitbook/assets/coverage-controls-4.png" alt="Control logo: the Snyk product was executed and failed" data-size="original"> | The Snyk product was executed and failed.                                        |
-| <img src="../../.gitbook/assets/coverage-controls-5.png" alt="Control logo: the Snyk product was executed and failed with issues" data-size="original"> | The Snyk product was executed and failed with issues.                            |
+| Logo                                                                                                                                                                                | Description                                                                      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| <img src="../../.gitbook/assets/coverage-controls.png" alt="Control logo: the Snyk product was executed" data-size="original">                                                      | The Snyk product was executed.                                                   |
+| <img src="../../.gitbook/assets/coverage-controls-2.png" alt="Control logo: the Snyk product was executed but with issues" data-size="original">                                    | The Snyk product was executed but with issues.                                   |
+| <img src="../../.gitbook/assets/coverage-controls-3.png" alt="Control logo: the Snyk product should have been executed but was not" data-size="original">                           | The Snyk product should have been executed but was not executed.                 |
+| <img src="../../.gitbook/assets/coverage-controls-4.png" alt="Control logo: the Snyk product was executed and failed" data-size="original">                                         | The Snyk product was executed and failed.                                        |
+| <img src="../../.gitbook/assets/coverage-controls-5.png" alt="Control logo: the Snyk product was executed and failed with issues" data-size="original">                             | The Snyk product was executed and failed with issues.                            |
 | <img src="../../.gitbook/assets/coverage-controls-6.png" alt="Control logo: the Snyk product was executed and failed because it is not covered by the policy" data-size="original"> | The Snyk product was executed and failed due to not being covered by the policy. |
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.
 
-## Tags <a href="#tags" id="tags"></a>
+### Tags <a href="#tags" id="tags"></a>
 
 Provides a key-value tagging capability that allows you to attach specific, structured metadata to your assets. Use this feature lets you granular filtering, robust policy creation, and better alignment with your internal systems.
 
 **Example**: A structured tag provides both a key and a value, such as `platform:aws` or `region:eu-central-1`.
 
-## How to filter assets by tags <a href="#how-to-filter-the-projects-listing-by-tags" id="how-to-filter-the-projects-listing-by-tags"></a>
+### How to filter assets by tags <a href="#how-to-filter-the-projects-listing-by-tags" id="how-to-filter-the-projects-listing-by-tags"></a>
 
 In Snyk Web UI, you can filter assets by their tags using **Advanced filters**. You can define filters based on specific criteria, such as a property of an asset, a condition, and a value.
 
 * Filter by `Tags`: The new `Tags` filter is a key-value pair filter. This filter allows you to select a specific tag key such as `department` and then choose a corresponding value such as `finance` to narrow down the asset list.
 
-## Labels
+### Labels
 
 Asset labels are metadata that is applied to repository assets and build artifacts. You can use asset labels to tag based on predefined values, manage and apply security policies, and group assets based on common characteristics. The following asset types are available:
 
@@ -189,7 +189,7 @@ A system-generated label includes the following information:
   * **Dormant**: No commits in the last 6 months.
   * **N/A**: There are no commits detected by Snyk Essentials.
 
-### Labels rules overview
+#### Labels rules overview
 
 Labels are organized into three main categories:
 
@@ -207,11 +207,11 @@ System labels are automatically generated from the SCM repositories. System labe
 * Multiple different rules based on the words we found in the repositories:
   * This applies to GitHub, GitLab, Azure DevOps, and BitBucket.
 
-### Labeling policy
+#### Labeling policy
 
 You can use pre-defined system labels and asset labels to mark the repositories that meet your filter criteria. Check the following [Labeling policy](../../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md) use case.
 
-### Labeling rules related to metadata
+#### Labeling rules related to metadata
 
 | Rule                                                                  | Label             |
 | --------------------------------------------------------------------- | ----------------- |
@@ -224,11 +224,11 @@ In the Snyk web interface, you can filter assets by their labels using the **Adv
 
 * Filter by `labels`: This filter allows you to select a specific label.
 
-## Developers
+### Developers
 
 You can see the list of all the developers that worked on that specific asset. The details list includes the SCM profile details for code committers to the repository asset.
 
-## Class
+### Class
 
 Reflects the business criticality of the asset from A (most critical) to D (least critical), as you defined it in the Policies view.
 
@@ -246,7 +246,7 @@ Synchronization between the Asset Class and the Insights UI can take up to 3 hou
 
 The class value can be auto-generated with policies. You just need to create a policy that has as an action **Set Asset Class**.
 
-## Risk factors
+### Risk factors
 
 The Risk Factors column lists the potential vulnerabilities and security threats associated with each asset. These risk factors help users identify specific risks, enabling them to prioritize and address issues more effectively. By understanding the particular risks tied to their assets, users can take more informed remedial actions.
 
@@ -256,11 +256,11 @@ Here is a list of the available risk factors:
 * [OS Condition](../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-os-condition.md)
 * [Public facing](../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-public-facing.md)
 
-## Source
+### Source
 
 The Source column in Snyk Essentials helps users identify the origin of their assets, which can be directly from Snyk, through SCM systems, or using third-party integrations. This feature simplifies asset management and risk prioritization by providing clear visibility into the origin of each asset and it enables more effective security strategies and remediation efforts.
 
-## SCM Integrations
+### SCM Integrations
 
 The SCM Integrations column indicates how each SCM was integrated into Snyk at the Group or Organization level. Full context enrichment is available at the Group level, while testing is available at the Organization level.
 
@@ -269,7 +269,7 @@ The column is hidden by default, and you can enable it in the **Columns** sectio
 * **Snyk Org**: The Snyk Organization-level integration is used for import and testing.
 * **Snyk Essentials**: The Snyk Group-level integration is used for discovery and asset enrichment.
 
-## SCM Repository freshness
+### SCM Repository freshness
 
 The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you make decisions regarding maintenance, security patching, and resource allocation.
 
@@ -280,7 +280,7 @@ The repository freshness displays the repository status according to the last co
 * **Dormant**: No commits in the last 6 months.
 * **N/A**: Commits data is unavailable.
 
-## Clusters
+### Clusters
 
 The Clusters column lists all cluster names where an image is deployed and is using the runtime integrations as the source of the information. When an image is removed from a cluster, the cluster name is also deleted from the collection. Clusters are also available under Filters and allow you to filter assets in the Inventory view or to create policies in the Policies view.
 
@@ -288,11 +288,11 @@ The Clusters column lists all cluster names where an image is deployed and is us
 The Cluster column is populated only when the Snyk Runtime Sensor is utilized.
 {% endhint %}
 
-## Organizations
+### Organizations
 
 The Organizations column lists all Snyk Organizations associated with each asset. This includes the names of Organizations that contain Projects linked to the asset, enabling users to filter and organize their asset inventory based on their organizational structures. Organizations are also available under Filters and allow you to filter assets in the Inventory view or to create policies in the Policies view.
 
-## Visibility
+### Visibility
 
 The Visibility column lists the visibility status of the repositories as follows:
 
@@ -303,7 +303,7 @@ The Visibility column lists the visibility status of the repositories as follows
 
 Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../../manage-risk/analytics/reports-tab/#snyk-reporting-filters).
 
-## Actions
+### Actions
 
 The Actions column provides a workflow to set up the SCM integration at the Group level to access full context enrichment. To identify the type of integration, check the [SCM Integrations column](assets-inventory-components.md#scm-integrations). This use case applies where a Group-level integration is not configured.
 

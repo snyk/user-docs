@@ -71,4 +71,4 @@ As you operationalize security testing in your development process, another opti
 
 ## Update your timeline
 
-Once you have created your fix strategy, update the timeline for Phase 7.
+Once you have created your fix strategy, update the timeline for [Phase 5: Rolling out the prevention stage](phase-5-rolling-out-the-prevention-stage/).

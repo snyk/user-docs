@@ -60,7 +60,6 @@ See [Snyk Priority Score and Kubernetes](../../scan-with-snyk/snyk-container/kub
 A number of specific factors contribute to priority calculation for Snyk Code, including:
 
 * Severity levels
-* Fixability: If Snyk has fix examples available for this issue
 * Number of vulnerability occurrences
 * Open community projects: if this vulnerability is fixed widely
 * Rule tags: decrease priority if beta tags are found

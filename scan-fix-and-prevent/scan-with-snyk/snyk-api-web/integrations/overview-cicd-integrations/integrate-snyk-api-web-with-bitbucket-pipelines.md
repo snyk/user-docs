@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with Bitbucket Pipelines
+description: How to integrate Snyk API & Web with Bitbucket Pipelines
 nav_context: classic
 ---
 

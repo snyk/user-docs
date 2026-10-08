@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with GitHub Actions
+description: How to integrate Snyk API & Web with GitHub Actions
 nav_context: classic
 ---
 

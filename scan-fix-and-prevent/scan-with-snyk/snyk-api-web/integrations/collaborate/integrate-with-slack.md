@@ -1,5 +1,5 @@
 ---
-description: How to integrate Snyk API and Web with Slack
+description: How to integrate Snyk API & Web with Slack
 nav_context: classic
 ---
 

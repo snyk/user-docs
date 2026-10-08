@@ -39,7 +39,7 @@ The Application Context integrations on this page work in conjunction with asset
 {% hint style="info" %}
 **Release status**
 
-The ackstage file integration is in Early Access and available with Snyk Enterprise plans.
+The Backstage file integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
 Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with backstage catalog files into Snyk Essentials.

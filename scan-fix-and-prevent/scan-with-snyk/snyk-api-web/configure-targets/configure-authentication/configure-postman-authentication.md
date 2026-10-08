@@ -1,17 +1,19 @@
 ---
-description: How to configure Postman authentication for Snyk API and Web targets
 nav_context: classic
+description: How to configure Postman authentication for Snyk API and Web targets
 ---
+
+# Postman authentication
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# Postman authentication
+## Postman authentication
 
 Configure authentication to scan an API using a Postman collection.
 
 You can configure Snyk API & Web to run authenticated requests that use dynamically generated tokens through a script. For longer scans where your token expires, you can also configure Snyk to detect the logout and generate a new token.
 
-## Example scenario
+### Example scenario
 
 This guide uses a Postman Collection example with the following requests:
 
@@ -22,7 +24,7 @@ This guide uses a Postman Collection example with the following requests:
 
 To configure requests one, two, and three, follow the example in [Configure Postman Collection targets](../configure-api-targets/configure-postman-collection-targets.md).
 
-## Configure your Postman collection for authentication
+### Configure your Postman collection for authentication
 
 Create two top-level folders in your Postman Collection, one for authentication and one for logout detection. Include test scripts to verify that authentication works and tokens remain valid:
 
@@ -42,11 +44,11 @@ Create two top-level folders in your Postman Collection, one for authentication 
 
     <figure><img src="../../../../.gitbook/assets/configure-postman-authentication-folder-logout.png" alt="Postman collection showing logout detection folder, and the result of the test."><figcaption></figcaption></figure>
 
-### Test and export the collection
+#### Test and export the collection
 
 With all requests configured, run the collection to test it. If there are no issues, export the collection.
 
-## Add or update your Postman target
+### Add or update your Postman target
 
 Add the Postman target using the Postman collection you exported. If your target is already configured in Snyk API & Web, update its schema:
 
@@ -56,11 +58,11 @@ Add the Postman target using the Postman collection you exported. If your target
 4. Upload the Postman collection you obtained from the previous step.
 5. Save your changes and add the required environment variables.
 
-## Configure Postman target authentication
+### Configure Postman target authentication
 
 After configuring the Postman environment values, configure your target's authentication:
 
-1. Select the **Authentication** tab and locate the **API TARGET AUTHENTICATION** section.
+1. Select the **Authentication** tab and locate the **TOKEN AUTHENTICATION** > **Collection-defined login sequence** section.
 2. In the **FOLDER IN SCHEMA FILE** select the `auth` folder. After selection, the form updates to show the remaining fields.
 3. Configure the authentication variables:
    1. **VARIABLE TYPE**: Select how the variable is scoped in your Postman Collection. This must match how the variable is set in your collection's test script:
@@ -74,7 +76,7 @@ After configuring the Postman environment values, configure your target's authen
 5. Optionally, select the **When login fails, fail the scan immediately and notify me** checkbox.
 6. Click **Save** and ensure the authentication toggle is set to **On**.
 
-## Configure Postman logout detection (optional)
+### Configure Postman logout detection (optional)
 
 Logout detection helps Snyk determine if the session ended and authenticate again to continue the scan:
 
