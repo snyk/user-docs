@@ -1,9 +1,7 @@
 ---
 description: How to scan code locally with the Snyk IDE plugin, using VS Code as the example setup
-nav_context: classic
+nav_context: agnostic
 ---
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Local scanning with the IDE
 
@@ -19,9 +17,7 @@ To start scanning code in the IDE, navigate to your IDE plugin or extension mark
 <figure><img src="../../../.gitbook/assets/configure-snyk-ide.png" alt="Searching for Snyk in the IDE extension marketplace"><figcaption></figcaption></figure>
 
 * Select **Connect & Trust Workspace** to let Snyk scan your code.
-
 * After being redirected to Snyk, you can click **Grant app access**. This authenticates your Snyk IDE extension.
-
 * Return to your IDE, where you can start scanning immediately.
 
 ## Use the Snyk IDE
