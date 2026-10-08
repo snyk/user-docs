@@ -32,7 +32,7 @@ The Snyk Code rules report hardcoded secrets and credentials in these cases:
 * A secret with a known format, such as an AWS or GitHub key, matched by a regular expression.
 * A hardcoded string passed as a credential argument to a method, for example the user name and password arguments of a database connection call.
 
-The rules look at the name and the shape of the code, and they check the value, for example its length. They do not verify that a value is a working secret. A value read from an environment variable or a configuration store is not reported, because the code holds no literal.
+The rules match on the name and the shape of the code, and they check the value, for example its length.
 
 Snyk Code reads source code files in supported languages and does not read comments. Findings appear as **Hardcoded Secret** or **Use of Hardcoded Credentials** issues, with CWE-259, CWE-321, CWE-547, or CWE-798, depending on the rule. For the rules in each language, see the language pages in this section.
 
