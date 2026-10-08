@@ -1,9 +1,7 @@
 ---
 description: How Snyk policies automate identifying, prioritizing, and triaging findings to save development time
-nav_context: classic
+nav_context: new
 ---
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Define policies
 
@@ -72,7 +70,7 @@ This procedure creates an asset policy, which requires Snyk Essentials and the *
 
 To create a policy:
 
-1. In the Snyk web UI, navigate to **Policies** > **New policy**.
+1. In the Snyk web UI, select **Policies** in the side menu, then click **New policy**.
 2. Enter a **Name** and a **Description**, then click **Next**.
 3. In the policy builder, define your **Filters** and click **Apply**.
 4. Click the **+** icon to **Set actions**.

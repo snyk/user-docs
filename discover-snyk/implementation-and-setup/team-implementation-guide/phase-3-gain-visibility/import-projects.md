@@ -1,11 +1,9 @@
 ---
-nav_context: classic
+nav_context: new
 description: >-
   How to import Projects into Snyk using an SCM integration or the Snyk CLI with
   CI/CD
 ---
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Import Projects
 
@@ -36,7 +34,7 @@ Connect your repositories for automatic scanning.
 
 For a small number of applications, typically under a hundred:
 
-1. From the Snyk Web UI, connect to Git code repositories from the **Settings-Integrations** page.
+1. In the Snyk Web UI, navigate to **Settings** > **Integrations** > **All integrations** and connect to your Git repositories.
 2. In the integration settings:
    1. Disable the automatic fixes and PR/Merge checks when first onboarding Projects.
    2. Enable them once a steady state is reached and blocking is desired.

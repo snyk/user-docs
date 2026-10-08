@@ -1,9 +1,7 @@
 ---
 description: How to connect development tools in a Snyk template Organization to roll out consistently at scale
-nav_context: classic
+nav_context: new
 ---
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
 # Connect your development tools
 
@@ -47,7 +45,7 @@ Group level repository discovery video guide
 **Key decision:** Choose the SCM platform that hosts your primary development work and determine if you require **Snyk Broker** for an on-premise connection.
 {% endhint %}
 
-1. In the Snyk web UI, navigate to **Group Settings** > **Integrations**.
+1. In the Snyk web UI, use the scope selector to switch to your Group, then navigate to **Settings** > **Integrations** > **All integrations**.
 2. Select your SCM platform (for example, GitHub, GitLab, or Azure Repos).
 
 If your SCM is behind a firewall, you must install and configure Snyk Broker to establish a secure, outbound-only connection.
@@ -107,7 +105,7 @@ Unlike Group-level setup, Organization-level integrations allow you to:
 * **Isolate access:** Use a unique Personal Access Token (PAT) or OAuth connection that only has access to a specific team's repositories.
 * **Override Group defaults:** If a specific business unit uses a different SCM instance (for example, a separate GitHub Org or GitLab Group), you can configure it here without affecting the rest of the company.
 
-Set up your Org-level integrations by navigating to your Organization **Integrations** page and selecting the relevant SCM tile.
+To set up an Org-level integration, select your Organization in the scope selector, navigate to **Settings** > **Integrations** > **All integrations**, and select the relevant SCM tile.
 {% endstep %}
 
 {% step %}
@@ -159,7 +157,7 @@ Integrate Snyk with your container registries to import and monitor images for k
 **Key decision:** Identify which container registries (for example, Docker Hub, Amazon ECR, Google Artifact Registry) host your production-ready images and determine if they reside behind a firewall.
 {% endhint %}
 
-1. In the Snyk web UI, navigate to **Integrations** > **Container Registries**.
+1. In the Snyk web UI, select your Organization in the scope selector, then navigate to **Settings** > **Integrations** > **All integrations**.
 2. Select your specific registry provider.
 
 If your registry is on-premise or behind a firewall, you must use Snyk Broker to establish a secure connection.
@@ -232,9 +230,8 @@ Configure additional integrations to build a complete inventory of your code-bas
 
 To start building your inventory:
 
-1. In the Snyk web UI, navigate to your Group.
-2. Select **Inventory** from the side menu.
-3. Navigate to **Integrations** to view your existing connections or add new ones.
+1. In the Snyk web UI, use the scope selector to switch to your Group.
+2. Navigate to **Settings** > **Integrations** > **All integrations** to view your existing connections or add new ones. 
 {% endstep %}
 
 {% step %}
@@ -362,7 +359,7 @@ helm pull oci://registry-1.docker.io/snyk/snyk-universal-broker helm install my-
 
 1. If your connection is not fully mapped to an Organization, run `snyk-broker-config workflows connections integrate` in the CLI and select your deployment.
 2. Check the Broker client container or pod logs to confirm the connection is established without any missing credentials reference errors.
-3. Return to the Snyk web UI and navigate to your Organization **Settings** > **Integrations** page. Confirm the integration tile is marked as **Configured**.
+3. Return to the Snyk web UI, select your Organization in the scope selector, and navigate to **Settings** > **Integrations** > **All integrations**. Confirm the integration tile is marked as **Configured**.
 4. Test the integration by importing a Project from your on-premise repository.
 
 | Environment                       | Variable requirement                                                          |
@@ -401,7 +398,7 @@ Before enabling Snyk Code, ensure your Snyk license includes SAST capabilities. 
 
 Snyk Code is disabled by default in new Organizations. If you enable it after you have already imported a Project, Snyk does not automatically detect the code files. You must re-import the Project to trigger the scan.
 
-1. In the Snyk web UI, navigate to **Settings** > **Snyk Code**.
+1. In the Snyk web UI, select your Organization in the scope selector, then navigate to **Settings** > **Products and features** > **Snyk Code**.
 2. Toggle the switch to **Enabled**.
 3. Click **Save changes**.
 {% endstep %}
