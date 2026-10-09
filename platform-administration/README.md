@@ -1,11 +1,15 @@
 ---
-description: Overview of Snyk platform administration, including managing Tenants, Groups, Organizations, users, roles, and Snyk Broker
 nav_context: classic
+description: >-
+  Overview of Snyk platform administration, including managing Tenants, Groups,
+  Organizations, users, roles, and Snyk Broker
 ---
+
+# Overview
 
 {% include ".gitbook/includes/new-navigation-banner.md" %}
 
-# Overview
+## Overview
 
 {% hint style="info" %}
 **Feature availability**
@@ -17,10 +21,10 @@ Administration encompasses the following functions:
 
 * [Manage Tenants, Groups and Organizations](./#manage-tenant-groups-and-organizations)
 * [Manage and use Snyk Projects](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects)
-* [Manage users in Organizations](snyk-platform-administration/groups-and-organizations/organizations/manage-users-in-organizations.md) and [Groups](snyk-platform-administration/groups-and-organizations/groups/manage-users-in-a-group.md)
-* [Manage user roles](snyk-platform-administration/user-roles/)
-* [Manage notifications](snyk-platform-administration/manage-notifications.md)
-* [Manage settings](snyk-platform-administration/groups-and-organizations/group-and-organization-settings.md)
+* [Manage users in Organizations](snyk-hierarchy/organizations/manage-users-in-organizations.md) and [Groups](snyk-hierarchy/groups/manage-users-in-a-group.md)
+* [Manage user roles](user-management/user-roles.md)
+* [Manage notifications](snyk-hierarchy/manage-notifications.md)
+* [Manage settings](snyk-hierarchy/group-and-organization-settings.md)
 
 This page covers the following topics:
 
@@ -28,7 +32,7 @@ This page covers the following topics:
 * [User types](./#user-types)
 * [Snyk Admin tools](./#admin-tools)
 
-## The Snyk workspace
+### The Snyk workspace
 
 Snyk has a hierarchy that controls access to scanning and other Snyk features in the Snyk workspace. This hierarchy changes depending on your Snyk plan level. This includes:
 
@@ -38,9 +42,9 @@ Snyk has a hierarchy that controls access to scanning and other Snyk features in
 * Targets
 * Projects
 
-For a detailed view of how Snyk encompasses all your work items in the Snyk workspace, visit [The Snyk hierarchy](snyk-platform-administration/groups-and-organizations/#the-snyk-hierarchy).
+For a detailed view of how Snyk encompasses all your work items in the Snyk workspace, visit [The Snyk hierarchy](snyk-hierarchy/groups-and-organizations.md#the-snyk-hierarchy).
 
-## User types
+### User types
 
 Snyk has the following types of pre-defined users:
 
@@ -53,28 +57,28 @@ Snyk has the following types of pre-defined users:
 * Tenant Viewer
 * Tenant Member
 
-Visit the [Pre-defined roles](snyk-platform-administration/user-roles/pre-defined-roles.md) page for more details, including the permissions associated with each role.
+Visit the [Pre-defined roles](user-management/pre-defined-roles.md) page for more details, including the permissions associated with each role.
 
-## Admin tools
+### Admin tools
 
 Snyk provides tools to manage Groups, Organizations, user roles and permissions, notifications, and settings.
 
-### Manage users and permissions
+#### Manage users and permissions
 
-You can manage users and permissions in your Groups. For details, see [Manage users and permissions](snyk-platform-administration/user-roles/user-role-management.md).
+You can manage users and permissions in your Groups. For details, see [Manage users and permissions](user-management/user-role-management.md).
 
 <figure><img src=".gitbook/assets/manage-members-interface.png" alt="Manage members interface"><figcaption><p>Manage members interface</p></figcaption></figure>
 
-### Manage Tenant, Groups, and Organizations
+#### Manage Tenant, Groups, and Organizations
 
-Snyk groups and organizations help to maintain collaboration across teams. For details, see [Tenant, Groups, and Organizations](snyk-platform-administration/groups-and-organizations/).
+Snyk groups and organizations help to maintain collaboration across teams. For details, see [Tenant, Groups, and Organizations](snyk-hierarchy/groups-and-organizations.md).
 
-### Define notifications
+#### Define notifications
 
-You can manage email notifications for yourself and your Organization. For details, see [Manage notifications](snyk-platform-administration/manage-notifications.md).
+You can manage email notifications for yourself and your Organization. For details, see [Manage notifications](snyk-hierarchy/manage-notifications.md).
 
 <figure><img src=".gitbook/assets/manage-email-notifications-interface.png" alt="Manage email notifications interface"><figcaption><p>Manage email notifications interface</p></figcaption></figure>
 
-### Manage settings
+#### Manage settings
 
-You can customize your Snyk account to suit your work process. For details, see [Manage settings](snyk-platform-administration/groups-and-organizations/group-and-organization-settings.md).
+You can customize your Snyk account to suit your work process. For details, see [Manage settings](snyk-hierarchy/group-and-organization-settings.md).
