@@ -1,11 +1,13 @@
 ---
-description: How Snyk helps you fix vulnerabilities in open source dependencies
 nav_context: classic
+description: How Snyk helps you fix vulnerabilities in open source dependencies
 ---
+
+# Fix your vulnerabilities
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# Fix your vulnerabilities
+## Fix your vulnerabilities
 
 Snyk helps you to fix vulnerabilities by upgrading the direct dependencies to a more secure version or by patching the vulnerability. After Snyk scans your Projects, the scan results allow you to resolve issues in your code with the help of clear suggestions and explanations.
 
@@ -15,7 +17,7 @@ Using Snyk Open Source, you can do the following:
 * [View scan results using Snyk CLI](fix-your-vulnerabilities.md#fixing-vulnerabilities-based-on-scan-results-using-snyk-cli)
 * [Apply fixes](fix-your-vulnerabilities.md#apply-fixes)
 
-## View scan results on the Snyk Web UI
+### View scan results on the Snyk Web UI
 
 For Snyk Open Source, on the **Issues** tab, the results are displayed as follows:
 
@@ -26,7 +28,7 @@ For Snyk Open Source, on the **Issues** tab, the results are displayed as follow
 
 <figure><img src="../../../.gitbook/assets/OS-fix-vulns-issues-in-project.png" alt="Example of issues diplayed on the Issues tab for a Project"><figcaption><p>Example of issues diplayed on the Issues tab for a Project</p></figcaption></figure>
 
-## View fix advice
+### View fix advice
 
 The **Fixes** tab also appears on the Project details page. On this page, Snyk offers you one of these solutions:
 
@@ -46,20 +48,20 @@ You can also find additional advice and details further down on the Project deta
 * From the **Issues**, tab, a full description per vulnerability
 * From the **Dependencies** tab, the entire tree of your Project dependencies, enabling you to clearly visualize affected paths
 
-## Fixing vulnerabilities based on scan results using Snyk CLI
+### Fixing vulnerabilities based on scan results using Snyk CLI
 
 For information about fixing vulnerabilities, see [Fix vulnerabilities using the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/fix-vulnerabilities-using-the-snyk-cli).
 
-## Apply fixes
+### Apply fixes
 
 To apply fixes, you can:
 
-* Click **Fix this vulnerability** on a specific [issue card](../../../snyk-platform-administration/snyk-projects/issue-card-information.md) on the relevant Project page.
+* Click **Fix this vulnerability** on a specific [issue card](../../snyk-projects/issue-card-information.md) on the relevant Project page.
 * If you are using a [Source code integration](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations):
   * Click **Open a fix PR** on the Project page.
-  * Use [automated pull requests](../../pull-requests/snyk-pull-or-merge-requests/enable-automatic-fix-prs.md) when new fixes become available that help you to fix a vulnerability.
+  * Use [automated pull requests](../../../fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs.md) when new fixes become available that help you to fix a vulnerability.
 
 {% hint style="info" %}
 **Automatic Fix PRs**\
-When a new fixable vulnerability is found, Snyk can attempt to open a new pull request automatically. See [Automated pull request creation for new fixes](../../pull-requests/snyk-pull-or-merge-requests/enable-automatic-fix-prs.md) for details.
+When a new fixable vulnerability is found, Snyk can attempt to open a new pull request automatically. See [Automated pull request creation for new fixes](../../../fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs.md) for details.
 {% endhint %}

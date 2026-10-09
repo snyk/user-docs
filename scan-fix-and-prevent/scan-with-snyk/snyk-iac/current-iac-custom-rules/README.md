@@ -1,11 +1,13 @@
 ---
-description: How to create custom rules for Snyk IaC
 nav_context: classic
+description: How to create custom rules for Snyk IaC
 ---
+
+# IaC custom rules
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# IaC custom rules
+## IaC custom rules
 
 {% hint style="info" %}
 **Feature availability**
@@ -17,7 +19,7 @@ Snyk IaC includes a comprehensive list of security rules, covering AWS, Azure, G
 
 These rules are intended to meet most of your needs on your first scan, but you may need to enforce additional security rules for your system, such as tagging standards.
 
-## Creating additional Snyk IaC Custom Rules
+### Creating additional Snyk IaC Custom Rules
 
 The IaC SDK helps security teams define their own rules, to be run by the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac), providing feedback to developers.
 
@@ -33,7 +35,7 @@ This section provides initial instructions to help you use the Snyk Infrastructu
 
 <figure><img src="../../../.gitbook/assets/end-end-flow-writing-own-custom-rules-distributing-them.png" alt="End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI"><figcaption><p>End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI</p></figcaption></figure>
 
-## Snyk platform policies and Snyk IaC custom rules
+### Snyk platform policies and Snyk IaC custom rules
 
 {% hint style="info" %}
 Summary:
@@ -42,6 +44,6 @@ Summary:
 * Snyk IaC custom rules: generate issues
 {% endhint %}
 
-The Snyk platform allows you to create your own [policies](../../../manage-risk/policies/) to manage how you prioritize and triage the issues Snyk identifies during scanning. For example, you can define policies to change the priority of an issue from medium to high if it has specific attributes, or to bulk ignore issues if they meet certain criteria.
+The Snyk platform allows you to create your own [policies](../../../prevent/policies/) to manage how you prioritize and triage the issues Snyk identifies during scanning. For example, you can define policies to change the priority of an issue from medium to high if it has specific attributes, or to bulk ignore issues if they meet certain criteria.
 
 The Snyk IaC custom rules functionality enables you to define your own rules for misconfiguration checks that you would like to enforce. The result of a custom rule failing on a configuration file is generating an issue.

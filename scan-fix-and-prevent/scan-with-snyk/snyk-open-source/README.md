@@ -1,6 +1,8 @@
 ---
-description: How Snyk Open Source scans your dependencies for vulnerabilities and license issues
 nav_context: agnostic
+description: >-
+  How Snyk Open Source scans your dependencies for vulnerabilities and license
+  issues
 ---
 
 # Snyk Open Source
@@ -27,12 +29,12 @@ In the case of Go and Unmanaged scans (C/C++), this requires an official release
 
 ## Find and fix vulnerabilities
 
-Use Snyk Open Source to find and fix vulnerabilities in the open-source libraries in your application. Snyk provides actionable fix advice for vulnerabilities and supports workflows to fix vulnerabilities using pull requests. For more information, see [Snyk Pull or Merge Requests](../pull-requests/snyk-pull-or-merge-requests/).
+Use Snyk Open Source to find and fix vulnerabilities in the open-source libraries in your application. Snyk provides actionable fix advice for vulnerabilities and supports workflows to fix vulnerabilities using pull requests. For more information, see [Snyk Pull or Merge Requests](../../fix/snyk-pull-or-merge-requests/).
 
-Snyk Open Source also helps prioritize and report on vulnerabilities discovered. For more information, see [Manage risk](../../manage-risk/manage-risk.md).
+Snyk Open Source also helps prioritize and report on vulnerabilities discovered. For more information, see [Manage risk](../../prevent/manage-risk.md).
 
 ## Find and fix license issues
 
 Snyk Open Source can also scan your Projects for license compliance, checking against licenses known to Snyk. For more information, see [Open-source license compliance](scan-open-source-libraries-and-licenses/open-source-license-compliance.md).
 
-You can also use license policies to define how your company deals with license issues. For more information, see [License policies](../../manage-risk/policies/license-policies/).
+You can also use license policies to define how your company deals with license issues. For more information, see [License policies](../../prevent/policies/license-policies/).

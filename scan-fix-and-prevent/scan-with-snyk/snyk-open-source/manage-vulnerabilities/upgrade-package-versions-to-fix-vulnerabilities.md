@@ -1,6 +1,6 @@
 ---
-description: How to upgrade package versions to fix vulnerabilities with Snyk
 nav_context: agnostic
+description: How to upgrade package versions to fix vulnerabilities with Snyk
 ---
 
 # Upgrade package versions to fix vulnerabilities
@@ -11,4 +11,4 @@ To resolve a vulnerability in a transitive dependency, Snyk will calculate the d
 
 Some fixes may require a major upgrade of a dependency. In this situation, if Snyk suspects a major change that would cause breakage, the Fix PR screen indicates this.
 
-See [Upgrading dependencies with automatic PRs](../../pull-requests/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades.md) for more details.
+See [Upgrading dependencies with automatic PRs](../../../fix/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades.md) for more details.

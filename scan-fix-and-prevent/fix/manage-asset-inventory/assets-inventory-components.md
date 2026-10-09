@@ -209,7 +209,7 @@ System labels are automatically generated from the SCM repositories. System labe
 
 #### Labeling policy
 
-You can use pre-defined system labels and asset labels to mark the repositories that meet your filter criteria. Check the following [Labeling policy](../../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md) use case.
+You can use pre-defined system labels and asset labels to mark the repositories that meet your filter criteria. Check the following [Labeling policy](../../prevent/policies/assets-policies/use-cases-for-policies/tagging-policy.md) use case.
 
 #### Labeling rules related to metadata
 
@@ -252,9 +252,9 @@ The Risk Factors column lists the potential vulnerabilities and security threats
 
 Here is a list of the available risk factors:
 
-* [Deployed](../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-deployed.md)
-* [OS Condition](../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-os-condition.md)
-* [Public facing](../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-public-facing.md)
+* [Deployed](../prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-deployed.md)
+* [OS Condition](../prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-os-condition.md)
+* [Public facing](../prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-public-facing.md)
 
 ### Source
 
@@ -301,7 +301,7 @@ The Visibility column lists the visibility status of the repositories as follows
 * **Internal**: Internal repositories specific to GitHub and GitLab.
 * **N/A**
 
-Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../../manage-risk/analytics/reports-tab/#snyk-reporting-filters).
+Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../../prevent/analytics/reports-tab/#snyk-reporting-filters).
 
 ### Actions
 

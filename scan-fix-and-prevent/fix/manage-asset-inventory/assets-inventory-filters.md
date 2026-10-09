@@ -22,7 +22,7 @@ You can change or add additional filters by clicking **Advanced Filters**.
 
 ### Advanced filters
 
-Using advanced filters, you can define and apply filters to assets based on specific criteria. For details on how to define filters, see [Define filters](../../manage-risk/policies/assets-policies/create-policies.md#define-filters).
+Using advanced filters, you can define and apply filters to assets based on specific criteria. For details on how to define filters, see [Define filters](../../prevent/policies/assets-policies/create-policies.md#define-filters).
 
 When you select advanced filters, you can specify one or more sets of criteria:
 

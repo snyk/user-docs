@@ -1,11 +1,13 @@
 ---
-description: How to scan container images with Snyk Container
 nav_context: classic
+description: How to scan container images with Snyk Container
 ---
+
+# Scan container images
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}
 
-# Scan container images
+## Scan container images
 
 Snyk Container helps you find and fix vulnerabilities in container images, based on container registry scans.
 
@@ -15,7 +17,7 @@ You can scan your container images using Snyk Container:
 * Through the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container)
 * With [Broker](https://docs.snyk.io/platform-administration/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker) (for self-hosted container registries)
 
-## **Prerequisites for using Snyk Container in the Web UI**
+### **Prerequisites for using Snyk Container in the Web UI**
 
 Before scanning your container images with Snyk Container, ensure you:
 
@@ -24,19 +26,19 @@ Before scanning your container images with Snyk Container, ensure you:
 
 For more information, see [Getting started](https://docs.snyk.io/getting-started-guides/getting-started).
 
-## View vulnerabilities in your container images
+### View vulnerabilities in your container images
 
 In the **Projects** tab, you can see vulnerability results for Snyk Projects that you have imported. The imported Projects are grouped into **Targets**.
 
 {% hint style="info" %}
-You can see the history of all the repositories and container registry images imported into an Organization. For details, see [Import Log](../../snyk-platform-administration/snyk-projects/import-log.md).
+You can see the history of all the repositories and container registry images imported into an Organization. For details, see [Import Log](../snyk-projects/import-log.md).
 {% endhint %}
 
 To see vulnerability information for that Project, select an imported Project from the target list.
 
 Click on a Project entry to see details of the vulnerabilities found, including where it was introduced, how to fix it, and other details about the vulnerability.
 
-## Fix vulnerabilities in your container images
+### Fix vulnerabilities in your container images
 
 To fix vulnerabilities in your container images:
 

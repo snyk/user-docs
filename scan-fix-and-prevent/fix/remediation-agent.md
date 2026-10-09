@@ -1,66 +1,50 @@
----
-description: >-
-  How the Remediation Agent generates, applies, and verifies vulnerability fixes
-  in your Snyk Projects
----
-
 # Remediation Agent
 
 {% hint style="info" %}
-The Remediation Agent is in [Early Access](https://docs.snyk.io/discover-snyk/getting-started/snyk-release-process#early-access-features). To turn it on, visit [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-platform-administration/snyk-preview) or ask your Snyk account team.
+The Remediation Agent is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-hierarchy/snyk-preview).
 {% endhint %}
 
-The Remediation Agent is an LLM-driven tool that automates vulnerability remediation in your Snyk Projects. It scans a Project, generates a fix plan enriched with Snyk security intelligence, applies the fix, and verifies the result. It runs in your coding assistant or in the Snyk CLI.
+The Remediation Agent is an LLM-driven tool that automates vulnerability remediation in your projects. It scans your Project with Snyk, generates a fix plan enriched with Snyk security intelligence, applies the fixes, and verifies the result, all in your coding assistant or the Snyk CLI.
 
-{% hint style="warning" %}
-The Remediation Agent is under rapid development. Some options on this page are available only in the latest preview release of the Snyk CLI. Run `snyk version` to check which version you have, and expect option names and defaults to change between releases.
+{% hint style="info" %}
+**Release status**
 
-The bring-your-own-model provider integrations are the newest part of the feature. Treat their configuration as unstable.
+Remediation Agent is in Early Access and available for all Snyk plans. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-## Prerequisites
-
-### Agentic IDE
-
-* A Snyk account with Snyk Open Source or Snyk Code enabled.
-* A supported coding assistant: Cursor, Claude, Gemini, Kiro, Codex, Windsurf, or GitHub Copilot.
-* The `/snyk-fix` skill installed in the coding assistant, through the Snyk Studio installer or manually.
-
-### Snyk CLI
-
-* A Snyk account with Snyk Open Source, Snyk Code, or Snyk Container enabled.
-* The Snyk CLI. Visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli).
-* Access to a model provider. Visit [Configure a model provider](#configure-a-model-provider).
+The Remediation Agent is an LLM-driven tool that automates vulnerability remediation in your projects. It scans your Project with Snyk, generates a fix plan enriched with Snyk security intelligence, applies the fixes, and verifies the result, all in your coding assistant or the Snyk CLI.
 
 ## How it works
 
-Traditional vulnerability remediation requires a developer to review each finding, decide on a fix, apply it, and verify the outcome. The Remediation Agent automates that cycle.
+Traditional vulnerability remediation requires a developer to review each finding, decide on a fix, apply it manually, and verify the outcome. The Remediation Agent automates this cycle. Its goal is to move from human-in-the-loop validation toward fully autonomous, mergeable pull requests.
 
-The agent follows the same core flow at every entry point:
+The agent follows the same core flow regardless of the entry point:
 
-1. Scan: Snyk scans the Project for vulnerabilities with Snyk Open Source (SCA), Snyk Code (SAST), or Snyk Container.
-2. Plan: The agent builds a fix plan enriched with Snyk security intelligence, including breakability signals for SCA fixes.
-3. Fix: The agent applies the fix. For SCA, it bumps dependency versions or adds overrides. For SAST, it applies Snyk Agent Fix suggestions to the source code. For containers, it edits the Dockerfile.
-4. Verify: The agent rescans to confirm the vulnerability is resolved, and runs the tests that exist in the application, such as unit tests. When a fix introduces a problem, the agent reports the outcome.
+1. Scan: Snyk scans the Project for vulnerabilities using Snyk Open Source (SCA) or Snyk Code (SAST).
+2. Plan: The agent generates a fix plan enriched with Snyk security intelligence, including breakability signals for SCA fixes.
+3. Fix: The agent applies the fix. For SCA, this means bumping dependency versions or adding overrides. For SAST, this means applying Snyk Agent Fix suggestions to the source code.
+4. Verify: The agent rescans to confirm the vulnerability is resolved and runs any tests that exist in the application, such as unit tests. If a fix introduces a problem, the agent reports the outcome.
 
 ## Entry points
 
-* [Agentic IDE (ADE)](#set-up-in-an-agentic-ide): run `/snyk-fix` in your coding assistant to scan the Project and fix the top vulnerability. Run `/snyk-batch-fix` to address several vulnerabilities in one pass. Install the `/snyk-fix` skill before you use it. The Snyk Studio installer installs it, or you can follow the [studio-recipes](https://github.com/snyk/studio-recipes/tree/main) setup instructions.
-* [Snyk CLI](#fix-vulnerabilities-from-the-snyk-cli): run `snyk fix --agentic` in your terminal for an interactive, human-in-the-loop remediation flow without an IDE.
+* **Agentic IDE (ADE)**: Run `/snyk-fix` in your coding assistant to scan the project and apply a fix for the top vulnerability. Use `/snyk-batch-fix` to address multiple issues at once. The `/snyk-fix` skill must be installed in the ADE before use. It installs automatically with the Snyk Studio one-line installer or manually by following the [studio-recipes](https://github.com/snyk/studio-recipes/tree/main) setup instructions.
+* **Snyk CLI**: Run `snyk fix --agentic` from your terminal to trigger a human-in-the-loop interactive remediation experience without an IDE.
 
-`/snyk-batch-fix` is an ADE skill rather than a CLI command. To fix several vulnerabilities from the CLI, use `--auto-approve`.
+## Prerequisites
 
-## Breaking change assessment
+### For Agentic IDE (ADE)
 
-Before the agent changes an open-source dependency, Snyk assesses whether the version upgrade is likely to break your build. The agent receives that assessment along with what to watch for if the upgrade does break something. Breakability applies to open source dependencies only, so SAST and container fixes carry no breakability rating.
+* A Snyk account with Snyk Open Source or Snyk Code enabled.
+* A supported coding assistant: Cursor, Claude, Gemini, Kiro, Codex, Windsurf, or GitHub Copilot.
+* The `/snyk-fix` skill installed in the coding assistant (through the Snyk Studio installer or manually).
 
-How much the agent does on its own depends on where you run it. In an agentic IDE, the agent proceeds automatically when there is no breakability risk. In the CLI, the agent prompts you to choose what to fix unless you run it with `--auto-approve`. Visit [Scope the run](#scope-the-run) for the options that control this.
+### For Snyk CLI
 
-{% hint style="info" %}
-The breaking change assessment is in preview. When it is unavailable, the agent falls back to a local heuristic assessment.
-{% endhint %}
+* A Snyk account with Snyk Open Source or Snyk Code enabled.
+* The Snyk CLI. Visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli).
+* An LLM API key from one of the following providers: Anthropic, OpenAI, Vertex AI, LiteLLM, or Ollama.
 
-## Set up in an agentic IDE
+## Set up the Remediation Agent
 
 {% stepper %}
 {% step %}
@@ -82,7 +66,7 @@ powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/s
 powershell -ExecutionPolicy Bypass -File .\snyk-studio-install.ps1
 ```
 
-By default, the installer applies to every coding assistant it detects. To target one assistant, pass `--ade [agent]`:
+By default, the installer applies to every coding assistant it detects. To target a specific assistant, pass `--ade [agent]`:
 
 ```bash
 bash ./snyk-studio-install.sh --ade claude
@@ -92,9 +76,9 @@ Accepted values: `cursor`, `claude`, `gemini`, `kiro`, `codex`, `windsurf`, `cop
 {% endstep %}
 
 {% step %}
-### Turn on the experimental MCP profile
+### Enable the experimental MCP profile
 
-The breaking change assessment requires the Snyk MCP server to run in experimental mode. After you run the installer, add `SNYK_MCP_PROFILE: experimental` to your MCP server configuration.
+The breaking change assessment requires the Snyk MCP server to run in experimental mode. After running the installer, add `SNYK_MCP_PROFILE: experimental` to your MCP server configuration.
 
 {% tabs %}
 {% tab title="Cursor" %}
@@ -134,78 +118,50 @@ SNYK_MCP_PROFILE = "experimental"
 {% step %}
 ### Restart your coding assistant
 
-Restart your coding assistant so the updated MCP configuration takes effect. After the restart, Snyk appears as a connected MCP server. Type `/snyk-fix` in the prompt to run the Remediation Agent.
+Restart your coding assistant for the updated MCP configuration to take effect. After restarting, Snyk appears as a connected MCP server. Type `/snyk-fix` in the prompt to run the Remediation Agent.
 {% endstep %}
 {% endstepper %}
 
-## Fix vulnerabilities from the Snyk CLI
+## Use `snyk fix --agentic`
 
-The Snyk Studio installer installs the CLI for you. If you skipped the installer, visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) for the other installation options.
+The Snyk Studio installer installs the CLI automatically. If you skipped the installer, visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) for installation options.
 
-### Configure a model provider
+The agentic CLI flow requires an LLM provider API key. Set one of the following environment variables before running the command:
 
-The agentic CLI flow runs against a model you supply. Pick a provider with `--provider` and give it credentials. How each provider authenticates differs, and only three of them take an API key:
+* **Anthropic (default):** `export ANTHROPIC_API_KEY=sk-ant-...`
+* **OpenAI:** `export OPENAI_API_KEY=sk-...`
+* **Vertex AI:** authenticate with `gcloud auth application-default login` and set `GOOGLE_CLOUD_PROJECT` and `GOOGLE_CLOUD_LOCATION`
+* **LiteLLM:** set `LITELLM_BASE_URL` and `LITELLM_API_KEY`
+* **Ollama:** start Ollama with your model, then pass `--provider=ollama --model=<model>` to the command
 
-| `--provider` | Authentication | Required configuration | Optional configuration |
-|---|---|---|---|
-| `anthropic` (default) | API key | `ANTHROPIC_API_KEY` | `ANTHROPIC_BASE_URL` to route through a gateway |
-| `openai` | API key | `OPENAI_API_KEY` | None |
-| `bedrock` | The standard AWS credential chain, so no API key | AWS credentials the SDK can resolve, such as a profile or an instance role | `AWS_REGION` to pin the region |
-| `vertex` | Google Application Default Credentials, so no API key. Authenticate with `gcloud auth application-default login` | `GOOGLE_CLOUD_PROJECT` and `GOOGLE_CLOUD_LOCATION` | `VERTEX_AUTH_TOKEN` for a gateway that expects a bearer token, and `VERTEX_BASE_URL` |
-| `litellm` | A LiteLLM virtual key. The proxy holds the real provider credentials | `LITELLM_BASE_URL`, which must use HTTPS | `LITELLM_API_KEY` |
-| `ollama` | None, because the model runs locally | `--model`, which Ollama requires | `OLLAMA_HOST`, which defaults to `http://localhost:11434` |
-
-Each provider has a default model, and `--model` overrides it. For Amazon Bedrock, model IDs depend on your account and region, and newer Claude models are often reachable only through a cross-region inference profile. Pass `--model` when the default is not enabled for your account.
-
-Snyk identifies its Bedrock traffic with the application ID `SNYK_AGENTIC_FIX`, so you can attribute or authorize it downstream.
-
-{% hint style="info" %}
-To add custom headers to every provider request, for example an end-user identity header required by a gateway, set `REMY_EXTRA_HEADERS` to a comma-separated list of `key=value` pairs.
-{% endhint %}
-
-### Run the command
-
-Pass exactly one of `--sca` for dependency vulnerabilities, `--sast` for source code vulnerabilities, or `--container` for container vulnerabilities. The `--experimental` flag is required alongside `--agentic`:
+Run the command with `--sca` for dependency vulnerabilities or `--sast` for source-code issues:
 
 ```bash
 snyk fix --agentic --experimental --sca [path]
 snyk fix --agentic --experimental --sast [path]
-snyk fix --agentic --experimental --container [path]
 ```
 
-### Scope the run
+For the full command reference, including all flags, visit [Fix](https://docs.snyk.io/developer-tools/snyk-cli/commands/fix).
 
-An interactive run prompts you for each fix. These options change that. For what each option does and how they combine, visit [Fix](https://docs.snyk.io/developer-tools/snyk-cli/commands/fix).
+## Snyk intelligence injected by the Remediation Agent
 
-* Run without prompting: `--auto-approve`. It has side effects, described in the warning that follows this list.
-* Choose which vulnerabilities to fix: `--issue-ids`, `--exclude-ids`, `--severity-threshold`, `--severity-filter`, and `--breakability-filter`.
-* Preview or adjust the run: `--dry-run` and `--no-breakability`.
-
-The `--issue-ids`, `--exclude-ids`, and `--severity-threshold` options require `--auto-approve`.
-
-{% hint style="warning" %}
-`--auto-approve` does more than approve fixes. It also trusts the folder, continues after test failures, skips advisories, and approves partial plans when the agent reaches a budget warning. Review every change before you merge it.
-{% endhint %}
-
-## Fix container vulnerabilities
-
-`--container` runs the container remediation flow against a single Dockerfile. It addresses two kinds of finding:
-
-* Base image upgrades. The agent updates the base image reference in the final stage's `FROM` instruction. When that reference is built from global `ARG` defaults, the agent edits the `ARG` default values rather than the structure of the `FROM` lines. Verification confirms that the upgraded image keeps a runtime user equivalent to the original, so a base image bump does not silently change the user your container runs as.
-* OS package upgrades. The agent patches operating system packages in the image. The run presents the available package upgrades and you select which ones to apply.
-
-Verification builds the image and rescans it, so the agent rejects a candidate Dockerfile that no longer builds instead of reporting it as a fix.
+Before the agent modifies an open-source dependency, Snyk performs a breaking change assessment. The agent receives guidance on whether the version upgrade is likely to break the build and what to watch for if it does. In the ADE, the agent proceeds automatically when there is no breakability risk. In the CLI, the agent still prompts you to choose what to fix, unless you run it with `--auto-approve`.
 
 {% hint style="info" %}
-The container flow selects fixes at the Dockerfile and package level rather than per vulnerability, so it does not accept the options that select individual vulnerabilities. Passing any of them ends the run before the scan starts. The [Fix](https://docs.snyk.io/developer-tools/snyk-cli/commands/fix) reference lists them. `--container` also requires `--agentic`.
+The breaking change assessment is in preview. When it is unavailable, the agent falls back to a local heuristic assessment.
 {% endhint %}
+
+1. Try the Remediation Agent on a test or smaller repository first to get familiar with the output and the review process.
+2. Start with SCA fixes rated as low breakability. These are the least likely to disrupt your build and give you the best signal on how the agent performs in your environment.
+3. Send feedback about outcomes directly to Snyk through your account manager or through [Snyk Support](https://support.snyk.io). The feature is in public preview, and your input helps shape its development.
 
 ## Best practices
 
-* Run the agent against a test repository or a small Project first, to get familiar with the output and the review process.
-* Start with SCA fixes rated low breakability. These are the least likely to disrupt your build, and they give you the clearest signal on how the agent performs in your environment.
-* Review every fix before you merge it. An interactive run shows you the plan, and an auto-approved run does not.
+Before running the Remediation Agent on production code, consider the following:
 
-## Get help
+1. Try the Remediation Agent on a test or smaller repository first to get familiar with the output and the review process.
+2. Start with SCA fixes rated as low breakability. These are the least likely to disrupt your build and give you the best signal on how the agent performs in your environment.
+3. Send feedback about outcomes directly to Snyk through your account manager or through [Snyk Support](https://support.snyk.io). The feature is in public preview, and your input helps shape its development.
 
-Send feedback on outcomes to Snyk through your account manager or through [Snyk Support](https://support.snyk.io). Your input shapes the feature while it is in Early Access.
+* **Agentic IDE (ADE)**: Run `/snyk-fix` in your coding assistant to scan the project and apply a fix for the top vulnerability. Use `/snyk-batch-fix` to address multiple issues at once. The `/snyk-fix` skill must be installed in the ADE before use. It installs automatically with the Snyk Studio one-line installer or manually by following the [studio-recipes](https://github.com/snyk/studio-recipes/tree/main) setup instructions.
+* **Snyk CLI**: Run `snyk fix --agentic` from your terminal to trigger a human-in-the-loop interactive remediation experience without an IDE.

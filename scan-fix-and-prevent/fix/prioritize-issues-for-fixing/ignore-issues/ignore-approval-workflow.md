@@ -56,8 +56,6 @@ When Ignore Approval Workflow is disabled, any pending ignore requests are cance
 
 Users can create and view ignore requests through the CLI, IDE, and API. Users with the reviewer permission can review and ignore requests through the UI on a new Ignore request page. Ignores are no longer automatically created, but instead a user can create an ignore with the status of `Pending` that can then be approved or rejected by reviewers. Requesters must provide a reason for their ignore request submission.
 
-After a reviewer approves or rejects a request, you cannot edit the ignore reason. You can still edit the ignore type and expiration.
-
 ### Notifications <a href="#notifications" id="notifications"></a>
 
 Reviewers get an email notification when someone creates a new request.\

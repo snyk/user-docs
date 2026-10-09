@@ -1,11 +1,13 @@
 ---
-description: How to scan open source libraries and licenses with Snyk Open Source
 nav_context: classic
+description: How to scan open source libraries and licenses with Snyk Open Source
 ---
+
+# Scan open-source libraries and licenses
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# Scan open-source libraries and licenses
+## Scan open-source libraries and licenses
 
 You can scan your open-source libraries using Snyk Open Source:
 
@@ -15,7 +17,7 @@ You can scan your open-source libraries using Snyk Open Source:
 * Through the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source)
 * Through the [Snyk API](https://docs.snyk.io/developer-tools/snyk-api/reference/test-v1)
 
-## View vulnerabilities in your open-source libraries
+### View vulnerabilities in your open-source libraries
 
 You can view vulnerability results for imported Projects. The **Projects** page appears by default after import, showing vulnerability information for the Snyk Projects you have imported, grouped into **Targets**, that is, the repositories you have scanned.
 
@@ -23,11 +25,11 @@ You can expand a **Target** to see vulnerability information for Projects, inclu
 
 Click a Project to open the issues page for that Project, where, for supported environments, you can see the dependency cards, showing all of your dependencies, the versions where each associated issue was introduced, how to fix them, and more details about the individual vulnerabilities.
 
-For unsupported environments, you can see a list of individual vulnerabilities. For more details, see [View Project information](../../../snyk-platform-administration/snyk-projects/project-information.md).
+For unsupported environments, you can see a list of individual vulnerabilities. For more details, see [View Project information](../../snyk-projects/project-information.md).
 
-## Fix vulnerabilities in your open-source libraries
+### Fix vulnerabilities in your open-source libraries
 
-For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../../pull-requests/snyk-pull-or-merge-requests/).
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../../../fix/snyk-pull-or-merge-requests/).
 
 Navigate to the **Issues** card for a Project.
 

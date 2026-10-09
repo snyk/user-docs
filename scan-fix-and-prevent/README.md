@@ -28,7 +28,7 @@ Scan and automatically address potential vulnerabilities when you review pull re
 
 Snyk can also retest and alert on the default branch on a scheduled basis and show results.
 
-For more information, see [Run PR checks](scan-with-snyk/pull-requests/pull-request-checks/).
+For more information, see [Run PR checks](prevent/pull-request-checks/).
 
 {% hint style="info" %}
 Scans may be limited on your account, depending on your[ Pricing Plan](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/trial-limitations). For more information, see [What counts as a test?](https://docs.snyk.io/snyk-data-and-governance/what-counts-as-a-test)
@@ -65,7 +65,7 @@ For more information, see [Monitor your projects at regular intervals](https://d
 
 ### Manage and fix issues using Snyk
 
-If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For more information, see [Prioritize your issues](manage-risk/prioritize-issues-for-fixing/).
+If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For more information, see [Prioritize your issues](fix/prioritize-issues-for-fixing/).
 
 Snyk offers capabilities to address issues both reactively and proactively:
 
