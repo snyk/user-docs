@@ -21,10 +21,10 @@ The following table describes the different severity levels.
 
 | Severity     | Description                                                                                                                                                                    | Examples                                               |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
-| DAoGv5pJ2QPn | These findings require immediate attention and remediation due to their potentially devastating impact.                                                                        | SQL Injection, OS Command Injection                    |
-| CEQJw2Dg2qUX | These findings can have a direct impact on the application security, either clients or service owners, for example, by granting the attacker access to sensitive information. | Reflected Cross-Site Scripting, Path Traversal         |
-| CLg1PflLeJ0i | Medium findings do not usually have an immediate impact alone, but combined with other findings, can lead to a successful compromise of the application.                       | Cross-Site Request Forgery, Unencrypted Communications |
-| dzwfjdzNIMju | Findings where either the exploit is not trivial, or the finding cannot be exploited by itself.                                                                                | Directory Listing, Clickjacking                        |
+| Critical | These findings require immediate attention and remediation due to their potentially devastating impact.                                                                        | SQL Injection, OS Command Injection                    |
+| High | These findings can have a direct impact on the application security, either clients or service owners, for example, by granting the attacker access to sensitive information. | Reflected Cross-Site Scripting, Path Traversal         |
+| Medium | Medium findings do not usually have an immediate impact alone, but combined with other findings, can lead to a successful compromise of the application.                       | Cross-Site Request Forgery, Unencrypted Communications |
+| Low | Findings where either the exploit is not trivial, or the finding cannot be exploited by itself.                                                                                | Directory Listing, Clickjacking                        |
 
 ## Related information
 
