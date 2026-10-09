@@ -29,8 +29,10 @@ The following frameworks and libraries are supported:
 * Angular
 * apollo-server
 * bcrypt-nodejs
+* Bootbox
 * cross-spawn
 * crypto-js
+* d3
 * date-fns
 * dayjs
 * dompurify
