@@ -49,6 +49,8 @@ For Go with Snyk Code, Snyk supports:
 * Go Standard Library comprehensive as a library
 * .`go` as a file format
 
+Snyk Code reads the `go.mod` file to resolve imports between the packages of your project, so data flow across packages is analyzed.
+
 Available features:
 
 * Reports

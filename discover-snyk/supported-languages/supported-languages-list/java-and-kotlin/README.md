@@ -35,10 +35,12 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 {% columns %}
 {% column %}
 * Amazon AWS SDK
+* Amazon AWS SDK DynamoDB, including the Enhanced Client
 * Android Standard Library
 * Apache Camel
 * Apache Commons
 * Apache Commons Collections
+* Apache Commons FileUpload
 * Apache CXF
 * Apache Tomcat
 * Apache XML
@@ -96,6 +98,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * Spring AI
 * Spring boot
 * Spring Cloud Config
+* Spring Data MongoDB
 * Spring Security OAuth2 Client
 * Spring Web, MVC and JDBC
 * Spring WebFlux

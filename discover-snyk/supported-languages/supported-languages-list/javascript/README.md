@@ -29,8 +29,10 @@ The following frameworks and libraries are supported:
 * Angular
 * apollo-server
 * bcrypt-nodejs
+* Bootbox
 * cross-spawn
 * crypto-js
+* d3
 * date-fns
 * dayjs
 * dompurify
@@ -105,6 +107,8 @@ The following frameworks and libraries are supported:
 ### Supported file formats
 
 The following file formats are supported: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`, `.erb` .
+
+Snyk Code reads `tsconfig.json` and `jsconfig.json` to resolve imports that use path aliases.
 
 ### Available features
 
