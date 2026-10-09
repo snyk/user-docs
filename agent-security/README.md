@@ -11,7 +11,7 @@ Snyk secures AI-assisted development and the AI systems your Organization runs, 
 
 ## Secure coding assistants with Snyk Studio
 
-Agentic workflows speed up development, but AI-generated code can introduce vulnerabilities or insecure practices. [Snyk Studio](agentic-security-with-snyk-studio/) embeds security directives directly into your AI-assisted workflows, connecting the Snyk platform, your development environment, and your AI tools.
+Agentic workflows speed up development, but AI-generated code can introduce vulnerabilities or insecure practices. [Snyk Studio](agentic-security-with-snyk-studio/agentic-security-with-snyk-studio.md) embeds security directives directly into your AI-assisted workflows, connecting the Snyk platform, your development environment, and your AI tools.
 
 Use Snyk Studio when you want to:
 

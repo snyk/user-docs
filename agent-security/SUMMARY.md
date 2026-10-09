@@ -4,7 +4,7 @@
 
 ## Agentic security with Snyk studio
 
-* [Overview](agentic-security-with-snyk-studio/README.md)
+* [Overview](agentic-security-with-snyk-studio/agentic-security-with-snyk-studio.md)
 * [Getting started with Snyk Studio](agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md)
 * [Directives](agentic-security-with-snyk-studio/directives.md)
 * [Distribution at scale](agentic-security-with-snyk-studio/distribution-at-scale.md)
@@ -14,7 +14,7 @@
   * [Augment Code guide](agentic-security-with-snyk-studio/quickstart-guides/augment-code-guide.md)
   * [Claude Code guide](agentic-security-with-snyk-studio/quickstart-guides/claude-code-guide.md)
   * [Cline guide](agentic-security-with-snyk-studio/quickstart-guides/cline-guide.md)
-  * [Codex CLI guide](agentic-security-with-snyk-studio/quickstart-guides/codex-cli-guide.md)
+  * [Codex guide](agentic-security-with-snyk-studio/quickstart-guides/codex-cli-guide.md)
   * [Continue guide](agentic-security-with-snyk-studio/quickstart-guides/continue-guide.md)
   * [Cursor guide](agentic-security-with-snyk-studio/quickstart-guides/cursor-guide.md)
   * [Devin guide](agentic-security-with-snyk-studio/quickstart-guides/devin-guide.md)

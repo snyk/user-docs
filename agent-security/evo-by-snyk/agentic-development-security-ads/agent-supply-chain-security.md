@@ -36,27 +36,20 @@ Agent Supply Chain Security discovers two types of assets that agents use: MCP s
 
 The following table shows agent support by operating system. A check mark (✓) means supported. A cross (✗) means the agent supports this, but no paths are detected yet. A dash (—) means not applicable for that operating system.
 
-| Agent          | macOS MCP | macOS Skills | Linux/WSL MCP | Linux/WSL Skills | Windows MCP | Windows Skills |
-| -------------- | --------- | ------------ | ------------- | ---------------- | ----------- | -------------- |
-| Claude Code    | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
-| Claude Desktop | ✓         | ✗            | —             | —                | ✓           | ✗              |
-| Cursor         | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
-| VS Code        | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
-| Github Copilot | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
-| Windsurf       | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
-| Kiro           | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
-| Gemini CLI     | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
-| Antigravity    | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
-| Codex          | ✓         | ✓            | ✓             | ✓                | —           | —              |
-| Amp            | ✗         | ✓            | ✗             | ✓                | ✗           | ✓              |
-| Amazon Q       | ✓         | ✗            | ✓             | ✗                | ✓           | ✗              |
-| OpenClaw       | ✗         | ✓            | ✗             | ✓                | ✗           | ✓              |
-| OpenCode       | ✗         | ✗            | ✗             | ✗                | ✗           | ✗              |
+<table><thead><tr><th width="135.62109375">Agent</th><th>macOS MCP</th><th>macOS Skills</th><th>Linux/WSL MCP</th><th>Linux/WSL Skills</th><th>Windows MCP</th><th>Windows Skills</th></tr></thead><tbody><tr><td>Claude Code</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Claude Desktop</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✗</td></tr><tr><td>Cursor</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>VS Code</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>GitHub Copilot</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Windsurf</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Kiro</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Gemini CLI</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Antigravity</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Codex</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td><td>—</td></tr><tr><td>Amp</td><td>✗</td><td>✓</td><td>✗</td><td>✓</td><td>✗</td><td>✓</td></tr><tr><td>Amazon Q</td><td>✓</td><td>✗</td><td>✓</td><td>✗</td><td>✓</td><td>✗</td></tr><tr><td>OpenClaw</td><td>✗</td><td>✓</td><td>✗</td><td>✓</td><td>✗</td><td>✓</td></tr><tr><td>OpenCode</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td></tr></tbody></table>
+
+#### Claude component detection coverage
+
+The following table shows which Claude components Snyk detects and where they appear in Evo.
+
+<table><thead><tr><th>Component</th><th></th><th>Supported</th><th>Appears on</th><th data-hidden>Detected when</th></tr></thead><tbody><tr><td rowspan="6">Claude Code</td><td>MCP server (local or remote)</td><td>Yes</td><td><strong>Machines</strong> tab and <strong>MCP servers</strong> page</td><td>Scan finds the server in a config file</td></tr><tr><td>MCP server from a Claude Code plugin</td><td>Yes</td><td><strong>Machines</strong> tab and <strong>MCP servers</strong> page</td><td></td></tr><tr><td>Skill from a Claude Code plugin</td><td>Yes</td><td><strong>Machines</strong> tab</td><td>Scan finds the server in <code>claude_desktop_config.json</code></td></tr><tr><td>Claude connector</td><td>Yes, only when used through Claude Code (terminal or the <strong>Code</strong> tab in Claude Desktop)</td><td><strong>MCP servers</strong> page only</td><td>Scan finds <code>&#x3C;skill>/SKILL.md</code> in a standard skills folder</td></tr><tr><td>Skill via Claude Skill Marketplace</td><td>No</td><td>—</td><td></td></tr><tr><td>Standalone skill (<code>SKILL.md</code>)</td><td>Yes</td><td><strong>Machines</strong> tab</td><td></td></tr><tr><td rowspan="5">Claude Desktop</td><td>MCP server from a Claude Desktop plugin</td><td>Yes (on macOS and Linux only)</td><td><strong>Machines</strong> tab and <strong>MCP servers</strong> page</td><td>Scan finds <code>&#x3C;skill>/SKILL.md</code> in the installed plugin</td></tr><tr><td>Local MCP server in the Claude Desktop configuration</td><td>Yes</td><td><strong>Machines</strong> tab and <strong>MCP servers</strong> page</td><td></td></tr><tr><td>Skill from a Claude Desktop plugin</td><td>Yes (on macOS and Linux only)</td><td><strong>Machines</strong> tab</td><td>Scan finds the server in the installed plugin</td></tr><tr><td>Skill via Claude Skill Marketplace</td><td>No</td><td>—</td><td>Scan finds <code>&#x3C;skill>/SKILL.md</code> in the installed plugin</td></tr><tr><td>Standalone skill (<code>SKILL.md</code>)</td><td>Yes</td><td><strong>Machines</strong> tab</td><td></td></tr></tbody></table>
+
+
 
 ## MCP server and skill risk indexes
 
 {% hint style="info" %}
-MCP server and skill risk indexes use their own severity ranges. They are not on the same scale as the Model Risk Score used for AI models, and the two are not comparable. For model risk, visit [Risk intelligence](../ai-spm/risk-intelligence/).
+MCP server and skill risk indexes use their own severity ranges. They are not on the same scale as the Model Risk Score used for AI models, and the two are not comparable. For model risk, visit [Risk Intelligence](../ai-spm/risk-intelligence/).
 {% endhint %}
 
 Agent Supply Chain Security scores each MCP server and skill it discovers across a set of risk indexes. Each index scores one category of risk from 0 to 1,000. The higher the score, the more severe the finding.
@@ -66,7 +59,7 @@ A component's Risk profile shows only the indexes that scored non-zero. Default 
 ### MCP server risk indexes
 
 * **Dangerous words**: manipulative language in a tool description that tries to influence the agent's decisions.
-* **Prompt injection in a tool**: an agent processes hidden instructions within a tool description as commands
+* **Prompt injection in a tool**: an agent processes hidden instructions within a tool description as commands.
 * **Untrusted content**: tools that pull in attacker-controllable content, such as inbound emails or issue trackers.
 * **Private data**: tools that retrieve sensitive, non-public data, such as personal communications, financial records, or credentials.
 * **Destructive capabilities**: tools that can modify shared infrastructure, run system commands, or move money.
@@ -82,7 +75,7 @@ A component's Risk profile shows only the indexes that scored non-zero. Default 
 * **Third-party content exposure**: instructions to fetch and act on untrusted public content, such as web pages or social posts.
 * **Unverifiable dependencies**: instructions to fetch external code or prompts from remote URLs at runtime.
 * **Attempt to modify system services**: instructions to change the host's system files, accounts, or privileges.
-* **Missing SKILL.md**: the skill lacks the SKILL.md file needed to evaluate it.
+* **Missing SKILL.md**: the skill lacks the `SKILL.md` file needed to evaluate it.
 
 {% hint style="info" %}
 Evo stores and displays the contents of .md files. Evo assesses every file the skill depends on, including code files, but does not store the contents of those files.

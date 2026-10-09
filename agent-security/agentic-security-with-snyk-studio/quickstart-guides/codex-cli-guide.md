@@ -1,13 +1,6 @@
----
-description: >-
-  How to install Snyk Studio in Codex CLI using the hooks-based or rules-based
-  approach
-nav_context: classic
----
+# Codex guide
 
-# Codex CLI guide
-
-Access Snyk Studio in Codex CLI to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Codex CLI.
+Access Snyk Studio in Codex (UI or CLI) to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Codex.
 
 ## Install Snyk Studio with hooks support
 
@@ -17,15 +10,17 @@ For installation instructions, visit [Getting started with Snyk Studio](../getti
 
 ### Prerequisites
 
-* [Install the Codex CLI](codex-cli-guide.md#install-codex-cli)
-* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
+* [Install Codex](codex-cli-guide.md#install-codex-cli)
+* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](codex-cli-guide.md#install-the-snyk-mcp-server-in-codex-cli-using-npx)
 
-### Install Codex CLI
+### Install Codex
 
-Consult the official OpenAI Codex CLI documentation on GitHub for [Codex CLI installation instructions](https://github.com/openai/codex).
+For Codex CLI, Consult the official OpenAI Codex CLI documentation on GitHub for [Codex CLI installation instructions](https://github.com/openai/codex).
 
-### Install the Snyk MCP Server in Codex CLI using npx
+For Codex UI, Download from [https://chatgpt.com/codex/](https://chatgpt.com/codex/)
+
+### Install the Snyk MCP Server in Codex using npx
 
 This installation instruction assumes you have a Node.js local development environment setup with the `npx` executable.
 
@@ -39,9 +34,9 @@ To install the Snyk MCP Server using Codex's own `.codex/config.toml` file, proc
     command = "npx"
     args = ["-y", "snyk@latest", "mcp", "-t", "stdio"]
     ```
-* Restart the Codex CLI
+* Restart Codex
 
-### Install the Snyk MCP Server in Codex CLI using Snyk CLI
+### Install the Snyk MCP Server in Codex using Snyk CLI
 
 This installation instruction assumes you have installed the Snyk CLI and the `snyk` executable is available in your system's path.
 
@@ -60,7 +55,7 @@ To install the Snyk MCP Server using the `.codex/config.toml` Codex file, follow
 If you installed `snyk` using npm as a global module and you are using fnm to manage your versions, then you must specify the full path to the `snyk` executable. The path may look like this: `/Users/username/.local/state/fnm_multishells/8831_1753881185071/bin/snyk`.
 {% endhint %}
 
-* Restart the Codex CLI
+* Restart Codex
 
 ## Set up the Snyk MCP Server
 
@@ -94,7 +89,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 ```
 {% endcode %}
 
-Codex CLI will invoke Snyk scanning, provide output and insights based on the results that Snyk returned:
+Codex will invoke Snyk scanning, provide output and insights based on the results that Snyk returned:
 
 <figure><img src="../../.gitbook/assets/image (14).png" alt="Codex CLI reporting the results of a Snyk scan"><figcaption></figcaption></figure>
 
@@ -102,7 +97,7 @@ Codex CLI will invoke Snyk scanning, provide output and insights based on the re
 
 To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
-The following is a suggested instruction for [Codex CLI's AGENTS.md context file](https://github.com/openai/codex?tab=readme-ov-file#memory--project-docs). Add the following contents to the `AGENTS.md` file in your root directory of your Project:
+The following is a suggested instruction for [Codex's AGENTS.md context file](https://github.com/openai/codex?tab=readme-ov-file#memory--project-docs). Add the following contents to the `AGENTS.md` file in your root directory of your Project:
 
 {% code title="AGENTS.md" overflow="wrap" %}
 ```
