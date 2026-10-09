@@ -33,7 +33,7 @@ For Scala, the following frameworks and libraries are supported:
 * Scala standard library
 * Slick Framework
 * Tapir Framework
-* All [Java frameworks and libraries](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-frameworks-and-libraries)
+* All [Java frameworks and libraries](java-and-kotlin/#supported-frameworks-and-libraries)
 
 ### Supported package managers and registries
 

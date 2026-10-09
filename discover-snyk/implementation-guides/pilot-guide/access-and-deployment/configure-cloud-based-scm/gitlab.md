@@ -1,0 +1,60 @@
+---
+nav_context: new
+description: >-
+  How to configure the GitLab integration with Snyk, including generating a
+  personal access token with the required permissions
+---
+
+# GitLab
+
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
+## GitLab
+
+{% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}
+
+Review the steps below to configure the GitLab integration with Snyk. For more details about setting up the GitHub integration, contact your Snyk account team.
+
+### Generate a GitLab PAT
+
+Generate a GitHub PAT with the following permissions enabled:\\
+
+* `api`
+* `read_api`
+* `read_repository`
+
+{% hint style="info" %}
+Save the PAT details since the PAT is required in two places, at the Group-level integration and the Organization-level integration.
+{% endhint %}
+
+### Configure the Group-level integration
+
+Configure the Group-level integration by following these steps:
+
+* Open the Snyk Web UI
+* Navigate to the Group-level
+* Open **Integrations**, then **Add integration**
+
+<figure><img src="../../../../.gitbook/assets/configure-group-level-integration.png" alt="Configuring the GitLab integration at the Group level"><figcaption></figcaption></figure>
+
+* Search and select the GitHub integration
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate GitLab using Snyk Essentials](https://docs.snyk.io/developer-tools/integrations/scm-integrations/group-level-integrations/gitlab-for-snyk-essentials#gitlab-integrate-using-snyk-apprisk) page.
+* If relevant, you can also include the Backstage catalog. See the [Backstage file for SCM integrations](https://docs.snyk.io/developer-tools/integrations/scm-integrations/application-context-for-scm-integrations#backstage-file-for-scm-integrations) page for more details.
+
+{% hint style="info" %}
+After the integration is configured, the Group-level integration shifts to a **Partially connected** status. During the next synchronization, it will transition to the connected state, and the Inventory view will be filled with data from the GitHub source.
+{% endhint %}
+
+### Configure the Organization-level integration
+
+Configure the Organization-level integration by following these steps:
+
+* Open the Snyk Web UI
+* Navigate to the Organization-level
+* Open **Integrations**
+* Search and select the GitLab integration
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [GitLab integration settings](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/gitlab) page.
+
+<figure><img src="../../../../.gitbook/assets/configure-organization-level-integration.png" alt="Configuring the GitLab integration at the Organization level"><figcaption></figcaption></figure>
+
+The Organization-level integration is immediately available to import repositories and begin scanning.

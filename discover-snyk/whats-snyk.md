@@ -1,11 +1,14 @@
 ---
 nav_context: agnostic
-description: >-
-  Snyk is a developer security platform that finds and fixes vulnerabilities in
-  code, open source, containers, infrastructure as code, and live apps.
 ---
 
 # What's Snyk?
+
+* Snyk Open Source and Snyk Code: see [Supported languages, package managers, and frameworks](supported-languages/supported-languages-package-managers-and-frameworks.md).
+* Snyk Container: see [Supported operating system distributions](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container).
+* Snyk Infrastructure as Code: see [Supported IaC and cloud providers](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources).
+* Snyk Essentials: see [Snyk Essentials](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-essentials).
+* Snyk API & Web: see [Snyk API & Web](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-api-web).
 
 Snyk is a platform that allows you to scan, prioritize, and fix security vulnerabilities in your code, open-source dependencies, container images, infrastructure as code configurations, and after your web application or API is live. The Snyk platform uses a risk-based approach, focusing security efforts on issues that matter, and eliminating the noise of vulnerabilities that have no meaningful impact.
 
@@ -53,7 +56,7 @@ For details, visit [Integrate with Snyk](https://docs.snyk.io/developer-tools/in
 
 Snyk has several pricing plans available, from free to Enterprise. Visit [Snyk Pricing Plans](https://snyk.io/plans/).
 
-Snyk offers a trial of the platform with feature limitations. Visit [Trial limitations](implementation-and-setup/enterprise-implementation-guide/trial-limitations.md).
+Snyk offers a trial of the platform with feature limitations. Visit [Trial limitations](implementation-guides/enterprise-implementation-guide/trial-limitations.md).
 
 ## What happens to my data?
 
@@ -63,7 +66,7 @@ For details, visit [How Snyk handles your data](https://docs.snyk.io/snyk-data-a
 
 Set up Snyk and run your first scan:
 
-* [Getting started](getting-started/README.md): create or log in to an account, set up an integration, and scan your first Project.
-* [Start scanning](scan-with-snyk/start-scanning.md): choose where to scan from, and run a scan.
+* [Getting started](getting-started-guides/getting-started.md): create or log in to an account, set up an integration, and scan your first Project.
+* [Start scanning](getting-started-guides/start-scanning.md): choose where to scan from, and run a scan.
 * [Navigate the Snyk Web UI](navigate-the-snyk-web-ui.md): find where features live in the interface.
-* [Implement Snyk](implementation-and-setup/implement-snyk.md): roll Snyk out across a team or an enterprise.
+* [Implement Snyk](implementation-guides/implement-snyk.md): roll Snyk out across a team or an enterprise.

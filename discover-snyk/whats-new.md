@@ -200,7 +200,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * CISA KEV has been added to the list of filters available in [Issue vulnerability details](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/issue-columns-dictionary#issue-vulnerability-details).
 * The [PR Checks Report](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/prevention-reports#pull-request-checks-usage-and-performance-report) is now General Available, with updates to Prevention Reports, Export API, and Snowflake Data Share.
 * The [Pull Request experience](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/pull-request-experience#pull-request-experience-feature-requirements) documentation has been updated to reflect that if you are using inline comments or Agent Fix, you must now specify a dedicated GitHub account by providing a GitHub Personal Access Token (PAT) in your integration settings.
-* The [Enterprise implementation guide](implementation-and-setup/enterprise-implementation-guide/) now has embedded video tutorials to guide you in your Enterprise setup as a new user of Snyk.
+* The [Enterprise implementation guide](implementation-guides/enterprise-implementation-guide/) now has embedded video tutorials to guide you in your Enterprise setup as a new user of Snyk.
 * The [High availability mode](https://docs.snyk.io/platform-administration/snyk-broker/high-availability-mode) from Snyk Broker is now enabled by default.
 * The [Container registry sync](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/use-snyk-container/sync-your-container-registry) from Snyk Container is now Generally Available.
 * The [Container registry import policy](https://docs.snyk.io/developer-tools/snyk-api/reference/containerregistryimportpolicy) API was enhanced by refactoring schema names, adding test components, and full CRUD operations.
@@ -234,7 +234,7 @@ The most recent updates include significant changes to the user docs, such as fe
   * **Settings** becomes the unified area for managing members, billing, integrations, and account preferences. When you use the scope selector to switch between Groups and Organizations, all relevant settings for that area are displayed under **Settings**.
   * **The Organization Dashboard** has been replaced by the scope selector and the **Analytics** overview page (accessible only to Tenant users, at Tenant-level).
 * The [License Policies](https://docs.snyk.io/scan-fix-and-prevent/prevent/policies/license-policies) page has been updated to reflect that newly supported licenses now have a default **Severity** of **None** and only appear in results if you explicitly configure this behavior.
-* The [Enterprise implementation guide](implementation-and-setup/enterprise-implementation-guide/) has been updated to reflect the actual journey you would take as a new user onboarding with Snyk on the Enterprise plan. This includes adding guidance on how to create your Organization Template, configure all available features, and includes key decision callouts to help guide you when making essential decisions in this process.
+* The [Enterprise implementation guide](implementation-guides/enterprise-implementation-guide/) has been updated to reflect the actual journey you would take as a new user onboarding with Snyk on the Enterprise plan. This includes adding guidance on how to create your Organization Template, configure all available features, and includes key decision callouts to help guide you when making essential decisions in this process.
 
 ## February 2026
 
@@ -404,7 +404,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Other updates
 
-* For Java and Kotlin, the list of [supported Gradle versions](supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-package-managers-and-package-registries) now includes Gradle 9.
+* For Java and Kotlin, the list of [supported Gradle versions](supported-languages/supported-languages-list/java-and-kotlin/#supported-package-managers-and-package-registries) now includes Gradle 9.
 * For [Ruby](supported-languages/supported-languages-list/ruby.md), an end-of-support notice has been added to say that starting Oct 1, 2025, Fix PRs are no longer supported for Projects using Ruby versions 3.1.x and lower. The table of supported Ruby versions has also been updated.
 * For JavaScript, [support for pnpm Projects](supported-languages/supported-languages-list/javascript/#support-for-pnpm) has been added.
 * `Raise Support Community Cases` and `View Support Community Cases` Tenant-level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](https://docs.snyk.io/platform-administration/user-management/pre-defined-roles#tenant-level-permissions).
@@ -449,7 +449,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * MCP updates:
   * [Updated the list of supported Snyk security tools into an AI system](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/readme#mcp-server-supported-tools).
-  * Updated release status from experimental to [Early access](getting-started/snyk-release-process.md#early-access-features) and removed the experimental flag.
+  * Updated release status from experimental to [Early access](snyk-release-process.md#early-access-features) and removed the experimental flag.
   * Added [Cursor](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) as a new supported agentic IDE for MCP.
 * PAT updates:
   * Added PAT support for [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/authenticate-to-use-the-cli).
@@ -481,7 +481,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * A new architecture for user documentation on developer tools is now available. This update groups the main developer tools into a single section and distinctly separates them from the integrations documentation.
 * [Analytics](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/overview-tab) has a fresh new look.
-* Added [Snyk Assist](snyk-learn/snyk-assist.md) documentation.
+* Added [Snyk Assist](developer-education-with-snyk-learn/snyk-learn/snyk-assist.md) documentation.
 * The [Developer IDE and CLI usage report](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/prevention-reports#developer-ide-and-cli-usage-report) has been improved with MCP-related data to provide better visibility into MCP usage.
 * [Okta custom mapping documentation](https://docs.snyk.io/platform-administration/user-management/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-okta#construct-a-value-expression-that-creates-a-roles-array-to-be-sent-to-snyk) has been updated to clarify handling of the `Arrays.flatten(appuser.snyk_orgs)` value during setup.
 
@@ -570,7 +570,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 #### Snyk Integrations
 
 * For the [Jira integration](https://docs.snyk.io/developer-tools/integrations/jira-and-slack-integrations/jira-integration#prerequisites-for-jira-integration-with-snyk), Snyk now supports Jira versions 5 to 10.
-* For [SCM integrations with Gradle](supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md), Snyk now supports `allprojects` and `subprojects` blocks, as well as Spring Boot plugins BOMs.
+* For [SCM integrations with Gradle](supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle.md), Snyk now supports `allprojects` and `subprojects` blocks, as well as Spring Boot plugins BOMs.
 
 #### Other updates
 
@@ -628,7 +628,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 #### Other updates
 
-* A new [Automated Provisioning guide](implementation-and-setup/enterprise-setup/auto-provisioning-guide.md) has been created for **Pilot** and **Enterprise** **users**, detailing the steps of the auto-provisioning process for new and existing user accounts.
+* A new [Automated Provisioning guide](implementation-guides/auto-provisioning-guide.md) has been created for **Pilot** and **Enterprise** **users**, detailing the steps of the auto-provisioning process for new and existing user accounts.
 * [Snyk Code PR Checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/configure-pull-request-checks#configure-for-code-analysis-click-to-expand) are in General Availability.
 
 </details>
@@ -689,14 +689,14 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 **Snyk Integrations**
 
-* [Snowflake Data Share](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share) is now in [GA](getting-started/snyk-release-process.md).
+* [Snowflake Data Share](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share) is now in [GA](snyk-release-process.md).
 * [Snyk SCM integrations](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
 * GitHub Cloud App has been added to feature support notices for Fix, Backlog, and Upgrade PRs.
 * Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](https://docs.snyk.io/developer-tools/integrations/scm-integrations/user-permissions-and-access-scopes#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
 
 **Other updates**
 
-* [Getting started](getting-started/) has been updated to centralize content related to everything you need to know before using Snyk.
+* [Getting started](getting-started-guides/getting-started.md) has been updated to centralize content related to everything you need to know before using Snyk.
 * Scanning methods have been added for the [Dart and Flutter](supported-languages/supported-languages-list/dart-and-flutter.md) languages.
 
 #### September 2024
@@ -724,8 +724,8 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 **Other updates**
 
 * The updated [Regional hosting and data residency](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency) page was published.
-* [Glossary](getting-started/glossary.md) terms were updated for SCA, SAST, DAST, and IAST as well as Software Composition Analysis.
-* [Early Access](getting-started/snyk-release-process.md#early-access) release status notices were updated.
+* [Glossary](glossary.md) terms were updated for SCA, SAST, DAST, and IAST as well as Software Composition Analysis.
+* [Early Access](snyk-release-process.md#early-access) release status notices were updated.
 
 #### August 2024
 

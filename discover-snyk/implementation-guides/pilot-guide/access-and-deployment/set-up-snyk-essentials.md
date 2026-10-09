@@ -1,0 +1,25 @@
+---
+nav_context: new
+description: >-
+  How to set up Snyk Essentials to discover repository assets, including
+  prerequisites and cloud-based SCM onboarding
+---
+
+# Set up Snyk Essentials
+
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
+## Set up Snyk Essentials
+
+{% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
+
+### Prerequisites
+
+* You are a Snyk Enterprise customer.
+* You have the necessary permissions to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk Essentials for repository asset discovery.
+
+### Configuration steps
+
+Verify that Snyk Essentials is configured by navigating to the Group level > Integrations. If not set up yet, follow the in-product instructions for your SCM(s).
+
+<figure><img src="../../../.gitbook/assets/configuration-steps.png" alt="Snyk Essentials configuration under Group-level Integrations"><figcaption></figcaption></figure>

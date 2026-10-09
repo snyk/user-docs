@@ -1,0 +1,48 @@
+---
+nav_context: new
+description: >-
+  How to import repositories into Snyk from your SCM integration to start
+  scanning your Projects
+---
+
+# Import repositories
+
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
+## Import repositories
+
+{% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
+
+After setting up your SCM integration, you are ready to import repositories to Snyk. If you have not imported any repos yet, click on the **Import projects** button to start.
+
+* Open the Snyk Web UI
+* Navigate to the Organization-level
+* Open **Dashboard**
+* Select **Import projects**
+
+<figure><img src="../../../.gitbook/assets/import-repositories.png" alt="Starting a repository import in the Snyk Web UI"><figcaption></figcaption></figure>
+
+Alternatively, you can start the import from the Integrations tab and select the integration that you just configured:
+
+<figure><img src="../../../.gitbook/assets/configure-organization-level-integration.png" alt="Starting an import from the Integrations tab"><figcaption></figcaption></figure>
+
+* Select the repositories that you want to import and click **Add selected repositories**
+
+<figure><img src="../../../.gitbook/assets/select-repositories-want-import-click-add-selected.png" alt="Selecting the repositories to import"><figcaption></figcaption></figure>
+
+* The import begins immediately, which can be monitored in the Import Log:
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcAbYAUF2UkQGgLSwX6fogOh42iosfEe_vyNjhY9wH-SOM_HZCQRxQNQRiI8jPGtcOaHP8ts3C8GoZpfRBLislwqtjgS_TuwUf01rH9gf6W0xxdC0Mq2Tflw3qDdTomfd5n6121?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Import progress shown in the Import Log"><figcaption></figcaption></figure>
+
+* All imported repos become visible on the Projects page:
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeaN56eVc58YuGp2c_pQ2Eo_6D5G3ms6bWCs17pk1zYHXCrgPDY6mH6T-0wWCfmdnp9ot55q6f9TznZMBtpl_KYAsUxp78NBdiu1zraOY9fSp7ArsfANKxKoDBMkLqA3hVyBM9j?key=i_CNrr-DvB8PGUAzq09BT3pc" alt="Imported repositories listed on the Projects page"><figcaption></figcaption></figure>
+
+You can either continue monitoring the import by returning to the import logs or select one of the imported repositories to start reviewing the issues.
+
+{% hint style="info" %}
+Additional resources
+
+* [Import Project repository](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/import-project-repository)
+* [API-driven imports](https://docs.snyk.io/developer-tools/snyk-apps/tool-snyk-api-import)
+{% endhint %}
