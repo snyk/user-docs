@@ -1,15 +1,9 @@
 ---
+description: How Snyk policies automate identifying, prioritizing, and triaging findings to save development time
 nav_context: new
-description: >-
-  How Snyk policies automate identifying, prioritizing, and triaging findings to
-  save development time
 ---
 
 # Define policies
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
-## Define policies
 
 Policies define how Snyk behaves when identifying issues. Policies give you a quick and automated way to identify, prioritize, and triage issues. This saves valuable development time and allows developers to take more responsibility and ownership for security, reducing the “noise” level.
 
@@ -76,7 +70,7 @@ This procedure creates an asset policy, which requires Snyk Essentials and the *
 
 To create a policy:
 
-1. In the Snyk web UI, navigate to **Policies** > **New policy**.
+1. In the Snyk web UI, select **Policies** in the side menu, then click **New policy**.
 2. Enter a **Name** and a **Description**, then click **Next**.
 3. In the policy builder, define your **Filters** and click **Apply**.
 4. Click the **+** icon to **Set actions**.

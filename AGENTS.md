@@ -46,8 +46,8 @@ Edits to these paths are silently overwritten. Fix the generator or the upstream
 | `developer-tools/.gitbook/assets/rest-spec.json` | fetched from `https://api.snyk.io/rest/openapi` |
 | `developer-tools/.gitbook/assets/v1-api-spec.yaml` | source of truth for the v1 API; owned by `@snyk/platformeng_api` |
 | `tools/api-docs-generator/sync-state.yml` | generator changelog state |
-| `developer-tools/snyk-ide-plugins-and-extensions/compatibility-matrix.md` | a workflow in [`snyk/snyk-ls`](https://github.com/snyk/snyk-ls) |
-| `scan-fix-and-prevent/scan-with-snyk/error-catalog.md` | synced from [`snyk/error-catalog`](https://github.com/snyk/error-catalog) |
+| `developer-tools/integrations/snyk-ide-plugins-and-extensions/compatibility-matrix.md` | a workflow in [`snyk/snyk-ls`](https://github.com/snyk/snyk-ls) |
+| `scan-fix-and-prevent/prevent/error-catalog.md` | synced from [`snyk/error-catalog`](https://github.com/snyk/error-catalog) |
 | `error-catalog/` | transient checkout during the sync workflow; gitignored, never commit it |
 
 `developer-tools/SUMMARY.md` is **not** generated — the generator only reads it. It checks that every API reference page it produced is listed, and if any are missing it prints the expected menu to stdout instead of editing the file. The `sync-api-docs.yml` workflow captures that output into the pull request body, where a human pastes it in. So when the generator adds a reference page, updating `SUMMARY.md` is a manual step.
