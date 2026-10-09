@@ -78,3 +78,4 @@ Each rule includes the following information.
 | Insufficient Session Expiration                              | CWE-613          | OWASP:A07:2025                                            |
 | XML External Entity (XXE) Injection                          | CWE-611          | OWASP:A02:2025                                            |
 | XPath Injection                                              | CWE-643          | OWASP:A05:2025                                            |
+| Improperly Controlled Modification of Dynamically-Determined Object Attributes | CWE-915          | OWASP:A08:2025, OWASP-API:API3:2023                       |
