@@ -1,0 +1,78 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Snyk User Docs
+  structure:
+    - type: section
+      key: section-2
+      title: Discover Snyk
+      path: discover-snyk
+      default: true
+      children:
+        - type: space
+          key: space-2
+          title: Discover Snyk
+          path: discover-snyk
+          default: true
+          content:
+            directory: ./discover-snyk
+    - type: section
+      key: section-3
+      title: Platform administration
+      path: platform-administration
+      children:
+        - type: space
+          key: space-3
+          title: Platform administration
+          path: platform-administration
+          default: true
+          content:
+            directory: ./platform-administration
+    - type: section
+      key: section-5
+      title: Scan, fix, and prevent
+      path: scan-fix-and-prevent
+      children:
+        - type: space
+          key: space-5
+          title: Scan, fix, and prevent
+          path: scan-fix-and-prevent
+          default: true
+          content:
+            directory: ./scan-fix-and-prevent
+    - type: section
+      key: section-4
+      title: Developer tools
+      path: developer-tools
+      children:
+        - type: space
+          key: space-4
+          title: Developer tools
+          path: developer-tools
+          default: true
+          content:
+            directory: ./developer-tools
+    - type: section
+      key: section-1
+      title: Agent security
+      path: agent-security
+      description: ""
+      children:
+        - type: space
+          key: space-1
+          title: Agent security
+          path: evo-by-snyk
+          default: true
+          content:
+            directory: ./agent-security
+    - type: section
+      key: section-6
+      title: Snyk data and governance
+      path: snyk-data-and-governance
+      children:
+        - type: space
+          key: space-6
+          title: Snyk data and governance
+          path: snyk-data-and-governance
+          default: true
+          content:
+            directory: ./snyk-data-and-governance
