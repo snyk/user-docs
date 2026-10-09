@@ -1,15 +1,9 @@
 ---
+description: How to configure SSO and access at the Snyk Group level, including Self-Serve Single Sign-On options
 nav_context: new
-description: >-
-  How to configure SSO and access at the Snyk Group level, including Self-Serve
-  Single Sign-On options
 ---
 
 # Authentication and access
-
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
-## Authentication and access
 
 ### Set up SSO
 
@@ -25,7 +19,7 @@ Configure SSO with an account that has Group administration permissions on a Sny
 
 Snyk recommends using Self-Serve Single Sign-On to establish a SAML connection with your identity provider (IdP). To do this:
 
-1. In the Snyk web UI, navigate to Group **Settings** > **SSO**. If the SSO option is missing, verify your license or contact Snyk Support.
+1. In the Snyk web UI, use the scope selector to switch to your Group, then navigate to **Settings** > **Security and access** > **SSO**. If the SSO option is missing, verify your license or contact Snyk Support.
 2. Configure your SAML connection, valid email domains, and default permissions.
 3. Contact Snyk Support if you want to use other protocols such as OIDC and ADFS.
 
@@ -88,7 +82,7 @@ The Tenant is the highest level of the Snyk hierarchy, and it encompasses all Gr
 * **Tenant Member**: Allows access to the Tenant level but requires specific Group or Organization permissions to take action.
 
 {% hint style="info" %}
-Features like Snyk Analytics are available only on Enterprise plans. You can switch between Tenants by selecting the Tenant name in the navigation menu.
+Features like Snyk Analytics are available only on Enterprise plans. To switch between Tenants, open the **Tenant** dropdown in the scope selector.
 {% endhint %}
 {% endstep %}
 

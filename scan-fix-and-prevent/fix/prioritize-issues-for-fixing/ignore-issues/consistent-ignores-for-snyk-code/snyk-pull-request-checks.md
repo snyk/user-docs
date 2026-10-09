@@ -15,7 +15,7 @@ If a finding is ignored after a PR check has already been completed, the PR chec
 
 • The inline comment for the ignored finding is collapsed by default and marked as resolved.
 
-Ignores are respected in[ Snyk Code Pull Request Checks](../../../../prevent/pull-request-checks/) regardless of whether they are created through [policy](./#manage-ignores-at-the-group-level-through-snyk-code-security-policies) or for an [individual `snyk/assets/finding/v1` value](./#manage-ignores-in-snyk-projects).
+Ignores are respected in [Snyk Code Pull Request Checks](../../../../prevent/pull-request-checks/) regardless of whether they are created through [policy](./#manage-ignores-at-the-group-level-through-snyk-code-security-policies) or for an [individual `snyk/asset/finding/v1` value](./#manage-ignores-in-snyk-projects).
 
 ## Example: Snyk Pull Request Check with ignored finding
 

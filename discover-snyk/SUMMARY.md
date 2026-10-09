@@ -59,7 +59,7 @@
       * [GitHub](implementation-guides/pilot-guide/access-and-deployment/configure-cloud-based-scm/github.md)
       * [GitLab](implementation-guides/pilot-guide/access-and-deployment/configure-cloud-based-scm/gitlab.md)
       * [Azure DevOps](implementation-guides/pilot-guide/access-and-deployment/configure-cloud-based-scm/azure-devops.md)
-      * [BitBucket](implementation-guides/pilot-guide/access-and-deployment/configure-cloud-based-scm/bitbucket.md)
+      * [Bitbucket](implementation-guides/pilot-guide/access-and-deployment/configure-cloud-based-scm/bitbucket.md)
     * [Set up Snyk Essentials](implementation-guides/pilot-guide/access-and-deployment/set-up-snyk-essentials.md)
     * [Import repositories](implementation-guides/pilot-guide/access-and-deployment/import-repositories.md)
     * [Invite team members](implementation-guides/pilot-guide/access-and-deployment/invite-team-members.md)

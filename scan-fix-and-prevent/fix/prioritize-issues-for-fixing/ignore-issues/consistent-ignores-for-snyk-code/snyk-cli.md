@@ -25,7 +25,9 @@ Repository context is required for asset-scoped ignores to take effect. Policy-b
 
 `snyk code test` automatically detects the repository context if a .git directory is present. If not, you can explicitly specify it using the `--remote-repo-url` option. To verify the Git URL, run `git remote -v`.
 
-### Snyk CLI default ignore behavior
+Run `snyk code test` from the root of the Git repository, without a subdirectory path argument. Snyk records file paths relative to the directory you test, so testing from the root keeps paths consistent with other tests of the repository, such as tests of Projects imported through an SCM integration.
+
+## Snyk CLI default ignore behavior
 
 The CLI display output hides ignored results by default when you run `snyk code test`. It displays only unignored results and a summary table with the total number of issues (open and ignored).
 
@@ -45,7 +47,7 @@ You can find the ignore metadata in the suppressions module of the SARIF output.
 
 ### Access the finding identifier in JSON and SARIF output
 
-The finding identifier is included in the JSON and SARIF output of Snyk CLI. To view it, run `snyk code test --json` and navigate to `runs.results[n].fingerprints.snyk/assets/finding/v1` in the JSON output. See How Snyk Code identifies and tracks issues.
+The Snyk CLI includes the finding identifier in its JSON and SARIF output. To view it, run `snyk code test --json` and navigate to `runs[0].results[n].fingerprints["snyk/asset/finding/v1"]` in the JSON output. To learn how Snyk uses this identifier, visit [How Consistent Ignores match findings](./#how-consistent-ignores-match-findings).
 
 You can use this identifier to [create new ignores using API calls](api.md).
 

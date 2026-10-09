@@ -1,15 +1,9 @@
 ---
+description: How to clone your template Organization to build a Snyk structure that mirrors your business
 nav_context: new
-description: >-
-  How to clone your template Organization to build a Snyk structure that mirrors
-  your business
 ---
 
 # Create your Snyk structure
-
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
-## Create your Snyk structure
 
 To create your ideal Snyk structure, reflecting the way your business is structured, you need to clone the template Organization created in the previous phase of this guide. This enables you to create multiple Organizations that cover your critical business units.
 
@@ -25,7 +19,7 @@ Create your Organization structure video guide
 
 After your template is ready, use it to build your structure:
 
-* **Through the web UI**: Select **Template** in the Copy settings from dropdown when you create a new Organization.
+* **Through the web UI**: Open the **Organization** dropdown in the scope selector and click **+ Create new Organization**. In the **Copy settings from** dropdown, select **Template**.
 * **Through the** [**API**](https://docs.snyk.io/developer-tools/snyk-apps/tool-snyk-api-import): Use the `sourceOrgId` parameter in the `Create a new organization` endpoint.
 
 {% hint style="info" %}

@@ -1,15 +1,9 @@
 ---
+description: How to automate Snyk prevention and gating to stop new vulnerabilities from entering your applications
 nav_context: new
-description: >-
-  How to automate Snyk prevention and gating to stop new vulnerabilities from
-  entering your applications
 ---
 
 # Automate prevention measures
-
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
-## Automate prevention measures
 
 Once you have visibility into your existing security posture, implement prevention and gating systems to stop new vulnerabilities from entering your applications. By automating these checks, you empower developers to take responsibility for the security of their specific changes without manually triaging every issue.
 
@@ -72,8 +66,8 @@ Adding Snyk to your pipeline acts as a gatekeeper:
 **Key decision**: Move security upstream. Test base images before developers use them to ensure all derived containers start from a secure foundation.
 {% endhint %}
 
-* **Container registry**: Run Snyk container tests when creating custom base images. Snyk Container (**Detect Dockerfiles**) is enabled for Organizations by default. To disable it, navigate to the Dockerfile tile under your Org-level SCM integration **Settings**.
-* **IaC**: Integrate with workflows like Terraform Cloud to scan configuration files before deployment. IaC is enabled for Organizations by default. To disable it, navigate to Organization **Settings** > **Snyk IaC**.
+* **Container registry**: Run Snyk container tests when creating custom base images. Snyk Container (**Detect Dockerfiles**) is enabled for Organizations by default. To disable it, navigate to **Settings** > **Integrations** at Organization scope, select your SCM integration, and use the Dockerfile tile.
+* **IaC**: Integrate with workflows like Terraform Cloud to scan configuration files before deployment. IaC is enabled for Organizations by default. To disable it, navigate to **Settings** > **Products and features** > **Snyk IaC** at Organization scope.
 
 ### Announce prevention measures
 

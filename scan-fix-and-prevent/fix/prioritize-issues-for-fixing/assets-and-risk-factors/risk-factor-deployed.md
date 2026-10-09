@@ -21,9 +21,7 @@ The Deployed risk factor works with the Kubernetes Connector and third-party int
 
 Snyk determines that a container image is deployed by looking for a match between the running images on the Kubernetes cluster and the created Snyk Container Projects.
 
-Snyk uses Kubernetes state information to extract Docker image identifiers that are being executed. The status of a Kubernetes container has image names that are being run by the Kubernetes runtime. A search is performed on the database of known Docker images to find matching names. When the image names are matched, Snyk can display this information in a graph. The graph shows the relationship between the image and the container. \\
-
-<figure><img src="https://lh6.googleusercontent.com/BoYMeFGbzjUmNmXbmtrklBcl9LLm9S94mwJWkrFA_5E5WIO07BsS3Zv-fbGBlXkNAx4oGnbBtzFijWTxUQbsnlzJI2QqprUJWPevpwBybhmwtzQayYnmW6_Qvhddgz1_vdy-NDZgQKUQhmxnY54xkrI" alt="A vulnerability in a deployed image"><figcaption><p>A vulnerability in a deployed image</p></figcaption></figure>
+Snyk uses Kubernetes state information to extract Docker image identifiers that are being executed. The status of a Kubernetes container has image names that are being run by the Kubernetes runtime. A search is performed on the database of known Docker images to find matching names. When the image names are matched, Snyk can display this information in a graph. The graph shows the relationship between the image and the container.
 
 Kubernetes is very [specific](https://kubernetes.io/docs/concepts/containers/images/#image-names) about how images are managed. Snyk uses the same logic to map the images Snyk knows about. Whenever you scan an Image with Snyk Container, Snyk collects information about the image name and image ID. Snyk uses this information to map images against information from Kubernetes.
 

@@ -38,11 +38,12 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
 * Coding issues: Finds problems such as dead code, branches that are predefined, and branches having the same code on each side.
 * Control flow: Identifies null dereference or race conditions by modeling each possible control flow in the application.
 * Data flow: Follows the flow of data within the application from the source to the sink. Combined with AI-based learning of external insecure data sources, data sinks, and sanitation functions, this enables a strong taint analysis.
-* Hardcoded secrets: Hardcoded secrets detection rules are invoked during SAST scans but do not act as a standalone secrets scanning tool, as this is done through our partnership with third-party tools.
+* Hardcoded secrets: Hardcoded secrets detection rules are invoked during SAST scans but do not act as a standalone secrets scanning tool. For how these rules decide what to report, see [Snyk Code secret detection](snyk-code-security-rules/README.md#how-snyk-code-secret-detection-works). For dedicated secrets scanning, use [Snyk Secrets](../snyk-secrets/README.md).
 
 <figure><img src="../../.gitbook/assets/Introduction - AI Engine - Hardcoded secrets.png" alt="Hardcoded secret found"><figcaption><p>Hardcoded secret found</p></figcaption></figure>
 
 * Point-to analysis: Identifies multiple potential issues, including buffer overruns, null dereferences, and type mismatches, by modeling memory use in variables and references.
+* Template files: Follows data from your application code into the template that renders it, so cross-site scripting that becomes exploitable only at the point of rendering is reported. Visit [Template file analysis](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#template-file-analysis).
 * Type inference: Determines the initial type and its changes. This is of special interest for dynamically typed languages.
 * Value ranges: Infers possible values for variables used to call functions to track off-by-one errors in arrays, division-by-zero errors, and null dereferences.
 

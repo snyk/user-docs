@@ -14,7 +14,7 @@ set -euo pipefail
 
 REPO='snyk/user-docs'
 AUTHOR='team-ide-user'
-MATRIX_PATH='developer-tools/snyk-ide-plugins-and-extensions/compatibility-matrix.md'
+MATRIX_PATH='developer-tools/integrations/snyk-ide-plugins-and-extensions/compatibility-matrix.md'
 
 # The matrix holds a rolling 12 months of plugin releases. A regeneration that
 # drops most of the table is a bug in the upstream job, not a legitimate
