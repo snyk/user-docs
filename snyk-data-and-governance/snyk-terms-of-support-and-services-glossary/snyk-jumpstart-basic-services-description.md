@@ -1,21 +1,23 @@
 ---
-description: Service description for Snyk Jumpstart Basic, consultant-led assisted account configuration
 nav_context: agnostic
+description: >-
+  Service description for Snyk Onboarding Basic, consultant-led assisted account
+  configuration
 ---
 
-# Snyk Jumpstart Basic Services Description
+# Snyk Onboarding Basic Services Description
 
-A Snyk Consultant will provide services to help the Customer accelerate its setup of Snyk products through assisted account configuration (the “Jumpstart Basic Services”). The engagement will consist of knowledge transfer, paired with configuration guidance for your team.
+A Snyk Consultant will provide services to help the Customer set up Snyk products through assisted account configuration (the “Onboarding Basic Services”). The engagement will consist of knowledge transfer, paired with configuration guidance for your team.
 
 The objective is to establish a working setup of Snyk, ready for the Customer team to collaborate with their developers to enhance their application security efforts.
 
 {% hint style="info" %}
-Jumpstart Basic is recommended for teams that need assistance with setting up Snyk products.
+Onboarding Basic is recommended for teams that need assistance with setting up Snyk products.
 {% endhint %}
 
-## Jumpstart Basic Services Description
+## Onboarding Basic Services Description
 
-The Snyk Consultant delivers the following Jumpstart Basic Services for remote Snyk setup. These services apply only to Snyk applications purchased concurrently on an Order Form. References to unpurchased Snyk Services are omitted unless otherwise noted.
+The Snyk Consultant delivers the following Onboarding Basic Services for remote Snyk setup. These services apply only to Snyk applications purchased concurrently on an Order Form. References to unpurchased Snyk Services are omitted unless otherwise noted.
 
 1. [Pre-engagement planning and preparation](snyk-jumpstart-basic-services-description.md#pre-engagement-planning-and-preparation)
    1. Review deliverables per product module
@@ -29,7 +31,7 @@ The Snyk Consultant delivers the following Jumpstart Basic Services for remote S
 
 ## Pre-engagement planning and preparation
 
-Review the [prerequisites](snyk-jumpstart-customer-prerequisites.md), including resources, availability, and deliverables for each product module, before starting your services. You are responsible for meeting these prerequisites. Snyk is not responsible for delays or undelivered Jumpstart Basic Services if you do not meet these prerequisites.
+Review the [prerequisites](snyk-jumpstart-customer-prerequisites.md), including resources, availability, and deliverables for each product module, before starting your services. You are responsible for meeting these prerequisites. Snyk is not responsible for delays or undelivered Onboarding Basic Services if you do not meet these prerequisites.
 
 ## Snyk Platform configuration
 
@@ -152,11 +154,11 @@ The Snyk Consultant will educate the Customer on understanding Snyk IaC results 
 | Single Pipeline CI/CD CLI configuration | Configure a pipeline to run `snyk iac test` and `snyk iac test --report`.                                                        |
 | Interpreting and actioning IaC Results  | View IaC results and manage misconfigurations using the Reports option.                                                          |
 
-## Timeline for Snyk Jumpstart Basic delivery
+## Timeline for Snyk Onboarding Basic delivery
 
-Snyk Jumpstart Basic is typically a 30-day engagement, starting with a Jumpstart Basic Kickoff call.
+Snyk Onboarding Basic is typically a 30-day engagement, starting with an Onboarding Basic Kickoff call.
 
-For new Snyk customers, Jumpstart Basic includes initial Platform Configuration and all purchased product modules.
+For new Snyk customers, Onboarding Basic includes initial Platform Configuration and all purchased product modules.
 
 For existing Snyk customers, a Snyk Consultant adjusts the Platform Configuration content. This includes a health check review of the existing configuration before onboarding new features or products.
 
@@ -164,7 +166,7 @@ For existing Snyk customers, a Snyk Consultant adjusts the Platform Configuratio
 
 Project fees are fixed. Services are invoiced in full at purchase and are non-refundable.
 
-After purchase, the Snyk implementation team coordinates a pre-engagement call at a mutually agreed time. While the Jumpstart engagement is optimized for a 30-day completion cycle, Snyk provides a fixed 60-day service window commencing on the Contract Start Date to fulfill services. This extended duration offers necessary flexibility to accommodate internal scheduling requirements or complex environment configurations.
+After purchase, the Snyk implementation team coordinates a pre-engagement call at a mutually agreed time. The Onboarding engagement targets a 30-day completion cycle. Snyk provides a fixed 60-day service window from the Contract Start Date to fulfill services. This duration accommodates internal scheduling requirements or complex environment configurations.
 
 Unless otherwise agreed to by the parties in writing, a) services must be scheduled as agreed during the call; b) product modules will be delivered consecutively; and c) all services will occur during normal business hours.
 
@@ -172,11 +174,11 @@ All services are remote.
 
 ## Key assumptions
 
-The following assumptions are reflected in the services outlined in this Jumpstart Basic Services description:
+The following assumptions are reflected in this Onboarding Basic Services description:
 
 * All services will be performed remotely using video conferencing.
 * The customer provides prompt feedback on deliverables.
-* The customer appoints one subject matter expert (SME) as the contact for Jumpstart Basic Services. The SME is available to work remotely with the Snyk Consultant throughout the engagement.
+* The customer appoints one subject matter expert (SME) as the contact for Onboarding Basic Services. The SME is available to work remotely with the Snyk Consultant throughout the engagement.
 * The customer provides Snyk with documentation and access to SMEs for non-Snyk systems and software when required.
 * The customer identifies key personnel before the engagement starts.
 * Snyk delivers services during normal business hours: Monday through Friday, 8 am to 5 pm local time. Regional variations apply (for example, Sunday through Thursday). Regional variations are based on the region assigned to the Snyk consultant.

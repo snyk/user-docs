@@ -1,11 +1,11 @@
 ---
-description: How the Snyk Jumpstart Basic and Standard consultant-led onboarding packages differ
 nav_context: agnostic
+description: How the Snyk Onboarding Basic and Standard consultant-led packages differ
 ---
 
-# Snyk Jumpstart: Basic versus Standard
+# Snyk Onboarding: Basic versus Standard
 
-Snyk Jumpstart services accelerate Snyk product configuration through remote, consultant-led engagements. Both packages provide a Template Organization to ensure a consistent, scalable account structure.
+Snyk Onboarding services support Snyk product configuration through remote, consultant-led engagements. Both packages provide a Template Organization to ensure a consistent, scalable account structure.
 
 ## Main differences
 
@@ -18,7 +18,7 @@ Snyk Jumpstart services accelerate Snyk product configuration through remote, co
 | Snyk Learn add-on  | Not Included      | Included (Assignment & Role setup)        |
 | SBOM walkthrough   | Not Included      | Included (CLI & API)                      |
 
-## Common components&#x20;
+## Common components
 
 Both packages cover the foundational setup for Open Source, Code, Container, and IaC for up to 50 targets per module:
 

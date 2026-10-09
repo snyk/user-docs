@@ -1,6 +1,8 @@
 ---
-description: Glossary of terms for Snyk support plans and success service offerings purchased on an Order Form
 nav_context: agnostic
+description: >-
+  Glossary of terms for Snyk support plans and success service offerings
+  purchased on an Order Form
 ---
 
 # Snyk terms of support and services glossary
@@ -180,5 +182,5 @@ The Customer acknowledges that the implementation, support and/or professional s
 
 See the service descriptions on each of the following pages.
 
-* [Snyk Jumpstart Services](snyk-jumpstart-services-description.md)
+* [Snyk Onboarding Services](snyk-jumpstart-services-description.md)
 * [Statement of Work](declining-balance.md)
