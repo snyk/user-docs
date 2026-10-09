@@ -1,5 +1,4 @@
 ---
-description: How to install the Snyk CLI across major operating systems
 nav_context: agnostic
 ---
 
@@ -53,7 +52,7 @@ For Apple M1 or M2 (darwin/arm64), visit [Using CLI releases before version 1.12
 3.  Install the Snyk CLI for Homebrew:
 
     ```bash
-    brew install snyk
+    brew install snyk/tap/snyk
     ```
 4.  Verify that the installation has succeeded:
 
@@ -185,7 +184,7 @@ Authenticate the connection. For more details, visit Authentication in Docker.
 
 <summary>CI/CD</summary>
 
-For detailed instructions on using the Snyk CLI with CI/CD integrations, visit [Snyk CI/CDs](../../snyk-ci-cd-integrations/).
+For detailed instructions on using the Snyk CLI with CI/CD integrations, visit [Snyk CI/CDs](../../integrations/snyk-ci-cd-integrations/).
 
 </details>
 

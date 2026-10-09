@@ -17,11 +17,11 @@ Snyk integrates with SCMs like GitHub, GitLab, Bitbucket, and Azure Repos. Use t
 * run pull request checks
 * open pull requests for fixes and upgrades
 
-Visit the [SCMs](scm-integrations/) page to learn more about workspaces, access scopes, and configuration at the Group and Organization levels.
+Visit the [SCMs](integrations/scm-integrations/) page to learn more about workspaces, access scopes, and configuration at the Group and Organization levels.
 
 ## Snyk CI/CDs
 
-[Snyk CI/CD](snyk-ci-cd-integrations/) integrations orchestrate development and operations in your system. Use these integrations to enforce policy gates, generate reports, and standardize scanning across pipelines.
+[Snyk CI/CD](integrations/snyk-ci-cd-integrations/) integrations orchestrate development and operations in your system. Use these integrations to enforce policy gates, generate reports, and standardize scanning across pipelines.
 
 Snyk provides platform-specific setup and parameters for:
 
@@ -45,7 +45,7 @@ This section covers:
 
 ## Snyk IDE plugins and extensions
 
-[Snyk IDE plugins and extensions](snyk-ide-plugins-and-extensions/) provide scanning and remediation guidance in your Projects.
+[Snyk IDE plugins and extensions](integrations/snyk-ide-plugins-and-extensions/) provide scanning and remediation guidance in your Projects.
 
 This section provides setup guidance, including authentication, proxy, workspace trust settings, and troubleshooting steps for each IDE.
 

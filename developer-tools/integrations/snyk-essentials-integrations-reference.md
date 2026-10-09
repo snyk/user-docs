@@ -1,11 +1,15 @@
 ---
-description: Reference for Snyk Essentials integration availability, sync times, connection statuses, and Snyk Broker setup
 nav_context: classic
+description: >-
+  Reference for Snyk Essentials integration availability, sync times, connection
+  statuses, and Snyk Broker setup
 ---
+
+# Snyk Essentials integrations reference
 
 {% include "../.gitbook/includes/new-navigation-banner.md" %}
 
-# Snyk Essentials integrations reference
+## Snyk Essentials integrations reference
 
 The **Integrations** page, under **Settings** > **Integrations**, shows all active integrations, including any data automatically synced from your existing Snyk Organizations.
 
@@ -13,7 +17,7 @@ The following supported Snyk data are automatically synced: Snyk Open Source, Sn
 
 Each connected integration enables you to pause data syncing, modify integration profiles and configurations, delete the integration, or check when the integration was last synced and when the next sync is scheduled.
 
-## Integrations syncing time
+### Integrations syncing time
 
 Depending on the type of action, the syncing times might differ:
 
@@ -23,7 +27,7 @@ Depending on the type of action, the syncing times might differ:
 * Sync repository (archive old or deleted repositories) - weekly
 * Get organization chart - weekly
 
-## Integration connection statuses
+### Integration connection statuses
 
 After you finish setting up an integration, you can see the following connection statuses:
 
@@ -36,29 +40,29 @@ After you finish setting up an integration, you can see the following connection
 
 If you encounter any of the failed statuses, check the Connection failure details list available on the integration card.
 
-## Snyk Essentials integrations ecosystem
+### Snyk Essentials integrations ecosystem
 
 You can refer to the table below to verify the availability and compatibility of all integrations for Snyk Essentials. The integrations are categorized by type, listed by name, and indicated as available or not for Snyk Essentials.
 
-<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk Essentials</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../scm-integrations/group-level-integrations/github-for-snyk-essentials.md">GitHub</a></li><li><a href="../scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md">BitBucket</a></li><li><a href="../scm-integrations/group-level-integrations/gitlab-for-snyk-essentials.md">GitLab</a></li><li><a href="../scm-integrations/group-level-integrations/azure-devops-for-snyk-essentials.md">Azure DevOps</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="../scm-integrations/application-context-for-scm-integrations/">Backstage catalog</a></li><li><a href="../scm-integrations/application-context-for-scm-integrations/#servicenow-cmdb-for-scm-integrations">ServiceNow CMDB</a></li><li><a href="../scm-integrations/application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../scm-integrations/application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../scm-integrations/application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../scm-integrations/application-context-for-scm-integrations/#datadog-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
+<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk Essentials</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="scm-integrations/group-level-integrations/github-for-snyk-essentials.md">GitHub</a></li><li><a href="scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md">BitBucket</a></li><li><a href="scm-integrations/group-level-integrations/gitlab-for-snyk-essentials.md">GitLab</a></li><li><a href="scm-integrations/group-level-integrations/azure-devops-for-snyk-essentials.md">Azure DevOps</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="scm-integrations/application-context-for-scm-integrations/">Backstage catalog</a></li><li><a href="scm-integrations/application-context-for-scm-integrations/#servicenow-cmdb-for-scm-integrations">ServiceNow CMDB</a></li><li><a href="scm-integrations/application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="scm-integrations/application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="scm-integrations/application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="scm-integrations/application-context-for-scm-integrations/#datadog-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
 
 You can refer to the list below to view available and compatible integrations for Snyk Essentials.
 
 **SCM**
 
-* [GitHub](../scm-integrations/group-level-integrations/github-for-snyk-essentials.md)
-* [BitBucket](../scm-integrations/organization-level-integrations/bitbucket-cloud.md#how-to-set-up-the-bitbucket-cloud-integration)
-* [GitLab](../scm-integrations/group-level-integrations/gitlab-for-snyk-essentials.md)
-* [Azure DevOps](../scm-integrations/organization-level-integrations/azure-repositories-tfs.md)
+* [GitHub](scm-integrations/group-level-integrations/github-for-snyk-essentials.md)
+* [BitBucket](scm-integrations/organization-level-integrations/bitbucket-cloud.md#how-to-set-up-the-bitbucket-cloud-integration)
+* [GitLab](scm-integrations/group-level-integrations/gitlab-for-snyk-essentials.md)
+* [Azure DevOps](scm-integrations/organization-level-integrations/azure-repositories-tfs.md)
 
 **Dev portals and Service catalogs**
 
-* [Backstage catalog](../scm-integrations/application-context-for-scm-integrations/)
-* [ServiceNow CMDB](../scm-integrations/application-context-for-scm-integrations/#servicenow-cmdb-for-scm-integrations)
-* [Atlassian Compass](../scm-integrations/application-context-for-scm-integrations/#atlassian-compass)
-* [Harness](../scm-integrations/application-context-for-scm-integrations/#harness)
-* [OpsLevel](../scm-integrations/application-context-for-scm-integrations/#opslevel)
-* [Datadog Org Context (Service Catalog)](../scm-integrations/application-context-for-scm-integrations/#datadog-service-catalog)
+* [Backstage catalog](scm-integrations/application-context-for-scm-integrations/)
+* [ServiceNow CMDB](scm-integrations/application-context-for-scm-integrations/#servicenow-cmdb-for-scm-integrations)
+* [Atlassian Compass](scm-integrations/application-context-for-scm-integrations/#atlassian-compass)
+* [Harness](scm-integrations/application-context-for-scm-integrations/#harness)
+* [OpsLevel](scm-integrations/application-context-for-scm-integrations/#opslevel)
+* [Datadog Org Context (Service Catalog)](scm-integrations/application-context-for-scm-integrations/#datadog-service-catalog)
 
 **Risk management collaboration**
 
@@ -66,7 +70,7 @@ You can refer to the list below to view available and compatible integrations fo
 * [Slack](jira-and-slack-integrations/slack-integration.md)
 * Email
 
-## Using the Integrations page
+### Using the Integrations page
 
 Use the **Integrations** page to onboard integrations and populate Snyk Essentials with data from SCM tools.
 
@@ -76,11 +80,11 @@ You can add an integration by following these steps:
 2. Click **Add integration** and select the integration you want to add.
 3. Configure your connection and click **Done**.
 
-Visit the [Group-level integrations](../scm-integrations/group-level-integrations/) page for step-by-step details about how to set up an integration.
+Visit the [Group-level integrations](scm-integrations/group-level-integrations/) page for step-by-step details about how to set up an integration.
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 
-## Using Snyk Broker
+### Using Snyk Broker
 
 If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, visit the Snyk Broker documentation, including [Snyk Broker](https://docs.snyk.io/platform-administration/snyk-broker/using-snyk-essentials-with-snyk-broker).
 

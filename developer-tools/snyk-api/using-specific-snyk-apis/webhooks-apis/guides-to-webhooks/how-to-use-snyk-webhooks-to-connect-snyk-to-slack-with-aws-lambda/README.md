@@ -1,9 +1,9 @@
 ---
-description: How to connect Snyk to Slack using webhooks and AWS Lambda
 nav_context: agnostic
+description: How to connect Snyk to Slack using webhooks and AWS Lambda
 ---
 
-# Using Snyk Webhooks to connect Snyk to Slack with AWS Lambda
+# How to use Snyk Webhooks to connect Snyk to Slack with AWS Lambda
 
 You can use Snyk Webhooks alongside a Lambda function to receive and filter new vulnerabilities discovered by Snyk in your Slack.
 
@@ -30,5 +30,7 @@ This guide **explains** how to use an AWS Lambda function to filter the payload 
 The following describes the **data and traffic flow**:
 
 The Snyk Project Snapshot Webhook triggers an AWS Lambda function by forwarding headers and the POST body through the API Gateway. The Lambda function then sends a filtered payload (custom message) to the Slack webhook, if a hash header signature validation succeeds and if the payload contains valid data. The Lambda function then filters the POST body to construct the custom message.
+
+<figure><img src="https://lh6.googleusercontent.com/VROtTsX240dfLMERpOkm-5epOnvZxQUxjM-qKJYNEOtD_1flwBrpBTiJedo2Uy0RZz6kKplKNQQcINzOW3H30Lf7R9U0teZ4WvivBt1u7TdN_4J3ha_ZmY9wdn3xvXCNxl9036JdYeEzaBMtU53lo6e-do3Bhbmi4Y9tcWDO5y00NT_XRvmt5Z9ipg" alt="Data and traffic flow for using Snyk Webhooks to connect Snyk to Slack with AWS Lambda"><figcaption><p>Data and traffic flow for using Snyk Webhooks to connect Snyk to Slack with AWS Lambda</p></figcaption></figure>
 
 If you have **problems** using the Snyk Webhook, **contact** your Solutions Engineer or Technical Success Manager for help.

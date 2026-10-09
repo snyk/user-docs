@@ -1,8 +1,8 @@
 ---
+nav_context: agnostic
 description: >-
   Index of Snyk API endpoints with tips, including how to find your Organization
   ID
-nav_context: agnostic
 ---
 
 # API endpoints index and tips
@@ -287,7 +287,7 @@ The View Project History permission is needed to use this API.
 
 **More information:** [Org and group identification for Projects](organization-and-group-identification-for-projects-using-the-api.md);\
 [Legacy custom mapping](https://docs.snyk.io/platform-administration/user-management/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping);\
-[api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
+[api-import Creating import targets data for import](../../snyk-apps/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
 [Scenario: Retrieve a Project snapshot for every Project in a given Group](scenarios-for-using-the-snyk-api.md#retrieve-a-project-snapshot-for-every-project-in-a-given-group);\
 [Scenario: Find all Projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability)
 
@@ -326,7 +326,7 @@ The View Project History permission is needed to use this API.
 
 ## Ignores (v1)
 
-**More information:** [Snyk test and snyk monitor in CI/CD integration](../../snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**More information:** [Snyk test and snyk monitor in CI/CD integration](../../integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [List all ignores](../reference/ignores-v1.md#org-orgid-project-projectid-ignores)
 
@@ -364,15 +364,15 @@ If a call to the Import targets endpoint fails, use [Get import job detail](../r
 
 The poll results return a message per manifest processed, either `success: true` or `success: false.`
 
-**More information:** [api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
-[api-import Kicking off an import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/kicking-off-an-import.md)
+**More information:** [api-import Creating import targets data for import](../../snyk-apps/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
+[api-import Kicking off an import](../../snyk-apps/tool-snyk-api-import/kicking-off-an-import.md)
 
 **More information Import targets:**\
 [Configure integrations](https://docs.snyk.io/implementation-guides/team-implementation-guide/phase-2-configure-your-organization/configure-integrations) (Enterprise implementation guide, Phase 2);\
 [Import Projects](https://docs.snyk.io/implementation-guides/team-implementation-guide/phase-3-gain-visibility/import-projects) (Enterprise implementation guide, Phase 3);\
-[Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)\
-[api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md)\
-[api-import Kicking off an import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/kicking-off-an-import.md)\
+[Tool: snyk-api-import](../../snyk-apps/tool-snyk-api-import/)\
+[api-import Creating import targets data for import](../../snyk-apps/tool-snyk-api-import/creating-import-targets-data-for-import-command.md)\
+[api-import Kicking off an import](../../snyk-apps/tool-snyk-api-import/kicking-off-an-import.md)\
 [Scenario:: Identify and import new repositories only](scenarios-for-using-the-snyk-api.md#identify-and-import-new-repositories-only)\
 [Scenario: Detect and import new Projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)\
 [Scenario: Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)\
@@ -380,9 +380,9 @@ The poll results return a message per manifest processed, either `success: true`
 [Manage code vulnerabilities ](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/manage-code-vulnerabilities)(Use: Automate importing multiple repositories)
 
 **More information Get import job details:** [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images);\
-[Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)\
-[api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md)\
-[api-import Kicking off an import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/kicking-off-an-import.md)
+[Tool: snyk-api-import](../../snyk-apps/tool-snyk-api-import/)\
+[api-import Creating import targets data for import](../../snyk-apps/tool-snyk-api-import/creating-import-targets-data-for-import-command.md)\
+[api-import Kicking off an import](../../snyk-apps/tool-snyk-api-import/kicking-off-an-import.md)
 
 ## Integrations (v1)
 
@@ -393,7 +393,7 @@ The poll results return a message per manifest processed, either `success: true`
 ### [List](../reference/integrations-v1.md#org-orgid-integrations-1)
 
 **More information:** [Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management)](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base);\
-[api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);
+[api-import Creating import targets data for import](../../snyk-apps/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);
 
 ### [Get existing integration by type](../reference/integrations-v1.md#org-orgid-integrations-type)
 
@@ -466,12 +466,12 @@ Additional information: [Reachability](https://docs.snyk.io/scan-fix-and-prevent
 
 ### [List all jira issues](../reference/jira-v1.md#org-orgid-project-projectid-jira-issues)
 
-**More information:** [Jira integration](../../integrations/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**More information:** [Jira integration](../../integrations/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [Create jira issue](../reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issuev)
 
 **More information:** [Jira integration](../../integrations/jira-and-slack-integrations/jira-integration.md);\
-[Snyk test and snyk monitor in CI/CD integration](../../snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+[Snyk test and snyk monitor in CI/CD integration](../../integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ## Licenses (v1)
 
@@ -495,7 +495,7 @@ Additional information: [Reachability](https://docs.snyk.io/scan-fix-and-prevent
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
 **More information:** [Create a template Organization](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/create-a-template-organization)\
-[api-import: Creating organizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\
+[api-import: Creating organizations in Snyk](../../snyk-apps/tool-snyk-api-import/creating-organizations-in-snyk.md);\
 [Scenario: Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
 ### [Remove organization](../reference/organizations-v1.md#org-orgid)
@@ -525,8 +525,8 @@ The only editable attribute of Update organization settings is `requestAccess`.
 
 ### [Set notification settings](../reference/organizations-v1.md#org-orgid-notification-settings)
 
-**More information:** [api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
-[Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/);
+**More information:** [api-import Creating import targets data for import](../../snyk-apps/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
+[Tool: snyk-api-import](../../snyk-apps/tool-snyk-api-import/);
 
 ### [Get organization notification settings](../reference/organizations-v1.md#org-orgid-notification-settings-1)
 
@@ -799,7 +799,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 ### [Slack notification settings override for projects](../reference/slacksettings.md#orgs-org_id-slack_app-bot_id-projects)
 
 **More information:** [Slack app (JIra integration)](../../integrations/jira-and-slack-integrations/slack-app.md) (Use: List all Slack notification customizations for a project);\
-[api-import Creating orgnizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\\
+[api-import Creating orgnizations in Snyk](../../snyk-apps/tool-snyk-api-import/creating-organizations-in-snyk.md);\\
 
 ### [Create a new Slack settings override for a given project](../reference/slacksettings.md#orgs-org_id-slack_app-bot_id-projects-project_id)
 
