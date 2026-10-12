@@ -37752,7 +37752,8 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-15~experimental"
         ],
         "x-snyk-api-resource": "grouppolicies",
         "x-snyk-api-stability": "beta",
