@@ -42,7 +42,7 @@ For an overview of the supported security rules, visit [JavaScript and TypeScrip
 
 For TypeScript with Snyk Code, the following file formats are supported: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`, `.erb`
 
-Snyk Code reads `tsconfig.json` and `jsconfig.json` to resolve imports that use path aliases.
+To resolve imports that use path aliases when tracing data flow across modules, Snyk Code reads `tsconfig.json` and `jsconfig.json` in your Project.
 
 Available features:
 
