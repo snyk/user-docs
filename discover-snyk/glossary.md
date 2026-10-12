@@ -11,7 +11,7 @@ description: >-
 
 ### ADE
 
-An Agentic Development Environment (ADE), also known as an Agentic IDE, is an engineering workspace where AI agents execute defined tasks.
+An Agentic Development Environment (ADE), also known as an Agentic IDE, is a engineering workspace where AI agents execute defined tasks.
 
 ### Advisor
 
