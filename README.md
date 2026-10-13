@@ -8,19 +8,15 @@ Do not open pull requests in this repository. Changes made here are overwritten 
 
 ### Internal contributor guidelines
 
-If you are an internal Snyk contributor, draft your content in [`snyk/user-docs-internal`](https://github.com/snyk/user-docs-internal), the source repository for docs.snyk.io, and then submit it to the Docs team with the `/ship-it` Slack workflow. `/ship-it` is the single intake point for all documentation and release-notification requests: it creates the Jira ticket for you and sends you a confirmation DM with tracking links.
+If you are an internal Snyk contributor, such as a PM or SME, request docs with the `/ship-it` Slack workflow. `/ship-it` is the single intake point for all documentation and release-notification requests. You don't need to write the draft yourself.
 
-Before you run `/ship-it`, complete these steps so the submission does not fail partway through:
+1. Run `/ship-it` from anywhere in Slack, or from the Ship It app in your sidebar, and add a link to the PRD or technical spec. Complete all the fields in one sitting, because the multi-step form does not save partial progress. Connect Atlassian to Slack first, because the workflow creates a Jira ticket.
+2. The ship-it automation drafts the docs as a draft pull request in [`snyk/user-docs-internal`](https://github.com/snyk/user-docs-internal), the source repository for docs.snyk.io, and replies in the Slack thread with the link.
+3. Review the draft for technical accuracy, and resolve every `[ACTION REQUIRED]` item. A technical writer does the final review and merges it.
 
-- Confirm you have write access to `snyk/user-docs-internal`.
-- Connect Atlassian to Slack, which is required for Jira ticket creation.
-- Draft your content in GitHub and open a pull request in `snyk/user-docs-internal`. Use a branch rather than a fork, to allow GitBook previews.
-- Place pages under `docs/<section>/`, and update that section's `SUMMARY.md` if you are adding new pages.
-- Follow the `snyk-docs-writing-rules` skill while drafting.
+For a minor update, or if you prefer to write the draft by hand, open a pull request in `snyk/user-docs-internal` instead. Use a branch rather than a fork, to allow GitBook previews, and place pages under `docs/<section>/`. Then run `/ship-it` and add the pull request URL in the **Docs Draft** field.
 
-Then run `/ship-it` from anywhere in Slack, or from the Ship It app in your sidebar. Have your pull request URL ready and complete all the fields in one sitting, because the multi-step form does not save partial progress.
-
-For details on the process, go to the internal [writing user documentation](https://snyksec.atlassian.net/wiki/spaces/DRC/pages/1819541615/Writing+user+documentation) page.
+For details on the process, go to the internal [writing user documentation](https://snyksec.atlassian.net/wiki/spaces/Docs/pages/1819541615/Writing+user+documentation) page.
 
 To ask questions or to report issues to the user docs team, use `/ship-it`. The legacy submission forms remain available only as a fallback under Workflows → "Contact the Docs team."
 
