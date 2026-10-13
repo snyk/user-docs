@@ -142,7 +142,7 @@ A push key works only against its own region. If you use the wrong base URL, aut
 Unselecting a product in ADS settings and running `uninstall` do different things.
 
 | What you want to do                                                | Use this                                |
-| ------------------------------------------------------------------ | --------------------------------------- |
+| ------------------------------------------------------------------ | ---------------------------------------- |
 | Stop a product from being rolled out to new machines in your fleet | Unselect it in ADS settings             |
 | Remove a product from a machine that already has it                | Run the installer's `uninstall` command |
 
