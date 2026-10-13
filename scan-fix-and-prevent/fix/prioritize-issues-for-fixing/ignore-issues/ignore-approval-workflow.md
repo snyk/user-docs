@@ -23,7 +23,7 @@ ignores for Snyk OS, Snyk Container, and Snyk IaC.
 * ​[Enable Snyk Code Consistent Ignores](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#enable-snyk-code-consistent-ignores) as the Ignore Approval Workflow does not process other types of ignores. Any existing ignores persist as approved ignores if the Ignore Approval Workflow is enabled.
 * ​Disable DeepCode inline Code ignores. Existing inline Code does not persist when the Ignore Approval Workflow is enabled. DeepCode inline ignores, which are behind a feature flag and not publicly documented, need to be disabled.
 * Ignore Approval Workflow is supported on the following versions of Snyk CLI and IDE:
-  * Snyk CLI v1.299.0
+  * Snyk CLI v1.1299.1
   * Snyk IDE
     * Visual Studio Code v2.24.0
     * JetBrains v2.16.0
@@ -86,7 +86,7 @@ Reviewers get email notifications about new requests pending their approval. You
 1. Log in to the Snyk Web UI and select your [Group and Organization](https://docs.snyk.io/snyk-platform-administration/groups-and-organizations).
 2. Navigate to **Organization** > **Ignore requests**.
 
-You can list all ignored requests in a **Pending**, **Approved**, or **Rejected** state on the **Ignore** **Requests** page only. Because you create ignore requests for findings, they do not appear on the **Issues** page until the associated finding becomes an issue.
+You can list all ignore requests in a **Pending**, **Approved**, or **Rejected** state on the **Ignore requests** page.
 
 3. Choose an Ignore request and then select **Manage** to view the details.
 4. Investigate the potential risk and decide whether you need to approve or reject the request. You can change the ignore type and expiration prior to approving.
@@ -99,3 +99,19 @@ Snyk does not support assigning specific reviewers to ignore triage requests. An
 {% endhint %}
 
 The developer who submitted the request receives an email notification with the decision. The request is no longer pending, and new tests will reflect the decision: either a finding that needs to be fixed if the request was rejected, or an ignored finding that is not shown by default.
+
+### View pending ignore requests on the Issues page
+
+When Ignore Approval Workflow is enabled for your Organization, the **Issues** page for a Project shows which findings have an ignore request awaiting approval. Any user who can view the issue sees this status. You do not need the reviewer permission.
+
+* A finding with a request awaiting approval shows a **Pending Ignore Request** status on the issue card and in the issue details. The status is separate from the **Ignored** status.
+* Snyk removes the **Request to Ignore** action from the finding.
+* The **STATUS** filter includes a **Pending Ignore Request** check box with a count of the findings that have a request awaiting approval. You can combine it with the other filters.
+
+After a reviewer approves the request, the finding shows as ignored. After a reviewer rejects the request, the finding returns to open and you can request an ignore again.
+
+{% hint style="info" %}
+Run a new test after you submit a request to see the pending status. Snyk does not update the status immediately.
+{% endhint %}
+
+When Ignore Approval Workflow is disabled, the **Pending Ignore Request** check box is disabled and shows a count of 0. Organizations that ignore findings directly, without an approval step, see no other change.
