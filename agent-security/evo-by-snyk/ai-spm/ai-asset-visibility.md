@@ -33,6 +33,8 @@ An AI-BOM scan detects these asset types:
 
 Evo identifies models by scanning configuration and manifest files. It identifies other asset types from the source code.
 
+Evo also detects MCP servers, skills, plugins, and hooks in configuration files. For details, see [Non-code scanning](non-code-scanning.md).
+
 If the Snyk Risk Database contains a record for a model Evo discovers, Evo also adds the base models it derives from and the training datasets associated with it. These assets come from Snyk research rather than from your repository.
 
 Asset details appear on the **Inventory** page and update after each scan.

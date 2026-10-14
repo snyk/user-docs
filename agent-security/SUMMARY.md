@@ -50,6 +50,7 @@
   * [Evo chat](evo-by-snyk/platform-surfaces/evo-chat.md)
 * [AI-SPM](evo-by-snyk/ai-spm/README.md)
   * [AI asset visibility](evo-by-snyk/ai-spm/ai-asset-visibility.md)
+    * [Non-code scanning](evo-by-snyk/ai-spm/non-code-scanning.md)
   * [Risk intelligence](evo-by-snyk/ai-spm/risk-intelligence/README.md)
     * [Framework mappings](evo-by-snyk/ai-spm/risk-intelligence/framework-mappings.md)
 * [Agentic Development Security (ADS)](evo-by-snyk/agentic-development-security-ads/README.md)
