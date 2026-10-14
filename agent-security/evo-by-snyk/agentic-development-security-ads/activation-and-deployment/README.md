@@ -84,6 +84,20 @@ For Agent Supply Chain Security, the mode changes where the installer registers 
 
 The scan always runs at user level, with that user's permissions, in both modes. Managed mode protects the scheduled task from removal. It does not give the scan elevated permissions.
 
+### Install to a custom directory
+
+By default, the installer uses its standard install locations. To install to a different directory, add `--install-dir <DIRECTORY>` when you run the installer:
+
+```bash
+<PATH_TO_INSTALLER> --tenant-id <TENANT_ID> --push-key <PUSH_KEY> --install-dir <DIRECTORY>
+```
+
+When you remove ADS later, pass the same directory to `uninstall`, as described in [Find the installer](./#find-the-installer).
+
+{% hint style="info" %}
+The Windows `.msi` does not accept this flag. To use a custom directory on Windows, run the installer executable directly.
+{% endhint %}
+
 ### Scheduled scans
 
 Agent Supply Chain Security scans run every 24 hours by default on macOS and Windows. The installer registers a scheduled job on the machine, and that job runs the scan and exits. Your MDM tool does not need to run the installer again to trigger a scan. Scheduled scans are not supported on Linux.

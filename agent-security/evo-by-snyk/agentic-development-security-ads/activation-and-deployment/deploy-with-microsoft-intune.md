@@ -6,16 +6,29 @@ description: >-
 
 # Deploy with Microsoft Intune
 
-Deploy Agentic Development Security (ADS) to Windows devices with Microsoft Intune. The package delivers the installer only. A remediation script then runs the installer with your Tenant credentials, which installs and configures the products you selected.
+Deploy Agentic Development Security (ADS) to Windows devices with Microsoft Intune. In the standard install, the package delivers the installer only, and a remediation script then runs the installer with your Tenant credentials, which installs and configures the products you selected. In managed mode, the package installs and onboards in one step, and you deploy no script.
+
+## Choose a method
+
+Intune supports two deployment methods. Assign each group of devices to one method only.
+
+|                       | Standard install                                              | Managed mode                                                                         |
+| --------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **Products installed**| The products you selected, including Studio                   | Scan and Guard. Studio is not installed.                                             |
+| **Applies to**        | The signed-in user                                            | Every user on the machine, and protected from removal by the people using them       |
+| **How you deploy**    | A line-of-business app and a remediation script               | A line-of-business app with command-line arguments. No remediation or other script is needed. |
+
+The steps below describe the standard install. For managed mode, visit [Managed mode](deploy-with-microsoft-intune.md#managed-mode).
 
 ## Prerequisites
 
 You need the following:
 
 * a published product selection: in **Settings**, select your products and click **Save & Publish**
-* your Tenant ID and push key, both from **Settings**
+* your Tenant ID from **Settings**, and a push key. To create a push key, visit [Activation and deployment](./#authenticate).
+* your base URL, if you log in outside the default US region
 * the signed Windows package, `snyk-ads-installer-windows-x86_64.msi`, from **Settings**, where you also choose the installer version. If your automation cannot use the UI, download it from `downloads.snyk.io/ads/installer/latest/`.
-* licensing that includes Intune Remediations. Microsoft requires Windows Enterprise E3 or E5, Windows Education A3 or A5, or an equivalent license for Remediations.
+* for the standard install, a Microsoft license that includes Intune Remediations. Check Microsoft's licensing requirements for Remediations before you start.
 
 ## Deploy
 
@@ -26,16 +39,22 @@ You need the following:
     * **App install context**: **Device**
     * **Command-line arguments**: leave blank
 
-    Assign the app to your Windows devices.
+    Assign the app to your Windows devices. With no arguments, the package copies the installer to `C:\Program Files\Snyk\ADS Installer\` and does not onboard your Tenant.
 3.  Navigate to **Devices** > **Scripts and remediations** > **Remediations** > **Create script package**, and create a remediation named `Snyk ADS – onboard tenant`.
 
     Detection script:
 
     ```powershell
-    exit 1
+    $Path = "C:\Program Files\Snyk\ADS Installer\snyk-ads-installer-windows-x86_64.exe"
+
+    if (Test-Path $Path) {
+        Write-Output "Installer is present - ready to install."
+        Exit 1
+    }
+    Exit 0
     ```
 
-    The detection script always reports the device as non-compliant on purpose, so the remediation runs on every schedule and picks up your current published configuration.
+    Intune runs the remediation when the detection script exits with a non-zero code. This script exits 1 when the installer is present, so the remediation runs on every schedule. Each run fetches your current published configuration and skips binaries that already match by checksum.
 
     Remediation script:
 
@@ -56,13 +75,15 @@ You need the following:
     & $exe @installerArgs
     exit $LASTEXITCODE
     ```
+
+    Leave `--install-mode` unset. The installer then takes the mode from your Tenant's configuration, and uses user mode when none is set. The remediation runs as the signed-in user without elevation, so keep your Tenant configuration on user mode for devices that use the standard install.
 4. On the remediation's **Settings** page, set:
    * **Run this script using the logged-on credentials**: **Yes**
    * **Enforce script signature check**: **No**
    * **Run script in 64-bit PowerShell**: **Yes**
-5. On **Assignments**, target the same devices as your app, choose how often the remediation runs, and save.
+5. On **Assignments**, target the same devices as your app, choose how often the remediation runs, and save. A daily schedule keeps device configuration aligned with changes you make in Snyk.
 
-Onboarding runs the next time each targeted device checks in: within an hour for an enrolled device, or immediately when you click **Sync** on the device page.
+Onboarding runs the next time each targeted device checks in: within an hour for an enrolled device, or immediately when you click **Sync** on the device page. The remediation runs only when a user is signed in. A device with no signed-in user is onboarded on a later run, after someone signs in.
 
 {% hint style="warning" %}
 **Run this script using the logged-on credentials** must be **Yes**. On Windows, the installer runs as the account that invokes it, so ADS installs for the account the remediation runs under. If you set it to **No**, the remediation runs as SYSTEM and installs ADS for SYSTEM rather than for the person using the machine. The signed-in user then has nothing installed.
@@ -72,7 +93,7 @@ If you are not ready to move to packages, the previous command-line install is s
 
 ## If you log in outside the United States
 
-Set `$baseUrl` in the remediation script to the base URL for your region, as listed in [If you log in outside the United States](./#if-you-log-in-outside-the-united-states). Leave it empty for the default US region.
+The base URL mirrors the URL you use to log in to Evo. If you log in at `evo.snyk.io`, leave it out. Otherwise, use your region's base URL, as listed in [If you log in outside the United States](./#if-you-log-in-outside-the-united-states). In the standard install, set `$baseUrl` in the remediation script. In managed mode, add `BASEURL=<BASE_URL>` to the command-line arguments.
 
 ## Verify the deployment
 
@@ -84,20 +105,39 @@ If the Tenant was not onboarded, for example because the push key was wrong, Int
 
 Publish the change in **Settings** first. The `Snyk ADS – onboard tenant` remediation runs on its own schedule and fetches your current published configuration each time, so changes apply on the next run. To apply a change sooner, click **Sync** on the device, or shorten the interval between remediation runs.
 
-Each run skips binaries that already match by checksum, so repeated runs are cheap.
+Each run skips binaries that already match by checksum, so repeated runs are cheap. For managed mode, visit [Apply a configuration change in managed mode](deploy-with-microsoft-intune.md#apply-a-configuration-change-in-managed-mode).
 
 ## Upgrade the installer
 
-Replace the `.msi` on the app and redeploy. Intune detects the new package and reinstalls it automatically.
+Replace the `.msi` on the app and redeploy. Intune detects the new package by its product code and reinstalls it automatically. In the standard install, the remediation then runs the updated installer on its next schedule.
 
 ## Managed mode
 
 Managed mode is an opt-in for companies that need the products to apply to every user on a machine and to be protected from removal by the people using it. It requires ADS installer v1.88.0 or later, with Machines and Agent Behavior Governance on version 0.6.4 or later. For how the two modes differ, visit [Installation mode](./#installation-mode).
 
-To select managed mode, pass the credentials and the mode as command-line arguments on the line-of-business app, and do not create the remediation:
+Use managed mode when Scan and Guard should cover every local user on a device, including shared machines and machines where nobody has signed in yet. Studio is not installed in managed mode. To include Studio, use the standard install.
+
+Managed mode needs no script. Do not create a detection script or a remediation, and do not run the installer from PowerShell. To select managed mode, pass the credentials and the mode as command-line arguments on the line-of-business app. The `.msi` installs and onboards in one step:
 
 ```
 TENANTID=<TENANT_ID> PUSHKEY=<PUSH_KEY> INSTALLMODE=managed /qn
 ```
 
-If you log in outside the default US region, add `BASEURL=<BASE_URL>` before `/qn`. **App install context** must be **Device**. Scope this deployment to a dedicated device group, not to the assignment you use for the default flow.
+`/qn` keeps the `msiexec` run fully silent, with no interface and no prompts. If you log in outside the default US region, add `BASEURL=<BASE_URL>` before `/qn`. **App install context** must be **Device**. Assign the app to a dedicated device group, separate from any group that uses the standard install.
+
+{% hint style="warning" %}
+Always include `INSTALLMODE=managed`. With **App install context** set to **Device**, Intune runs the `.msi` as SYSTEM, and the installer runs as whoever starts `msiexec`, which is SYSTEM as well. Managed mode needs that elevated run, and it places the products in machine-wide paths that the machine's users cannot change. If you leave `INSTALLMODE` out, the installer writes the products into SYSTEM's profile and the signed-in user is not onboarded. For a per-user install, leave the command-line arguments blank and use the standard install.
+{% endhint %}
+
+If the Tenant was not onboarded, for example because the push key was wrong, the install fails and Intune reports the whole app installation as failed. It does not report partial success.
+
+### Apply a configuration change in managed mode
+
+After Intune installs the app on a device, it does not run the install command again on its own. Intune detects the app by the package's product code, which does not change when you change your Tenant's configuration. To apply a configuration change, publish it in **Settings**, then do one of the following:
+
+* In Intune, open the app's device install status, select the device, and use **Retry**.
+* Click **Sync** on the device. This is enough when the app was left in a non-compliant state, for example after a failed onboarding.
+
+Repeating the install is safe. The installer fetches your current published configuration each time and skips binaries that already match by checksum. To apply changes on a recurring schedule instead of on demand, automate periodic **Retry** actions, for example through the Microsoft Graph API.
+
+To confirm a managed mode deployment, visit [Verify an installation](verify-an-installation.md).
