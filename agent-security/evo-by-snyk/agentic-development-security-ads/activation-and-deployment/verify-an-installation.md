@@ -27,7 +27,24 @@ pkgutil --pkg-info io.snyk.ads-installer
 {% endtab %}
 {% endtabs %}
 
+For a managed mode install on Windows, run the check from an elevated PowerShell session.
+
 A command-line install on macOS or Linux deletes the installer when it finishes, so there is nothing to check on the machine. Confirm those installs in Evo instead.
+
+## Managed mode on Windows
+
+After Intune reports the app as installed, confirm the products are in place. Run these commands from an elevated PowerShell session, because managed mode places the products in machine-wide paths owned by the system:
+
+```powershell
+& "C:\Program Files\Snyk\ADS Installer\snyk-ads-installer-windows-x86_64.exe" --version
+Get-ChildItem "$env:ProgramFiles\Snyk\ADS\ads-scan\bin" -File | Select-Object Name, Length
+Get-ChildItem "$env:ProgramData\Snyk\ads-scan" -File | Select-Object Name, Length
+schtasks /Query /TN "\Snyk\ADS\" /V /FO LIST 2>$null | Select-String "TaskName|Run As User"
+```
+
+`Run As User` for the scheduled task shows `BUILTIN\Users` rather than one specific account. That is the machine-wide principal that applies the scan to every local user.
+
+The scheduled task exists only when Machines is on version 0.6.8 or later. On an earlier version the query returns nothing, which does not mean the install failed.
 
 ## If a machine is missing from Evo
 
