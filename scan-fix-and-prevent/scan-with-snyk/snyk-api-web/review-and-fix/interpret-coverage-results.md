@@ -18,7 +18,7 @@ Anyone who can view the scans of a target can open the **Coverage** tab. No addi
 3. Click the scan row you want to review.
 4. In the scan panel, click **Coverage**.
 
-The **Overview** tab of the scan also links to it with **Review the coverage here**. While a scan is running, the same line reads **Review the preliminary coverage here**.
+The **Overview** tab of the scan also links to it with **Review the coverage here**.
 
 ### Crawl progress
 
@@ -38,7 +38,7 @@ Five counts describe everything the crawler discovered: **Discovered** = **Accep
 
 Click a count to filter the endpoints table. Click it again to clear the filter. A count that is not available shows **N/A**.
 
-The **Response codes** section breaks down the responses of the scan by HTTP status class, as a share of requests. Click a class to filter the table the same way.
+The **Response codes** section breaks down the responses of the scan by HTTP status class, as a share of requests. Click a class to filter the table the same way. Snyk counts responses with a status code outside 1XX to 5XX as **Other**. This class appears only when the scan has such responses.
 
 ### Crawl health
 
@@ -51,13 +51,15 @@ The endpoints table lists the individual URLs the crawler reported. The table sh
 | Column                               | Description                                                                                                |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | **Method**                           | The HTTP method used, such as `GET` or `POST`.                                                             |
-| **Host**                             | The host the URL belongs to. Useful on targets with extra hosts, where one scan spans several hosts.       |
+| **Host**                             | The scheme, host, and port the URL belongs to, such as `https://example.com:8443`. Useful on targets with extra hosts, where one scan spans several hosts. |
 | **URL**                              | The URL itself.                                                                                            |
 | **Status**                           | The HTTP status code the target returned, as a number. Empty if the URL was never requested.               |
 | **Decision**                         | **Accepted** means Snyk sent the endpoint to the scanner. **Rejected** means it did not.                   |
 | **Reason**                           | Why Snyk did not send a rejected endpoint to the scanner. Accepted endpoints read **sent to the scanner**. |
 | **Authenticated**                    | Whether the endpoint was discovered during the authenticated phase of the crawl.                           |
 | **Parameters**                       | How many parameters were tested on this endpoint.                                                          |
+| **Response time**                    | How long the target took to respond while the crawler visited the URL. Empty if the URL was never requested. |
+| **Page load**                        | How long the page took to load in the browser. Measured for pages only, not for the requests a page makes. Shown for web targets only, and empty if the page was never loaded. |
 | **Request size** / **Response size** | The size of what was sent and received, in human-readable units.                                           |
 | **Reported**                         | When this endpoint was last recorded during the scan.                                                      |
 
@@ -85,11 +87,11 @@ To record rejected endpoints, navigate to **Target Settings** > **Reports** and 
 
 ### Inspect the request and response for an endpoint
 
-Click any row to expand it. The expanded row shows the **Status**, **Decision**, **Reason**, **Authenticated**, and **Parameters** of the endpoint and, for a fetched endpoint, the recorded **Request** and **Response**. Use **Jump to** to move to the response.
+Click any row to expand it. The expanded row shows the **Status**, **Decision**, **Reason**, **Authenticated**, **Parameters**, and **Response time** of the endpoint. On web targets, it also shows **Page load**. For a fetched endpoint, it shows the recorded **Request** and **Response**. Use **Jump to** to move to the response.
 
 You can collapse each pane individually and copy it to the clipboard with one click.
 
-The scan engine stores no response for a rejected endpoint and builds only a request line from the URL. The expanded row states this instead of showing a synthetic exchange.
+The scan engine stores no response for a rejected endpoint. Snyk builds the request from the URL and shows it in the expanded row.
 
 #### What is and is not stored
 
@@ -112,7 +114,7 @@ The search box matches only the URL. It does not search inside stored requests o
 Click **Download CSV** to export the coverage data.
 
 * The export includes every row that your filters and search match, not only the page on screen.
-* The export uses the fields you select in the dialog, not the columns visible in the table. The fields include **Info** and raw-byte versions of the two size fields, which are not shown in the table. The **Host** field is not included.
+* The export uses the fields you select in the dialog, not the columns visible in the table.
 
 The file uses the same format as the downloadable [coverage report](overview-reports/coverage-report.md), so anything you already parse against that report keeps working.
 
@@ -137,5 +139,4 @@ To remove a URL from the reject list, navigate to **Target Settings** > **Scanne
 {% hint style="info" %}
 * Snyk records rejection reasons for web targets only. On API targets (OpenAPI, Postman, Bruno, and GraphQL), the scan engine does not record why a URL was skipped. The **Reason** column is empty, and changing **Coverage Detail** to **All URLs** makes no difference.
 * The **Coverage** tab covers the crawl phase. It shows what the crawler found and what the crawler handed to the scanner. It does not show the individual test requests that the scanner then sent against each endpoint.
-* Snyk does not record response times per endpoint, so the tab cannot show which URLs were slow to respond.
 {% endhint %}
