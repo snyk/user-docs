@@ -27,3 +27,7 @@ A push key authenticates only against the region that issued it. If you use anot
 ## `uninstall` does not remove a managed install
 
 `uninstall` assumes user mode. To remove a managed install, run it with elevated privileges and add `--install-mode managed`, as described in [Remove a managed install](./#remove-a-managed-install).
+
+## A machine stops sending data after you revoke a push key
+
+A machine that still uses a revoked push key is rejected at its next check-in. Create a new push key if you do not have another active one, then redeploy the installer to the machine through your MDM tool with that key. To avoid this, revoke the old key only after the fleet has moved to the new key, as described in [Rotate a push key](./#rotate-a-push-key).

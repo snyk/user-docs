@@ -15,7 +15,7 @@ The **Settings** page requires a Tenant role with full Evo access. A user restri
 
 ## Authenticate
 
-ADS uses a push key to bind installed agents to your Snyk Tenant, so each machine's data lands in your Tenant. You can rotate the key at any time.
+ADS uses push keys to bind installed agents to your Snyk Tenant, so each machine pushes data to your Tenant. You can create multiple push keys and keep them active simultaneously, for example one for each MDM tool or device fleet. To create and revoke push keys, visit [Manage push keys](./#manage-push-keys).
 
 ## Choose products
 
@@ -48,6 +48,8 @@ After you install, confirm the result with [Verify an installation](verify-an-in
 ### Get the installer
 
 In **Settings**, under **Install on a local machine or your MDM tool of choice**, choose your **Operating system** and **Architecture**, then click **Download ADS Installer**. You get a `.pkg` on macOS and an `.msi` on Windows. The command shown below the button is the one you run after installing, pointing at the installed binary.
+
+In the same section, click **Manage push keys** to create or revoke a push key. The installer command and deployment parameters remain unchanged. Each machine authenticates with the push key specified in your deployment command. For details, visit [Manage push keys](./#manage-push-keys).
 
 Linux has no package. On Linux, use the command-line install shown in **Settings**.
 
@@ -133,6 +135,37 @@ When the installer runs, it sets up each selected product on the machine:
 * **Agent Supply Chain Security** discovers the skills and MCP servers in the known directories, performs a risk assessment, and sends the results to the Evo Tenant associated with the push key.
 * **Agent Behavior Governance** checks whether the supported agents have the required hooks configured. If they do not, it writes them with the push key, so subsequent agent activity is pushed to Evo and evaluated against your Tenant's policies.
 * **Trusted Output Assurance** checks whether the required configuration is in place: the Snyk CLI and its MCP server, the Secure at inception hooks, and the package health check, fix commands, and skills. It adds anything missing, so subsequent agent activity runs through the Secure-at-inception loop. Each developer still authenticates the Snyk CLI and MCP server individually.
+
+## Manage push keys
+
+Push keys bind deployments to your Snyk Tenant. Create one or more push keys. When you create a key, you can add a description that says which MDM tool or fleet it covers. You cannot change the description afterwards. You can keep several keys active at the same time.
+
+To open the push key page, navigate to **Settings**, and under **Install on a local machine or your MDM tool of choice** click **Manage push keys**. The **Authentication** page opens. The list shows each active key with its description, the start of the key, and the date it was created. Revoked keys do not appear in the list.
+
+### Create a push key
+
+1. On the **Authentication** page, click **Create push key**.
+2. Optional: enter a **Description**, for example the name of the MDM tool or fleet that uses the key.
+3. Confirm to create the key.
+4. Copy the push key. Evo displays the full key only once, immediately after creation. Reloading the page does not display it again.
+
+### Revoke a push key
+
+On the **Authentication** page, find the key in the list and revoke it. Revoking one key does not affect your other push keys. A machine that still uses a revoked key is rejected at its next check-in, so redeploy the installer to that machine with an active push key.
+
+### Rotate a push key
+
+To rotate a key without interrupting a fleet:
+
+1. Create a new push key.
+2. Deploy the installer through your MDM tool with the new push key in the install command.
+3. After the fleet has moved to the new key, revoke the old key.
+
+{% hint style="info" %}
+Creating or revoking a key takes effect immediately. A machine uses a new key only after you deploy the installer with that key through your MDM tool.
+
+Push keys are managed separately from the installer configuration. **Save & Publish** does not apply them.
+{% endhint %}
 
 ## If you log in outside the United States
 
