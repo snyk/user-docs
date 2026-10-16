@@ -45,7 +45,7 @@ This section covers:
 
 ## Snyk IDE plugins and extensions
 
-[Snyk IDE plugins and extensions](integrations/snyk-ide-plugins-and-extensions/) provide scanning and remediation guidance in your Projects.
+[Snyk IDE plugins and extensions](snyk-ide-plugins-and-extensions/) provide scanning and remediation guidance in your Projects.
 
 This section provides setup guidance, including authentication, proxy, workspace trust settings, and troubleshooting steps for each IDE.
 
