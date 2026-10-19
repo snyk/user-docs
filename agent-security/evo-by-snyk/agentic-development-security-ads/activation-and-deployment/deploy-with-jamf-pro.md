@@ -11,7 +11,7 @@ Deploy Agentic Development Security (ADS) to managed Macs with Jamf Pro. The pac
 You need the following:
 
 * a published product selection: in **Settings**, select your products and click **Save & Publish**
-* your Tenant ID and push key, both from **Settings**
+* your Tenant ID from **Settings**, and a push key. To create a push key, visit [Manage push keys](./#manage-push-keys).
 * the signed macOS packages, one per processor architecture, from **Settings**, where you also choose the installer version. If your automation cannot use the UI, download them from `downloads.snyk.io/ads/installer/latest/`:
   * `snyk-ads-installer-macos-arm64.pkg` for Apple silicon Macs
   * `snyk-ads-installer-macos-x86_64.pkg` for Intel Macs

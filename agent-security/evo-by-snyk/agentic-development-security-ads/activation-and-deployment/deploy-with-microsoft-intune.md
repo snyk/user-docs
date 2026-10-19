@@ -25,7 +25,7 @@ The steps below describe the standard install. For managed mode, visit [Managed 
 You need the following:
 
 * a published product selection: in **Settings**, select your products and click **Save & Publish**
-* your Tenant ID from **Settings**, and a push key. To create a push key, visit [Activation and deployment](./#authenticate).
+* your Tenant ID from **Settings**, and a push key. To create a push key, visit [Manage push keys](./#manage-push-keys).
 * your base URL, if you log in outside the default US region
 * the signed Windows package, `snyk-ads-installer-windows-x86_64.msi`, from **Settings**, where you also choose the installer version. If your automation cannot use the UI, download it from `downloads.snyk.io/ads/installer/latest/`.
 * for the standard install, a Microsoft license that includes Intune Remediations. Check Microsoft's licensing requirements for Remediations before you start.

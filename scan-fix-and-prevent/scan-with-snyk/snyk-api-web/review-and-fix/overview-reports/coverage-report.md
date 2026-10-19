@@ -56,10 +56,18 @@ The `result` column shows whether the engine **accepted** or **rejected** the re
 
 * `is on keyword reject list`
   * Meaning: Rejected because the URL contains a keyword that is on the internal keyword reject list.
-  * Words like "logout", "logoff", or "signout" are blocked to ensure that the crawler does not lose its session.
+  * The crawler blocks URLs that contain `logout`, `logoff`, or `signout`, so that it does not lose its session. It also blocks URLs that contain `delete`, `remove`, or `apagar` (Portuguese for "delete"), so that it does not trigger destructive actions.
+    * Example: `GET /api/delete?id=1` is rejected with this reason.
 * `file extension ignored`
-  * Meaning: Rejected because the URL file extension is on the internal reject list.
-  * Extensions such as .exe, .zip, and .tgz get rejected by the crawler.
+  * Meaning: Rejected because the URL path ends in a file extension from the internal reject list.
+  * The crawler skips URLs that end in any of the following extensions. The rule applies to the end of the URL path, not to the type of content the URL returns. For example, `https://example.com/report.pdf` is skipped, but the same document served at `https://example.com/download?doc=42` is crawled and scanned.
+    * JavaScript files are an exception. When a page loads a `.js` file as a script, the scanner tests that file passively, as long as the **Include scripts** scope setting of your target is on (the default). The same `.js` file found only as a URL, for example in a link or a `src` attribute, is rejected with this reason.
+
+<table><thead><tr><th width="204.6875">Type</th><th>Extensions</th></tr></thead><tbody><tr><td>Images</td><td><code>png</code>, <code>jpg</code>, <code>jpeg</code>, <code>gif</code>, <code>ico</code>, <code>bmp</code>, <code>webp</code>, <code>tiff</code>, <code>tif</code>, <code>svg</code>, <code>raw</code>, <code>psd</code></td></tr><tr><td>Media</td><td><code>mp4</code>, <code>m4v</code>, <code>mp3</code>, <code>avi</code>, <code>mov</code>, <code>mkv</code>, <code>mpg</code>, <code>mpeg</code>, <code>webm</code>, <code>ogg</code>, <code>wav</code>, <code>wma</code>, <code>wmv</code>, <code>flv</code>, <code>swf</code>, <code>vob</code>, <code>rm</code>, <code>3gp</code>, <code>3g2</code>, <code>m3u8</code></td></tr><tr><td>Fonts</td><td><code>woff</code>, <code>woff2</code>, <code>ttf</code>, <code>otf</code>, <code>eot</code></td></tr><tr><td>Archives and binaries</td><td><code>zip</code>, <code>rar</code>, <code>7z</code>, <code>gz</code>, <code>tar</code>, <code>tgz</code>, <code>bak</code>, <code>exe</code>, <code>iso</code>, <code>dmg</code>, <code>bin</code>, <code>apk</code>, <code>dll</code>, <code>msi</code>, <code>db</code>, <code>ini</code>, <code>icns</code></td></tr><tr><td>Documents</td><td><code>pdf</code>, <code>doc</code>, <code>odt</code>, <code>xls</code>, <code>xlsx</code>, <code>xlsm</code>, <code>ods</code>, <code>ppt</code>, <code>pptx</code>, <code>pps</code>, <code>odp</code></td></tr><tr><td>Web assets</td><td><code>css</code>, <code>scss</code>, <code>ts</code>, <code>js</code></td></tr></tbody></table>
+
+* `is on path reject list`
+  * Meaning: Rejected because the URL path matches a built-in list of infrastructure paths. This list contains the Cloudflare `/cdn-cgi/rum` and `/cdn-cgi/challenge-platform/` paths.
+  * This list is built into the crawler. You do not configure it, and it is separate from your own reject list.
 * `is on user reject list`
   * Meaning: Rejected because the URL matches an item that is on the user's reject list.
 * `deduplicated (simhash)`
@@ -78,6 +86,9 @@ The `result` column shows whether the engine **accepted** or **rejected** the re
   * Meaning: This URL is outside the scope of the scan.
 * `Crawled; not scanned (URL fragment)`
   * Meaning: This URL is a fragment, so it was crawled but not scanned; the fragmentless URL is sent.
+* `incremental already sent`
+  * Meaning: This URL was not sent to the scanner again because it has not changed since the previous scan.
+  * This reason appears only in incremental scans. To test all endpoints regardless of change status, run a full scan.
 
 {% hint style="info" %}
 By default, only "accepted" endpoints are present on the Coverage report. In your target **Settings > Reports > Coverage Detail**, select **All URLs** to enable "rejected" and the respective "reason".
