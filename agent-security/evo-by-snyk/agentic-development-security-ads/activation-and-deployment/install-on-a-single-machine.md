@@ -15,7 +15,7 @@ Linux has no package. On Linux, use [Install from the command line](install-on-a
 You need the following:
 
 * a published product selection: in **Settings**, select your products and click **Save & Publish**
-* your Tenant ID and push key, both from **Settings**
+* your Tenant ID from **Settings**, and a push key. To create a push key, visit [Manage push keys](./#manage-push-keys).
 * the installer version you want: **Settings** defaults to the latest published version
 * administrator access on the machine, to install the package
 * macOS 12.0 or later, or Windows
