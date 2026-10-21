@@ -93,6 +93,10 @@ Information related to the organization's objectives, priorities, and regulatory
 
 ## C
 
+### Campaign (Remediation Agent)
+
+A set of instructions in Evo by Snyk that tells the [Remediation Agent](glossary.md#remediation-agent) which repositories and open-source vulnerabilities to fix, and when. A campaign covers one Organization and runs once or on a schedule. Each run fixes vulnerabilities in Snyk-hosted infrastructure and opens pull requests in your SCM for you to review. For more information, visit [Remediation campaigns](https://docs.snyk.io/scan-fix-and-prevent/fix/remediation-agent/remediation-campaigns).
+
 ### CI/CD
 
 Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations) for details of Snyk CI/CD integrations.
@@ -465,6 +469,10 @@ In Continuous Offensive Security, hosts and paths that must never be touched, ev
 ### Registry
 
 See [Container registry](glossary.md#container-registry) or [Package registry](glossary.md#package-registry).
+
+### Remediation Agent
+
+An LLM-driven tool that automates vulnerability remediation. It scans a Project with Snyk, builds a fix plan enriched with Snyk security intelligence, applies the fix, and verifies the result. You can run it in an agentic IDE, in the Snyk CLI with `snyk fix --agentic`, or in Evo by Snyk through [campaigns](glossary.md#campaign-remediation-agent). For more information, visit [Remediation Agent](https://docs.snyk.io/scan-fix-and-prevent/fix/remediation-agent).
 
 ### Remediation directive
 

@@ -15,6 +15,18 @@ For instructions on opening pull requests from a GitHub account, see [Opening fi
 
 For a full description of Snyk Fix PRs, see [Snyk Fix Pull Requests](snyk-pull-or-merge-requests/).
 
+## Remediation campaign PRs
+
+{% hint style="info" %}
+Remediation campaigns are in [Early Access](https://docs.snyk.io/snyk-release-process#early-access-features).
+{% endhint %}
+
+Remediation campaign pull requests are opened by the [Remediation Agent](remediation-agent.md) when a campaign runs in Evo by Snyk. A campaign runs once or on a schedule against the repositories and open-source vulnerabilities you choose. For each repository, the agent combines its fixes into one pull request against the default branch.
+
+The pull request description lists the vulnerabilities the agent fixed and did not fix, how it validated the changes, and the risk of breaking changes. To review campaign pull requests and their status, navigate to **Agentic Remediation** > **Pull requests** in Evo by Snyk.
+
+For a full description of remediation campaigns, see [Remediation campaigns](remediation-agent/remediation-campaigns.md).
+
 ## PR Checks
 
 Pull request checks are tests that run on generated pull requests to identify new issues with Projects. This allows you to prevent issues from being introduced into your code before merging to the main branch.
@@ -29,3 +41,9 @@ For a full description of PR Checks, see [Pull Request Checks](../prevent/pull-r
 * Snyk Fix PRs are used for the remediation of issues. PR checks are used for the prevention of issues.
 * Snyk Fix PRs are automatic or manual requests made to resolve issues with fixes available, for example, an upgrade or a patch. PR checks are tests made on code changes based on conditions you [configured](../prevent/pull-request-checks/configure-pull-request-checks.md) during setup, which identify vulnerabilities that could affect your code before the merge.
 * Snyk Fix PRs trigger when an issue is detected from a daily scan or test. PR checks trigger when you make a code change in a PR.
+
+## The differences between Fix PRs and remediation campaign PRs
+
+* Snyk Fix PRs are initiated when a new issue is identified in a Project test or retest. Remediation campaign PRs are initiated when a campaign runs, either once or on the schedule you set.
+* Snyk Fix PRs apply an available upgrade or patch. The Remediation Agent can also make small code edits to handle breaking changes, and validates its changes before it opens the pull request.
+* Remediation campaigns do not disable Snyk Fix PRs. If you use both for a repository, both can open pull requests for the same vulnerability.
