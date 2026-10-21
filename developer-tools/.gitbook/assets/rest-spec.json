@@ -5634,6 +5634,12 @@
             "nullable": true,
             "type": "string"
           },
+          "id_from_source": {
+            "description": "Identifier of the asset in the source (SCM) system it was discovered from",
+            "example": "610306547",
+            "nullable": true,
+            "type": "string"
+          },
           "image_digests": {
             "description": "List of digests for the container image",
             "items": {
@@ -5785,6 +5791,11 @@
           "last_seen_at": {
             "description": "When the asset was last seen (i.e., confirmed to exist) via any discovery source.\nUpdated on every upsert operation.\n",
             "format": "date-time",
+            "type": "string"
+          },
+          "name": {
+            "description": "Human-readable asset name.",
+            "maxLength": 1024,
             "type": "string"
           },
           "org_ids": {
@@ -19956,6 +19967,12 @@
             "minLength": 2,
             "type": "string"
           },
+          "deprecation_date": {
+            "description": "When the model is or was deprecated by its provider. Omitted when unknown.",
+            "example": "2026-01-15T00:00:00Z",
+            "format": "date-time",
+            "type": "string"
+          },
           "has_risk_assessment": {
             "description": "Whether the model has risk scores. Available regardless of entitlement.",
             "example": true,
@@ -20090,6 +20107,12 @@
           "release_date": {
             "description": "When the model was first published upstream. Omitted when unknown.",
             "example": "2024-07-18T08:56:00Z",
+            "format": "date-time",
+            "type": "string"
+          },
+          "retirement_date": {
+            "description": "When the model is or was retired by its provider. Omitted when unknown.",
+            "example": "2026-06-30T00:00:00Z",
             "format": "date-time",
             "type": "string"
           },
@@ -24971,11 +24994,6 @@
             "nullable": true,
             "type": "string"
           },
-          "name": {
-            "description": "Repository name from SCM",
-            "maxLength": 256,
-            "type": "string"
-          },
           "org_context": {
             "$ref": "#/components/schemas/OrgContext"
           },
@@ -25011,6 +25029,12 @@
           },
           "scm_source": {
             "description": "SCM source, differentiating between providers and instances (e.g. github)",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "scm_type": {
+            "description": "Broad SCM category, regardless of instance (e.g. github-enterprise, gitlab)",
             "maxLength": 256,
             "nullable": true,
             "type": "string"
@@ -25568,7 +25592,7 @@
         "type": "object"
       },
       "RsqlFilterString": {
-        "description": "RSQL filter expression for filtering results.\n\n**Supported operators:**\n- `==` (equal), `!=` (not equal)\n- `\u003c` or `=lt=` (less than), `\u003e` or `=gt=` (greater than)\n- `\u003c=` or `=le=` (less than or equal), `\u003e=` or `=ge=` (greater than or equal)\n- `=in=(val1,val2)` (IN list), `=out=(val1,val2)` (NOT IN list)\n- `;` or ` and ` (logical AND), `,` or ` or ` (logical OR) - word operators are case-insensitive\n\n**Wildcard pattern matching:**\nUse `*` (asterisk) for flexible string matching with `==` and `!=` operators:\n- `*value*` - Contains (e.g., `registry==*docker*` matches \"docker.io\")\n- `value*` - Starts with (e.g., `registry==docker*` matches \"docker.io\")\n- `*value` - Ends with (e.g., `name==*nginx` matches \"library/nginx\")\n- `!=*value*` - Does not contain (e.g., `class!=*test*`)\n\nNote: Special SQL characters (%, _) are automatically escaped for security.\n\n**Quoted values:**\nValues can optionally be wrapped in single quotes (`'...'`) or double quotes (`\"...\"`).\nQuotes are stripped before comparison, so `registry=='docker.io'` is equivalent to `registry==docker.io`.\nEscaped quotes inside quoted values are supported (e.g., `name==\"O\\\"Reilly\"`).\nQuoting is required when filtering for empty values (see below).\n\n**Filtering for empty values:**\nUse empty quotes (`''` or `\"\"`) with `==` or `!=` to filter by empty fields:\n- `registry==''` - Matches assets where registry is empty\n- `registry!=''` - Matches assets where registry has a value\n\n**Multi-field substring search:**\nUse the special `q` field to search across multiple fields simultaneously using case-insensitive substring matching:\n- `q==\u003csearch_term\u003e` - Searches across all searchable string fields (labels, tags, registry, repository, name, config_digest, manifest_digest, index_digest, image_tag)\n- Only supports the `==` operator (no wildcards needed - automatically searches for substring matches)\n- Uses case-insensitive pattern matching (PostgreSQL ILIKE)\n- Does not support linguistic features like stemming or ranking\n- Special characters are automatically escaped for security\n- Can be combined with other filters: `q==nginx;type==container_images`\n\n**Supported fields:**\n\nCommon fields (apply to all asset types):\n- `q` (string) - Multi-field substring search (see above)\n- `id` (UUID) - Asset ID\n- `type` (string) - Type of asset. Allowed values: `container_images`\n- `class` (string) - Class of asset (e.g., A, B)\n- `created_at` (timestamp) - Asset creation timestamp (ISO 8601 format)\n- `updated_at` (timestamp) - Asset last update timestamp (ISO 8601 format)\n- `labels` (string array) - Asset labels\n- `tags` (object) - Asset tags. Requires a sub-field (e.g., `tags.env==production`)\n\nContainer image fields (apply when type is `container_images`):\n- `registry` (string) - Container image registry (e.g., docker.io)\n- `repository` (string) - Container image repository path\n- `name` (string) - Container image name\n- `config_digest` (string) - Image config digest\n- `manifest_digest` (string) - Distribution manifest digest\n- `index_digest` (string) - Distribution index digest\n- `image_tag` (string) - Image tag from discovery source\n- `image_labels` (object) - OCI image config labels. Requires a sub-field (e.g., `image_labels.vendor==nginx`)\n\n**Examples:**\n- `q==nginx` - Multi-field substring search for \"nginx\"\n- `q==docker.io;type==container_images` - Search \"docker.io\" substring in container images only\n- `type==container_images` - Exact match on asset type\n- `registry==*docker*` - Registry contains \"docker\" (wildcard)\n- `created_at\u003e2024-01-01` or `created_at=gt=2024-01-01` - Date comparison\n- `class==A;created_at=ge=2024-01-01` - AND combination\n- `labels=in=(production,staging)` - Labels IN list\n- `tags.env==production` - Tag sub-field filter\n- `image_labels.vendor==nginx` - Image label sub-field filter\n- `registry=='docker.io'` - Quoted value (equivalent to `registry==docker.io`)\n- `registry==''` - Assets where registry is empty\n- `registry!=''` - Assets where registry has a value\n",
+        "description": "RSQL filter expression for filtering results.\n\n**Supported operators:**\n- `==` (equal), `!=` (not equal)\n- `\u003c` or `=lt=` (less than), `\u003e` or `=gt=` (greater than)\n- `\u003c=` or `=le=` (less than or equal), `\u003e=` or `=ge=` (greater than or equal)\n- `=in=(val1,val2)` (IN list), `=out=(val1,val2)` (NOT IN list)\n- `;` or ` and ` (logical AND), `,` or ` or ` (logical OR) - word operators are case-insensitive\n\n**Wildcard pattern matching:**\nUse `*` (asterisk) for flexible string matching with `==` and `!=` operators:\n- `*value*` - Contains (e.g., `registry==*docker*` matches \"docker.io\")\n- `value*` - Starts with (e.g., `registry==docker*` matches \"docker.io\")\n- `*value` - Ends with (e.g., `name==*nginx` matches \"library/nginx\")\n- `!=*value*` - Does not contain (e.g., `class!=*test*`)\n\nNote: Special SQL characters (%, _) are automatically escaped for security.\n\n**Quoted values:**\nValues can optionally be wrapped in single quotes (`'...'`) or double quotes (`\"...\"`).\nQuotes are stripped before comparison, so `registry=='docker.io'` is equivalent to `registry==docker.io`.\nEscaped quotes inside quoted values are supported (e.g., `name==\"O\\\"Reilly\"`).\nQuoting is required when filtering for empty values (see below).\n\n**Filtering for empty values:**\nUse empty quotes (`''` or `\"\"`) with `==` or `!=` to filter by empty fields:\n- `registry==''` - Matches assets where registry is empty\n- `registry!=''` - Matches assets where registry has a value\n\n**Multi-field substring search:**\nUse the special `q` field to search across multiple fields simultaneously using case-insensitive substring matching:\n- `q==\u003csearch_term\u003e` - Searches across all searchable string fields (labels, tags, registry, repository, name, config_digest, manifest_digest, index_digest, image_tag)\n- Only supports the `==` operator (no wildcards needed - automatically searches for substring matches)\n- Uses case-insensitive pattern matching (PostgreSQL ILIKE)\n- Does not support linguistic features like stemming or ranking\n- Special characters are automatically escaped for security\n- Can be combined with other filters: `q==nginx;type==container_images`\n\n**Supported fields:**\n\nCommon fields (apply to all asset types):\n- `q` (string) - Multi-field substring search (see above)\n- `id` (UUID) - Asset ID\n- `key` (object) - Case-sensitive match against an asset natural key, then its aliases. Requires an asset type sub-field, for example `key.repositories==github.com/843480392`. Supports `==` and `=in=` only. Each value matches at most one asset of that type: the natural-key hit wins when the same value is also an alias of a different asset.\n- `type` (string) - Type of asset. Allowed values: `container_images`\n- `class` (string) - Class of asset (e.g., A, B)\n- `created_at` (timestamp) - Asset creation timestamp (ISO 8601 format)\n- `updated_at` (timestamp) - Asset last update timestamp (ISO 8601 format)\n- `name` (string) - Asset display name\n- `labels` (string array) - Asset labels\n- `tags` (object) - Asset tags. Requires a sub-field (e.g., `tags.env==production`)\n\nContainer image fields (apply when type is `container_images`):\n- `registry` (string) - Container image registry (e.g., docker.io)\n- `repository` (string) - Container image repository path\n- `config_digest` (string) - Image config digest\n- `manifest_digest` (string) - Distribution manifest digest\n- `index_digest` (string) - Distribution index digest\n- `image_tag` (string) - Image tag from discovery source\n- `image_labels` (object) - OCI image config labels. Requires a sub-field (e.g., `image_labels.vendor==nginx`)\n\n**Examples:**\n- `q==nginx` - Multi-field substring search for \"nginx\"\n- `q==docker.io;type==container_images` - Search \"docker.io\" substring in container images only\n- `type==container_images` - Exact match on asset type\n- `registry==*docker*` - Registry contains \"docker\" (wildcard)\n- `created_at\u003e2024-01-01` or `created_at=gt=2024-01-01` - Date comparison\n- `class==A;created_at=ge=2024-01-01` - AND combination\n- `key.repositories==github.com/843480392` - Case-sensitive. The repository whose natural key matches, or the alias when no visible repository has that natural key\n- `key.repositories=in=(github.com/843480392,github.com/snyk/assets-api)` - Several keys, repositories only\n- `labels=in=(production,staging)` - Labels IN list\n- `tags.env==production` - Tag sub-field filter\n- `image_labels.vendor==nginx` - Image label sub-field filter\n- `registry=='docker.io'` - Quoted value (equivalent to `registry==docker.io`)\n- `registry==''` - Assets where registry is empty\n- `registry!=''` - Assets where registry has a value\n",
         "example": "type==container_images;created_at\u003e2024-01-01",
         "type": "string"
       },
@@ -26454,11 +26478,6 @@
                 },
                 "maxItems": 16,
                 "type": "array"
-              },
-              "name": {
-                "description": "Sbom name",
-                "maxLength": 256,
-                "type": "string"
               },
               "sbom_created_at": {
                 "description": "When the SBOM was generated, ISO 8601 format. Can be distinct from created_at",
@@ -28922,6 +28941,14 @@
               }
             ],
             "description": "Type of Scanner producing Findings associated with this\nComponent."
+          },
+          "tool": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/String256"
+              }
+            ],
+            "description": "Tool used to perform the scan."
           }
         },
         "required": [
@@ -34211,6 +34238,136 @@
           }
         },
         "summary": "Get group value aggregation - Group scope (Early Access)",
+        "tags": [
+          "Inventory Assets"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "asset",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/groups/{group_id}/inventory/assets/lookup": {
+      "get": {
+        "description": "Resolves a single asset within the group and asset type.\nThe key is matched against the asset natural key first, then against aliases.\nWhen both match different assets, the natural key match is returned.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "operationId": "getAssetByKeyGroup",
+        "parameters": [
+          {
+            "description": "The unique identifier of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "The requested API version",
+            "in": "query",
+            "name": "version",
+            "schema": {
+              "example": "2024-10-15",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            }
+          },
+          {
+            "description": "JSON:API asset type to search within, such as repositories, container_images, or sboms",
+            "in": "query",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "description": "Natural key or alias. A natural key match is preferred over an alias match.",
+            "in": "query",
+            "name": "key",
+            "required": true,
+            "schema": {
+              "maxLength": 1024,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/SparseFieldsets"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/PolymorphicAssetData"
+                    },
+                    "links": {
+                      "properties": {
+                        "self": {
+                          "description": "Link to the current document",
+                          "format": "uri",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Asset retrieved successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Look up an asset by natural key or alias - Group scope (Early Access)",
         "tags": [
           "Inventory Assets"
         ],
@@ -74411,6 +74568,136 @@
           }
         },
         "summary": "Get group value aggregation - Org scope (Early Access)",
+        "tags": [
+          "Inventory Assets"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "asset",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/inventory/assets/lookup": {
+      "get": {
+        "description": "Resolves a single asset within the org and asset type.\nThe key is matched against the asset natural key first, then against aliases.\nWhen both match different assets, the natural key match is returned.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getAssetByKeyOrg",
+        "parameters": [
+          {
+            "description": "The unique identifier of the organization",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "The requested API version",
+            "in": "query",
+            "name": "version",
+            "schema": {
+              "example": "2024-10-15",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            }
+          },
+          {
+            "description": "JSON:API asset type to search within, such as repositories, container_images, or sboms",
+            "in": "query",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "description": "Natural key or alias. A natural key match is preferred over an alias match.",
+            "in": "query",
+            "name": "key",
+            "required": true,
+            "schema": {
+              "maxLength": 1024,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/SparseFieldsets"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/PolymorphicAssetData"
+                    },
+                    "links": {
+                      "properties": {
+                        "self": {
+                          "description": "Link to the current document",
+                          "format": "uri",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Asset retrieved successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Look up an asset by natural key or alias - Org scope (Early Access)",
         "tags": [
           "Inventory Assets"
         ],
@@ -117425,7 +117712,7 @@
             "$ref": "#/components/parameters/RsqlFilter"
           },
           {
-            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n- `sbom_name` - SBOM name (SBOMs only)\n- `format` - SBOM format/standard (SBOMs only)\n- `document_version` - SBOM document version (SBOMs only)\n- `sbom_created_at` - SBOM creation timestamp (SBOMs only)\n",
+            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n- `q` - Full text search\n- `id`\n- `key`\n- `labels`\n- `tags`\n- `name`\n- `org_id`\n\ncontainer_image specific\n- `registry`\n- `repository`\n- `config_digest`\n- `manifest_digest`\n- `index_digest`\n- `image_labels`\n- `image_tag`\n\nsbom specific\n- `format`\n- `format_version`\n- `document_uid`\n- `document_version`\n- `sbom_created_at`\n- `lifecycles`\n- `component_name`\n- `component_purl`\n- `component_type`\n\nrepository specific\n- `url`\n- `scm_id`\n- `visibility`\n- `scm_organization`\n- `scm_source`\n- `scm_type`\n- `archived`\n- `fork`\n",
             "example": "-created_at",
             "in": "query",
             "name": "sort",
@@ -118139,6 +118426,136 @@
           }
         },
         "summary": "Get group value aggregation (Early Access)",
+        "tags": [
+          "Inventory Assets"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "asset",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/tenants/{tenant_id}/inventory/assets/lookup": {
+      "get": {
+        "description": "Resolves a single asset within the tenant and asset type.\nThe key is matched against the asset natural key first, then against aliases.\nWhen both match different assets, the natural key match is returned.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
+        "operationId": "getAssetByKeyTenant",
+        "parameters": [
+          {
+            "description": "The unique identifier of the tenant",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "The requested API version",
+            "in": "query",
+            "name": "version",
+            "schema": {
+              "example": "2024-10-15",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            }
+          },
+          {
+            "description": "JSON:API asset type to search within, such as repositories, container_images, or sboms",
+            "in": "query",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "description": "Natural key or alias. A natural key match is preferred over an alias match.",
+            "in": "query",
+            "name": "key",
+            "required": true,
+            "schema": {
+              "maxLength": 1024,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/SparseFieldsets"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/PolymorphicAssetData"
+                    },
+                    "links": {
+                      "properties": {
+                        "self": {
+                          "description": "Link to the current document",
+                          "format": "uri",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Asset retrieved successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Look up an asset by natural key or alias (Early Access)",
         "tags": [
           "Inventory Assets"
         ],
