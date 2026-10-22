@@ -27,7 +27,7 @@ Software libraries and platforms that provide the tools to build, manage, and co
 
 ### AI evaluation
 
-The process of measuring an AI system’s performance, quality, and safety against defined goals and benchmarks, using tests, metrics, and human judgement.
+The process of measuring an AI system’s performance, quality, and safety against defined goals and benchmarks, using tests, metrics, and human judgment.
 
 ### Agentic
 
