@@ -15,7 +15,7 @@ CLI and SCM support for uv is in Early Access and available only with Enterprise
 
 ## CLI support for uv
 
-### Prerequites
+### Prerequisites
 
 Ensure you have `uv` version 0.9.29 or later installed.
 
