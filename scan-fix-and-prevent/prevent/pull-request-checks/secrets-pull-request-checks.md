@@ -30,11 +30,11 @@ Use them to:
 
 Secrets Pull Request checks require Snyk Secrets to be enabled for the Organization.
 
-After you enable Snyk Secrets for an Organization, reimport your repositories to create the underlying Project. This step is required for Secrets scanning to work, including recurring tests and Pull Request checks.
+After you enable Snyk Secrets for an Organization, Snyk activates existing Secrets Projects and reimports your repositories to create any missing Projects. You do not need to reimport repositories manually.
 
 ## What you see in a pull request
 
-When Secrets is enabled, and a repository has been reimported, Snyk scans that repository's pull requests for secrets. On a pull request with new findings, you see:
+After you enable Secrets and Snyk creates the Secrets Project for a repository, Snyk scans that repository's pull requests for secrets. On a pull request with new findings, you see:
 
 * A `secrets/snyk` SCM check reporting the status of the Secrets scan.
 *   A Secrets row in the Snyk pull request summary comment, alongside the other Snyk checks.

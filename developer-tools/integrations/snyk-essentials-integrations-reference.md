@@ -13,7 +13,7 @@ description: >-
 
 The **Integrations** page, under **Settings** > **Integrations**, shows all active integrations, including any data automatically synced from your existing Snyk Organizations.
 
-The following supported Snyk data are automatically synced: Snyk Open Source, Snyk Code, Snyk IaC, Snyk Container.
+The following supported Snyk data are automatically synced: Snyk Open Source, Snyk Code, Snyk IaC, Snyk Container, and Snyk Secrets.
 
 Each connected integration enables you to pause data syncing, modify integration profiles and configurations, delete the integration, or check when the integration was last synced and when the next sync is scheduled.
 

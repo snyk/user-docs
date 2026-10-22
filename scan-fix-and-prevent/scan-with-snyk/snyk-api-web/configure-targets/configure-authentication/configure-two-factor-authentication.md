@@ -174,7 +174,24 @@ Then configure 2FA in Snyk API & Web as follows:
 
 ### Communicate OTP to Snyk API & Web
 
-With 2FA configured on the target settings, you must communicate the OTP to Snyk when your 2FA requests it. Send the OTP by calling an endpoint from the Snyk API where you send the OTP in the request body.
+With 2FA configured on the target settings, you must communicate the OTP to Snyk API & Web when your 2FA requests it. Send the OTP from the target settings, or by calling the Snyk API.
+
+#### Send the OTP from the target settings
+
+1. When your 2FA sends the code by email or text message, navigate to the **Authentication** tab of the target settings.
+2. Scroll down to the **Two-Factor Authentication (2FA)** section.
+3. Enter the code in the **OTP** field below the **Unique 2FA Configuration URL**.
+4. Click **Send OTP**, or press **Enter**.
+
+Snyk API & Web shows the **Other OTP sent** message and clears the field.
+
+{% hint style="info" %}
+The **OTP** field and **Send OTP** button appear only after you save and enable **Other OTP** 2FA for the target.
+{% endhint %}
+
+#### Send the OTP with the API
+
+Use the API to automate sending the OTP. Send the OTP in the request body.
 
 Curl example:
 

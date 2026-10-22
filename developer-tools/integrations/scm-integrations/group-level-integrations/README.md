@@ -38,6 +38,7 @@ The following supported Snyk data are automatically synced:
 * Snyk Code
 * Snyk IaC
 * Snyk Container
+* Snyk Secrets
 
 Each connected integration enables you to:
 

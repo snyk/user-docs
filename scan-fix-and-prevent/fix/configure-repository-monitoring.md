@@ -26,7 +26,7 @@ Repository monitoring configuration provides the following capabilities:
 * Centralized asset monitoring: view monitoring status for all products, identify health status, and see required actions (such as enabling Snyk Code or resolving SCM integration issues) in one view.
 * Bulk import: import repositories directly from the Group **Inventory** page into specific Snyk Organizations.
 * On-demand retesting: trigger a retest for specific repositories directly from **Inventory**.
-* Actionable error resolution: clear guidance ia available when testing fails due to integration issues or entitlements. After the underlying issue is resolved, testing resumes automatically.
+* Actionable error resolution: clear guidance is available when testing fails due to integration issues or entitlements. After the underlying issue is resolved, testing resumes automatically.
 
 ## Configure settings for repository monitoring
 
@@ -55,7 +55,7 @@ Click **Continue**.
 
 On the configuration page, the following configurations are available:
 
-* **Test frequency**: update the test frequency for Open Source and Code Projects to **Daily**, **Weekly**, or **Never**.
+* **Test frequency**: update the test frequency for Open Source, Code, and Secrets Projects to **Daily**, **Weekly**, or **Never**. For Secrets, the frequency applies to recurring tests only. Scans triggered by pushes and by Pull Request checks are not affected.
 
 {% hint style="info" %}
 It is not possible to manage these settings at Organization level for assets tracked on the **Inventory** page.
@@ -77,6 +77,15 @@ Click **Continue**.
 Review your configuration settings and click **Enable monitoring**.
 {% endstep %}
 {% endstepper %}
+
+### Configure the Secrets test frequency for a single repository
+
+To set the Secrets test frequency for one repository:
+
+1. Navigate to **Inventory** > **All Assets**.
+2. Click the repository asset.
+3. Open the **Settings** tab.
+4. In the **Test Frequency** section, select **Daily**, **Weekly**, or **Never** for **Secrets testing**. The default is **Weekly**.
 
 ### Disable recurring testing
 

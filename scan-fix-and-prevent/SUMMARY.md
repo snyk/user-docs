@@ -436,6 +436,7 @@
   * [Vulnerabilities with Social Trends](fix/prioritize-issues-for-fixing/vulnerabilities-with-social-trends.md)
 * [Pull Requests](fix/pull-requests.md)
 * [Remediation Agent](fix/remediation-agent.md)
+  * [Remediation campaigns](fix/remediation-agent/remediation-campaigns.md)
 * [Snyk Pull or Merge Requests](fix/snyk-pull-or-merge-requests/README.md)
   * [Enable automatic Fix PRs](fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs.md)
   * [Enable automatic backlog PRs for previously known vulnerabilities](fix/snyk-pull-or-merge-requests/enable-automatic-backlog-prs-for-previously-known-vulnerabilities.md)
