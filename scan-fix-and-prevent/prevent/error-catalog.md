@@ -365,6 +365,7 @@ Due to service availability issues, Snyk cannot process the request. This issue 
 
 The environment is missing requirements to execute the application successfully.
 
+
 ### [SNYK-0099](error-catalog.md#snyk-0099)
 
 **Unavailable due to maintenance**
@@ -429,7 +430,8 @@ Snyk was unable to find any supported files for the AIBOM command. Ensure the di
 
 The versioning schema used does not support the given tag. Update the versioning schema to include the tag.
 
-Once the tag of the custom base image is correct, the versioning schema must be modified. You can use a different versioning schema that supports all tags in the repository or you can update the relevant properties of the versioning schema.
+Once the tag of the custom base image is correct, the versioning schema must be modified.
+You can use a different versioning schema that supports all tags in the repository or you can update the relevant properties of the versioning schema.
 
 For example, if the repository currently uses Semver, and a new tag "1.2.5.7" needs to be added, then you can use a Custom versioning schema.
 
@@ -535,7 +537,7 @@ No versioning schema exists for the repository. This image is the first in its r
 
 **Unable to apply versioning schema**
 
-A versioning schema already exists for repository. Remove the "versioning\_schema" property or, if you want to update the versioning schema, use the PATCH endpoint.
+A versioning schema already exists for repository. Remove the "versioning_schema" property or, if you want to update the versioning schema, use the PATCH endpoint.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -617,6 +619,7 @@ The provided versioning schema is invalid and image could therefor not be create
 
 The encountered error only provides basic information, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
 
+
 **Help Links:**
 
 * [https://docs.snyk.io/snyk-cli/commands](https://docs.snyk.io/snyk-cli/commands)
@@ -628,6 +631,7 @@ The encountered error only provides basic information, please take a look at the
 
 The specified environment cannot be used. As a result, the configuration remains unchanged. Provide the correct specifications for the environment and try again.
 
+
 **Help Links:**
 
 * [https://docs.snyk.io/snyk-cli/commands/config-environment](https://docs.snyk.io/snyk-cli/commands/config-environment)
@@ -636,7 +640,10 @@ The specified environment cannot be used. As a result, the configuration remains
 
 **Possible inconsistent configuration**
 
-You can configure the CLI in different ways, for example via Environment Variables or configuration file. If one parameter is configured multiple times, it is probably unintentional and might cause unexpected behavior. Review configured environment variables and ensure that everything is intentional. If so, you can skip this check by using --no-check.
+You can configure the CLI in different ways, for example via Environment Variables or configuration file.
+If one parameter is configured multiple times, it is probably unintentional and might cause unexpected behavior.
+Review configured environment variables and ensure that everything is intentional. If so, you can skip this check by using --no-check.
+
 
 **Help Links:**
 
@@ -648,6 +655,7 @@ You can configure the CLI in different ways, for example via Environment Variabl
 
 A specified flag is missing an option value. Provide a correct option value and try again.
 
+
 **Help Links:**
 
 * [https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary)
@@ -657,6 +665,7 @@ A specified flag is missing an option value. Provide a correct option value and 
 **Invalid flag option**
 
 A specified flag option or combination is invalid. Provide a valid flag option or combination and try again.
+
 
 **Help Links:**
 
@@ -668,11 +677,13 @@ A specified flag option or combination is invalid. Provide a valid flag option o
 
 If you are testing an npm package, check the version and package name and try running `snyk test` again. If you are testing a repository, try testing it at https://snyk.io/test/. For further assistance, run `snyk help` or see the Snyk docs.
 
+
 ### [SNYK-CLI-0006](error-catalog.md#snyk-cli-0006)
 
 **Missing AUTH token**
 
 When running your command, Snyk requires an authenticated account. You must include your API token as an environment value, or use `snyk auth` to authenticate.
+
 
 **Help Links:**
 
@@ -685,6 +696,7 @@ When running your command, Snyk requires an authenticated account. You must incl
 
 The specified CLI command includes missing or misconfigured arguments. Provide the correct arguments and try again.
 
+
 **Help Links:**
 
 * [https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary)
@@ -694,6 +706,7 @@ The specified CLI command includes missing or misconfigured arguments. Provide t
 **No supported files found**
 
 Snyk could not detect any supported target files. Ensure the files you are importing are supported, that you are in the right directory, and try again.
+
 
 **Help Links:**
 
@@ -728,6 +741,7 @@ CLI was unable to validate the required parameter. Provide the correct parameter
 
 CLI was unable to execute your SCA command, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
 
+
 **Help Links:**
 
 * [https://docs.snyk.io/snyk-cli/commands/test](https://docs.snyk.io/snyk-cli/commands/test)
@@ -737,6 +751,7 @@ CLI was unable to execute your SCA command, please take a look at the given deta
 **IAC failure**
 
 CLI was unable to execute your IAC command, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
+
 
 **Help Links:**
 
@@ -748,6 +763,7 @@ CLI was unable to execute your IAC command, please take a look at the given deta
 
 CLI was unable to execute your SAST command, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
 
+
 **Help Links:**
 
 * [https://docs.snyk.io/snyk-cli/commands/code](https://docs.snyk.io/snyk-cli/commands/code)
@@ -758,11 +774,14 @@ CLI was unable to execute your SAST command, please take a look at the given det
 
 This feature is under development and is not yet available for public use.
 
+
 ### [SNYK-CLI-0015](error-catalog.md#snyk-cli-0015)
 
 **Command is experimental**
 
-This CLI command is experimental, which means it is provided "as-is" without warranty of any kind. You must acknowledge this by specifying the --experimental flag to run the command.
+This CLI command is experimental, which means it is provided "as-is" without warranty of any kind.
+You must acknowledge this by specifying the --experimental flag to run the command.
+
 
 ### [SNYK-CLI-0016](error-catalog.md#snyk-cli-0016)
 
@@ -777,11 +796,11 @@ This feature is disabled for your current organization. You can enable it in the
 **DNS resolution failed**
 
 Unable to resolve the hostname to an IP address. Troubleshooting steps.
+1) Test DNS resolution: nslookup api.<instance>.snyk.io.
+2) Try different DNS servers: Change DNS to 8.8.8.8 or 1.1.1.1.
+3) Check corporate proxy/firewall DNS blocking.
+4) Verify hostname spelling in your Snyk configuration.
 
-1. Test DNS resolution: nslookup api..snyk.io.
-2. Try different DNS servers: Change DNS to 8.8.8.8 or 1.1.1.1.
-3. Check corporate proxy/firewall DNS blocking.
-4. Verify hostname spelling in your Snyk configuration.
 
 **Help Links:**
 
@@ -793,11 +812,11 @@ Unable to resolve the hostname to an IP address. Troubleshooting steps.
 **Network request timeout**
 
 The network request timed out. Troubleshooting steps.
+1) Test connectivity: ping api.<instance>.snyk.io.
+2) Check corporate proxy timeout settings.
+3) Try different network: Mobile hotspot or different WiFi.
+4) Check if firewall is blocking or throttling connections.
 
-1. Test connectivity: ping api..snyk.io.
-2. Check corporate proxy timeout settings.
-3. Try different network: Mobile hotspot or different WiFi.
-4. Check if firewall is blocking or throttling connections.
 
 **Help Links:**
 
@@ -810,11 +829,11 @@ The network request timed out. Troubleshooting steps.
 **Network unreachable**
 
 Unable to reach the target network or host. Troubleshooting steps.
+1) Test Snyk connectivity: ping api.<instance>.snyk.io.
+2) Check corporate firewall blocks Snyk domains.
+3) Check if VPN routing is blocking Snyk domains.
+4) Try mobile hotspot to isolate network issues.
 
-1. Test Snyk connectivity: ping api..snyk.io.
-2. Check corporate firewall blocks Snyk domains.
-3. Check if VPN routing is blocking Snyk domains.
-4. Try mobile hotspot to isolate network issues.
 
 **Help Links:**
 
@@ -826,11 +845,11 @@ Unable to reach the target network or host. Troubleshooting steps.
 **TLS certificate error**
 
 There was an issue with the TLS/SSL certificate during the secure connection. Troubleshooting steps.
+1) Check system time: Ensure your system clock is correct (certificates are time-sensitive).
+2) Update system certificates: Windows Update or macOS Software Update.
+3) Corporate firewall: Check if corporate firewall intercepts SSL traffic.
+4) Custom certificates: Set NODE_EXTRA_CA_CERTS environment variable to path of your CA certificate file.
 
-1. Check system time: Ensure your system clock is correct (certificates are time-sensitive).
-2. Update system certificates: Windows Update or macOS Software Update.
-3. Corporate firewall: Check if corporate firewall intercepts SSL traffic.
-4. Custom certificates: Set NODE\_EXTRA\_CA\_CERTS environment variable to path of your CA certificate file.
 
 **Help Links:**
 
@@ -842,11 +861,11 @@ There was an issue with the TLS/SSL certificate during the secure connection. Tr
 **Connection refused**
 
 The connection to the server was refused. Troubleshooting steps.
+1) Check Snyk status: Visit status.snyk.io for service outages.
+2) Test connectivity: ping api.<instance>.snyk.io.
+3) Check corporate proxy blocks HTTPS connections to Snyk.
+4) Try mobile hotspot or different network.
 
-1. Check Snyk status: Visit status.snyk.io for service outages.
-2. Test connectivity: ping api..snyk.io.
-3. Check corporate proxy blocks HTTPS connections to Snyk.
-4. Try mobile hotspot or different network.
 
 **Help Links:**
 
@@ -859,11 +878,11 @@ The connection to the server was refused. Troubleshooting steps.
 **Network communication error**
 
 An unexpected network error occurred during communication. Troubleshooting steps.
+1) Test connectivity: ping api.<instance>.snyk.io.
+2) Check proxy settings: HTTP_PROXY and HTTPS_PROXY environment variables.
+3) Run with verbose logging: snyk command --debug.
+4) Try mobile hotspot to isolate network issues.
 
-1. Test connectivity: ping api..snyk.io.
-2. Check proxy settings: HTTP\_PROXY and HTTPS\_PROXY environment variables.
-3. Run with verbose logging: snyk command --debug.
-4. Try mobile hotspot to isolate network issues.
 
 **Help Links:**
 
@@ -876,17 +895,23 @@ An unexpected network error occurred during communication. Troubleshooting steps
 
 CLI was unable to execute your Secrets command, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
 
+
 ### [SNYK-CLI-0024](error-catalog.md#snyk-cli-0024)
 
 **Data rendering failed**
 
-Rendering the data to at least one of the required outputs failed. Please review the error details provided. If the details do not help resolve the issue, consider debugging or contacting support.
+Rendering the data to at least one of the required outputs failed. Please review the error details provided.
+If the details do not help resolve the issue, consider debugging or contacting support.
+
 
 ### [SNYK-CLI-0025](error-catalog.md#snyk-cli-0025)
 
 **Snyk CLI operation interrupted**
 
-Snyk CLI stopped before completing the operation. This occurs if you cancel the command with Ctrl+C, your system runs low on memory, or another program terminates Snyk. Run the command again. If the problem persists, ensure that your system has enough memory and resources for Snyk CLI operations. For additional troubleshooting, refer to Debugging the Snyk CLI.
+Snyk CLI stopped before completing the operation. This occurs if you cancel the command with Ctrl+C, your system runs low on memory, or another program terminates Snyk. 
+Run the command again. If the problem persists, ensure that your system has enough memory and resources for Snyk CLI operations. 
+For additional troubleshooting, refer to Debugging the Snyk CLI.
+
 
 **Help Links:**
 
@@ -896,11 +921,86 @@ Snyk CLI stopped before completing the operation. This occurs if you cancel the 
 
 **Command timed out**
 
-The command timed out because it did not complete within the allowed time. This happens with large workloads, slow network connections, or heavy server load. To resolve this issue, increase the timeout limit, divide your workload into smaller parts, or run the command again. For details on Snyk CLI configuration, see Snyk CLI documentation.
+The command timed out because it did not complete within the allowed time. This happens with large workloads, slow network connections, or heavy server load. 
+To resolve this issue, increase the timeout limit, divide your workload into smaller parts, or run the command again. 
+For details on Snyk CLI configuration, see Snyk CLI documentation.
+
 
 **Help Links:**
 
 * [https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli)
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
+### [SNYK-CLI-0027](error-catalog.md#snyk-cli-0027)
+
+**Connection reset**
+
+Your firewall or security device resets the connection to Snyk. Verify your network settings or switch to a different network to isolate the interference. Read more about troubleshooting in the [Snyk CLI debugging guide](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli) and visit our [Snyk Status](https://status.snyk.io/) page.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+* [https://status.snyk.io/](https://status.snyk.io/)
+* [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
+
+### [SNYK-CLI-0028](error-catalog.md#snyk-cli-0028)
+
+**Proxy connection failed**
+
+Your HTTP proxy rejects the connection to Snyk. Verify your proxy authentication and ensure that the [environment variables](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli) are correct. Review [debugging the Snyk CLI](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli) for more troubleshooting steps.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli)
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
+### [SNYK-CLI-0029](error-catalog.md#snyk-cli-0029)
+
+**Invalid machine ID**
+
+Snyk failed to parse a machine ID. The error details identify the source and the reason the value was rejected. If the value was supplied explicitly to the Snyk CLI or your integration, correct the value, because Snyk does not fix it automatically and this warning repeats on every run. If the value came from a machine ID file and this warning keeps recurring, another tool is writing an invalid value to that file.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
+### [SNYK-CLI-0030](error-catalog.md#snyk-cli-0030)
+
+**Machine ID file unreadable**
+
+A machine ID file exists but Snyk could not read it, for example because of its permissions or ownership, an I/O error, or because the path is not a regular file. Check the permissions and ownership of the file named in the error details and ensure that the user running Snyk can read it.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
+### [SNYK-CLI-0031](error-catalog.md#snyk-cli-0031)
+
+**Machine ID not persisted**
+
+Snyk could not store a machine ID in any location, so no machine ID is reported for this machine. Typical causes are a read-only file system or container, a missing home directory, or a full disk. The error details list the paths that were tried and the operating system error.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
+### [SNYK-CLI-0032](error-catalog.md#snyk-cli-0032)
+
+**Unable to process token scoping request**
+
+An unexpected error occurred while narrowing the permissions of an authentication token. Check Snyk status, then try again. If the issue persists, consider debugging or consulting support.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+
+* [https://status.snyk.io/](https://status.snyk.io/)
+* [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 * [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
 
 ### [SNYK-OS-7001](error-catalog.md#snyk-os-7001)
@@ -1011,25 +1111,25 @@ A published Rule Extension with the same fully qualified name already exists for
 
 **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
-### [SNYK-CODE-0008](error-catalog.md#snyk-code-0008)
+**Help Links:**
 
-**Organization relationships must be unique**
-
-Each Org relationship to a Snyk Rule Extension must be unique.
-
-Make sure each Org in relationships has a different ID.
-
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#how-do-i-publish-my-draft-rule-extensions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#how-do-i-publish-my-draft-rule-extensions)
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions)
 
 ### [SNYK-CODE-0009](error-catalog.md#snyk-code-0009)
 
-**Group relationship must match the Group in the requested URL**
+**Group assignment must match the Group in the requested URL**
 
-You cannot associate a Snyk Rule Extension to any other Group.
+You cannot assign a Snyk Rule Extension to any other Group.
 
 Make sure the Group ID under relationships matches the Group ID in the request path.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#can-i-apply-the-rule-extension-to-a-group-or-an-organization](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#can-i-apply-the-rule-extension-to-a-group-or-an-organization)
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions)
 
 ### [SNYK-CODE-0010](error-catalog.md#snyk-code-0010)
 
@@ -1041,6 +1141,12 @@ Make sure each Org in the request is within the requested Group.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
+**Help Links:**
+
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#what-entitlements-and-permissions-do-i-need-to-use-this-feature](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#what-entitlements-and-permissions-do-i-need-to-use-this-feature)
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#can-i-apply-the-rule-extension-to-a-group-or-an-organization](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#can-i-apply-the-rule-extension-to-a-group-or-an-organization)
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions)
+
 ### [SNYK-CODE-0011](error-catalog.md#snyk-code-0011)
 
 **Rule Extension limit reached**
@@ -1051,15 +1157,27 @@ To create a new Rule Extension you will have to remove an existing one.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
+**Help Links:**
+
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#is-there-a-limit-to-the-number-of-rule-extensions-i-can-create](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/faq-and-troubleshooting#is-there-a-limit-to-the-number-of-rule-extensions-i-can-create)
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions)
+
 ### [SNYK-CODE-0012](error-catalog.md#snyk-code-0012)
 
 **Rule Extension already published for the Group**
 
 The Rule Extension under test conflicts with an already published Rule Extension.
 
-A test cannot be performed if a Rule Extension with the same fully qualified name and type is already published for the Group. Either delete the already published Rule Extension or perform a test with a different fully qualified name or type.
+A test cannot be performed if a Rule Extension with the same fully qualified name
+and type is already published for the Group. Either delete the already published Rule Extension
+or perform a test with a different fully qualified name or type.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/impact-testing](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/impact-testing)
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions)
 
 ### [SNYK-CODE-0013](error-catalog.md#snyk-code-0013)
 
@@ -1071,6 +1189,11 @@ Make sure to provide a valid Test ID.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
+**Help Links:**
+
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/impact-testing](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/impact-testing)
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions)
+
 ### [SNYK-CODE-0014](error-catalog.md#snyk-code-0014)
 
 **Test results have expired**
@@ -1080,6 +1203,11 @@ The results for testing Rule Extensions have expired and are no longer available
 Please trigger a new test.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+**Help Links:**
+
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/impact-testing](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions/impact-testing)
+* [https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions)
 
 ***
 
@@ -1111,7 +1239,7 @@ The server cannot process the request due to invalid or corrupt data. Review the
 
 **Help Links:**
 
-* [https://docs.snyk.io/snyk-api-info/getting-started-using-snyk-rest-api](https://docs.snyk.io/snyk-api-info/getting-started-using-snyk-rest-api)
+* [https://docs.snyk.io/snyk-api-info/getting-started-using-snyk-rest-api ](https://docs.snyk.io/snyk-api-info/getting-started-using-snyk-rest-api )
 
 ### [SNYK-OPENAPI-0002](error-catalog.md#snyk-openapi-0002)
 
@@ -1287,9 +1415,23 @@ The specified platform is not supported.
 
 **Empty manifest file**
 
-Could not find any packages to analyze in the provided manifest file. Ensure the manifest file exists and includes valid dependency definitions.
+Could not find any packages to analyze in the provided manifest file.
+Ensure the manifest file exists and includes valid dependency definitions.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+### [SNYK-OS-0013](error-catalog.md#snyk-os-0013)
+
+**Universal Broker for Snyk Open Source not enabled**
+
+To process brokered repositories and package registries, the brokered SCA Snyk app must be installed.
+To do this, navigate to your Group Settings and enable "Universal Broker for Snyk Open Source".
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+
+* [https://docs.snyk.io/platform-administration/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker#integrate-your-connection-with-an-organization-that-uses-universal-broker](https://docs.snyk.io/platform-administration/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker#integrate-your-connection-with-an-organization-that-uses-universal-broker)
 
 ### [SNYK-OS-DOTNET-0001](error-catalog.md#snyk-os-dotnet-0001)
 
@@ -1315,10 +1457,10 @@ The provided manifest file defines a `<TargetFramework>` or `<TargetFrameworks>`
 
 **Your C# code is missing a static Main function**
 
-This error occurs when no static Main method with a correct signature is found in the code that produces an executable file. It also occurs if the entry point function, `Main`, is defined with the wrong case, such as lower-case main.
+This error occurs when no static Main method with a correct signature is found in the code that produces an executable file. 
+It also occurs if the entry point function, `Main`, is defined with the wrong case, such as lower-case main.
 
 In order to fix this issue, ensure that your program has a .cs file that contains a main function, such as
-
 ```c#
 namespace Example
 {
@@ -1342,12 +1484,13 @@ namespace Example
 
 **The dotnet CLI is unable to generate a self-contained binary**
 
-This error occurs when running `dotnet publish --sc --framework <your-target-framework>` fails to generate a self-contained binary. Snyk needs to run this command in order to adequately determine the dependency tree for your project. If this command fails, Snyk cannot continue.
+This error occurs when running `dotnet publish --sc --framework <your-target-framework>` fails to generate a 
+self-contained binary. Snyk needs to run this command in order to adequately determine the dependency tree for your project. If this command fails, Snyk cannot continue.
 
 Steps to determine why this happened:
 
 * Checkout a clean version of your project in a temporary folder
-* Run `dotnet publish --sc --framework <your-target-framework>` on your project, and confirm this step fails.
+* Run `dotnet publish --sc --framework <your-target-framework> ` on your project, and confirm this step fails.
 
 If this step is successful locally, it is possible that Snyk is running another version of the .NET SDK. To tell Snyk which version of the .NET SDK to use, consider using the [global.json](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json) solution provided by Microsoft.
 
@@ -1363,7 +1506,7 @@ If this step is successful locally, it is possible that Snyk is running another 
 
 **The dotnet CLI was unable to restore from private package sources**
 
-This error occurs when running `dotnet restore` fails to access dependencies stored in a private package source that Snyk does not have access to.
+This error occurs when running `dotnet restore` fails to access dependencies stored in a private package source that Snyk does not have access to. 
 
 This means that your `.csproj` file or files refer to a dependency hosted on a private package store or Nuget Artifact Registry defined in your `NuGet.config` file, such as:
 
@@ -1394,13 +1537,12 @@ You can set up a connection to your private Nuget repository in your Snyk integr
 
 The `dotnet` tool was unable to locate the `.targets`, `.csproj` or `.props` file responsible for one or more MSBuild conditions in your project file.
 
-The tool encountered an error like
-
+The tool encountered an error like 
 ```
 /path/to/file/project.csproj(33,13): error MSB4100: Expected "$(SomeCondition)" to evaluate to a boolean instead of "", in condition "!$(SomeCondition)".
 ```
 
-This means the condition definition is missing in the project file that is currently being restored and in any project linked to it from there.
+This means the condition definition is missing in the project file that is currently being restored and in any project linked to it from there.      
 
 Snyk can scan only the project files accessible in the current repository or the private dependencies available to Snyk.
 
@@ -1442,7 +1584,7 @@ This error occurs when your code depends on external libraries that are added to
 
 **No target frameworks found in manifest files**
 
-Snyk was unable to detect any `<TargetFramework>`s in the supplied manifest files.
+Snyk was unable to detect any `<TargetFramework>`s in the supplied manifest files. 
 
 If you are using `Directory.Build.props` files to determine the target framework, ensure that it is named as such. Due to performance considerations on the customer's SCM network, Snyk does not perform case-insensitive searches for `.props` files.
 
@@ -1460,41 +1602,40 @@ Snyk supports the latest channels of .NET which is currently [supported by Micro
 
 Within the supported channels, Snyk aims to support most, if not all, of the SDK versions currently released under the **newest** of the channels.
 
-If the channels currently supported by Microsoft are `8.0`, `7.0` and `6.0`, Snyk **will** support all of the _latest_ SDKs released for these channels.
+If the channels currently supported by Microsoft are `8.0`, `7.0` and `6.0`, Snyk **will** support all of the *latest* SDKs released for these channels.
 
-If the SDK versions released under `8.0.3` are: `8.0.203`, `8.0.202` and `8.0.103`, Snyk **cannot** guarantee to support _all_ of them, but makes an effort to do so. Snyk **will** support the latest of the SDK versions currently released by Microsoft.
+If the SDK versions released under `8.0.3` are: `8.0.203`, `8.0.202` and `8.0.103`, Snyk **cannot** guarantee to support *all* of them, but makes an effort to do so. Snyk **will** support the latest of the SDK versions currently released by Microsoft. 
 
-If channel `8.0` is the newest channel currently supported, Snyk **cannot** guarantee that multiple, specific SDK versions for older, still supported channels such as .NET 6.
+If channel `8.0` is the newest channel currently supported, Snyk **cannot** guarantee that multiple, specific SDK versions for older, still supported channels such as .NET 6. 
 
 ### Example support matrix
 
 If:
 
-* .NET channels currently supported by Microsoft are `.NET 8.0`, `.NET 7.0` and `.NET 6.0`
+* .NET channels currently supported by Microsoft are `.NET 8.0`,  `.NET 7.0` and  `.NET 6.0`
 * Newest SDK version under `.NET 8.0` is `8.0.203`
 
 Then:
 
-| Channel |             SDK             | End-of-Life | Supported |
-| :-----: | :-------------------------: | :---------: | :-------: |
-|   8.0   | 8.0.203 (latest in channel) |      No     |    Yes    |
-|   8.0   |           8.0.202           |      No     |    Yes    |
-|   8.0   |           8.0.103           |      No     |    Yes    |
-|         |            (...)            |             |           |
-|   7.0   | 7.0.407 (latest in channel) |      No     |    Yes    |
-|   7.0   |           7.0.314           |      No     |     No    |
-|         |            (...)            |             |           |
-|   6.0   |           6.0.420           |      No     |    Yes    |
-|   6.0   |           6.0.128           |      No     |     No    |
-|         |             (..)            |             |           |
-|   5.0   | 5.0.408 (latest in channel) |     Yes     |     No    |
-|   5.0   |           5.0.214           |     Yes     |     No    |
-|         |             (..)            |             |           |
+| Channel |              SDK             | End-of-Life |  Supported  |
+|:-------:|:----------------------------:|:-----------:|:-----------:|
+|   8.0   | 8.0.203  (latest in channel) |      No     |     Yes     |
+|   8.0   |            8.0.202           |      No     |     Yes     |
+|   8.0   |            8.0.103           |      No     |     Yes     |
+|         |             (...)            |             |             |
+|   7.0   | 7.0.407  (latest in channel) |      No     |     Yes     |
+|   7.0   |            7.0.314           |      No     |      No     |
+|         |             (...)            |             |             |
+|   6.0   |            6.0.420           |      No     |     Yes     |
+|   6.0   |            6.0.128           |      No     |      No     |
+|         |             (..)             |             |             |
+|   5.0   |  5.0.408 (latest in channel) |     Yes     |      No     |
+|   5.0   |            5.0.214           |     Yes     |      No     |
+|         |             (..)             |             |             |
 
 ### Workarounds
 
 This limitation can lead to scan failures for customers that are pinning SDK versions in their `global.json` files without a [rollForward](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward) directive, such as:
-
 ```json
 {
   "sdk": {
@@ -1502,11 +1643,9 @@ This limitation can lead to scan failures for customers that are pinning SDK ver
   }
 }
 ```
-
-Since as `6.0` is not the newest .NET channel.
+Since as `6.0` is not the newest .NET channel. 
 
 To work around this issue, we recommend that customers employ some flexibility in their `global.json` file by employing the `rollFoward` directive to be `latestMajor`, as such:
-
 ```json
 {
   "sdk": {
@@ -1546,7 +1685,8 @@ This can present itself as a problem for customers that are using Mac or Windows
 
 **The 10 GB space limit for downloaded Nuget dependencies has been exceeded**
 
-The total size of the downloaded Nuget dependencies in the manifest files exceeds the 10GB limit. This often happens due to the large number or the large size of Nuget dependencies.
+The total size of the downloaded Nuget dependencies in the manifest files exceeds the 10GB limit.
+This often happens due to the large number or the large size of Nuget dependencies. 
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -1558,12 +1698,14 @@ The total size of the downloaded Nuget dependencies in the manifest files exceed
 
 **The dotnet CLI is unable to download and install all the required dependencies**
 
-This error occurs when running `dotnet restore <path-to-csproj>` fails to generate a manifest of the resolved dependencies. Snyk needs to run this command in order to adequately determine the dependency tree for your project. If this command fails, Snyk cannot continue.
+This error occurs when running `dotnet restore <path-to-csproj>` fails to generate a 
+manifest of the resolved dependencies. Snyk needs to run this command in order to adequately determine the dependency tree for your project. 
+If this command fails, Snyk cannot continue.
 
 Steps to determine why this happened:
 
 * Checkout a clean version of your project in a temporary folder
-* Run `dotnet restore <path-to-csproj>` on your project, and confirm this step fails.
+* Run `dotnet restore <path-to-csproj> ` on your project, and confirm this step fails.
 
 If this step is successful locally, it is possible that Snyk is running another version of the .NET SDK. To tell Snyk which version of the .NET SDK to use, consider using the [global.json](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json) solution provided by Microsoft.
 
@@ -1679,7 +1821,8 @@ Your code is cloned on an isolated environment using Git as it is required by Sn
 
 Your Organization has enabled or enforced SAML SSO after you authorized Snyk to access your code, and a re-authentication is therefore required.
 
-The error you're seeing is usually reproducible by attempting to do a `git clone` of your repository with incorrectly configured credentials. Verify your authentication configuration with your Git cloud provider and try again.
+The error you're seeing is usually reproducible by attempting to do a `git clone` of your repository with incorrectly configured credentials.
+Verify your authentication configuration with your Git cloud provider and try again.
 
 {% hint style="warning" %}
 **Error has been deprecated**
@@ -1699,11 +1842,11 @@ Going forward, [SNYK-OS-8004](error-catalog.md#snyk-os-8004) will be used instea
 
 **Your project repository is missing required files**
 
-Generating the dependency graph requires Snyk to run go list `go list -deps -json` inside the project. If the operation fails, creating a full dependency graph cannot continue.
+Generating the dependency graph requires Snyk to run go list `go list -deps -json` inside the project. If the operation fails, creating a full dependency graph cannot continue.  
 
-This error means that you need some cleanup, (such as `go mod tidy`) or your project deployment process contains a code generation step such as `protobuf` or similar that is not currently supported by Snyk.
+This error means that you need some cleanup, (such as `go mod tidy`) or your project deployment process contains a code generation step such as `protobuf` or similar that is not currently supported by Snyk. 
 
-To verify if this is the case, clone your project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails.
+To verify if this is the case, clone your project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails. 
 
 If Snyk cannot process your code successfully, insert the Snyk CLI as part of your deployment pipeline.
 
@@ -1719,7 +1862,7 @@ If Snyk cannot process your code successfully, insert the Snyk CLI as part of yo
 
 **Your project repository has inconsistent vendoring information**
 
-Generating the dependency graph requires Snyk to run `go list -deps -json` inside the project. If the operation fails, creating a full dependency graph cannot continue.
+Generating the dependency graph requires Snyk to run `go list -deps -json` inside the project. If the operation fails, creating a full dependency graph cannot continue.  
 
 This error means that there is inconsistency between your `vendor/modules.txt` file and your `go.mod` file. To remediate, you need to:
 
@@ -1728,7 +1871,8 @@ This error means that there is inconsistency between your `vendor/modules.txt` f
 
 Next, commit those changes to your repo. Snyk does not manipulate with your code on our end by design, which is why this is not done automatically.
 
-To verify if this is the case, clone your project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails. Then try and run the above mentioned commands and see if your SCM system reports changes in files.
+To verify if this is the case, clone your project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails. 
+Then try and run the above mentioned commands and see if your SCM system reports changes in files.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -1750,11 +1894,12 @@ Snyk can only work with the files available in your repository and does not have
 
 **Unable to access private dependencies**
 
-The Go tool encountered a `DepsError` while trying to download a private dependency. Private repositories that are not accessible to the public internet and are not available on the official Go proxy mirror are cloned with a version control system and built on demand. This requires the VCS to have the correct access rights to that repository.
+The Go tool encountered a `DepsError` while trying to download a private dependency. Private repositories that are not accessible to the public internet and are not available on the official Go proxy mirror are cloned with a version control system and built on demand. 
+This requires the VCS to have the correct access rights to that repository.
 
-Snyk supports private repositories that are hosted in the same Organization and on the same Project that is scanned for vulnerabilities. The authentication to the private repository is the same as the authentication used to integrate that repository with Snyk.
+Snyk supports private repositories that are hosted in the same Organization and on the same Project that is scanned for vulnerabilities. The authentication to the private repository is the same as the authentication used to integrate that repository with Snyk. 
 
-This error appears when the authorization credentials do not allow access to the requested private dependency.
+This error appears when the authorization credentials do not allow access to the requested private dependency. 
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -1770,7 +1915,7 @@ The Go tool encountered a permissions error while fetching one of the private de
 
 The Snyk Go integration only supports private dependencies that are used inside the same Organization as the Project you are scanning.
 
-This error appears when Snyk is unable to properly access the authorization credentials for the requested private dependency.
+This error appears when Snyk is unable to properly access the authorization credentials for the requested private dependency. 
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
@@ -1786,7 +1931,8 @@ Could not download Go toolchain.
 
 **The 10 GB space limit for downloaded Golang dependencies has been exceeded**
 
-The total size of the downloaded Golang dependencies in the manifest file exceeds the 10GB limit. This often happens due to the large size or large number of Golang dependencies.
+The total size of the downloaded Golang dependencies in the manifest file exceeds the 10GB limit.
+This often happens due to the large size or large number of Golang dependencies.
 
 Currently this is a product limitation for SCM. As a workaround, use the 'snyk monitor' command via Snyk CLI.
 
@@ -1805,7 +1951,7 @@ The Go toolchain could not find a secure protocol (HTTPS) to access the reposito
 This error typically occurs when the repository URL is not configured to use a secure protocol, or the necessary credentials for accessing the repository securely are not provided.
 
 Ensure that the repository URL uses a secure protocol (https://) and verify that the necessary authentication credentials (such as HTTPS credentials) are correctly configured and accessible by the Go toolchain.
-
+ 
 Note: SSH is not supported.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
@@ -1858,7 +2004,7 @@ If the Go version used in the go.mod file is supported based on our Golang docum
 
 **Invalid Go version in go.mod**
 
-The Go toolchain encountered an error while parsing the go.mod file. The specified Go version '**GOLANG\_VERSION**' is invalid and must match the format 1.23.4.
+The Go toolchain encountered an error while parsing the go.mod file. The specified Go version '__GOLANG_VERSION__' is invalid and must match the format 1.23.4.
 
 This error typically occurs when the Go version in the go.mod file is not correctly formatted.
 
@@ -1886,7 +2032,7 @@ The Go toolchain encountered an error while trying to fetch a module/package. Th
 
 This error typically occurs when the key is not recognized or is incorrect. It can also happen if the remote repository's host key has changed.
 
-Ensure that the key used to connect to the remote repository is correct and properly configured. You may need to update the known\_hosts file to include the correct host key for the remote repository. Verify your repository access configuration and try again.
+Ensure that the key used to connect to the remote repository is correct and properly configured. You may need to update the known_hosts file to include the correct host key for the remote repository. Verify your repository access configuration and try again. 
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2056,10 +2202,10 @@ One or more of the Maven repositories configured under your organisations langua
 
 This error can happen for a variety of reasons:
 
-* If using broker it could be a misconfiguration in your broker client. Double check the username and password.
+* If using broker it could be a misconfiguration in your broker client. Double check the username and password. 
 * It could be network connectivity between the broker client and Snyk or between the broker client and the configured repository, check your firewall rules.
 
-In order to solve this issue, refer to the specific details of this error message to identify which repository is causing issues.
+In order to solve this issue, refer to the specific details of this error message to identify which repository is causing issues. 
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
@@ -2071,7 +2217,10 @@ In order to solve this issue, refer to the specific details of this error messag
 
 **Cannot build Maven dependency tree**
 
-Snyk cannot build the Maven dependency tree because Maven failed to process your pom.xml. This often happens due to invalid configurations, unresolved dependencies, or build failures. Examine your Maven output to identify specific errors and verify your pom.xml for correct configurations. For common troubleshooting steps, visit Troubleshoot Maven issues.
+Snyk cannot build the Maven dependency tree because Maven failed to process your pom.xml. 
+This often happens due to invalid configurations, unresolved dependencies, or build failures.
+Examine your Maven output to identify specific errors and verify your pom.xml for correct configurations.
+For common troubleshooting steps, visit Troubleshoot Maven issues.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2203,11 +2352,11 @@ The configuration parameter does not meet the expected data type. Please ensure 
 
 **Out of Sync Error**
 
-Sometimes a project may become out of sync between the lockfile and the manifest file. This might happen if the package.json is modified or updated but the pnpm-lock.yaml is not.
+Sometimes a project may become out of sync between the lockfile and the manifest file. This might happen if the package.json is modified or updated but the pnpm-lock.yaml is not. 
 
 This can be resolved by ensuring the lockfile and manifest file are correctly synced, by executing pnpm install.
 
-In some cases, it may be necessary to delete the node\_modules folder and the pnpm-lock.yaml and run pnpm install again to force a full reinstall.
+In some cases, it may be necessary to delete the node_modules folder and the pnpm-lock.yaml and run pnpm install again to force a full reinstall. 
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2287,7 +2436,8 @@ An error occurred while updating dependencies.
 
 **Python package not found**
 
-A package listed in the manifest file cannot be found in the Python Package Index(PyPI). Make sure all packages included in the manifest file are public existing ones.
+A package listed in the manifest file cannot be found in the Python Package Index(PyPI).
+Make sure all packages included in the manifest file are public existing ones.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2295,7 +2445,8 @@ A package listed in the manifest file cannot be found in the Python Package Inde
 
 **Syntax errors found in manifest file**
 
-The manifest file has syntax issues like incorrect package names or unsupported characters. Make sure the manifest file follows the syntax stardards and can be installed locally as well.
+The manifest file has syntax issues like incorrect package names or unsupported characters.
+Make sure the manifest file follows the syntax stardards and can be installed locally as well.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2303,7 +2454,9 @@ The manifest file has syntax issues like incorrect package names or unsupported 
 
 **Python version not supported**
 
-At least one of the packages requires a Python version that doesn't match the one used in the project scan. Make sure to select a suitable Python version from the organization Python language settings. Alternatively, add a `.snyk` file for Python version selection override.
+At least one of the packages requires a Python version that doesn't match the one used in the project scan.
+Make sure to select a suitable Python version from the organization Python language settings.
+Alternatively, add a `.snyk` file for Python version selection override.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2311,7 +2464,8 @@ At least one of the packages requires a Python version that doesn't match the on
 
 **Packages versions caused conflicts**
 
-Two or more packages have conflicting version requirements that cannot be resolved. Make sure no two packages and their requirements cause conflicts and that the manifest file can be installed locally.
+Two or more packages have conflicting version requirements that cannot be resolved.
+Make sure no two packages and their requirements cause conflicts and that the manifest file can be installed locally.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2319,7 +2473,9 @@ Two or more packages have conflicting version requirements that cannot be resolv
 
 **No matching distribution found for one or more of the packages**
 
-At least one of the packages requires a Python version that doesn't match the one used in the project scan. Make sure to select a suitable Python version from the organization Python language settings. Alternatively, add a `.snyk` file for Python version selection override.
+At least one of the packages requires a Python version that doesn't match the one used in the project scan.
+Make sure to select a suitable Python version from the organization Python language settings.
+Alternatively, add a `.snyk` file for Python version selection override.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2335,7 +2491,8 @@ Some packages failed during installation due to missing system dependencies, com
 
 **Python version not supported**
 
-At least one of the packages requires a Python version that doesn't match the one used in the project scan. Make sure to use the correct python version in the requires section of the Pipfile.
+At least one of the packages requires a Python version that doesn't match the one used in the project scan.
+Make sure to use the correct python version in the requires section of the Pipfile.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2343,7 +2500,8 @@ At least one of the packages requires a Python version that doesn't match the on
 
 **No matching distribution found for one or more of the packages**
 
-At least one of the packages requires a Python version that doesn't match the one used in the project scan. Make sure to use the correct python version in the requires section of the Pipfile.
+At least one of the packages requires a Python version that doesn't match the one used in the project scan.
+Make sure to use the correct python version in the requires section of the Pipfile.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2351,7 +2509,8 @@ At least one of the packages requires a Python version that doesn't match the on
 
 **The 10 GB space limit for downloaded Python dependencies has been exceeded**
 
-The total size of the downloaded Python dependencies in the manifest file exceeds the 10GB limit. This often happens due to the large size of some of the Python dependencies and is usually the case for Python packages that require NVIDIA drivers like PyTorch.
+The total size of the downloaded Python dependencies in the manifest file exceeds the 10GB limit.
+This often happens due to the large size of some of the Python dependencies and is usually the case for Python packages that require NVIDIA drivers like PyTorch. 
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2363,7 +2522,8 @@ The total size of the downloaded Python dependencies in the manifest file exceed
 
 **Missing required packages**
 
-One or more required Python packages could not be resolved or were missing during dependency analysis. Verify that all required dependencies are declared in your manifest file and that they can be installed successfully using your package manager.
+One or more required Python packages could not be resolved or were missing during dependency analysis.
+Verify that all required dependencies are declared in your manifest file and that they can be installed successfully using your package manager.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2371,7 +2531,8 @@ One or more required Python packages could not be resolved or were missing durin
 
 **Failed to write temp files**
 
-The plugin failed to create or write temporary files required during dependency analysis. Ensure the process has permission to write to the system temporary directory and that sufficient disk space is available.
+The plugin failed to create or write temporary files required during dependency analysis.
+Ensure the process has permission to write to the system temporary directory and that sufficient disk space is available.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -2387,7 +2548,9 @@ Cyclic dependency detected in lockfile.
 
 **Gem not found**
 
-A gem listed in the Gemfile cannot be found in the RubyGems repository or locally. Make sure all gems included in the Gemfile are publicly available or properly configured in your gem sources. Verify that the gem name and version are correct, and check that you have access to any private gem repositories.
+A gem listed in the Gemfile cannot be found in the RubyGems repository or locally.
+Make sure all gems included in the Gemfile are publicly available or properly configured in your gem sources.
+Verify that the gem name and version are correct, and check that you have access to any private gem repositories.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
@@ -2395,7 +2558,9 @@ A gem listed in the Gemfile cannot be found in the RubyGems repository or locall
 
 **Gem version conflict**
 
-Bundler was unable to resolve compatible versions for the gems specified in the Gemfile. This occurs when multiple gems have conflicting version requirements that cannot be satisfied simultaneously. Review your Gemfile and Gemfile.lock to identify conflicting dependencies, and consider updating gem versions or constraints to resolve the conflict.
+Bundler was unable to resolve compatible versions for the gems specified in the Gemfile.
+This occurs when multiple gems have conflicting version requirements that cannot be satisfied simultaneously.
+Review your Gemfile and Gemfile.lock to identify conflicting dependencies, and consider updating gem versions or constraints to resolve the conflict.
 
 **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
@@ -2463,7 +2628,8 @@ Your code is cloned on an isolated environment using Git as it is required by Sn
 
 Your Organization has enabled or enforced SAML SSO after you authorized Snyk to access your code, and a re-authentication is therefore required.
 
-The error you're seeing is usually reproducible by attempting to do a `git clone` of your repository with incorrectly configured credentials. Verify your authentication configuration with your Git cloud provider and try again.
+The error you're seeing is usually reproducible by attempting to do a `git clone` of your repository with incorrectly configured credentials.
+Verify your authentication configuration with your Git cloud provider and try again.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2475,7 +2641,8 @@ The error you're seeing is usually reproducible by attempting to do a `git clone
 
 **Project too large to be processed**
 
-The project cannot be built or processed due to requiring more memory than available. For node projects, please try again after removing requirement to generate a lockfile when opening a fix PR.
+The project cannot be built or processed due to requiring more memory than available. 
+For node projects, please try again after removing requirement to generate a lockfile when opening a fix PR.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2872,12 +3039,26 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 
 **Unable to apply a policy with an invalid configuration**
 
-Snyk could not apply a policy whilst executing a test because the configuration for the policy was invalid. You may be able to fix the policy and try again.
+Snyk could not apply a policy whilst executing a test because the configuration for the policy was invalid.
+You may be able to fix the policy and try again.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 **Help Links:**
 
+* [https://docs.snyk.io/manage-risk/policies](https://docs.snyk.io/manage-risk/policies)
+
+### [SNYK-POLICY-0002](error-catalog.md#snyk-policy-0002)
+
+**Unable to read the .snyk file**
+
+The file is not valid YAML, or does not match the structure Snyk expects. Correct the file and try again.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+
+* [https://docs.snyk.io/manage-risk/policies/the-.snyk-file](https://docs.snyk.io/manage-risk/policies/the-.snyk-file)
 * [https://docs.snyk.io/manage-risk/policies](https://docs.snyk.io/manage-risk/policies)
 
 ***
@@ -2888,12 +3069,13 @@ Snyk could not apply a policy whilst executing a test because the configuration 
 
 **Error reading manifest**
 
-Snyk failed to read 1 or more manifest files. Sometimes things go wrong: a flaky connection, 3rd party services go down and Snyk is unable to read the files needed in order to test your project.
+Snyk failed to read 1 or more manifest files.
+Sometimes things go wrong: a flaky connection, 3rd party services go down and Snyk is unable to read the files needed in order to test your project. 
 
 If this happens, you could try:
 
-* Opening and re-opening your Pull Request / Merge Request, to kick off a new test
-* Removing and re-adding the repo to Snyk
+- Opening and re-opening your Pull Request / Merge Request, to kick off a new test
+- Removing and re-adding the repo to Snyk
 
 Ultimately, you should contact support@snyk.io if the issue persists
 
@@ -2907,10 +3089,10 @@ Ultimately, you should contact support@snyk.io if the issue persists
 
 **Manifest not found**
 
-Snyk uses your project manifest file to analyze your projects for vulnerabilities. When you import a project for monitoring, Snyk scans the project to locate the manifest file and then remembers where that file is. When a project manifest file is moved or deleted, we still try to look for in it in the last known location in order to run tests on commit statuses. If we can't find the file, this error can occur.
+Snyk uses your project manifest file to analyze your projects for vulnerabilities. When you import a project for monitoring, Snyk scans the project to locate the manifest file and then remembers where that file is. 
+When a project manifest file is moved or deleted, we still try to look for in it in the last known location in order to run tests on commit statuses. If we can't find the file, this error can occur.
 
 If this happens, you could try the following:
-
 1. Delete the matching project from your account in the Snyk app (UI or CLI).
 2. Now import the same project from scratch.
 
@@ -2936,11 +3118,11 @@ If you receive any of these errors, try re-running the tests, by closing and reo
 
 **Out of Sync Error**
 
-Sometimes a project may become out of sync between the lockfile and the manifest file. This might happen if the package.json is modified or updated but the lockfile is not.
+Sometimes a project may become out of sync between the lockfile and the manifest file. This might happen if the package.json is modified or updated but the lockfile is not. 
 
 This can be resolved by ensuring the lockfile and manifest file are correctly synced, by executing npm install or yarn install.
 
-In some cases, it may be necessary to delete the node\_modules folder and the package-lock.json and run npm install again to force a full reinstall.
+In some cases, it may be necessary to delete the node_modules folder and the package-lock.json and run npm install again to force a full reinstall. 
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -3052,7 +3234,8 @@ An unexpected error occurred. Review the request, then try again. If the error p
 
 The requested organization ID does not match the owner of the SBOM test ID.
 
-This error occurs when the supplied organization ID is different to the one used when creating an SBOM test run. Ensure the organization ID used to make the request is the same as the the organization ID used to create the SBOM test.
+This error occurs when the supplied organization ID is different to the one used when creating an SBOM test run.
+Ensure the organization ID used to make the request is the same as the the organization ID used to create the SBOM test.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
@@ -3201,6 +3384,34 @@ Snyk was unable to retrieve the repository because the stored size exceeds 70 GB
 Snyk was unable to resolve the SCM resource you provided. Provide a valid resource path and revision.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+***
+
+## Secrets
+
+### [SNYK-SECRETS-0001](error-catalog.md#snyk-secrets-0001)
+
+**Secrets test error**
+
+An unexpected error occurred. Review the request, then try again. If the error persists, contact Snyk Support.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+### [SNYK-SECRETS-0002](error-catalog.md#snyk-secrets-0002)
+
+**Snyk Secrets is not enabled**
+
+This error occurs when Snyk Secrets is not enabled for the current Organization. Activate Snyk Secrets and try again.
+
+**HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
+
+### [SNYK-SECRETS-0003](error-catalog.md#snyk-secrets-0003)
+
+**Secrets analysis error**
+
+An error occurred while analyzing the files for secrets. Review the request, then try again. If the error persists, contact Snyk Support.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ***
 
