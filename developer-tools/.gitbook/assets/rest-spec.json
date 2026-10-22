@@ -6270,13 +6270,7 @@
             "type": "string"
           },
           "type": {
-            "description": "The JSON:API resource type",
-            "enum": [
-              "container_images",
-              "sboms",
-              "repositories"
-            ],
-            "type": "string"
+            "$ref": "#/components/schemas/AssetType"
           }
         },
         "required": [
@@ -6309,6 +6303,15 @@
           }
         },
         "type": "object"
+      },
+      "AssetType": {
+        "description": "The JSON:API resource type of the asset",
+        "enum": [
+          "container_images",
+          "sboms",
+          "repositories"
+        ],
+        "type": "string"
       },
       "AssignableByMe": {
         "example": false,
@@ -12273,12 +12276,7 @@
           "asset_types": {
             "description": "List of asset types this field applies to",
             "items": {
-              "enum": [
-                "container_images",
-                "sboms",
-                "repositories"
-              ],
-              "type": "string"
+              "$ref": "#/components/schemas/AssetType"
             },
             "type": "array"
           },
@@ -23011,13 +23009,7 @@
             "type": "object"
           },
           "type": {
-            "description": "The JSON:API resource type",
-            "enum": [
-              "container_images",
-              "sboms",
-              "repositories"
-            ],
-            "type": "string"
+            "$ref": "#/components/schemas/AssetType"
           }
         },
         "required": [
