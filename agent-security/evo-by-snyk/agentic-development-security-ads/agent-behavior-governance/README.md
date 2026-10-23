@@ -13,6 +13,12 @@ Agent Behavior Governance secures what agents do as they run. It works within th
 
 Claude Code, Codex, Cursor, and GitHub Copilot.
 
+{% hint style="warning" %}
+**Codex in user mode requires each developer to accept a prompt**
+
+After installation in user mode, Codex prompts the developer to allow hook configuration outside the managed path. If the developer does not accept, the hooks stay installed but do not run, and Agent Behavior Governance does not govern Codex on that machine. Managed mode does not show the prompt. To choose a mode, visit [Installation mode](../activation-and-deployment/README.md#installation-mode).
+{% endhint %}
+
 ## Supported use cases
 
 * [MCP Governance ](mcp-governance.md)

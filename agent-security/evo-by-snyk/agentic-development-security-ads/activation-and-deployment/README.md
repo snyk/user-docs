@@ -70,15 +70,24 @@ Scheduled scanning requires version 0.6.8 or later of Machines. Earlier versions
 
 The installer runs in one of two modes. If you do not pass `--install-mode`, the installer uses the mode set in your Tenant's configuration, and uses user mode when none is set.
 
+| Feature | User mode | Managed mode |
+| --- | --- | --- |
+| **Privileges** | No elevated privileges | Elevated privileges |
+| **Applies to** | The user who runs the installer | Every user on the machine |
+| **Removal protection** | No | Yes |
+| **Codex governance** | Each developer must accept a prompt | No prompt |
+
 **User mode** needs no elevated privileges, and the installer sets up the products for the user who runs it.
 
 {% hint style="warning" %}
-**Codex in user mode**
+**Codex in user mode requires each developer to accept a prompt**
 
-After installation in user mode, Codex prompts the developer to allow hook configuration outside the managed path. If the developer does not accept, Agent Behavior Governance does not govern Codex on that machine. Managed mode does not show this prompt, so use managed mode for fleets where Codex is in use.
+After installation in user mode, Codex prompts the developer to allow hook configuration outside the managed path. The developer must accept the prompt. If the developer does not accept, the hooks stay installed but do not run, and Agent Behavior Governance does not govern Codex on that machine until the developer reviews and trusts the hook in Codex.
+
+Managed mode does not show this prompt. Use managed mode for fleets where developers use Codex.
 {% endhint %}
 
-**Managed mode** is for companies that need the products to apply to every user on a machine and to be protected from removal by the people using them. Add `--install-mode managed` and run the installer with elevated privileges. Managed mode requires ADS installer v1.88.0 or later, with Machines and Agent Behavior Governance on version 0.6.4 or later. Existing user-mode installs are not migrated.
+**Managed mode** is for companies that need the products to apply to every user on a machine and to be protected from removal by the people using them. Managed mode does not show the Codex prompt. Add `--install-mode managed` and run the installer with elevated privileges. Managed mode requires ADS installer v1.88.0 or later, with Machines and Agent Behavior Governance on version 0.6.4 or later. Existing user-mode installs are not migrated.
 
 The mode applies to the whole installer run. Agent Supply Chain Security and Agent Behavior Governance both take the mode you pass. There is no per-component setting, so you cannot install one in user mode and the other in managed mode.
 

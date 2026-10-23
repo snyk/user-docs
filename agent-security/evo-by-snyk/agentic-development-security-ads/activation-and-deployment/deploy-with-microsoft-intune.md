@@ -17,8 +17,15 @@ Intune supports two deployment methods. Assign each group of devices to one meth
 | **Products installed**| The products you selected, including Studio                   | Scan and Guard. Studio is not installed.                                             |
 | **Applies to**        | The signed-in user                                            | Every user on the machine, and protected from removal by the people using them       |
 | **How you deploy**    | A line-of-business app and a remediation script               | A line-of-business app with command-line arguments. No remediation or other script is needed. |
+| **Codex governance**  | Each developer must accept a prompt in Codex                  | No prompt                                                                            |
 
 The steps below describe the standard install. For managed mode, visit [Managed mode](deploy-with-microsoft-intune.md#managed-mode).
+
+{% hint style="warning" %}
+**Codex in user mode requires each developer to accept a prompt**
+
+The standard install runs in user mode. After installation, Codex prompts each developer to allow hook configuration outside the managed path. If a developer does not accept, the hooks stay installed but do not run, and Agent Behavior Governance does not govern Codex on that device. If developers on these devices use Codex, use managed mode instead, which does not show the prompt. Managed mode does not install Studio.
+{% endhint %}
 
 ## Prerequisites
 
