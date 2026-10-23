@@ -1,0 +1,36 @@
+name: Close direct pull requests
+
+# This repository is a read-only copy of docs.snyk.io. Content reaches it only
+# through promotion PRs from snyk/user-docs-internal, which use promote/* branches.
+# Any other PR is closed with a pointer to the new process. The workflow runs on
+# "opened" only, so a maintainer can reopen a PR that was closed by mistake.
+#
+# pull_request_target is safe here because the job never checks out PR code.
+
+on:
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  close:
+    if: >-
+      !(startsWith(github.event.pull_request.head.ref, 'promote/') &&
+        github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment and close
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          cat > comment.md <<'EOF'
+          Thanks for your contribution! We've updated our docs process: this repository is now a read-only copy of docs.snyk.io, so pull requests here aren't merged. This pull request has been closed automatically.
+
+          **Snyk employees:** Open your pull request in [`snyk/user-docs-internal`](https://github.com/snyk/user-docs-internal) instead. Use a branch, not a fork, and put files under `docs/`, for example `docs/<section>/<page>.md`. Then run `/ship-it` in Slack and paste the pull request URL in the **Docs Draft** field.
+
+          **External contributors:** To report an issue, [contact Snyk Support](https://support.snyk.io) and include the page URL.
+          EOF
+          gh pr close "$PR_URL" --comment "$(cat comment.md)"
