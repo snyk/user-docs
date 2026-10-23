@@ -31,3 +31,13 @@ A push key authenticates only against the region that issued it. If you use anot
 ## A machine stops sending data after you revoke a push key
 
 A machine that still uses a revoked push key is rejected at its next check-in. Create a new push key if you do not have another active one, then redeploy the installer to the machine through your MDM tool with that key. To avoid this, revoke the old key only after the fleet has moved to the new key, as described in [Rotate a push key](./#rotate-a-push-key).
+
+## Agent Behavior Governance does not govern Codex on a machine
+
+In user mode, Codex prompts the developer after installation to allow hook configuration outside the managed path. If the developer does not accept the prompt, the hooks stay installed on the machine but Codex does not run them, so Agent Behavior Governance does not govern Codex on that machine. Codex warns the developer that hooks need review each time it starts, until the hook is trusted.
+
+To fix this on a machine that is already installed, the developer reviews and trusts the Snyk hook manually in Codex. The hook does not need to be installed again.
+
+Codex trusts a hook by its exact definition, so Codex asks the developer to review the hook again if the definition changes.
+
+To avoid the prompt for a fleet, install in managed mode, as described in [Installation mode](README.md#installation-mode).

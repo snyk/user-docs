@@ -65,6 +65,12 @@ Create one policy per processor architecture, and scope each policy to matching 
 
 Jamf runs policy scripts as root. In user mode, the installer detects this and sets up the products for the user who is logged in to the Mac, not for root. A user must be logged in when the policy runs: a check-in at the login window, with nobody logged in, fails. If your Macs often check in with nobody logged in, use the **Login** trigger instead.
 
+{% hint style="warning" %}
+**Codex in user mode requires each developer to accept a prompt**
+
+In user mode, Codex prompts each developer to allow hook configuration outside the managed path. If a developer does not accept, the hooks stay installed but do not run, and Agent Behavior Governance does not govern Codex on that Mac. If developers use Codex, add `--install-mode managed`, which does not show the prompt. For details, visit [Managed mode](deploy-with-jamf-pro.md#managed-mode).
+{% endhint %}
+
 If you are not ready to move to packages, the previous command-line install is still supported, and you can run it from your existing deployment script. For the command per platform, visit [Install from the command line](install-on-a-single-machine.md#install-from-the-command-line). The command-line install always takes the latest installer, so you cannot pin a version that way.
 
 ## If you log in outside the United States

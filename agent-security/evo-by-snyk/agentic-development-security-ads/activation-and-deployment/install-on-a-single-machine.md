@@ -24,6 +24,12 @@ You need the following:
 On macOS, the package delivers the installer only. Installing it does not set up the products or start a scan, so you run the installer with your credentials as a second step. On Windows, the `.msi` installs and onboards in one step when you pass your Tenant ID and push key.
 {% endhint %}
 
+{% hint style="warning" %}
+**Codex in user mode requires each developer to accept a prompt**
+
+In user mode, Codex prompts you to allow hook configuration outside the managed path after installation. Accept the prompt, or review and trust the hook later in Codex. If you do not, the hooks stay installed but do not run, and Agent Behavior Governance does not govern Codex on this machine.
+{% endhint %}
+
 ## Install
 
 {% tabs %}
