@@ -61,7 +61,7 @@ The Tenant Viewer role is the only role limited by Organization. To scope user a
 
 Organization-scoped users have read-only access. They cannot perform the following actions:
 
-* Create, edit, or delete policies
+* Create, edit, delete, disable, or enable policies
 * Save or delete reports
 * Approve or reject custom discovery results
 * Delete a repository added with the Snyk CLI
