@@ -14,10 +14,10 @@ A policy has a name, a severity (Critical, High, Medium, or Low), one or more co
 
 Severity is fixed per policy. A policy does not change severity based on the score it matches, so to raise different severities at different scores, create a policy for each.
 
-Create and edit policies from the Policies & issues page or with Evo chat. You can delete custom policies. Default policies are read-only.
+Create and edit policies from the Policies & issues page or with Evo chat. You can delete custom policies. You cannot edit or delete default policies. You can disable and enable any policy.
 
 {% hint style="info" %}
-Users with a Tenant role and full Evo access can create, edit, and delete policies. Users restricted to specific Organizations can read policies and issues, but they cannot change them. Visit [Access and authentication](../access-and-authentication.md) for more information.
+Users with a Tenant role and full Evo access can create, edit, delete, disable, and enable policies. Users restricted to specific Organizations can read policies and issues, but they cannot change them. Visit [Access and authentication](../access-and-authentication.md) for more information.
 {% endhint %}
 
 ### Default policies
@@ -86,7 +86,7 @@ From the **Policies** page, select the policy you want to edit and click **Edit 
 #### Delete a policy
 
 {% hint style="warning" %}
-You cannot delete default policies.
+You cannot delete default policies. To stop a default policy from raising issues, [disable it](#disable-or-enable-a-policy).
 {% endhint %}
 
 You can delete user-defined policies. To quickly identify critical enforcement policies, you can group them by severity.
@@ -106,6 +106,27 @@ The five Risk index categories do not map onto the new taxonomy, and the two sco
 {% endhint %}
 
 For what the new taxonomy contains and how to read a score, visit [Risk intelligence](../ai-spm/risk-intelligence/).
+
+### Disable or enable a policy
+
+You can disable any policy, including default policies. A disabled policy stops raising new issues, and Evo hides the issues it already raised until you enable the policy again. Disabling a policy applies to the whole tenant.
+
+The **Status** column on the **Policies** page shows whether each policy is **Enabled** or **Disabled**.
+
+To disable a policy:
+
+1. On the **Policies** page, select the policy.
+2. Click **Disable policy**.
+3. In the confirmation dialog, click **Disable**.
+
+To enable a disabled policy again:
+
+1. On the **Policies** page, select the policy.
+2. Click **Enable policy**. Evo does not ask you to confirm.
+
+{% hint style="info" %}
+Only users with a Tenant role and full Evo access can disable or enable a policy.
+{% endhint %}
 
 ## Issues
 

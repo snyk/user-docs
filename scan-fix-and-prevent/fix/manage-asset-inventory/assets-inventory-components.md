@@ -27,8 +27,8 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 Assets in Snyk Essentials are meaningful, real-world components in an application’s SDLC. The following asset types are available:
 
-* Repository assets [**`Billable`**](https://docs.snyk.io/snyk-data-and-governance/how-does-snyk-count-assets#billable-assets)
-* Container images [**`Billable`**](https://docs.snyk.io/snyk-data-and-governance/how-does-snyk-count-assets#billable-assets)
+* Repository assets
+* Container images
 * Packages
 * Scanned artifacts
 
