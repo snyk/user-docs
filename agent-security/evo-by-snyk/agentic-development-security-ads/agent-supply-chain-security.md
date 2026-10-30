@@ -44,19 +44,33 @@ The following table shows which Claude components Snyk detects and where they ap
 
 <table><thead><tr><th>Component</th><th></th><th>Supported</th><th>Appears on</th><th data-hidden>Detected when</th></tr></thead><tbody><tr><td rowspan="6">Claude Code</td><td>MCP server (local or remote)</td><td>Yes</td><td><strong>Machines</strong> tab and <strong>MCP servers</strong> page</td><td>Scan finds the server in a config file</td></tr><tr><td>MCP server from a Claude Code plugin</td><td>Yes</td><td><strong>Machines</strong> tab and <strong>MCP servers</strong> page</td><td></td></tr><tr><td>Skill from a Claude Code plugin</td><td>Yes</td><td><strong>Machines</strong> tab</td><td>Scan finds the server in <code>claude_desktop_config.json</code></td></tr><tr><td>Claude connector</td><td>Yes, only when used through Claude Code (terminal or the <strong>Code</strong> tab in Claude Desktop)</td><td><strong>MCP servers</strong> page only</td><td>Scan finds <code>&#x3C;skill>/SKILL.md</code> in a standard skills folder</td></tr><tr><td>Skill via Claude Skill Marketplace</td><td>No</td><td>—</td><td></td></tr><tr><td>Standalone skill (<code>SKILL.md</code>)</td><td>Yes</td><td><strong>Machines</strong> tab</td><td></td></tr><tr><td rowspan="5">Claude Desktop</td><td>MCP server from a Claude Desktop plugin</td><td>Yes (on macOS and Linux only)</td><td><strong>Machines</strong> tab and <strong>MCP servers</strong> page</td><td>Scan finds <code>&#x3C;skill>/SKILL.md</code> in the installed plugin</td></tr><tr><td>Local MCP server in the Claude Desktop configuration</td><td>Yes</td><td><strong>Machines</strong> tab and <strong>MCP servers</strong> page</td><td></td></tr><tr><td>Skill from a Claude Desktop plugin</td><td>Yes (on macOS and Linux only)</td><td><strong>Machines</strong> tab</td><td>Scan finds the server in the installed plugin</td></tr><tr><td>Skill via Claude Skill Marketplace</td><td>No</td><td>—</td><td>Scan finds <code>&#x3C;skill>/SKILL.md</code> in the installed plugin</td></tr><tr><td>Standalone skill (<code>SKILL.md</code>)</td><td>Yes</td><td><strong>Machines</strong> tab</td><td></td></tr></tbody></table>
 
-
-
-## MCP server and skill risk indexes
+## MCP server and skill risk&#x20;
 
 {% hint style="info" %}
-MCP server and skill risk indexes use their own severity ranges. They are not on the same scale as the Model Risk Score used for AI models, and the two are not comparable. For model risk, visit [Risk Intelligence](../ai-spm/risk-intelligence/).
+Skill risk indexes use their own severity ranges. They are not on the same scale as the MCP and Model Risk Score and are not comparable. For model risk, visit [Risk Intelligence](../ai-spm/risk-intelligence/).
 {% endhint %}
 
 Agent Supply Chain Security scores each MCP server and skill it discovers across a set of risk indexes. Each index scores one category of risk from 0 to 1,000. The higher the score, the more severe the finding.
 
 A component's Risk profile shows only the indexes that scored non-zero. Default policies raise an issue for any index at High or Critical severity (a score of 600 or above). Lower-severity findings appear in the Risk profile but do not raise an issue by default.
 
-### MCP server risk indexes
+### MCP Risk Score
+
+The MCP Risk Score combines three kinds of signal:
+
+* Server behavior (local and remote servers): what the server tells connecting agents, including the instructions and tool descriptions it sends. See [MCP server risk indexes](agent-supply-chain-security.md#mcp-server-risk-indexes).
+* Trust (local and remote servers): how popular the server is, whether it is an official first-party MCP server, the reputation of the URLs it connects to, and the identity of its maintainers.&#x20;
+* Implementation, maintenance, and dependencies (local servers only): the quality of the code, how actively it is maintained, and the risk in its dependencies. Evo assesses these only when source code is available.
+
+Note: Evo doesn't score a server it can't identify or doesn't have a signature for.
+
+**Where you see it**
+
+* MCP Servers page: sort and filter by the score column.
+* Risk profile tab: the score is broken down into individual risk indexes, each scored from 0 to 1,000.
+* Policies: use the MCP Risk Score or any individual risk index as a condition. For example, "Private data risk is 600 or higher".
+
+#### MCP server risk indexes
 
 * **Dangerous words**: manipulative language in a tool description that tries to influence the agent's decisions.
 * **Prompt injection in a tool**: an agent processes hidden instructions within a tool description as commands.

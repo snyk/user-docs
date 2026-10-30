@@ -16,7 +16,5 @@
   * [Snyk API & Web Managed Scans Service Description](snyk-terms-of-support-and-services-glossary/snyk-api-and-web-managed-scans-service-description.md)
   * [Snyk Penetration Testing Service Description](snyk-terms-of-support-and-services-glossary/snyk-penetration-testing-service-description.md)
   * [Legacy Success Offerings](snyk-terms-of-support-and-services-glossary/legacy-success-offerings.md)
-* [How Snyk counts assets](how-does-snyk-count-assets.md)
 * [What counts as a test?](what-counts-as-a-test.md)
-* [Snyk Platform credits](snyk-platform-access-credits.md)
 * [Snyk for Government (US)](snyk-for-government-us.md)

@@ -1,6 +1,8 @@
 ---
-description: How Snyk counts tests against your plan limits, and what does not apply under credit-based licenses
 nav_context: agnostic
+description: >-
+  How Snyk counts tests against your plan limits, and what does not apply under
+  credit-based licenses
 ---
 
 # What counts as a test?
@@ -8,7 +10,7 @@ nav_context: agnostic
 The Snyk Open Source, Snyk Code, Snyk IaC, and Snyk Container capabilities entitle customers to run security tests on their code-based assets as applicable based on the functionality of each capability.
 
 {% hint style="info" %}
-The information on this page, including any reference to “test limits”, does not apply to capabilities for which customers are on a credit-based license. For the credit and usage policies applicable to these customers, see [Snyk Platform Access Plan](snyk-platform-access-credits.md) (for credit-based licenses purchased on or before 31 December 2025), or [Platform Credit Consumption Licensing ](https://snyk.io/policies/credit-based-billing/)(for credit-based licenses purchased on or after 1 January 2026).
+The information on this page, including any reference to “test limits”, does not apply to capabilities for which customers are on a credit-based license. For the credit and usage policies applicable to these customers, see [Snyk Platform Access Plan](https://docs.snyk.io/platform-administration/snyk-platform-subscription/credits-for-the-snyk-platform-access-plan) (for credit-based licenses purchased on or before 31 December 2025), or [Platform Credit Consumption Licensing ](https://snyk.io/policies/credit-based-billing/)(for credit-based licenses purchased on or after 1 January 2026).
 
 Capitalized terms used but not defined herein shall have the meaning as set forth in the Customer’s purchase agreement or other applicable documentation found on [Snyk user documentation](https://docs.snyk.io/).
 {% endhint %}

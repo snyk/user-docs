@@ -1,6 +1,6 @@
 ---
-description: How to enable Snyk Evo for your Tenant, add members, and assign roles
 nav_context: classic
+description: How to enable Snyk Evo for your Tenant, add members, and assign roles
 ---
 
 # Access and authentication
@@ -31,13 +31,13 @@ The following table maps regions to environment URLs:
 
 You must be a Tenant Admin to add members or modify roles.
 
-A user joins a Tenant as a Tenant Member. This role does not include Evo access. Navigate to **Tenant** > **Members** in app.snyk.io and assign the role that matches the user's required access:
+A user joins a Tenant as a Tenant Member. This role gives read-only Evo access limited to the Organizations the user belongs to. Navigate to **Tenant** > **Members** in app.snyk.io and assign the role that matches the user's required access:
 
 | Tenant role                   | Evo access                                                                    |
 | ----------------------------- | ----------------------------------------------------------------------------- |
 | Tenant Admin                  | Every asset and issue in the Tenant, and every write action                   |
 | Tenant Viewer                 | Read access to the assets and issues in the Organizations the user belongs to |
-| Tenant Member                 | No access to Evo                                                              |
+| Tenant Member                 | Read access to the assets and issues in the Organizations the user belongs to |
 | Tenant Member with Evo access | Every asset and issue in the Tenant, and every write action                   |
 | Tenant Viewer with Evo access | Every asset and issue in the Tenant, and every write action                   |
 
@@ -51,17 +51,17 @@ For more information, visit [Manage users in a Tenant](https://docs.snyk.io/plat
 
 Users with Organization-scoped access see only the assets and issues within the Organizations they can read.
 
-The Tenant Viewer role is the only role limited by Organization. To scope user access:
+The Tenant Member and Tenant Viewer roles are limited by Organization. To scope user access:
 
-* Assign the user the Tenant Viewer role.
-* Remove Tenant Member with Evo access or Tenant Viewer with Evo access if the user holds one. These roles grant access to the entire tenant. The user retains unrestricted access until you remove the role. To change a role, visit [Manage users in a Tenant](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/manage-users-in-a-tenant).
+* Assign the user the Tenant Member or Tenant Viewer role.
+* Remove Tenant Member with Evo access or Tenant Viewer with Evo access if the user holds one. These roles grant access to the entire Tenant. The user retains unrestricted access until you remove the role. To change a role, visit [Manage users in a Tenant](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/manage-users-in-a-tenant).
 * Add the user to each Organization that requires access to Evo data. Ensure the role includes the View Evo Organization permission. Organization Admin and Organization Collaborator include this permission.
 
 #### Restricted actions
 
 Organization-scoped users have read-only access. They cannot perform the following actions:
 
-* Create, edit, or delete policies
+* Create, edit, delete, disable, or enable policies
 * Save or delete reports
 * Approve or reject custom discovery results
 * Delete a repository added with the Snyk CLI
@@ -77,7 +77,7 @@ Organization-scoped users do not see assets that do not belong to an Organizatio
 
 Policies apply to the entire tenant. Therefore, an Organization-scoped user reads every tenant policy, including policies that cover Organizations they cannot access. Evo raises issues against assets. A policy can appear with no issues against it.
 
-A Tenant Viewer sees no data in Evo if they do not belong to an Organization, or if their role in every Organization they belong to omits the **View Evo Organization** permission.
+A Tenant Member or Tenant Viewer sees no data in Evo if they do not belong to an Organization, or if their role in every Organization they belong to omits the **View Evo Organization** permission.
 
 Counts and totals reflect the access of the user viewing them. Two users on the same page can see different totals. The lower number is correct for the scoped user.
 
