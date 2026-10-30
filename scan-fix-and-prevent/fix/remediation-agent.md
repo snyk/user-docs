@@ -7,10 +7,30 @@ description: >-
 # Remediation Agent
 
 {% hint style="info" %}
-The Remediation Agent is in [Early Access](https://docs.snyk.io/discover-snyk/getting-started/snyk-release-process#early-access-features). To turn it on, visit [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-platform-administration/snyk-preview) or ask your Snyk account team.
+The coding-assistant and Snyk CLI entry points are available for all Snyk plans and are in [Early Access](https://docs.snyk.io/discover-snyk/getting-started/snyk-release-process#early-access-features). To turn them on, visit [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-platform-administration/snyk-preview) or ask your Snyk account team.
+
+Remediation campaigns require Evo by Snyk. Snyk enables campaigns for each Tenant. To request access, contact your Snyk account team.
 {% endhint %}
 
-The Remediation Agent is an LLM-driven tool that automates vulnerability remediation in your Snyk Projects. It scans a Project, generates a fix plan enriched with Snyk security intelligence, applies the fix, and verifies the result. It runs in your coding assistant or in the Snyk CLI.
+The Remediation Agent automates vulnerability remediation: it scans a Project, creates a fix plan enriched with Snyk security intelligence, applies changes, and verifies the result. You can run it in a coding assistant, from the Snyk CLI, or through remediation campaigns in Evo by Snyk.
+
+## How the products relate
+
+Use this comparison to choose the tools for your workflow:
+
+| Product or feature | Role | When to use it |
+|---|---|---|
+| Snyk Open Source | Finds vulnerabilities in open-source dependencies through software composition analysis (SCA). | Identify dependency vulnerabilities for the agent to fix. |
+| Snyk Code | Finds vulnerabilities in your source code through static application security testing (SAST). | Identify source code vulnerabilities for the agent to fix. |
+| Snyk Container | Finds vulnerabilities in container images. | Identify container vulnerabilities for the CLI remediation flow. |
+| Remediation Agent | Coordinates scanning, fix planning, changes, and verification. | Apply and verify fixes for vulnerabilities found by Snyk. Supported scan types depend on the entry point. |
+| [Snyk Agent Fix](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md) | Generates fix suggestions for vulnerabilities detected by Snyk Code. The CLI SAST remediation flow uses these suggestions. | Generate a source code fix, or use the Remediation Agent to apply and verify it. |
+| [Snyk Studio](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio) | Connects Snyk security tools to coding assistants through the MCP server and directives, including hooks and remediation skills. | Check code during AI-assisted development and run remediation from your coding assistant. |
+| [Remediation campaigns in Evo by Snyk](remediation-agent/remediation-campaigns.md) | Runs the Remediation Agent in Snyk-hosted infrastructure across selected repositories, once or on a schedule. | Manage open-source remediation across repositories and review the pull requests the agent opens. |
+
+Snyk Studio provides the coding-assistant integration. Evo by Snyk provides the hosted campaign experience. The Remediation Agent performs the remediation workflow. Snyk Agent Fix supplies source code fix suggestions for the CLI SAST flow.
+
+For a comparison of where each workflow runs, model configuration, and review, visit [Entry points](#entry-points).
 
 {% hint style="warning" %}
 The Remediation Agent is under rapid development. Some options on this page are available only in the latest preview release of the Snyk CLI. Run `snyk version` to check which version you have, and expect option names and defaults to change between releases.
@@ -32,14 +52,6 @@ The bring-your-own-model provider integrations are the newest part of the featur
 * The Snyk CLI. Visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli).
 * Access to a model provider. Visit [Configure a model provider](#configure-a-model-provider).
 
-{% hint style="info" %}
-**Release status**
-
-Remediation Agent is in Early Access and available for all Snyk plans. If you want to set it up in your Group, contact your Snyk account team.
-{% endhint %}
-
-The Remediation Agent is an LLM-driven tool that automates vulnerability remediation in your projects. It scans your Project with Snyk, generates a fix plan enriched with Snyk security intelligence, applies the fixes, and verifies the result, all in your coding assistant or the Snyk CLI.
-
 ## How it works
 
 Traditional vulnerability remediation requires a developer to review each finding, decide on a fix, apply it, and verify the outcome. The Remediation Agent automates that cycle.
@@ -53,11 +65,17 @@ The agent follows the same core flow at every entry point:
 
 ## Entry points
 
-* [Agentic IDE (ADE)](#set-up-in-an-agentic-ide): run `/snyk-fix` in your coding assistant to scan the Project and fix the top vulnerability. Run `/snyk-batch-fix` to address several vulnerabilities in one pass. Install the `/snyk-fix` skill before you use it. The Snyk Studio installer installs it, or you can follow the [studio-recipes](https://github.com/snyk/studio-recipes/tree/main) setup instructions.
-* [Snyk CLI](#fix-vulnerabilities-from-the-snyk-cli): run `snyk fix --agentic` in your terminal for an interactive, human-in-the-loop remediation flow without an IDE.
-* [Remediation campaigns](remediation-agent/remediation-campaigns.md): in Evo by Snyk, run the agent in Snyk-hosted infrastructure across your repositories, once or on a schedule, and review the pull requests it opens.
+Choose an entry point based on where you want to run fixes and who supplies the model.
 
-`/snyk-batch-fix` is an ADE skill rather than a CLI command. To fix several vulnerabilities from the CLI, use `--auto-approve`.
+| Entry point | How to start | Supported scan types | Where fixes run | Model configuration | Review |
+|---|---|---|---|---|---|
+| [Coding assistant with Snyk Studio](#set-up-in-an-agentic-ide) | Run `/snyk-fix` to fix the top vulnerability, or `/snyk-batch-fix` to fix several in one pass. | Snyk Open Source and Snyk Code | Your coding assistant's development environment | Runs as a skill in your coding assistant. No separate model-provider configuration is required for the skill. | Review the changes before merging. |
+| [Snyk CLI](#fix-vulnerabilities-from-the-snyk-cli) | Run `snyk fix --agentic` for an interactive remediation flow without an IDE. | Snyk Open Source, Snyk Code, and Snyk Container | The environment where you run the CLI | You configure a [model provider](#configure-a-model-provider). | Prompts for each fix unless you use `--auto-approve`. Review the changes before merging. |
+| [Remediation campaigns](remediation-agent/remediation-campaigns.md) | In Evo by Snyk, create a campaign to run once or on a schedule. | Snyk Open Source | Snyk-hosted infrastructure | Snyk supplies the model. | The agent opens pull requests for you to review and merge. |
+
+Campaigns require Evo by Snyk with remediation campaigns enabled for your Tenant. The IDE and CLI prerequisites on this page apply to their respective entry points. For campaign setup and limitations, visit [Remediation campaigns](remediation-agent/remediation-campaigns.md).
+
+`/snyk-batch-fix` is an ADE skill rather than a CLI command. To fix several vulnerabilities from the CLI, use `--auto-approve`. Review its additional effects in [Scope the run](#scope-the-run).
 
 ## Breaking change assessment
 

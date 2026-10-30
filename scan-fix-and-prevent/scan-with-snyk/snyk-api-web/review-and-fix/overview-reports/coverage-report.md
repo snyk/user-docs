@@ -19,7 +19,9 @@ Use this report to check whether the scanner reaches every possible endpoint and
 
 Before and during tests, the crawler navigates your website to find every possible endpoint while testing every input it finds. The crawler then sends those URLs to the scanner to test for vulnerabilities.
 
-By default, the report shows only the accepted endpoints. To include rejected endpoints and additional information, navigate to **Target Settings** > **Reports** and change the **Coverage Detail** to **All URLs**.&#x20;
+By default, the report includes both accepted and rejected endpoints, with the reason for each rejection. Snyk keeps rejected endpoints for 90 days after the scan. To get only the accepted endpoints, navigate to **Target Settings** > **Reports** and change the **Coverage Detail** to **Scanned URLs**.
+
+Rejected endpoints are available only if your plan includes them. If your plan does not, the report lists accepted endpoints only.
 
 ## Finding your report
 
@@ -29,13 +31,17 @@ Visit [Generate a CSV coverage report](generate-csv-coverage-report.md) to learn
 
 The coverage report is a CSV file, which means it is a plain text file that contains a list of data separated by commas. After downloading it, you can open it in your terminal, text editor, or spreadsheet application.
 
+To explore the same data in the Snyk web interface, see [Interpret coverage results](../interpret-coverage-results.md).
+
 The `id` column shows the request ID. You can use the API to obtain more information about the respective request and response using the following endpoint:
 
 `GET https://api.probely.com/targets/<target_id>/scans/<scan_id>/endpoints/<request_id>/`
 
 The `request_method` shows the type of request the crawler made (HTTP requests such as GET, POST, PUT, DELETE, PATCH, and so on).
 
-The `url` column shows the found or targeted URL. Check this column to verify that all possible endpoints of your website are being reached.
+The `host` column shows the origin of the URL: the scheme, host, and port, such as `https://example.com:8443`. The host is lowercase, and the port is left out when it is the default for the scheme (80 for `http`, 443 for `https`). The same host reached over `http://` and `https://` is listed as two different hosts.
+
+The `url` column shows the path and query of the found or targeted URL, such as `/login?next=/`. Combine `host` and `url` to rebuild the full URL. Check this column to verify that all possible endpoints of your website are being reached.
 
 The `status_code` shows the request's response. The most frequent responses are:
 
@@ -86,13 +92,11 @@ The `result` column shows whether the engine **accepted** or **rejected** the re
   * Meaning: This URL is outside the scope of the scan.
 * `Crawled; not scanned (URL fragment)`
   * Meaning: This URL is a fragment, so it was crawled but not scanned; the fragmentless URL is sent.
+* `Crawled; not scanned (redirect document timing)`
+  * Meaning: This page redirected back to its own URL, for example, with a 302 that sets a cookie and then a 200. The 302 is the endpoint sent to the scanner. The final page gets a second row with this reason so you can see its own status, response time, and page load. Snyk does not send this row to the scanner.
 * `incremental already sent`
   * Meaning: This URL was not sent to the scanner again because it has not changed since the previous scan.
   * This reason appears only in incremental scans. To test all endpoints regardless of change status, run a full scan.
-
-{% hint style="info" %}
-By default, only "accepted" endpoints are present on the Coverage report. In your target **Settings > Reports > Coverage Detail**, select **All URLs** to enable "rejected" and the respective "reason".
-{% endhint %}
 
 The `info` column provides additional information, if available.
 
@@ -100,25 +104,29 @@ The `raw_request_size` and the `raw_response_size` are the request and response 
 
 The `request_parameters_count` is the number of parameters tested from that request.
 
+The `response_time_ms` is how long the target took to respond while the crawler visited the URL, in milliseconds. It is empty if the URL was never requested.
+
+The `page_load_ms` is how long the page took to load in the browser, in milliseconds. It is measured for pages only, not for the requests a page makes. It is filled for web targets only, and is empty if the page was never loaded.
+
 The `raw_request_size_display` and the `raw_response_size_display` are the human-readable sizes of the request and response, respectively (e.g., instead of 1024, it displays 1 KB).
 
 ## Examples
 
 Here are a few examples to help you understand your coverage report:
 
-*   `"TBWoS3ogjjv","GET","http://example.com/product.php","200","false","accepted","","","773","6911","0","773 B","6.7 KB"`
+*   `"TBWoS3ogjjv","GET","http://example.com","/product.php","200","FALSE","accepted","","","773","6911","0","","","773 B","6.7 KB"`
 
     An unauthenticated GET request to http://example.com/product.php responded with 200 (OK) and has been accepted by the scanner (for example, it is tested for vulnerabilities).
-*   `"ABXoS2ogzjv","POST","http://example.com/userinfo.php","302","false","accepted","","","853","4024","1","853 B","3.9 KB"`
+*   `"ABXoS2ogzjv","POST","http://example.com","/userinfo.php","302","FALSE","accepted","","","853","4024","1","","","853 B","3.9 KB"`
 
     An unauthenticated POST request to http://example.com/userinfo.php responded with 302 - Found and has been accepted by the scanner (for example, it is tested for vulnerabilities).
-*   `"QWLoP0ogcj3","GET","http://example.com/artists.php?artist=1","-","false","rejected","deduplicated (simhash)","","86","0","1","86 B","0 B"`
+*   `"QWLoP0ogcj3","GET","http://example.com","/artists.php?artist=1","-","FALSE","rejected","deduplicated (simhash)","","86","0","1","","","86 B","0 B"`
 
     A GET request to http://example.com/artists.php?artist=1 was rejected by the scanner because the endpoint's simhash was the same as another endpoint's.
-*   `"XcKoc30bwjG","GET","http://example.com/showimage.php?file=./pictures/5.jpg","-","false","rejected","query string limit reached","","86","0","1","86 B","0 B"`
+*   `"XcKoc30bwjG","GET","http://example.com","/showimage.php?file=./pictures/5.jpg","-","FALSE","rejected","query string limit reached","","86","0","1","","","86 B","0 B"`
 
     A GET request to http://example.com/showimage.php?file=./pictures/5.jpg was rejected by the scanner because the base URL with the query string reached the visit limit.
-*   `"Qw3bxFftFVsL","GET","http://example.com/#features","200","false","rejected","Crawled; not scanned (URL fragment)","","65","0","0","65 B","0 B"`
+*   `"Qw3bxFftFVsL","GET","http://example.com","/#features","200","FALSE","rejected","Crawled; not scanned (URL fragment)","","65","0","0","","","65 B","0 B"`
 
     A GET request to http://example.com/#features was rejected by the scanner because the URL includes a fragment and the fragmentless endpoint was already scanned.
 
