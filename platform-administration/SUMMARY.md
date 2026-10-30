@@ -7,7 +7,6 @@
 * [Tenant, Groups, and Organizations](snyk-hierarchy/groups-and-organizations.md)
 * [Tenants](snyk-hierarchy/tenant/README.md)
   * [Manage users in a Tenant](snyk-hierarchy/tenant/manage-users-in-a-tenant.md)
-  * [Plan and billing](snyk-hierarchy/tenant/plan-and-billing.md)
 * [Groups](snyk-hierarchy/groups/README.md)
   * [Manage users in a Group](snyk-hierarchy/groups/manage-users-in-a-group.md)
   * [Configure session length for a Snyk Group](snyk-hierarchy/groups/configure-session-length-for-a-snyk-group.md)
@@ -22,7 +21,16 @@
 * [Switch between Groups and Organizations](snyk-hierarchy/switch-between-groups-and-organizations.md)
 * [Snyk Preview](snyk-hierarchy/snyk-preview.md)
 * [Manage notifications](snyk-hierarchy/manage-notifications.md)
-* [Usage settings](snyk-hierarchy/usage-settings.md)
+* [SKU-based licensing usage settings](snyk-hierarchy/usage-settings.md)
+
+## Snyk Platform Subscription
+
+* [Enterprise contract types](snyk-platform-subscription/enterprise-contract-types/README.md)
+  * [Viewing your Plan](snyk-platform-subscription/enterprise-contract-types/viewing-your-plan.md)
+* [Snyk Platform Subscription mechanics](snyk-platform-subscription/snyk-platform-subscription-mechanics.md)
+* [Capability control panel](snyk-platform-subscription/capability-control-panel.md)
+* [Understanding credit consumption](snyk-platform-subscription/understanding-credit-consumption.md)
+* [Credits for the Snyk Platform Access plan](snyk-platform-subscription/credits-for-the-snyk-platform-access-plan.md)
 
 ## User management
 
