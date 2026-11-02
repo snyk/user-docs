@@ -2908,7 +2908,7 @@
         "x-snyk-internal": true
       },
       "SparseFieldsets": {
-        "description": "Sparse fieldsets allow clients to request only specific fields for a given resource type.\nUse the format `fields[\u003ctype\u003e]=field1,field2` where `\u003ctype\u003e` is the JSON:API resource type.\n\n**Container image fields** (use with `fields[container_images]`):\n- `class` - Classification of the asset\n- `registry` - Container registry hostname\n- `repository` - Repository path\n- `config_digest` - Image config digest\n- `distribution_digests` - Distribution digests (manifest/index pairs)\n- `image_tags` - Distinct image tags across all discovery sources\n- `built_at` - When the image was built\n- `size_bytes` - Size of the image in bytes\n- `author` - Image author\n- `architecture` - CPU architecture\n- `os` - Operating system\n- `variant` - CPU architecture variant\n- `os_version` - Operating system version\n- `os_pretty_name` - Human-readable operating system name\n- `os_features` - OS features\n- `config` - Image runtime configuration (OCI config)\n- `root_fs` - Root filesystem information\n- `history` - Image build history\n- `inferred_base_images` - Inferred base images\n- `teams` - Teams associated with the asset\n- `labels` - Labels associated with the asset\n- `tags` - Key-value tags for the asset\n- `risk_score` - Risk score for the asset\n- `test_surfaces` - Test surfaces for the asset\n- `issues` - Issue counts by severity\n- `created_at` - When the asset was created\n- `updated_at` - When the asset was last updated\n- `last_scan` - When the asset was last scanned\n- `scan_engines` - Scan engines applied to the asset\n\nNote: `type` and `id` are always included regardless of field selection.\n",
+        "description": "Sparse fieldsets allow clients to request only specific fields for a given resource type.\nUse the format `fields[\u003ctype\u003e]=field1,field2` where `\u003ctype\u003e` is the JSON:API resource type.\n\n**Container image fields** (use with `fields[container_images]`):\n- `class` - Classification of the asset\n- `registry` - Container registry hostname\n- `repository` - Repository path\n- `config_digest` - Image config digest\n- `distribution_digests` - Distribution digests (manifest/index pairs)\n- `image_tags` - Distinct image tags across all discovery sources\n- `built_at` - When the image was built\n- `size_bytes` - Size of the image in bytes\n- `author` - Image author\n- `architecture` - CPU architecture\n- `os` - Operating system\n- `variant` - CPU architecture variant\n- `os_version` - Operating system version\n- `os_pretty_name` - Human-readable operating system name\n- `os_features` - OS features\n- `config` - Image runtime configuration (OCI config)\n- `root_fs` - Root filesystem information\n- `history` - Image build history\n- `inferred_base_images` - Inferred base images\n- `teams` - Teams associated with the asset\n- `labels` - Labels associated with the asset\n- `aliases` - Alternate identifiers for the asset\n- `tags` - Key-value tags for the asset\n- `risk_score` - Risk score for the asset\n- `test_surfaces` - Test surfaces for the asset\n- `issues` - Issue counts by severity\n- `created_at` - When the asset was created\n- `updated_at` - When the asset was last updated\n- `last_scan` - When the asset was last scanned\n- `scan_engines` - Scan engines applied to the asset\n\n`fields[repositories]` accepts the repository attributes and the shared asset fields, including `aliases`.\n\nNote: `type` and `id` are always included regardless of field selection.\n",
         "example": {
           "container_images": "registry,repository,config_digest"
         },
@@ -5764,6 +5764,16 @@
       "AssetBaseAttributes": {
         "description": "Asset-level fields shared across all asset types.",
         "properties": {
+          "aliases": {
+            "description": "Alternate identifiers for this asset, distinct from its natural key. Values are returned in lexicographic order. Omitted when the asset has none.\n",
+            "items": {
+              "maxLength": 1024,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 50,
+            "type": "array"
+          },
           "class": {
             "$ref": "#/components/schemas/ClassResponse"
           },
@@ -5942,6 +5952,53 @@
             "type": "integer"
           }
         },
+        "type": "object"
+      },
+      "AssetIdentifier": {
+        "additionalProperties": false,
+        "description": "JSON:API resource identifier for an asset. Attributes are omitted.",
+        "properties": {
+          "id": {
+            "description": "The unique identifier of the asset",
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "description": "The JSON:API resource type",
+            "enum": [
+              "container_images",
+              "sboms",
+              "repositories"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "id"
+        ],
+        "type": "object"
+      },
+      "AssetIdentifierDocument": {
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/AssetIdentifier"
+          },
+          "links": {
+            "properties": {
+              "self": {
+                "description": "Link to the current document",
+                "format": "uri",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "AssetLabelsUpdate": {
@@ -27106,7 +27163,7 @@
           "values": {
             "description": "Required values, which can be strings, dates, integers, booleans, or nested attributes",
             "items": {
-              "oneOf": [
+              "anyOf": [
                 {
                   "description": "A string value",
                   "type": "string"
@@ -27121,7 +27178,8 @@
                   "type": "integer"
                 },
                 {
-                  "$ref": "#/components/schemas/SearchAttributesObject"
+                  "description": "Search object",
+                  "type": "object"
                 },
                 {
                   "description": "A boolean value",
@@ -33613,7 +33671,7 @@
         "x-snyk-api-releases": [
           "2024-10-15~beta"
         ],
-        "x-snyk-api-resource": "asset",
+        "x-snyk-api-resource": "assetread",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
@@ -34243,6 +34301,114 @@
         "x-stability-level": "beta"
       }
     },
+    "/groups/{group_id}/inventory/assets/id": {
+      "get": {
+        "description": "Resolves a single asset id within the group and asset type.\nThe key is matched against the asset natural key first, then against aliases.\nWhen both match different assets, the natural key match is returned.\nAn asset is visible only when it has a discovery source in the group.\nThe response is a JSON:API resource identifier and does not include attributes.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "operationId": "getAssetIdByKeyGroup",
+        "parameters": [
+          {
+            "description": "The unique identifier of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "The requested API version",
+            "in": "query",
+            "name": "version",
+            "schema": {
+              "example": "2024-10-15",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            }
+          },
+          {
+            "description": "JSON:API asset type to search within, such as repositories, container_images, or sboms",
+            "in": "query",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "description": "Natural key or alias. A natural key match is preferred over an alias match.",
+            "in": "query",
+            "name": "key",
+            "required": true,
+            "schema": {
+              "maxLength": 1024,
+              "minLength": 1,
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AssetIdentifierDocument"
+                }
+              }
+            },
+            "description": "Asset id resolved successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get an asset id by natural key or alias - Group scope (Early Access)",
+        "tags": [
+          "Inventory Assets"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "assetread",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
     "/groups/{group_id}/inventory/assets/lookup": {
       "get": {
         "description": "Resolves a single asset within the group and asset type.\nThe key is matched against the asset natural key first, then against aliases.\nWhen both match different assets, the natural key match is returned.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
@@ -34367,7 +34533,7 @@
         "x-snyk-api-releases": [
           "2024-10-15~beta"
         ],
-        "x-snyk-api-resource": "asset",
+        "x-snyk-api-resource": "assetread",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
@@ -34710,7 +34876,7 @@
         "x-snyk-api-releases": [
           "2024-10-15~beta"
         ],
-        "x-snyk-api-resource": "asset",
+        "x-snyk-api-resource": "assetread",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
@@ -38011,7 +38177,8 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-15~experimental"
         ],
         "x-snyk-api-resource": "grouppolicies",
         "x-snyk-api-stability": "beta",
@@ -38067,7 +38234,8 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-15~experimental"
         ],
         "x-snyk-api-resource": "grouppolicies",
         "x-snyk-api-stability": "beta",
@@ -38178,7 +38346,8 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-15~experimental"
         ],
         "x-snyk-api-resource": "grouppolicies",
         "x-snyk-api-stability": "beta",
@@ -73943,7 +74112,7 @@
         "x-snyk-api-releases": [
           "2024-10-15~beta"
         ],
-        "x-snyk-api-resource": "asset",
+        "x-snyk-api-resource": "assetread",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
@@ -74573,6 +74742,114 @@
         "x-stability-level": "beta"
       }
     },
+    "/orgs/{org_id}/inventory/assets/id": {
+      "get": {
+        "description": "Resolves a single asset id within the org and asset type.\nThe key is matched against the asset natural key first, then against aliases.\nWhen both match different assets, the natural key match is returned.\nAn asset is visible only when it has a discovery source in the org.\nThe response is a JSON:API resource identifier and does not include attributes.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getAssetIdByKeyOrg",
+        "parameters": [
+          {
+            "description": "The unique identifier of the organization",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "The requested API version",
+            "in": "query",
+            "name": "version",
+            "schema": {
+              "example": "2024-10-15",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            }
+          },
+          {
+            "description": "JSON:API asset type to search within, such as repositories, container_images, or sboms",
+            "in": "query",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "description": "Natural key or alias. A natural key match is preferred over an alias match.",
+            "in": "query",
+            "name": "key",
+            "required": true,
+            "schema": {
+              "maxLength": 1024,
+              "minLength": 1,
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AssetIdentifierDocument"
+                }
+              }
+            },
+            "description": "Asset id resolved successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get an asset id by natural key or alias - Org scope (Early Access)",
+        "tags": [
+          "Inventory Assets"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "assetread",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
     "/orgs/{org_id}/inventory/assets/lookup": {
       "get": {
         "description": "Resolves a single asset within the org and asset type.\nThe key is matched against the asset natural key first, then against aliases.\nWhen both match different assets, the natural key match is returned.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
@@ -74697,7 +74974,7 @@
         "x-snyk-api-releases": [
           "2024-10-15~beta"
         ],
-        "x-snyk-api-resource": "asset",
+        "x-snyk-api-resource": "assetread",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
@@ -75040,7 +75317,7 @@
         "x-snyk-api-releases": [
           "2024-10-15~beta"
         ],
-        "x-snyk-api-resource": "asset",
+        "x-snyk-api-resource": "assetread",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
@@ -117800,7 +118077,7 @@
         "x-snyk-api-releases": [
           "2024-10-15~beta"
         ],
-        "x-snyk-api-resource": "asset",
+        "x-snyk-api-resource": "assetread",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
@@ -118431,6 +118708,114 @@
         "x-stability-level": "beta"
       }
     },
+    "/tenants/{tenant_id}/inventory/assets/id": {
+      "get": {
+        "description": "Resolves a single asset id within the tenant and asset type.\nThe key is matched against the asset natural key first, then against aliases.\nWhen both match different assets, the natural key match is returned.\nThe response is a JSON:API resource identifier and does not include attributes.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
+        "operationId": "getAssetIdByKeyTenant",
+        "parameters": [
+          {
+            "description": "The unique identifier of the tenant",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "The requested API version",
+            "in": "query",
+            "name": "version",
+            "schema": {
+              "example": "2024-10-15",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            }
+          },
+          {
+            "description": "JSON:API asset type to search within, such as repositories, container_images, or sboms",
+            "in": "query",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "description": "Natural key or alias. A natural key match is preferred over an alias match.",
+            "in": "query",
+            "name": "key",
+            "required": true,
+            "schema": {
+              "maxLength": 1024,
+              "minLength": 1,
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AssetIdentifierDocument"
+                }
+              }
+            },
+            "description": "Asset id resolved successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get an asset id by natural key or alias (Early Access)",
+        "tags": [
+          "Inventory Assets"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "assetread",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
     "/tenants/{tenant_id}/inventory/assets/lookup": {
       "get": {
         "description": "Resolves a single asset within the tenant and asset type.\nThe key is matched against the asset natural key first, then against aliases.\nWhen both match different assets, the natural key match is returned.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
@@ -118555,7 +118940,7 @@
         "x-snyk-api-releases": [
           "2024-10-15~beta"
         ],
-        "x-snyk-api-resource": "asset",
+        "x-snyk-api-resource": "assetread",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
@@ -118900,7 +119285,7 @@
         "x-snyk-api-releases": [
           "2024-10-15~beta"
         ],
-        "x-snyk-api-resource": "asset",
+        "x-snyk-api-resource": "assetread",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"

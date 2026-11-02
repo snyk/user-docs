@@ -131,6 +131,6 @@ These conditions apply:
 To remove a URL from the reject list, navigate to **Target Settings** > **Scanner**.
 
 {% hint style="info" %}
-* Snyk records rejection reasons for web targets only. On API targets (OpenAPI, Postman, Bruno, and GraphQL), the scan engine does not record why a URL was skipped, so the **Reason** column is empty.
+* Snyk records rejection reasons for web targets and for the requests that Postman and Bruno scans skip. On OpenAPI and GraphQL targets, the scan engine does not record why a URL was skipped, so the **Reason** column is empty.
 * The **Coverage** tab covers the crawl phase. It shows what the crawler found and what the crawler handed to the scanner. It does not show the individual test requests that the scanner then sent against each endpoint.
 {% endhint %}
