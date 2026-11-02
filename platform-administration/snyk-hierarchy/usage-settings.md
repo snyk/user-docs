@@ -5,11 +5,11 @@ description: >-
   and contributing developers
 ---
 
-# Usage settings
+# SKU-based licensing usage settings
 
-{% include "../.gitbook/includes/new-navigation-banner.md" %}
-
-## Usage settings
+{% hint style="info" %}
+The following usage settings are relevant only for subscriptions to the legacy, SKU-based licensing offerings for Snyk Open Source, Snyk Code, Snyk Container, and Snyk IaC. These settings do not apply to any capabilities entitled through the [Snyk Platform Subscription](../snyk-platform-subscription/snyk-platform-subscription-mechanics.md).
+{% endhint %}
 
 In your Group or Organization, select **Settings** > **Usage** to view Snyk usage details for your Group or Organization:
 
@@ -20,7 +20,7 @@ In your Group or Organization, select **Settings** > **Usage** to view Snyk usag
 For more information about test frequency settings, see [Project actions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects#project-actions-on-the-project-listing-page) on the Project Listings page, where bulk actions are also explained.
 {% endhint %}
 
-### Test usage
+## Test usage
 
 The **Test Usage** section shows how many tests you are using over the current billing period:
 
@@ -34,7 +34,7 @@ For the Free plan, the limits are: Open Source, 400 tests; Code, 100 tests; IaC,
 To see the limits that apply to you and how much of them you have used, open **Usage** in your Organization settings. On an Enterprise plan, your limits are set by your contract rather than published here; your Snyk account team can confirm them. See the [Plans and pricing page](https://snyk.io/plans/) for more details. See [What counts as a test?](https://docs.snyk.io/snyk-data-and-governance/what-counts-as-a-test) for details of how Snyk counts tests.
 {% endhint %}
 
-### Contributing developers
+## Contributing developers
 
 Snyk defines contributing developers as developers having made a commit to a private repo monitored by Snyk in the last 90 days.
 
@@ -50,32 +50,3 @@ The contributing developers count shows:
 * **Breakdown by integration**: the number of contributors, Organizations, and repos in that integration.
 
 A contributor is recognized through the author email field, set in the local Git settings.
-
-### Billing and Usage
-
-{% hint style="info" %}
-The Billing and Usage menu is available only to Tenant Admins on the Snyk Credits plan and the Snyk Platform Access plan (excluding new customer enrollments).
-
-For more information on billable events and credits for the Snyk Credits plan, visit [Policies](https://snyk.io/policies/credit-based-billing/).\
-For more information on billable events and credits for the Snyk Platform Access plan, visit [Policies](https://snyk.io/policies/definition-of-snyk-platform-access/).
-{% endhint %}
-
-At the Tenant level, navigate to **Billing and Usage** to view credit consumption and usage patterns across all Groups and Organizations within the selected Tenant. The **Billing and Usage** dashboard also provides an overview of which Snyk products and Projects consume your credits.
-
-<figure><img src="../.gitbook/assets/billing_and_usage_dashboard.png" alt="Billing and Usage dashboard"><figcaption><p>Billing and Usage dashboard</p></figcaption></figure>
-
-The **Billing and Usage** dashboard provides the following information:
-
-* **Billing period**
-* **Platform Access:** the number of available credits per billing period, the number of contributing developers, and the Snyk products enabled. To see which Snyk products are enabled, hover over the information button.
-
-{% hint style="info" %}
-You may need to enable certain capabilities at the Tenant level to begin using Snyk. Capability enablement can be done in the Snyk Web UI through your Tenant’s **Settings** page in the navigation panel.
-{% endhint %}
-
-* **Credit usage:** the number of credits used so far and the number of days left on your subscription.
-* **Billable events log:** a detailed list of all billable events.
-
-You can also see a breakdown of your credit usage and filter the information by Group, Snyk product, or date range.
-
-<figure><img src="../.gitbook/assets/billing_and_usage_dahsboard_credit_breakdown.png" alt="Example of credit usage breakdown"><figcaption><p>Example of credit usage breakdown</p></figcaption></figure>
