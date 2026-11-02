@@ -35,10 +35,12 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 {% columns %}
 {% column %}
 * Amazon AWS SDK
+* Amazon AWS SDK DynamoDB, including the Enhanced Client
 * Android Standard Library
 * Apache Camel
 * Apache Commons
 * Apache Commons Collections
+* Apache Commons FileUpload
 * Apache CXF
 * Apache Tomcat
 * Apache XML
@@ -54,6 +56,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * FasterXML Jackson
 * Flyway
 * Google API Client
+* Google Cloud BigQuery
 * Google Guava
 * Google OAuth Client
 * grpc-java
@@ -96,6 +99,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * Spring AI
 * Spring boot
 * Spring Cloud Config
+* Spring Data MongoDB
 * Spring Security OAuth2 Client
 * Spring Web, MVC and JDBC
 * Spring WebFlux
@@ -117,6 +121,8 @@ Kotlin only:
 {% endcolumns %}
 
 For SAP Commerce (Hybris), Snyk Code analyzes FlexibleSearch queries for SQL injection. This is supported for Java only. Snyk Code recognizes values supplied through query parameter binding as safe and does not report them.
+
+For Google Cloud BigQuery, Snyk Code recognizes query parameters created with `QueryParameterValue.of()` as safe and does not report them for SQL injection. This is supported for Java only.
 
 ### Supported package managers and package registries <a href="#supported-package-managers-and-package-registries" id="supported-package-managers-and-package-registries"></a>
 

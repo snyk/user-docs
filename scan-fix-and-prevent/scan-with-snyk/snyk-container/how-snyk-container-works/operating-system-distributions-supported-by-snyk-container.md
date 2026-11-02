@@ -125,6 +125,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Ubuntu](https://ubuntu.com/)
 
+* Ubuntu 26.10 - Stonking Stingray
 * Ubuntu 26.04 - Resolute Raccoon
 * Ubuntu 25.10 - Questing Quokka
 * Ubuntu 25.04 - Plucky Puffin

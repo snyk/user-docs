@@ -6,7 +6,7 @@ description: >-
 
 # MCP Governance
 
-Evo inspects the Model Context Protocol (MCP) servers declared in your code and installed on developer machines to build an inventory of the servers in use. Under the allowlist policy, Evo blocks unauthorized server execution.
+Evo inspects the Model Context Protocol (MCP) servers declared in your code and installed on developer machines to build an inventory of the servers in use and can block server execution on the developer's machine at invocation.
 
 ## Prerequisites
 
@@ -19,44 +19,74 @@ For more information, visit [ADS Activation and deployment](../activation-and-de
 
 ## How to use
 
-MCP Governance rolls out in four phases, from establishing a baseline to enforcing your policy at runtime:
+MCP Governance takes three steps:&#x20;
 
-1. Baseline your inventory: review the unified MCP Servers Inventory Report to discover which servers are in use, how widely they are deployed, and their risks before you enforce rules.
-2. Define your allowlist: import authorized servers into Evo based on your findings and company policies.
-3. Analyze the impact: revisit the unified MCP Servers Inventory Report to evaluate the effect on your fleet and triage findings before you enforce rules.
-4. Enforce blocking (optional): enable runtime blocking after your baseline and policy reflect production reality.
+1. Understand your MCP usage: see which MCP servers are in use and by whom.
+2. Define your rules and preview the impact: classify servers with an allowlist, set risk-based conditions, or both. Then return to the inventory to see which servers fall out of policy and how far they reach.
+3. Enforce blocking (optional): turn on runtime blocking once your rules reflect production reality.
 
-#### Baseline your inventory
+#### Understand your MCP usage
 
-* Navigate to the **MCP Servers** page to review active usage: all MCP servers detected across code repositories and developer machines, including which servers agents invoked.
-* Review the exposure spread of each server (Code, Machines, Runtime) and associated risks to understand how your fleet uses it and its potential reach.
+Go to the MCP Servers page to see all MCP servers detected across code repositories and developer machines, including which servers agents invoked.
 
-#### Define your allowlist
+* Exposure: see where each server appears (Code, Machines, Runtime) and how widely it is used.
+* Risk: review each server's risk dimensions, including whether it comes from an Official vendor, alongside the other [risk dimensions scanned by Evo](../agent-supply-chain-security.md#mcp-server-risk-indexes).
 
-* Collect the list of MCP server names your company allows.
-* Navigate to **Policies** > **Asset Classification** > **Allowed MCP Servers** to configure the policy.
+#### Define your rules and preview the impact
 
-{% hint style="info" %}
-This policy ships empty and disabled by default.
-{% endhint %}
+Choose how you want to define what's allowed. You can use either approach or both.
 
-* Enter allowed servers by name in the policy.
+**Option 1: Classify with an allowlist**&#x20;
 
-<figure><img src="https://2912686697-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FN5N885PkllOWeBmgm3Bp%2Fuploads%2FAiykJW6wEQYoePJWsadw%2Funknown.png?alt=media&#x26;token=2c1c5c58-49c0-4f10-b3c8-9f16d63464b7" alt="Policy screen showing the enforcement toggle off, an approved servers list, and an Evo chat panel" width="563"><figcaption><p>Allowed MCP Servers policy with enforcement disabled and an Evo chat session</p></figcaption></figure>
+Classify the servers you trust. Everything else shows as Not Allowed, so you can focus on the servers outside your list.
 
-#### Impact analysis
+1. Collect the MCP server names your organization allows, or use Evo's MCP risk profile to build the list.
+2. Use Evo Chat to classify them or do it manually: go to Policies > Asset Classification > Allowed MCP Servers and enter the server names.
 
-Review the updated report, then return to the MCP Servers page with your defined policy active and blocking disabled. Each row displays its updated authorization status, either **Allowed** or **Out of Policy**.
+Best for: teams that want a defined set of approved servers and a clear status for every server, with the flexibility to avoid blocking developers over low-risk tools.
 
-Decide whether to add legitimate tools to the allowlist or remediate unauthorized usage.
+> Note: The allowlist ships empty and disabled by default.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-30 at 09.43.44.png" alt="Table listing detected MCP servers with approval status, source, and issue severity" width="563"><figcaption><p>MCP servers inventory with approval status and issue counts</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-21 at 10.23.15.png" alt="Policy screen showing the enforcement toggle off, an approved servers list, and an Evo chat panel"><figcaption><p>MCP Servers classification</p></figcaption></figure>
 
-#### Enforce blocking
+**Option 2: Define risk-based conditions (no list required)**
 
-To enable blocking, return to the policy and set enforcement to **On**. After you enable blocking, Evo blocks any agent that attempts to execute a server designated as **Out of Policy**, directly on the developer's machine at invocation.
+Build a policy around Evo risk dimensions, tailored to your business rules. For example, flag servers with prompt injection in a tool, destructive capabilities, or unofficial publisher status.\
+Go to Policies > Create policy > Monitor MCP servers that are not allowed.
 
-You can turn off enforcement at any time. Doing so disables blocking immediately.
+Best for: teams that want governance to scale without managing a list.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-21 at 10.33.46.png" alt="MCP Governance policy"><figcaption><p>MCP Servers Risk based policy</p></figcaption></figure>
+
+**Preview the impact**
+
+With your rules active and blocking still off, check how your rules apply to your fleet. Nothing is blocked at this stage, so repeat as often as needed.
+
+* Allowlist: return to the MCP Servers page. Each server shows its authorization status, either Allowed or Not Allowed. Use this to see which unapproved servers are in use, by whom, and how risky they are.
+* Risk-based conditions: While building your policy, review the Block preview section before saving to assess the potential impact. Once saved, servers that meet your conditions will trigger policy issues (rather than receiving an Allowed status). Review these issues to pinpoint matching servers, user activity, and blast radius.
+
+From either view, decide whether to add legitimate tools to your allowlist, adjust your conditions, or remediate unauthorized usage.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-21 at 10.39.47.png" alt="Table listing detected MCP servers with approval status, source, and issue severity"><figcaption><p>MCP servers inventory with approval status and issue counts</p></figcaption></figure>
+
+#### Enforce blocking (optional)
+
+When your rules reflect production reality, turn on blocking. Evo will then block non-compliant agent requests directly on the developer's machine at invocation.
+
+You can enforce blocking by enabling the Block action on an existing policy, or by creating a dedicated policy via Policies > Create policy > Block MCP servers that are not allowed.
+
+> Setup Requirement: Your policy must include at least the Type is MCP Server condition.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-23 at 09.52.50.png" alt=""><figcaption></figcaption></figure>
+
+If you set an allowlist, it will act as a policy condition alongside Evo's risk dimensions, allowing you to tailor your enforcement scope:
+
+* Block everything outside your allowlist: Use allowlist status as your sole condition. Any server marked as "Not Allowed" is immediately blocked.
+* Block high-risk cases only: Combine allowlist status with specific risk conditions. For example, block unapproved servers that present high overall risk, contain prompt injection threats in a tool, or possess destructive capabilities. Lower-risk unapproved servers remain unblocked and visible for review.
+
+You can also block based on risk alone without using the Allowlist attribute.&#x20;
+
+> Note: Enforcement can be toggled off at any time to immediately disable blocking across your fleet.
 
 ## Developer experience
 

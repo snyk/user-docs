@@ -49,8 +49,8 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Other updates
 
 * Snyk Assist, an in-product AI assistant for product, security, and account questions, is now in Early Access on the Snyk Enterprise plan. Open it from the top-right corner of the Snyk Web UI in the new navigation. Group Admins manage it from **Settings** > **Products and features**. See [Snyk Assist](https://docs.snyk.io/navigate-the-snyk-web-ui#snyk-assist).
-* The Snyk Credits plan is now the Snyk Platform Subscription plan, and you can use your credits across all generally available Snyk capabilities. Snyk announces rate changes, including new products and pricing adjustments, 30 days in advance in the Billing and Usage dashboard. The Snyk Platform Access plan is no longer available to purchase or enroll in. See [Snyk Platform credits](https://docs.snyk.io/snyk-data-and-governance/snyk-platform-access-credits).
-* The **Your Plan** page is now under **Settings** > **Plan and billing** after you select your Tenant in the scope selector. See [Plan and billing](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/plan-and-billing).
+* The Snyk Credits plan is now the Snyk Platform Subscription plan, and you can use your credits across all generally available Snyk capabilities. The Snyk Platform Access plan is no longer available to purchase or enroll in. See [Snyk Platform Subscription](https://docs.snyk.io/platform-administration/snyk-platform-subscription/snyk-platform-subscription-mechanics).
+* The **Your Plan** page is now under **Settings** > **Plan and billing** after you select your Tenant in the scope selector. See [Your Plan](https://docs.snyk.io/platform-administration/snyk-platform-subscription/enterprise-contract-types/viewing-your-plan).
 * Usage settings now explain that you can check your test limits and usage under **Usage** in your Organization settings, and that limits on Enterprise plans are set by your contract. See [Usage settings](https://docs.snyk.io/platform-administration/snyk-hierarchy/usage-settings).
 * The "Where things moved" table adds Ignore requests, Cloud, and Custom rules, and notes that the classic Organization Dashboard has no equivalent in the new navigation. See [Navigate the Snyk Web UI](https://docs.snyk.io/navigate-the-snyk-web-ui).
 * Snyk documents that deleting a Group member removes the user from every Organization in the Group, and that deleting a Group membership through the API requires `cascade=true`. See [Manage users in a Group](https://docs.snyk.io/platform-administration/snyk-hierarchy/groups/manage-users-in-a-group).
@@ -144,7 +144,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Other updates
 
-* Plan and billing information is now documented in a new tenant administration page that describes plan details and billing. Visit [Plan and billing](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/plan-and-billing) for more details.
+* Plan and billing information is now documented in a new tenant administration page that describes plan details and billing. Visit [Your Plan](https://docs.snyk.io/platform-administration/snyk-platform-subscription/enterprise-contract-types/viewing-your-plan) for more details.
 * SSO custom mapping assertions documentation was updated for single sign-on configuration. Visit [Custom mapping](https://docs.snyk.io/platform-administration/user-management/single-sign-on-sso-for-authentication-to-snyk/custom-mapping) for more details.
 * Export API added a prevention events dataset, with new columns and filters documented for exporting prevention data. Visit [Export API specifications, columns, and filters](https://docs.snyk.io/developer-tools/snyk-api/using-specific-snyk-apis/export-api-specifications-columns-and-filters) for more details.
 * Snowflake data share added prevention events to the data-share data dictionary. Visit [Data share data dictionary](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary) for more details.
@@ -496,7 +496,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### Other updates
 
 * [Usage settings](https://docs.snyk.io/platform-administration/snyk-hierarchy/usage-settings) have been updated with the new **Billing and Usage** dashboard, available with the new Snyk Platform Access plan.
-* [Snyk Platform Access credits](https://docs.snyk.io/snyk-data-and-governance/snyk-platform-access-credits) have been added with brief information on the new Snyk Platform Access plan.
+* [Snyk Platform Access credits](https://docs.snyk.io/platform-administration/snyk-platform-subscription/credits-for-the-snyk-platform-access-plan) have been added with brief information on the new Snyk Platform Access plan.
 * The troubleshooting sections for all [Snyk IDE plugins](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions) have been updated to include clear steps for working with the Logs details, which are available across all plugins.
 * A new feature, the [Snyk Agent Fix in the PR](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr), has been released, enabling the user to interact with inline comments by requesting an initial fix or a different suggestion, or by applying a specific fix by using the `@snyk /apply #` command.
 * [Consistent Ignores](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) for Snyk Code now fully supports CLI Upload.

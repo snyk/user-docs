@@ -79,12 +79,6 @@ Every rejected endpoint carries a reason, shown exactly as the scan engine recor
 
 Filter by **Reason** to group the omissions of a scan by cause, for example, to separate URLs dropped because a crawl limit was reached from URLs excluded by your reject list.
 
-{% hint style="info" %}
-**Rejected endpoints are recorded only on request.** By default, a scan stores only accepted endpoints, so the **Coverage** tab lists only accepted endpoints, but the counts in the **What the crawler found** section can exceed the number of rows.
-{% endhint %}
-
-To record rejected endpoints, navigate to **Target Settings** > **Reports** and change **Coverage Detail** to **All URLs**. This applies from the next scan. It cannot recover rows for a scan that has already run.
-
 ### Inspect the request and response for an endpoint
 
 Click any row to expand it. The expanded row shows the **Status**, **Decision**, **Reason**, **Authenticated**, **Parameters**, and **Response time** of the endpoint. On web targets, it also shows **Page load**. For a fetched endpoint, it shows the recorded **Request** and **Response**. Use **Jump to** to move to the response.
@@ -97,7 +91,7 @@ The scan engine stores no response for a rejected endpoint. Snyk builds the requ
 
 Three limits apply to what you see on an accepted endpoint:
 
-* Snyk obfuscates sensitive values before storage. Snyk masks credentials, cookies, and tokens when it writes the exchange, not when it displays it. Snyk never stores the original values.
+* Authentication headers and cookies are obfuscated before storage and appear masked (highlighted) in the interface.
 * Snyk truncates response bodies. Snyk keeps only the first 4KB of the response body and keeps headers in full. When a body is truncated, the pane shows the full size.
 * Snyk keeps responses for 90 days. After that, Snyk deletes the stored response body, and the pane reads **This response is no longer stored.** Snyk does not delete the endpoint. Its URL, method, status, decision, reason, sizes, and full request remain. The 90 days start on the date of the scan, so all responses of a scan expire together.
 
@@ -137,6 +131,6 @@ These conditions apply:
 To remove a URL from the reject list, navigate to **Target Settings** > **Scanner**.
 
 {% hint style="info" %}
-* Snyk records rejection reasons for web targets only. On API targets (OpenAPI, Postman, Bruno, and GraphQL), the scan engine does not record why a URL was skipped. The **Reason** column is empty, and changing **Coverage Detail** to **All URLs** makes no difference.
+* Snyk records rejection reasons for web targets only. On API targets (OpenAPI, Postman, Bruno, and GraphQL), the scan engine does not record why a URL was skipped, so the **Reason** column is empty.
 * The **Coverage** tab covers the crawl phase. It shows what the crawler found and what the crawler handed to the scanner. It does not show the individual test requests that the scanner then sent against each endpoint.
 {% endhint %}

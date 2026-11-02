@@ -20,7 +20,7 @@ You need access to an Evo Tenant. To get set up, visit [Access and authenticatio
 What you can do through the MCP server matches what you can do in Evo. Your Tenant role determines which tools are available to you. For details, visit [Available tools](#available-tools).
 
 {% hint style="info" %}
-The MCP server supports only non-destructive actions. Delete actions are not available.
+The Evo MCP server does not support delete actions. The write tools can still change how Evo behaves in your environment. Updating a policy can change or remove its existing conditions, and removing an MCP server from the allow list can cause Evo to block that server if blocking of unapproved MCP servers is turned on. Review each change before you approve it in your client.
 {% endhint %}
 
 ## Evo MCP endpoint
@@ -96,10 +96,6 @@ On first use, the MCP client opens an authorization page in your browser.
 The agent runs as you, with your identity and your permissions.
 
 The service requests the `org.read` OAuth scope to identify you and discover your Organizations. This scope does not grant access to Evo data. Access to Evo data comes from your Tenant role, which Snyk checks on every request. The service also validates your Snyk access token before every MCP request and uses that token for all downstream calls.
-
-## Available tools
-
-Evo MCP advertises eight tools: six read tools and two write tools. Which tools you see depends on your Tenant role:
 
 ## Available tools
 
