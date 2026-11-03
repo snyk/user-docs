@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Gives Snyk Agent Scan Full Disk Access on Intel Macs so scans can read locations macOS otherwise protects.</string>
+			<key>PayloadDisplayName</key>
+			<string>Snyk Agent Scan - Full Disk Access (Intel)</string>
+			<key>PayloadIdentifier</key>
+			<string>93684539-AD69-44C3-A3D6-14037EBC98DC</string>
+			<key>PayloadOrganization</key>
+			<string>Snyk</string>
+			<key>PayloadType</key>
+			<string>com.apple.TCC.configuration-profile-policy</string>
+			<key>PayloadUUID</key>
+			<string>2E6EC2E4-D21B-48C4-9AB8-746427387124</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Services</key>
+			<dict>
+				<key>SystemPolicyAllFiles</key>
+				<array>
+					<dict>
+						<key>Authorization</key>
+						<string>Allow</string>
+						<key>CodeRequirement</key>
+						<string>identifier "agent-scan" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "97QYW7LHSF"</string>
+						<key>Comment</key>
+						<string></string>
+						<key>Identifier</key>
+						<string>/Library/Application Support/Snyk/ads-scan/bin/snyk-scan-macos-x86_64</string>
+						<key>IdentifierType</key>
+						<string>path</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Gives Snyk Agent Scan Full Disk Access on Intel Macs so scans can read locations macOS otherwise protects.</string>
+	<key>PayloadDisplayName</key>
+	<string>Snyk Agent Scan - Full Disk Access (Intel)</string>
+	<key>PayloadIdentifier</key>
+	<string>93684539-AD69-44C3-A3D6-14037EBC98DC</string>
+	<key>PayloadOrganization</key>
+	<string>Snyk</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>D175AF0C-88EB-41B7-82B4-9A61990EE3BF</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
