@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Snyk standard pre-defined user roles, which cannot be customized, and how to
   assign them
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Pre-defined roles

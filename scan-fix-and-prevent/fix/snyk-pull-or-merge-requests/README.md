@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk pull and merge requests fix and upgrade dependencies
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Pull or Merge Requests

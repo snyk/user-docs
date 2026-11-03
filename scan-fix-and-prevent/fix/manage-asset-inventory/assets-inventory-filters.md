@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to filter the Snyk assets inventory
+last_reviewed: 2026-09-22
+last_reviewed_source: focused-edit
 ---
 
 # Assets inventory filters

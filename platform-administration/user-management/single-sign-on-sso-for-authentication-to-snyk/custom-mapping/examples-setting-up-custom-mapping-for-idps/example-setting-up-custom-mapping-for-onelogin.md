@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: Example of configuring Snyk user roles after setting up OneLogin SSO
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Example: setting up custom mapping for OneLogin

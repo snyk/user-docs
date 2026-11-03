@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Group Admins on Enterprise plans configure Self-Serve SSO with SAML for
   Snyk
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Configure Self-Serve Single Sign-On (SSO)

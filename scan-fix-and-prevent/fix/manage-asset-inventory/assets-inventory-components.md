@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: The components of each Snyk assets inventory layout
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
 ---
 
 # Assets inventory components

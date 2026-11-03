@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Example of configuring Snyk custom mapping of roles for Entra ID (formerly
   Azure AD)
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Example: setting up custom mapping for Entra ID

@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk supports Single Sign-On (SSO) authentication through your company
   identity provider, available on Enterprise plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Single Sign-On (SSO) for authentication to Snyk

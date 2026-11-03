@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up a Google Workspace SAML application and connect it to Snyk for
   SSO
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Google Workspace setup

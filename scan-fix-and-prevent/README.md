@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to use Snyk to scan and secure your code, dependencies, containers, and
   infrastructure as code
+last_reviewed: 2026-07-30
+last_reviewed_source: focused-edit
 ---
 
 # Overview

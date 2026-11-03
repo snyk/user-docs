@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Custom role template for a Team Lead, an Organization Admin who can also
   customize permissions for other users
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Team Lead role template

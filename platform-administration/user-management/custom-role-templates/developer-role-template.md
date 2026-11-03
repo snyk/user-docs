@@ -1,6 +1,8 @@
 ---
 description: Custom role template for a Developer, an Organization-level role to review scan results, fix vulnerabilities, and run tests
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Developer role template

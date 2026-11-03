@@ -1,6 +1,8 @@
 ---
 description: How to export and customize issue views in the Snyk Issues UI
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Export and customize views

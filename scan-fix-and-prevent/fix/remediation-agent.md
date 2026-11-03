@@ -2,6 +2,8 @@
 description: >-
   How the Remediation Agent generates, applies, and verifies vulnerability fixes
   in your Snyk Projects
+last_reviewed: 2026-10-29
+last_reviewed_source: focused-edit
 ---
 
 # Remediation Agent

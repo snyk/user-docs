@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Consistent Ignores for Snyk Code work in the CLI
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Consistent Ignores for Snyk Code CLI

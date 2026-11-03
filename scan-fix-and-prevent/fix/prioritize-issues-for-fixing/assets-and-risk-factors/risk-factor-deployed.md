@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How the deployed risk factor affects Snyk issue prioritization
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Risk factor: deployed

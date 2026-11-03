@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk custom mapping dynamically assigns users to Groups and Organizations
   based on identity provider data
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Custom mapping

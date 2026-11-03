@@ -1,6 +1,8 @@
 ---
 description: How Snyk breakability risk levels indicate upgrade risk in fix PRs
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Breakability risk levels

@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
+---
 # Understanding credit consumption
 
 Your rate card is the one linked in your order form. Every Enterprise order form that includes credits links a specific, versioned rate card, and that version governs your contract for its full term. Refer to it for the consumption rates and units of measure that apply to you.

@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up an Entra ID (formerly Azure AD) Enterprise Application and
   connect it to Snyk for SSO
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Entra ID Enterprise application setup

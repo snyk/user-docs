@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to associate Snyk Open Source, Code, and Container Projects for Insights
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Set up Insights: associating Snyk Open Source, Code, and Container Projects

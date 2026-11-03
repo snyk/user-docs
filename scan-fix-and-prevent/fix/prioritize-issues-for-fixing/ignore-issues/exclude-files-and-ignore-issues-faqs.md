@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: Frequently asked questions about excluding files and ignoring issues in Snyk
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Exclude files and ignore issues FAQs

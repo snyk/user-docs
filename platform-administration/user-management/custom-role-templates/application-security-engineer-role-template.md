@@ -1,6 +1,8 @@
 ---
 description: Custom role template for an Application Security Engineer, an Organization-level role to manage Projects, ignores, and PR checks
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Application Security Engineer role template

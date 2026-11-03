@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How Consistent Ignores for Snyk Code work in pull request checks
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Consistent Ignores for Snyk Code Pull Request Checks

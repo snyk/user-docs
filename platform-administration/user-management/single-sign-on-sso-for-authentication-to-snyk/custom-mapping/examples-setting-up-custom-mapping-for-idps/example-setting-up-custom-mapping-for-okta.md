@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Example of setting up Snyk custom mapping for Okta roles using legacy custom
   mapping
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Example: setting up custom mapping for Okta

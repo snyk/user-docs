@@ -1,6 +1,8 @@
 ---
 description: How to remove members from Snyk Groups and Organizations programmatically using the API
 nav_context: classic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}

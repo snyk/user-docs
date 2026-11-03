@@ -1,6 +1,8 @@
 ---
 description: How to create and apply a custom Snyk PR template
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Apply a custom PR template

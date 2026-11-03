@@ -1,6 +1,8 @@
 ---
 description: How to migrate Snyk SSO from a legacy identity provider to a new one by submitting new IdP metadata
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Identity Provider (IdP) migration
