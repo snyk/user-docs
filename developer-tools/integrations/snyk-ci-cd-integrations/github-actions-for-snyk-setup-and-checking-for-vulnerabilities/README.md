@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk GitHub Actions set up Snyk and check for vulnerabilities in your
   pipeline
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitHub actions for Snyk setup and checking for vulnerabilities

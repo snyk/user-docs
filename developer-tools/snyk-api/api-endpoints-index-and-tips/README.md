@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Index of Snyk API endpoints with tips, including how to find your Organization
   ID
+last_reviewed: 2026-07-14
+last_reviewed_source: focused-edit
 ---
 
 # API endpoints index and tips

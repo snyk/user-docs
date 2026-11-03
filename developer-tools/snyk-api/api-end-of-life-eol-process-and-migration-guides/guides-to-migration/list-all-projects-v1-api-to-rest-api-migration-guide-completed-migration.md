@@ -1,6 +1,8 @@
 ---
 description: Migration guide from the V1 List all Projects endpoint to the REST API
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 # List all Projects V1 API to REST API migration guide (completed migration)
 

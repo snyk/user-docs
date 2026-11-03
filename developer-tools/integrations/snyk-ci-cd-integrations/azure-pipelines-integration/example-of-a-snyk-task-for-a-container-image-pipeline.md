@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Example Snyk Security Scan task for testing a container image in an Azure
   Pipelines script
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Example of a Snyk task for a container image pipeline

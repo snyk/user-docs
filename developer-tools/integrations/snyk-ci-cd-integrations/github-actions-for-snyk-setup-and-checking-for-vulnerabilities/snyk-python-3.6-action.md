@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The removed Snyk GitHub Action for Python 3.6, with migration guidance
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Python-3.6 action

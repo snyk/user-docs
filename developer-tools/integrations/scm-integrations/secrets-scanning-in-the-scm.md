@@ -2,6 +2,8 @@
 description: >-
   How Snyk Secrets detects hard-coded secrets in your SCM repositories and
   pull requests
+last_reviewed: 2026-08-12
+last_reviewed_source: focused-edit
 ---
 
 # Secrets scanning in the SCM

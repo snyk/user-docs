@@ -1,6 +1,8 @@
 ---
 description: How the Snyk pipe runs on each Bitbucket Pipelines execution
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Bitbucket Pipelines integration: how it works

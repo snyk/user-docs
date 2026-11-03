@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to configure the Snyk Security Scan task to use a regional Snyk API
   endpoint in Azure Pipelines
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Regional API endpoints

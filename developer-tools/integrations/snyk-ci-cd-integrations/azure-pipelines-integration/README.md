@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to add security scanning to Azure Pipelines with the Snyk Security Scan
   task
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Azure Pipelines integration using the Snyk Security Scan task

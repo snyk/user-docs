@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to use the native Snyk Jenkins plugin, based on the Snyk CLI, to test and
   monitor Projects
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Jenkins plugin integration with Snyk

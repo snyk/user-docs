@@ -1,6 +1,8 @@
 ---
 description: How to migrate GitHub Actions away from affected Snyk actions
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitHub actions migration

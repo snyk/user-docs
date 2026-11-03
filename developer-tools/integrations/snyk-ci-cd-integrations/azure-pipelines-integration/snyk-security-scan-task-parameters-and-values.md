@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   The configuration parameters and values for the Snyk Security Scan task in
   Azure Pipelines
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Security Scan task parameters and values

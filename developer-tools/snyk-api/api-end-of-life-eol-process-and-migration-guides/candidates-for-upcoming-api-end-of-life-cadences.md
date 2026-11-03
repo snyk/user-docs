@@ -1,6 +1,8 @@
 ---
 description: Snyk API endpoints that are candidates for upcoming end-of-life cadences
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Candidates for upcoming API end-of-life cadences

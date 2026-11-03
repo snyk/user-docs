@@ -1,6 +1,8 @@
 ---
 description: CI/CD strategies for running Snyk Container after the container image is built
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Container-specific CI/CD strategies

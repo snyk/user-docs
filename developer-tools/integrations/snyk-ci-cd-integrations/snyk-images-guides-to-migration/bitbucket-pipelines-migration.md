@@ -1,6 +1,8 @@
 ---
 description: How to migrate Bitbucket Pipelines away from affected Snyk scan images
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # BitBucket Pipelines migration

@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up Snyk in a CI/CD pipeline, including the configuration inputs you
   need
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # CI/CD setup

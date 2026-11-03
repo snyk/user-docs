@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk integrates with Bitbucket Pipelines using a Snyk pipe to scan your
   code
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Bitbucket Pipelines integration using a Snyk pipe

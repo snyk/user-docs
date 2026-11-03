@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up the Snyk GitLab SCM integration, available on Enterprise plans
   and with Snyk Broker
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitLab

@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to build user-defined custom images for the Snyk CLI
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # User-defined custom images for CLI

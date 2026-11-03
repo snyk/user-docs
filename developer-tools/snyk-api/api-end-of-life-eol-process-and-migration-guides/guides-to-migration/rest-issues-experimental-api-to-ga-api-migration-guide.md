@@ -1,6 +1,8 @@
 ---
 description: Migration guide from the experimental REST Issues API to the GA API
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # REST Issues experimental API to GA API migration guide

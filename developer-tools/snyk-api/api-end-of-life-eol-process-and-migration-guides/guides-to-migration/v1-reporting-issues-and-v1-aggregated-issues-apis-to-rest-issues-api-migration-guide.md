@@ -2,6 +2,8 @@
 hidden: true
 description: Migration guide from the V1 Issues APIs to the REST Issues API
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 # V1 Issues APIs to REST Issues API migration guide
 

@@ -1,6 +1,8 @@
 ---
 description: Prerequisites for setting up the Snyk Bitbucket Pipelines pipe integration
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Prerequisites for Bitbucket Pipelines integration

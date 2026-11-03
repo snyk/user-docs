@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The Snyk settings and configuration parameters for the TeamCity integration
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # TeamCity configuration parameters

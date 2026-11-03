@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: CI/CD strategies for running Snyk IaC as part of your pipeline stages
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk IaC-specific CI/CD strategies

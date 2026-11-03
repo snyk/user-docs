@@ -1,6 +1,8 @@
 ---
 description: CI/CD strategies for Snyk Open Source software composition analysis testing
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Open Source-specific CI/CD strategies

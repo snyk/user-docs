@@ -1,6 +1,8 @@
 ---
 description: The Snyk Setup GitHub Action for installing the Snyk CLI to check for vulnerabilities
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Setup action

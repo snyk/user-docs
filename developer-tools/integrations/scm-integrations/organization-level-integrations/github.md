@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up the Snyk GitHub SCM integration, including prerequisites and
   Broker for private repositories
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitHub

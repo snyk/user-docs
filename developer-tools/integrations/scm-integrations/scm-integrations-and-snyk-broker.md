@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to use Snyk Broker with SCM integrations when your SCM instance is not
   publicly accessible
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # SCM integrations and Snyk Broker

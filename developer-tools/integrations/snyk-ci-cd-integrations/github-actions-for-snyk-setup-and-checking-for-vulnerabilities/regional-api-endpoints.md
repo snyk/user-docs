@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to configure Snyk GitHub Actions to use a regional Snyk API endpoint, and
   troubleshoot related authentication errors
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Regional API endpoints

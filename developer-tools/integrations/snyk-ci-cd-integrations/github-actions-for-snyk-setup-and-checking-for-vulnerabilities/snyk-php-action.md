@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: Examples of using the Snyk GitHub Action for PHP
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk PHP action

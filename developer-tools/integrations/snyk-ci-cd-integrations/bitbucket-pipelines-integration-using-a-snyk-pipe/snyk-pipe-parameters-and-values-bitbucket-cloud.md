@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: The Snyk pipe parameters and values for Bitbucket Cloud pipelines
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk pipe parameters and values (Bitbucket Cloud)

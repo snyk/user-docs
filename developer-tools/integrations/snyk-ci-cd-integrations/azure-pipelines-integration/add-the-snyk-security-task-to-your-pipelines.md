@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to add the Snyk Security task to your Azure Pipelines, including
   prerequisites
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Add the Snyk Security Task to your pipelines
