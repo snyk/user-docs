@@ -85,6 +85,10 @@ To confirm the deployment, visit [Verify an installation](verify-an-installation
 
 If the Tenant was not onboarded, for example because the push key was wrong, the package installs and the policy script fails.
 
+## Grant Full Disk Access
+
+For Macs in managed mode, deploy a configuration profile that gives the scan Full Disk Access. For the profiles and the steps to upload them, visit [Grant Full Disk Access on macOS](grant-full-disk-access-on-macos.md).
+
 ## Apply a configuration change
 
 Publish the change in **Settings** first. A **Once per computer** policy does not repeat on a machine, so create a second policy that runs the installer without a package:

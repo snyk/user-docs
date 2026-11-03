@@ -45,6 +45,8 @@ Before you install, ensure that you have published the configuration. If you cha
 | [Deploy with Jamf Pro](deploy-with-jamf-pro.md)                 | macOS devices managed with Jamf Pro                                                        |
 | [Deploy with Microsoft Intune](deploy-with-microsoft-intune.md) | Windows devices managed with Microsoft Intune                                              |
 
+On macOS, the scan needs Full Disk Access to read locations that macOS protects. To grant it to managed Macs, deploy a configuration profile with Jamf Pro or Microsoft Intune, as described in [Grant Full Disk Access on macOS](grant-full-disk-access-on-macos.md).
+
 After you install, confirm the result with [Verify an installation](verify-an-installation.md). If the install or uninstall returns an error, visit [Troubleshooting](troubleshooting.md).
 
 ### Get the installer

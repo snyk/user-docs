@@ -57,6 +57,7 @@
     * [Install on a single machine](evo-by-snyk/agentic-development-security-ads/activation-and-deployment/install-on-a-single-machine.md)
     * [Deploy with Jamf Pro](evo-by-snyk/agentic-development-security-ads/activation-and-deployment/deploy-with-jamf-pro.md)
     * [Deploy with Microsoft Intune](evo-by-snyk/agentic-development-security-ads/activation-and-deployment/deploy-with-microsoft-intune.md)
+    * [Grant Full Disk Access on macOS](evo-by-snyk/agentic-development-security-ads/activation-and-deployment/grant-full-disk-access-on-macos.md)
     * [Verify an installation](evo-by-snyk/agentic-development-security-ads/activation-and-deployment/verify-an-installation.md)
     * [Troubleshooting](evo-by-snyk/agentic-development-security-ads/activation-and-deployment/troubleshooting.md)
   * [Agent Supply Chain Security](evo-by-snyk/agentic-development-security-ads/agent-supply-chain-security.md)

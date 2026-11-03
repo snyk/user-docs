@@ -29,6 +29,10 @@ The steps below describe the standard install. For managed mode, visit [Managed 
 The standard install runs in user mode. After installation, Codex prompts each developer to allow hook configuration outside the managed path. If a developer does not accept, the hooks stay installed but do not run, and Agent Behavior Governance does not govern Codex on that device. If developers on these devices use Codex, use managed mode instead, which does not show the prompt. Managed mode does not install Studio.
 {% endhint %}
 
+{% hint style="info" %}
+This page covers Windows devices. To grant Full Disk Access to Macs that Intune manages, visit [Grant Full Disk Access on macOS](grant-full-disk-access-on-macos.md).
+{% endhint %}
+
 ## Prerequisites
 
 You need the following:
