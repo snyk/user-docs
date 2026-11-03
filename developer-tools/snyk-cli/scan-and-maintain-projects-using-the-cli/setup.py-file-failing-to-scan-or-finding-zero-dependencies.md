@@ -1,6 +1,8 @@
 ---
 description: How to resolve a setup.py file failing to scan or finding zero dependencies
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Setup.py file failing to scan or finding zero dependencies

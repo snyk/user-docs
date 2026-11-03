@@ -1,6 +1,8 @@
 ---
 description: How to use the snyk log4shell command to scan for the Log4Shell vulnerability
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Log4shell command use

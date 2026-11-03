@@ -1,6 +1,8 @@
 ---
 description: How to resolve the invalid string length error when scanning Projects with the CLI
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Invalid string length error when scanning projects

@@ -1,5 +1,7 @@
 ---
 description: Use this sample configuration file with snyk cos target add.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS target template

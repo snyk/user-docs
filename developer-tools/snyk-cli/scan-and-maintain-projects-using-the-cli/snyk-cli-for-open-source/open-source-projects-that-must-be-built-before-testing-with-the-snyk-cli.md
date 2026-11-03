@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: Open Source Projects that must be built before testing with the Snyk CLI
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Open Source Projects that must be built before testing with the Snyk CLI

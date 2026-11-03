@@ -1,6 +1,8 @@
 ---
 description: How to ignore Snyk IaC issues using the .snyk policy file
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # IaC ignores using the .snyk policy file

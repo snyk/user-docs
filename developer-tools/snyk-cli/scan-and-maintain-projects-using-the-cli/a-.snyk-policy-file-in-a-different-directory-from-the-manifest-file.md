@@ -1,6 +1,8 @@
 ---
 description: How to use a .snyk policy file in a different directory from the manifest file
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # A .snyk policy file in a different directory from the manifest file

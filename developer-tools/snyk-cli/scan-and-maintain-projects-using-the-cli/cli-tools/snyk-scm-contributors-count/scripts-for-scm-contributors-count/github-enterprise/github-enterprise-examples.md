@@ -1,6 +1,8 @@
 ---
 description: The list of options and examples for GitHub Enterprise
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Github Enterprise - Examples

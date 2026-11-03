@@ -1,5 +1,7 @@
 ---
 description: The snyk test command that tests a Project for vulnerabilities
+last_reviewed: 2026-09-29
+last_reviewed_source: focused-edit
 ---
 
 # Test

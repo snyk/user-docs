@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to configure how the Snyk CLI connects to the Snyk API, including the
   platform URL and region
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Configure Snyk CLI to connect to Snyk API

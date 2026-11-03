@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to configure a proxy for the Snyk CLI
+last_reviewed: 2026-09-04
+last_reviewed_source: bulk-sync
 ---
 
 # Proxy configuration for Snyk CLI

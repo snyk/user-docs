@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to share Snyk IaC CLI results with the Snyk Web UI
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: Prerequisites for the Snyk CLI and Jenkins plugin on Alpine Linux
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system

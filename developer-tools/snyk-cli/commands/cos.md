@@ -2,6 +2,8 @@
 description: >-
   Use the snyk cos commands to find vulnerabilities with Snyk Continuous
   Offensive Security (COS).
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS

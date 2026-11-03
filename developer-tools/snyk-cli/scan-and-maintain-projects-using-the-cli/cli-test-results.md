@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to read Snyk CLI test results after running snyk test
+last_reviewed: 2026-09-04
+last_reviewed_source: bulk-sync
 ---
 
 # CLI test results

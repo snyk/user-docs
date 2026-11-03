@@ -1,6 +1,8 @@
 ---
 description: How to test Helm charts with Snyk IaC using the CLI
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Helm charts

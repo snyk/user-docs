@@ -1,6 +1,8 @@
 ---
 description: A detailed guide to the specific SCM-Contributor-Count scripts
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Scripts for SCM contributors count

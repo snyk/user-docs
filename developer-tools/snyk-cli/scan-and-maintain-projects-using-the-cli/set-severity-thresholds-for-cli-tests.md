@@ -1,6 +1,8 @@
 ---
 description: How to set severity thresholds for Snyk CLI tests
 nav_context: agnostic
+last_reviewed: 2026-08-13
+last_reviewed_source: focused-edit
 ---
 
 # Severity thresholds for CLI tests

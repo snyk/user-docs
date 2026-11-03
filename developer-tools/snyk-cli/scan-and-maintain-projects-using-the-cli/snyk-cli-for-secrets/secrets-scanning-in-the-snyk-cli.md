@@ -2,6 +2,8 @@
 description: >-
   How to scan for hard-coded secrets with the Snyk CLI, including pre-commit
   hooks
+last_reviewed: 2026-08-12
+last_reviewed_source: focused-edit
 ---
 
 # Secrets scanning in the Snyk CLI

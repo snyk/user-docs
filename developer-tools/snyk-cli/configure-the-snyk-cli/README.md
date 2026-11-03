@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to configure the Snyk CLI using environment variables
+last_reviewed: 2026-09-04
+last_reviewed_source: bulk-sync
 ---
 
 # Configure the Snyk CLI

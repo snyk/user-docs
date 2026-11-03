@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: CLI tools that extend the Snyk CLI with additional capabilities
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # CLI tools

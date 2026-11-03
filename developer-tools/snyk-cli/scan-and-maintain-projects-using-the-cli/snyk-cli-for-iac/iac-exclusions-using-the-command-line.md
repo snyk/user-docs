@@ -1,6 +1,8 @@
 ---
 description: How to exclude Snyk IaC issues using the command line
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # IaC exclusions using the command line
