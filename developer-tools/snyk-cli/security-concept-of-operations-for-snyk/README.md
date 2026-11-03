@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The security concept of operations for the Snyk CLI and applications
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Security concept of operations for Snyk

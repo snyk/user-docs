@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to troubleshoot the Snyk Visual Studio extension, including known issues
   and unsupported systems
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Troubleshooting and known issues with Visual Studio extension

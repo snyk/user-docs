@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to resolve Snyk IDE plugin scan failures from .exe download blocking on
   Windows
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # IDE plugin scan fails on Windows systems with .exe download blocking

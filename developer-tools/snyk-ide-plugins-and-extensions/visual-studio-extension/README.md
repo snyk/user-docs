@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   The Snyk Visual Studio extension for scanning and fixing vulnerabilities as
   you develop
+last_reviewed: 2026-09-25
+last_reviewed_source: focused-edit
 ---
 
 # Visual Studio extension

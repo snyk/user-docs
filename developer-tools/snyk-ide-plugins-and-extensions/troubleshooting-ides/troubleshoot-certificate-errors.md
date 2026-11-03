@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to resolve certificate path errors in Snyk IDE plugins
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Troubleshoot certificate errors

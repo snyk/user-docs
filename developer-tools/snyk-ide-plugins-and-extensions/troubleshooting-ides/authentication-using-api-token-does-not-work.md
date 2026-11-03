@@ -1,6 +1,8 @@
 ---
 description: How to resolve Snyk API token authentication problems in IDE plugins
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Authentication using API token does not work

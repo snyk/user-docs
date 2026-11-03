@@ -1,6 +1,8 @@
 ---
 description: How to resolve Snyk Code appearing disabled in an IDE plugin
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Code appears disabled

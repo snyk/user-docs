@@ -3,13 +3,13 @@ nav_context: classic
 description: >-
   How Snyk administrators curate security learning paths with Snyk Learn
   learning programs, available in Early Access
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Learn learning programs
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
-## Snyk Learn learning programs
 
 {% hint style="info" %}
 **Feature availability**
@@ -19,15 +19,13 @@ This feature is available in Early Access as part of the Snyk Learning Managemen
 Send feedback to your Snyk account team, or email [support@snyk.io](mailto:support@snyk.io).
 {% endhint %}
 
-Learning programs allow Snyk administrators to curate specific paths of security education and Snyk product training, and assign them to groups of developers or Snyk users. By grouping lessons into programs and setting deadlines, organizations can automate security onboarding, meet compliance requirements, and drive targeted remediation.
+With learning programs, Snyk administrators can curate specific paths of security education and Snyk product training and assign them to groups of developers or Snyk users. By grouping lessons into programs and setting deadlines, companies can automate security onboarding, meet compliance requirements, and drive targeted remediation.
 
-### Prerequisites
+## Prerequisites
 
-To create and manage learning programs, you must must be a [Tenant Admin](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant) or have a custom role with the `tenant.learning_program.edit` and `tenant.learning_program.read` permissions.
+To create and manage learning programs, you must be a [Tenant Admin](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant) or have a custom role with the `tenant.learning_program.edit` and `tenant.learning_program.read` permissions.
 
-#### Example: Creating a custom role
-
-Use the following API call to create a role called Tenant Training Manager specifically for managing learning programs. Replace `{tenant_id}` with your tenant ID from the Snyk app (`https://app.snyk.io/tenant/{tenant_id}`) and `{snyk_api_token}` with your [API token](https://docs.snyk.io/developer-tools/snyk-api/authentication-for-api/snyk-api-token-permissions-users-can-control). Also, update the Snyk API URL to your correct [regional API URL](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#api-urls).
+For example, use the following API call to create a role called Tenant Training Manager for managing learning programs. Replace `{tenant_id}` with your Tenant ID from the Snyk Web UI (`https://app.snyk.io/tenant/{tenant_id}`) and `{snyk_api_token}` with your [API token](https://docs.snyk.io/developer-tools/snyk-api/authentication-for-api/snyk-api-token-permissions-users-can-control). Also, update the Snyk API URL to your correct [regional API URL](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#api-urls).
 
 ```bash
 curl --location --globoff --request POST "https://api.snyk.io/rest/tenants/{tenant_id}/roles?version=2024-10-15" \
@@ -60,27 +58,27 @@ curl --location --globoff --request POST "https://api.snyk.io/rest/tenants/{tena
   }'
 ```
 
-### Creating a new learning program
+## Creating a new learning program
 
 {% hint style="info" %}
-Programs cannot be edited once they have started. Ensure your lesson list and participant list are final before the start date of the program.
+You cannot edit a program after it starts. Ensure your lesson list and participant list are final before the start date of the program.
 
-During Early Access, there is a limit to 300 participants per program.
+During Early Access, each program can have up to 300 participants.
 {% endhint %}
 
 Follow these steps to build and launch a new training initiative:
 
 1. Navigate to [Learning Programs](https://learn.snyk.io/admin/management/).
 2. Click **Create new learning program**. Enter a unique name (for example, `New Joiners 2026`) and a description.
-3. Browse the available Snyk Learn catalog and select the modules you wish to include in the learning program.
+3. Browse the available Snyk Learn catalog and select the modules you want to include in the learning program.
 4. Download the participants `.csv` template provided in the UI, add the email addresses of your learners, and upload the file.
 5. Set the start date and duration for your learning program, and choose whether to send reminders to your users.
-6. If needed, you can reset progress for lessons to have your users retake those lessons.
+6. Optionally, reset progress for lessons so that your users retake those lessons.
 7. Click **Launch program**.
 
 The program appears on the [Learning Progress](https://learn.snyk.io/user/learning-progress/) page for each user in the program, where they can see their progress and the modules required to complete the program.
 
-### Cloning an existing learning program
+## Cloning an existing learning program
 
 You can clone an existing learning program to create a new learning program with the same content.
 
@@ -90,24 +88,24 @@ You can clone an existing learning program to create a new learning program with
 4. Enter a unique name (for example, `New Joiners 2026`) and a description.
 5. Edit the participants list.
 6. Set the start date and duration for your learning program, and choose whether to send reminders to your users.
-7. If needed, you can reset progress for lessons to have your users retake those lessons.
+7. Optionally, reset progress for lessons so that your users retake those lessons.
 8. Click **Launch program**.
 
-### Tracking progress
+## Tracking progress
 
 You can monitor the completion rates of your learning programs.
 
 1. Navigate to [Learning Programs](https://learn.snyk.io/admin/management/).
 2. Select the learning program you want to monitor.
 
-The progress state for each user is displayed:
+Snyk Learn displays the progress state for each user:
 
 * **Not Started**: The user has been assigned but has not opened any modules.
 * **In Progress**: The user has started at least one lesson.
 * **Completed**: The user has finished all assigned modules in the program.
 
-### Completing a learning program
+## Completing a learning program
 
-Learning programs complete automatically once the scheduled end date is reached.
+Learning programs complete automatically after the scheduled end date.
 
 If needed, you can click **Mark as Completed** on the program details page to end the program early.

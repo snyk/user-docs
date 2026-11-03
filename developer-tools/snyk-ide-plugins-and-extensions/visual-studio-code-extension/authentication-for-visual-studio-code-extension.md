@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to authenticate the Snyk Visual Studio Code extension, including the
   supported protocols
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Authentication for Visual Studio Code extension

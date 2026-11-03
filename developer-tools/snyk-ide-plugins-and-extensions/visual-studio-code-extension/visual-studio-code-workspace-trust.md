@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How the Snyk Visual Studio Code extension uses workspace trust before scanning
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Visual Studio Code workspace trust

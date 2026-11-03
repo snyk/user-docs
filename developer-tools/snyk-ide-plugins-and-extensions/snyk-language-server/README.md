@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The Snyk Language Server that powers Snyk functionality across supported IDEs
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Language Server

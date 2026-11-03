@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Legacy configuration for the Snyk Eclipse plugin, kept available for versions
   before the unified IDE configuration dialog
+last_reviewed: 2026-07-14
+last_reviewed_source: focused-edit
 ---
 
 # Configuration of the Eclipse plugin

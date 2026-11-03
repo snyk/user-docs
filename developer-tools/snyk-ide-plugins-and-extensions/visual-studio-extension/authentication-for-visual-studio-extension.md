@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to authenticate the Snyk Visual Studio extension, including the supported
   protocols
+last_reviewed: 2026-05-26
+last_reviewed_source: focused-edit
 ---
 
 # Authentication for Visual Studio extension

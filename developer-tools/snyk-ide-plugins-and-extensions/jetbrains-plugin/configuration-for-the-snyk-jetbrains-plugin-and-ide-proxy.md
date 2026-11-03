@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Legacy configuration for the Snyk JetBrains plugin and IDE proxy, kept
   available for versions before the unified IDE configuration dialog
+last_reviewed: 2026-07-14
+last_reviewed_source: focused-edit
 ---
 
 # Configuration for the Snyk JetBrains plugin and IDE proxy

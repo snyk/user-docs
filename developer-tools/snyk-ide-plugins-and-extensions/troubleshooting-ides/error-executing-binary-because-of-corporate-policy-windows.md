@@ -1,6 +1,8 @@
 ---
 description: How to resolve Snyk binary execution errors from AppData restrictions on Windows
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Error executing binary because of corporate policy (Windows)

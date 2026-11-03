@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Definitions of Snyk platform terms and security concepts used throughout the
   Snyk documentation
+last_reviewed: 2026-10-22
+last_reviewed_source: focused-edit
 ---
 
 # Glossary

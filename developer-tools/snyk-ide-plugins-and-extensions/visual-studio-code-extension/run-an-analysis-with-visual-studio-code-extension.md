@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to run a Snyk scan with the Visual Studio Code extension once configured
   and trusted
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Run an analysis with Visual Studio Code extension

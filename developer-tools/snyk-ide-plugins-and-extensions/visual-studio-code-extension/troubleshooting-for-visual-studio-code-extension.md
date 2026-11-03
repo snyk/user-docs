@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to troubleshoot the Snyk Visual Studio Code extension, including
   unsupported end-of-life systems
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Troubleshooting for Visual Studio Code extension

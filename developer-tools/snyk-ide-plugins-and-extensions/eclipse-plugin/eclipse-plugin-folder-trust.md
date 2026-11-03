@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How the Snyk Eclipse plugin uses folder trust before scanning new folders
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Eclipse plugin folder trust

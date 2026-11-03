@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to scan and fix vulnerabilities in your Eclipse Projects with the Snyk
   plugin
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Use the Snyk plugin to secure your Eclipse projects
