@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to create and use Snyk service accounts with OAuth 2.0, available on
   Enterprise plans through the Snyk API
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Service accounts using OAuth 2.0

@@ -1,6 +1,8 @@
 ---
 description: Migration guide from the V1 Reporting APIs to the Export API
 nav_context: agnostic
+last_reviewed: 2026-09-10
+last_reviewed_source: bulk-sync
 ---
 
 # V1 Reporting APIs to Export API migration guide

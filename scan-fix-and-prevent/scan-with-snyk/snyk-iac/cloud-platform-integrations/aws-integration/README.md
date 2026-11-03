@@ -1,6 +1,8 @@
 ---
 description: How to integrate Snyk with AWS to scan cloud configurations
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # AWS integration

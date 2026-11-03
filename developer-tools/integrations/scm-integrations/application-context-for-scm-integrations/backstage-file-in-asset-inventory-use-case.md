@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How a Backstage catalog file enriches repository assets in Snyk Essentials
   Asset Inventory
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Backstage file in Asset Inventory - use case

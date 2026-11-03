@@ -1,6 +1,8 @@
 ---
 description: How to configure Snyk Broker on Helm for Snyk Open Source scans of large manifest files, for GitHub integrations
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Open Source scans (SCA) of large manifest files, Helm setup

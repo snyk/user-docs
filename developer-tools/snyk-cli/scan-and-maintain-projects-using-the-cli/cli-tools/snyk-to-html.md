@@ -1,6 +1,8 @@
 ---
 description: The snyk-to-html tool that converts Snyk CLI output to HTML
 nav_context: classic
+last_reviewed: 2026-08-03
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

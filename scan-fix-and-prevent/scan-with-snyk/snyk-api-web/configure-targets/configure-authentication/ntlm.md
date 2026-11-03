@@ -1,5 +1,7 @@
 ---
 description: Configure NTLM to scan targets protected by NTLM v2 authentication.
+last_reviewed: 2026-08-05
+last_reviewed_source: focused-edit
 ---
 
 # NTLM

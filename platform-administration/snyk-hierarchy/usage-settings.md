@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to view Snyk usage details for your Group or Organization, including tests
   and contributing developers
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
 ---
 
 # SKU-based licensing usage settings

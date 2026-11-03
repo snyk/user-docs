@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Snyk support for .NET with Snyk Code and Snyk Open Source, including C# and
   VB.NET frameworks, libraries, and versions
+last_reviewed: 2026-09-14
+last_reviewed_source: focused-edit
 ---
 
 # .NET (C# and VB.NET)
@@ -19,11 +21,11 @@ For .NET with Snyk Code, C# and VB.NET are supported.
 
 ### Supported frameworks and libraries
 
-For .NET with Snyk Code, the following frameworks and libraries are supported:
+For .NET, Snyk Code supports the following frameworks and libraries:
 
-* .NET 6.0 - 10.0
+* .NET 6.0–10.0
 * .NET Core
-* .NET Framework 4.6-4.8.x
+* .NET Framework 4.6–4.8.x
 * Anthropic.SDK
 * ASP.NET 6.x (C# only)
 * Azure.AI.OpenAI
@@ -38,7 +40,7 @@ For .NET with Snyk Code, the following frameworks and libraries are supported:
 
 ### Supported file formats
 
-* For C#, Snyk supports the `.aspx` & `.cs` file formats.
+* For C#, Snyk supports the `.aspx` and `.cs` file formats.
 * For VB.NET, Snyk supports the `.vb` file format.
 
 ### Available features
@@ -65,20 +67,20 @@ For .NET with Snyk Open Source, Snyk supports C# only.
 
 ### Supported versions
 
-For .NET with Snyk Open Source, the following versions are supported:
+For .NET, Snyk Open Source supports the following versions:
 
-* .NET versions 6, 7 - only the latest SDK version
-* .NET versions 8, 9, and 10 - all SDK versions
-* .NET Framework version 4 - using SDK-style projects
+* .NET versions 6 and 7: only the latest SDK version
+* .NET versions 8, 9, and 10: all SDK versions
+* .NET Framework version 4: using SDK-style projects
 * All versions of .NET Standard
 
 ### Supported package managers and package registries
 
-For .NET with Snyk Open Source, NuGet and Paket are supported as package managers and [nuget.org](https://www.nuget.org/) as a package registry.
+For .NET, Snyk Open Source supports NuGet and Paket as package managers and [nuget.org](https://www.nuget.org/) as a package registry.
 
 ### Supported file formats
 
-* For NuGet: `project.assets.json`, `*.sln`, `packages.config,` `project.json`
+* For NuGet: `project.assets.json`, `*.sln`, `packages.config`, and `project.json`
 * For Paket: `paket.dependencies` and `paket.lock`
 
 ### Available integrations
@@ -93,7 +95,7 @@ For .NET with Snyk Open Source, the following features are available:
 * Fix PRs (only for NuGet)
 * License scanning
 * Reports
-* (Only for Paket) Test your app's SBOM and packages using `pkg:nuget` PURLs, using the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) command.
+* Test your app's software bill of materials (SBOM) and packages using `pkg:nuget` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command (only for Paket)
 
 {% hint style="warning" %}
 Snyk does not support `PackageReference` entries without a version attribute. If your Project is missing this attribute, Snyk cannot open a pull request. Ensure you add versions to all `PackageReference` entries.
@@ -115,14 +117,14 @@ Snyk resolves runtime dependencies (or meta-packages) more accurately when the h
 
 Snyk resolves dependencies to identify vulnerabilities in .NET applications. The .NET ecosystem includes multiple dependency levels, including those not visible to developers.
 
-By default, Snyk excludes developer dependencies to reduce noise in scan results, since you rarely deploy them to production.
+By default, Snyk excludes developer dependencies to reduce noise in scan results, because you rarely deploy them to production.
 
 To include developer dependencies in NuGet SCM imports, navigate to **Settings** > **Languages** > **.NET**.
 
 When scanning through an SCM integration, the methodology varies based on your Project format:
 
-* Modern Projects (SDK-style): For modern `.csproj` formats, the scanner utilises the .NET SDK directly to resolve dependencies, resulting in higher accuracy. This also provides the capability of scanning any Project that can be successfully restored by the `dotnet` SDK itself including `Directory.Build.props` files, `global.json`, or Central Package Management (`Directory.Packages.props`).
-* Legacy Projects (Non-SDK style): For Projects relying on `packages.config`, `project.json`, or XML-style `*.csproj` , `*.vbproj` or `*.fproj` files. The scanner uses static analysis to approximate the dependency graph based on standard NuGet algorithms.
+* Modern Projects (SDK-style): For modern `.csproj` formats, the scanner uses the .NET SDK directly to resolve dependencies, resulting in higher accuracy. The scanner can also scan any Project that the `dotnet` SDK can restore, including Projects that use `Directory.Build.props` files, `global.json`, or Central Package Management (`Directory.Packages.props`).
+* Legacy Projects (non-SDK style): For Projects that rely on `packages.config`, `project.json`, or XML-style `*.csproj`, `*.vbproj`, or `*.fsproj` files, the scanner uses static analysis to approximate the dependency graph based on standard NuGet algorithms.
 
 To improve accuracy, migrate to the [Universal Broker](https://docs.snyk.io/platform-administration/snyk-broker/universal-broker) and [enable](https://docs.snyk.io/platform-administration/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker#enabling-the-universal-broker-for-enhanced-sca-scanning) it for Open Source Scanning.
 
@@ -133,9 +135,3 @@ For Snyk Projects targeting .NET 10.0 and later, the Snyk SCM and CLI scanners a
 By default, Microsoft enables the `RestoreEnablePackagePruning` property for these frameworks. This setting prunes framework-provided package references during the restore operation.
 
 Snyk respects your Project configuration. If you set `RestoreEnablePackagePruning` to `false` in your Project file or `Directory.Build.props`, Snyk does not prune these references during the scan.
-
-For Projects targeting .NET 10.0 and later, Snyk SCM and CLI scanners align with the default Microsoft build behaviour.
-
-By default, Microsoft enables the `RestoreEnablePackagePruning` property for these target frameworks. This setting prunes framework-provided package references during the restore operation.
-
-The Improved .NET scanner respects your Project configuration. If you disable this feature by setting the `RestoreEnablePackagePruning` property to `false` either in your Project file or in a `Directory.Build.props` file, Snyk respects this setting and does not prune those references during the scan.

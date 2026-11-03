@@ -3,50 +3,52 @@ nav_context: agnostic
 description: >-
   How to configure Snyk SCM and CI/CD integrations for your Organization,
   including recommended settings
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Configure integrations
 
-Integrate Git or CI/CD integrations as identified in the previous phase.
+Set up the SCM or CI/CD integrations you identified in the previous phase.
 
-## Git repositories
+## SCM integrations
 
-For Git integration, Snyk suggests the following settings:
+For SCM integrations, Snyk recommends the following settings.
 
-To disable gating initially, use the daily monitoring that is automatically configured when a Project is onboarded in Snyk, and disable the following PR/MR Checks in the configuration settings:
+To disable gating initially, use the daily monitoring that Snyk configures automatically when you onboard a Project, and disable the following in the integration settings:
 
-* Automatic fixes Snyk can position
+* Automatic fixes
   * Automatic fix PRs
   * Automatic dependency upgrade PRs
-  * Snyk vulnerability patches.
-* Pull request status checks for
+  * Snyk vulnerability patches
+* Pull request status checks
   * Open Source security and licenses
   * Code analysis
 
-## CI/CD (Build pipelines)
+## CI/CD integrations
 
-Keep your applications secure by preventing deployment of vulnerable applications or components (registries), adding Snyk in the build as a step of the pipeline.
+Add Snyk as a step in your build pipeline to keep your applications secure by preventing deployment of vulnerable applications or components (registries).
 
 The CLI provides:
 
-* Better resolution of dependencies for a number of specific package managers (such as Scala, Gradle, and GO).
-* Supports private packages without having to configure an additional integration, providing that your build environment will have access to your private packages.
-* Give visibility to components that are pushed to production by either breaking builds and reporting to Snyk or only reporting to Snyk.
+* Better resolution of dependencies for a number of specific package managers (such as Scala, Gradle, and Go)
+* Support for private packages without configuring an additional integration, if your build environment has access to your private packages
+* Visibility into components pushed to production, either by breaking builds and reporting to Snyk or by only reporting to Snyk
 
-There are several [CI/CD integrations](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations) available, or you can use the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli) as part of your pipeline, in order to have more flexibility in the tests you are running.
+Several [CI/CD integrations](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations) are available. Alternatively, use the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli) in your pipeline for more flexibility in the tests you run.
 
-In the initial phase, Snyk recommends using the “monitor” feature to import information into Snyk so you can see any discovered issues (unless you are already importing your repos using a source control integration to achieve this). Later, when you want to start gating/blocking new vulnerabilities from being added, you can introduce “test” features - initially failing builds on critical issues and then gradually adapting the fail criteria over time.
+In the initial phase, Snyk recommends using the `monitor` command to import information into Snyk so you can see any discovered issues (unless you are already importing your repos using a source control integration to achieve this). Later, when you want to start gating new vulnerabilities, introduce the `test` command. Initially, fail builds on critical issues, and then gradually adapt the fail criteria over time.
 
 {% hint style="info" %}
-For `snyk iac test --report`, finding issues will result in the build possibly stopping with a non-zero response code.\
-\
-If you want to test passively, the inclusion of the `--report` argument requires either setting the build step to always continue or an alternative like concatenating logic equating to "or true" (for example `snyk iac test --report || true`). The exact syntax depends on the ecosystem the CLI is run in.
+For `snyk iac test --report`, if Snyk finds issues, the command returns a non-zero exit code, which can stop the build.
+
+If you want to test passively with the `--report` option, either set the build step to always continue or use an alternative such as appending logic equivalent to "or true" (for example, `snyk iac test --report || true`). The exact syntax depends on the ecosystem the CLI runs in.
 {% endhint %}
 
 When configuring pipelines, you can use popular plugins like [`snyk-filter`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) for advanced filtering.
 
 {% hint style="info" %}
-Some plugins that require API access may not be usable on the Team plan, as API access is available on the Snyk Enterprise plan.
+Some plugins that require API access might not be usable on the Team plan, because API access is available on the Snyk Enterprise plan.
 {% endhint %}
 
-To see demonstrations of pipeline integrations, see [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples).
+To see demonstrations of pipeline integrations, visit [Snyk Labs CI/CD integration examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).

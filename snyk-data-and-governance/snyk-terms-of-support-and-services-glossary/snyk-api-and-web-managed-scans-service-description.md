@@ -1,6 +1,8 @@
 ---
 description: Service description for Snyk API & Web Managed Scans, an add-on for expert-run dynamic application security testing
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk API & Web Managed Scans Service Description

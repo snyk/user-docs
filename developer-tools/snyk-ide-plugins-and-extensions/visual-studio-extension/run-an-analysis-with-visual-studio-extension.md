@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to run a Snyk scan on your solution with the Visual Studio extension
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Run an analysis with Visual Studio extension

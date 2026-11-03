@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to use snyk test and snyk monitor in a CI/CD pipeline for Snyk Open Source
   Projects
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk test and snyk monitor in CI/CD integration

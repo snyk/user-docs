@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to set up the Universal Broker with the public REST API that the
   snyk-broker-config CLI tool is built on
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Using the API to set up Universal Broker

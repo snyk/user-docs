@@ -1,6 +1,8 @@
 ---
 description: How to verify Snyk Broker container image signatures with Cosign, from version 4.169.1
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Verifying Broker image signatures

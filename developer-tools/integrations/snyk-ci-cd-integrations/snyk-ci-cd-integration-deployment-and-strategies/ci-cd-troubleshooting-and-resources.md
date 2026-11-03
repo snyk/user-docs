@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: Tips and resources for troubleshooting and scaling Snyk CI/CD integrations
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # CI/CD troubleshooting and resources

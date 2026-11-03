@@ -1,6 +1,8 @@
 ---
 description: Deployment approaches and strategies for adopting Snyk CI/CD integrations
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk CI/CD Integration deployment and strategies

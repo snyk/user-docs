@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for C# and ASP.NET
 nav_context: agnostic
+last_reviewed: 2026-08-13
+last_reviewed_source: bulk-sync
 ---
 
 # C# and ASP.NET rules

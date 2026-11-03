@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The removed Snyk GitHub Action for Scala, with migration guidance
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Scala action

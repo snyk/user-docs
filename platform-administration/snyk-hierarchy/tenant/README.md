@@ -3,6 +3,8 @@ nav_context: new
 description: >-
   The Tenant, the top level of the Snyk hierarchy, and the features it manages
   on Enterprise plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Tenants

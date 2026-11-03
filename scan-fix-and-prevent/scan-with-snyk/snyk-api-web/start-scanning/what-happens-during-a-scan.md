@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: What happens during a Snyk API & Web scan
+last_reviewed: 2026-08-19
+last_reviewed_source: focused-edit
 ---
 
 # What happens during a scan

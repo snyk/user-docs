@@ -2,6 +2,8 @@
 description: >-
   How to read the target summary, findings list, and scan history for a
   Continuous Offensive Security target
+last_reviewed: 2026-08-17
+last_reviewed_source: bulk-sync
 ---
 
 # Interpret Scan Results

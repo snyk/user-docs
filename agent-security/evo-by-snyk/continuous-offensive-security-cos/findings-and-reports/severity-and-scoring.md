@@ -2,6 +2,8 @@
 description: >-
   How severity levels and CVSS scores work in Continuous Offensive Security,
   and how to prioritize findings
+last_reviewed: 2026-08-17
+last_reviewed_source: bulk-sync
 ---
 
 # Severity and Scoring

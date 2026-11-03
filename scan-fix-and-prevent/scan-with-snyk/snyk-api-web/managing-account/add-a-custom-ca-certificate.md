@@ -1,5 +1,7 @@
 ---
 description: How to configure a custom CA certificate
+last_reviewed: 2026-09-16
+last_reviewed_source: focused-edit
 ---
 
 # Add a custom CA certificate

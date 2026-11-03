@@ -1,5 +1,7 @@
 ---
 description: Use the snyk cos scan commands to scan your applications for vulnerabilities.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS scan

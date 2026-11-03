@@ -1,6 +1,8 @@
 ---
 description: Why the Snyk CLI may execute code from your Project during analysis
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Code execution warning for Snyk CLI

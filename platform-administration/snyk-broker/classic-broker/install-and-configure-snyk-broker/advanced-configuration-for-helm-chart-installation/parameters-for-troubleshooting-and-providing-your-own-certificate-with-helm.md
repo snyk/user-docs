@@ -1,6 +1,8 @@
 ---
 description: Helm parameters for troubleshooting SSL inspection and providing your own certificate for Snyk Broker
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Parameters for troubleshooting and providing your own certificate with Helm

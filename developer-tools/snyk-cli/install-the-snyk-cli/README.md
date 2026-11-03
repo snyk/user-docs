@@ -1,5 +1,7 @@
 ---
 nav_context: agnostic
+last_reviewed: 2026-06-02
+last_reviewed_source: focused-edit
 ---
 
 # Install the Snyk CLI

@@ -1,6 +1,8 @@
 ---
 description: The Snyk Code security rules that support custom sanitizers as Rule Extensions, listed per language
 nav_context: agnostic
+last_reviewed: 2026-07-17
+last_reviewed_source: focused-edit
 ---
 
 # Supported rules

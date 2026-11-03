@@ -1,6 +1,8 @@
 ---
 description: Environment variables required to configure the Snyk Broker client for Azure Repos
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Azure Repos - environment variables for Snyk Broker

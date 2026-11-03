@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to install a Snyk API & Web scanning agent
+last_reviewed: 2026-09-16
+last_reviewed_source: focused-edit
 ---
 
 # Install a scanning agent

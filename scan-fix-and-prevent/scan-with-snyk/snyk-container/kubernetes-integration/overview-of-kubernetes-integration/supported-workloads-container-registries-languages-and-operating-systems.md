@@ -1,6 +1,8 @@
 ---
 description: The workloads, container registries, languages, and operating systems the Kubernetes integration supports
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Supported workloads, container registries, languages, and operating systems

@@ -1,6 +1,8 @@
 ---
 description: How Snyk regional hosting and data residency let you control your data region, available on Enterprise plans
 nav_context: agnostic
+last_reviewed: 2026-07-07
+last_reviewed_source: focused-edit
 ---
 
 # Regional hosting and data residency

@@ -1,6 +1,8 @@
 ---
 description: The languages supported by the Snyk TeamCity integration
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Language support for TeamCity integration

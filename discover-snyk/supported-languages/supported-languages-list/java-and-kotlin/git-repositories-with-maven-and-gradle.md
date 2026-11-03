@@ -1,9 +1,11 @@
 ---
 description: How Snyk scans Maven and Gradle applications through SCM integrations, including dependency trees and supported scopes
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
-# SCM integrations with Maven and Gradle
+# SCM integrations for Java and Kotlin
 
 ## Available SCM integrations
 
@@ -15,47 +17,47 @@ The Project includes only the production dependencies in the `compile`, `provide
 
 For Maven, Snyk can generate a dependency tree from POM through the SCM integration or the CLI:
 
-* Locally and using CI/CD: Snyk interacts with the package manager to produce a list of dependencies.
+* Locally and using continuous integration/continuous delivery (CI/CD): Snyk interacts with the package manager to produce a list of dependencies.
 * SCM integration: Snyk approximates the build as if it were built at that time.
 
 {% hint style="info" %}
-Developer dependencies (`scope=test`) are ignored as they are not pushed to production and are generally considered noise. You can enable them in CLI by adding `--dev`.
+Snyk ignores developer dependencies (`scope=test`) because they are not pushed to production and are generally considered noise. To include them in the CLI, add `--dev`.
 
-Because Maven resolves dependencies in the order it encounters them in the POM file, it is important that dev dependencies are listed last in the POM file. Not doing so can lead to dev dependencies being reported by Snyk.
+Because Maven resolves dependencies in the order it encounters them in the POM file, list dev dependencies last in the POM file. Otherwise, Snyk can report dev dependencies.
 {% endhint %}
 
 ### Gradle
 
-For Gradle, Snyk interacts with the package manager to produce a list of dependencies. Typically Gradle executes code and other actions during the build process that impacts the installed dependencies, so Snyk recommends using the CLI if a gradle.lockfile is not present.
+For Gradle, Snyk interacts with the package manager to produce a list of dependencies. Typically, Gradle executes code and other actions during the build process that impact the installed dependencies, so Snyk recommends using the CLI if a `gradle.lockfile` is not present.
 
 For Gradle, after you select a Project for import, Snyk builds the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
 
-Only production dependencies in the `api`, `compile`, `classpath`, `implementation`, `runtime` and `runtimeOnly` configurations are included.
+Snyk includes only production dependencies in the `api`, `compile`, `classpath`, `implementation`, `runtime`, and `runtimeOnly` configurations.
 
 If possible, enable [Gradle lockfiles](https://docs.gradle.org/current/userguide/dependency_locking.html) in your application. When present, Snyk can more accurately resolve the final version of dependencies used in the Project.
 
-For Kotlin, the following manifest files are supported:
+For Kotlin, Snyk supports the following manifest files:
 
-* build.gradle (Groovy DSL) for both SCM and CLI
-* build.gradle.kts (Kotlin DSL) for CLI only
+* `build.gradle` (Groovy DSL) for both SCM and CLI
+* `build.gradle.kts` (Kotlin DSL) for CLI only
 
-## **Maven and Gradle Projects using gradle.lockfile**
+## Maven and Gradle Projects using gradle.lockfile
 
-If you are using Maven or Gradle with a gradle.lockfile, the Git code repository integration is an efficient way to use Snyk and get visibility or you can use CLI/IDE or CI/CD integrations to test, gate, and, or monitor.
+If you use Maven, or Gradle with a `gradle.lockfile`, the SCM integration is an efficient way to use Snyk and get visibility. You can also use the CLI, IDE, or CI/CD integrations to test, gate, or monitor.
 
-Typically you can instrument testing as part of a build system or adopt a lockfile as part of their process.
+Typically, you can instrument testing as part of a build system or adopt a lockfile as part of your process.
 
-* It is quite common for large organizations to monitor applications via Git integration, to begin with, daily monitoring, turning on PR checks for only key applications at the start.
-* As developers become familiar with Snyk capabilities, they widen the scope of applications with PR checks for gating.
+* Large companies commonly start by monitoring applications daily through the SCM integration, and turn on PR Checks only for key applications.
+* As developers become familiar with Snyk capabilities, they widen the scope of applications with PR Checks for gating.
 * Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commands](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration).
 
-## Gradle Projects without a lock file
+## Gradle Projects without a lockfile
 
-If you're using Gradle without a Gradle.lockfile, it is possible that the full dependency tree is not apparent or artifacts are pulled in from external resources. Snyk recommends to:
+If you use Gradle without a `gradle.lockfile`, it is possible that the full dependency tree is not apparent or artifacts are pulled in from external resources. Snyk recommends the following:
 
-* Use the CLI/IDE workflow for local scans
+* Use the CLI or IDE workflow for local scans.
 * Use CI/CD to passively monitor and then turn on gating by using the [`snyk [product] test` and `monitor` commands](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration).
-* Start with turning on gating and failing the build on one Project, so developers get familiar with the process and then use passive monitoring for the remainder of the portfolio.
+* Start by turning on gating and failing the build on one Project so developers become familiar with the process. Then use passive monitoring for the rest of the portfolio.
 
 ## Improved Gradle SCM scanning
 
@@ -67,53 +69,53 @@ Improved Gradle SCM scanning is in Early Access. You can enable the feature by u
 
 ### Supported Gradle features
 
-* [Groovy](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html) and [Kotlin](https://docs.gradle.org/current/userguide/kotlin_dsl.html) DSLs - `build.gradle(.kts)` and `settings.gradle(.kts)`
-* [Built-in](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_public_repository) and [custom](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_custom_repository) package repositories, for example, Artifactory, Nexus
+* [Groovy](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html) and [Kotlin](https://docs.gradle.org/current/userguide/kotlin_dsl.html) DSLs: `build.gradle(.kts)` and `settings.gradle(.kts)`
+* [Built-in](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_public_repository) and [custom](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_custom_repository) package repositories, for example, Artifactory and Nexus
 * Built-in objects [`ext`](https://docs.gradle.org/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html), [`project`](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html), `rootProject`, and [`settings`](https://docs.gradle.org/current/dsl/org.gradle.api.initialization.Settings.html)
 * Local and global variables, maps, and string interpolation
 * `allprojects` and `subprojects` blocks
 * Custom files referenced using `apply from`
 * [Type-safe project accessors](https://docs.gradle.org/current/userguide/declaring_dependencies_basics.html#sec:type-safe-project-accessors)
 * Gradle [lockfiles](https://docs.gradle.org/current/userguide/dependency_locking.html)
-* [Gradle properties and system properties](https://docs.gradle.org/current/userguide/build_environment.html#sec:gradle_system_properties) - `gradle.properties`
+* [Gradle properties and system properties](https://docs.gradle.org/current/userguide/build_environment.html#sec:gradle_system_properties): `gradle.properties`
 * [Dependency exclusions](https://docs.gradle.org/current/userguide/dependency_downgrade_and_exclude.html#sec:excluding-transitive-deps)
-* Version catalogs declared in [Gradle](https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog-declaration) and [TOML](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) files - `gradle/libs.versions.toml`
+* Version catalogs declared in [Gradle](https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog-declaration) and [TOML](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) files: `gradle/libs.versions.toml`
 * [Multi-project builds](https://docs.gradle.org/current/userguide/declaring_dependencies_between_subprojects.html), project names, project references
 * [Spring's `mavenBom`](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/#dependency-management-configuration-bom-import)
 * [Spring Boot plugin BOMs](https://docs.spring.io/spring-boot/gradle-plugin/managing-dependencies.html)
 * Maven BOMs as [`platform`](https://docs.gradle.org/current/userguide/platforms.html#sub:using-platform-to-control-transitive-deps) dependencies
 
-The following Gradle features are not supported:
+Improved Gradle SCM scanning does not support the following Gradle features:
 
 * Custom configuration in [buildSrc](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources) directories
-* Dependencies introduced via [plugins](https://docs.gradle.org/current/userguide/plugins.html).
+* Dependencies introduced through [plugins](https://docs.gradle.org/current/userguide/plugins.html)
 
 ### Enable improved Gradle SCM scanning
 
 {% hint style="warning" %}
-Improved Gradle SCM scanning supports importing a maximum limit of 5,000 `build.gradle(.kts)` files per SCM repository. Attempts to import repos with more than 5,000 Gradle build files will fail.
+Improved Gradle SCM scanning supports importing a maximum of 5,000 `build.gradle(.kts)` files per SCM repository. Imports of repositories with more than 5,000 Gradle build files fail.
 {% endhint %}
 
 To enable this feature, follow these steps for your Snyk Organization:
 
-1. Configure [package repository integrations](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations) (if you use Artifactory or Nexus, see [below](git-repositories-with-maven-and-gradle.md#package-repository-integrations)).
+1. Configure [package repository integrations](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations) (if you use Artifactory or Nexus, visit [Package repository integrations](git-repositories-with-maven-and-gradle.md#package-repository-integrations)).
 2. Enable [Workspaces for SCM integrations](https://docs.snyk.io/developer-tools/integrations/scm-integrations/workspaces).
 3. Enable **Improved Gradle scanning** in Snyk Preview.
 
 After Improved Gradle SCM scanning is enabled:
 
-* The SCM repositories that have been previously imported have existing Gradle Groovy DSL Projects automatically updated on the next manual or recurring test.
+* Snyk automatically updates existing Gradle Groovy DSL Projects in previously imported SCM repositories on the next manual or recurring test.
 * Re-import the repository to start seeing results for Gradle Kotlin DSL Projects.
 
 ## Package repository integrations
 
 If your application build uses private package repositories, you must configure the relevant Snyk integration to get the most accurate results.
 
-To use package repository integrations with the Improved Gradle scanning feature, use the configuration instructions and settings for Maven. These will be detected and used in improved Gradle scans.
+To use package repository integrations with the Improved Gradle scanning feature, use the configuration instructions and settings for Maven. Improved Gradle scans detect and use these settings.
 
-In the Java language settings, you can integrate Snyk with your private package repositories (for example, Artifactory or Nexus). This enables Snyk to build a complete dependency tree when scanning Maven or Gradle Projects that reference private packages.
+In the Java language settings, you can integrate Snyk with your private package repositories (for example, Artifactory or Nexus). With this integration, Snyk can build a complete dependency tree when scanning Maven or Gradle Projects that reference private packages.
 
-## Package registry integrations (Artifactory/Nexus) - Maven
+## Package registry integrations (Artifactory/Nexus) for Maven
 
 {% hint style="info" %}
 Artifactory and Nexus package registry integrations are available only with Snyk Enterprise plans.
@@ -121,15 +123,15 @@ Artifactory and Nexus package registry integrations are available only with Snyk
 
 Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies through private packages.
 
-Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker.
+You can connect Snyk to a publicly available instance using a username and password, or to a private server on your network using Snyk Broker.
 
-Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup) and [Artifactory Registry setup](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup).
+Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. Visit [Nexus Repository Manager setup](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup) and [Artifactory Registry setup](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup).
 
 {% hint style="info" %}
-For users who do not have a Snyk Enterprise integration with Artifactory or Nexus, Snyk recommends using the CLI, as it works with the dependencies that your build system makes available locally.
+For users who do not have a Snyk Enterprise integration with Artifactory or Nexus, Snyk recommends using the CLI, because it works with the dependencies that your build system makes available locally.
 {% endhint %}
 
-For more information on package registry integrations, including Maven, see the following external resources:
+For more information on package registry integrations, including Maven, visit the following resources:
 
 * Package registry integrations: [Nexus Repository Manager setup](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup) and [Artifactory Registry setup](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup)
 * [Artifactory Registry for Maven](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven)
@@ -137,16 +139,16 @@ For more information on package registry integrations, including Maven, see the 
 * Nexus Container Registry: [Container security with Nexus integration](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-nexus-container-registry)
 * Gatekeeper plugins: Artifactory Gatekeeper plugin
 
-## Configure language settings for Snyk for Java
+## Configure language settings for Java
 
 You can configure language settings for your open source libraries and licensing at the Organization level. The configuration settings apply to all Projects in that Organization. To configure:
 
-1. In the Snyk Web UI, navigate to **Settings** > **Snyk Open Source** > **Languages** > **Java.**
-2. Click **Edit settings.**
+1. In the Snyk Web UI, navigate to **Settings** > **Snyk Open Source** > **Languages** > **Java**.
+2. Click **Edit settings**.
 3. Configure the settings for **Maven**.
 4. Click **Update Settings** to save changes.
 
-## **APIs**
+## APIs
 
 Customers develop advanced dependency management strategies and can choose not to use the standard and frequently used package managers.
 

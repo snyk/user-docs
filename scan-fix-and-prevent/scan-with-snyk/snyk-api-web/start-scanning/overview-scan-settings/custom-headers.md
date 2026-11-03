@@ -1,6 +1,8 @@
 ---
 description: How to configure custom headers for Snyk API & Web scans
 nav_context: classic
+last_reviewed: 2026-06-16
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

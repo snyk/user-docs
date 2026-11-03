@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Reference for Snyk Essentials integration availability, sync times, connection
   statuses, and Snyk Broker setup
+last_reviewed: 2026-10-19
+last_reviewed_source: focused-edit
 ---
 
 # Snyk Essentials integrations reference

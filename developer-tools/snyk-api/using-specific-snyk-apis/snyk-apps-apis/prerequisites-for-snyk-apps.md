@@ -1,6 +1,8 @@
 ---
 description: Prerequisites for creating a Snyk App
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Prerequisites for Snyk Apps

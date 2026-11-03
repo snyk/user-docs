@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How Agentic Development Security secures the AI agents that build your
   software
+last_reviewed: 2026-10-13
+last_reviewed_source: focused-edit
 ---
 
 # Agentic Development Security (ADS)

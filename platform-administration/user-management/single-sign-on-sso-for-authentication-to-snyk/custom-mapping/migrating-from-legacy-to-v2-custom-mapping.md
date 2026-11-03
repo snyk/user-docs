@@ -1,6 +1,8 @@
 ---
 description: How to migrate Snyk SSO custom role mapping from the legacy format to v2 colon-delimited syntax
 nav_context: classic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Migrating from legacy to v2 custom mapping

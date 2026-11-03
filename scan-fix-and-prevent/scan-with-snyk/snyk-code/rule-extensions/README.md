@@ -1,6 +1,8 @@
 ---
 description: How Snyk Code Rule Extensions add custom functions to existing security rules to match the unique context of your Project
 nav_context: agnostic
+last_reviewed: 2026-07-15
+last_reviewed_source: focused-edit
 ---
 
 # Rule Extensions

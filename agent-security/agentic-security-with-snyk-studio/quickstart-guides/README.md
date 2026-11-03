@@ -3,6 +3,8 @@ description: >-
   Quickstart guides for setting up Snyk Studio with common AI coding
   assistants
 nav_context: agnostic
+last_reviewed: 2026-07-21
+last_reviewed_source: bulk-sync
 ---
 
 # Quickstart guides

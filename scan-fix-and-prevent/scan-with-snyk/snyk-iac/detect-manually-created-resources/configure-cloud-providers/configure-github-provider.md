@@ -1,6 +1,8 @@
 ---
 description: How to configure the GitHub provider for Snyk IaC drift detection
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Configure GitHub provider

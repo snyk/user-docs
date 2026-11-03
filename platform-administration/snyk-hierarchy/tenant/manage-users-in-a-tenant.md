@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to manage members of a Snyk Tenant, available on Enterprise plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Manage users in a Tenant

@@ -1,6 +1,8 @@
 ---
 description: How to add users to Snyk API & Web
 nav_context: classic
+last_reviewed: 2026-06-17
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

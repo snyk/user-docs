@@ -1,6 +1,8 @@
 ---
 description: The Snyk API & Web roles and scopes by plan
 nav_context: agnostic
+last_reviewed: 2026-06-16
+last_reviewed_source: bulk-sync
 ---
 
 # Roles and scopes by plan

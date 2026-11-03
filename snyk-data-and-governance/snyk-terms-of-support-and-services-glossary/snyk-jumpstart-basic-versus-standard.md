@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How the Snyk Onboarding Basic and Standard consultant-led packages differ
+last_reviewed: 2026-10-09
+last_reviewed_source: focused-edit
 ---
 
 # Snyk Onboarding: Basic versus Standard

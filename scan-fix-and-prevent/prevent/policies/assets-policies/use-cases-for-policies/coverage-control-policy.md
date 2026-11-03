@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to use a coverage control policy in Snyk Essentials
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

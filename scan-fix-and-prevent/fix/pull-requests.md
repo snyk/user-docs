@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How Snyk uses pull requests to fix and prevent vulnerabilities
+last_reviewed: 2026-10-20
+last_reviewed_source: focused-edit
 ---
 
 # Pull Requests

@@ -1,6 +1,8 @@
 ---
 description: Guides for integrating with Snyk webhooks
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Guides to webhooks

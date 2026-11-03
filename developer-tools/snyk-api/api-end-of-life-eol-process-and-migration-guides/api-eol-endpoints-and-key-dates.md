@@ -1,6 +1,8 @@
 ---
 description: Snyk API endpoints at end-of-life and their key dates
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # API EOL endpoints and key dates

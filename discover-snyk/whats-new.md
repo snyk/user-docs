@@ -5,11 +5,65 @@ description: >-
   changes, and knowledge base improvements
 cover: .gitbook/assets/docs-banner-nov25.webp
 coverY: 0
+last_reviewed: 2026-11-02
+last_reviewed_source: focused-edit
 ---
 
 # What's new?
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
+
+## October 2026
+
+### Evo by Snyk
+
+* Evo by Snyk now documents how to disable and enable any policy, including default policies. A disabled policy stops raising new issues, and Evo hides the issues it already raised until you enable the policy again. See [Policies and issues](https://docs.snyk.io/agent-security/evo-by-snyk/platform-surfaces/policies-and-issues).
+* MCP Governance now supports risk-based policies. You can classify servers with an allowlist, define conditions on Evo risk dimensions such as prompt injection in a tool or unofficial publisher status, or use both, and preview the impact before you turn on blocking. See [MCP Governance](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/agent-behavior-governance/mcp-governance).
+* Agent Supply Chain Security documents the MCP Risk Score, which combines server behavior, trust, and, for local servers, implementation signals. You can use the score, or any individual risk index, as a policy condition. See [Agent Supply Chain Security](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/agent-supply-chain-security).
+* The Tenant Member role now has read-only Evo access limited to the Organizations the user belongs to, and you can scope both the Tenant Member and Tenant Viewer roles by Organization. See [Access and authentication](https://docs.snyk.io/agent-security/evo-by-snyk/access-and-authentication).
+* Agentic Development Security documentation now highlights that Codex governance requires developer consent in user mode, compares user mode and managed mode, and adds steps to trust the Codex hook after you dismiss the prompt. See [Activation and deployment](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/activation-and-deployment).
+* The ADS installer now ships as a signed macOS `.pkg` and Windows `.msi` that you download from **Settings** in Evo, and the installer registers a scheduled job so scans run without MDM. [Activation and deployment](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/activation-and-deployment), [Install on a single machine](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/activation-and-deployment/install-on-a-single-machine), and [Deploy with Microsoft Intune](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/activation-and-deployment/deploy-with-microsoft-intune) document the package flow.
+* Activation documentation now covers multiple push keys, including how to rotate and revoke a key, and adds troubleshooting for a revoked push key. See [Activation and deployment](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/activation-and-deployment).
+* The Microsoft Intune deployment page adds managed mode verification and configuration guidance, and an Install to a custom directory section. See [Deploy with Microsoft Intune](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/activation-and-deployment/deploy-with-microsoft-intune).
+* Agent Behavior Governance is now generally available, and Snyk removed the open preview notice from the Agentic Development Security overview. See [Agentic Development Security](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads).
+
+### Snyk API & Web
+
+* The coverage report documentation describes the changes to the **Coverage** tab and expands the reasons a request can be rejected. See [Coverage report](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/review-and-fix/overview-reports/coverage-report).
+* Two-factor authentication documentation now covers sending the one-time password (OTP) from the target settings and adds new login sequence screenshots. See [Configure two-factor authentication](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-two-factor-authentication).
+* The Postman authentication page adds a variable type example, a test script example that stores the token, the behavior of the **Save and enable** button, and a save step for logout detection. See [Configure Postman authentication](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-postman-authentication).
+* Snyk API & Web now lists 12 additional vulnerable JavaScript libraries that it detects, including jQuery Validation, Ext JS, markdown-it, Quill, Marked, protobuf.js, and Video.js. See [Vulnerability types detected](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/vulnerabilities-detected/vulnerability-types-detected).
+
+### Snyk Code
+
+* The October 2026 release adds the latest Java and JavaScript libraries to the framework lists, adds Google Cloud BigQuery to the Java and Kotlin list, and adds a Java mass assignment rule and a Ruby SSRF rule to the rule tables. See [Supported languages](https://docs.snyk.io/supported-languages/supported-languages-list).
+* Snyk Code documents how it resolves imports by using `go.mod` and `tsconfig.json`, and removes Mako from the supported template engines. See [Technical specifications and guidance](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance).
+
+### Snyk Platform Subscription
+
+* A new Snyk Platform Subscription section explains the two Enterprise licensing structures: legacy SKU-based licensing and the consumption-based Snyk Platform Subscription. With the subscription, you pre-purchase credits that are valid for the full contract term, and Snyk deducts them daily based on your rate card. See [Snyk Platform Subscription mechanics](https://docs.snyk.io/platform-administration/snyk-platform-subscription/snyk-platform-subscription-mechanics).
+* Snyk documents that continued use after you exhaust your credit balance is invoiced on demand at the per-credit price in your contract, and that unused credits are non-refundable and do not automatically carry over to a renewal. See [Snyk Platform Subscription mechanics](https://docs.snyk.io/platform-administration/snyk-platform-subscription/snyk-platform-subscription-mechanics).
+* Tenant Admins can enable or disable capabilities in the capability control panel under **Capability Access** in the Tenant settings. All capabilities, including new generally available ones, default to off, so Snyk consumes credits only for capabilities that a Tenant Admin enables. See [Capability control panel](https://docs.snyk.io/platform-administration/snyk-platform-subscription/capability-control-panel).
+* A new page explains the **Credit breakdown** dashboard under **Plan and billing**, which shows contract pacing, monthly consumption charts by Group and capability, and an exportable **Billable Events Log**. See [Understanding credit consumption](https://docs.snyk.io/platform-administration/snyk-platform-subscription/understanding-credit-consumption).
+* The **Your Plan** page is now documented as Viewing your Plan, and the **Usage** settings page is renamed SKU-based licensing usage settings because it applies only to legacy SKU-based subscriptions. See [Viewing your Plan](https://docs.snyk.io/platform-administration/snyk-platform-subscription/enterprise-contract-types/viewing-your-plan) and [SKU-based licensing usage settings](https://docs.snyk.io/platform-administration/snyk-hierarchy/usage-settings).
+
+### Snyk Remediation Agent
+
+* A new Remediation campaigns page, in Early Access, describes the prerequisites, supported package managers, and limitations, including private registries. See [Remediation campaigns](https://docs.snyk.io/scan-fix-and-prevent/fix/remediation-agent/remediation-campaigns).
+* The Pull requests page now covers campaign pull requests, and the glossary adds the Campaign (Remediation Agent) and Remediation Agent terms. See [Pull requests](https://docs.snyk.io/scan-fix-and-prevent/fix/pull-requests).
+
+### Snyk Secrets
+
+* Repository monitoring configuration now covers Snyk Secrets. You can set the recurring test frequency to **Daily**, **Weekly**, or **Never** in bulk or for a single repository in **Inventory**, and the default is **Weekly**. Scans triggered by pushes and pull request checks are not affected. See [Configure repository monitoring](https://docs.snyk.io/scan-fix-and-prevent/fix/configure-repository-monitoring).
+* Snyk Secrets is added to the **Inventory** controls, the **Integrations** lists, the **Related Projects and Issues** column, and the prerequisites for secrets pull request checks. See [Secrets pull request checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/secrets-pull-request-checks).
+
+### Other updates
+
+* Snyk deletes Free plan Tenants that have had no activity for 60 days. A web login, CLI command, IDE session, pull request check, or fix pull request resets the period. Scheduled retests do not count as activity, and paid plans, pilots, and trials are not affected. See [Trial limitations](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/trial-limitations).
+* The Ignore Approval Workflow documentation now describes the **Pending Ignore Request** status. See [Ignore Approval Workflow](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/ignore-approval-workflow).
+* Snyk Open Source now supports Python 3.15 for scans in the CLI and SCM integrations. See [Python for Snyk Open Source](https://docs.snyk.io/supported-languages/supported-languages-list/python#python-for-snyk-open-source).
+* Snyk Container now supports Ubuntu 26.10 (Stonking Stingray). See [Operating system distributions supported by Snyk Container](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container).
+* The Error Catalog adds 11 errors, including SNYK-CLI-0027–SNYK-CLI-0032 and SNYK-SECRETS-0001–SNYK-SECRETS-0003, and no longer lists SNYK-CODE-0008. See [Error Catalog](https://docs.snyk.io/scan-fix-and-prevent/prevent/error-catalog).
 
 ## September 2026
 

@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set your preferred Snyk Organization, which Snyk uses by default in the
   web UI and CLI
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Set your preferred Organization

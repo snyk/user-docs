@@ -3,6 +3,8 @@ description: >-
   How to connect AI assistants to Evo through the hosted Evo MCP server, and
   which tools, permissions, and limits apply
 nav_context: agnostic
+last_reviewed: 2026-11-02
+last_reviewed_source: focused-edit
 ---
 
 # Evo MCP server

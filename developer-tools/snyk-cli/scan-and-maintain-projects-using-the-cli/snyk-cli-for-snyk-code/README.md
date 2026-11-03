@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to use the Snyk CLI for Snyk Code static analysis
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk CLI for Snyk Code

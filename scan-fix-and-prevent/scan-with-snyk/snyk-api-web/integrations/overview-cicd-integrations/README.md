@@ -1,6 +1,8 @@
 ---
 description: Overview of Snyk API & Web CI/CD integrations
 nav_context: agnostic
+last_reviewed: 2026-07-06
+last_reviewed_source: bulk-sync
 ---
 
 # CI/CD integrations overview

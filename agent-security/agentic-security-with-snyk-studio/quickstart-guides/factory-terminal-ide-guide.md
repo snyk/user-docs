@@ -3,6 +3,8 @@ description: >-
   How to set up Snyk Studio and the Snyk MCP server in Factory Terminal and
   IDE
 nav_context: classic
+last_reviewed: 2026-09-17
+last_reviewed_source: bulk-sync
 ---
 
 # Factory Terminal/IDE guide

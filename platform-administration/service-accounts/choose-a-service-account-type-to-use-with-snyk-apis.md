@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to choose a Snyk service account type and level, based on the permissions
   your API automation needs
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Choose a service account type to use with Snyk APIs

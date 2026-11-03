@@ -1,6 +1,8 @@
 ---
 description: The custom Rego built-in functions available for Snyk IaC custom rules
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Custom Rego Builtins

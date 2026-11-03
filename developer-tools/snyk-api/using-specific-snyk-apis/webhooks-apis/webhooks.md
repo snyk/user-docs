@@ -1,6 +1,8 @@
 ---
 description: Snyk webhook events and their payload formats
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Webhook events and payloads

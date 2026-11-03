@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to integrate Snyk into CI/CD pipelines, with the Snyk CLI recommended for
   flexibility
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 # Snyk CI/CDs
 

@@ -1,6 +1,8 @@
 ---
 description: Examples of using the Snyk GitHub Action for Docker container images
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Docker action

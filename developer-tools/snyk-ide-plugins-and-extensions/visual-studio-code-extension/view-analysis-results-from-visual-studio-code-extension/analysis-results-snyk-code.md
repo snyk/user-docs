@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to view Snyk Code security results in the Visual Studio Code extension
+last_reviewed: 2026-08-13
+last_reviewed_source: focused-edit
 ---
 
 # Analysis results: Snyk Code

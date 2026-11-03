@@ -1,6 +1,8 @@
 ---
 description: The Snyk end-of-life policy for images from the Snyk Images build toolchain
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Images and EOL image policy

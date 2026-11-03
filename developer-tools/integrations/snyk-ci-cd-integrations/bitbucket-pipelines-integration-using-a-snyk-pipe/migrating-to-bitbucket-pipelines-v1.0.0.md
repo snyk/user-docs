@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to migrate to the Snyk Bitbucket Pipelines pipe v1.0.0 with custom image
   support
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Migrating to Bitbucket Pipelines v1.0.0

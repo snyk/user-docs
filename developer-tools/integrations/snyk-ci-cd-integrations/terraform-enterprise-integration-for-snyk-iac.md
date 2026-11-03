@@ -1,6 +1,8 @@
 ---
 description: How to integrate Snyk IaC with HashiCorp Terraform Enterprise
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Terraform Enterprise integration for Snyk IaC

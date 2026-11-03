@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to review and fix findings from Snyk API & Web scans
+last_reviewed: 2026-10-02
+last_reviewed_source: focused-edit
 ---
 
 # Review and fix

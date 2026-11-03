@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to use the Snyk CLI for Snyk Open Source to scan manifests
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk CLI for Open Source

@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How application context enriches Snyk SCM integrations with interconnected
   asset information
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Application context for SCM integrations

@@ -1,6 +1,8 @@
 ---
 description: How to restart the Broker to apply a new environment variable, and the exception for Kubernetes deployments
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Restart your Broker for a new environment variable

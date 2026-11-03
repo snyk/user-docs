@@ -3,6 +3,8 @@ description: >-
   How to access Snyk Studio in GitHub Copilot with the Snyk Security plugin or
   a direct install
 nav_context: classic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # GitHub Copilot guide

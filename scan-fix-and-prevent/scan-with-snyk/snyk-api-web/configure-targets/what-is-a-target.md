@@ -1,6 +1,8 @@
 ---
 description: What a target is in Snyk API & Web scanning
 nav_context: agnostic
+last_reviewed: 2026-07-06
+last_reviewed_source: bulk-sync
 ---
 
 # What is a target?

@@ -1,5 +1,7 @@
 ---
 description: How Snyk maps attacker goals to four industry governance frameworks
+last_reviewed: 2026-08-21
+last_reviewed_source: focused-edit
 ---
 
 # Framework mappings

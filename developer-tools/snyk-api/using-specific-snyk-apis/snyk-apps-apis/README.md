@@ -1,6 +1,8 @@
 ---
 description: How to use the Snyk Apps APIs to build integrations
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # How to use Snyk Apps APIs

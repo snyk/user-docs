@@ -1,6 +1,8 @@
 ---
 description: The operating system distributions Snyk Container supports
 nav_context: agnostic
+last_reviewed: 2026-10-28
+last_reviewed_source: focused-edit
 ---
 
 # Operating system distributions supported by Snyk Container

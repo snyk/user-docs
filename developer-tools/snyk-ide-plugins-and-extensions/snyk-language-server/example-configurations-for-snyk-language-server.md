@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: Example Snyk Language Server configurations for editors such as Sublime Text
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Example configurations for Snyk Language Server

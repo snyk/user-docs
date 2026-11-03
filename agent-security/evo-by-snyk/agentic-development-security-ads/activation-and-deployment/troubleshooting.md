@@ -2,6 +2,8 @@
 description: >-
   Errors you can encounter when installing or removing ADS, and how to resolve
   them
+last_reviewed: 2026-10-23
+last_reviewed_source: focused-edit
 ---
 
 # Troubleshooting

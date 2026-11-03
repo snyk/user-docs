@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Custom role template for a Kubernetes Uploader, an Organization-level role
   that publishes Kubernetes Monitor and Insights data to Snyk
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Kubernetes Uploader role template

@@ -2,6 +2,8 @@
 description: >-
   How to start and monitor AI pentesting scans against your Continuous
   Offensive Security targets
+last_reviewed: 2026-08-17
+last_reviewed_source: bulk-sync
 ---
 
 # Scans

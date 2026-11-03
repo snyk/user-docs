@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How Snyk Open Source scans your dependencies for vulnerabilities and license
   issues
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Open Source

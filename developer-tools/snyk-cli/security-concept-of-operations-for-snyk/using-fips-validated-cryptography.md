@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to use FIPS-validated cryptography with the Snyk CLI
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Using FIPS-validated cryptography

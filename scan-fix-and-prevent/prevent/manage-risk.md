@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How Snyk helps you prioritize, manage, and reduce security risk
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Overview

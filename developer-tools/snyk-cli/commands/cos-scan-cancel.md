@@ -1,5 +1,7 @@
 ---
 description: Use snyk cos scan cancel to cancel a running scan.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS scan cancel

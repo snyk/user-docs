@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: A data dictionary for the Snyk Data Share Snowflake integration
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Data Share data dictionary

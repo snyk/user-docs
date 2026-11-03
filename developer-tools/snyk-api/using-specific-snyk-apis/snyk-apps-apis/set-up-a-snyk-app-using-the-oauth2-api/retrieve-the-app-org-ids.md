@@ -1,6 +1,8 @@
 ---
 description: How to retrieve the Organization IDs a user connected to a Snyk App
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Retrieve the App Org IDs

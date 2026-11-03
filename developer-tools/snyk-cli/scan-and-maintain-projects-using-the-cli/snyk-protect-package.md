@@ -1,6 +1,8 @@
 ---
 description: The @snyk/protect package for applying patches to vulnerabilities
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # @snyk/protect package

@@ -3,6 +3,8 @@ description: >-
   How to install Snyk Studio in Cursor using the hooks-based or rules-based
   approach
 nav_context: classic
+last_reviewed: 2026-09-17
+last_reviewed_source: bulk-sync
 ---
 
 # Cursor guide

@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk helps you fix vulnerabilities in open source dependencies
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Fix your vulnerabilities

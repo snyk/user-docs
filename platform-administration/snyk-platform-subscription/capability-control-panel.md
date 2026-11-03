@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
+---
 # Capability control panel
 
 In the Tenant settings in the Snyk Web UI, select **Capability Access** under **Security and access** to open the capability control panel. The control panel is the menu for Tenant Admins to enable or disable Snyk capabilities. Click the **Enable** toggle for each capability you want to use. You can toggle a capability off at any time to stop consuming credits for capabilities entitled through credits.

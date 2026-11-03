@@ -1,5 +1,7 @@
 ---
 description: Learn how Snyk Secrets works in Pull Request checks.
+last_reviewed: 2026-10-19
+last_reviewed_source: focused-edit
 ---
 
 # Secrets Pull Request checks

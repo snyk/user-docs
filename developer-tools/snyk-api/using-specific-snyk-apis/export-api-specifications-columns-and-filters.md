@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The Snyk Export API specifications, columns, and filters
+last_reviewed: 2026-09-18
+last_reviewed_source: focused-edit
 ---
 
 # Export API: Specifications, columns, and filters

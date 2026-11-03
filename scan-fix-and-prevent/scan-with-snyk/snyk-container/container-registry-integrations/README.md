@@ -1,6 +1,8 @@
 ---
 description: How Snyk Container integrates with container registries
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Container registry integrations

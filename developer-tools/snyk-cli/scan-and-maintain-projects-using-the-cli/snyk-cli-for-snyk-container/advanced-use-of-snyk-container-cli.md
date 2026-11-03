@@ -1,6 +1,8 @@
 ---
 description: Advanced Snyk Container CLI usage, including scanning archives
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Advanced use of Snyk Container CLI

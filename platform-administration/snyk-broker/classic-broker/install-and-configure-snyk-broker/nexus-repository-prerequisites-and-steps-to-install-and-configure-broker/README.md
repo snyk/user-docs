@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Prerequisites and steps to install and configure Snyk Broker for Nexus
   Repository Manager, on Enterprise plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Nexus Repository - prerequisites and steps to install and configure Broker

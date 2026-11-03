@@ -1,6 +1,8 @@
 ---
 description: The snyk-delta tool that finds the difference in issues between two tests
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # snyk-delta

@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk Code analysis breaks down results after importing a repository
+last_reviewed: 2026-09-23
+last_reviewed_source: focused-edit
 ---
 
 # Breakdown of Code analysis

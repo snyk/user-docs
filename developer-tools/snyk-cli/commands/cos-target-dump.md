@@ -1,5 +1,7 @@
 ---
 description: Use snyk cos target dump to export a target as YAML.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS target dump

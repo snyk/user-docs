@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The access requirements for using Snyk applications such as the CLI
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Access requirements

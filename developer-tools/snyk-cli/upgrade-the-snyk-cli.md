@@ -1,6 +1,8 @@
 ---
 description: How to upgrade the Snyk CLI to stay secure and current
 nav_context: agnostic
+last_reviewed: 2026-08-07
+last_reviewed_source: focused-edit
 ---
 
 # Upgrade the Snyk CLI

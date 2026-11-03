@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How ignores work for Projects imported through an SCM and the CLI
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # How ignores work for Projects imported using an SCM and the CLI

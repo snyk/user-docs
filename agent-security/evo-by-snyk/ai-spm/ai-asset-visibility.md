@@ -2,6 +2,8 @@
 description: >-
   How the Discovery agent maps the AI assets in your code with an AI-BOM scan
 nav_context: agnostic
+last_reviewed: 2026-08-28
+last_reviewed_source: focused-edit
 ---
 
 # AI asset visibility

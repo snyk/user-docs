@@ -2,6 +2,8 @@
 description: >-
   Resolve common issues when retrieving or generating API schemas from
   repositories using Snyk API & Web.
+last_reviewed: 2026-10-02
+last_reviewed_source: focused-edit
 ---
 
 # Troubleshoot API schema retrieval and generation

@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How the Snyk Priority Score applies to Kubernetes workloads
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Kubernetes and the Snyk Priority Score

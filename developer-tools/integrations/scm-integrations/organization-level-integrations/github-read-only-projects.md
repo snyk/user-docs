@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk GitHub Read-only Projects monitor public GitHub repositories without
   write access
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitHub Read-only Projects

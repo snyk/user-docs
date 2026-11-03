@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to analyze Snyk Pull Request check results
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Analyze PR checks results

@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to configure authentication for Snyk API & Web targets
+last_reviewed: 2026-08-05
+last_reviewed_source: focused-edit
 ---
 
 # Authentication

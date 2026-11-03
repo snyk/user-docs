@@ -1,5 +1,7 @@
 ---
 description: Help reference for the Snyk CLI commands
+last_reviewed: 2026-09-25
+last_reviewed_source: focused-edit
 ---
 
 # CLI help

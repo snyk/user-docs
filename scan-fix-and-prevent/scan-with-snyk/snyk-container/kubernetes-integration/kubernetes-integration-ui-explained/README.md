@@ -1,6 +1,8 @@
 ---
 description: How to navigate the Snyk Kubernetes integration UI
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Navigate the Kubernetes integration UI

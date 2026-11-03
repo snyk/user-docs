@@ -1,6 +1,8 @@
 ---
 description: How the evidence graph visualizes the context of a Snyk issue
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Evidence graph

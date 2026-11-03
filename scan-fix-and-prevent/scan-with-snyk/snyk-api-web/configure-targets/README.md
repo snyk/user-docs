@@ -1,6 +1,8 @@
 ---
 description: How to configure targets for Snyk API & Web scanning
 nav_context: agnostic
+last_reviewed: 2026-06-16
+last_reviewed_source: bulk-sync
 ---
 
 # Configure targets

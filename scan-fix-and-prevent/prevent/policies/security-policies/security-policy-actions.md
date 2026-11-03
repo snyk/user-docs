@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The actions available for Snyk security policies
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Security policy actions

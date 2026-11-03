@@ -1,6 +1,8 @@
 ---
 description: How to test public npm packages with the Snyk CLI before using them
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Test public npm packages before use

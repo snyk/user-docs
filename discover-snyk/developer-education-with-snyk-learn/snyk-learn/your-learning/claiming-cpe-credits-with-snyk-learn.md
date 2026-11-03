@@ -3,18 +3,18 @@ nav_context: classic
 description: >-
   How to claim Continuing Professional Education (CPE) credits for completing
   Snyk Learn lessons and learning paths
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
-# Claiming CPE Credits with Snyk Learn
+# Claiming CPE credits with Snyk Learn
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
-## Claiming CPE Credits with Snyk Learn
 
 Snyk Learn offers a range of security education lessons and learning paths designed to enhance your application security skills. While these lessons provide valuable knowledge, they do not automatically grant Continuing Professional Education (CPE) credits. To claim CPE credits for your participation in Snyk Learn lessons and learning paths, follow these steps.
 
 {% hint style="info" %}
-The specific process for claiming CPE credits may vary depending on your certifying organization.
+The process for claiming CPE credits can vary depending on your certifying organization.
 {% endhint %}
 
 1. Complete a Snyk Learn module.
@@ -24,20 +24,18 @@ The specific process for claiming CPE credits may vary depending on your certify
    * Course title
    * Provider name: Snyk
    * Completion date
-   * Duration: Time spent on the module
+   * Duration: time spent on the module
 3. Submit to your certification body.
    1. Access the CPE submission portal of your certifying organization, such as ISC2 or ISACA.
-   2. Enter the recorded details and provide any required documentation, such as completion certificates (available for Learning Paths) or screenshots of the completed lesson in your Learning Progress dashboard or the lesson page, see examples below.
-4. Provide additional information if requested. You may be asked to supply further details or respond to inquiries from your certifying body to verify your CPE claim.
+   2. Enter the recorded details and provide any required documentation, such as completion certificates (available for learning paths) or screenshots of the completed lesson in your Learning Progress dashboard or the lesson page. The following sections show examples.
+4. Provide additional information if requested. If your certifying body asks for further details or sends inquiries to verify your CPE claim, respond to them.
 
-#### Examples
+## Learning path certificate example
 
-**Learning path certificate**
-
-Navigate to the page for the Learning Path that you completed and click the **Download certificate** button.
+Navigate to the page for the learning path that you completed and click **Download certificate**.
 
 <figure><img src="../../../.gitbook/assets/learning-path-completion.png" alt="A completed Learning Path with certificate"><figcaption><p>A completed Learning Path with certificate</p></figcaption></figure>
 
-**Lesson completion example**
+## Lesson completion example
 
 <figure><img src="../../../.gitbook/assets/lesson-completion-example.png" alt="Download certificate button on a completed Learning Path"><figcaption></figcaption></figure>

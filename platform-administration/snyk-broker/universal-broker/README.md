@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   The Universal Broker, which manages many Broker connections of any type from a
   single client for simpler deployments
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Universal Broker

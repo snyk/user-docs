@@ -1,6 +1,8 @@
 ---
 description: How to parse an input file when writing a Snyk IaC custom rule
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Parsing an input file

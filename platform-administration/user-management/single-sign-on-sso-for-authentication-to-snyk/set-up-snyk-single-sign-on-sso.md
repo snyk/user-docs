@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up Snyk SSO with your existing identity provider, including the
   information needed to establish trust
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Set up Snyk Single Sign-On (SSO)

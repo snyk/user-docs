@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for Ruby
 nav_context: agnostic
+last_reviewed: 2026-10-27
+last_reviewed_source: focused-edit
 ---
 
 # Ruby rules

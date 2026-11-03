@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Recommendations for rolling out Snyk SCM integration features gradually to
   avoid developer friction
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Deployment recommendations

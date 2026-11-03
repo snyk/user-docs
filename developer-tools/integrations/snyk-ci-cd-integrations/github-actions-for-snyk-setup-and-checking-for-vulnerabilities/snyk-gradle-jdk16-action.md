@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: Examples of using the Snyk GitHub Action for Gradle with JDK 16
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Gradle-jdk16 action

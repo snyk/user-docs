@@ -1,6 +1,8 @@
 ---
 description: How to set up the Snyk Slack app, the recommended replacement for the Slack integration
 nav_context: classic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}

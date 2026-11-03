@@ -1,6 +1,8 @@
 ---
 description: Advanced configuration for the Snyk Broker Container Registry Agent using Docker
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Container Registry Agent advanced configuration using Docker

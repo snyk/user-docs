@@ -2,6 +2,8 @@
 description: >-
   How to install Agentic Development Security on one machine, without a device
   management tool
+last_reviewed: 2026-10-23
+last_reviewed_source: focused-edit
 ---
 
 # Install on a single machine

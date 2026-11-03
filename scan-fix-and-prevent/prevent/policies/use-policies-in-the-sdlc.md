@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to apply Snyk policies across the software development lifecycle
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Use policies in the SDLC

@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to use the Snyk CLI to scan your source code for hardcoded secrets
+last_reviewed: 2026-08-12
+last_reviewed_source: focused-edit
 ---
 
 # Snyk CLI for Snyk Secrets

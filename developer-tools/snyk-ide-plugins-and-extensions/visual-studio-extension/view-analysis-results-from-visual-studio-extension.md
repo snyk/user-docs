@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to view and filter Snyk vulnerabilities in the Visual Studio extension
+last_reviewed: 2026-08-04
+last_reviewed_source: focused-edit
 ---
 
 # View analysis results from Visual Studio extension

@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to remove an imported repository from a Project
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Remove imported repository from a Project

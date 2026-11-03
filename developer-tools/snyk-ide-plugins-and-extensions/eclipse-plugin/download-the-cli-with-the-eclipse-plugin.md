@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How the Eclipse plugin automatically downloads the Snyk CLI it uses to scan
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Download the CLI with the Eclipse plugin

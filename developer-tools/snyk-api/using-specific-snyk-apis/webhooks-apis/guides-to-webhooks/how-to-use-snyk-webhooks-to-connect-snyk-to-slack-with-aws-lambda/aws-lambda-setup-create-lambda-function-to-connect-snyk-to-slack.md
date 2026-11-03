@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to create an AWS Lambda function to connect Snyk to Slack
+last_reviewed: 2026-09-30
+last_reviewed_source: focused-edit
 ---
 
 # AWS Lambda setup: create Lambda function to connect Snyk to Slack

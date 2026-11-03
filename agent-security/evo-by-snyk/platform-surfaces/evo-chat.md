@@ -3,6 +3,8 @@ description: >-
   How to use Evo chat to explore your inventory, manage policies, and generate
   reports in natural language
 nav_context: classic
+last_reviewed: 2026-08-25
+last_reviewed_source: focused-edit
 ---
 
 # Evo chat

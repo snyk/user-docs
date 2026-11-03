@@ -1,6 +1,8 @@
 ---
 description: How HTTP status codes appear in Snyk API & Web target scans
 nav_context: classic
+last_reviewed: 2026-08-03
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

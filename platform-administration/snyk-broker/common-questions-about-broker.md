@@ -1,6 +1,8 @@
 ---
 description: Common questions about Snyk Broker, including update frequency and how it works
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Common questions about Broker

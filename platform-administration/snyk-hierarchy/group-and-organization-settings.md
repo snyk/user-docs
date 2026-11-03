@@ -3,6 +3,8 @@ nav_context: new
 description: >-
   Overview of Snyk settings at the Group and Organization levels, including
   general, SSO, and related options
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Group and Organization settings

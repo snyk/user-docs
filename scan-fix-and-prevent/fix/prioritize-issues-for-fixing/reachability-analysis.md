@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk reachability analysis prioritizes vulnerabilities in called code, in
   Early Access
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Reachability analysis

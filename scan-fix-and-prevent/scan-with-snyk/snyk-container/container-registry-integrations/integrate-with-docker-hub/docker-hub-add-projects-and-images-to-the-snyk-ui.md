@@ -1,6 +1,8 @@
 ---
 description: How to add Docker Hub Projects and images to Snyk
 nav_context: classic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

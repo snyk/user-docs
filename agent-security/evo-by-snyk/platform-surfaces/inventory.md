@@ -3,6 +3,8 @@ description: >-
   How Inventory presents the AI assets discovered across your environment with
   their assessed risk
 nav_context: agnostic
+last_reviewed: 2026-08-25
+last_reviewed_source: focused-edit
 ---
 
 # Inventory

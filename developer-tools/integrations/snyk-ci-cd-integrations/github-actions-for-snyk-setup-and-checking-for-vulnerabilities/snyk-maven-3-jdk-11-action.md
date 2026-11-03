@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: Examples of using the Snyk GitHub Action for Maven 3 with JDK 11
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Maven-3-jdk-11 action

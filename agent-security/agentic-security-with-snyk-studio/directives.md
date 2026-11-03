@@ -3,6 +3,8 @@ description: >-
   How directives govern the way AI coding assistants follow your security
   policy and standards
 nav_context: classic
+last_reviewed: 2026-07-21
+last_reviewed_source: bulk-sync
 ---
 
 # Directives

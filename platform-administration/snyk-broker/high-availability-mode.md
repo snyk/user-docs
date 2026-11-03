@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk Broker high availability mode runs several independent Broker clients
   to spread requests
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # High availability mode

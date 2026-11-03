@@ -1,6 +1,8 @@
 ---
 description: How the Snyk Priority Score ranks issues for fixing
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Priority Score
@@ -35,7 +37,7 @@ The API endpoint [Get list of latest issues](https://docs.snyk.io/developer-tool
 
 ## Calculation of Priority Score
 
-For each issue, Snyk processes and weighs several factors in a proprietary algorithm to produce the score for that issue. These factors include the following:
+Snyk calculates the Priority Score with an additive model. For each issue, every factor that applies adds to the score, and Snyk weighs the factors in a proprietary algorithm. These factors include the following:
 
 * [Severity levels](severity-levels.md): based on the CVSS Base Score for the issue. Snyk uses CVSS v4.0 where a v4.0 vector is available, and CVSS v3.1 for vulnerabilities published before Snyk adopted v4.0.
 * [Exploit maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/): determined by the industry-leading Snyk security team using manual and automated methods to track which vulnerabilities are exploitable and to what extent. This applies to Snyk Open Source.

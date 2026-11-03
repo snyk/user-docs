@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Deployment tips and reference architectures for running Universal Broker
   clients at scale
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Deployment tips and reference architectures

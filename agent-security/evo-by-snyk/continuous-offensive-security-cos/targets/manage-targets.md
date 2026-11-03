@@ -1,6 +1,8 @@
 ---
 description: >-
   How to view, edit, and delete your Continuous Offensive Security targets
+last_reviewed: 2026-08-25
+last_reviewed_source: focused-edit
 ---
 
 # Manage Targets

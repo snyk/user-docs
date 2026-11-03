@@ -1,6 +1,8 @@
 ---
 description: Prerequisites and steps to install and configure Snyk Broker for GitLab with Docker or Helm
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitLab - prerequisites and steps to install and configure Broker

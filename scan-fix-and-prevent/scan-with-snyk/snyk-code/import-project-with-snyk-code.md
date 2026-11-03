@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to import a Project to scan with Snyk Code
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Import Project with Snyk Code

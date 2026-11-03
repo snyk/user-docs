@@ -1,6 +1,8 @@
 ---
 description: How the Snyk TeamCity plugin tests and monitors your code during builds
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # How TeamCity integration works

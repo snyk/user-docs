@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to configure all your Snyk IDE plugins from a single configuration dialog
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Unified IDE Configuration Dialog

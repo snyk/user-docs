@@ -1,6 +1,8 @@
 ---
 description: How to create a Snyk license policy and its rules
 nav_context: classic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

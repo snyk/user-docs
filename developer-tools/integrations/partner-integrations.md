@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: Explore Snyk Partner integration solutions across 17 categories
+last_reviewed: 2026-06-17
+last_reviewed_source: focused-edit
 ---
 
 # Partner integrations

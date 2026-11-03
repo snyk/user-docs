@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Snyk IDE plugins and extensions for scanning as you develop, including custom
   endpoint configuration
+last_reviewed: 2026-08-26
+last_reviewed_source: focused-edit
 ---
 
 # Snyk IDE plugins and extensions

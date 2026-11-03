@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to reuse a brokered SCM integration across multiple Snyk Organizations by
   cloning it
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Clone an integration across your Snyk Organizations

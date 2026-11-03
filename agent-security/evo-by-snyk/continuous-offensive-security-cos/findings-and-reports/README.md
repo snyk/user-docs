@@ -2,6 +2,8 @@
 description: >-
   How to review and act on validated vulnerabilities from completed Continuous
   Offensive Security scans
+last_reviewed: 2026-08-17
+last_reviewed_source: bulk-sync
 ---
 
 # Findings and Reports

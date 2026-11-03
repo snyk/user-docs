@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
+---
 # Snyk Platform Subscription mechanics
 
 The Snyk Platform Subscription is the default Snyk Enterprise plan. You purchase credits at the beginning of your subscription, valid for the full term of your contract. Credits carry entitlements for all capabilities across the platform and are fungible across capabilities. You consume credits from your balance based on your contracted rate card. Every order form that contains a subscription for credits includes a link to a rate card that describes how use of the platform translates into credit consumption. For details, see [Understanding credit consumption](understanding-credit-consumption.md).

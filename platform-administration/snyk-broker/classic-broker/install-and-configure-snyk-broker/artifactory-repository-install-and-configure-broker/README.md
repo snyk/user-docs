@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Prerequisites and steps to install and configure Snyk Broker for Artifactory
   Repository, on Enterprise plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Artifactory Repository - prerequisites and steps to install and configure Broker

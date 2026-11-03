@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: A summary of Snyk CLI commands and options
+last_reviewed: 2026-09-29
+last_reviewed_source: focused-edit
 ---
 
 # CLI commands and options summary

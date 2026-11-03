@@ -1,6 +1,8 @@
 ---
 description: The release and support policy for Snyk IDE plugins, including build channels
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Release and support policy for Snyk IDE plugins

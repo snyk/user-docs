@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to troubleshoot the Snyk Eclipse plugin, including unsupported end-of-life
   operating systems
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Troubleshooting for the Eclipse plugin

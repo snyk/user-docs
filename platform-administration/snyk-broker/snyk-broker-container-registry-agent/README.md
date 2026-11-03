@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   The Snyk Broker Container Registry Agent for scanning private container
   registries, available on Enterprise plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Broker - Container Registry Agent

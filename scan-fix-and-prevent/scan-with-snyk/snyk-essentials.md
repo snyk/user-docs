@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk Essentials gives visibility into your application assets and their
   risk
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Essentials

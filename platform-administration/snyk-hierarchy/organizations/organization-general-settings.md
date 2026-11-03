@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to view and modify Snyk Organization general settings from the Settings
   menu
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Organization general settings

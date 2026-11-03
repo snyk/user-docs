@@ -2,6 +2,8 @@
 description: >-
   Create remediation campaigns in Evo by Snyk to fix open-source vulnerabilities
   across repositories and open pull requests on demand or on a schedule
+last_reviewed: 2026-10-20
+last_reviewed_source: focused-edit
 ---
 
 # Remediation campaigns

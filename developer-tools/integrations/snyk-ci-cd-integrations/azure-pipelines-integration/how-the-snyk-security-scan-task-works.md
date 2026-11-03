@@ -1,6 +1,8 @@
 ---
 description: How the Snyk Security Scan task runs on each Azure Pipelines build
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # How the Snyk Security Scan task works

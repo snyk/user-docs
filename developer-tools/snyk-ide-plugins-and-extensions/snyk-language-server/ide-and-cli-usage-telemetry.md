@@ -1,6 +1,8 @@
 ---
 description: How the Snyk Language Server collects usage telemetry after each successful test
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # IDE and CLI usage telemetry

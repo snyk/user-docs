@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to prioritize issues for fixing in Snyk
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Prioritize issues for fixing

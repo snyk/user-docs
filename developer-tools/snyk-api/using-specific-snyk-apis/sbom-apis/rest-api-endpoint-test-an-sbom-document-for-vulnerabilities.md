@@ -1,6 +1,8 @@
 ---
 description: How to test an SBOM document for vulnerabilities with the Snyk REST API
 nav_context: agnostic
+last_reviewed: 2026-09-10
+last_reviewed_source: bulk-sync
 ---
 
 # Test an SBOM document for vulnerabilities

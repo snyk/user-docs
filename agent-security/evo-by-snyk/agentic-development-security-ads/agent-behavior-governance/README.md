@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How Agent Behavior Governance secures what AI agents do inside their execution
   loop
+last_reviewed: 2026-10-23
+last_reviewed_source: focused-edit
 ---
 
 # Agent Behavior Governance

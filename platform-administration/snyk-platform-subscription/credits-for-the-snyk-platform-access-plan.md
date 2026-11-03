@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
+---
 # Credits for the Snyk Platform Access plan
 
 {% hint style="warning" %}

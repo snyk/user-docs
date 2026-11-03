@@ -1,6 +1,8 @@
 ---
 description: How to identify Snyk API & Web scanner requests
 nav_context: agnostic
+last_reviewed: 2026-07-06
+last_reviewed_source: bulk-sync
 ---
 
 # Identify scanner requests

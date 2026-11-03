@@ -1,5 +1,7 @@
 ---
 description: The snyk ignore command that ignores a specified issue
+last_reviewed: 2026-07-28
+last_reviewed_source: focused-edit
 ---
 
 # Ignore

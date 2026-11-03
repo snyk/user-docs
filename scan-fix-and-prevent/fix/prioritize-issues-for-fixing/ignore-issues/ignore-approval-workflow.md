@@ -2,6 +2,8 @@
 description: >-
   How the Ignore Approval Workflow adds governance around risk acceptance in
   Snyk Code
+last_reviewed: 2026-10-13
+last_reviewed_source: focused-edit
 ---
 
 # Ignore Approval Workflow

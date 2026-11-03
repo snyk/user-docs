@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Example of setting up a Snyk custom mapping integration for an Okta OIDC
   application
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Example: setting up custom mapping for an Okta OIDC app

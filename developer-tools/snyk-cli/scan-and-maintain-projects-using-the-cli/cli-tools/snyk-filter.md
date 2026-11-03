@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The snyk-filter tool for custom filtering of Snyk CLI results
+last_reviewed: 2026-09-04
+last_reviewed_source: bulk-sync
 ---
 
 # snyk-filter

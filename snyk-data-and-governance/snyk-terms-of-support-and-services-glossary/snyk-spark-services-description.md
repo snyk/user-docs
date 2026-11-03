@@ -3,6 +3,8 @@ hidden: true
 noIndex: true
 description: Service description for Snyk Spark, a program that helps customers adopt and expand their use of Snyk
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Spark Services Description

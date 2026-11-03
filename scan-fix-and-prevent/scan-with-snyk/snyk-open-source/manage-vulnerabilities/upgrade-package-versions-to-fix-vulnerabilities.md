@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to upgrade package versions to fix vulnerabilities with Snyk
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Upgrade package versions to fix vulnerabilities

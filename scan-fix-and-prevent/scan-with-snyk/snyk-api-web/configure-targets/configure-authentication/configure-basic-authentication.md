@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to configure basic authentication for Snyk API & Web targets
+last_reviewed: 2026-08-05
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

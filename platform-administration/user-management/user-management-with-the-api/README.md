@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to manage Snyk users through the Snyk API, available on Enterprise plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # User management with the API

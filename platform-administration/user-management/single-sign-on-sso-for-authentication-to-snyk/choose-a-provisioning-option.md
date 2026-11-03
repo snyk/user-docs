@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to choose a Snyk SSO provisioning option that controls how new users in
   your company gain access
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Choose a provisioning option

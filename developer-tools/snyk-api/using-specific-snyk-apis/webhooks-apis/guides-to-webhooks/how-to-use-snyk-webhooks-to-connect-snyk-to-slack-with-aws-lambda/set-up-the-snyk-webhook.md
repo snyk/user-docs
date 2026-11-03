@@ -1,6 +1,8 @@
 ---
 description: How to create the Snyk webhook for the Slack and AWS Lambda integration
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Set up the Snyk webhook

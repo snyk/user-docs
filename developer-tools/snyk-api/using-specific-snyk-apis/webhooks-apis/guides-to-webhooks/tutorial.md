@@ -1,6 +1,8 @@
 ---
 description: How to use Snyk webhooks with Zapier
 nav_context: agnostic
+last_reviewed: 2026-09-10
+last_reviewed_source: bulk-sync
 ---
 
 # How to use Snyk webhooks with Zapier

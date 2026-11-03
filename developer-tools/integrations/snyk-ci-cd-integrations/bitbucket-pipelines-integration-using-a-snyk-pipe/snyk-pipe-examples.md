@@ -1,6 +1,8 @@
 ---
 description: Where to find up-to-date usage examples for the Snyk Bitbucket Pipelines pipe
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk pipe examples

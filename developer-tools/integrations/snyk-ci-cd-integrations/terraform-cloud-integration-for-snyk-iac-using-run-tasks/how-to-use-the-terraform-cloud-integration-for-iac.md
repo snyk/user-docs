@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk scans Terraform plans on each run through the Terraform Cloud
   integration
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # How to use the Terraform Cloud integration for IaC

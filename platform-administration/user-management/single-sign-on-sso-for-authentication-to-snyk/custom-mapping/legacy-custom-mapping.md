@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to configure Snyk legacy custom mapping using role patterns in SAML
   attributes or OIDC claims
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Legacy custom mapping

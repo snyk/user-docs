@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to connect Snyk to Slack using webhooks and AWS Lambda
+last_reviewed: 2026-09-30
+last_reviewed_source: focused-edit
 ---
 
 # How to use Snyk Webhooks to connect Snyk to Slack with AWS Lambda

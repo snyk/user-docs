@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to authenticate the Snyk Eclipse plugin, including the supported protocols
+last_reviewed: 2026-05-26
+last_reviewed_source: focused-edit
 ---
 
 # Authentication for the Eclipse plugin

@@ -1,6 +1,8 @@
 ---
 description: How to resolve missing or differing Snyk Code results caused by ignore files
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Missing or differing results in Snyk Code

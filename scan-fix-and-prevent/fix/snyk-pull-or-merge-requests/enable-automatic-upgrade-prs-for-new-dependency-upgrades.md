@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to enable automatic upgrade PRs for new dependency upgrades
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Enable automatic upgrade PRs for new dependency upgrades

@@ -1,6 +1,8 @@
 ---
 description: How to control API rate limits for the scm-contributors-count tool
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # API rate limit control for scm-contributors-count

@@ -1,6 +1,8 @@
 ---
 description: How to use Project tags to organize and filter Projects
 nav_context: classic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}

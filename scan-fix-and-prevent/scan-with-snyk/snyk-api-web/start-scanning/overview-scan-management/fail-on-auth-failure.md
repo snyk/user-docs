@@ -1,6 +1,8 @@
 ---
 description: How to fail a Snyk API & Web scan on authentication failure
 nav_context: classic
+last_reviewed: 2026-08-03
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

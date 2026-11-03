@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: Examples of using the Snyk GitHub Action for CocoaPods
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk CocoaPods action

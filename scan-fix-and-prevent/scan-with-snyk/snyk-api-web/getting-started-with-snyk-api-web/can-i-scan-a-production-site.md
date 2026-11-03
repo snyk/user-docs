@@ -1,6 +1,8 @@
 ---
 description: Whether you can scan a production site with Snyk API & Web
 nav_context: agnostic
+last_reviewed: 2026-07-06
+last_reviewed_source: bulk-sync
 ---
 
 # Can I scan a production site?

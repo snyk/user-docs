@@ -3,6 +3,8 @@ description: >-
   Example multi-step workflows that combine the Evo MCP server with other MCP
   servers to build dashboards, raise tickets, and create policies
 nav_context: agnostic
+last_reviewed: 2026-09-23
+last_reviewed_source: focused-edit
 ---
 
 # Common use cases

@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to deploy the POST method in AWS API Gateway for the Snyk to Slack
   integration
+last_reviewed: 2026-09-30
+last_reviewed_source: focused-edit
 ---
 
 # AWS API Gateway: deploy the POST method

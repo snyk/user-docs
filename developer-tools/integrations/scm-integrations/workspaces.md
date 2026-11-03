@@ -1,6 +1,8 @@
 ---
 description: How Snyk Workspaces improve the accuracy and reliability of SCM integration results in large enterprises
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Workspaces

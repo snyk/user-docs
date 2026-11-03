@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to integrate Snyk Open Source into your workflow using the CLI
+last_reviewed: 2026-09-04
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

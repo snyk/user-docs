@@ -1,6 +1,8 @@
 ---
 description: Custom role template for a Remediator, an Organization-level role that helps developers assess and fix vulnerabilities
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Remediator role template

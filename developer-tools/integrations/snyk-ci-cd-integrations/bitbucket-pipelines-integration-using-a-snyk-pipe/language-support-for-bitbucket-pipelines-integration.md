@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The languages supported by the Snyk Bitbucket Pipelines pipe integration
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Language support for Bitbucket Pipelines integration

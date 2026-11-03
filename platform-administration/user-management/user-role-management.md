@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to manage Snyk pre-defined and custom user roles, available on Enterprise
   plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # User role management

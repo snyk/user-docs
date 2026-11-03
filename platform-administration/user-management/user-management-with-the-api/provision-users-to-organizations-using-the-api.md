@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to provision SSO users to Snyk Organizations and grant permissions before
   they log in, using the API
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Provision users to Organizations using the API

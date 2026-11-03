@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The Snyk Eclipse plugin for scanning and fixing vulnerabilities as you develop
+last_reviewed: 2026-09-25
+last_reviewed_source: focused-edit
 ---
 
 # Eclipse plugin

@@ -1,6 +1,8 @@
 ---
 nav_context: new
 description: How Snyk manages application assets and their security risk
+last_reviewed: 2026-08-13
+last_reviewed_source: focused-edit
 ---
 
 # Manage asset inventory

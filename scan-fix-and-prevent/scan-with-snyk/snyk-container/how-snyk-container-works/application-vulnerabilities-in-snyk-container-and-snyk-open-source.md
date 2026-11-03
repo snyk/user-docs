@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How Snyk Container and Snyk Open Source detect application vulnerabilities in
   images
+last_reviewed: 2026-09-14
+last_reviewed_source: focused-edit
 ---
 
 # Application vulnerabilities in Snyk Container and Snyk Open Source

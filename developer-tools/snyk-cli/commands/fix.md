@@ -1,5 +1,7 @@
 ---
 description: The snyk fix --agentic command, which applies and verifies vulnerability fixes
+last_reviewed: 2026-10-08
+last_reviewed_source: focused-edit
 ---
 
 # Fix

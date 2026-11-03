@@ -1,6 +1,8 @@
 ---
 description: How to manage Consistent Ignores for Snyk Code with the API
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Consistent Ignores for Snyk Code API

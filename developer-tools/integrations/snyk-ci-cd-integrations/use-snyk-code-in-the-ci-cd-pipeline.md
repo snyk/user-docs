@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to run Snyk Code in a CI/CD pipeline to catch vulnerabilities in code
   changes
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Code in the CI/CD pipeline

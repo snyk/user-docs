@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Snyk support for Java and Kotlin with Snyk Code and Snyk Open Source,
   including SCM import, CLI and IDE testing, and Maven and Gradle
+last_reviewed: 2026-10-27
+last_reviewed_source: focused-edit
 ---
 
 # Java and Kotlin
@@ -21,7 +23,7 @@ Available integrations:
 {% hint style="info" %}
 **Release status**
 
-Improved Gradle SCM scanning is in Early Access. For more information, see [SCM integrations with Maven and Gradle](git-repositories-with-maven-and-gradle.md).
+Improved Gradle SCM scanning is in Early Access. For more information, visit [SCM integrations for Java and Kotlin](git-repositories-with-maven-and-gradle.md).
 {% endhint %}
 
 ## Technical specifications
@@ -30,7 +32,7 @@ Snyk supports Java analysis for Java versions up to SE 25 and is designed to pro
 
 ### Supported frameworks and libraries
 
-For Java and Kotlin, the following frameworks and libraries are supported:
+For Java and Kotlin, Snyk supports the following frameworks and libraries:
 
 {% columns %}
 {% column %}
@@ -44,7 +46,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * Apache CXF
 * Apache Tomcat
 * Apache XML
-* apache.mahou
+* apache.mahout
 * bouncycastle
 * com.azure.ai.openai
 * com.google.ai.client.generativeai
@@ -78,7 +80,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 {% endcolumn %}
 
 {% column %}
-* Kyro
+* Kryo
 * Micronaut
 * mongo-java-driver
 * MSAL4J
@@ -127,24 +129,26 @@ For Google Cloud BigQuery, Snyk Code recognizes query parameters created with `Q
 ### Supported package managers and package registries <a href="#supported-package-managers-and-package-registries" id="supported-package-managers-and-package-registries"></a>
 
 * Supported package managers: [Maven](https://maven.apache.org) and [Gradle](https://gradle.org), with the following supported versions:
-  * Maven: `3.*` , `4.*`. For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
-  * Gradle: `4.*`, `5.*`, `6.*`, `7.*`, `8.*`, `9*`. For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
+  * Maven: `3.*`, `4.*`. For more information, visit the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
+  * Gradle: `4.*`, `5.*`, `6.*`, `7.*`, `8.*`, `9.*`. For more information, visit the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 * Supported package registry: [maven.org](https://maven.org/) (Maven Central Repository)
 
 ## Java and Kotlin for Snyk Code
 
 For an overview of the supported security rules, visit [Java rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/java-rules) and [Kotlin rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/kotlin-rules).
 
-For Java and Kotlin with Snyk Code, the following file formats are supported:
+### Supported file formats
+
+For Java and Kotlin, Snyk Code supports the following file formats:
 
 * For Java: `.java`, `.jsp`, `.jspx`
 * For Kotlin: `.kt`
 
-Available features:
+### Available features
 
 * Reports
-* Interfile analysis - Kotlin is fully supported
-* Interfile analysis - Android is partially supported
+* Interfile analysis: fully supported for Kotlin
+* Interfile analysis: partially supported for Android
 
 ### Template file analysis
 
@@ -160,36 +164,38 @@ For file extensions and the full set of supported language and template engine c
 
 ## Java and Kotlin for Snyk Open Source
 
-For Java and Kotlin with Snyk Open Source, the following file formats are supported:
+### Supported file formats
+
+For Java and Kotlin, Snyk Open Source supports the following file formats:
 
 * For Maven: `pom.xml`
 * For Gradle: `build.gradle`, `build.gradle.kts`
 
-Available features:
+### Available features
 
 * Reports
 * License scanning
-* Fix PRs (for Gradle only Fix advice is available)
-* Test your app's SBOM and packages using `pkg:maven` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command
+* Fix PRs (for Gradle, only fix advice is available)
+* Test your app's software bill of materials (SBOM) and packages using `pkg:maven` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 ## Validating, monitoring, alerting, and gating for Java and Kotlin
 
-For SCM integrations, Snyk allows you to [run PR Checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis. You can see the results on the **Projects** page.
+For SCM integrations, you can [run PR Checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis. You can see the results on the **Projects** page.
 
-For CI/CD integrations, Snyk can passively monitor and provide a QA gate by failing build checks during testing for policy violations.
+For continuous integration/continuous delivery (CI/CD) integrations, Snyk can passively monitor and provide a QA gate by failing build checks during testing for policy violations.
 
 Snyk provides flexible capabilities, including:
 
-* [Gradle Plugins](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) (Community project)
-* [Maven Plugins](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
-* Dedicated plugins for Jenkins, Circle CI, and others (see relevant marketplaces)
-* Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
-* The Snyk CLI can be used in most CI/CD systems (see [examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
+* [Gradle plugins](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) (Community project)
+* [Maven plugins](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
+* Dedicated plugins for Jenkins, CircleCI, and others (visit the relevant marketplaces)
+* [GitHub Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
+* The Snyk CLI, which you can use in most CI/CD systems (visit the [examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
   * Fail the build based on criteria using options or the [snyk-filter](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) tool
-  * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
-* With Partner Platforms: Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk. For Java, Snyk suggests using the SCM integration with Bitbucket Cloud or using the CLI instead of the prepackaged Bitbucket Pipe.
+  * [Containerized](https://hub.docker.com/r/snyk/snyk) versions of the Snyk CLI
+* Partner platforms: Azure, Bitbucket, and AWS have built-in pipes and components for use with Snyk. For Java, Snyk recommends using the SCM integration with Bitbucket Cloud or using the CLI instead of the prepackaged Bitbucket Pipe.
 
-Snyk can monitor container images and their open source or Linux-based packages being used in production using Kubernetes integration, to notify customers of known vulnerabilities for applications in production. This feature is available for Enterprise plans only.
+Using the Kubernetes integration, Snyk can monitor container images and their open-source or Linux-based packages used in production, and notify you of known vulnerabilities in applications in production. This feature is available only for Enterprise plans.
 
 Where a production integration does not exist, use the [snyk monitor](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production (available for all plans).
 
@@ -199,13 +205,13 @@ Maven supports [bill of materials (BOM) POM files](https://maven.apache.org/guid
 
 A BOM file includes:
 
-* a `pom` packaging type: `<packaging>pom</packaging>`.
-* a `dependencyManagement` section.
+* a `pom` packaging type: `<packaging>pom</packaging>`
+* a `dependencyManagement` section
 
-Third-party Projects can provide BOM files to simplify dependency management. Here are some common examples:
+Third-party projects can provide BOM files to simplify dependency management. Common examples include the following:
 
-* [spring-data-bom](https://github.com/spring-projects/spring-data-bom) - The Spring team provides a BOM for their Spring Data Project.
-* [jackson-bom](https://github.com/FasterXML/jackson-bom) - The Jackson Project provides a BOM for Jackson dependencies.
+* [spring-data-bom](https://github.com/spring-projects/spring-data-bom): The Spring team provides a BOM for the Spring Data project.
+* [jackson-bom](https://github.com/FasterXML/jackson-bom): The Jackson project provides a BOM for Jackson dependencies.
 
 Example of a BOM file:
 
@@ -239,11 +245,11 @@ Example of a BOM file:
 
 The `dependencyManagement` section contains dependency elements. Each dependency is a lookup reference for Maven to determine the version to select for transitive (and direct) dependencies.
 
-Defining a dependency in the `dependencyManagement` section is used only for lookup reference, it does not add it to the dependency tree of the Project.
+A dependency defined in the `dependencyManagement` section is only a lookup reference. Maven does not add it to the dependency tree of the Project.
 
 You can run `mvn dependency:tree` on the previous BOM example to show that Maven does not treat the contents as dependencies of the file itself.
 
-This BOM can be imported into a Project POM as a parent. You do not need to specify the `log4j` version, as it inherits it from the BOM:
+You can import this BOM into a Project POM as a parent. You do not need to specify the `log4j` version, because the Project POM inherits it from the BOM:
 
 {% code title="Example 2 - Project POM" %}
 ```xml
@@ -272,12 +278,12 @@ This BOM can be imported into a Project POM as a parent. You do not need to spec
 
 Snyk applies the versions in the BOM `dependencyManagement` lookup to any dependencies declared in Project POMs that import it as a `parent`.
 
-When Snyk scans the BOM files, the `dependencyManagement` contents are not considered dependencies of that file. These are only lookups.
+When Snyk scans BOM files, Snyk does not consider the `dependencyManagement` contents to be dependencies of that file. They are only lookups.
 
 For the previous examples, Snyk analyzes and treats the files as follows:
 
-* BOM file - Snyk does not create a Snyk Project for this file because it has no dependencies.
-* Project POM - Snyk creates a Project with a single dependency, `log4j,` with `v1.2.12`. Snyk applies the rules from the parent BOM to identify the correct version for `log4j`. The dependency `commons-logging` is not included, as it is not directly declared in the Project POM.
+* BOM file: Snyk does not create a Snyk Project for this file because it has no dependencies.
+* Project POM: Snyk creates a Project with a single dependency, `log4j`, with `v1.2.12`. Snyk applies the rules from the parent BOM to identify the correct version for `log4j`. The dependency `commons-logging` is not included, as it is not directly declared in the Project POM.
 
 {% hint style="info" %}
 This example uses `log4j 1.x` to demonstrate BOM version inheritance. log4j 1.x is end-of-life and has known vulnerabilities, so Snyk does not recommend using it.
@@ -289,11 +295,11 @@ If a BOM has direct dependencies outside `dependencyManagement`, then Snyk creat
 
 Snyk also offers fix advice, including recommendations to upgrade vulnerable packages through the [Fix PR feature](https://docs.snyk.io/scan-fix-and-prevent/fix/pull-requests#snyk-fix-prs).
 
-Fix PRs can only be created for dependencies whose versions are managed in the POM file where the issue is reported.
+Snyk can create Fix PRs only for dependencies whose versions are managed in the POM file where Snyk reports the vulnerability.
 
 If the version or dependency is managed in a parent BOM, then even though Snyk sees that it could fix the vulnerable path by changing the version, it cannot apply the fix.
 
-See additional resources for Java developers on security topics and best practices:
+Visit the following resources for Java developers on security topics and best practices:
 
 * [Snyk Blog](https://snyk.io/blog/)
 * [Securing your modern software supply chain](https://snyk.io/blog/software-supply-chain-security/)

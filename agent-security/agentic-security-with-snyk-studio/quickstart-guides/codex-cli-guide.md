@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-10-09
+last_reviewed_source: focused-edit
+---
 # Codex guide
 
 Access Snyk Studio in Codex (UI or CLI) to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Codex.

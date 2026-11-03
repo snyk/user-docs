@@ -1,6 +1,8 @@
 ---
 description: How to connect Snyk to an Artifactory registry for npm
 nav_context: classic
+last_reviewed: 2026-09-10
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

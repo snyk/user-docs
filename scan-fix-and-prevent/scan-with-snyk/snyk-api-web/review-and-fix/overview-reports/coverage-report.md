@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: The Snyk API & Web coverage report
+last_reviewed: 2026-10-28
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

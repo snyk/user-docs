@@ -1,5 +1,7 @@
 ---
 description: Scan codebases for exposed secrets with the Snyk CLI.
+last_reviewed: 2026-08-07
+last_reviewed_source: focused-edit
 ---
 
 # Secrets scanning in the Snyk CLI

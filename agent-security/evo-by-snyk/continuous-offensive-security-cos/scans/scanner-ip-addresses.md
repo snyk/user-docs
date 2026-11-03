@@ -2,6 +2,8 @@
 description: >-
   The IP addresses Continuous Offensive Security scans run from, by region,
   and where to allow them
+last_reviewed: 2026-08-17
+last_reviewed_source: bulk-sync
 ---
 
 # Scanner IP addresses

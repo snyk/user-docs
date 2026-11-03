@@ -1,6 +1,8 @@
 ---
 description: How Snyk Broker detects infrastructure as code (IaC) files, enabled by default from Broker v4.205.2
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Broker - Infrastructure as Code detection

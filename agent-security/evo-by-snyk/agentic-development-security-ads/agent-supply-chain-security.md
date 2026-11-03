@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How Agent Supply Chain Security assesses the MCP servers, skills, and tools
   your agents use
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
 ---
 
 # Agent Supply Chain Security

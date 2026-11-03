@@ -1,6 +1,8 @@
 ---
 description: How to validate Snyk webhook payloads and handle payload versioning
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Validation and versioning of payloads

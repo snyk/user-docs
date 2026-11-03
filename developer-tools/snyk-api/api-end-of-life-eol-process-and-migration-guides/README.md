@@ -1,6 +1,8 @@
 ---
 description: The Snyk API end-of-life process and migration guides
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # API End of Life (EOL) process and migration guides

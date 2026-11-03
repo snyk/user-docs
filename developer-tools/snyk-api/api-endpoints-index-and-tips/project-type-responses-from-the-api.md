@@ -1,6 +1,8 @@
 ---
 description: The Snyk Project type values returned by the API
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Project type responses from the API

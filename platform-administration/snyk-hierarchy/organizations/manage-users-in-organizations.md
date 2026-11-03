@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to manage members of a Snyk Organization from the Members settings, based
   on your role permissions
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Manage users in Organizations

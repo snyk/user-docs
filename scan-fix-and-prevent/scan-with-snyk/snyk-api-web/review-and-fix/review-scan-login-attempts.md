@@ -1,6 +1,8 @@
 ---
 description: How to review scan login attempts in Snyk API & Web
 nav_context: agnostic
+last_reviewed: 2026-07-06
+last_reviewed_source: bulk-sync
 ---
 
 # Review scan login attempts

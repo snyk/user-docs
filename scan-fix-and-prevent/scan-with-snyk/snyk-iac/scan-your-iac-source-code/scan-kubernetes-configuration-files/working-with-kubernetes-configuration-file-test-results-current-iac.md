@@ -1,6 +1,8 @@
 ---
 description: How to work with Kubernetes configuration file test results in Snyk IaC
 nav_context: classic
+last_reviewed: 2026-08-03
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

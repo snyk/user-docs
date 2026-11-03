@@ -1,6 +1,8 @@
 ---
 description: How to connect Snyk to an Artifactory repository manager for NuGet
 nav_context: classic
+last_reviewed: 2026-06-18
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

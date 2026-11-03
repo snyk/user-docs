@@ -1,6 +1,8 @@
 ---
 description: How to exchange an authorization code for a token in a Snyk App
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Set up the authorization code exchange

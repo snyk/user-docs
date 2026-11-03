@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for Python
 nav_context: agnostic
+last_reviewed: 2026-09-14
+last_reviewed_source: focused-edit
 ---
 
 # Python rules

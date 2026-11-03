@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to troubleshoot Snyk net new issues delta scans that fail on npm reference
   scans
+last_reviewed: 2026-10-16
+last_reviewed_source: bulk-sync
 ---
 
 # Net new issues (delta) scan troubleshooting

@@ -1,6 +1,8 @@
 ---
 nav_context: new
 description: How Snyk Analytics reports on your security posture and program
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Analytics

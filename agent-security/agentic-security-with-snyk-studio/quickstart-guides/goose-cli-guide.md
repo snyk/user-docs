@@ -1,6 +1,8 @@
 ---
 description: How to set up Snyk Studio and the Snyk MCP server in Goose CLI
 nav_context: classic
+last_reviewed: 2026-09-17
+last_reviewed_source: bulk-sync
 ---
 
 # Goose CLI guide

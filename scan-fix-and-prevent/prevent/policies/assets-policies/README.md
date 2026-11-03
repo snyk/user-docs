@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk Essentials asset policies automate asset governance
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

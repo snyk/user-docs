@@ -1,6 +1,8 @@
 ---
 description: How to integrate Snyk reporting with a Snowflake Data Share
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Reporting and BI integrations: Snowflake Data Share

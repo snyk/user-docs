@@ -1,6 +1,8 @@
 ---
 description: How to retrieve audit logs of user activity for a Snyk Organization or Group through the API, available on Enterprise plans
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Retrieve audit logs of user-initiated activity by API for an Org or Group

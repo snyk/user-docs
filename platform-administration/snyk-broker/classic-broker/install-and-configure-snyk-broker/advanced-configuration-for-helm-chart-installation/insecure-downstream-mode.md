@@ -1,6 +1,8 @@
 ---
 description: How to use insecure downstream HTTP mode for a Snyk Broker Helm chart installation
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Insecure Downstream Mode

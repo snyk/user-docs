@@ -1,6 +1,8 @@
 ---
 description: Custom role template for an Auditor, a Group-level read-only role for viewing scan results and reports
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Auditor role template

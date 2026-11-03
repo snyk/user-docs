@@ -1,6 +1,8 @@
 ---
 description: Snyk-maintained scripts and solutions for specific Snyk API use cases
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Solutions for specific use cases

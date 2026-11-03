@@ -2,6 +2,8 @@
 description: >-
   How to create custom regex rules that detect secrets specific to your
   Organization
+last_reviewed: 2026-07-30
+last_reviewed_source: focused-edit
 ---
 
 # Custom RegEx for Secrets

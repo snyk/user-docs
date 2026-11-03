@@ -1,6 +1,8 @@
 ---
 description: Examples for the Snyk API Update existing integration endpoint
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Examples for the Update existing integration endpoint

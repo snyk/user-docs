@@ -3,6 +3,8 @@ description: >-
   About the Snyk REST API, based on the JSON:API standard and defined in OpenAPI
   3.0.3
 nav_context: agnostic
+last_reviewed: 2026-07-13
+last_reviewed_source: focused-edit
 ---
 
 # About the REST API

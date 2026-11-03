@@ -1,6 +1,8 @@
 ---
 description: How to integrate Snyk with TeamCity using the Snyk Security plugin
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # TeamCity (JetBrains) integration using the Snyk security plugin

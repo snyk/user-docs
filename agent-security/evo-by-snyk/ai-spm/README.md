@@ -3,6 +3,8 @@ description: >-
   How AI Security Posture Management gives you visibility and governance over
   the AI assets in your code
 nav_context: agnostic
+last_reviewed: 2026-08-19
+last_reviewed_source: bulk-sync
 ---
 
 # AI-SPM

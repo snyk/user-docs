@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Service description for Snyk Onboarding Basic, consultant-led assisted account
   configuration
+last_reviewed: 2026-10-09
+last_reviewed_source: focused-edit
 ---
 
 # Snyk Onboarding Basic Services Description

@@ -1,6 +1,8 @@
 ---
 description: The severity levels of Snyk API & Web findings
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: focused-edit
 ---
 
 # Severity levels in findings
