@@ -68,7 +68,7 @@ Objective likelihood factors are taken into account:
 * Exploit Maturity
 * Exploit Prediction Scoring System (EPSS)
 * Age of advisory
-* CVSS exploitability metrics: Attack vector, Privileges required, User interaction, and Scope
+* CVSS exploitability metrics: Attack vector, Attack complexity, Privileges required, and User interaction
 * Social Trends
 * Malicious Package
 * Provider Urgency (Snyk Container)
@@ -125,7 +125,7 @@ Urgency rating as provided by the relevant operating system distribution securit
 | `Low`                | Impact subscore decreases significantly. |
 
 {% hint style="info" %}
-Provider Urgency affects the Likelihood subscore.
+Provider Urgency affects both the Impact and Likelihood subscores. For its effect on Likelihood, visit [Objective likelihood risk factors](#objective-likelihood-risk-factors).
 {% endhint %}
 
 #### Contextual impact risk factor
