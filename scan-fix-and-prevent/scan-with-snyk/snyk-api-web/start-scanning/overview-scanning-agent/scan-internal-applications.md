@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to scan internal applications with a Snyk API & Web Scanning Agent
+last_reviewed: 2026-09-29
+last_reviewed_source: focused-edit
 ---
 
 # Scan internal applications

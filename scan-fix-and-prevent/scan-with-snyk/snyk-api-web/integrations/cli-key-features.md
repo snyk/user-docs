@@ -1,6 +1,8 @@
 ---
 description: The key CLI features for Snyk API & Web
 nav_context: agnostic
+last_reviewed: 2026-07-06
+last_reviewed_source: bulk-sync
 ---
 
 # CLI key features for Snyk API & Web

@@ -1,6 +1,8 @@
 ---
 description: How to assign Snyk API & Web vulnerabilities to a team member
 nav_context: classic
+last_reviewed: 2026-08-03
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

@@ -1,6 +1,8 @@
 ---
 description: The roles and permissions in Snyk API & Web
 nav_context: agnostic
+last_reviewed: 2026-07-06
+last_reviewed_source: bulk-sync
 ---
 
 # Roles and permissions

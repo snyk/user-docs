@@ -1,6 +1,8 @@
 ---
 description: How the Snyk API & Web scanning agent works
 nav_context: agnostic
+last_reviewed: 2026-07-06
+last_reviewed_source: bulk-sync
 ---
 
 # Scanning agent

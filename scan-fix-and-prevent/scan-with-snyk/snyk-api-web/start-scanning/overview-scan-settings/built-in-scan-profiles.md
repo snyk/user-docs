@@ -1,6 +1,8 @@
 ---
 description: The built-in Snyk API & Web scan profiles and their differences
 nav_context: agnostic
+last_reviewed: 2026-07-06
+last_reviewed_source: bulk-sync
 ---
 
 # Built-in scan profiles and their differences

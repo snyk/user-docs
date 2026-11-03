@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to configure Snyk Code for your Organization
+last_reviewed: 2026-09-30
+last_reviewed_source: focused-edit
 ---
 
 # Configure Snyk Code

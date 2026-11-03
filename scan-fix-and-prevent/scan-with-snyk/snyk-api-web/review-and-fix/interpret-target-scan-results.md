@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to interpret target scan results in Snyk API & Web
+last_reviewed: 2026-10-02
+last_reviewed_source: focused-edit
 ---
 
 # Interpret target scan results

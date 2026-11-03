@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to allow Snyk API & Web scanner IPs in your WAF
+last_reviewed: 2026-09-16
+last_reviewed_source: focused-edit
 ---
 
 # Configure IPs in WAFs

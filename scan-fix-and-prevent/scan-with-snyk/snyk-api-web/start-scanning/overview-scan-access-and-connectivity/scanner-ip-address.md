@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: The scanner IP addresses used by Snyk API & Web
+last_reviewed: 2026-09-16
+last_reviewed_source: focused-edit
 ---
 
 # Scanner IP address

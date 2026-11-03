@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk Code finds and fixes security vulnerabilities in your source code
+last_reviewed: 2026-10-09
+last_reviewed_source: focused-edit
 ---
 
 # Snyk Code

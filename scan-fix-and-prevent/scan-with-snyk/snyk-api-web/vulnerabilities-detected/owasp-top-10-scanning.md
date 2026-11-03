@@ -1,6 +1,8 @@
 ---
 description: How Snyk API & Web scans for the OWASP Top 10
 nav_context: agnostic
+last_reviewed: 2026-06-17
+last_reviewed_source: focused-edit
 ---
 
 # OWASP Top 10 scanning

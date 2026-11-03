@@ -1,6 +1,8 @@
 ---
 description: How to enforce two-factor authentication for all Snyk API & Web users
 nav_context: classic
+last_reviewed: 2026-08-03
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

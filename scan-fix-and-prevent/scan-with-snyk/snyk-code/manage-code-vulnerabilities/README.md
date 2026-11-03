@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to manage code vulnerabilities found by Snyk Code
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Manage code vulnerabilities
