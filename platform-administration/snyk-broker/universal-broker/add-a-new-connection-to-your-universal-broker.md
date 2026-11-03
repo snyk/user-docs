@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to add a new connection to your Universal Broker with the
   snyk-broker-config CLI tool
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Add a new connection to your Universal Broker

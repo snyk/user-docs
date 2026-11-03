@@ -1,6 +1,8 @@
 ---
 description: How to use one Snyk Broker token across multiple Organizations with the same SCM
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Enabling Broker across multiple Organizations

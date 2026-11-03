@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to install and configure Snyk Broker for GitLab using Docker
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitLab - install and configure using Docker

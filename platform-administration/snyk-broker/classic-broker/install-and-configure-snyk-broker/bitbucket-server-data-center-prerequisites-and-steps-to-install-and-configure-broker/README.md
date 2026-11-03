@@ -1,6 +1,8 @@
 ---
 description: Prerequisites and steps to install and configure Snyk Broker for Bitbucket Server and Data Center
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Bitbucket Server/Data Center - prerequisites and steps to install and configure Broker

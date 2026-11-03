@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: Learn about how you, as a user, exist within the Snyk hierarchy.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Tenant, Groups, and Organizations

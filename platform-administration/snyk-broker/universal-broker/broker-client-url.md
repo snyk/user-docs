@@ -1,6 +1,8 @@
 ---
 description: How the Broker client URL lets an SCM webhook communicate code updates to Snyk
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Broker client URL

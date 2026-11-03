@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How users request access to a Snyk Organization and how administrators review
   those requests
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Requests for access to an Organization

@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to prepare Snyk Broker for deployment, including prerequisites and
   supported platforms
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Prepare Snyk Broker for deployment

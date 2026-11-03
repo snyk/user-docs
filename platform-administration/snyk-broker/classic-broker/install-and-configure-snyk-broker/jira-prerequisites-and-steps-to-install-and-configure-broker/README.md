@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Prerequisites and steps to install and configure Snyk Broker for Jira with
   Docker or Helm
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Jira - prerequisites and steps to install and configure Broker

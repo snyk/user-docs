@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Workflow diagrams showing the steps the snyk-broker-config tool automates for
   the Universal Broker
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Universal Broker workflow diagrams

@@ -1,6 +1,8 @@
 ---
 description: How to create a pool of Snyk Broker credentials with Docker and Helm to work around rate limiting
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Credential pooling with Docker and Helm

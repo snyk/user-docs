@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Prerequisites for deploying the Universal Broker, including supported
   platforms and the snyk-broker-config CLI tool
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Prerequisites for Universal Broker

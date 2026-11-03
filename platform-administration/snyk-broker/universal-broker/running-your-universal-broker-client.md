@@ -1,6 +1,8 @@
 ---
 description: How to run the Universal Broker client, including the deployment and credential prerequisites you need
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Running your Universal Broker client

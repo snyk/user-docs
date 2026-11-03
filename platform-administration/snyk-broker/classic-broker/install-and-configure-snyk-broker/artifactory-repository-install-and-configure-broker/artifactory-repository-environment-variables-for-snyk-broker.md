@@ -1,6 +1,8 @@
 ---
 description: Environment variables to configure the Snyk Broker client for Artifactory Repository
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Artifactory Repository - environment variables for Snyk Broker

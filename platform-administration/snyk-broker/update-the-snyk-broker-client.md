@@ -1,6 +1,8 @@
 ---
 description: How to update the Snyk Broker client to get new features and fixes from Snyk releases
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Update the Snyk Broker client

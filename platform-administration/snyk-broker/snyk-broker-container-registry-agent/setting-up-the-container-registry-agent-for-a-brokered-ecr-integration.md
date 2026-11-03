@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up the Container Registry Agent for a brokered Amazon ECR
   integration with Snyk
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Setting up the Container Registry Agent for a brokered ECR integration

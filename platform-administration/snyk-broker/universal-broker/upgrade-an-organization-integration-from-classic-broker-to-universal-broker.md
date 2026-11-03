@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to upgrade an Organization integration from Classic Broker to the
   Universal Broker
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Upgrade an Organization integration from Classic Broker to Universal Broker

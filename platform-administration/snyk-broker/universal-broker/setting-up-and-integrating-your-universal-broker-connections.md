@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up and integrate Universal Broker connections, including installing
   the Snyk Broker App
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Setting up and integrating your Universal Broker connections

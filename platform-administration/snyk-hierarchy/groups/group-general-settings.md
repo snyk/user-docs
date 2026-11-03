@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to view and modify Snyk Group general settings, including the Group name
   and related options
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Group general settings

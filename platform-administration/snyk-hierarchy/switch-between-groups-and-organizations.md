@@ -1,6 +1,8 @@
 ---
 description: How to switch between Snyk Groups and Organizations in the web UI, and how the preferred Organization applies
 nav_context: new
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Switch between Groups and Organizations

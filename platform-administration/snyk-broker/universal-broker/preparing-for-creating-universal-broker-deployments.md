@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to prepare hosts and meet prerequisites before creating Universal Broker
   deployments
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Preparing for creating Universal Broker deployments

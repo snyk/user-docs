@@ -1,6 +1,8 @@
 ---
 description: Environment variables required to configure the Snyk Broker client for GitLab
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitLab - environment variables for Snyk Broker

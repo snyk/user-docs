@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to create and delete Snyk Organizations and set your preferred
   Organization, within your plan limits
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Create and delete Organizations

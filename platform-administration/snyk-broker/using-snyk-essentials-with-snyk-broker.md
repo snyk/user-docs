@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to use Snyk Essentials with Snyk Broker to scan repositories on an SCM
   that is not publicly accessible
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Using Snyk Essentials with Snyk Broker

@@ -1,6 +1,8 @@
 ---
 description: How to use a Broker Context to override the configuration of a Broker connection for an integration
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Configuring Broker Contexts

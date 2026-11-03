@@ -1,6 +1,8 @@
 ---
 description: How to configure HTTPS for the Snyk Broker client with Docker across SCM integrations
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # HTTPS for Broker Client with Docker

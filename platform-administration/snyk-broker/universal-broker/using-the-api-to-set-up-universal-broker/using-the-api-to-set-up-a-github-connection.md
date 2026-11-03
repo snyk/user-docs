@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Example of using the Snyk API to set up a GitHub connection with the Universal
   Broker
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Using the API to set up a GitHub connection

@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   The basic steps to install and configure the Universal Broker, from
   prerequisites through your first connection
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Basic steps to install and configure Universal Broker

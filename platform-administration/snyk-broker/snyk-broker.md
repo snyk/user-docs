@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Snyk Broker, an open-source proxy that securely connects Snyk to on-premises
   and private-network systems, on Enterprise plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Broker

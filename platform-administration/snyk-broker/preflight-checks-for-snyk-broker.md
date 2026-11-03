@@ -1,6 +1,8 @@
 ---
 description: How Snyk Broker preflight checks catch errors and misconfigurations at client startup
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Preflight checks for Snyk Broker

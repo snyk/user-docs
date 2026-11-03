@@ -1,6 +1,8 @@
 ---
 description: Snyk Organizations, which represent teams, products, or environments and contain the Projects you scan
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Organizations
