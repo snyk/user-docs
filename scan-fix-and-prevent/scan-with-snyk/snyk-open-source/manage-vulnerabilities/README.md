@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to manage vulnerabilities found by Snyk Open Source
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Manage vulnerabilities

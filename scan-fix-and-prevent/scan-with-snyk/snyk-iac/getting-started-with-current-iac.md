@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to get started with Snyk IaC
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Getting started with Snyk IaC

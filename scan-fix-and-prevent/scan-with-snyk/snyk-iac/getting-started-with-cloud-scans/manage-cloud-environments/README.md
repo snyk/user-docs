@@ -1,6 +1,8 @@
 ---
 description: How to manage cloud environments in Snyk
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Manage cloud environments

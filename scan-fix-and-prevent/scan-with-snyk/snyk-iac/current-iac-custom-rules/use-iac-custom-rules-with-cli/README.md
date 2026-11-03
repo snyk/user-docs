@@ -1,6 +1,8 @@
 ---
 description: How to use Snyk IaC custom rules with the CLI
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Use IaC custom rules with CLI

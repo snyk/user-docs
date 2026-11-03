@@ -1,6 +1,8 @@
 ---
 description: How to use the Jira integration with Snyk IaC
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Jira integration for Snyk IaC

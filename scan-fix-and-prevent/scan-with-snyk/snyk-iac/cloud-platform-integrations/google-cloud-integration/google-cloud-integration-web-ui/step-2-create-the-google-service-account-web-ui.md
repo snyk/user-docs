@@ -1,6 +1,8 @@
 ---
 description: 'Step 2: create the Google service account for the Snyk integration in the Web UI'
 nav_context: classic
+last_reviewed: 2026-08-03
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}

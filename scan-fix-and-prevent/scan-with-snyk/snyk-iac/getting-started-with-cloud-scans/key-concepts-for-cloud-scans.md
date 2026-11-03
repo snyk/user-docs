@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: Key concepts for Snyk cloud scans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Key concepts for cloud scans

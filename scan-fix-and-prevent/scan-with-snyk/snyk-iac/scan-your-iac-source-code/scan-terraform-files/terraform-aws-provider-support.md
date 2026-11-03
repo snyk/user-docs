@@ -1,6 +1,8 @@
 ---
 description: Support and limitations for the Terraform AWS provider.
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 # Terraform AWS Provider support
 

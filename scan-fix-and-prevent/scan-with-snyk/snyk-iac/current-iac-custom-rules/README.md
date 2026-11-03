@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to create custom rules for Snyk IaC
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # IaC custom rules

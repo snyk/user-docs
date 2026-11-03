@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to view Snyk IaC issue reports
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # View Snyk IaC issue reports

@@ -1,6 +1,8 @@
 ---
 description: How Snyk Open Source integrates with private package repositories
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Package repository integrations

@@ -1,6 +1,8 @@
 ---
 description: How Snyk IaC detects manually created resources and drift
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Detect manually created resources

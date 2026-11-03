@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to ignore unmanaged resources in Snyk IaC drift detection
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Ignore unmanaged resources

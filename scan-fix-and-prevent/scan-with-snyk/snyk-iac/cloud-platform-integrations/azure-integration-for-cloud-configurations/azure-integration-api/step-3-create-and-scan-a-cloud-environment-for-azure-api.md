@@ -1,6 +1,8 @@
 ---
 description: 'Step 3: create and scan a cloud environment for Azure using the API'
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Step 3: Create and scan a Cloud Environment for Azure (API)

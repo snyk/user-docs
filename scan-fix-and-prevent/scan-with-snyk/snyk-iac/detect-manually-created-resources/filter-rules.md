@@ -1,6 +1,8 @@
 ---
 description: How to use filter rules with Snyk IaC drift detection
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Filter rules

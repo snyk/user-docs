@@ -1,6 +1,8 @@
 ---
 description: Examples of Snyk IaC custom rules
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Examples of IaC custom rules

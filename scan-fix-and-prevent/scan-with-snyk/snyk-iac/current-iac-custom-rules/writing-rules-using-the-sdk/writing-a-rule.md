@@ -1,6 +1,8 @@
 ---
 description: How to write a Snyk IaC custom rule with the SDK
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Writing a rule

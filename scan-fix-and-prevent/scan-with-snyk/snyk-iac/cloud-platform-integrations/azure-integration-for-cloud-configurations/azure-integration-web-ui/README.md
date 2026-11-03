@@ -1,6 +1,8 @@
 ---
 description: How to set up the Snyk Azure integration in the Web UI
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Azure Integration: Web UI

@@ -1,6 +1,8 @@
 ---
 description: 'Step 3: create and scan a cloud environment for Google Cloud in the Web UI'
 nav_context: classic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}

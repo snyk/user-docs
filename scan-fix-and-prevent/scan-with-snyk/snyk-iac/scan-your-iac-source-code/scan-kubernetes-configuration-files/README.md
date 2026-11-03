@@ -2,6 +2,8 @@
 description: >-
   How to scan Kubernetes configuration files with Snyk IaC
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Scan Kubernetes configuration files
