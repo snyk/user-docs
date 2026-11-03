@@ -2,6 +2,8 @@
 description: >-
   How AI assistants and agents read Snyk documentation, including the MCP
   server, llms.txt, Markdown page URLs, and content negotiation
+last_reviewed: 2026-09-04
+last_reviewed_source: focused-edit
 ---
 
 # AI and agent access

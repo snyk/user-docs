@@ -3,6 +3,8 @@ description: >-
   How to save Evo chat views as reports that update automatically as your data
   changes
 nav_context: classic
+last_reviewed: 2026-08-25
+last_reviewed_source: focused-edit
 ---
 
 # Reports

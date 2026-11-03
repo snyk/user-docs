@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Run Snyk locally, in repositories, and in pipelines, and choose the developer
   tool integration that matches your workflow
+last_reviewed: 2026-09-14
+last_reviewed_source: focused-edit
 ---
 
 # Overview

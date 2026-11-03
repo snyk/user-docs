@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to configure Agentic Development Security and install it on one machine or
   across your company
+last_reviewed: 2026-10-23
+last_reviewed_source: focused-edit
 ---
 
 # Activation and deployment

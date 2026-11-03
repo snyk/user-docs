@@ -2,6 +2,8 @@
 description: >-
   How to give Continuous Offensive Security agents the credentials they need
   to test behind a login
+last_reviewed: 2026-08-17
+last_reviewed_source: bulk-sync
 ---
 
 # Configure authentication

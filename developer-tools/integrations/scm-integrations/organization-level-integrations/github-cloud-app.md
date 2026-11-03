@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up the Snyk GitHub Cloud App integration, including use with
   Universal Broker
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitHub Cloud App

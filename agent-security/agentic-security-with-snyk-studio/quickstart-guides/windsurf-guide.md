@@ -3,6 +3,8 @@ description: >-
   How to access Snyk Studio in Windsurf with the Snyk Security plugin or a
   direct install
 nav_context: classic
+last_reviewed: 2026-08-20
+last_reviewed_source: focused-edit
 ---
 
 # Windsurf guide

@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to configure the GitLab integration for Snyk Essentials at the Group level
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitLab for Snyk Essentials

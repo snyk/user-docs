@@ -2,6 +2,8 @@
 description: >-
   How to add a Continuous Offensive Security target, including authorization
   requirements
+last_reviewed: 2026-08-17
+last_reviewed_source: bulk-sync
 ---
 
 # Before you begin

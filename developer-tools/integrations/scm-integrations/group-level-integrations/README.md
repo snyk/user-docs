@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Group-level SCM integrations give broader visibility into all application
   assets for a customer
+last_reviewed: 2026-10-19
+last_reviewed_source: focused-edit
 ---
 
 # Group-level integrations

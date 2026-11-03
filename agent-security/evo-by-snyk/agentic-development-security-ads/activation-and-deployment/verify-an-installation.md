@@ -2,6 +2,8 @@
 description: >-
   How to confirm ADS installed on a machine, and what to check when the results
   are not what you expect
+last_reviewed: 2026-10-14
+last_reviewed_source: focused-edit
 ---
 
 # Verify an installation

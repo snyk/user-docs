@@ -2,6 +2,8 @@
 description: >-
   How to monitor scan progress and manage scan activity across your Continuous
   Offensive Security targets
+last_reviewed: 2026-08-25
+last_reviewed_source: focused-edit
 ---
 
 # Monitor and Manage Scans

@@ -2,6 +2,8 @@
 description: >-
   How Snyk Continuous Offensive Security continuously tests web applications
   and validates real vulnerabilities
+last_reviewed: 2026-08-17
+last_reviewed_source: bulk-sync
 ---
 
 # Continuous Offensive Security (COS)

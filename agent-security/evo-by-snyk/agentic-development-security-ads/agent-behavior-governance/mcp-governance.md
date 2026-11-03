@@ -2,6 +2,8 @@
 description: >-
   Establishing an MCP server policy in Evo, evaluating real usage against your
   environment, and safely enabling runtime enforcement.
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
 ---
 
 # MCP Governance

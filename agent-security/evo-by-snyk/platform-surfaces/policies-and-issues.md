@@ -2,6 +2,8 @@
 description: >-
   How Evo policies govern AI use and raise issues when an asset violates them
 nav_context: classic
+last_reviewed: 2026-10-23
+last_reviewed_source: focused-edit
 ---
 
 # Policies & issues

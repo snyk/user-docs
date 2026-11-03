@@ -2,6 +2,8 @@
 description: >-
   How the target scope bounds where Continuous Offensive Security agents can
   send requests
+last_reviewed: 2026-09-16
+last_reviewed_source: focused-edit
 ---
 
 # Define the Target Scope

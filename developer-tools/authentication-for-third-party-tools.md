@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to authenticate to Snyk from third-party developer tools using an API
   token from a personal or service account
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Authentication for third-party tools

@@ -1,6 +1,8 @@
 ---
 description: How the Snyk Security app for Jira Cloud surfaces vulnerabilities in your Jira projects
 nav_context: classic
+last_reviewed: 2026-07-10
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}

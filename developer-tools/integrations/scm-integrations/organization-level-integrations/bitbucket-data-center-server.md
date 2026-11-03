@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up the Snyk Bitbucket Data Center and Server SCM integration for
   continuous scanning
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Bitbucket Data Center/Server

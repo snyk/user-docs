@@ -1,6 +1,8 @@
 ---
 description: Report types that show how your teams use Snyk Studio
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Usage analytics

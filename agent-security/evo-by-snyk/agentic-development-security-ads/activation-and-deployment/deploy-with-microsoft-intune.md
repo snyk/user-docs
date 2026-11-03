@@ -2,6 +2,8 @@
 description: >-
   How to deploy Agentic Development Security to Windows devices with Microsoft
   Intune
+last_reviewed: 2026-10-23
+last_reviewed_source: focused-edit
 ---
 
 # Deploy with Microsoft Intune

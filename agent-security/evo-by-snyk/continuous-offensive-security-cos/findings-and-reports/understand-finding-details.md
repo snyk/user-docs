@@ -2,6 +2,8 @@
 description: >-
   How to triage, reproduce, and hand off a Continuous Offensive Security
   finding
+last_reviewed: 2026-08-17
+last_reviewed_source: bulk-sync
 ---
 
 # Understand finding details

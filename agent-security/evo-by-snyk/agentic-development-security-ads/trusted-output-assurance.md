@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How Trusted Output Assurance secures AI-assisted development before insecure
   code reaches production
+last_reviewed: 2026-08-20
+last_reviewed_source: focused-edit
 ---
 
 # Trusted Output Assurance

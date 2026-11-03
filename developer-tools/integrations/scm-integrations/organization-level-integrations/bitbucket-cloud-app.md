@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to set up the Snyk Bitbucket Cloud App, the default Bitbucket Cloud
   integration
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Bitbucket Cloud App

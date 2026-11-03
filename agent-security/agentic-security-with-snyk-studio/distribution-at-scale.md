@@ -3,6 +3,8 @@ description: >-
   How to distribute Snyk Studio as a managed utility across your development
   teams
 nav_context: classic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Distribution at scale

@@ -1,6 +1,8 @@
 ---
 description: How to set up the Snyk Jira integration to create tickets from vulnerabilities
 nav_context: classic
+last_reviewed: 2026-05-21
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}

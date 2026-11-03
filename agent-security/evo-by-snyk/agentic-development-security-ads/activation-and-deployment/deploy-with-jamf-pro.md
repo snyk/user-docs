@@ -1,5 +1,7 @@
 ---
 description: How to deploy Agentic Development Security to macOS devices with Jamf Pro
+last_reviewed: 2026-10-23
+last_reviewed_source: focused-edit
 ---
 
 # Deploy with Jamf Pro

@@ -1,6 +1,8 @@
 ---
 description: How to set up Snyk Studio and the Snyk MCP server in Devin
 nav_context: classic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Devin guide

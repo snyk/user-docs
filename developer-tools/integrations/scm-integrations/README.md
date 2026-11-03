@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How Snyk SCM integrations add security at each stage: importing a Project,
   writing code, and building
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # SCMs

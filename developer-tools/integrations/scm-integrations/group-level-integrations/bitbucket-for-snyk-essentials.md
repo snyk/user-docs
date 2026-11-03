@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to configure the Bitbucket integration for Snyk Essentials at the Group
   level
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Bitbucket for Snyk Essentials

@@ -1,6 +1,8 @@
 ---
 description: How to forward Snyk platform events to Amazon EventBridge
 nav_context: classic
+last_reviewed: 2026-09-17
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}
