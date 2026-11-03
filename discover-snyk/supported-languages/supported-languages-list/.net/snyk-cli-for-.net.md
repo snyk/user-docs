@@ -33,20 +33,17 @@ To scan a NuGet Project:
 You must run `dotnet restore` before `snyk test` to restore dependencies and ensure accurate scan results.
 {% endhint %}
 
-#### Support for project.json
+### Support for project.json
 
 Snyk supports `project.json` files, although Microsoft no longer recommends this format.
 
-#### Support for packages.config
+### Support for packages.config
 
 Snyk supports `packages.config` files. To scan these Projects:
 
 1. Run `nuget install -OutputDirectory packages` to install dependencies into the `packages` folder.
 2. Ensure the command created the `packages` directory.
-3. Run `snyk test` as follows:
-   1. Install the dependencies into the packages folder by running `nuget install -OutputDirectory packages`
-   2. Ensure that the packages directory has been created by the previous command.
-   3. Run `snyk test`.
+3. Run `snyk test`.
 
 ## Paket
 

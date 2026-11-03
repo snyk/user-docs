@@ -7,12 +7,12 @@ nav_context: new
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
-### Prerequisites
+## Prerequisites
 
 * You are a Snyk Enterprise customer.
 * You have the permissions to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk Essentials for repository asset discovery.
 
-### Configuration steps
+## Configuration steps
 
 1. In the Snyk Web UI, use the scope selector at the top of the page to switch to your Group.
 2. Navigate to **Settings** > **Integrations** > **All integrations** and verify that Snyk Essentials is configured.

@@ -3,8 +3,8 @@ description: How to add Project Attributes as metadata to filter and report on s
 nav_context: agnostic
 ---
 
-# Add project attributes
+# Add Project attributes
 
-After importing your projects, you can add metadata to your Projects using [Project Attributes](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/project-attributes). This allows you to filter and report on specific subsets of your Organization.
+After you import your Projects, you can add metadata to them using [Project attributes](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/project-attributes). You can then filter and report on specific subsets of your Organization.
 
-For example, if you add Project Attributes to all of your Projects, you can easily filter Projects to those that are "frontend critical vulnerabilities in production" from the Projects page.
+For example, if you add Project attributes to all of your Projects, you can filter Projects to those that are "frontend critical vulnerabilities in production" on the **Projects** page.

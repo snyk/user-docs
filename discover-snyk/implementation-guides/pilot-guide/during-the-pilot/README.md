@@ -3,6 +3,6 @@ description: What to do during a Snyk pilot, including local IDE scanning, fixin
 nav_context: agnostic
 ---
 
-# During the Pilot
+# During the pilot
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

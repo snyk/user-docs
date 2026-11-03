@@ -10,10 +10,10 @@ nav_context: agnostic
 {% hint style="info" %}
 Snyk supports Bazel only for Snyk Open Source.
 
-Snyk for Bazel provides support for using the [Bazel build and test tool](https://docs.bazel.build/versions/master/bazel-overview.html) with Snyk Open Source. The instructions in this documentation apply to Bazel v 7 only.
+Snyk for Bazel provides support for using the [Bazel build and test tool](https://docs.bazel.build/versions/master/bazel-overview.html) with Snyk Open Source. The instructions in this documentation apply to Bazel version 7 only.
 {% endhint %}
 
-Snyk supports testing Projects whose dependencies are managed by Bazel. Snyk recommends testing and monitoring using the Dep Graph API.
+Snyk supports testing Projects that use Bazel to manage dependencies. Snyk recommends testing and monitoring using the Dep Graph API.
 
 Unlike npm, Bazel does not rely on dependency manifest files or lock files. Instead, you manage build configurations in [BUILD](https://docs.bazel.build/versions/master/build-ref.html#BUILD_files) files using [Starlark](https://docs.bazel.build/versions/master/skylark/language.html), a domain-specific language based on Python 3.
 
@@ -21,7 +21,7 @@ You manually specify all dependencies (package name, location, and version), inc
 
 Bazel has limited native integration with package registries, such as npmjs.org or Maven Central. You can add Bazel rules to help install dependencies from external registries.
 
-Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover the dependencies from a Project.
+Because you specify Bazel dependencies as code in BUILD files using Starlark, Snyk cannot easily discover the dependencies from a Project.
 
 ## Dep Graph API
 
@@ -31,9 +31,9 @@ To secure Bazel Projects, you must use the Snyk Dep Graph API. This API accepts 
 
 The Dep Graph API requires specific permissions. If you do not have access, contact Snyk Support.
 
-You can test Bazel dependencies across any supported ecosystem, except C++, which is not supported by these endpoints.
+You can test Bazel dependencies across any supported ecosystem, except C++, which these endpoints do not support.
 
-Use the Snyk Dep Graph API endpoints [Test Dep Graph](https://docs.snyk.io/developer-tools/snyk-api/reference/test-v1) and [Monitor Dep Graph](https://docs.snyk.io/developer-tools/snyk-api/reference/monitor-v1) to test and monitor dependencies managed by Bazel. The monitor capability allows you to submit a tree for Snyk to monitor for vulnerabilities.
+Use the Snyk Dep Graph API endpoints [Test Dep Graph](https://docs.snyk.io/developer-tools/snyk-api/reference/test-v1) and [Monitor Dep Graph](https://docs.snyk.io/developer-tools/snyk-api/reference/monitor-v1) to test and monitor dependencies managed by Bazel. With the monitor capability, you can submit a tree for Snyk to monitor for vulnerabilities.
 
 ### Test and monitor dependencies
 
@@ -104,11 +104,11 @@ export interface DepGraphData {
 
 Specific components in the Dep Graph object include:
 
-* `schemaVersion` - the version of the Dep Graph schema. Set this to `1.2.0`.
-* `pkgManager.name` - can be one of `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems`, or `cocoapods`.
-* `pkgs` - an array of objects containing `id`, `name` and `version` of all packages in the Dep Graph. The `id` must be in the form `name@version`. List each of your dependencies in this array, including an item representing the Project itself.
-* `graph.nodes` - an array of objects describing the relationships between entries in `pkgs`. This is typically the Project node with all other packages defined as a flat array of direct dependencies in `deps.`
-* `graph.rootNodeId` - specifies the `id` of the entry in `graph.nodes` to use as the root node of the graph. Set this to the `nodeId` of the Project node.
+* `schemaVersion`: the version of the Dep Graph schema. Set this to `1.2.0`.
+* `pkgManager.name`: can be one of `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems`, or `cocoapods`.
+* `pkgs`: an array of objects containing `id`, `name` and `version` of all packages in the Dep Graph. The `id` must be in the form `name@version`. List each of your dependencies in this array, including an item representing the Project itself.
+* `graph.nodes`: an array of objects describing the relationships between entries in `pkgs`. This is typically the Project node with all other packages defined as a flat array of direct dependencies in `deps.`
+* `graph.rootNodeId`: specifies the `id` of the entry in `graph.nodes` to use as the root node of the graph. Set this to the `nodeId` of the Project node.
 
 ### Dep Graph Test API response
 
@@ -207,9 +207,9 @@ An example response with a single vulnerability:
 
 Specific components in the response object include:
 
-* `ok` - Boolean value summarizing whether Snyk found any vulnerabilities in the supplied dependencies. You can use this for a quick pass or fail test.
-* `issuesData` - a hash of each unique vulnerability found. Each vulnerability contains useful properties, such as `title`, `description`, `identifiers`, `publicationTime`, `severity`, and so on.
-* `issues` - an array of mappings from vulnerabilities in `issuesData` to package. This mapping shortens the response length because a vulnerability can apply to multiple packages.
+* `ok`: Boolean value summarizing whether Snyk found any vulnerabilities in the supplied dependencies. You can use this for a quick pass or fail test.
+* `issuesData`: a hash of each unique vulnerability found. Each vulnerability contains useful properties, such as `title`, `description`, `identifiers`, `publicationTime`, `severity`, and so on.
+* `issues`: an array of mappings from vulnerabilities in `issuesData` to package. This mapping shortens the response length because a vulnerability can apply to multiple packages.
 
 ### Example of dependency mapping for a Bazel Project
 

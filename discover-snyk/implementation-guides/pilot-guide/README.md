@@ -5,6 +5,6 @@ description: Guide to running a Snyk pilot, from account access and deployment t
 nav_context: agnostic
 ---
 
-# Pilot Guide
+# Pilot guide
 
 {% include "../../.gitbook/includes/pilot-guide-navigation.md" %}

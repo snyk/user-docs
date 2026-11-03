@@ -9,15 +9,13 @@ description: >-
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}
 
-## Snyk Learn assignments
-
 {% hint style="info" %}
 **Feature availability**
 
 Assignments are available in the Snyk Learning Management add-on offering. For more information, contact your Snyk account team.
 {% endhint %}
 
-Assignments streamline training management by empowering admins to assign, track, and manage learning efficiently. The Assignments feature enhances accountability by allowing customers to set due dates for completion and seamlessly integrate with organizational goals, for example, compliance timelines, ensuring alignment across training initiatives.
+With assignments, admins can assign, track, and manage learning. Admins can set due dates for completion and align training with company goals, for example, compliance timelines.
 
 Using Assignments, your company can gain:
 
@@ -28,42 +26,42 @@ Using Assignments, your company can gain:
 * Compliance: Get help with meeting regulatory requirements through the timely completion of mandatory training.
 
 {% hint style="info" %}
-Snyk Learn Assignments support Organizations with up to 5000 members.
+Snyk Learn Assignments support Organizations with up to 5,000 members.
 {% endhint %}
 
-### Use cases for assignments
+## Use cases for assignments
 
-#### Onboarding new employees
+### Onboarding new employees
 
-Ensure new employees complete their onboarding training within a designated timeframe. Assignments can include mandatory onboarding training content. The progress reset feature allows re-onboarding by clearing previous progress.
+Ensure new employees complete their onboarding training in a designated time frame. Assignments can include mandatory onboarding training content. To re-onboard employees, use the progress reset feature to clear previous progress.
 
-#### Annual secure coding training
+### Annual secure coding training
 
 Mandate annual secure coding training for all employees. Assignments can span a specific year period and include relevant security education content. The admin can use the progress reset feature to reset last year’s progress for the new cycle.
 
-#### Product update training for the development team
+### Product update training for the development team
 
 Ensure developers are trained on new product features. Admins can create assignments that include product training content on new features. If significant updates require retraining, the admin can use the progress reset feature.
 
-#### Compliance training
+### Compliance training
 
-Ensure employees complete training for compliance requirements, such as PCI DSS, SOX, SOC-2, HIPAA, and ISO 27001 certification. Admins can create assignments that cover the effective period of new regulations, including content required by compliance. The admin can use the progress reset feature to reset previous progress and mandate updated training.
+Ensure employees complete training for compliance requirements, such as PCI DSS, SOX, SOC 2, HIPAA, and ISO 27001 certification. Admins can create assignments that cover the effective period of new regulations, including content required by compliance. The admin can use the progress reset feature to reset previous progress and mandate updated training.
 
-### Who can be assigned Snyk Learn lessons?
+## Who can be assigned Snyk Learn lessons?
 
-Snyk Learn requires users to have a Snyk Account. After a user has joined Snyk, they are available in the Snyk Learn UI for assignments.
+Snyk Learn requires users to have a Snyk account. After a user has joined Snyk, they are available in the Snyk Learn UI for assignments.
 
-Assignments are linked to the individual user and can be tracked from any Organization they are a member of.
+Snyk Learn links assignments to the individual user. You can track them from any Organization the user is a member of.
 
 {% hint style="warning" %}
 Snyk requires users to log in to the platform before they become active users and are available for assignments.
 {% endhint %}
 
-### Who can create assignments?
+## Who can create assignments?
 
-By default, only Snyk Org or Group admins can create assignments. Group admins can create custom roles by using the standard Snyk workflow. Learn more about the access controls for assignments at [Snyk Learn Access Controls](snyk-learn-access-controls.md).
+By default, only Organization Admins and Group Admins can create assignments. Group Admins can create custom roles using the standard Snyk workflow. For details about access controls for assignments, visit [Snyk Learn access controls](snyk-learn-access-controls.md).
 
-### Creating new assignments
+## Creating new assignments
 
 1. Log in to Snyk Learn and click **Assignments** in the account panel dropdown.
 
@@ -77,17 +75,17 @@ By default, only Snyk Org or Group admins can create assignments. Group admins c
 
 <figure><img src="../../.gitbook/assets/creating-new-assignments-button-assignments-dashboard-page.png" alt="Creating new assignments button on the Assignments Dashboard page"><figcaption><p>Creating new assignments button on the Assignments Dashboard page</p></figcaption></figure>
 
-The **New Assignments** page opens, which allows you to create assignments for Snyk Organization users. On the **New Assignments** page:
+The **New Assignments** page opens. Use it to create assignments for Snyk Organization users. On the **New Assignments** page:
 
 1. Verify that the selected Organization is correct.
 
 <figure><img src="../../.gitbook/assets/select-organization.png" alt="Select an Organization"><figcaption><p>Select an Organization</p></figcaption></figure>
 
-2. Select users
+2. Select users.
 
 <figure><img src="../../.gitbook/assets/select-users-create-assignments.png" alt="Select users to create assignments for"><figcaption><p>Select users to create assignments for</p></figcaption></figure>
 
-3. Select assignment type.
+3. Select the assignment type.
 
 <figure><img src="../../.gitbook/assets/select-assignment-type.png" alt="Select the assignment type"><figcaption><p>Select the assignment type</p></figcaption></figure>
 
@@ -95,15 +93,15 @@ The **New Assignments** page opens, which allows you to create assignments for S
 
 <figure><img src="../../.gitbook/assets/select-content-assign.png" alt="Select content to assign"><figcaption><p>Select content to assign</p></figcaption></figure>
 
-5. Optionally set the assignment due date. This date defines the date by which the assignment needs to be completed.
+5. Optionally set the assignment due date. Users must complete the assignment by this date.
 
 <figure><img src="../../.gitbook/assets/optionally-reset-user-learning-progress.png" alt="Option to reset user learning progress"><figcaption></figcaption></figure>
 
-6. Optionally reset user learning progress. If selected this forces users to retake lessons that have already been completed.
+6. Optionally reset user learning progress. If you select this option, users must retake lessons they have already completed.
 
 <figure><img src="../../.gitbook/assets/optionally-reset-user-learning-progress-2.png" alt="Optionally reset user learning progress"><figcaption><p>Optionally reset user learning progress</p></figcaption></figure>
 
-7. Optionally send customizable email notifications to assignees. The assigned users are notified of their assignment details through their registered email address.
+7. Optionally send customizable email notifications to assignees. Snyk Learn sends the assignment details to the registered email address of each assigned user.
 
 <figure><img src="../../.gitbook/assets/send-custom-notification-emails.png" alt="Send custom notification emails"><figcaption><p>Send custom notification emails</p></figcaption></figure>
 

@@ -3,15 +3,13 @@ description: How to plan your Snyk Group structure, the highest administrative l
 nav_context: agnostic
 ---
 
-# Structure your account
-
-## Plan your Group structure
+# Plan your Group structure
 
 {% hint style="success" %}
-**Key decision:** Determine how many top-level accounts your company requires. Most organizations need only one.
+**Key decision:** Determine how many top-level accounts your company requires. Most companies need only one.
 {% endhint %}
 
 The Snyk Group is the highest administrative level you manage.
 
-* **Default:** Most customers use one Snyk Group representing their company name.
-* **Large enterprises:** Use multiple Groups only if you must keep business units or subsidiaries completely isolated.
+* Default: Most customers use one Snyk Group representing their company name.
+* Large enterprises: Use multiple Groups only if you must keep business units or subsidiaries completely isolated.

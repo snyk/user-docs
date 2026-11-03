@@ -10,7 +10,7 @@ description: >-
 # C/C++
 
 {% hint style="info" %}
-C/C++ is supported for Snyk Code and Snyk Open Source.
+Snyk supports C/C++ for Snyk Code and Snyk Open Source.
 {% endhint %}
 
 Available integrations:
@@ -19,14 +19,14 @@ Available integrations:
 
 ## Supported frameworks and libraries
 
-For C/C++, the following frameworks and libraries are supported:
+For C/C++, Snyk supports the following frameworks and libraries:
 
 {% columns %}
 {% column %}
 * argparse parser
 * Asio Library
 * Boost Library
-* Botan LIbrary
+* Botan Library
 * C Standard Library
 * C++ Standard Library
 * Curl library
@@ -45,7 +45,7 @@ For C/C++, the following frameworks and libraries are supported:
 {% column %}
 * MySQL framework
 * OpenSSL framework
-* POSIX LIbrary
+* POSIX Library
 * pugixml library
 * SQLite library
 * WinHTTP framework
@@ -72,13 +72,13 @@ For C/C++ with Snyk Code, Snyk supports the following file formats: `.c`, `.cc`,
 * SCM import
 * Support for interfile analysis
 
-If you use macros, it is possible that your results include false positives and false negatives.
+If you use macros, your results can include false positives and false negatives.
 
 For C/C++ Projects:
 
 * Snyk does not require compilation or a build to perform analysis.
 * Snyk Code analyzes the source code directly.
-* If you have precompile components, ensure the source code is available during the scan.
+* If you have precompiled components, ensure the source code is available during the scan.
 
 When using the IDE, you do not need additional options. The Snyk plugin displays results in the IDE views.
 
@@ -88,18 +88,18 @@ When using the IDE, you do not need additional options. The Snyk plugin displays
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:generic` or `pkg:conan` PURLs through [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
+* Test your app's SBOM and packages using `pkg:generic` or `pkg:conan` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 {% hint style="info" %}
-The **Snyk FixPR** feature is not available for C/C++. This means that you will not be notified if the PR checks fail when the following conditions are met:
+The **Snyk Fix PR** feature is not available for C/C++. This means that Snyk does not notify you if the PR checks fail when the following conditions are met:
 
-* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
-* "**Fixed in" available** is set to **Yes.**
+* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available**.
+* **"Fixed in" available** is set to **Yes**.
 {% endhint %}
 
 ### Dependency management and license compliance
 
-To check compliance for open source licenses, visit [Snyk License Compliance Management.](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management)
+To check compliance for open source licenses, visit [Snyk License Compliance Management](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management).
 
 For information about managing dependencies and licenses from your developer workflows through policy, visit the following resources:
 
@@ -114,18 +114,18 @@ To scan for C/C++ Open Source dependencies using the IDE, add the `--unmanaged` 
 
 ### Troubleshooting
 
-Your Snyk Open Source code is not sent to Snyk severs. Snyk converts the files to a list of hashes before sending them for scanning.
+Snyk Open Source does not send your code to Snyk servers. Snyk converts the files to a list of hashes before sending them for scanning.
 
 Snyk matches your code against a database of official open-source releases. If a scan returns no results, check these common causes:
 
-* **Unpacked source code:** The source code of the scanned dependencies must be unpacked in the scanned directory. If you use a package manager like Conan, the Conan cache often contains the source code along with dependencies from other Snyk Projects. Snyk recommends scanning package manager dependencies in a clean environment, for example, during a build.
-* **Unofficial releases:** The dependency source code is not from an official release of the open-source software (OSS) component. Snyk does not store unofficial releases in the database.
-* **Extensive modifications:** If you modify the OSS source code extensively, Snyk cannot detect it. If you modify most files in a small component, Snyk cannot match them to the Snyk database. Common modifications include whitespace formatting and adding license or copyright headers.
-* **Incomplete source code:** If you include only a small percentage of the component files, Snyk cannot match them to the Snyk database.
-* **Symlink issues:** Snyk does not follow symlinks when collecting files for hashing. If you unzip a Linux source package in Windows, Windows replaces in-package symlinks with copies of linked files. This makes the Windows representation different from the original source. If the difference is too large, Snyk cannot detect the component.
-* **New components:** The OSS component source code is too new. Snyk refreshes the database twice a month, but processing the latest releases takes time.
+* Unpacked source code: The source code of the scanned dependencies must be unpacked in the scanned directory. If you use a package manager such as Conan, the Conan cache often contains the source code along with dependencies from other Snyk Projects. Snyk recommends scanning package manager dependencies in a clean environment, for example, during a build.
+* Unofficial releases: The dependency source code is not from an official release of the open-source software (OSS) component. Snyk does not store unofficial releases in the database.
+* Extensive modifications: If you modify the OSS source code extensively, Snyk cannot detect it. If you modify most files in a small component, Snyk cannot match them to the Snyk database. Common modifications include whitespace formatting and adding license or copyright headers.
+* Incomplete source code: If you include only a small percentage of the component files, Snyk cannot match them to the Snyk database.
+* Symlink issues: Snyk does not follow symlinks when collecting files for hashing. If you unzip a Linux source package in Windows, Windows replaces in-package symlinks with copies of linked files. This makes the Windows representation different from the original source. If the difference is too large, Snyk cannot detect the component.
+* New components: The OSS component source code is too new. Snyk refreshes the database twice a month, but processing the latest releases takes time.
 
-If none of the above apply, contact Snyk Support.
+If none of these causes apply, contact Snyk Support.
 
 ## CLI support for C/C++
 
@@ -139,11 +139,11 @@ snyk code test
 
 Use the `snyk-to-html` plugin to generate reports. To access results programmatically, export them to JSON or SARIF using the `--json` or `--sarif` options. For more information, visit [Exporting the test results to a JSON or SARIF file](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results#export-test-results).
 
-For advanced filtering options, see[ snyk-filter](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
+For advanced filtering options, visit [snyk-filter](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
 
 To scan an Open Source Project, Snyk requires the dependencies to be available as source code in the scanned directory. If the dependencies reside in a different location, you must scan that location.
 
-For Open Source Projects, use the `--unmanaged` option to analyze for license compliance and known security issues:
+For Open Source Projects, use the `--unmanaged` option to analyze for license compliance and known security vulnerabilities:
 
 ```bash
 snyk test --unmanaged
@@ -163,7 +163,7 @@ To monitor and share reports, run the following command:
 snyk monitor --unmanaged --org=*org-id*
 ```
 
-Find your org-id under **Organization settings** in the Snyk web UI. Although the Organization ID is optional, Snyk recommends using it. You can use the `snyk-to-html` plugin to generate reports.
+Find your org-id under **Organization settings** in the Snyk Web UI. Although the Organization ID is optional, Snyk recommends using it. You can use the `snyk-to-html` plugin to generate reports.
 
 For individual scans, use the CLI or IDE and run `snyk monitor --unmanaged` to upload results. This displays license and policy information.
 
@@ -451,7 +451,7 @@ Explore this snapshot at https://app.snyk.io/org/example-org/project/8ac0e233-d0
 Notifications about newly disclosed issues related to these dependencies will be emailed to you.
 ```
 
-Snyk creates a snapshot of dependencies and vulnerabilities and imports them into the Snyk web UI. You can review the issues and view them in your reports.
+Snyk creates a snapshot of dependencies and vulnerabilities and imports them into the Snyk Web UI. You can review the issues and view them in your reports.
 
 Importing a Snyk Project with unmanaged dependencies creates a new Snyk Project on the **Projects** page:
 
