@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to scan open source libraries and licenses with Snyk Open Source
+last_reviewed: 2026-05-21
+last_reviewed_source: focused-edit
 ---
 
 # Scan open-source libraries and licenses

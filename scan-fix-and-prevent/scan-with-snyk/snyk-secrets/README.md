@@ -2,6 +2,8 @@
 description: >-
   How Snyk Secrets scans repositories for hard-coded secrets and helps prevent
   leaks
+last_reviewed: 2026-08-12
+last_reviewed_source: focused-edit
 ---
 
 # Snyk Secrets

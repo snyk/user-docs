@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How Snyk uses generative AI across its platform, including the third-party
   models that power its AI features
+last_reviewed: 2026-08-27
+last_reviewed_source: focused-edit
 ---
 
 # How Snyk incorporates generative AI into the platform

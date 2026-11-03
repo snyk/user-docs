@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How Snyk counts tests against your plan limits, and what does not apply under
   credit-based licenses
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
 ---
 
 # What counts as a test?

@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk manages open source license compliance
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Open-source license compliance

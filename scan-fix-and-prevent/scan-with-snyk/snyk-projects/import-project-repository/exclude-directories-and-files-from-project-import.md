@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to exclude directories and files when importing a Project
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Exclude directories and files from Project import

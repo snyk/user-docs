@@ -1,6 +1,8 @@
 ---
 description: Service description for Snyk Declining Balance of Hours, flexible expert-led consulting hours
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Declining Balance of Hours Service Description

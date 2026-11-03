@@ -1,6 +1,8 @@
 ---
 description: How to report a vulnerability in a Snyk service through the Snyk responsible disclosure process
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Reporting security issues

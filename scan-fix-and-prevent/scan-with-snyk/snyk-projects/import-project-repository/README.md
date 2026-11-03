@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to import Project repositories into Snyk for scanning
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Project repositories

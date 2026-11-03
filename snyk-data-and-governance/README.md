@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How Snyk handles user data responsibly, covering privacy, compliance, hosting,
   and vulnerability data
+last_reviewed: 2026-10-30
+last_reviewed_source: focused-edit
 ---
 
 # Working with Snyk

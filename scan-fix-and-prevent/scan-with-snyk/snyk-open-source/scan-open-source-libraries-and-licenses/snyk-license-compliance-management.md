@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk License Compliance Management governs open source license risk
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk License Compliance Management

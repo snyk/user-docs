@@ -1,6 +1,8 @@
 ---
 description: Service description for Snyk Penetration Testing, an expert-driven security evaluation of your web applications
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Penetration Testing service description

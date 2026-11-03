@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Customer prerequisites for a Snyk Onboarding consultant-led implementation
   engagement
+last_reviewed: 2026-10-09
+last_reviewed_source: focused-edit
 ---
 
 # Snyk Onboarding Customer Prerequisites

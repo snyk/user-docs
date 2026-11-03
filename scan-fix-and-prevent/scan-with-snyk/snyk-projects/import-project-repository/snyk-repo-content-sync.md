@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk Repo Content Sync keeps repository content current
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Repo Content Sync

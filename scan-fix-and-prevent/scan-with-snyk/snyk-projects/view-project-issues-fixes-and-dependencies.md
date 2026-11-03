@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to view Project issues, fixes, and dependencies
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # View Project issues, fixes, and dependencies

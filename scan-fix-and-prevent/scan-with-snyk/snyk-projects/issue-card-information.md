@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: The information shown on Snyk issue cards
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Issue card information

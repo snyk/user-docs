@@ -1,5 +1,7 @@
 ---
 description: Scan for exposed secrets in Visual Studio Code and JetBrains IDEs.
+last_reviewed: 2026-08-07
+last_reviewed_source: focused-edit
 ---
 
 # Secrets scanning in the IDE

@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to use static Project attributes to organize and filter Projects
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Project attributes

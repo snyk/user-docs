@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Glossary of terms for Snyk support plans and success service offerings
   purchased on an Order Form
+last_reviewed: 2026-10-09
+last_reviewed_source: focused-edit
 ---
 
 # Snyk terms of support and services glossary
