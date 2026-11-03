@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for Swift
 nav_context: agnostic
+last_reviewed: 2026-08-13
+last_reviewed_source: bulk-sync
 ---
 
 # Swift rules

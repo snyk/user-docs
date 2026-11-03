@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to scan container images with Snyk Container
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Scan container images

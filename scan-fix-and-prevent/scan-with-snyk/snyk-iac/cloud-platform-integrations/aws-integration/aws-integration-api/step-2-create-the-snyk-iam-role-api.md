@@ -1,6 +1,8 @@
 ---
 description: 'Step 2: create the Snyk IAM role for the AWS integration using the API'
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Step 2: Create the Snyk IAM role (API)

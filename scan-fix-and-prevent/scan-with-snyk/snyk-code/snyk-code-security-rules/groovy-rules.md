@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for Groovy
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Groovy rules

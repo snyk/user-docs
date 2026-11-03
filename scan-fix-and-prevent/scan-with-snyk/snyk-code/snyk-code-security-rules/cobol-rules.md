@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for COBOL
 nav_context: agnostic
+last_reviewed: 2026-09-14
+last_reviewed_source: focused-edit
 ---
 
 # COBOL rules

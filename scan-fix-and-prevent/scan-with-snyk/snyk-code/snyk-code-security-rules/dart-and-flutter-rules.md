@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for Dart and Flutter
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Dart and Flutter rules

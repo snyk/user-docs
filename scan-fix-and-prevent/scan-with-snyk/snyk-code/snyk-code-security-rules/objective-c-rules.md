@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for Objective-C
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Objective-C rules

@@ -1,6 +1,8 @@
 ---
 description: How to fix code vulnerabilities automatically with Snyk Code fixes
 nav_context: classic
+last_reviewed: 2026-08-13
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

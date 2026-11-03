@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How Snyk Code security rules work and how they are updated
+last_reviewed: 2026-10-09
+last_reviewed_source: focused-edit
 ---
 
 # Snyk Code security rules

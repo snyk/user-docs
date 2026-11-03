@@ -1,6 +1,8 @@
 ---
 description: How Snyk Container finds and fixes vulnerabilities in container images
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Container

@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for Visual Basic
 nav_context: agnostic
+last_reviewed: 2026-08-13
+last_reviewed_source: bulk-sync
 ---
 
 # Visual Basic rules

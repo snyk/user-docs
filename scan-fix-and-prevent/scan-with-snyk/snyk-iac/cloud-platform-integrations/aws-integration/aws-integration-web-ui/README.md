@@ -1,6 +1,8 @@
 ---
 description: How to set up the Snyk AWS integration in the Web UI
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # AWS Integration: Web UI

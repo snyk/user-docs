@@ -1,6 +1,8 @@
 ---
 description: How to integrate and test container security with Microsoft Azure Container Registry (ACR)
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Container security with ACR: integrate and test

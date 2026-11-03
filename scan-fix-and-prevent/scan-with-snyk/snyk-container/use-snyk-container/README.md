@@ -1,6 +1,8 @@
 ---
 description: How to use Snyk Container to scan and monitor images
 nav_context: agnostic
+last_reviewed: 2026-05-19
+last_reviewed_source: bulk-sync
 ---
 
 # Use Snyk Container

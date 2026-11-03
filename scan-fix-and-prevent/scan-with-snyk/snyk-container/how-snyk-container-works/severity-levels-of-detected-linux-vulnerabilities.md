@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk assigns severity levels to detected Linux vulnerabilities
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Severity levels of detected Linux vulnerabilities

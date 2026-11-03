@@ -1,6 +1,8 @@
 ---
 description: Snyk Code security rules for Apex
 nav_context: agnostic
+last_reviewed: 2026-05-26
+last_reviewed_source: focused-edit
 ---
 
 # Apex rules
