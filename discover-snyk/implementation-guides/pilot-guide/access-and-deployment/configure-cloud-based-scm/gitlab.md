@@ -1,6 +1,8 @@
 ---
-description: How to configure the GitLab integration with Snyk, including generating a personal access token with the required permissions
 nav_context: new
+description: >-
+  How to configure the GitLab integration with Snyk, including generating a
+  personal access token with the required permissions
 ---
 
 # GitLab
@@ -26,7 +28,7 @@ Save the PAT details. You need the PAT for both the Group-level integration and 
 1. In the Snyk Web UI, use the scope selector at the top of the page to switch to your Group.
 2. Navigate to **Settings** > **Integrations** > **All integrations**, then click **Add integration**.
 
-<figure><img src="../../../../.gitbook/assets/configure-group-level-integration.png" alt="Configuring the GitLab integration at the Group level"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/configuration-steps.png" alt="Configuring the GitLab integration at the Group level"><figcaption></figcaption></figure>
 
 3. Search for and select the GitLab integration.
 4. Complete all mandatory fields, including the PAT details. For more details, visit [Integrate GitLab using Snyk Essentials](https://docs.snyk.io/developer-tools/integrations/scm-integrations/group-level-integrations/gitlab-for-snyk-essentials#gitlab-integrate-using-snyk-apprisk).

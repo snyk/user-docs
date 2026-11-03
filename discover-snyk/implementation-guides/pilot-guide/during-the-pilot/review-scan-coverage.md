@@ -1,6 +1,8 @@
 ---
-description: How to review Snyk scan coverage, including the Group-level SCM integration and the Inventory
 nav_context: new
+description: >-
+  How to review Snyk scan coverage, including the Group-level SCM integration
+  and the Inventory
 ---
 
 # Review scan coverage
@@ -15,7 +17,7 @@ Ensure that the Group-level SCM integration is configured.
 2. Navigate to **Settings** > **Integrations** > **All integrations** and find your SCM.
 3. Follow the instructions for your SCM.
 
-<figure><img src="../../../.gitbook/assets/configure-group-level-integration.png" alt="Group-level SCM integrations in Settings, All integrations"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/configuration-steps.png" alt="Group-level SCM integrations in Settings, All integrations"><figcaption></figcaption></figure>
 
 1. In the Snyk Web UI, use the scope selector at the top of the page to switch to your Group.
 2. Navigate to **Settings** > **Integrations** > **All integrations** and find your SCM.
