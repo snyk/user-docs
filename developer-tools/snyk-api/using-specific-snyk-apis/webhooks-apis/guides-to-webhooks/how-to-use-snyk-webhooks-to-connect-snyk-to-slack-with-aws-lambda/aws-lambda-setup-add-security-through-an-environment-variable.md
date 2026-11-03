@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to secure the AWS Lambda function with an environment variable
+last_reviewed: 2026-09-30
+last_reviewed_source: focused-edit
 ---
 
 # AWS Lambda setup: add security through an environment variable

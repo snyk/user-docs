@@ -1,6 +1,8 @@
 ---
 description: Introduction to the Snyk REST API and resources to help you get started
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # REST API

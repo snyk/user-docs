@@ -1,6 +1,8 @@
 ---
 description: How to import all Bitbucket Cloud organizations and repositories into Snyk with snyk-api-import
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Mirroring Bitbucket Cloud organizations and repos in Snyk

@@ -1,6 +1,8 @@
 ---
 description: How to refresh an expiring access token in a Snyk App
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Set up the refresh token exchange

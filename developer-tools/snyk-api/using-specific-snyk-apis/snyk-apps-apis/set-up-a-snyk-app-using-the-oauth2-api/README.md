@@ -1,6 +1,8 @@
 ---
 description: How to set up a Snyk App using the OAuth2 API
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Set up a Snyk App using the OAuth2 API

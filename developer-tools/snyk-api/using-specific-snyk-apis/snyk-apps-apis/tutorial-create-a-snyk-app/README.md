@@ -1,6 +1,8 @@
 ---
 description: Tutorial for building a simple Snyk App
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Tutorial: create a Snyk App

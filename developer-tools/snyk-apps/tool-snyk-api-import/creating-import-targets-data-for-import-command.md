@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to use the import:data utility to generate the JSON import targets for the
   snyk-api-import command
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Creating import targets data for import command

@@ -1,6 +1,8 @@
 ---
 description: The Snyk OAuth2 API for Snyk Apps, compliant with RFC 6749
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # OAuth2 API

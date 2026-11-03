@@ -1,6 +1,8 @@
 ---
 description: How to extract issue data from the Snyk API using the unsupported pysnyk Python client
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Python code to extract issues from Snyk API

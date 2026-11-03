@@ -1,6 +1,8 @@
 ---
 description: How to register a Snyk App and configure user authorization in the tutorial
 nav_context: agnostic
+last_reviewed: 2026-05-27
+last_reviewed_source: focused-edit
 ---
 
 # Register the App and configure user authorization

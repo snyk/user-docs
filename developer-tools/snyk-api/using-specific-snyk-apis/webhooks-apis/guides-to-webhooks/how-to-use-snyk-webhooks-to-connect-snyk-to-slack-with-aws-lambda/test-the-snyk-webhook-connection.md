@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to test the Snyk webhook connection for the Slack and AWS Lambda
   integration
+last_reviewed: 2026-09-30
+last_reviewed_source: focused-edit
 ---
 
 # Test the Snyk webhook connection

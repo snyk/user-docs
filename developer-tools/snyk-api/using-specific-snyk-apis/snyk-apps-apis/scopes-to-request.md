@@ -1,6 +1,8 @@
 ---
 description: How OAuth scopes define the permissions a Snyk App requests
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Scopes to request

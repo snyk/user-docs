@@ -1,6 +1,8 @@
 ---
 description: How to authenticate to the Snyk API using a token, for Enterprise plan customers
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Authentication for API

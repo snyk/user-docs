@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to use snyk-api-import to generate data and create Snyk Organizations from
   GitHub, GitLab, and Bitbucket
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Creating Organizations in Snyk

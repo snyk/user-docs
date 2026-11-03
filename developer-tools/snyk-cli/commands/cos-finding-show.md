@@ -1,5 +1,7 @@
 ---
 description: Use snyk cos finding show to view the details of a finding.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS finding show

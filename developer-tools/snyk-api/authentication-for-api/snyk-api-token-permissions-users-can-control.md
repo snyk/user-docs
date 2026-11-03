@@ -1,6 +1,8 @@
 ---
 description: How to set a Snyk API token to read-only permissions
 nav_context: agnostic
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk API token permissions users can control

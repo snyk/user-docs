@@ -1,5 +1,7 @@
 ---
 description: Use snyk cos scan start to start a new scan on a target.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS scan start

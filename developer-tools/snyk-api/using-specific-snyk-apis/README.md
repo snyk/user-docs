@@ -1,6 +1,8 @@
 ---
 description: How to use specific Snyk API endpoints for common tasks
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Using specific Snyk APIs

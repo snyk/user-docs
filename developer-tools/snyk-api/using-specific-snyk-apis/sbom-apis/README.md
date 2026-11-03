@@ -1,6 +1,8 @@
 ---
 description: How to use the Snyk SBOM API endpoints
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # SBOM APIs

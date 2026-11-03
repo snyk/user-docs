@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   The snyk-api-import tool for importing Projects and monitoring dependencies at
   scale, in CI and ad hoc
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Tool: snyk-api-import

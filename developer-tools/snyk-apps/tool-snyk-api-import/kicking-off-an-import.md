@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to run an import with snyk-api-import, covering the same Project sources
   as the Snyk API
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Kicking off an import

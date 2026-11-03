@@ -1,5 +1,7 @@
 ---
 description: Use snyk cos scan status to view the current status of a scan.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS scan status

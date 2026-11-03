@@ -1,5 +1,7 @@
 ---
 description: Use snyk cos target add to create a target from a configuration file.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS target add

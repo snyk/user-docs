@@ -1,5 +1,7 @@
 ---
 description: Use snyk cos finding list to list the findings for a target or scan.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS finding list

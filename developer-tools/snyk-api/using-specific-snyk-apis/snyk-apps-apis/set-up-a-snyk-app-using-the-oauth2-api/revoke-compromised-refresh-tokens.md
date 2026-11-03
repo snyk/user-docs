@@ -1,6 +1,8 @@
 ---
 description: How to revoke compromised Snyk App refresh tokens
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Revoke compromised refresh tokens

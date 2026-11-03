@@ -1,6 +1,8 @@
 ---
 description: Overview of the Snyk API, mostly available on Enterprise plans, including the REST and V1 APIs
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Overview

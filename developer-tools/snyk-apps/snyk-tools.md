@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   Snyk Tools that address specific needs beyond core product functionality,
   across the Web UI, CLI, and API
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Snyk Tools

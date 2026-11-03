@@ -1,6 +1,8 @@
 ---
 description: How to create a Snyk App using the Snyk CLI
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Create a Snyk App using the Snyk CLI

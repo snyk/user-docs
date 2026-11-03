@@ -1,5 +1,7 @@
 ---
 description: Use snyk cos scan list to list scans and their statuses.
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # COS scan list

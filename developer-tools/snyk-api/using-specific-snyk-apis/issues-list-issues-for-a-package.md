@@ -1,6 +1,8 @@
 ---
 description: How to use the Snyk REST API endpoint to list issues for a package
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Issues: List issues for a package

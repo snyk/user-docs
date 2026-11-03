@@ -1,6 +1,8 @@
 ---
 description: How to configure the example AWS Lambda script for the Snyk to Slack integration
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Configure the AWS Lambda script

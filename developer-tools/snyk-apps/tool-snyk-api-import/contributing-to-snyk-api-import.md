@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to contribute to the snyk-api-import project, including the Snyk
   contributor agreement
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Contributing to snyk-api-import
