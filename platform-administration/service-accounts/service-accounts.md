@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Snyk service accounts for non-interactive API access, available on Enterprise
   plans
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Service accounts

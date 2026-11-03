@@ -1,6 +1,8 @@
 ---
 description: How Snyk scans .NET repositories through SCM integrations, including NuGet support and Universal Broker requirements
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # SCM integrations for .NET
@@ -28,9 +30,9 @@ Snyk uses the following files to create dependency trees:
 
 You can import .NET Projects from any supported SCM integration. Snyk analyzes your Projects using supported manifest files, builds a dependency tree, and displays the results in the Snyk Web UI.
 
-To configure Snyk to scan build and development dependencies or skip them, navigate to the relevant Group and Organization **Settings** > **.NET**. To scan all development dependencies, ensure that the **Scan build dependencies** option is checked.
+To configure Snyk to scan build and development dependencies or skip them, navigate to the relevant Group and Organization **Settings** > **.NET**. To scan all development dependencies, select the **Scan build dependencies** option.
 
-## Support manifest files
+## Supported manifest files
 
 Snyk builds the dependency tree using the following manifest files:
 

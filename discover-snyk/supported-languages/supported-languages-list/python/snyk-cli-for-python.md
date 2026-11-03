@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to test Python Projects with the Snyk CLI, including setting the Python
   version and preparing pip dependencies before scanning
+last_reviewed: 2026-09-16
+last_reviewed_source: bulk-sync
 ---
 
 # CLI support for Python
@@ -15,7 +17,7 @@ To set the Python version in the CLI, add the following option to `snyk test` or
 --command=python3
 ```
 
-For details, see the options for Python Projects in the [`snyk test`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/test) and [`snyk monitor`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/monitor) help.
+For details, visit the options for Python Projects in the [`snyk test`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/test) and [`snyk monitor`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/monitor) help.
 
 ## Pip and CLI
 
@@ -27,7 +29,7 @@ pip install -r requirements.txt
 ```
 {% endhint %}
 
-Pip `requirements.txt` files specify only top-level dependencies, not nested or transitive ones. Therefore, the full Pip Project must be installed to ensure the CLI can build a complete dependency tree.
+pip `requirements.txt` files specify only top-level dependencies, not nested or transitive ones. Therefore, you must install the full pip Project to ensure the CLI can build a complete dependency tree.
 
 ## Poetry and CLI
 
@@ -37,13 +39,13 @@ Pip `requirements.txt` files specify only top-level dependencies, not nested or 
 Snyk does not support PEP 621 for any package manager other than Poetry.
 {% endhint %}
 
-Poetry v1 and v2 are supported.
+Snyk supports Poetry v1 and v2.
 
 To build the dependency tree for a Poetry application, Snyk uses `pyproject.toml` and `poetry.lock` files. Both files must be present for Snyk to scan Poetry dependencies and identify issues.
 
-If no `poetry.lock` file is present; you should run `poetry lock` to generate one before scanning.
+If no `poetry.lock` file is present, run `poetry lock` to generate one before scanning.
 
-For Poetry, it is possible to get mixed `include` entries in `pyproject.toml`
+For Poetry, `pyproject.toml` can contain mixed `include` entries.
 
 Snyk fails to scan Poetry Projects and returns an "unparsable manifest" or "unable to parse pyproject.toml" error if you define mixed include entries in the `pyproject.toml` file.
 
@@ -81,7 +83,7 @@ Run `pipenv install` to ensure the CLI can build an up-to-date, accurate depende
 
 To build the dependency tree, Snyk analyzes the `setup.py` file, and detects packages listed in the `install_requires` key.
 
-This file will not be discovered automatically by the CLI. It must be specified manually using the `--file` option, for example:
+The CLI does not discover this file automatically. You must specify it manually using the `--file` option, for example:
 
 ```python
 snyk test --file=setup.py

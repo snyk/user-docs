@@ -1,6 +1,8 @@
 ---
 description: The inbound and outbound connections between Snyk and the Broker client, and the requests Snyk allows
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Broker inbound and outbound connections and allowed requests

@@ -1,6 +1,8 @@
 ---
-description: How to invite members to your Snyk Organization and assign their roles from the web UI
+description: How to invite members to your Snyk Organization and assign their roles from the Web UI
 nav_context: new
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Invite team members
@@ -17,8 +19,6 @@ Invite members to the Organization you configured.
 3. Enter the email addresses of your team members.
 4. Select a role for the members from the dropdown.
 5. Click **Send invite**.
-
-New members receive a welcome email from Snyk with a link to sign up and join your Organization.
 
 New members receive a welcome email from Snyk with a link to sign up and join your Organization.
 

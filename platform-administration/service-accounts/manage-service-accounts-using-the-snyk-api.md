@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to create and manage Snyk service accounts through the Snyk REST API,
   including the required permissions
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Manage service accounts using the Snyk API

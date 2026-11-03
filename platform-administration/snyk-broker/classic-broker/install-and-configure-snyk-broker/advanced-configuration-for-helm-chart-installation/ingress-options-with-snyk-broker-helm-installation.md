@@ -1,6 +1,8 @@
 ---
 description: How to configure the brokerClientUrl and ingress options for a Snyk Broker Helm installation
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Ingress options with Snyk Broker Helm installation

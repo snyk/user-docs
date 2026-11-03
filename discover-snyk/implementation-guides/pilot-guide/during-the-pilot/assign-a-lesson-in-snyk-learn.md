@@ -3,6 +3,8 @@ nav_context: agnostic
 description: >-
   How to assign interactive Snyk Learn lessons so developers can learn to fix
   vulnerabilities across languages
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Assign a lesson in Snyk Learn
@@ -11,24 +13,22 @@ description: >-
 
 The Snyk platform includes access to Snyk Learn, the Snyk security education platform. With resources on Snyk Learn, developers can learn how to stay secure through interactive lessons that explore vulnerabilities across various languages and ecosystems.
 
-Throughout the platform, such as in the IDE extensions, PR checks, and Web UI, Snyk links out to relevant lessons in Snyk Learn that help the developer fix that vulnerability. These lessons can also be accessed directly at [learn.snyk.io](http://learn.snyk.io).
+Throughout the platform, such as in the IDE extensions, PR Checks, and Web UI, Snyk links out to relevant lessons in Snyk Learn that help the developer fix that vulnerability. You can also access these lessons directly at [learn.snyk.io](http://learn.snyk.io).
 
 Start by navigating to [Snyk Learn](http://learn.snyk.io) and browsing the set of available lessons.
 
 You can then filter by category to see lessons related to your programming language or topic of interest.
 
-Choose a lesson that interests you and complete it. You will see progress of the lesson on the right of the page and confirmation after the lesson has been completed.
+Choose a lesson that interests you and complete it. Your lesson progress appears on the right of the page, and a confirmation appears after you complete the lesson.
 
-Next, review all of your completed and in-progress lessons by clicking on “Learning progress”.
+Next, review all of your completed and in-progress lessons by clicking **Learning progress**.
 
-Admins in Snyk can also review progress for the entire Organization by accessing the Reports.
-
-See the [Snyk Learn reports](../../../developer-education-with-snyk-learn/snyk-learn/snyk-learn-reports/) page for more details.
+With Enterprise plans, admins can also review progress for the entire Organization in the reports. For more details, visit [Snyk Learn reports](../../../developer-education-with-snyk-learn/snyk-learn/snyk-learn-reports/).
 
 {% hint style="info" %}
-Additional Resources
+Additional resources
 
 * [Docs: Snyk Learn](../../../developer-education-with-snyk-learn/snyk-learn/)
-* [Docs: Snyk Learn Assignments](../../../developer-education-with-snyk-learn/snyk-learn/snyk-learn-assignments.md)
-* [Docs: Snyk Learn Reports](../../../developer-education-with-snyk-learn/snyk-learn/snyk-learn-reports/)
+* [Docs: Snyk Learn assignments](../../../developer-education-with-snyk-learn/snyk-learn/snyk-learn-assignments.md)
+* [Docs: Snyk Learn reports](../../../developer-education-with-snyk-learn/snyk-learn/snyk-learn-reports/)
 {% endhint %}

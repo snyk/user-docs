@@ -2,6 +2,8 @@
 description: >-
   Where to find features in the new Snyk interface, with a mapping from the
   classic navigation.
+last_reviewed: 2026-10-06
+last_reviewed_source: focused-edit
 ---
 
 # Navigate the Snyk Web UI
@@ -12,12 +14,12 @@ Snyk introduces a new navigation with a unified side menu, a top scope selector 
 
 The side menu groups the main areas of Snyk:
 
-* **Analytics:** dashboards and key performance indicators.
-* **Inventory:** a unified view of your assets.
-* **Projects:** the Snyk Projects list, scoped to the current Organization.
-* **Issues:** vulnerabilities and license issues across your Snyk Projects.
-* **Policies:** Snyk policies and rules.
-* **Settings:** a unified hub for Organization and Group settings, security, integrations, and plan management.
+* **Analytics**: dashboards and key performance indicators.
+* **Inventory**: a unified view of your assets.
+* **Projects**: the Snyk Projects list, scoped to the current Organization.
+* **Issues**: vulnerabilities and license issues across your Snyk Projects.
+* **Policies**: Snyk policies and rules.
+* **Settings**: a unified hub for Organization and Group settings, security, integrations, and plan management.
 
 **Notifications**, **Help**, and **More from Snyk** details are all available from the main navigation across all menus in the Snyk Web UI.
 
@@ -26,33 +28,33 @@ The side menu groups the main areas of Snyk:
 The top scope selector replaces the classic sidebar headers for **Tenant**, **Group**, and **Organization**. It shows your current location as three segments, from left to right:
 
 * **Tenant**: switch between the Tenants you can access.
-* **Group**: the Group in the selected Tenant. 
+* **Group**: the Group in the selected Tenant.
 * **Organization**: switch between the Organizations in the selected Group. At Group scope, this segment shows **All Organizations**.
 
 The **Organization** dropdown is searchable. To create an Organization, open the **Organization** dropdown and click **+ Create new Organization**.
 
 ### Tenant scope
 
-* **Security and access:** Members, Capability Access. View and manage all users in the Tenant, and control which capabilities are available across the Tenant. Assign Tenant-level roles: **Tenant Admin**, **Tenant Viewer**, or **Tenant Member**.
-* **Plan and billing:** Your Plan, Credit breakdown, including contract details, licensed capabilities, and credit usage (Enterprise plans only).
+* **Security and access**: Members, Capability Access. View and manage all users in the Tenant, and control which capabilities are available across the Tenant. Assign Tenant-level roles: **Tenant Admin**, **Tenant Viewer**, or **Tenant Member**.
+* **Plan and billing**: Your Plan, Credit breakdown, including contract details, licensed capabilities, and credit usage (Enterprise plans only).
 
 ### Group scope
 
-* **Group settings:** General, Notifications.
-* **Security and access:** SSO, Member roles, Service accounts, Members.
-* **Products and features:** Snyk IaC, Snyk Agent Fix, Snyk Open Source, Snyk Code, Snyk Assist, and other licensed products.
-* **Plan and billing:** Usage. 
-* **Integrations:** General, Snyk Broker, All integrations.
-* **Snyk Preview:** enable controls for preview features.
+* **Group settings**: General, Notifications.
+* **Security and access**: SSO, Member roles, Service accounts, Members.
+* **Products and features**: Snyk IaC, Snyk Agent Fix, Snyk Open Source, Snyk Code, Snyk Assist, and other licensed products.
+* **Plan and billing**: Usage.
+* **Integrations**: General, Snyk Broker, All integrations.
+* **Snyk Preview**: enable controls for preview features.
 
 ### Organization scope
 
-* **Organization settings:** General, Service accounts, Notifications, Automated collections.
-* **Security and access:** Members.
-* **Products and features:** Snyk Open Source, Snyk Code, Snyk Agent Fix, Snyk Container, Snyk IaC, and other licensed products.
-* **Plan and billing:** Usage.
-* **Integrations:** General, Snyk Broker, Authorized Snyk Apps, All integrations, Cloud environments, and individual integrations such as ECR and GitHub.
-* **Snyk Preview:** enable controls for preview features.
+* **Organization settings**: General, Service accounts, Notifications, Automated collections.
+* **Security and access**: Members.
+* **Products and features**: Snyk Open Source, Snyk Code, Snyk Agent Fix, Snyk Container, Snyk IaC, and other licensed products.
+* **Plan and billing**: Usage.
+* **Integrations**: General, Snyk Broker, Authorized Snyk Apps, All integrations, Cloud environments, and individual integrations such as Amazon ECR and GitHub.
+* **Snyk Preview**: enable controls for preview features.
 
 ## Where things moved
 
@@ -102,7 +104,7 @@ To return to the new navigation, open the same menu and select **Switch new navi
 ## Snyk Assist
 
 {% hint style="info" %}
-**Release** **status**\
+**Release status**\
 \
 Snyk Assist is in Early Access and available only on the Snyk Enterprise plan. Snyk Assist is not available under classic navigation. Group Admins manage Snyk Assist from **Settings** > **Products and features**.
 {% endhint %}
@@ -125,7 +127,7 @@ Snyk Assist is scoped to your current Organization and Group. It cannot see acro
 Snyk Assist runs on Google Vertex AI. Snyk does not use your prompts or responses to train foundation models.
 
 {% hint style="info" %}
-Do not include confidential or sensitive information in your questions. For details, see the [Snyk Assist disclaimer](https://snyk.io/policies/snyk-assist-disclaimer).
+Do not include confidential or sensitive information in your questions. For details, visit the [Snyk Assist disclaimer](https://snyk.io/policies/snyk-assist-disclaimer).
 {% endhint %}
 
 ## Dark mode

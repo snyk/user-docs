@@ -1,38 +1,40 @@
 ---
 description: How Snyk scans Python Projects through SCM integrations, including required manifest files and setting the Python version
 nav_context: classic
+last_reviewed: 2026-10-22
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# SCM integration support for Python
+# SCM integrations for Python
 
 {% hint style="warning" %}
-Python packages that are operating system-specific and not supported by Linux may not be compatible with Snyk SCM scans, leading to errors.
+Python packages that are operating system-specific and not supported by Linux can be incompatible with Snyk SCM scans and cause errors.
 {% endhint %}
 
-To scan your Projects, you must ensure your repository contains the supported manifest files.
+To scan your Projects, ensure that your repository contains the supported manifest files.
 
 ## Set the Python version in SCM Projects
 
-When scanning Pip Projects imported from an SCM integration, Snyk uses the version of Python specified in Organization settings or `.snyk` files.
+When scanning pip Projects imported from an SCM integration, Snyk uses the version of Python specified in Organization settings or `.snyk` files.
 
 {% hint style="info" %}
-It is important to specify the correct Python version for your Organization, as it can affect the version of dependencies used in scanning your Projects.
+Specify the correct Python version for your Organization, because the Python version can affect the version of dependencies used in scanning your Projects.
 {% endhint %}
 
-Snyk uses a recent `patch` version for each of the supported `minor` version.
+Snyk uses a recent `patch` version for each of the supported `minor` versions.
 
-By default, Snyk tests Pip Projects using Python 3.7.
+By default, Snyk tests pip Projects using Python 3.7.
 
 {% hint style="warning" %}
 The behavior of imports, re-tests, and PR checks for Projects with dependencies requiring a higher version of Python varies according to the version specified:
 
-* Python 3.8 or above: scans will fail with an [error](https://docs.snyk.io/scan-fix-and-prevent/prevent/error-catalog) message that includes details of the first failed package, the Python version it requires, and the Python version used.
-* Python 2.7 or 3.7: scans will succeed, but the incompatible dependencies are omitted from the results.
+* Python 3.8 or later: scans fail with an [error](https://docs.snyk.io/scan-fix-and-prevent/prevent/error-catalog) message that includes details of the first failed package, the Python version it requires, and the Python version used.
+* Python 2.7 or 3.7: scans succeed, but Snyk omits the incompatible dependencies from the results.
 {% endhint %}
 
-To define which Python minor version Snyk uses to test your Pip Projects imported using SCM integrations, you can use Organization settings and [`.snyk` policy file](https://docs.snyk.io/scan-fix-and-prevent/prevent/policies/the-.snyk-file).
+To define which Python minor version Snyk uses to test your pip Projects imported using SCM integrations, you can use Organization settings and the [`.snyk` policy file](https://docs.snyk.io/scan-fix-and-prevent/prevent/policies/the-.snyk-file).
 
 To define the Python version for all Projects in an Organization:
 
@@ -61,9 +63,9 @@ Snyk selects the Python version to use based on the `major`, `minor`, and `patch
 | Major, minor, and patch | `3.8.5` or `3.15.x` | The patch version is ignored. Snyk scans using the specified major and minor version. |
 | Unsupported versions | `3.4` | Defaults to `2.7` or `3.7`. |
 
-## SCM repositories and Pip
+## SCM repositories and pip
 
-The following dependencies are not supported and are removed before the file is scanned. The remaining dependencies are included in the scan.
+Snyk does not support the following dependencies and removes them before scanning the file. Snyk includes the remaining dependencies in the scan.
 
 * Private PyPI repos
 * `file://`, regular URLs, relative paths, and more generally URIs in `requirements.txt` files
@@ -74,9 +76,9 @@ The following dependencies are not supported and are removed before the file is 
 * Including another requirement file with `--requirement`, `-r`
 * Specific packages: `virtualenv` and `pip` for Python 2.7 and 3.7
 
-To scan Pip Projects, Snyk analyzes your `requirements.txt` files using native `pip` tooling in an isolated Linux environment.
+To scan pip Projects, Snyk analyzes your `requirements.txt` files using native `pip` tooling in an isolated Linux environment.
 
-Pip Projects scanned using the SCM integration will be given the same name as the directory where they are located.
+Snyk gives pip Projects scanned using the SCM integration the same name as the directory where they are located.
 
 Snyk imports any file that follows the `**/*req*.txt` pattern. This can help if you have renamed the `requirements.txt` files, for example, to `requirements-dev.txt`.
 
@@ -84,7 +86,7 @@ Snyk also looks for files using the `**/requirements/*.txt` pattern. This can he
 
 If you are using a package manager that creates different manifest file formats from `requirements.txt`, then you may be able to convert or export the manifest file to the `requirements.txt` format.
 
-An example follows of how `dephell` is used to convert from Conda `environments.yml` to a `requirements.txt`.
+The following example shows how to use `dephell` to convert a Conda `environments.yml` file to a `requirements.txt` file:
 
 ```python
 dephell deps convert --from=conda --to=requirements.txt
@@ -92,15 +94,15 @@ dephell deps convert --from=conda --to=requirements.txt
 
 ## SCM repositories and Poetry
 
-Poetry v1 and v2 are supported.
+Snyk supports Poetry v1 and v2.
 
 To scan Poetry Projects, Snyk inspects your `pyproject.toml` and `poetry.lock` files.
 
-You can choose whether Snyk should include [dev dependencies](https://python-poetry.org/docs/managing-dependencies/) when scanning your Poetry Projects.
+You can choose whether Snyk includes [dev dependencies](https://python-poetry.org/docs/managing-dependencies/) when scanning your Poetry Projects.
 
-Snyk regards non-dev dependencies to be those declared in `tool.poetry.dependencies`, the implicit `main` group. All others are classed as dev dependencies.
+Snyk regards non-dev dependencies as those declared in `tool.poetry.dependencies`, the implicit `main` group. Snyk classes all others as dev dependencies.
 
-Poetry dev dependencies are not included in scans by default. To change this, modify your settings as follows:
+By default, Snyk does not include Poetry dev dependencies in scans. To change this, modify your settings as follows:
 
 1. Log in to your Snyk account and navigate to the relevant Group and Organization.
 2. Select **Settings** > **Languages**.
@@ -109,13 +111,13 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 
 <figure><img src="../../../.gitbook/assets/poetry-dev-dependency-settings.png" alt="Poetry dev dependency settings"><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
 
-A known limitation for Poetry is mixed `include` entries in `pyproject.toml`
+A known limitation for Poetry is mixed `include` entries in `pyproject.toml`.
 
-Poetry scans fail with an unparsable manifest / unable to parse `pyproject.toml` if mixed `include` entries are defined in `pyproject.toml`
+Poetry scans fail with an "unparsable manifest" or "unable to parse pyproject.toml" error if you define mixed `include` entries in `pyproject.toml`.
 
 Under `[tool.poetry]`, Poetry allows `include` to mix plain path strings and `{ path = "...", format = [...] }` inline tables in one array. That is valid TOML 1.0 and a valid Poetry configuration.
 
-Snyk’s Poetry analysis parses `pyproject.toml` with a TOML implementation that does not accept mixed-type inline arrays. Parsing stops at that array, so the file is treated as invalid before dependency logic runs.
+The Poetry analysis in Snyk parses `pyproject.toml` with a TOML implementation that does not accept mixed-type inline arrays. Parsing stops at that array, so Snyk treats the file as invalid before dependency logic runs.
 
 Example of a failing configuration:
 
@@ -138,20 +140,20 @@ include = [
 ## SCM repositories and Pipenv
 
 {% hint style="warning" %}
-Private PyPI mirrors are not supported. `Pipfiles` specifying a private mirror as their only source will not be imported.
+Snyk does not support private PyPI mirrors. Snyk does not import `Pipfiles` that specify a private mirror as their only source.
 {% endhint %}
 
 To scan Pipenv Projects, Snyk analyzes your `Pipfile` and `Pipfile.lock` files using native `pipenv` tooling in an isolated Linux environment.
 
 {% hint style="info" %}
-Packages from private repositories and those with non-Linux OS requirements may be unresolvable and omitted from the dependency tree.
+Snyk can fail to resolve packages from private repositories and packages with non-Linux operating system requirements, and omits them from the dependency tree.
 
-If a `Pipfile.lock` is present, any unresolved packages it contains are added to the top level of the dependency tree using versions from the lock file.
+If a `Pipfile.lock` is present, Snyk adds any unresolved packages it contains to the top level of the dependency tree using versions from the lock file.
 {% endhint %}
 
-You can choose whether Snyk should include dependencies specified in `[dev-packages]` when scanning your Pipenv Projects.
+You can choose whether Snyk includes dependencies specified in `[dev-packages]` when scanning your Pipenv Projects.
 
-Pipenv dev dependencies are not included in scans by default. To change this, modify your settings as follows:
+By default, Snyk does not include Pipenv dev dependencies in scans. To change this, modify your settings as follows:
 
 1. Log in to your Snyk account and navigate to the relevant Group and Organization.
 2. Select **Settings** > **Languages**.

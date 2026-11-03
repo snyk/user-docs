@@ -1,6 +1,8 @@
 ---
 description: How to inject additional Snyk Broker options through environment variables using an override.yaml file with Helm
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Custom additional options for Broker Helm Chart installation

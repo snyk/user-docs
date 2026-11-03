@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   Overview of Snyk platform administration, including managing Tenants, Groups,
   Organizations, users, roles, and Snyk Broker
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Overview

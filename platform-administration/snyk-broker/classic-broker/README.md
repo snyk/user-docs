@@ -1,6 +1,8 @@
 ---
 description: The Classic Broker, including connections, deployment preparation, installation, and configuration
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Classic Broker

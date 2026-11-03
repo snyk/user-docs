@@ -1,11 +1,13 @@
 ---
 description: How to resolve common Snyk problems for .NET, including static dependency resolution for legacy Project files and Legacy Broker setups
 nav_context: agnostic
+last_reviewed: 2026-05-15
+last_reviewed_source: bulk-sync
 ---
 
 # Troubleshooting Snyk for .NET
 
-### .NET SDK resolution limitations
+## .NET SDK resolution limitations
 
 Snyk uses static analysis instead of the .NET SDK to resolve dependencies in the following scenarios:
 
@@ -14,23 +16,23 @@ Snyk uses static analysis instead of the .NET SDK to resolve dependencies in the
 
 To improve accuracy, migrate to the Universal Broker.
 
-### Static analysis limitations
+## Static analysis limitations
 
-The following functionality is not supported when using static analysis:
+Static analysis does not support the following:
 
-* Private dependencies: Snyk cannot access private dependencies, including brokered and non-brokered. Transitive dependencies are not resolved.
+* Private dependencies: Snyk cannot access private dependencies, brokered or non-brokered. Snyk does not resolve transitive dependencies.
 * Build configuration: Snyk ignores `Directory.Build.props`, `Directory.Build.targets`, and `global.json` files.
-* Runtime precision: Snyk cannot reliably identify the specific runtime, which may increase false positives
+* Runtime precision: Snyk cannot reliably identify the specific runtime, which can increase false positives.
 
-### Handle runtime false positives
+## Handle runtime false positives
 
-Static analysis may flag vulnerabilities already patched in your environment because it may not detect your specific runtime patch version.
+Static analysis can flag vulnerabilities that are already patched in your environment, because it cannot always detect your specific runtime patch version.
 
-#### Vulnerabilities in SCM
+### Vulnerabilities in SCM
 
-If your application runs on a system updated with the latest Microsoft patches, a flagged vulnerability may not be relevant. You can ignore these vulnerabilities in the Snyk Web UI.
+If your application runs on a system updated with the latest Microsoft patches, a flagged vulnerability can be irrelevant. You can ignore these vulnerabilities in the Snyk Web UI.
 
-#### Vulnerabilities in CLI
+### Vulnerabilities in CLI
 
 If your production environment pulls the latest patches or you deploy a self-contained application, use the following configurations in your project file to improve accuracy:
 

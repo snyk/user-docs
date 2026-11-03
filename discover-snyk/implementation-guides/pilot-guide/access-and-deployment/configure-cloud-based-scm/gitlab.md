@@ -3,6 +3,8 @@ nav_context: new
 description: >-
   How to configure the GitLab integration with Snyk, including generating a
   personal access token with the required permissions
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # GitLab
@@ -11,9 +13,9 @@ description: >-
 
 Configure the GitLab integration at both the Group level and the Organization level. For more details about setting up the GitLab integration, contact your Snyk account team.
 
-### Generate a GitLab PAT
+## Generate a GitLab PAT
 
-Generate a GitLab PAT with the following permissions:
+Generate a GitLab personal access token (PAT) with the following permissions:
 
 * `api`
 * `read_api`
@@ -23,7 +25,7 @@ Generate a GitLab PAT with the following permissions:
 Save the PAT details. You need the PAT for both the Group-level integration and the Organization-level integration.
 {% endhint %}
 
-### Configure the Group-level integration
+## Configure the Group-level integration
 
 1. In the Snyk Web UI, use the scope selector at the top of the page to switch to your Group.
 2. Navigate to **Settings** > **Integrations** > **All integrations**, then click **Add integration**.
@@ -38,7 +40,7 @@ Save the PAT details. You need the PAT for both the Group-level integration and 
 After you configure the integration, the Group-level integration shows a **Partially connected** status. During the next synchronization, the integration moves to the connected state, and Snyk fills the Inventory with data from GitLab.
 {% endhint %}
 
-### Configure the Organization-level integration
+## Configure the Organization-level integration
 
 1. In the scope selector, open the **Organization** dropdown and select your Organization.
 2. Navigate to **Settings** > **Integrations** > **All integrations**.

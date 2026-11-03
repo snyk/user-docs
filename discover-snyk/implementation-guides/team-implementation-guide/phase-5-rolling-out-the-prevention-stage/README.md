@@ -1,21 +1,23 @@
 ---
 description: 'Phase 5 of the Snyk team implementation: roll out prevention and gating to stop new vulnerabilities entering your applications'
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Phase 5: Rolling out the prevention stage
 
-After you gain visibility on your security issues, you can now start to implement a prevention/gating system, to stop new vulnerabilities being added to your applications.
+After you gain visibility into your security issues, you can start to implement a prevention and gating system to stop new vulnerabilities from being added to your applications.
 
 ## Common prevention methods
 
-Below are the two common areas that allow you to "prevent new issues":
+The following are the two common ways to prevent new issues:
 
-* Snyk tests on pull request (PR)/merge checks (MR), currently available for Open Source.
-* Adding "Snyk test" to your CI/CD pipelines (you may have already implemented "Snyk monitor" to import your Projects as part of the pipeline).
-  * Additionally, open source, code, infrastructure as code, and container vulnerabilities can all be gated.
+* Snyk tests on pull request (PR) and merge request (MR) checks, available for Snyk Open Source and Snyk Code.
+* Adding `snyk test` to your CI/CD pipelines (you may have already implemented `snyk monitor` to import your Projects as part of the pipeline).
+  * You can gate open source, code, infrastructure as code, and container vulnerabilities.
 
-In either case, Snyk suggests that you communicate these changes clearly to your developers before implementing any form of gating.
+In either case, Snyk recommends that you communicate these changes clearly to your developers before implementing any form of gating.
 
 ## Tips
 
@@ -25,11 +27,11 @@ If you are not already blocking vulnerabilities, start by blocking the differenc
 
 This eases developers into the process, as they only take responsibility for vulnerabilities directly related to their changes.
 
-To block new issues, you can use PR checks. For details, see [Run PR Checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks).
+To block new issues, you can use PR Checks. For details, visit [Run PR Checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks).
 
 ### Communicate exception processes
 
-It is important to ensure the teams know the exception processes and how to address if a PR is blocked or a build fails.
+Ensure that the teams know the exception processes and what to do if a PR is blocked or a build fails.
 
 For example:
 
