@@ -10,7 +10,7 @@ description: >-
 ## Applicability and integration
 
 {% hint style="info" %}
-Ruby is supported for Snyk Code and Snyk Open Source.
+Snyk supports Ruby for Snyk Code and Snyk Open Source.
 {% endhint %}
 
 Available integrations:
@@ -38,7 +38,7 @@ Snyk supports the following Ruby versions:
 
 ### Supported frameworks and libraries
 
-For Ruby, the following frameworks and libraries are supported:
+For Ruby, Snyk supports the following frameworks and libraries:
 
 * ActiveRecord
 * Connection
@@ -50,21 +50,21 @@ For Ruby, the following frameworks and libraries are supported:
 * openai ruby client
 * ruby-openai
 * rexml
-* Ruby On Rails
+* Ruby on Rails
 * sinatra
 * sqlite3-ruby
 
 ### Supported package managers and registries
 
-For Ruby, Snyk supports [Bundler](https://bundler.io/) as a package manager. All Gemfile and Gemfile.lock are compatible with the Ruby versions that Snyk supports.
+For Ruby, Snyk supports [Bundler](https://bundler.io/) as a package manager. All Gemfile and Gemfile.lock files are compatible with the Ruby versions that Snyk supports.
 
-As a package registry, [rubygems.org](https://rubygems.org/) is supported.
+Snyk supports [rubygems.org](https://rubygems.org/) as a package registry.
 
 ## Ruby for Snyk Code
 
 For an overview of the supported security rules, visit [Ruby rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/ruby-rules).
 
-For Ruby with Snyk Code, the following file formats are supported: `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
+For Ruby with Snyk Code, Snyk supports the following file formats: `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
 
 Available features:
 
@@ -74,24 +74,24 @@ Available features:
 ## Ruby for Snyk Open Source
 
 {% hint style="info" %}
-Depending on your plan, some features may not be available. For more information, see [plans and pricing](https://snyk.io/plans/).
+Depending on your plan, some features may not be available. For more information, visit [plans and pricing](https://snyk.io/plans/).
 
-Platform-specific packages are not supported. If these are present in your `Gemfile.lock`, this can cause an invalid Fix PR to be created. If possible, use the non-platform-specific variant of a package.
+Snyk does not support platform-specific packages. If these are present in your `Gemfile.lock`, Snyk can create an invalid Fix PR. If possible, use the non-platform-specific variant of a package.
 {% endhint %}
 
-For Ruby with Snyk Open Source, the following file formats are supported: `gemfile`, `gemfile.lock`
+For Ruby with Snyk Open Source, Snyk supports the following file formats: `Gemfile`, `Gemfile.lock`
 
 Available features:
 
 * Fix PRs
 * License scanning
-* Test your app's SBOM and packages using `pkg:gem` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
+* Test your app's SBOM and packages using `pkg:gem` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 ### Bundler support
 
-Snyk supports testing, monitoring, and fixing Ruby Projects in the CLI and Git integrations that have their dependencies managed by [Bundler](https://bundler.io/) and comparing the specific dependency versions against the [Ruby vulnerability database](https://snyk.io/vuln?type=rubygems).
+For Ruby Projects that use [Bundler](https://bundler.io/) to manage dependencies, Snyk supports testing, monitoring, and fixing in the CLI and SCM integrations. Snyk compares the specific dependency versions against the [Ruby vulnerability database](https://snyk.io/vuln?type=rubygems).
 
-Snyk tests all Bundler groups. It is not possible to exclude certain groups, such as test or development groups.
+Snyk tests all Bundler groups. You cannot exclude specific groups, such as test or development groups.
 
 ### Manifest files supported for Ruby
 
@@ -102,20 +102,20 @@ For Ruby, Snyk supports the following manifest files:
 
 Snyk requires both files to be present to correctly test, monitor, and fix Ruby Projects.
 
-### Private Gem sources
+### Private gem sources
 
-If your Gemfile needs access to private Gem sources, see [Private gem sources for Ruby configuration](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration).
+If your Gemfile needs access to private gem sources, visit [Private gem sources for Ruby configuration](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration).
 
-Using private Gem sources should work normally when you are using the Snyk CLI.
+Using private gem sources should work normally when you are using the Snyk CLI.
 
-When creating Fix PRs for Ruby Projects using private Gem sources, Snyk may need access to the service hosting the Gems to update the file correctly.
+When creating Fix PRs for Ruby Projects using private gem sources, Snyk may need access to the service hosting the gems to update the file correctly.
 
 ### Fixing vulnerabilities in your Ruby Projects
 
 {% hint style="info" %}
-For Ruby versions < 3.2, Snyk does not support pinning a specific version of Ruby in the Gemfile, for example, `ruby "2.7.7".` You must use a more permissive version range that encapsulates all point versions, such as`ruby "~> 2.7.x"`
+For Ruby versions earlier than 3.2, Snyk does not support pinning a specific version of Ruby in the Gemfile, for example, `ruby "2.7.7"`. You must use a more permissive version range that encapsulates all point versions, such as `ruby "~> 2.7.x"`.
 {% endhint %}
 
 Snyk can fix vulnerabilities by updating vulnerable gems using `bundle update` after modifying your Gemfile, adhering to the rules you have specified there as far as possible.
 
-In some scenarios, Snyk cannot upgrade all dependencies to non-vulnerable versions. In this case, consider updating the rules in your Gemfile.
+In some scenarios, Snyk cannot upgrade all dependencies to non-vulnerable versions. In this case, update the rules in your Gemfile.

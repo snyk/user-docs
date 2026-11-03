@@ -10,7 +10,7 @@ description: >-
 ## Applicability and integration
 
 {% hint style="info" %}
-TypeScript is supported for Snyk Open Source and Snyk Code.
+Snyk supports TypeScript for Snyk Open Source and Snyk Code.
 {% endhint %}
 
 Available integrations:
@@ -20,19 +20,19 @@ Available integrations:
 
 ## Technical specifications
 
-You can use TypeScript versions up to 4.2
+You can use TypeScript versions up to 4.2.
 
 ### Supported frameworks and libraries
 
-Snyk supports all JavaScript frameworks and libraries. For more information, see [JavaScript frameworks and libraries](javascript/#supported-frameworks-and-libraries).
+Snyk supports all JavaScript frameworks and libraries. For more information, visit [JavaScript frameworks and libraries](javascript/#supported-frameworks-and-libraries).
 
 ### Supported package managers and registries
 
-For TypeScript, Snyk supports npm, pnpm, Yarn as package managers, with the following versions:
+For TypeScript, Snyk supports npm, pnpm, and Yarn as package managers, with the following versions:
 
 * npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3`
-* pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`
-* Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
+* pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`, `pnpm 10`
+* Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`, `Yarn 4`
 
 As a package registry, Snyk supports [npmjs.org](https://www.npmjs.org/).
 
@@ -40,7 +40,7 @@ As a package registry, Snyk supports [npmjs.org](https://www.npmjs.org/).
 
 For an overview of the supported security rules, visit [JavaScript and TypeScript rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/javascript-and-typescript-rules).
 
-For TypeScript with Snyk Code, the following file formats are supported: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`, `.erb`
+For TypeScript with Snyk Code, Snyk supports the following file formats: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`, `.erb`
 
 To resolve imports that use path aliases when tracing data flow across modules, Snyk Code reads `tsconfig.json` and `jsconfig.json` in your Project.
 
@@ -51,7 +51,7 @@ Available features:
 
 ## TypeScript for Snyk Open Source
 
-For TypeScript with Snyk Open Source, the following file formats are supported:
+For TypeScript with Snyk Open Source, Snyk supports the following file formats:
 
 * npm: `package.json` and `package-lock.json`
 * pnpm: `pnpm-lock.yaml`
@@ -64,8 +64,8 @@ Available features:
 * Test your app's SBOM and packages using `pkg:npm` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 {% hint style="info" %}
-The **Snyk Fix PR** feature is not available for TypeScript. This means that you will not be notified if the PR checks fail when the following conditions are met:
+The **Snyk Fix PR** feature is not available for TypeScript. This means that Snyk does not notify you if the PR checks fail when the following conditions are met:
 
-* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
-* "**Fixed in" available** is set to **Yes.**
+* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available**.
+* **"Fixed in" available** is set to **Yes**.
 {% endhint %}

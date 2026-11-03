@@ -32,18 +32,18 @@ You can use the following table to decide which type of score works best for you
 
 |                      | Priority Score                                                                                         | Risk Score                                                                                             |
 | -------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| **Availability**     | <ul><li>General availability</li></ul>                                                                 | <ul><li>Early access</li></ul>                                                                         |
+| **Availability**     | <ul><li>General Availability</li></ul>                                                                 | <ul><li>Early Access</li></ul>                                                                         |
 | **Applicability**    | <ul><li>Vulnerability issues</li><li>License issues</li></ul>                                          | <ul><li>Vulnerability issues</li></ul>                                                                 |
 | **Snyk coverage**    | <ul><li>Snyk Open Source</li><li>Snyk Code</li><li>Snyk Container</li><li>Snyk IaC</li></ul>           | <ul><li>Snyk Open Source</li><li>Snyk Container</li></ul>                                              |
 | **Where it appears** | <ul><li>Project view from Snyk Web UI</li><li>Reports view from Snyk Web UI</li><li>Snyk API</li></ul> | <ul><li>Project view from Snyk Web UI</li><li>Reports view from Snyk Web UI</li><li>Snyk API</li></ul> |
 | **Integrations**     | <ul><li>Kubernetes</li></ul>                                                                           | Not supported                                                                                          |
-| **Assessment model** | <ul><li>Impact</li><li>Actionability</li></ul>                                                         | <ul><li>Impact</li><li>Likelihood</li></ul>                                                            |
+| **Assessment model** | <ul><li>Impact</li><li>Actionability</li></ul>                                                         | <ul><li>Impact subscore multiplied by Likelihood subscore</li></ul>                                    |
 
 ## Can I map scores to priority levels?
 
 No. Snyk does not publish a mapping from Priority Score or Risk Score values to severity levels. Use a score to order issues against each other, and use the [severity level](severity-levels.md) when you need a named band.
 
-Snyk applies one score threshold operationally. Snyk raises automatic fix pull requests and backlog pull requests for issues that meet or exceed the **Score** threshold set for your Organization, which defaults to 700. This threshold is a configurable automation setting, not a severity band. For more information, visit [Enable automatic fix PRs](../snyk-pull-or-merge-requests/enable-automatic-fix-prs.md).
+Snyk applies one score threshold operationally. Snyk raises automatic Fix PRs and backlog PRs for Snyk Open Source issues that meet or exceed the **Score** threshold set for your Organization, which defaults to 700. This threshold is a configurable automation setting, not a severity band. For more information, visit [Enable automatic fix PRs](../snyk-pull-or-merge-requests/enable-automatic-fix-prs.md).
 
 If you set your own threshold, review it periodically. A score changes when its contributing factors change, and factors such as the Exploit Prediction Scoring System (EPSS) can change daily.
 
@@ -72,7 +72,7 @@ The Risk Score assesses security threats based on their potential impact and lik
 
 The Risk Score helps balance immediate threat mitigation with long-term security posture, creating a comprehensive approach to managing vulnerabilities.
 
-The assessment model used by the Risk score focuses on two factors:
+The Risk score multiplies two subscores:
 
 * Impact - the possibility of a fix to address multiple vulnerabilities.
 * Likelihood - the probability for a vulnerability to be exploited in a user's code.
