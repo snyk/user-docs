@@ -2,6 +2,8 @@
 description: >-
   Add an OpenAPI target directly from a source code repository, without
   providing a schema file, using Snyk API & Web.
+last_reviewed: 2026-10-02
+last_reviewed_source: focused-edit
 ---
 
 # Configure an API target without a schema file

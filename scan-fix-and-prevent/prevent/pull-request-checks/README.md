@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How Snyk Pull Request checks block new vulnerabilities in pull requests
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Pull Request checks

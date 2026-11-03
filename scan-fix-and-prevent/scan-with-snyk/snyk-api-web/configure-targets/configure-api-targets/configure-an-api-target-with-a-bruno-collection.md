@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to configure a Snyk API and Web target using a Bruno Collection in
   OpenCollection format
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Configure an API target with a Bruno Collection

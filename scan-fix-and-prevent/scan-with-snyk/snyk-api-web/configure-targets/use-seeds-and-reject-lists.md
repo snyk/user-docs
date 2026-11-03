@@ -1,6 +1,8 @@
 ---
 description: How to use seeds and reject lists to control Snyk API & Web crawling
 nav_context: classic
+last_reviewed: 2026-08-03
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}

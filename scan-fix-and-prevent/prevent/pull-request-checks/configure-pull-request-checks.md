@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to configure Snyk Pull Request checks, including prerequisites, supported
   integrations, and the scans they run
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Configure Pull Request checks

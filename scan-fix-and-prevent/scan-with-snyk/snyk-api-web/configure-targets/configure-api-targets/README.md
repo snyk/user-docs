@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to configure API targets for Snyk API and Web scanning
+last_reviewed: 2026-10-02
+last_reviewed_source: focused-edit
 ---
 
 # API targets

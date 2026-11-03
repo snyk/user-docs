@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to get started with Snyk API & Web dynamic application security testing
+last_reviewed: 2026-09-22
+last_reviewed_source: focused-edit
 ---
 
 # Getting started with Snyk API & Web

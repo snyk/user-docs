@@ -1,6 +1,8 @@
 ---
 description: What the Overview tab shows in Snyk Analytics
 nav_context: classic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}

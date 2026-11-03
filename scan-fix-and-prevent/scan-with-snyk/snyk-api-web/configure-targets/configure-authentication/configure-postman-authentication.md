@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to configure Postman authentication for Snyk API and Web targets
+last_reviewed: 2026-10-27
+last_reviewed_source: focused-edit
 ---
 
 # Postman authentication

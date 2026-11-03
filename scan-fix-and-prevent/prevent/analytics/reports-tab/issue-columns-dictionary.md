@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: A dictionary of the issue columns in Snyk reporting
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Issue columns dictionary

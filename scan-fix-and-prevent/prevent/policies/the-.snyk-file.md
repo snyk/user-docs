@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How the .snyk file stores Snyk policy configuration for a Project
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # The .snyk file

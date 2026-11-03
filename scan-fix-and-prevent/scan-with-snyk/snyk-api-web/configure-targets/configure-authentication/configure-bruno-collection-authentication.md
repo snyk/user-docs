@@ -3,6 +3,8 @@ nav_context: classic
 description: >-
   How to configure authentication for a Snyk API and Web scan that uses a Bruno
   Collection, including dynamic token generation
+last_reviewed: 2026-10-02
+last_reviewed_source: focused-edit
 ---
 
 # Configure Bruno Collection Authentication

@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How Snyk license policy results apply to issues
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # License policy results

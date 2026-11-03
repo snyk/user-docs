@@ -1,6 +1,8 @@
 ---
 description: How to use an asset classification policy in Snyk Essentials
 nav_context: agnostic
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Classification policy

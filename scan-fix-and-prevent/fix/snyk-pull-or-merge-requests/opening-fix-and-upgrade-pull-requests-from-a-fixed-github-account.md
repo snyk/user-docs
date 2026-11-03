@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to open Snyk fix and upgrade pull requests from a fixed GitHub account
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Opening fix and upgrade pull requests from a fixed GitHub account

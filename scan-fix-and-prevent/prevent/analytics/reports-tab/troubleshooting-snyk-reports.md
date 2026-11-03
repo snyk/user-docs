@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to troubleshoot access and data in Snyk reports
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Troubleshooting Snyk reports

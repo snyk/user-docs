@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to enable automatic Snyk Fix PRs
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Enable automatic Fix PRs

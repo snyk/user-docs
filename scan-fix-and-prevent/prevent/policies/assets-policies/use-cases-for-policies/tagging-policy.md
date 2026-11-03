@@ -1,6 +1,8 @@
 ---
 nav_context: agnostic
 description: How to use a labeling policy to categorize assets in Snyk Essentials
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Labeling policy

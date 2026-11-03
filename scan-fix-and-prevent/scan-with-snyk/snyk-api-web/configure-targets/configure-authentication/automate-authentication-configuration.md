@@ -1,5 +1,7 @@
 ---
 description: Configure authentication for web targets using AI-driven setup.
+last_reviewed: 2026-07-24
+last_reviewed_source: bulk-sync
 ---
 
 # Automate authentication configuration

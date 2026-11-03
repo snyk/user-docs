@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to create asset policies in Snyk Essentials
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Create policies

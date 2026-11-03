@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to assign Snyk policies to Projects
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Assign policies to Projects

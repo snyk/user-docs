@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: The remediation reports in Snyk Analytics
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Remediation reports

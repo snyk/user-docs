@@ -1,6 +1,8 @@
 ---
 description: How to configure two-factor authentication for Snyk API & Web targets
 nav_context: classic
+last_reviewed: 2026-10-19
+last_reviewed_source: focused-edit
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}

@@ -1,6 +1,8 @@
 ---
 nav_context: classic
 description: How to enable automatic backlog PRs for previously known vulnerabilities
+last_reviewed: 2026-10-09
+last_reviewed_source: bulk-sync
 ---
 
 # Enable automatic backlog PRs for previously known vulnerabilities

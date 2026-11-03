@@ -2,6 +2,8 @@
 description: >-
   Record a login sequence once and map the session credential so Snyk API & Web
   can authenticate API targets at scan time without manual token refresh.
+last_reviewed: 2026-10-02
+last_reviewed_source: focused-edit
 ---
 
 # Browser login for APIs
