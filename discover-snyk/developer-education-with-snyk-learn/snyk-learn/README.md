@@ -1,13 +1,15 @@
 ---
 nav_context: agnostic
+last_reviewed: 2026-10-09T00:00:00.000Z
+last_reviewed_source: bulk-sync
 description: >-
   Snyk Learn provides interactive developer security education and Snyk product
-  training through lessons and learning paths
-last_reviewed: 2026-10-09
-last_reviewed_source: bulk-sync
+  training through lessons and learning paths.
 ---
 
 # Developer security education and Snyk product training with Snyk Learn
+
+{% include "../../.gitbook/includes/deprecatedsnyk-is-deprecati....md" %}
 
 [Snyk Learn](https://learn.snyk.io) offers lessons for developer [security education](./#security-education) and Snyk [product training](./#product-training) with short and interactive content. Snyk Learn also has [learning paths](https://learn.snyk.io/catalog/?format=learning_path\&type=security-education) for learners to take a predefined set of lessons following a structured flow. These lessons and learning paths help you start using Snyk, implement a [DevSecOps](../../glossary.md#devsecops) framework, and implement an ongoing security education and training program.
 
