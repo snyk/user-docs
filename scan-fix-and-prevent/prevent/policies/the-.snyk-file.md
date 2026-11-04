@@ -1,8 +1,8 @@
 ---
 nav_context: classic
-description: How the .snyk file stores Snyk policy configuration for a Project
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-09T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: How the .snyk file stores Snyk policy configuration for a Project
 ---
 
 # The .snyk file
@@ -160,7 +160,7 @@ For more information, see [Setting Python version in Git Projects](https://docs.
 {% hint style="warning" %}
 The `expires` field is optional. If you need a permanent ignore, omit the field.
 
-To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:flag\_mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](https://docs.snyk.io/developer-tools/snyk-cli/commands/ignore#expiry-less-than-expiry-greater-than).
+To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like `YYYY-MM-DDThh:mm:ss.fffZ`. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](https://docs.snyk.io/developer-tools/snyk-cli/commands/ignore#expiry-less-than-expiry-greater-than).
 {% endhint %}
 
 Ignore a specific vulnerability for a given path:
