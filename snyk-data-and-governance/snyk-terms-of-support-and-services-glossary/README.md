@@ -156,7 +156,7 @@ The Flex Success Plan includes Flex Support.
 
 **Pooled Technical Support:** Support tickets are handled and triaged by a pool of Technical Support Engineers.
 
-**24x5 support hours**: Snyk Technical Support Engineers actively respond to tickets 24 hours a day, Monday to Friday. For urgent customer issues outside of 24x5, Snyk provides a 24-hour support telephone number (+1-844-835-8167). This is served by a telephone answering service, which routes the request to Snyk on-call engineers.
+**24x5 support hours**: Snyk Technical Support Engineers actively respond to tickets 24 hours a day, Monday to Friday. For urgent customer issues outside of 24x5, please submit a Support Case marking as Urgent through our Support Portal (support.snyk.io) served by our Snyk on-call engineers.
 
 #### Gold Support
 
@@ -164,7 +164,7 @@ The Gold Success plan includes Gold Support.
 
 **Pooled Technical Support:** Support tickets are handled and triaged by a pool of Technical Support Engineers.
 
-**24x7 support hours**: Snyk Technical Support Engineers actively respond to tickets 24 hours a day, Monday to Friday. For urgent customer issues outside of 24x5, Snyk provides a 24-hour support telephone number (+1-844-835-8167). This is served by a telephone answering service, which routes the request to Snyk on-call engineers.
+**24x7 support hours**: Snyk Technical Support Engineers actively respond to tickets 24 hours a day, Monday to Friday. For urgent customer issues outside of 24x5, please submit a Support Case marking as Urgent through our Support Portal (support.snyk.io) served by our Snyk on-call engineers.
 
 #### Platinum Support
 
@@ -174,7 +174,7 @@ The Platinum add-on provides extended, in-depth, and skilled expertise to help y
 
 **Technical Support Engineer:** The Technical Support Engineer (TSE) assigned to the Customer's account has familiarity with the Customer's environment and deployment, helps with resolving support tickets, and serves as the Customer's point of escalation. The aligned TSE will also partner with the Customer for incident management.
 
-**24x7 support hours:** Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday. For urgent Customer issues outside of 24x5, Snyk provides a 24-hour support telephone number (+1-844-835-8167). This is served by a telephone answering service, which routes the request to Snyk on-call engineers.
+**24x7 support hours:** Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday. For urgent Customer issues outside of 24x5, please submit a Support Case marking as Urgent through our Support Portal (support.snyk.io) served by our Snyk on-call engineers.
 
 **Prioritized support ticket routing:** Tickets raised by Platinum Success Customers are automatically routed to Snyk Technical Support Engineers and prioritized ahead of non-Platinum ticket traffic.
 
