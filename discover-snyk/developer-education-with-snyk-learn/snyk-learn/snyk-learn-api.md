@@ -1,11 +1,15 @@
 ---
-description: How to interact with Snyk Learn programmatically through the Beta Snyk Learn API endpoints in the Snyk REST API
 nav_context: agnostic
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-09T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: >-
+  How to interact with Snyk Learn programmatically through the Beta Snyk Learn
+  API endpoints in the Snyk REST API
 ---
 
 # Snyk Learn API
+
+{% include "../../.gitbook/includes/deprecatedsnyk-is-deprecati....md" %}
 
 {% hint style="info" %}
 **Release status**
