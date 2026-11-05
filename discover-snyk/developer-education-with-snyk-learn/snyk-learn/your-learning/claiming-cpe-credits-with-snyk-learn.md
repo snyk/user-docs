@@ -1,13 +1,15 @@
 ---
 nav_context: classic
+last_reviewed: 2026-10-09T00:00:00.000Z
+last_reviewed_source: bulk-sync
 description: >-
   How to claim Continuing Professional Education (CPE) credits for completing
   Snyk Learn lessons and learning paths
-last_reviewed: 2026-10-09
-last_reviewed_source: bulk-sync
 ---
 
 # Claiming CPE credits with Snyk Learn
+
+{% include "../../../.gitbook/includes/deprecatedsnyk-is-deprecati....md" %}
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 

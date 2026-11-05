@@ -1,8 +1,8 @@
 ---
-description: How to use the Snyk REST API endpoint to list issues for a package
 nav_context: agnostic
-last_reviewed: 2026-05-15
+last_reviewed: 2026-05-15T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: How to use the Snyk REST API endpoint to list issues for a package
 ---
 
 # Issues: List issues for a package
@@ -310,3 +310,34 @@ An example of this error response follows:
     "status": "400"
 }]
 ```
+
+## Enterprise / Commercial Support
+
+### Broadcom Tanzu Spring commercial fixes
+
+If your Organization holds a[ Broadcom Tanzu Spring Enterprise subscription](https://techdocs.broadcom.com/us/en/vmware-tanzu/spring/tanzu-spring/commercial/spring-tanzu/index.html), this endpoint now recognizes Broadcom's enterprise (“commercial”) Spring builds as fixed, in addition to the open source versions published to Maven Central.
+
+Broadcom issues these builds to subscribers. They include fixes for release lines with no public patch, and fixes planned for an upcoming open source release. Previously, Snyk assessed your Spring packages against open source fix ranges only, so Snyk still reported a version you patched through your subscription as vulnerable.
+
+### How Snyk matches versions
+
+Snyk treats a commercial build as fixed only when you request that exact build. Snyk still reports the public version it is based on, because that version remains vulnerable.
+
+* `pkg:maven/org.springframework/spring-core@7.0.7.1` - the Broadcom commercial build. Not reported as vulnerable.
+* [pkg:maven/org.springframework/spring-core@7.0.7](https://repo1.maven.org/maven2/org/springframework/spring-core/7.0.7/) - the public version. Reported as vulnerable.
+
+### Response for commercial builds
+
+If you query a commercial build that includes a fix, Snyk recognizes the fix and does not report the vulnerability.
+
+### Get the commercial build
+
+Broadcom does not publish commercial builds to Maven Central. To obtain them, subscribe to [Broadcom Tanzu Spring Enterprise](https://techdocs.broadcom.com/us/en/vmware-tanzu/spring/tanzu-spring/commercial/spring-tanzu/index.html).
+
+### Availability
+
+This capability is available from purl API version `2025-11-05`. Earlier versions do not include it.
+
+### Access
+
+Snyk enables this feature per Organization. If you hold a Broadcom Tanzu Spring Enterprise subscription and commercial fixes are not being recognized by Snyk, contact your Snyk account team.

@@ -1,13 +1,15 @@
 ---
 nav_context: classic
+last_reviewed: 2026-10-09T00:00:00.000Z
+last_reviewed_source: bulk-sync
 description: >-
   How Snyk administrators curate security learning paths with Snyk Learn
   learning programs, available in Early Access
-last_reviewed: 2026-10-09
-last_reviewed_source: bulk-sync
 ---
 
 # Snyk Learn learning programs
+
+{% include "../../.gitbook/includes/deprecatedsnyk-is-deprecati....md" %}
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}
 
