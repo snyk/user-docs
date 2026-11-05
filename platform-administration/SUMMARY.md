@@ -21,16 +21,17 @@
 * [Switch between Groups and Organizations](snyk-hierarchy/switch-between-groups-and-organizations.md)
 * [Snyk Preview](snyk-hierarchy/snyk-preview.md)
 * [Manage notifications](snyk-hierarchy/manage-notifications.md)
-* [SKU-based licensing usage settings](snyk-hierarchy/usage-settings.md)
 
 ## Snyk Platform Subscription
 
 * [Enterprise contract types](snyk-platform-subscription/enterprise-contract-types/README.md)
-  * [Viewing your Plan](snyk-platform-subscription/enterprise-contract-types/viewing-your-plan.md)
-* [Snyk Platform Subscription mechanics](snyk-platform-subscription/snyk-platform-subscription-mechanics.md)
-* [Capability control panel](snyk-platform-subscription/capability-control-panel.md)
-* [Understanding credit consumption](snyk-platform-subscription/understanding-credit-consumption.md)
-* [Credits for the Snyk Platform Access plan](snyk-platform-subscription/credits-for-the-snyk-platform-access-plan.md)
+* [How the Snyk Platform Subscription works](snyk-platform-subscription/snyk-platform-subscription-mechanics.md)
+* [Enable and disable capabilities](snyk-platform-subscription/capability-control-panel.md)
+* [View your plan](snyk-platform-subscription/viewing-your-plan.md)
+* [Track credit consumption](snyk-platform-subscription/understanding-credit-consumption.md)
+* [Legacy plans](snyk-platform-subscription/legacy-plans/README.md)
+  * [Snyk Platform Access plan](snyk-platform-subscription/legacy-plans/credits-for-the-snyk-platform-access-plan.md)
+  * [SKU-based licensing usage settings](snyk-platform-subscription/legacy-plans/usage-settings.md)
 
 ## User management
 

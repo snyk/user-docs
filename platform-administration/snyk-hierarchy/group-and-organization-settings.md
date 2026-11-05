@@ -18,7 +18,7 @@ At the Group level, select **Settings** to manage Group settings and then select
 * **Member roles**: See [Manage Member Roles](../user-management/user-role-management.md) for details.
 * **Service accounts**: See [Service accounts](../service-accounts/service-accounts.md) for details.
 * **Notifications**: See [Manage notifications](manage-notifications.md) for details.
-* **Usage**: See [Usage setting](usage-settings.md)s for details.
+* **Usage**: For details, visit [SKU-based licensing usage settings](../snyk-platform-subscription/legacy-plans/usage-settings.md).
 * **Your plan and billing**: Billing is through a contract and cannot be changed by using this option. Contact your sales representative or [Snyk support](https://support.snyk.io) if you have billing-related requests or issues.
 * **Available plans**: Billing is through a contract and cannot be changed by using this option. Contact your sales representative or [Snyk support](https://support.snyk.io) if you have billing-related requests or issues. For more information, see the [Plans and pricing](https://snyk.io/plans/) page on the Snyk website.
 * **Snyk Preview**: Preview upcoming and experimental features before they are released. See the [Snyk Preview](snyk-preview.md) documentation for details.
@@ -34,6 +34,6 @@ At the Organization level, select **Settings** to manage Organization settings a
 * **Snyk Open Source**: Enable Reachable vulnerabilities analysis and edit language settings; see [Snyk Open Source - supported languages and package managers](https://docs.snyk.io/supported-languages/supported-languages-package-managers-and-frameworks) for details.
 * **Snyk Code**: Enable Snyk Code; see the [Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code) documentation for details.
 * **Snyk IaC:** Enable Snyk Iac, detecting configuration files, and rules. Select severity levels for configurations scanned. See the [IaC ](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-iac/scan-your-iac-source-code)documentation for details.
-* **Usage**: See the [Usage settings](usage-settings.md) page for details.
+* **Usage**: For details, visit [SKU-based licensing usage settings](../snyk-platform-subscription/legacy-plans/usage-settings.md).
 * **Notifications**: Visit the [Manage notifications](manage-notifications.md) page for details.
 * **Snyk Preview**: Visit the [Snyk Preview page](snyk-preview.md) for details.

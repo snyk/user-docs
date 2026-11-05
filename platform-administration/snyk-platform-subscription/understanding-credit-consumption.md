@@ -1,16 +1,19 @@
 ---
+description: >-
+  How to track Snyk Platform Subscription credit consumption in the Credit
+  breakdown dashboard: contract pacing, monthly charts, and the Billable Events
+  Log
 last_reviewed: 2026-10-30
 last_reviewed_source: focused-edit
 ---
-# Understanding credit consumption
 
-Your rate card is the one linked in your order form. Every Enterprise order form that includes credits links a specific, versioned rate card, and that version governs your contract for its full term. Refer to it for the consumption rates and units of measure that apply to you.
+# Track credit consumption
 
-Snyk publishes the current rate card at [Credit-based billing policies](https://snyk.io/policies/credit-based-billing/). This page always shows the latest version, which can differ from the version linked in your order form.
+The **Credit breakdown** dashboard reports your credit consumption, calculated from the rate card linked in your order form. For details about your rate card, visit [Rate card and your contract](snyk-platform-subscription-mechanics.md#rate-card-and-your-contract).
 
 ## Credit breakdown dashboard
 
-In your Tenant settings, navigate to **Plan and billing** > **Credit breakdown** to see reporting that tracks your consumption. The dashboard has three parts: pacing against your contract, monthly consumption charts, and the Billable Events Log.
+In your Tenant settings, navigate to **Plan and billing** > **Credit breakdown** to view reports that track your consumption. The dashboard has three parts: pacing against your contract, monthly consumption charts, and the Billable Events Log.
 
 {% hint style="info" %}
 All consumption data on the **Credit breakdown** page has a 24-hour lag while Snyk processes the latest data. The timestamp beside the page title, for example **Updated Today at 1:00 AM**, shows when the data was last updated.
@@ -22,7 +25,7 @@ The dashboard shows cumulative credit usage to date against the number of days i
 
 ### Monthly consumption charts
 
-The dashboard also contains charts that show monthly credit consumption by Group contribution and by capability contribution for your entire Tenant. You can filter these charts by Group or capability for more consumption visibility.
+The dashboard also contains charts that show monthly credit consumption by Group contribution and by capability contribution for your entire Tenant. You can filter these charts by Group or capability to see consumption in more detail.
 
 ### Billable Events Log
 
