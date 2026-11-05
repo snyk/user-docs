@@ -1,13 +1,15 @@
 ---
 nav_context: classic
+last_reviewed: 2026-10-09T00:00:00.000Z
+last_reviewed_source: bulk-sync
 description: >-
   Snyk Assist for Learn, an AI-powered assistant that answers Snyk product and
   security questions in the Learning Management add-on
-last_reviewed: 2026-10-09
-last_reviewed_source: bulk-sync
 ---
 
 # Snyk Assist for Learn
+
+{% include "../../.gitbook/includes/deprecatedsnyk-is-deprecati....md" %}
 
 {% include "../../.gitbook/includes/new-navigation-banner.md" %}
 

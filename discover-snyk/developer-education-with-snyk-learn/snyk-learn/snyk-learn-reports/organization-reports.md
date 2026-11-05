@@ -1,13 +1,15 @@
 ---
 nav_context: classic
+last_reviewed: 2026-10-09T00:00:00.000Z
+last_reviewed_source: bulk-sync
 description: >-
   How to view and export Snyk Learn organization reports, available on
   Enterprise plans to Org and Group admins
-last_reviewed: 2026-10-09
-last_reviewed_source: bulk-sync
 ---
 
 # Organization reports
+
+{% include "../../../.gitbook/includes/deprecatedsnyk-is-deprecati....md" %}
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
