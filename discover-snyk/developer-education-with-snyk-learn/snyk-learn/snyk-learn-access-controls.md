@@ -1,12 +1,15 @@
 ---
-description: >-
-  How to manage Snyk Learn access controls for assignment and report permissions across your Organization
 nav_context: agnostic
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-09T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: >-
+  How to manage Snyk Learn access controls for assignment and report permissions
+  across your Organization
 ---
 
 # Snyk Learn access controls
+
+{% include "../../.gitbook/includes/deprecatedsnyk-is-deprecati....md" %}
 
 {% hint style="info" %}
 **Feature availability**

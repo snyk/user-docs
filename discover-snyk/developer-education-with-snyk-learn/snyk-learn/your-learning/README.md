@@ -1,13 +1,15 @@
 ---
 nav_context: classic
+last_reviewed: 2026-10-09T00:00:00.000Z
+last_reviewed_source: bulk-sync
 description: >-
   How to find and take Snyk Learn lessons and learning paths from the catalog
   based on your interests and needs
-last_reviewed: 2026-10-09
-last_reviewed_source: bulk-sync
 ---
 
 # Your learning
+
+{% include "../../../.gitbook/includes/deprecatedsnyk-is-deprecati....md" %}
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
