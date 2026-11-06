@@ -1,8 +1,8 @@
 ---
 description: How to resolve common Snyk problems for .NET, including static dependency resolution for legacy Project files and Legacy Broker setups
 nav_context: agnostic
-last_reviewed: 2026-05-15
-last_reviewed_source: bulk-sync
+last_reviewed: 2026-11-05
+last_reviewed_source: reviewed
 ---
 
 # Troubleshooting Snyk for .NET
@@ -23,6 +23,14 @@ Static analysis does not support the following:
 * Private dependencies: Snyk cannot access private dependencies, brokered or non-brokered. Snyk does not resolve transitive dependencies.
 * Build configuration: Snyk ignores `Directory.Build.props`, `Directory.Build.targets`, and `global.json` files.
 * Runtime precision: Snyk cannot reliably identify the specific runtime, which can increase false positives.
+
+## Private packages not found (NU1101 or NU1102)
+
+If a scan fails with `NU1101` or `NU1102` for packages hosted on a private package source, check the name of your NuGet config file.
+
+For SCM imports, Snyk restores .NET Projects on Linux, where file names are case-sensitive. NuGet reads only `nuget.config`, `NuGet.config`, and `NuGet.Config`, and ignores any other casing, such as `Nuget.Config`, without an error. The private package sources in that file are not used, so NuGet cannot find the packages.
+
+Rename the file to `nuget.config` and import the Project again. A file that works on Windows or macOS can still fail in Snyk, because file names on those systems are not case-sensitive.
 
 ## Handle runtime false positives
 
