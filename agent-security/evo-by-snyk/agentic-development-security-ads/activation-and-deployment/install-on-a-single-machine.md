@@ -20,7 +20,14 @@ You need the following:
 * your Tenant ID from **Settings**, and a push key. To create a push key, visit [Manage push keys](./#manage-push-keys).
 * the installer version you want: **Settings** defaults to the latest published version
 * administrator access on the machine, to install the package
-* macOS 12.0 or later, or Windows
+* a supported operating system:
+  * Linux (x86\_64 and arm64): Ubuntu 22.04, Debian 12, Amazon Linux 2023, or Fedora 40, or a later version of the same distribution
+  * Windows (x86\_64): Windows 10 or later
+  * macOS (Apple silicon and Intel): 15 or later
+
+{% hint style="info" %}
+These are the minimum versions Snyk tests for the Agent Scan and Agent Behavior Governance binaries. On Ubuntu 20.04 and earlier, the installation fails with the error `GLIBC_2.35 not found`. Linux distributions that use musl instead of glibc, such as Alpine, are not supported.
+{% endhint %}
 
 {% hint style="info" %}
 On macOS, the package delivers the installer only. Installing it does not set up the products or start a scan, so you run the installer with your credentials as a second step. On Windows, the `.msi` installs and onboards in one step when you pass your Tenant ID and push key.
