@@ -18,7 +18,7 @@ Import repositories into Evo through the **Workspaces** integration or with a co
 
 Evo scans Go, Java, JavaScript, Python, and TypeScript codebases. It also inspects non-code files to identify referenced models.
 
-Evo scans files with these extensions: `.conf`, `.containerfile`, `.dockerfile`, `.env`, `.ini`, `.json`, `.properties`, `.tf`, `.tfvars`, `.toml`, `.xml`, `.yaml`, and `.yml`. It also scans files with these names: `build.gradle`, `build.gradle.kts`, `cargo.toml`, `composer.json`, `Containerfile`, `Dockerfile`, `environment.yml`, `Gemfile`, `go.mod`, `Justfile`, `Makefile`, `package.json`, `Pipfile`, `pom.xml`, `pubspec.yaml`, `pyproject.toml`, and `requirements.txt`.
+Evo scans files with these extensions: `.conf`, `.containerfile`, `.dockerfile`, `.env`, `.ini`, `.json`, `.properties`, `.tf`, `.tfvars`, `.toml`, `.xml`, `.yaml`, and `.yml`. It also scans files with these names: `build.gradle`, `build.gradle.kts`, `Cargo.toml`, `composer.json`, `Containerfile`, `Dockerfile`, `environment.yml`, `Gemfile`, `go.mod`, `Justfile`, `Makefile`, `package.json`, `Pipfile`, `pom.xml`, `pubspec.yaml`, `pyproject.toml`, and `requirements.txt`.
 
 ## Asset types
 
@@ -32,8 +32,11 @@ An AI-BOM scan detects these asset types:
 * MCP clients: Code that connects to an MCP server as a client.
 * MCP resources: Resources that an MCP server exposes.
 * Datasets: Training datasets associated with a model in your inventory.
+* Skills: Agent skills that a `SKILL.md` file defines in your repository.
+* Plugins: Claude Code plugins that a plugin manifest defines in your repository.
+* Hooks: Hooks that a `hooks/hooks.json` file defines in your repository.
 
-Evo identifies models by scanning configuration and manifest files. It identifies other asset types from the source code.
+Evo identifies most asset types from your source code. It also detects models, MCP servers, skills, plugins, and hooks in configuration and manifest files. For details, see [Non-code scanning](non-code-scanning.md).
 
 If the Snyk Risk Database contains a record for a model Evo discovers, Evo also adds the base models it derives from and the training datasets associated with it. These assets come from Snyk research rather than from your repository.
 
