@@ -132,7 +132,7 @@ Response times are dependent on the severity of the ticket, the Snyk Plan purcha
 
 **24x5**: Snyk Technical Support Engineers actively respond to tickets 24 hours a day, Monday to Friday in the Customer's local time zone.
 
-**24x7**: Snyk Technical Support Engineers actively respond to tickets 24 hours a day, Monday to Friday. In addition, for **urgent customer issues** outside of 24x5, Snyk provides a 24-hour support telephone number. This is served by a telephone answering service which routes the request to Snyk on-call engineers. 24x7 support will be provided in English unless during business hours.
+**24x7**: Snyk Technical Support Engineers actively respond to tickets 24 hours a day, Monday to Friday. In addition, for **urgent customer issues** outside of 24x5, Snyk routes these requests to Snyk on-call engineers. 24x7 support will be provided in English unless during business hours.
 
 ### Definitions and Support Plan descriptions
 
