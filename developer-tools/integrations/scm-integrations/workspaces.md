@@ -1,8 +1,8 @@
 ---
 description: How Snyk Workspaces improve the accuracy and reliability of SCM integration results in large enterprises
 nav_context: agnostic
-last_reviewed: 2026-10-09
-last_reviewed_source: bulk-sync
+last_reviewed: 2026-11-05
+last_reviewed_source: focused-edit
 ---
 
 # Workspaces
@@ -35,15 +35,12 @@ Repositories are cloned using HTTPS. SSH-based clones are unavailable.
 
 ## Manage Workspaces
 
-The Workspaces feature is managed through the **Integrations settings** page on the Group or Organization level. To do so, you must be a Snyk Group Admin or Snyk Organization Admin.
+You manage Workspaces in the **Workspaces** section of the **Integration Settings** page, at the Group or Organization level. You must be a Snyk Group Admin or Snyk Organization Admin. To turn on Workspaces, click **Enable for group** or **Enable for organization**. After you turn on Workspaces, you cannot turn it off.
 
-When Workspaces is enabled at the Group level, all Organizations within that Group have Workspaces enabled. This Group level setting can be overridden by the individual Organization level setting.
+If your Group or Organization turned off Workspaces in the past, Workspaces stays off until you turn it on.
+
+When you turn on Workspaces at the Group level, every Organization in the Group inherits the setting, unless the Organization has its own Workspaces setting.
 
 {% hint style="warning" %}
-When a Group level setting is overridden by an Organization level setting, the Organization level setting cannot be modified by any future changes made to the Group level setting.
+An Organization-level setting always takes precedence over the Group-level setting. If an Organization turned off Workspaces in the past, Workspaces stays off for that Organization even after you turn it on for the Group. To turn on Workspaces for that Organization, turn it on at the Organization level.
 {% endhint %}
-
-While you can choose to disable the Workspaces feature, it is important to understand doing so will hinder Snyk’s ability to scan repositories in two specific ways:
-
-1. Frequency of scanning: With Workspaces disabled, Snyk will analyze repository content through SCM APIs, which typically impose primary and secondary rate limits, and content limits. For example, the GitHub.com APIs are rate-limited to allow only a certain number of requests per hour, which hinders Snyk’s ability to analyze a large number of repositories in any one hour.
-2. Completeness of scanning: With the Workspaces feature disabled, Snyk will analyze repo content through SCM APIs, which typically limit the number of tree entries that can be retrieved from the Git database, potentially leading to missed vulnerabilities. This impacts analysis of repositories containing a large number of files, sometimes referred to as monorepos.
