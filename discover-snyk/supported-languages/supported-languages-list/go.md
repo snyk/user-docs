@@ -160,6 +160,12 @@ To give Snyk access to privately hosted Go modules, configure your private modul
 * Brokered package sources: for Universal Broker connections that have been enabled for Open Source.
 * Private package registries: for direct access.
 
+{% hint style="warning" %}
+For SCM imports, Snyk uses brokered package sources only when the SCM integration for the Project is also brokered. If the SCM integration is not brokered, for example the GitHub Cloud App, Snyk ignores brokered package sources. Go then tries to fetch the private module directly, and the import fails with `Unable to parse manifest file` (`SNYK-OS-0001`). The `go mod download` output in the error shows `unrecognized import path "<module>": reading <url> 404 Not Found`.
+
+To use a private registry with a non-brokered SCM integration, configure it under **Private package registries** instead. The registry must be reachable from Snyk. If your registry is not reachable from the internet, contact [Snyk Support](https://support.snyk.io) for the IP addresses to allowlist.
+{% endhint %}
+
 #### Source requirements and routing
 
 Snyk handles configuration requirements differently based on the source type and how Snyk accesses it.
