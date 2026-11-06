@@ -23,10 +23,20 @@ You need the following:
 * Macs enrolled in your MDM tool, with ADS installed in managed mode
 * The profile for each processor architecture you manage:
 
-| Processor     | Scan binary                | Profile                                                                                                       |
-| ------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Apple silicon | `snyk-scan-macos-arm64`    | [Snyk-Agent-Scan-FDA-arm64.mobileconfig](../../../.gitbook/assets/Snyk-Agent-Scan-FDA-arm64.mobileconfig)     |
-| Intel         | `snyk-scan-macos-x86_64`   | [Snyk-Agent-Scan-FDA-x86_64.mobileconfig](../../../.gitbook/assets/Snyk-Agent-Scan-FDA-x86_64.mobileconfig)   |
+| Processor     | Scan binary              | Profile                                   |
+| ------------- | ------------------------ | ----------------------------------------- |
+| Apple silicon | `snyk-scan-macos-arm64`  | `Snyk-Agent-Scan-FDA-arm64.mobileconfig`  |
+| Intel         | `snyk-scan-macos-x86_64` | `Snyk-Agent-Scan-FDA-x86_64.mobileconfig` |
+
+Download the profiles:
+
+{% file src="../../../.gitbook/assets/Snyk-Agent-Scan-FDA-arm64.mobileconfig" %}
+Full Disk Access profile for Apple silicon
+{% endfile %}
+
+{% file src="../../../.gitbook/assets/Snyk-Agent-Scan-FDA-x86_64.mobileconfig" %}
+Full Disk Access profile for Intel
+{% endfile %}
 
 ## Deploy the profile
 
