@@ -1,8 +1,8 @@
 ---
 description: How to connect Snyk to an Artifactory repository manager for NuGet
 nav_context: classic
-last_reviewed: 2026-06-18
-last_reviewed_source: focused-edit
+last_reviewed: 2026-11-05
+last_reviewed_source: reviewed
 ---
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
@@ -18,9 +18,15 @@ If you use a brokered Artifactory connection, you must use the Universal Broker.
 
 This configuration applies only to Snyk Web UI integrations. The Snyk CLI supports private NuGet repositories automatically.
 
-Snyk integrates with Artifactory Package Repositories for NuGet packages. This allows Snyk to resolve transitive dependencies and regenerate lockfiles with the correct URLs during pull requests.
+Snyk integrates with Artifactory Package Repositories for NuGet packages. Snyk uses this integration to scan. When Snyk runs `dotnet restore`, NuGet uses the feed to resolve your private packages and their transitive dependencies. Fix pull requests update package versions in your project files and do not use the integration.
 
-Configure the URL where your private Artifactory Package Repositories host NuGet packages. This matches the information in your `nuget.config` file.
+Configure the URL where your private Artifactory Package Repositories host NuGet packages. Use the same URL as the matching package source in your `nuget.config` file.
+
+{% hint style="warning" %}
+Name your NuGet config file `nuget.config`, `NuGet.config`, or `NuGet.Config`. Snyk restores .NET Projects on Linux, where file names are case-sensitive and NuGet reads only these three names.
+
+NuGet ignores any other casing, such as `Nuget.Config`, without an error. Snyk then cannot use your private package sources, and the scan fails with `NU1101` or `NU1102`. This happens even if the same file works on Windows or macOS, where file names are not case-sensitive.
+{% endhint %}
 
 ## Configure .NET language settings
 

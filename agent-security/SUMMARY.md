@@ -73,6 +73,7 @@
     * [Manage Targets](evo-by-snyk/continuous-offensive-security-cos/targets/manage-targets.md)
   * [Scans](evo-by-snyk/continuous-offensive-security-cos/scans/README.md)
     * [Scanner IP addresses](evo-by-snyk/continuous-offensive-security-cos/scans/scanner-ip-addresses.md)
+    * [Customer Gateway](evo-by-snyk/continuous-offensive-security-cos/scans/customer-gateway.md)
     * [Monitor and Manage Scans](evo-by-snyk/continuous-offensive-security-cos/scans/monitor-and-manage-scans.md)
   * [Findings and Reports](evo-by-snyk/continuous-offensive-security-cos/findings-and-reports/README.md)
     * [Interpret Scan Results](evo-by-snyk/continuous-offensive-security-cos/findings-and-reports/interpret-scan-results.md)

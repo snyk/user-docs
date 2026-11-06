@@ -1,8 +1,8 @@
 ---
 description: How to import and scan JavaScript repositories through Snyk SCM integrations, including Organization-level language settings
 nav_context: agnostic
-last_reviewed: 2026-09-16
-last_reviewed_source: bulk-sync
+last_reviewed: 2026-11-05
+last_reviewed_source: reviewed
 ---
 
 # SCM integrations for JavaScript
@@ -29,7 +29,7 @@ Artifactory, Nexus, npm Teams, and npm Enterprise Package Registry integrations 
 
 The Snyk Open Source Gatekeeper plugin integrates with Artifactory to block builds from downloading packages with vulnerabilities and license issues.
 
-Snyk Open Source can also integrate with Artifactory, Nexus, npm Teams, and npm Enterprise to assist in the security testing of your applications. Snyk uses this integration for dependency resolution, fix calculation, and re-locking lockfiles.
+Snyk Open Source can also integrate with Artifactory, Nexus, npm Teams, npm Enterprise, and Azure Artifacts npm feeds. For JavaScript, Snyk uses these integrations to regenerate lockfiles in fix pull requests and merge requests. Scans read dependencies from the lockfile and do not use the integration.
 
 If your Projects reference private dependencies in these repositories but you are not a Snyk Enterprise user, you can use the Snyk CLI in a properly configured local environment (such as your build pipeline) so these dependencies can be resolved and included in the test.
 
