@@ -17,7 +17,7 @@ You need the following:
 * the signed macOS packages, one per processor architecture, from **Settings**, where you also choose the installer version. If your automation cannot use the UI, download them from `downloads.snyk.io/ads/installer/latest/`:
   * `snyk-ads-installer-macos-arm64.pkg` for Apple silicon Macs
   * `snyk-ads-installer-macos-x86_64.pkg` for Intel Macs
-* macOS 12.0 or later on managed Macs
+* macOS 15 or later on managed Macs
 
 ## Deploy
 
