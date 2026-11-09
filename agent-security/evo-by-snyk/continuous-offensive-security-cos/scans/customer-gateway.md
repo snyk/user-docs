@@ -2,6 +2,8 @@
 description: >-
   Install a customer gateway in your network so Continuous Offensive Security
   can scan your internal applications.
+last_reviewed: 2026-11-09
+last_reviewed_source: reviewed
 ---
 
 # Customer Gateway
@@ -47,7 +49,7 @@ Click **Add gateway**.
 {% endstep %}
 
 {% step %}
-Enter a name for the gateway and select an Organization.
+Enter a name for the gateway.
 {% endstep %}
 
 {% step %}
