@@ -426,7 +426,7 @@
     * [Export and customize views](fix/prioritize-issues-for-fixing/using-the-issues-ui/export-and-customize-views.md)
   * [Set up Insights](fix/prioritize-issues-for-fixing/set-up-insights/README.md)
     * [Set up Insights: user permissions](fix/prioritize-issues-for-fixing/set-up-insights/set-up-insights-user-permissions.md)
-    * [Set up Insights: Kubernetes connector](fix/prioritize-issues-for-fixing/set-up-insights/set-up-insights-kubernetes-connector.md)
+    * [Insights Kubernetes connector (end of life)](fix/prioritize-issues-for-fixing/set-up-insights/set-up-insights-kubernetes-connector.md)
     * [Set up Insights: image scanning](fix/prioritize-issues-for-fixing/set-up-insights/set-up-insights-image-scanning.md)
     * [Set up Insights: associating Snyk Open Source, Code, and Container Projects](fix/prioritize-issues-for-fixing/set-up-insights/set-up-insights-associating-snyk-open-source-code-and-container-projects.md)
   * [View exploits](fix/prioritize-issues-for-fixing/view-exploits.md)

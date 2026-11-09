@@ -1,5 +1,5 @@
 ---
-description: How to set up the Kubernetes connector for Snyk Insights
+description: The Kubernetes connector for Snyk Insights reached end of life on November 2, 2026. Uninstall it from your Kubernetes clusters.
 nav_context: classic
 last_reviewed: 2026-10-09
 last_reviewed_source: bulk-sync
@@ -7,103 +7,58 @@ last_reviewed_source: bulk-sync
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# Set up Insights: Kubernetes connector
-
-## What is Kubernetes connector?
-
-One of the goals is to identify risk factors for workloads that are publicly accessible through a network configuration. To do that, Snyk needs to understand what images are deployed on which workloads and how they are configured.
-
-Thus, Snyk needs to collect the following information:
-
-* The list of images and their IDs and SHAs that are deployed.
-* The services and associated configuration, for example, the networking services you are using.
-
-The Kubernetes connector is the agent deployed in your Kubernetes clusters to collect this information.
-
-## Getting started
-
-### Prerequisites
-
-Before you can deploy the Kubernetes connector in your Kubernetes clusters, ensure you have the following:
-
-* A Snyk Organization to which the Kubernetes information collected will be sent to be stored. This could be a new Organization.
-* A Snyk service account created specifically to be used with the Kubernetes connector. For instructions on creating a service account, see [Service accounts](https://docs.snyk.io/platform-administration/service-accounts/service-accounts). For the roles and permissions, Snyk recommends:
-  * Creating a new specific role for this service account
-  * Taking a least privilege approach, granting the new specific role the sole permission required to **Publish Kubernetes Resources**.
-
-### Create a Snyk Organization
-
-If you create a separate Organization for the Kubernetes connector, follow the steps in the Snyk documentation to [create a Snyk Organization](https://docs.snyk.io/platform-administration/snyk-hierarchy/organizations/create-and-delete-organizations#create-an-organization). The new Snyk Organization must be in the same Snyk Group as your other Snyk Organization.
-
-If you are not creating a separate Snyk Organization, continue with the next step.
-
-### Create a new role
-
-To create a new role, see [create a new role](https://docs.snyk.io/platform-administration/user-management/user-role-management#create-a-custom-role).
-
-This example illustrates creating a new role called **Kubernetes connector**
-
-<figure><img src="../../../.gitbook/assets/create-kubernetes-connector-role.png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for role</p></figcaption></figure>
-
-### Assign permissions to this role
-
-Navigate to the newly created role and [select edit](https://docs.snyk.io/platform-administration/user-management/user-role-management#edit-a-custom-role); you will also be taken to this page immediately after creating the role.
-
-Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.
-
-<figure><img src="../../../.gitbook/assets/publish-kubernetes-resources-permission.png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
-
-### Create a service account and assign it to a role
-
-Next, create a new [service account](https://docs.snyk.io/platform-administration/service-accounts/service-accounts) for Kubernetes connector integration.
-
-{% hint style="info" %}
-Snyk recommends creating this service account for the Snyk Organization used or created for the Kubernetes agent.
-{% endhint %}
-
-Navigate to that **Snyk Organization** > **Settings** > **Service Account.**
-
-Create a new service account with your chosen name, and from the dropdown, select the role you created in the previous step.
-
-<figure><img src="../../../.gitbook/assets/select-kubernetes-agent-role.png" alt="Select the Insights Kubernetes Agent role"><figcaption><p>Select the Kubernetes Agent role</p></figcaption></figure>
-
-After the service account is created, you will see the API token. Copy the API token and save it somewhere safe; you will need this to configure the agent in the Helm chart.
-
-### Install the Kubernetes connector in your Kubernetes clusters
-
-Snyk recommends using the Helm Chart to deploy the agent; the Helm Chart will create the associated permissions for the agent to run on your cluster. The user installing the Helm Chart needs sufficient permissions on the Kubernetes cluster to create new roles.\
-\
-[Follow the instructions on the Kubernetes-scanner GitHub repo](https://github.com/snyk/kubernetes-scanner) to use the Helm Chart to deploy the [latest released version](https://github.com/snyk/kubernetes-scanner/releases).
-
-{% hint style="info" %}
-To ensure you have set up your Kubernetes connector properly, navigate to the **Set up Insights** tab on the **Issues** page and check the **Kubernetes resources** table to view the data that Insights has access to.
-{% endhint %}
-
-## FAQ
-
-#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/) **(also called Snyk Controller or Snyk-Monitor) and the Kubernetes connector?**
-
-* The Kubernetes monitor extracts images from a Kubernetes cluster’s workloads and scans them for vulnerabilities. The Kubernetes monitor reports the **Deployed** risk factor.
-* The Kubernetes connector extracts workload configurations from a Kubernetes cluster. The Kubernetes connector reports the **Public facing** and **Deployed** risk factors.
+# Insights Kubernetes connector (end of life)
 
 {% hint style="warning" %}
-Risk factors are available only based on the integration option you implemented.
+The Kubernetes connector reached end of life on November 2, 2026. Snyk no longer accepts or uses the data that the connector collects, and does not release updates for the connector, including security fixes.
+
+Do not install the Kubernetes connector in new clusters. If the connector runs in any of your clusters, [uninstall it](#uninstall-the-kubernetes-connector). For details, visit the [Kubernetes connector end-of-life announcement](https://updates.snyk.io/kubernetes-connector-reaches-end-of-life-02-nov-202/).
 {% endhint %}
 
-#### **If I’m a customer and already use the existing agent, do I also need to install the Kubernetes connector?**
+The Kubernetes connector was an agent that you deployed in your Kubernetes clusters with the `kubernetes-scanner` Helm chart. It collected the following information for Insights:
 
-If you want to view both the **Deployed** and **Public Facing** risk factors, you must install the Kubernetes connector into your Kubernetes clusters.
+* The deployed images, with their IDs and SHAs
+* The services and their configuration, for example, the networking services you use
 
-If you have only the existing agent installed, Snyk can compute only the **Deployed** risk factor.
+Snyk used this information to compute the **Deployed** and **Public facing** risk factors.
 
-#### **What workload data is the Kubernetes connector collecting?**
+## What end of life means for the Kubernetes connector
 
-[The list of data Snyk is collecting](https://github.com/snyk/kubernetes-scanner/blob/main/helm/kubernetes-scanner/values.yaml) is on the Kubernetes scanner GitHub repo.
+* Snyk stopped accepting data from the connector on November 2, 2026. A connector that is still installed receives an error each time it sends data, logs the error, and retries. The connector does not crash, but it continues to use cluster resources until you uninstall it.
+* Snyk no longer computes the **Deployed** and **Public facing** risk factors.
+* Snyk archived the [kubernetes-scanner GitHub repository](https://github.com/snyk/kubernetes-scanner) on October 26, 2026. A connector that stays installed keeps running an image that receives no security fixes.
 
-**What happens to my data if I delete the Kubernetes connector?**
+## Kubernetes connector compared with the Kubernetes monitor
 
-If you choose to delete the Kubernetes connector, your data and risk factors will remain available for 48 hours.
+The Kubernetes connector and the [Kubernetes monitor](../../../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/) are separate integrations. The end of life of the Kubernetes connector does not affect the Kubernetes monitor.
 
-**What happens to my data if the Kubernetes connector stops working?**
+| Integration | Helm chart | What it does |
+| --- | --- | --- |
+| Kubernetes connector | `kubernetes-scanner` | Extracted workload configurations from a Kubernetes cluster for Insights. End of life. |
+| Kubernetes monitor, also called Snyk Controller or Snyk-Monitor | `snyk-monitor` | Extracts images from the workloads in a Kubernetes cluster and scans them for vulnerabilities. Not affected. |
 
-If, for any reason, the Kubernetes connector stops working, your data and risk factors will remain available for 48 hours.
+## Uninstall the Kubernetes connector
+
+Repeat these steps for each cluster where the connector runs. To run the Helm and `kubectl` commands, you must have permission to delete the resources that the Helm chart created in the cluster.
+
+1. Find the release name and namespace of the connector. In the output, the **CHART** column shows `kubernetes-scanner` for the connector release.
+
+    ```bash
+    helm list --all-namespaces | grep kubernetes-scanner
+    ```
+2. Uninstall the release:
+
+    ```bash
+    helm uninstall <release-name> --namespace <namespace>
+    ```
+3. Delete the Kubernetes secret that stores the service account token for the connector. Helm does not remove this secret, because you created it outside the chart.
+
+    ```bash
+    kubectl delete secret <secret-name> --namespace <namespace>
+    ```
+4. In Snyk, delete the service account that you created for the connector. Snyk invalidates the service account token immediately. For instructions, visit [How to edit or delete a service account](https://docs.snyk.io/platform-administration/service-accounts/service-accounts#how-to-edit-or-delete-a-service-account).
+5. If you created a custom role only for the connector, delete the role. For instructions, visit [Delete a custom role](https://docs.snyk.io/platform-administration/user-management/user-role-management#delete-a-custom-role).
+
+{% hint style="warning" %}
+If you created a separate Snyk Organization for the Kubernetes connector, confirm that it contains no Projects or integrations that you use before you delete it. If the Organization is in a Group, only a Group Admin can delete it. For instructions, visit [Delete an Organization](https://docs.snyk.io/platform-administration/snyk-hierarchy/organizations/create-and-delete-organizations#delete-an-organization).
+{% endhint %}
