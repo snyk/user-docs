@@ -1,152 +1,235 @@
 ---
+description: Set up Snyk Studio in your coding assistant to scan code and dependencies, check package health, and fix vulnerabilities
 last_reviewed: 2026-07-21
 last_reviewed_source: bulk-sync
 ---
 # Getting started with Snyk Studio
 
-Snyk Studio supports a default hooks-based approach for some agentic development environments (ADEs) to ensure code written by AI coding assistants is secure at inception (SAI):
+Set up Snyk Studio to scan code and dependencies from your AI coding assistant, evaluate packages, and fix vulnerabilities. For local setup, you authenticate, install Studio, start a new assistant session, and verify a scan.
 
-* Claude Code
-* Cursor
-* Codex CLI
-* Gemini CLI
-* GitHub Copilot (both CLI and for VS Code)
+Choose the setup path that matches your deployment:
 
-If you use one of these ADEs, use the [Snyk Studio installer script to install Snyk Studio](getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-with-hooks-support).
-
-If your ADE does not support a hooks-based approach to SAI, use a rules-based approach. Install Snyk Studio by [configuring the Snyk MCP Server with your ADE](getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-without-hooks-support).
-
-## Install Snyk Studio for ADEs with hooks support
-
-If your ADE supports hooks, complete the following steps to install Snyk Studio with an installer script.
-
-### Prerequisites
-
-* A supported AI coding assistant
-* A [Snyk account](https://app.snyk.io/)
-
-The installer bootstraps everything else (`uv`, Python, Node.js, npm, and the Snyk CLI), prompting you before each install step.
-
-### Install commands
-
-<details>
-
-<summary>MacOS/Linux</summary>
-
-```bash
-curl -fsSL 'https://raw.githubusercontent.com/snyk/studio-recipes/main/installer/dist/snyk-studio-install.sh' -o snyk-studio-install.sh
-bash ./snyk-studio-install.sh
-```
-
-</details>
-
-<details>
-
-<summary>Windows</summary>
-
-```powershell
-powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/snyk/studio-recipes/main/installer/dist/snyk-studio-install.ps1' -OutFile snyk-studio-install.ps1"
-powershell -ExecutionPolicy Bypass -File .\snyk-studio-install.ps1
-```
-
-</details>
-
-### Customize the installer
-
-Snyk recommends the pre-built installer for most teams. Build from source when you need to:
-
-* Tailor the bundle to your organization: pin a custom default profile, add internal recipes, or remove ones you don't need.
-* Audit before deploying: review the exact installer behavior, then ship the artifact you reviewed.
-* Run in restricted environments: produce an installer your team can host internally instead of pulling from `raw.githubusercontent.com`.
-
-Visit [`BUILDING.md`](https://github.com/snyk/studio-recipes/blob/main/installer/BUILDING.md) for build instructions.
-
-## Install Snyk Studio for ADEs without hooks support
+| Deployment | Setup path |
+| --- | --- |
+| Enterprise deployment across your development teams | Use the [Agentic Development Security (ADS) installer](../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md). |
+| Local setup on your own machine | [Install with the Snyk CLI](#install-on-your-machine). |
+| Manual integration with another local MCP client | [Configure the Snyk MCP server](#configure-the-snyk-mcp-server). |
 
 {% hint style="info" %}
-The Snyk MCP Server is designed as a local MCP server, running on your system using the Snyk CLI to ensure local file access.
+For local setup, install [Snyk CLI version 1.1307.4 or later](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli). Studio commands were introduced in [CLI 1.1307.4](https://github.com/snyk/cli/releases/tag/v1.1307.4). Install your coding assistant and create a [Snyk account](https://app.snyk.io/). Enable the Snyk products you want to scan with, including [Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/configure-snyk-code) for first-party code.
 
-Snyk does not offer a hosted remote MCP server.
+If your administrator manages Studio on your machine, follow your company's deployment instructions.
 {% endhint %}
 
-If your ADE does not support the default hooks-based approach, install Snyk Studio by configuring the Snyk MCP server in your target ADE.
+## Coding assistant support
 
-### Prerequisites
+The default CLI installation configures the following components for each assistant:
 
-Snyk recommends that you have:
+| Coding assistant | `--ade` value | Secure at inception hooks | MCP server | Remediation and package health |
+| --- | --- | --- | --- | --- |
+| [Claude Code](quickstart-guides/claude-code-guide.md) | `claude` | Yes | Yes | Yes |
+| [Cursor](quickstart-guides/cursor-guide.md) | `cursor` | Yes | Yes | Yes |
+| [Codex](quickstart-guides/codex-cli-guide.md) | `codex` | Yes | Yes | Yes |
+| [Gemini CLI](quickstart-guides/gemini-cli-guide.md) (access restrictions apply) | `gemini` | Yes | Yes | Yes |
+| [GitHub Copilot CLI](quickstart-guides/github-copilot-guide.md) | `copilot-cli` | Yes | Yes | Yes |
+| [GitHub Copilot in VS Code](quickstart-guides/github-copilot-guide.md) | `copilot-vscode` | Yes | Yes | Yes |
+| [Kiro](quickstart-guides/kiro-guide.md) | `kiro` | No | Yes | Yes |
 
-* `npx`
-* `Node.js` installed on your machine
+Kiro receives MCP configuration and remediation and package-health components without Secure at inception hooks. Other clients use [manual MCP integration](#configure-the-snyk-mcp-server).
 
-If these are not available, you can manually add the Snyk CLI to the MCP server configuration. For instructions, see your coding assistant's official documentation.
+For agent-invoked Snyk tools in Devin Desktop, follow [Connect Devin Desktop to Snyk](quickstart-guides/windsurf-guide.md). This manual setup does not install Studio hooks, remediation commands, or package-health skills. The installer still accepts the legacy `windsurf` target, which writes to the old Cascade configuration paths and does not configure Devin Local.
 
-### Configure the Snyk MCP server
+{% hint style="warning" %}
+Google has ended Gemini CLI and Gemini Code Assist access for some account types and is retiring it for others. Visit [Migrate from Gemini tooling](quickstart-guides/antigravity-guide.md#migrate-from-gemini-tooling) for the schedule and Antigravity setup. The Studio installer's `gemini` target configures Gemini CLI, not Antigravity CLI.
+{% endhint %}
 
-Navigate to the MCP server configuration for the coding assistant. This often involves modifying a file called `mcp.json` or similar. Use the following snippet to configure the Snyk MCP server:
+## What the installer configures
 
-{% code overflow="wrap" expandable="true" %}
+| Component | Purpose |
+| --- | --- |
+| Secure at inception hooks | Trigger background code and dependency scanning in assistants with hook support. |
+| Local Snyk MCP server | Gives the assistant access to Snyk tools that it can invoke directly. |
+| Remediation commands and skills | Provide workflows to scan, fix, and validate existing vulnerabilities. The form depends on the assistant. |
+| Secure dependency health check | Guides package selection using security, maintenance, popularity, and community data. |
+
+Visit [Directives](directives.md) for the differences between these workflows.
+
+{% hint style="warning" %}
+The hooks and MCP configuration use the absolute path of the Snyk CLI binary that ran the installation. If you move the binary or reinstall it at a different path, run `snyk studio install --experimental` again from the new binary. Otherwise, the installed configuration points to the old path.
+{% endhint %}
+
+<a id="install-snyk-studio-for-ades-with-hooks-support"></a>
+<a id="install-commands"></a>
+
+## Install on your machine
+
+Run these commands as the developer who uses the coding assistant.
+
+{% stepper %}
+{% step %}
+**Authenticate the Snyk CLI**
+
+Run:
+
+```bash
+snyk auth
 ```
+
+Complete authentication in your browser. If you belong to multiple Snyk Organizations, [configure the Organization for your scans](troubleshooting.md#snyk-organization-configuration).
+{% endstep %}
+
+{% step %}
+**Install Studio**
+
+Run:
+
+```bash
+snyk studio install --experimental
+```
+
+The installer detects assistants by looking for their configuration directories in your home directory. To select assistants explicitly, use `--ade`. For example:
+
+```bash
+snyk studio install --experimental --ade=claude,cursor
+```
+
+To preview the files and configuration changes before installation, run:
+
+```bash
+snyk studio install --experimental --dry-run
+```
+
+The installer merges Snyk entries into existing configuration files and installs the components supported by each assistant. Studio installation and log commands require the Studio installer flag `--experimental`. This required flag is separate from the installer recipe profile and the MCP tool profile.
+{% endstep %}
+
+{% step %}
+**Start a new assistant session**
+
+Start a new session so your assistant loads the configuration. Open the repository you want to work in.
+
+If the MCP client requests authentication or trust for the repository directory, complete those steps. In Codex, approve the installed hooks when prompted or review them with `/hooks`. Non-interactive Codex sessions skip unapproved hooks.
+{% endstep %}
+
+{% step %}
+**Verify installation and scan a repository**
+
+Check the installed files:
+
+```bash
+snyk studio install --experimental --verify
+```
+
+The verifier reports **ok** for copied files that match the embedded assets, **DIFF** for changed files, and **MISS** for missing files. For merged configuration files, it checks file existence. This check does not confirm that a scan ran successfully.
+
+Ask your assistant to scan the repository:
+
+```text
+Scan this repository for code and dependency vulnerabilities. Summarize the findings before making changes.
+```
+
+For assistants with hooks, continue with a coding task and inspect hook activity using:
+
+```bash
+snyk studio logs --experimental --level=debug
+```
+
+Use the logs to distinguish background hook activity from a scan you requested through MCP. For diagnosis, visit [Troubleshooting](troubleshooting.md).
+{% endstep %}
+{% endstepper %}
+
+<a id="install-snyk-studio-for-ades-without-hooks-support"></a>
+
+## Configure the Snyk MCP server
+
+Use manual MCP configuration for a client outside the CLI installer support matrix, or when you need only agent-invoked Snyk tools.
+
+{% hint style="info" %}
+The Snyk MCP server runs locally through the Snyk CLI and needs access to your local files. Snyk Studio does not provide a hosted remote scanning MCP server.
+
+Adding the MCP server alone does not install Studio hooks, commands, or skills.
+{% endhint %}
+
+Install and authenticate the Snyk CLI, then add a local server to your client's MCP configuration. For a client that uses `mcpServers`, the configuration is:
+
+```json
 {
   "mcpServers": {
     "Snyk": {
-      "command": "npx",
-      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
-      "env": {}
+      "command": "/absolute/path/to/snyk",
+      "args": ["mcp", "-t", "stdio"]
     }
   }
 }
 ```
-{% endcode %}
 
-To validate the MCP server configuration, prompt your coding agent with natural language, for example, "scan my directory for security issues".
+Replace the `command` value with the absolute path to your Snyk CLI executable. Clients use different configuration formats. Visit the [assistant-specific guides](quickstart-guides/README.md) for client instructions.
+
+After the client loads the server, ask the assistant to scan your repository. A successful MCP scan verifies that the assistant can invoke a Snyk tool. It does not verify automatic hook scanning.
 
 ## Configure the Snyk MCP profile
 
-Snyk supports the following tool profiles that let you control which tools are available to your AI agent. Profiles help you balance token cost and capability based on your needs.
+The MCP profile controls which tools the server exposes to the assistant:
 
-|  Profile type  | Description                                                                                                                  |
-| :------------: | ---------------------------------------------------------------------------------------------------------------------------- |
-|      Lite      | The minimum set of essential security scanning tools. Ideal for keeping token use and context size low.                      |
-| Full (default) | All stable tools. Provides comprehensive security coverage across code, dependencies, containers, IaC, and SBOMs.            |
-|  Experimental  | Everything in the full profile, plus new tools under evaluation. These may change or be promoted to full in future releases. |
+| Profile | Purpose |
+| --- | --- |
+| `lite` | Exposes essential scanning and supporting tools with a smaller tool set. |
+| `full` | Exposes the stable tool set. This is the default. |
+| `experimental` | Adds tools under evaluation to the full tool set. |
 
-These tools are available for the following profile types:
+Set the MCP tool profile with the server's `--profile` argument or the `SNYK_MCP_PROFILE` environment variable. This profile selects which MCP tools the assistant can access. It does not control Studio installation. For example:
 
-<table><thead><tr><th width="269.86328125" align="center">Tool</th><th data-type="checkbox">Lite profile</th><th data-type="checkbox">Full profile</th><th data-type="checkbox">Experimental profile</th></tr></thead><tbody><tr><td align="center"><code>snyk_auth</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_code_scan</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_sca_scan</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_version</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_logout</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_trust</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_send_feedback</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_container_scan</code></td><td>false</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_iac_scan</code></td><td>false</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_sbom_scan</code></td><td>false</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_aibom</code></td><td>false</td><td>true</td><td>true</td></tr><tr><td align="center"><code>snyk_package_health_check</code></td><td>false</td><td>true</td><td>true</td></tr></tbody></table>
-
-To set a profile, use either the `--profile` CLI flag or the `SNYK_MCP_PROFILE` environment variable CLI flag:
-
-```
-npx -y snyk@latest mcp -t stdio --profile=lite
+```bash
+snyk mcp -t stdio --profile=lite
 ```
 
-{% code title="mcp.json" %}
+The MCP tool profile is separate from the Studio installer's recipe profile. Changing the MCP profile does not install or remove hooks.
+
+| Tool | Purpose | Lite | Full | Experimental |
+| --- | --- | --- | --- | --- |
+| `snyk_auth` | Authenticate with Snyk | Yes | Yes | Yes |
+| `snyk_sca_scan` | Scan dependencies | Yes | Yes | Yes |
+| `snyk_code_scan` | Scan first-party code | Yes | Yes | Yes |
+| `snyk_container_scan` | Scan container images | No | Yes | Yes |
+| `snyk_iac_scan` | Scan infrastructure as code | No | Yes | Yes |
+| `snyk_sbom_scan` | Scan a software bill of materials | No | Yes | Yes |
+| `snyk_secret_scan` | Scan for hard-coded secrets | No | Yes | Yes |
+| `snyk_version` | Check version information | Yes | Yes | Yes |
+| `snyk_logout` | Log out | Yes | Yes | Yes |
+| `snyk_aibom` | Generate an AI-BOM | No | Yes | Yes |
+| `snyk_trust` | Trust a repository directory | Yes | Yes | Yes |
+| `snyk_send_feedback` | Report remediation feedback | Yes | Yes | Yes |
+| `snyk_package_health_check` | Evaluate package health | No | Yes | Yes |
+| `snyk_breakability_check` | Assess a package upgrade for breaking changes | No | Yes | Yes |
+
+Inspect your MCP client's tool list to check what your installed CLI exposes. A tool's profile membership does not mean that Studio hooks run it automatically.
+
+## Update or remove a local installation
+
+Update the Snyk CLI using your [CLI installation method](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli), then run `snyk studio install --experimental` again to refresh the installed components. Start a new assistant session after updating.
+
+To remove a local installation:
+
+```bash
+snyk studio install --experimental --uninstall
 ```
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "npx",
-      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
-      "env": {
-        "SNYK_MCP_PROFILE": "experimental"
-      }
-    }
-  }
-}
 
+To preview removal first:
+
+```bash
+snyk studio install --experimental --uninstall --dry-run
 ```
-{% endcode %}
 
-If a profile is not specified in setup, the profile defaults to full.
+Add `--ade` to target specific assistants. Removal deletes files the installer copied and removes Snyk entries from configuration files it merged into. It preserves other configuration entries.
 
-## Configure Secure at inception directives
+For an enterprise deployment, use the [ADS removal procedure](../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md#uninstall).
 
-The Secure at inception directives are used to guide agents to test for security issues at the time of code generation. To learn how to configure these directives with code examples, visit [Secure at inception directives](directives.md#secure-at-inception-directives).
 
-## Configure Remediation directives
+<a id="configure-secure-at-inception-directives"></a>
+<a id="configure-remediation-directives"></a>
 
-Remediation directives are commands that can be used to accelerate the remediation of pre-existing security issues. To learn how to configure these directives with code examples, visit [Remediation directives](directives.md#remediation-directives).
+## Use Studio in your workflow
 
-{% hint style="info" %}
-Snyk maintains quickstart guides for some of the more common coding assistants. For detailed configuration steps of a specific coding assistant, visit Quickstart guides.
-{% endhint %}
+* For automatic code and dependency scanning, visit [Secure at inception directives](directives.md#secure-at-inception-directives).
+* To evaluate a dependency before adding it, visit [Package health checks](directives.md#package-health-checks).
+* To fix existing vulnerabilities, visit [Remediation directives](directives.md#remediation-directives).
+* For enterprise rollout, visit [Distribution at scale](distribution-at-scale.md).

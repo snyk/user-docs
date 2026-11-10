@@ -17,7 +17,7 @@ Dashboard data adjusts automatically based on your selected global filters and t
 
 ### Key Performance Indicators
 
-This section displays aggregate totals for the selected time range and calculates the percentage change compared to the previous equivalent period.
+This section displays aggregate totals for the selected time range. Some widgets also compare their totals with the previous equivalent period. The Studio scan widgets do not show a prior-period comparison.
 
 The following widgets are enabled by default:
 
@@ -29,9 +29,9 @@ The following widgets are enabled by default:
 
 Additionally, you can add the following widgets:
 
-* **Projects Monitored**: Number of Snyk Projects continuously monitored for open-source vulnerabilities and license issues after using the `snyk monitor` CLI command.
-* **Agentic Scans**: Number of Snyk Studio scans for the selected timeframe.
-* **Developers running agentic scans: S**nyk Studio adoption rate.
+* **Projects Monitored**: Number of Snyk Projects monitored during the selected timeframe.
+* **Agentic Scans**: Number of Snyk Open Source, Snyk Code, and Snyk IaC scan events attributed to Studio MCP or background execution during the selected timeframe with exit codes 0 or 1. Container scans, Secrets scans, and events with other exit codes are excluded.
+* **Developers running agentic scans**: Number of distinct developers who ran a qualifying Snyk Studio scan during the selected timeframe. For the execution paths behind Studio activity, visit [Usage analytics](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/usage-analytics).
 * **Total PR checks**: Number of pull request (PR) checks for the selected timeframe.
 * **PR check success rate**: Outcomes of PR checks. An increasing success rate over time demonstrates that developers produce more secure code earlier in the software development lifecycle.
 * **Snyk Organizations**: Track Snyk rollout progress by viewing the total number of new Snyk Organizations created over time.
