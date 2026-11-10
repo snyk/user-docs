@@ -19727,7 +19727,7 @@
       },
       "MaintenanceDetails": {
         "additionalProperties": false,
-        "description": "Maintenance health signals for the package as a whole, based on repository-level activity. These signals reflect the overall project status. They do not represent the maintenance state of specific versions or version lines.",
+        "description": "Maintenance health signals for the package as a whole, based on repository-level activity. These signals reflect the overall project status. They do not represent the maintenance state of specific versions or version lines. Lifecycle describes registry publication status, while is_archived indicates whether the repository is archived. Rating combines lifecycle, archive status and other maintenance signals. A package can therefore have an active lifecycle while its maintenance rating is Inactive.",
         "properties": {
           "description": {
             "description": "Human-readable explanation of the maintenance rating",
