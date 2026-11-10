@@ -246,7 +246,7 @@ In Continuous Offensive Security, when the finding was first confirmed by any sc
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Sny by applying a patch, upgrade, or pin. See [Vulnerability fix types](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types).
+A measure of whether a vulnerability can be fixed by Snyk by applying a patch, upgrade, or pin. See [Vulnerability fix types](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types).
 
 ### Fix PR
 
