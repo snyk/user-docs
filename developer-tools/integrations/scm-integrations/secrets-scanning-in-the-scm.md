@@ -11,8 +11,8 @@ last_reviewed_source: focused-edit
 {% hint style="info" %}
 System limits for Snyk Secrets in the SCM:
 
-* Maximum file size: 1 MB
-* Maximum repository or bundle size: 70 GB
+* Maximum file size: 50MB
+* Maximum repository or bundle size: 150GB
 * Maximum number of files in a repository or bundle: 4.5 million
 {% endhint %}
 
