@@ -9,8 +9,8 @@ last_reviewed_source: focused-edit
 {% hint style="info" %}
 To use Snyk Secrets in the CLI, consider these system parameters:
 
-* Maximum file size: 1 MB
-* Maximum repository or bundle size: 2 GB
+* Maximum file size: 50MB
+* Maximum repository or bundle size: 10GB
 * Maximum number of files in a repository or bundle: 300,000
 * Maximum file path length: 256 characters
 {% endhint %}

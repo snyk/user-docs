@@ -22,7 +22,7 @@ Snyk uses this integration when it creates fix pull requests and merge requests.
 
 Snyk does not use the integration to scan. Snyk reads your dependencies from the lockfile, so private packages listed in the lockfile appear in scan results. For a Project without a lockfile, Snyk resolves dependencies from the public npm registry and cannot resolve packages that exist only in your private registry.
 
-You can add configuration to tell Snyk where your private npm Teams and npm Enterprise Node.js packages are hosted and under what scope..
+You can add configuration to tell Snyk where your private npm Teams and npm Enterprise Node.js packages are hosted and under what scope.
 
 This is the same information you would normally add in your `.yarnrc` or `.npmrc`
 
@@ -43,6 +43,35 @@ This is the same information you would normally add in your `.yarnrc` or `.npmrc
 ## npm Teams and npm Enterprise registry settings
 
 You can configure token-based authentication for npm Teams and npm Enterprise integrations.
+
+### Token requirements
+
+For the public npm registry (`https://registry.npmjs.org`), use an npm granular access token. npm no longer supports classic tokens. For details, see [About access tokens](https://docs.npmjs.com/about-access-tokens/) in the npm documentation. Create the token with the following settings:
+
+* Packages and scopes: **Read-only** access to every private package or scope that your Projects depend on. For packages owned by an npm organization, select the organization's scope, for example `@your-org`. Snyk does not need write access.
+* Organizations: **No access**. This setting only covers managing the organization. Package access comes from **Packages and scopes**.
+* Expiration: choose a date that suits your rotation policy. After the token expires, Snyk can no longer use it to reach your registry. Update the token in the integration before it expires.
+
+To check the token before you add it to Snyk, run the following commands.
+
+The first command checks that the token authenticates, which is what the Snyk connection check verifies. Confirm that it returns your npm username, for example `{"username":"your-npm-user"}`:
+
+```bash
+curl -s -H "Authorization: Bearer <your-token>" \
+  https://registry.npmjs.org/-/whoami
+```
+
+The second command checks that the token can read a private package. Confirm that it returns `200`:
+
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" \
+  -H "Authorization: Bearer <your-token>" \
+  https://registry.npmjs.org/<your-private-package>
+```
+
+For a scoped package, encode the slash in the package name, for example `@your-scope%2fyour-package`.
+
+### Configure the credentials
 
 1. Navigate to **Settings > Integrations > Package Repositories > npm.**\
    You should see the **Credentials** screen at the beginning.
