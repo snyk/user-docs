@@ -9755,9 +9755,15 @@
                             "type": "string"
                           }
                         },
+                        "required": [
+                          "id"
+                        ],
                         "type": "object"
                       }
                     },
+                    "required": [
+                      "data"
+                    ],
                     "type": "object"
                   },
                   "role": {
@@ -9779,9 +9785,15 @@
                             "type": "string"
                           }
                         },
+                        "required": [
+                          "id"
+                        ],
                         "type": "object"
                       }
                     },
+                    "required": [
+                      "data"
+                    ],
                     "type": "object"
                   },
                   "user": {
@@ -9803,9 +9815,15 @@
                             "type": "string"
                           }
                         },
+                        "required": [
+                          "id"
+                        ],
                         "type": "object"
                       }
                     },
+                    "required": [
+                      "data"
+                    ],
                     "type": "object"
                   }
                 },
@@ -9825,9 +9843,15 @@
                 "type": "string"
               }
             },
+            "required": [
+              "relationships"
+            ],
             "type": "object"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "CreateGroupPolicyPayload": {
@@ -37475,7 +37499,8 @@
                 "$ref": "#/components/schemas/CreateGroupMembershipRequestBody"
               }
             }
-          }
+          },
+          "required": true
         },
         "responses": {
           "201": {
