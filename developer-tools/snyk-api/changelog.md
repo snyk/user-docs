@@ -1,3 +1,25 @@
+## 2026-03-25 - Updated 2026-11-10
+
+### POST - `/groups/{group_id}/memberships` - Updated
+- request body became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/group/data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/group/data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/role/data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/role/data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/user/data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/user/data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2026-03-25 - Updated 2026-09-30
 
 ### POST - `/orgs/{org_id}/export` - Updated
