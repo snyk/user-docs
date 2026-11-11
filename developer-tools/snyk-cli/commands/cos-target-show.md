@@ -1,18 +1,18 @@
 ---
-description: Use snyk cos target show to view the details of a target.
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-09T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: Use snyk cos target get to view the details of a target.
 ---
 
-# COS target show
+# COS target get
 
 ## Usage
 
-`snyk cos target show [<OPTIONS>]`
+`snyk cos target get [<OPTIONS>]`
 
 ## Description
 
-The `snyk cos target show` command shows the details of a target.
+The `snyk cos target get` command gets the details of a target.
 
 For a list of related commands, visit the [Snyk COS](cos.md) help, `snyk cos --help`.
 
@@ -40,7 +40,7 @@ Use the `-d` option to output the debug logs.
 Example:
 
 ```bash
-$ snyk cos target show --target-id=92b10f07ec07c7b1b73305181398ccf5
+$ snyk cos target get --target-id=92b10f07ec07c7b1b73305181398ccf5
 ```
 
 ### `--output=<FORMAT>`, `-o <FORMAT>`

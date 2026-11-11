@@ -1,7 +1,7 @@
 ---
-description: Use the snyk cos target commands to create, inspect, and export targets.
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-09T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: Use the snyk cos target commands to create, inspect, and export targets.
 ---
 
 # COS target
@@ -18,9 +18,11 @@ For a list of related commands, visit the [Snyk COS](cos.md) help, `snyk cos --h
 
 ## Commands
 
-* [`snyk cos target add`](cos-target-add.md), `snyk cos target add --help`: create a target from a configuration file
+* [`snyk cos target create`](cos-target-add.md), `snyk cos target create --help`: create a target from a configuration file
+* [`snyk cos target update`](cos-target-update.md), `snyk cos target update --help`: update a target from a configuration file
 * [`snyk cos target list`](cos-target-list.md), `snyk cos target list --help`: list all targets
-* [`snyk cos target show`](cos-target-show.md), `snyk cos target show --help`: show the details of a target
+* [`snyk cos target get`](cos-target-show.md), `snyk cos target get --help`: show the details of a target
+* [`snyk cos target delete`](cos-target-delete.md), `snyk cos delete get --help`: delete a target
 * [`snyk cos target dump`](cos-target-dump.md), `snyk cos target dump --help`: export a target as YAML
 
 For a sample configuration file to use with `snyk cos target add`, visit [COS target template](cos-target-template.md)

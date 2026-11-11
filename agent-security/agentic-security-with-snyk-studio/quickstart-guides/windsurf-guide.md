@@ -1,169 +1,59 @@
 ---
-description: >-
-  How to access Snyk Studio in Windsurf with the Snyk Security plugin or a
-  direct install
+description: How to connect Devin Desktop to the local Snyk MCP server
 nav_context: classic
 last_reviewed: 2026-08-20
 last_reviewed_source: focused-edit
 ---
 
-# Windsurf guide
+# Connect Devin Desktop to Snyk
 
-Access [Snyk Studio](../../), including Snyk's MCP server, in Windsurf to secure code generated with agentic workflows through an LLM. This can be achieved by using the Snyk Security plugin or installing Snyk Studio directly. For most users, we recommend accessing Snyk Studio using the Snyk Security plugin.
+Connect the Devin Local agent in Devin Desktop to Snyk tools to scan code and dependencies.
 
-## Recommended: Access Snyk Studio using the Snyk Security Plugin
-
-1. Open the Snyk Security plugin in Windsurf
-2. Click `Install`
-
-<figure><img src="../../.gitbook/assets/Screenshot 2025-10-13 at 2.19.30 PM.png" alt="Install the Snyk Security plugin in Visual Studio Code"><figcaption><p>Install the Snyk Security plugin in Visual Studio Code</p></figcaption></figure>
-
-### Enable "Secure At Inception"
-
-Once installation completes, a modal will appear prompting you to opt-in to Snyk Studio's "[Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive)." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's **Settings** page.
-
-<figure><img src="../../.gitbook/assets/image (31).png" alt="Modal prompting to opt in to Secure at Inception"><figcaption></figcaption></figure>
-
-Choosing yes will activate `Auto Configure Snyk Mcp Server` and set the `Secure at Inception: Execution Frequency` to "On Code Generation." These settings willl handle the configuration of the Snyk MCP and the creation of the snyk\_rules.mdc file within the directory.
-
-#### Updating Secure at Inception settings
-
-Users who previously installed the VS Code IDE extensions and did not enable Secure at Inception via the modal window can enable them after the fact via the IDE extension settings. Users can also update Secure at Inception settings or disable them by setting the `Execution Frequency` to "Manual."
-
-<figure><img src="../../.gitbook/assets/image (42).png" alt="Updating the Secure at Inception setting in the extension settings"><figcaption></figcaption></figure>
-
-### Authenticate
-
-{% hint style="warning" %}
-If you are enabling Snyk Code for the first time, you must import existing projects in order to properly scan them.
-{% endhint %}
-
-Once you've made a selection regarding "Secure at Inception", you need to authenticate. You can authenticate at two points in this process:
-
-* Immediately after plugin install
-* Prior to your first Snyk code scan
-
-As part of the authentication flow, you'll be asked to either sign up or sign in on the Snyk website. A browser window will open.
-
-_For new users_, select the preferred sign up method and agree to the terms on the next screen. Once you've successfully authenticated, you'll be instructed to return to your IDE.
+[Devin Desktop is the new name for Windsurf](https://devin.ai/blog/windsurf-is-now-devin-desktop). Cognition removed the legacy Cascade agent from Devin Desktop on September 8, 2026. Visit the [Devin Desktop changelog](https://docs.devin.ai/desktop/changelog).
 
 {% hint style="info" %}
-In order to use Snyk Studio, specifically Snyk's SAST scanning capabilities, you'll need to enable [Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to our [data retention policy](https://docs.snyk.io/snyk-data-and-governance/how-snyk-handles-your-data). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code. [More details on plans](https://snyk.io/plans/)
+This procedure configures agent-invoked MCP access. It does not install Studio Secure at inception hooks, remediation commands, or package-health skills.
+
+The Studio installer still accepts `--ade=windsurf` and writes legacy configuration under `.codeium/windsurf`. It does not configure the Devin Local MCP files. Devin Local uses skills rather than legacy Cascade workflows.
 {% endhint %}
 
-For existing user&#x73;_,_ select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM will prompt you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
+## Configure the local Snyk MCP server
 
-### Run Snyk Studio
+Install [Devin Desktop](https://devin.ai/desktop) and complete the account and product setup in [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md).
 
-Once authenticated, Snyk Studio should be triggered whenever new code is generated by the LLM. If Snyk Studio is not enabled, restart your IDE and try generating code again.
+1. Authenticate the Snyk CLI:
 
-**Please note:** Free users are limited to a set number of scans. If you reach the allotment, we recommend [reaching out to sales](https://snyk.io/contact-us/) to unlock additional thresholds.
+   ```bash
+   snyk auth
+   ```
 
-## Alternate: Install Snyk Studio Directly
+2. Add the Snyk MCP server to `.devin/mcp_config.local.json` in your repository. Preserve existing entries in `mcpServers`:
 
-## Prerequisites
+   ```json
+   {
+     "mcpServers": {
+       "Snyk": {
+         "command": "/absolute/path/to/snyk",
+         "args": ["mcp", "-t", "stdio"]
+       }
+     }
+   }
+   ```
 
-* [Install Windsurf](windsurf-guide.md#install-windsurf)
-* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
-* [Install the Snyk MCP](windsurf-guide.md#install-the-snyk-mcp-server-in-windsurf)
+   Replace the `command` value with the absolute path to your Snyk CLI executable. This local configuration is not shared with your team. Visit [Devin MCP configuration](https://docs.devin.ai/cli/extensibility/mcp/configuration) for other scopes.
 
-### Install Windsurf
+3. Start a new Devin Local session in the repository and ask the assistant to scan it:
 
-Install Windsurf to your local machine from the [Windsurf website](https://windsurf.com/).
+   ```text
+   Scan this repository for code and dependency vulnerabilities. Summarize the findings before making changes.
+   ```
 
-### Install the Snyk MCP Server in Windsurf
+4. Approve the Snyk MCP tool calls and complete Snyk authentication or repository trust requests when prompted. Inspect the tool calls and scan results to verify the connection.
 
-Install the official Snyk MCP Server using the Windsurf MCP Marketplace.
+## Remove the MCP connection
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt="Snyk MCP server in the Windsurf MCP Marketplace"><figcaption></figcaption></figure>
+Remove the `Snyk` entry from the configuration file where you added it, then start a new assistant session. Preserve other MCP server entries.
 
-## Setting up the Snyk MCP Server
+If the connection fails, visit [Troubleshooting](../troubleshooting.md).
 
-As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will manage this automatically.
-
-These workflows are automatically executed by the underlying model and the agentic code assistant, and you will need to approve them in the Windsurf chat window.
-
-## Examples
-
-### Scanning for security vulnerabilities
-
-In the chat, you can tag specific files or functions and ask Windsurf to scan your code for safely deploying to production:
-
-{% code title="prompt" overflow="wrap" %}
-```
-Scan this directory for code security & dependency vulnerabilities and security issues
-```
-{% endcode %}
-
-Windsurf indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
-
-<figure><img src="../../.gitbook/assets/image (394).png" alt="Windsurf calling the Snyk MCP server for a vulnerability scan"><figcaption></figcaption></figure>
-
-Windsurf is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found.
-
-### "Secure at inception" rules
-
-To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
-
-The following is a suggested instruction for [Windsurf rules](https://docs.windsurf.com/windsurf/cascade/memories#rules). Append the following contents to the rules file at `global_rules.md`:
-
-{% code title="global_rules.md" overflow="wrap" %}
-```
----
-alwaysApply: true
-always_on: true
-trigger: always_on
-applyTo: "**"
-description: Snyk Security At Inception
----
-
-# Project security best practices
-
-- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
-- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no new issues are found.
-```
-{% endcode %}
-
-#### Troubleshooting - Install Snyk MCP Server
-
-The Snyk MCP Server should be installed using the IDE Extension or Windsurf MCP Marketplace. If you need to install the Snyk MCP Server manually then follow one of the options below.
-
-#### Install with Node.js and `npx`
-
-Create or edit the MCP configuration file `mcp_config.json` . This file can be accessed by navigating to the Windsurf Settings > Manage MCPs > View raw config.
-
-If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to `mcp_config.json`:
-
-```json5
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "npx",
-      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
-      "env": {}
-    }
-  }
-}
-```
-
-<figure><img src="../../.gitbook/assets/image (44).png" alt="Snyk MCP server command using the Node.js npx executable"><figcaption></figcaption></figure>
-
-#### Install with pre-installed Snyk CLI
-
-If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in `mcp_config.json`. Specify the full path to the Snyk executable CLI:
-
-```json5
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "/absolute/path/to/snyk",
-      "args": ["mcp", "-t", "stdio"],
-      "env": {}
-    }
-  }
-}
-```
-
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
+If the connection fails, visit [Troubleshooting](../troubleshooting.md).

@@ -1,6 +1,6 @@
 ---
 nav_context: classic
-description: Explore Snyk Partner integration solutions across 17 categories
+description: Explore Snyk Partner integration solutions
 last_reviewed: 2026-06-17
 last_reviewed_source: focused-edit
 ---
@@ -11,7 +11,7 @@ last_reviewed_source: focused-edit
 
 ## Partner integrations
 
-Explore our 17 integration categories for Snyk Partner solutions below. Click on a category to view specific partner offerings.
+Explore the following Snyk Partner integration categories. Click a category to view specific partner offerings.
 
 Interested in building an integration with Snyk?[ Join Snyk TAPP](https://partners.snyk.io/English/register_email.aspx) (Technology Alliance Partner Program).
 
@@ -64,9 +64,9 @@ To see the documentation for each integration, click on the integration name in 
 
 | Integration                                                                                                                            | Description                                                                                                                                                                                                                                                               |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Cline](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cline-guide)                           | Snyk Studio integrates with the Cline AI coding agent to perform security scanning and enforce "Secure at Inception" rules on code, dependencies, and configurations, enabling automated vulnerability identification and fixing during the agentic development workflow. |
+| [Cline](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cline-guide)                           | Connect Cline to the local Snyk MCP server to scan code and dependencies. Rules guide the agent when to invoke tools and do not provide Studio hook execution. |
 | [Continue](https://www.continue.dev/)                                                                                                  | Scans custom AI code assistants for vulnerabilities with Snyk using MCP.                                                                                                                                                                                                  |
-| [Cursor](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide)                         | Add the Snyk MCP server to Cursor to secure code generated with agentic workflows through an LLM.                                                                                                                                                                         |
+| [Cursor](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide)                         | Use the Studio installer to configure Secure at inception hooks, MCP access, remediation, and package-health components in Cursor.                                                                                                                                                                         |
 | [Devin](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/devin-guide)                           | Secure LLM-generated code in Devin using Snyk Studio (including Snyk's MCP server). Authentication will be requested upon first use.                                                                                                                                      |
 | [Factory](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/factory-guide)                       | Secure LLM-generated code from agentic workflows using Snyk Studio and the MCP server within Factory. Authentication required on first use.                                                                                                                               |
 | [Factory Terminal](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/factory-terminal-ide-guide) | Secure LLM-generated code (via agentic workflows) using Snyk Studio (with MCP server) in Factory Terminal/IDE. Install Snyk Studio directly.                                                                                                                              |
@@ -74,7 +74,7 @@ To see the documentation for each integration, click on the integration name in 
 | [Qodo (formerly Codium)](https://snyk.io/blog/Securing-the-future-of-AI-generated-code/)                                               | Snyk security intelligence is integrated into Qodo's AI Code Quality Platform to achieve Secure at Inception, automatically fixing code security vulnerabilities and quality issues.                                                                                      |
 | [TabbyML](https://snyk.io/blog/Securing-the-future-of-AI-generated-code/)                                                              | Tabby is an open-source, self-hosted AI coding assistant. Scan your code for vulnerabilities with Snyk in the IDE extension.                                                                                                                                              |
 | [Tabnine](https://www.tabnine.com/blog/open-source-and-generative-ai/)                                                                 | Use Snyk to scan vulnerabilities with the Tabnine AI coding assistant.                                                                                                                                                                                                    |
-| [Windsurf (formerly Codeium)](https://snyk.io/articles/a-beginners-guide-to-visually-understanding-mcp-architecture/)                  | Scan Windsurf's AI-generated code using Snyk MCP.                                                                                                                                                                                                                         |
+| [Devin Desktop](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide)                  | Connect Devin Desktop to the Snyk MCP server to scan AI-generated code.                                                                                                                                                                                                                         |
 
 ### Compliance
 

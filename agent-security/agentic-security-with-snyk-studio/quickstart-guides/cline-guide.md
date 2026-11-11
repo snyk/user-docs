@@ -5,25 +5,29 @@ last_reviewed: 2026-09-16
 last_reviewed_source: bulk-sync
 ---
 
-# Cline guide
+# Connect Cline to Snyk
 
-You can access Snyk Studio, including Snyk's MCP server, in Cline to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+Connect Cline to the local Snyk MCP server to scan code and dependencies from your coding assistant.
+
+{% hint style="info" %}
+This setup provides MCP access. It does not install Studio Secure at inception hooks. Rules instruct the agent when to scan and depend on the model following those instructions.
+
+For clients supported by the Studio CLI installer, use [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md). For enterprise deployment, use the [Agentic Development Security (ADS) installer](../../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md).
+{% endhint %}
+
 
 ## Prerequisites
 
-* [Install Cline](cline-guide.md#install-cline)
+* Install Cline
 * [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
-* [Install the Snyk MCP](cline-guide.md#install-the-snyk-mcp-server-in-cline-using-npx)
-
-### Install Cline
 
 Consult the official Cline documentation for [Cline installation instructions](https://docs.cline.bot/getting-started/installing-cline).
 
-### Install the Snyk MCP Server in Cline using npx
+## Install the Snyk MCP server in Cline using npx
 
 This installation instruction assumes you have a Node.js local development environment setup with the `npx` executable.
 
-Open the MCP Server configuration in Cline. Click the **Manage MCP Servers** icon at the bottom panel, then click the setup wheel icon at the top right.
+Open the Cline MCP configuration from **MCP Servers** in the top toolbar. Select **Configure**, then **Configure MCP Servers**. Visit the [Cline MCP documentation](https://docs.cline.bot/mcp/mcp-overview).
 
 <figure><img src="../../.gitbook/assets/image (352).png" alt="Manage MCP Servers icon in the Cline bottom panel"><figcaption></figcaption></figure>
 
@@ -31,57 +35,57 @@ Click the **Configure MCP Servers** button from the **MCP Servers** tab:
 
 <figure><img src="../../.gitbook/assets/image (353).png" alt="Configure MCP Servers button on the MCP Servers tab"><figcaption></figcaption></figure>
 
-To install the Snyk MCP Server, add the following `mcpServers` configuration block to the Cline MCP Servers configuration file:
+To install the Snyk MCP server, add the following `mcpServers` configuration block to the Cline MCP Servers configuration file:
 
-```
+```json5
 {
   "mcpServers": {
     "Snyk Security": {
       "command": "npx",
-      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
+      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"]
     }
   }
 }
 ```
 
-### Install the Snyk MCP Server in Cline using Snyk CLI
+## Install the Snyk MCP server in Cline using Snyk CLI
 
-Ensure that the Snyk CLI is installed and that the `snyk` executable is available in your system's path.
+Ensure that the Snyk CLI is installed and that the `snyk` executable is available in your system path.
 
-To install the Snyk MCP Server with the Snyk CLI, follow these instructions:
+To install the Snyk MCP server with the Snyk CLI, follow these instructions:
 
-*   Add the following `mcpServers` configuration block to the Cline MCP Servers configuration file:\\
+*   Add the following `mcpServers` configuration block to the Cline MCP Servers configuration file:
 
-    ```
+    ```json5
     {
       "mcpServers": {
         "Snyk Security": {
           "command": "/absolute/path/to/snyk",
-          "args": ["mcp", "-t", "stdio"],
+          "args": ["mcp", "-t", "stdio"]
         }
       }
     }
     ```
 
 {% hint style="info" %}
-If you installed `snyk` using npm as a global module and you are using fnm to manage your versions, then you must specify the full path to the `snyk` executable. The path may look like this: `/Users/username/.local/state/fnm_multishells/8831_1753881185071/bin/snyk`.
+If you installed `snyk` using npm as a global module and you are using fnm to manage your versions, then you must specify the absolute path to the `snyk` executable. For example: `/Users/username/.local/state/fnm_multishells/8831_1753881185071/bin/snyk`.
 {% endhint %}
 
-After saving the MCP Servers configuration, confirm the Snyk MCP Server is successfully installed and listed in the Cline UI.
+After saving the MCP Servers configuration, confirm the Snyk MCP server is successfully installed and listed in the Cline UI.
 
 <figure><img src="../../.gitbook/assets/image (354).png" alt="Snyk MCP server listed as installed in Cline"><figcaption></figcaption></figure>
 
-## Setting up the Snyk MCP Server
+## Set up the Snyk MCP server
 
-As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
+Authenticate with Snyk and complete the client's trust request for the repository directory when prompted.
 
-These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
+The assistant invokes the authentication and trust workflows. Complete any browser confirmation request.
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt="Cline running a Snyk workflow through the MCP server"><figcaption></figcaption></figure>
 
 You can explicitly prompt to authenticate your account as follows:
 
-```
+```text
 Authenticate my Snyk account
 ```
 
@@ -91,37 +95,28 @@ After enabling Act mode and approving the request, the agent opens a browser for
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt="Browser opened by the agent to authenticate to the Snyk Web UI" width="375"><figcaption></figcaption></figure>
 
-## Examples
+## Secure at inception rules
 
-### Scanning for security vulnerabilities
-
-In the chat, you can tag specific files or functions and ask the agent to scan your code and third-party dependencies of the Project.
-
-{% code title="prompt" overflow="wrap" %}
-```
-Scan this directory for code security & dependency vulnerabilities and security issues
-```
-{% endcode %}
-
-Cline will invoke Snyk scanning, provide output and insights based on the results that Snyk returned:
-
-<figure><img src="../../.gitbook/assets/image (11).png" alt="Cline reporting the results of a Snyk scan"><figcaption></figcaption></figure>
-
-### "Secure at inception" rules
-
-To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+Add rules to guide the assistant when invoking Snyk scans. Rules do not guarantee that the model runs a scan. For the generic rule text, visit [Rules for manual MCP integrations](../directives.md#rules-for-manual-mcp-integrations).
 
 The following is a suggested instruction for [Cline rules](https://docs.cline.bot/features/cline-rules). Open the Rules and Workflows menu using the bottom chat navigation from Cline.
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt="Snyk rules added to the Cline rules configuration"><figcaption></figcaption></figure>
 
-Add the following contents as a global rule:
+Add the generic rule text as a global rule.
 
-{% code title="" overflow="wrap" %}
-```
-- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
-- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no new issues are found.
+## Examples
+
+In the chat, you can tag specific files or functions and ask the agent to scan your code and third-party dependencies of the Project.
+
+{% code title="prompt" overflow="wrap" %}
+```text
+Scan this directory for code security & dependency vulnerabilities and security issues
 ```
 {% endcode %}
+
+Cline invokes Snyk scanning tools and summarizes the results:
+
+<figure><img src="../../.gitbook/assets/image (11).png" alt="Cline reporting the results of a Snyk scan"><figcaption></figcaption></figure>
+
+If the connection fails, visit [Troubleshooting](../troubleshooting.md).
