@@ -7,13 +7,13 @@ last_reviewed_source: bulk-sync
 
 # Usage analytics
 
-Snyk provides Snyk Studio usage analytics in the following report types:
+Use Snyk analytics to understand adoption and scanning activity in developer workflows:
 
-* Snyk Studio Adoption
-* [Developer IDE and CLI usage](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/prevention-reports#developer-ide-and-cli-usage-report)
+* [Overview tab](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/overview-tab) for agentic scan and developer-adoption widgets
+* [Developer IDE and CLI usage report](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/prevention-reports#developer-ide-and-cli-usage-report) for local developer testing
 
-Select the report name for more details on the report type.
+Studio uses two execution paths: background CLI scans started by hooks and direct MCP tool calls from the assistant. These use the integration names `STUDIO` and `MCP`, respectively. Distinguish them when investigating Studio activity rather than treating direct MCP calls as the only Studio interaction.
 
-{% hint style="warning" %}
-Data is only available for Agentic scans with CLI version 1.1298.1 or later.
+{% hint style="info" %}
+Granular agentic scan data requires Snyk CLI version 1.1298.1 or later. Visit the report documentation for its prerequisites. Analytics version requirements do not establish compatibility with the Studio installer.
 {% endhint %}

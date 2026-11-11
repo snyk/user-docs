@@ -6,31 +6,35 @@ last_reviewed: 2026-09-17
 last_reviewed_source: bulk-sync
 ---
 
-# Gemini Code Assist guide
+# Connect Gemini Code Assist to Snyk
 
-You can access Snyk Studio, including Snyk's MCP server, in Gemini Code Assist to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+{% hint style="warning" %}
+Google has ended Gemini CLI and Gemini Code Assist access for some account types and is retiring it for others. Visit [Migrate from Gemini tooling](antigravity-guide.md#migrate-from-gemini-tooling) for the schedule and Antigravity setup. The Studio installer's `gemini` target configures Gemini CLI, not Antigravity CLI.
+{% endhint %}
+
+Connect Gemini Code Assist to the local Snyk MCP server to scan code and dependencies from your coding assistant.
+
+{% hint style="info" %}
+This setup provides MCP access. It does not install Studio Secure at inception hooks. Rules instruct the agent when to scan and depend on the model following those instructions.
+
+For clients supported by the Studio CLI installer, use [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md). For enterprise deployment, use the [Agentic Development Security (ADS) installer](../../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md).
+{% endhint %}
+
 
 ## Prerequisites
 
-* [Install the code assistant extension](gemini-code-assist-guide.md#install-gemini-code-assist)
+* Install the code assistant extension
 * [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
-* [Install the Snyk MCP](gemini-code-assist-guide.md#install-the-snyk-mcp-server-in-gemini-code-assist)
 
-### Install Gemini Code Assist
+Install the Gemini Code Assist extension in VS Code or a supported JetBrains IDE. Agent mode is in Preview. Visit the [Gemini Code Assist getting started page](https://codeassist.google/).
 
-Add the Gemini Code Assist extension to the VS Code or JetBrains IDE. For more details, see the official [Gemini Code Assist getting started page](https://codeassist.google/).
+## Install the Snyk MCP server in Gemini Code Assist
 
-{% hint style="info" %}
-MCP support is available only when using the agent preview mode. To enable the agent preview mode on VS Code, you have to open the settings.json VS Code user file or global settings file and enable the Insiders channel by adding the `"geminicodeassist.updateChannel": "Insiders",` line.
-{% endhint %}
+Install the Snyk MCP server using the method that best suits your operating system and local development environment.
 
-### Install the Snyk MCP Server in Gemini Code Assist
-
-Install the Snyk MCP Server using the method that best suits your operating system and local development environment.
-
-#### Install with Node.js and `npx`
-
-Create or edit the file `.gemini/settings.json` in the root directory of your Project.
+{% tabs %}
+{% tab title="Node.js and npx" %}
+For VS Code, create or edit `~/.gemini/settings.json`. Google documents a separate `mcp.json` location for IntelliJ. Follow the [IDE-specific MCP setup](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer#configure-mcp-servers) for JetBrains.
 
 If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to the file:
 
@@ -50,12 +54,12 @@ If you have the Node.js `npx` executable installed in your environment, add the 
   }
 }
 ```
+{% endtab %}
 
-#### Install with pre-installed Snyk CLI
+{% tab title="Pre-installed Snyk CLI" %}
+For VS Code, create or edit `~/.gemini/settings.json`. Google documents a separate `mcp.json` location for IntelliJ. Follow the [IDE-specific MCP setup](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer#configure-mcp-servers) for JetBrains.
 
-Create or edit the file `.gemini/settings.json` in the root directory of your Project.
-
-If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in the file. You might need to specify the full path to the Snyk executable CLI:
+If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in the file. Specify the absolute path to the Snyk CLI executable:
 
 ```json5
 {
@@ -73,56 +77,40 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
+{% endtab %}
+{% endtabs %}
 
-You might need to reload the IDE window for the changes to apply. In VS Code, do this by opening the Command Palette and choosing Developer: Reload Window.
+Reload the IDE window to apply the changes. In VS Code, open the **Command Palette** and select **Developer: Reload Window**.
 
-Next, you can verify that the Snyk MCP Server is available by enabling Agent mode on Gemini Code Assist and requesting it to list the tools it has available:
+Next, you can verify that the Snyk MCP server is available by enabling Agent mode on Gemini Code Assist and requesting it to list the tools it has available:
 
 <figure><img src="../../.gitbook/assets/image (28).png" alt="Snyk MCP server available in Gemini Code Assist agent mode"><figcaption></figcaption></figure>
 
-## Setting up the Snyk MCP Server
+## Set up the Snyk MCP server
 
-As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
+Authenticate with Snyk and complete the client's trust request for the repository directory when prompted.
 
-If you are already authenticated with the Snyk CLI installed on your system path, or through a prior interaction, then proceed to working with the Snyk MCP Server.
+If you are already authenticated with the Snyk CLI installed on your system path, or through a prior interaction, then proceed to working with the Snyk MCP server.
+
+## Gemini Code Assist security rules
+
+Add rules to guide the assistant when invoking Snyk scans. Rules do not guarantee that the model runs a scan. For the generic rule text, visit [Rules for manual MCP integrations](../directives.md#rules-for-manual-mcp-integrations).
+
+Add the generic rule text as project context for Gemini Code Assist. For VS Code, use `GEMINI.md`. For IntelliJ, use `AGENT.md` or IDE instructions scoped to the project. Visit [Google agent context guidance](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer#create-a-context-file).
 
 ## Examples
-
-### Scanning code and dependencies for security vulnerabilities
 
 In the chat, you can tag specific files or functions and ask Gemini to scan your code for safe deployment to production.
 
 {% code title="prompt" overflow="wrap" %}
-```
+```text
 Scan this directory for code security & dependency vulnerabilities and security issues
 ```
 {% endcode %}
 
-Gemini indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
+Check the tool calls to confirm that Gemini invoked the requested Snyk MCP scans.
 
 <figure><img src="../../.gitbook/assets/image (29).png" alt="Gemini calling the Snyk MCP server for a vulnerability scan"><figcaption></figcaption></figure>
 
-### Gemini Code Assist security rules
-
-To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
-
-The following is a suggested instruction for Gemini Code Assist rules. Following the [documentation proposal for Gemini Code Assist style guide](https://developers.google.com/gemini-code-assist/docs/customize-gemini-behavior-github), append the following contents to the rules file at `.gemini/styleguide.md`:
-
-{% code title=".gemini/styleguide.md" overflow="wrap" %}
-```
-
-# Project security best practices
-
-- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
-- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no new issues are found.
-```
-{% endcode %}
-
-#### Add Gemini Code Assist security rules using the Settings UI
-
-You can add these rules using VS Code **UI Settings** and locate the **Geminicodeassist: Rules** configuration:
-
-<figure><img src="../../.gitbook/assets/image (30).png" alt="Gemini Code Assist rules configuration in the VS Code settings"><figcaption></figcaption></figure>
+If the connection fails, visit [Troubleshooting](../troubleshooting.md).

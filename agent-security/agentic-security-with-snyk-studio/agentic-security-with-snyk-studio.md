@@ -9,52 +9,49 @@ last_reviewed_source: focused-edit
 
 # Overview
 
-Agentic workflows accelerate software development and innovation but introduce security risks, for example, AI-generated vulnerabilities or providing insecure practice suggestions. To address these risks, Snyk Studio embeds directives directly into AI-assisted development workflows to guide the agent towards secure software development.
+Snyk Studio brings Snyk security scanning and remediation into AI-assisted development. It connects your coding assistant to Snyk tools, scans generated code and dependency changes in supported assistants, and gives the agent context to fix vulnerabilities.
 
-Snyk Studio connects the Snyk platform, your development environment, and your AI tools in interconnected layers:
+Studio supports three related workflows:
 
-* A [default, hooks-based approach](getting-started-with-snyk-studio.md) to ensure agents generate secure code.
-* AI agents or [ADEs](https://docs.snyk.io/glossary#ade): Agentic development environments that enable developers to interact with coding agents, which can integrate with Snyk Studio to drive security.
-* [Directives](https://docs.snyk.io/glossary#directive): Hooks, skills, rules, and commands provided to coding assistants to guide them on coding and security standards.
-* [Snyk MCP Server](https://docs.snyk.io/glossary#snyk-mcp-server): An MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI.
-* The Snyk platform: Security intelligence from Snyk products (Snyk Code, Snyk Open Source, and more) which can be used to identify security issues and drive resolutions.
+| Workflow | How it works |
+| --- | --- |
+| Secure at inception | Hooks trigger background code and dependency scans during the agent's work. Studio evaluates the results and directs the agent to address newly introduced vulnerabilities. |
+| Package selection | Package-health tools and skills help the agent compare dependencies before adding them. |
+| Remediation | Commands and skills guide the agent through scanning, fixing, and validating existing vulnerabilities. |
+
+## How Studio works
+
+The Snyk CLI runs locally. Supported assistant lifecycle events trigger Studio hooks, which start background scans and evaluate results. The assistant receives security context for remediation when Studio identifies new vulnerabilities.
+
+The local Model Context Protocol (MCP) server provides another way for the assistant to invoke Snyk tools. A background hook scan and a direct MCP tool call are different execution paths. Installing only the MCP server does not configure the complete Studio workflow.
+
+Scan coverage depends on the assistant integration, Snyk product support, repository configuration, and authentication. Hook execution does not guarantee that every scan completes or that the agent resolves every finding. Use [Troubleshooting](troubleshooting.md) to check installation and scan activity.
 
 ## Coding assistant support
 
-Snyk Studio supports the following ADEs with the default hooks-based experience:
+For the assistants the installer configures and the components each one receives, visit [Getting started with Snyk Studio](getting-started-with-snyk-studio.md#coding-assistant-support).
 
-* [Claude Code](quickstart-guides/claude-code-guide.md)
-* [Codex CLI](quickstart-guides/codex-cli-guide.md)
-* [Cursor](quickstart-guides/cursor-guide.md)
-* [Gemini CLI](quickstart-guides/gemini-cli-guide.md)
+Other clients that support a local MCP server can invoke Snyk tools through [manual integration](getting-started-with-snyk-studio.md#configure-the-snyk-mcp-server). Rules give an agent instructions about when to scan. They do not provide the same execution mechanism as hooks.
 
-Snyk supports any AI agent and ADE that integrates with a local MCP Server and offers [quickstart guides](quickstart-guides/) for some of these to provide additional guidance.
+## Choose a deployment path
+
+* For enterprise deployment across teams, use the [Agentic Development Security (ADS) installer](../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md). Visit [Distribution at scale](distribution-at-scale.md) for the rollout sequence.
+* For local developer setup, use [Getting started with Snyk Studio](getting-started-with-snyk-studio.md#install-on-your-machine).
+
+## MCP server supported tools
+
+The MCP server exposes Snyk scanning and supporting tools according to the configured [MCP profile](getting-started-with-snyk-studio.md#configure-the-snyk-mcp-profile). These include code, dependency, container, infrastructure as code, and software bill of materials scanning, package-health checks, and authentication and folder-trust tools.
+
+Inspect the tool list in your MCP client to check which tools your installed CLI and selected profile expose. Tool availability does not mean a Studio hook automatically runs that tool.
+
+{% hint style="info" %}
+Dependency scans can run ecosystem tools, such as Gradle or Maven, on your machine to resolve the dependency tree.
+{% endhint %}
 
 ## Resources
 
-Snyk provides a general setup guide with instructions applicable to all coding assistants. To learn more, visit [Getting started with Snyk Studio](getting-started-with-snyk-studio.md).
-
-To learn about Snyk directives, which govern agent behavior and are automatically injected into agent interactions, visit [Guardrail Directives](directives.md#guardrail-directives). To learn about Snyk directives, which human developers or AI agents can invoke manually, visit [Command Directives](directives.md#command-directives).
-
-Snyk Studio supports large-scale distribution and centralized governance. For guidance on how to handle scaling across your organization, visit [Distribution at scale](distribution-at-scale.md).
-
-## MCP Server supported tools
-
-Snyk Studio supports integrating the following Snyk security tools into an AI system:
-
-* `snyk_sca_scan` (Open Source scan)
-* `snyk_code_scan` (Code scan)
-* `snyk_iac_scan` (IaC scan)
-* `snyk_container_scan` (Container scan)
-* `snyk_sbom_scan` (SBOM file scan)
-* `snyk_aibom` (create AI-BOM)
-* `snyk_trust` (trust a given folder before running a scan)
-* `snyk_auth` (authentication)
-* `snyk_logout` (logout)
-* `snyk_version` (version information)
-* `snyk_send_feedback` (summarizing issues fixed)
-* `snyk_package_health_check` (evaluate package health during dependency selection)
-
-{% hint style="info" %}
-Running `snyk_sca_scan` can execute third-party ecosystem tools (for example, Gradle or Maven) on your machine to fetch the dependency tree for the Project.
-{% endhint %}
+* [Getting started with Snyk Studio](getting-started-with-snyk-studio.md) for setup and the assistant capability matrix
+* [Directives](directives.md) for hooks, rules, remediation, package health, and commit-time secrets scanning
+* [Distribution at scale](distribution-at-scale.md) for enterprise rollout through ADS
+* [Troubleshooting](troubleshooting.md) for installation and scan diagnostics
+* [Usage analytics](usage-analytics.md) for adoption and scan reporting

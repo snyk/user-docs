@@ -41,8 +41,6 @@ You can customize the filters and actions or use the template as is. After finis
 {% hint style="info" %}
 **Release status**
 
-The risk factors on assets are taking the release status of the applied [risk factor](../../../fix/prioritize-issues-for-fixing/assets-and-risk-factors/#risk-factors).
-
 The Runtime discovered and Runtime last seen filters are taking the release status of the used runtime integration.
 {% endhint %}
 
