@@ -5,27 +5,33 @@ last_reviewed: 2026-09-17
 last_reviewed_source: bulk-sync
 ---
 
-# Goose CLI guide
+# Connect Goose CLI to Snyk
 
-You can access Snyk Studio, including Snyk's MCP server, in Goose CLI to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+<a id="install-goosecli"></a>
+
+Connect Goose CLI to the local Snyk MCP server to scan code and dependencies from your coding assistant.
+
+{% hint style="info" %}
+This setup provides MCP access. It does not install Studio Secure at inception hooks. Rules instruct the agent when to scan and depend on the model following those instructions.
+
+For clients supported by the Studio CLI installer, use [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md). For enterprise deployment, use the [Agentic Development Security (ADS) installer](../../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md).
+{% endhint %}
+
 
 ## Prerequisites
 
 * [Install the Goose CLI](goose-cli-guide.md#install-goosecli)
 * [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
-* [Install the Snyk MCP Server in Goose CLI using npx command](goose-cli-guide.md#install-the-snyk-mcp-server-in-goose-cli-using-npx-command) or [Install the Goose MCP Server in Goose CLI using Snyk CLI](goose-cli-guide.md#install-the-snyk-mcp-server-in-goose-cli-using-snyk-cli)
 
-### Install GooseCLI
+Install the Goose CLI. For more details, visit the official [Goose CLI installation instructions.](https://goose-docs.ai/docs/quickstart/)
 
-Install the GooseCLI. For mode details, see the official [Goose CLI installation instructions.](https://block.github.io/goose/docs/quickstart)
-
-### Install the Snyk MCP Server in Goose CLI using npx command
+## Install the Snyk MCP server in Goose CLI using npx command
 
 This installation instruction assumes you have a Node.js local development environment setup with the `npx` executable.
 
-To install the Snyk MCP Server using the Goose CLI interactive session, proceed with the following instructions:
+To install the Snyk MCP server using the Goose CLI interactive session, proceed with the following instructions:
 
-*   Start an interactive Goose configuration wizard by running the `goose configure` command:\\
+*   Start an interactive Goose configuration wizard by running the `goose configure` command:
 
     <figure><img src="../../.gitbook/assets/image (288).png" alt="Goose CLI interactive session used to add the Snyk MCP server"><figcaption></figcaption></figure>
 * From the configuration menu, chose **Add Extension.**
@@ -34,17 +40,17 @@ To install the Snyk MCP Server using the Goose CLI interactive session, proceed 
 * Run the command by typing in: `npx -y snyk@latest mcp -t stdio`
 * Continue with the defaults (timeout of 300 seconds), and optionally provide the Snyk API token if your Organization policy requires one.
 
-A complete Goose configuration walkthrough should look as follows:
+Use the following Goose configuration example:
 
 <figure><img src="../../.gitbook/assets/image (289).png" alt="Completed Goose configuration walkthrough"><figcaption></figcaption></figure>
 
 Start or resume your Goose session with the Snyk MCP server enabled.
 
-### Install the Snyk MCP Server in Goose CLI using Snyk CLI
+## Install the Snyk MCP server in Goose CLI using Snyk CLI
 
-This installation instruction assumes you have installed the Snyk CLI and the `snyk` executable is available in your system's path.
+This installation instruction assumes you have installed the Snyk CLI and the `snyk` executable is available in your system path.
 
-Install the Snyk MCP Server using the Goose CLI interactive session by following these instructions:
+Install the Snyk MCP server using the Goose CLI interactive session by following these instructions:
 
 * Start an interactive Goose configuration wizard by running the `goose configure` command.
 * Choose **Add Extension f**rom the configuration menu.
@@ -54,20 +60,20 @@ Install the Snyk MCP Server using the Goose CLI interactive session by following
 * Continue with the defaults (timeout of 300 seconds), and optionally provide the Snyk API token if your Organization policy requires one.
 
 {% hint style="info" %}
-If you installed `snyk` using npm as a global module and you are using fnm to manage your versions, then you must specify the full path to the `snyk` executable. The path may look like this: `/Users/username/.local/state/fnm_multishells/8831_1753881185071/bin/snyk`.
+If you installed `snyk` using npm as a global module and you are using fnm to manage your versions, then you must specify the absolute path to the `snyk` executable. For example: `/Users/username/.local/state/fnm_multishells/8831_1753881185071/bin/snyk`.
 {% endhint %}
 
 Start or resume your Goose session with the Snyk MCP server enabled.
 
-## Setting up the Snyk MCP Server
+## Set up the Snyk MCP server
 
-As a one-time setup, you may need to authenticate and trust the Project directory. If required, the agentic workflow will likely manage this automatically.
+Authenticate with Snyk and complete the client's trust request for the repository directory when prompted.
 
-These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog.
+The assistant invokes the authentication and trust workflows. Complete any browser confirmation request.
 
 You can explicitly prompt to authenticate your account as follows:
 
-```
+```text
 Authenticate my Snyk account
 ```
 
@@ -77,14 +83,18 @@ If you are not authenticated, this prompt opens a browser for you to authenticat
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt="Browser opened to authenticate to the Snyk Web UI" width="375"><figcaption></figcaption></figure>
 
-## Examples
+## Secure at inception rules
 
-### Scanning for security vulnerabilities
+Add rules to guide the assistant when invoking Snyk scans. Rules do not guarantee that the model runs a scan. For the generic rule text, visit [Rules for manual MCP integrations](../directives.md#rules-for-manual-mcp-integrations).
+
+Use the generic rule text with [Goose CLI recipes](https://goose-docs.ai/docs/guides/recipes/session-recipes/) or with the [Goose hints file](https://goose-docs.ai/docs/guides/context-engineering/using-goosehints/). Add it to the `.goosehints` file in the root directory of the project.
+
+## Examples
 
 In the chat, you can tag specific files or functions and ask the agent to scan your code and third-party dependencies of the Project.
 
 {% code title="prompt" overflow="wrap" %}
-```
+```text
 Scan this directory for code security & dependency vulnerabilities and security issues
 ```
 {% endcode %}
@@ -93,19 +103,4 @@ Goose CLI invokes Snyk scanning, providing output, and insights based on the res
 
 <figure><img src="../../.gitbook/assets/image (292).png" alt="Goose CLI reporting the results of a Snyk scan"><figcaption></figcaption></figure>
 
-### "Secure at inception" rules
-
-To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
-
-The following is a suggested instruction to use with [Goose CLI recipes](https://block.github.io/goose/docs/guides/recipes/session-recipes) or with [Goose hints file](https://block.github.io/goose/docs/guides/using-goosehints). Add the following contents to the `.goosehints` file in the root directory of the Project:
-
-{% code title=".goosehints" overflow="wrap" %}
-```
-# Project security best practices
-
-- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
-- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no new issues are found.
-```
-{% endcode %}
+If the connection fails, visit [Troubleshooting](../troubleshooting.md).
