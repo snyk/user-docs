@@ -9,19 +9,19 @@ last_reviewed_source: focused-edit
 
 # Trusted Output Assurance
 
-Trusted Output Assurance helps you secure AI-assisted development before insecure code reaches production. Use it to guide coding agents, scan generated code and dependencies, and fix vulnerabilities as part of the developer workflow.
+Trusted Output Assurance helps you secure AI-assisted development before insecure code reaches production. Use it to guide coding agents, scan generated code and dependencies, and provide security context for fixing findings in the developer workflow.
 
 With Snyk Studio, you can:
 
 * scan first-party code and open-source dependencies during agentic workflows
-* guide agents with directives that enforce secure-at-inception behavior
+* use directives to guide agents toward secure-at-inception practices
 * give agents Snyk security context through the local Model Context Protocol (MCP) server
 * validate fixes and reduce insecure outputs before code is merged
 * standardize these workflows across teams and development environments
 
 ## What to do next
 
-Start with [Agentic security with Snyk Studio](../../) for the full product overview.
+Start with [Overview](../../agentic-security-with-snyk-studio/agentic-security-with-snyk-studio.md) for the full product overview.
 
 Then use these guides based on what you need:
 
@@ -33,4 +33,4 @@ Then use these guides based on what you need:
 
 Snyk Studio supports a default hooks-based experience for supported agentic development environments. It also supports other coding assistants that can integrate with a local MCP server.
 
-To explore supported assistants and setup options, start from [Agentic security with Snyk Studio](../../).
+To explore supported assistants and setup options, start from [Overview](../../agentic-security-with-snyk-studio/agentic-security-with-snyk-studio.md).

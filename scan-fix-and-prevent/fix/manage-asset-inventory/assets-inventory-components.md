@@ -18,7 +18,6 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Labels](assets-inventory-components.md#labels)
 * [Developers](assets-inventory-components.md#developers)
 * [Class](assets-inventory-components.md#class)
-* [Risk factors](assets-inventory-components.md#risk-factors)
 * [Source](assets-inventory-components.md#source)
 * [SCM Repository freshness](assets-inventory-components.md#scm-repository-freshness)
 * [Clusters](assets-inventory-components.md#clusters)
@@ -83,7 +82,6 @@ The Summary tab is a concentrated view of asset properties. The Summary screen p
   * Class - specifies the business criticality of the asset.
   * Source - specifies the origin of the asset.
   * Visibility - lists the visibility status of the repositories.
-  * Risk factors - provides the list of active risk factors.
   * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
 * **Organization** - specifies the Organizations associated with the asset.
 * **Labels** - provides the list of all labels available for that asset.
@@ -247,16 +245,6 @@ Synchronization between the Asset Class and the Insights UI can take up to 3 hou
 {% endhint %}
 
 The class value can be auto-generated with policies. You just need to create a policy that has as an action **Set Asset Class**.
-
-### Risk factors
-
-The Risk Factors column lists the potential vulnerabilities and security threats associated with each asset. These risk factors help users identify specific risks, enabling them to prioritize and address issues more effectively. By understanding the particular risks tied to their assets, users can take more informed remedial actions.
-
-Here is a list of the available risk factors:
-
-* [Deployed](../prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-deployed.md)
-* [OS Condition](../prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-os-condition.md)
-* [Public facing](../prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-public-facing.md)
 
 ### Source
 

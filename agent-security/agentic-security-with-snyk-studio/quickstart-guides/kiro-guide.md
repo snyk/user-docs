@@ -1,134 +1,70 @@
 ---
-description: How to set up Snyk Studio and the Snyk MCP server in Kiro
+description: How to set up Snyk Studio in Kiro with the Snyk CLI
 nav_context: classic
 last_reviewed: 2026-09-17
 last_reviewed_source: bulk-sync
 ---
 
-# Kiro guide
+# Connect Kiro to Snyk
 
-You can access Snyk Studio, including Snyk's MCP server, in Kiro to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+Set up Snyk Studio in Kiro to invoke Snyk scanning tools, evaluate package health, and use remediation workflows.
 
-## Prerequisite
+This integration includes MCP access and remediation and package-health components. The Studio installer does not add Secure at inception hooks for Kiro. For the differences between assistants, visit the [capability matrix](../getting-started-with-snyk-studio.md#coding-assistant-support).
 
-Install Kiro on your machine. For more details, visit the official [Kiro](https://kiro.dev/) page.
+For enterprise deployment, use the [Agentic Development Security (ADS) installer](../../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md).
 
-## Recommended installation method
+## Install Snyk Studio
 
-Snyk Studio provides Amazon Kiro users with a unique, customized power to bypass manual installation. The power will:
+Install Kiro and the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli). Enable the Snyk products you want to scan with. Complete the account and product setup in [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md).
 
-* Install the latest version of the Snyk CLI (and keep it up to date).
-* Install the Snyk Studio MCP server along with the custom ruleset to scan code immediately after generation.
+1. Authenticate with Snyk:
 
-### Add Snyk Studio using Kiro Powers
+   ```bash
+   snyk auth
+   ```
 
-Navigate to the Powers panel in your Kiro agentic development environment.
+2. Run the installer as the developer who uses Kiro:
 
-<figure><img src="../../.gitbook/assets/image (38).png" alt="View of the Powers panel in Kiro"><figcaption><p>View of the Powers panel in Kiro</p></figcaption></figure>
+   ```bash
+   snyk studio install --experimental --ade=kiro
+   ```
 
-Click **Add Custom Power**. When the pop-up appears, select **Import Power from GitHub**.
+3. Start a new session in Kiro and open the repository you want to work in. Complete any MCP authentication or folder-trust request.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="Add a Custom Power in Kiro by importing from GitHub"><figcaption><p>Add a Custom Power in Kiro by importing from GitHub</p></figcaption></figure>
+## Verify installation
 
-When prompted, copy and paste the following URL path into the window:
+Run:
 
-```
-https://github.com/snyk/kiro-power-snyk/tree/main/snyk-power
-```
-
-You should now see the Snyk Studio custom **Snyk Secure at Inception** power in the list of installed powers on the left hand side of your window.
-
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="View of the Secure at Inception Power in the Installed Powers list"><figcaption><p>View of the Secure at Inception Power in the Installed Powers list</p></figcaption></figure>
-
-To verify that the Snyk Studio MCP server is running, click the ghost icon above the Kiro powers icon. You should see the Snyk MCP server in the bottom left list of MCP servers with a checkmark, indicating it is properly installed and functioning.
-
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt="Verification that the Secure at Inception Power is installed and functioning"><figcaption><p>Verification that the Secure at Inception Power is installed and functioning</p></figcaption></figure>
-
-## Alternative manual installation
-
-Manually Install Snyk Studio's MCP Server using the method suited to your OS and environment.
-
-To do this, you need to create or edit the MCP configuration file `~/.kiro/settings/mcp.json` .
-
-### Install with Node.js and `npx`
-
-If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to the file:
-
-```json5
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "npx",
-      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
-      "env": {}
-    }
-  }
-}
+```bash
+snyk studio install --experimental --verify --ade=kiro
 ```
 
-### Install with the Snyk CLI
+This checks the installed assets. For merged configuration files, the verifier checks only file existence. It does not confirm that a scan completed.
 
-If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in the file. You might need to specify the full path to the Snyk executable CLI:
+Ask Kiro to scan the repository:
 
-```json5
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "/absolute/path/to/snyk",
-      "args": ["mcp", "-t", "stdio"],
-      "env": {}
-    }
-  }
-}
+```text
+Scan this repository for code and dependency vulnerabilities. Summarize the findings before making changes.
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
+## Invoke scans and remediation
 
-The following example shows a Snyk MCP Server that was successfully configured and started:
+Ask the assistant to invoke Snyk tools when you want a scan. If you add rules about when to scan, they rely on the model following those instructions and do not provide programmatic hook execution.
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt="Snyk MCP server configured and started in Kiro"><figcaption></figcaption></figure>
+Use the installed remediation and package-health workflows for existing vulnerabilities and package selection. Visit [Directives](../directives.md) for their behavior and limitations.
 
-## Authenticate and trust the Project directory
+## Update or remove Snyk Studio
 
-As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
+After updating the Snyk CLI, run the installation command again to refresh the components, then start a new assistant session.
 
-These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
+To remove the local setup for Kiro, run:
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt="Authenticating and trusting the Project directory in Kiro"><figcaption></figcaption></figure>
-
-If you need to authenticate and trust the current directory, then proceed and complete the process.
-
-## Examples
-
-### Scanning for security vulnerabilities
-
-{% code title="prompt" overflow="wrap" %}
+```bash
+snyk studio install --experimental --uninstall --ade=kiro
 ```
-Scan this directory for code security & dependency vulnerabilities and security issues
-```
-{% endcode %}
 
-Kiro indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
+If your company deployed Studio through ADS, use the [ADS removal procedure](../../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md#uninstall).
 
-Kiro is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found.
+## Manual MCP configuration
 
-### Secure at inception directive
-
-To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows. If you installed Snyk Studio via the Kiro power, this step was already done for you.
-
-The following is a suggested instruction for [Kiro Agent Steering](https://kiro.dev/docs/steering/). Append the following contents to an Agent Steering file:
-
-{% code title="best_practices.md" overflow="wrap" %}
-```
----
-applyTo: "**"
----
-
-# Project security best practices
-
-- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
-- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no new issues are found.
-```
-{% endcode %}
+For an MCP-only connection, use the [manual configuration instructions](../getting-started-with-snyk-studio.md#configure-the-snyk-mcp-server) with your client's supported configuration format. Manual MCP setup does not install the full Studio components.

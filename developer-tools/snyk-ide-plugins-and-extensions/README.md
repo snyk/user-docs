@@ -32,7 +32,7 @@ The following Snyk plugins and extensions are available.
 The Visual Studio Code extension is compatible with the following Visual Studio Code-based IDEs.
 
 * [Cursor](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide)
-* [Windsurf](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide)
+* [Devin Desktop](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide)
 
 Snyk also offers a [Language Server](snyk-language-server/).
 
@@ -45,6 +45,6 @@ The following summarizes the versions of each IDE supported by the Snyk plugin o
 | Visual Studio extension      | <p>The latest version of the Snyk Visual Studio extension supports use with Visual Studio 2022 (version 17.5 or later) and newer Visual Studio releases.</p><p>Older extension versions may support use with Visual Studio 2015, 2017, and 2019.</p> |
 | Eclipse plugin               | <p>The latest Snyk Eclipse plugin supports use with Eclipse 2024-03 or newer.</p><p>Older plugin versions may support use with Eclipse 2023-03 or newer.</p>                                                                                         |
 | Cursor extension             | See the [Visual Studio Code extension](visual-studio-code-extension/) page for more details.                                                                                                                                                         |
-| Windsurf extension           | See the [Visual Studio Code extension](visual-studio-code-extension/) page for more details.                                                                                                                                                         |
+| Devin Desktop extension      | Visit the [Visual Studio Code extension](visual-studio-code-extension/README.md) page for more details.                                                                                                                                                         |
 
 To learn more, see the Snyk Learn lessons about [Using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/?ecosystem=general).
