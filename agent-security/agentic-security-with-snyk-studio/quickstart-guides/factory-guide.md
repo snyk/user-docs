@@ -1,115 +1,62 @@
 ---
-description: How to set up Snyk Studio and the Snyk MCP server in Factory
+description: How to configure the local Snyk MCP server for the Factory App and Droid
 nav_context: classic
 last_reviewed: 2026-09-17
 last_reviewed_source: bulk-sync
 ---
 
-# Factory guide
+# Connect Factory to Snyk
 
-You can access Snyk Studio, including Snyk's MCP server, in Factory to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+Connect Factory to the local Snyk MCP server to scan code and dependencies from your coding assistant. The Factory App and Droid use the user-level MCP configuration at `~/.factory/mcp.json`.
 
-## Prerequisites
+{% hint style="info" %}
+This is a manual MCP integration. It does not install Snyk Studio Secure at inception hooks or Agentic Development Security (ADS) Agent Behavior Governance hooks for Factory. Rules guide the model when invoking scans and do not guarantee tool execution.
+{% endhint %}
 
-* [Install Factory](factory-guide.md#install-factory)
-* [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli)
-* [Install the Snyk MCP](factory-guide.md#install-the-snyk-mcp-server-in-factory)
+## Install Factory
 
-### Install Factory
+Install the [Factory App](https://docs.factory.com/factory-app/quickstart), or use [Droid in your terminal or IDE](factory-terminal-ide-guide.md). Install and authenticate the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli), and enable the Snyk products you want to scan with.
 
-Add the Factory extension to your IDE. For more details, see the [Factory official documentation](https://docs.factory.ai/user-guides/factory-bridge/installation-and-usage).
-
-### Install the Snyk MCP Server in Factory
-
-Install the Snyk MCP Server using the method suited to your OS and environment.
-
-#### Install with pre-installed Snyk CLI
-
-Create or edit the MCP configuration file `~/Library/Application Support/Factory Bridge/mcp.json` .
-
+```bash
+snyk auth
 ```
+
+## Install the Snyk MCP server in Factory
+
+Create or edit `~/.factory/mcp.json`. Merge the Snyk entry into the existing `mcpServers` object and preserve your other server entries:
+
+```json
 {
-  "mcpServers": { 
+  "mcpServers": {
     "Snyk": {
-    "command": "/absolute/path/to/snyk",
-    "args": [
-      "mcp",
-      "-t",
-      "stdio"
-    ],
-    "env": {}
+      "type": "stdio",
+      "command": "/absolute/path/to/snyk",
+      "args": ["mcp", "-t", "stdio"]
+    }
   }
 }
-}
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page.
+Replace the `command` value with the absolute path to your Snyk CLI executable. For configuration scope and server management, visit the [Factory MCP documentation](https://docs.factory.com/harness/mcp).
 
-#### Install with Node.js and `npx`
+## Set up the Snyk MCP server
 
-```
-{
-  "mcpServers": { 
-    "Snyk": {
-    "command": "npx",
-    "args": [
-      "-y",
-      "snyk@latest",
-      "mcp",
-      "-t",
-      "stdio"
-    ],
-    "env": {}
-  }
-}
-}
-```
+Open the repository you want to scan. Check that Factory loads the Snyk MCP server, then complete any Snyk authentication or repository-trust request.
 
-The following example shows a Snyk MCP Server that was successfully configured and started.
+In Droid, use `/mcp` to inspect the server connection and available tools. For scan or authentication failures, visit [Troubleshooting](../troubleshooting.md).
 
-<figure><img src="../../.gitbook/assets/image (409).png" alt="Snyk MCP server configured and started in Factory"><figcaption></figcaption></figure>
+## Secure at inception rules
 
-This json file can also be found by clicking on the Factory icon on the top toolbar and then selecting "Open MCP Config File".
+To guide scans during development, add the generic rule text to your repository's `AGENTS.md`, for example under a `## Security scanning` heading. For the instruction file's location and behavior, visit the [Factory AGENTS.md documentation](https://docs.factory.com/harness/agents-md). For the generic rule text, visit [Rules for manual MCP integrations](../directives.md#rules-for-manual-mcp-integrations).
 
-### Setting up the Snyk MCP Server <a href="#setting-up-the-snyk-mcp-server" id="setting-up-the-snyk-mcp-server"></a>
-
-The MCP Server attempts to start automatically. The following example shows a Snyk MCP Server that was successfully configured and started.
-
-<figure><img src="../../.gitbook/assets/image (410).png" alt="Snyk MCP server started automatically in Factory"><figcaption></figcaption></figure>
-
-As a one-time setup, authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
-
-If you are already authenticated with the Snyk CLI installed on your system path, or through a prior interaction, then proceed to work with the Snyk MCP Server.
+These are model instructions, not programmatic hooks. Visit [Directives](../directives.md) for the differences between rules, hooks, commands, and skills.
 
 ## Examples
 
-### Scanning for security vulnerabilities
+Ask Factory to invoke Snyk scanning tools:
 
-In the chat, you can tag specific files or functions and ask Factory to scan your code for safe deployment to production.
-
-{% code title="prompt" overflow="wrap" %}
+```text
+Scan this repository for code and dependency vulnerabilities. Summarize the findings before making changes.
 ```
-Scan this directory for code security & dependency vulnerabilities and security issues
-```
-{% endcode %}
 
-Factory indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
-
-<figure><img src="../../.gitbook/assets/image (411).png" alt="Factory calling the Snyk MCP server for a vulnerability scan"><figcaption></figcaption></figure>
-
-Factory is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found:
-
-<figure><img src="../../.gitbook/assets/image (412).png" alt="Factory reporting combined code and dependency scan results"><figcaption></figcaption></figure>
-
-### "Secure at inception" rules <a href="#secure-at-inception-rules" id="secure-at-inception-rules"></a>
-
-To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
-
-The following is a suggested instruction for [creating memories with Factory](https://docs.factory.ai/user-guides/memory/understanding-memory#adding-new-facts):
-
-```
-- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
-- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no new issues are found.
-```
+Review the tool calls and scan results. A successful direct MCP scan confirms that Factory can invoke Snyk tools. It does not verify automatic Studio hook scanning.

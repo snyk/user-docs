@@ -15,8 +15,6 @@ From the **Inventory** > **All Assets** tab, you can use the search bar to look 
 
 Quick filters are predefined filters that you can apply to assets. Available quick filters:
 
-* **Assets with Risk factors `DEPLOYED` and `PUBLIC FACING` and `COVERAGE GAP`**: displays only the assets that have both `Deployed` and `Public facing` risk factors, and that have a coverage gap for the selected Snyk products.
-* **Assets with Risk factors `DEPLOYED` and `COVERAGE GAP`**: displays only the assets that have the `Deployed` risk factor, and with a coverage gap for the selected Snyk products.
 * **Assets with Repository freshness** **`ACTIVE` and `COVERAGE GAP`**: displays only the assets from active repositories and with a coverage gap for the selected Snyk products.
 * **Assets with Asset Class `A` and `COVERAGE GAP`**: displays only Class A assets that have a coverage gap for the selected Snyk products.
 
@@ -70,7 +68,6 @@ The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Ow
   * **Inactive**: with commits made in the last three to six months.
   * **Dormant**: with no commits made in the last six months.
   * **N/A**: with no commits detected by Snyk Essentials. This filter indicates that the repository was detected through a Snyk scan but not directly from the SCM. To detect SCM repositories, you must set up SCM integration at the Group level.
-* **Risk factors**: the available risk factors. Risk factors refer to assets that are vulnerable to security threats due to their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **SCM Integrations**: specifies how the asset is integrated with Snyk - at Group or Org level.
 * **SCM Organization**: the SCM Organization or Workspace where this asset is located.
 * **SCM Project**: the Project in the Azure DevOps or Bitbucket SCM integrations, where this asset is located.
