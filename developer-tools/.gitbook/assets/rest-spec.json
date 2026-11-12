@@ -1228,7 +1228,7 @@
       },
       "VersionRequestedResponseHeader": {
         "description": "A header containing the version of the endpoint requested by the caller.",
-        "example": "2026-03-25",
+        "example": "2026-09-09",
         "schema": {
           "$ref": "#/components/schemas/QueryVersion"
         }
@@ -1244,7 +1244,7 @@
       },
       "VersionServedResponseHeader": {
         "description": "A header containing the version of the endpoint that was served by the API.",
-        "example": "2026-03-25",
+        "example": "2026-09-09",
         "schema": {
           "$ref": "#/components/schemas/ActualVersion"
         }
@@ -1570,7 +1570,7 @@
         }
       },
       "ComponentIdParam": {
-        "description": "Component ID whose Findings should be listed or converted into a\ndocument.",
+        "description": "Component ID whose Findings should be listed.",
         "in": "path",
         "name": "component_id",
         "required": true,
@@ -3152,7 +3152,7 @@
       },
       "Version": {
         "description": "The requested version of the endpoint to process the request",
-        "example": "2026-03-25",
+        "example": "2026-09-09",
         "in": "query",
         "name": "version",
         "required": true,
@@ -4678,7 +4678,7 @@
       },
       "ActualVersion": {
         "description": "Resolved API version",
-        "example": "2026-03-25",
+        "example": "2026-09-09",
         "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
         "type": "string"
       },
@@ -7141,142 +7141,6 @@
         ],
         "type": "object"
       },
-      "BaseResource": {
-        "description": "BaseResources contain a single instance of testable content.",
-        "example": {
-          "resource": {
-            "content_type": "source",
-            "file_patterns": [],
-            "repository_url": "https://github.com/example/repo",
-            "revision_id": "00000000-0000-0000-0000-000000000000",
-            "root_folder_id": ".",
-            "type": "upload"
-          },
-          "type": "base"
-        },
-        "properties": {
-          "resource": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/BaseResourceVariant"
-              }
-            ],
-            "description": "The specific representation of what content to test."
-          },
-          "type": {
-            "enum": [
-              "base"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "resource"
-        ],
-        "type": "object"
-      },
-      "BaseResourceCreateItem": {
-        "description": "BaseResources contain a single instance of testable content.",
-        "example": {
-          "resource": {
-            "content_type": "source",
-            "file_patterns": [],
-            "repository_url": "https://github.com/example/repo",
-            "revision_id": "00000000-0000-0000-0000-000000000000",
-            "root_folder_id": ".",
-            "type": "upload"
-          },
-          "type": "base"
-        },
-        "properties": {
-          "resource": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/BaseResourceVariantCreateItem"
-              }
-            ],
-            "description": "The specific representation of what content to test."
-          },
-          "type": {
-            "enum": [
-              "base"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "resource"
-        ],
-        "type": "object"
-      },
-      "BaseResourceVariant": {
-        "discriminator": {
-          "mapping": {
-            "bundle": "#/components/schemas/BundleResource",
-            "container": "#/components/schemas/ContainerRepoResource",
-            "inline": "#/components/schemas/InlineResource",
-            "scm": "#/components/schemas/ScmResource",
-            "snyk_ref": "#/components/schemas/SnykReferenceResource",
-            "upload": "#/components/schemas/UploadResource"
-          },
-          "propertyName": "type"
-        },
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/InlineResource"
-          },
-          {
-            "$ref": "#/components/schemas/BundleResource"
-          },
-          {
-            "$ref": "#/components/schemas/UploadResource"
-          },
-          {
-            "$ref": "#/components/schemas/ScmResource"
-          },
-          {
-            "$ref": "#/components/schemas/ContainerRepoResource"
-          },
-          {
-            "$ref": "#/components/schemas/SnykReferenceResource"
-          }
-        ]
-      },
-      "BaseResourceVariantCreateItem": {
-        "discriminator": {
-          "mapping": {
-            "bundle": "#/components/schemas/BundleResource",
-            "container": "#/components/schemas/ContainerRepoResource",
-            "inline": "#/components/schemas/InlineResourceCreateItem",
-            "scm": "#/components/schemas/ScmResource",
-            "snyk_ref": "#/components/schemas/SnykReferenceResource",
-            "upload": "#/components/schemas/UploadResource"
-          },
-          "propertyName": "type"
-        },
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/InlineResourceCreateItem"
-          },
-          {
-            "$ref": "#/components/schemas/BundleResource"
-          },
-          {
-            "$ref": "#/components/schemas/UploadResource"
-          },
-          {
-            "$ref": "#/components/schemas/ScmResource"
-          },
-          {
-            "$ref": "#/components/schemas/ContainerRepoResource"
-          },
-          {
-            "$ref": "#/components/schemas/SnykReferenceResource"
-          }
-        ]
-      },
       "BitbucketServer": {
         "properties": {
           "bitbucket": {
@@ -7883,72 +7747,6 @@
         },
         "required": [
           "data"
-        ],
-        "type": "object"
-      },
-      "BundleResource": {
-        "description": "Resource representing Bundles of files created through the\nDeepcode Bundle API.\n\nBundles contain collections of files uploaded by clients to\nSnyk for testing.\n\nBundleResources can be marked either as SBOM or Source to\nindicate the contents of the Bundle.\n\nSBOM BundleResources should provide the following fields:\n- type\n- bundle_id\n- name\n- file_patterns (may be empty)\n\nSource BundleResources should provide the following fields:\n- type\n- bundle_id\n- repository_url\n- root_folder_id\n- file_patterns (may be empty)\n\nCurrently supported scans utilizing BundleResources are:\n- SAST: (1) BundleResource containing Source files.\n- SBOM (SCA): (1) BundleResource containing an SBOM\n- SBOM + Reachability Analysis (SCA): (1) BundleResource containing an SBOM, (1) BundleResource containing Source files.",
-        "example": {
-          "bundle_id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-          "content_type": "source",
-          "file_patterns": [],
-          "repository_url": "https://github.com/example/repo",
-          "root_folder_id": ".",
-          "type": "bundle"
-        },
-        "properties": {
-          "bundle_id": {
-            "description": "The ID returned from the Files Bundle Store API for a given Bundle.\nThe Deepcode Bundle API is not intended for direct public use,\nand will be replaced with the File Upload API in the future.\n\nThese IDs are sha256 digests (32 bytes or 64 hex digits).",
-            "example": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-            "pattern": "^[a-fA-F0-9]{64}$",
-            "type": "string"
-          },
-          "content_type": {
-            "description": "Content present in the Bundle.\n\nCurrently only SBOMs and Source files are accepted\ncontent types.",
-            "enum": [
-              "sbom",
-              "source"
-            ],
-            "type": "string"
-          },
-          "file_patterns": {
-            "description": "File Patterns to include in the scan. Elements must be less than 256 characters.\n\nCurrently unsupported. Provide an empty list.",
-            "items": {
-              "$ref": "#/components/schemas/String256"
-            },
-            "maxItems": 20,
-            "type": "array"
-          },
-          "name": {
-            "description": "A name to assign to the SBOM contained in the BundleRevision.\n\nOverrides the filename in the BundleRevision.",
-            "maxLength": 256,
-            "type": "string"
-          },
-          "repository_url": {
-            "description": "Repository URL at which the Source files are stored.",
-            "maxLength": 1024,
-            "type": "string"
-          },
-          "root_folder_id": {
-            "description": "Folder inside the BundleRevision at which the Source files are located.",
-            "maxLength": 1024,
-            "type": "string"
-          },
-          "scm_context": {
-            "$ref": "#/components/schemas/ScmContext"
-          },
-          "type": {
-            "enum": [
-              "bundle"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "bundle_id",
-          "content_type",
-          "file_patterns"
         ],
         "type": "object"
       },
@@ -9197,45 +8995,6 @@
         ],
         "type": "object"
       },
-      "ContainerRepoResource": {
-        "description": "Resource representing a container repository.\n\nContainer Repos identify a specific container\nimage in a container registry. These images can be scanned\nusing the Snyk Container scanner.\n\nCurrently no scans are supported through the Test API for\nContainerRepoResources.",
-        "example": {
-          "image_url": "https://docker.io/example/image",
-          "tag": "version_0.0.0",
-          "type": "container"
-        },
-        "properties": {
-          "image_url": {
-            "description": "URL at which the specific container image can be found\nin a container registry.",
-            "format": "url",
-            "maxLength": 1024,
-            "type": "string"
-          },
-          "scm_context": {
-            "$ref": "#/components/schemas/ScmContext"
-          },
-          "tag": {
-            "description": "Tagged version of the container to scan.",
-            "type": "string"
-          },
-          "type": {
-            "enum": [
-              "container"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "image_url",
-          "tag"
-        ],
-        "type": "object"
-      },
-      "ContainerScanConfiguration": {
-        "description": "Scan configuration parameters for the Container scanner.",
-        "type": "object"
-      },
       "Context": {
         "description": "Allow installing the app to a org/group or to a user, default tenant.",
         "enum": [
@@ -10434,36 +10193,6 @@
         "pattern": "^[\\d]{4}-[\\d]{2}-[\\d]{2}/[\\d]{4}-[\\d]{2}-[\\d]{2}$",
         "type": "string"
       },
-      "DeepcodeBundleSubject": {
-        "description": "**Deprecated**\n\nProvide a BundleResource and include the\nSAST Scan Configuration instead.\n\nTest subject representing source code uploaded to Snyk using DeepCode\nbundle APIs.\n\nDeepcode bundles are accepted through the API, but are not\nguaranteed to return Findings.",
-        "properties": {
-          "bundle_id": {
-            "description": "Deepcode Bundle ID. These IDs are sha256 digests (32 bytes or 64 hex digits).",
-            "pattern": "^[a-fA-F0-9]{64}$",
-            "type": "string"
-          },
-          "locator": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/LocalPathLocator"
-              }
-            ],
-            "description": "Locate local paths from which the source code bundle was derived."
-          },
-          "type": {
-            "enum": [
-              "deepcode_bundle"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "bundle_id",
-          "locator"
-        ],
-        "type": "object"
-      },
       "DeleteAssignmentsRequest": {
         "properties": {
           "data": {
@@ -10562,112 +10291,8 @@
         ],
         "type": "object"
       },
-      "DepGraphContent": {
-        "description": "Dep Graph file contents, of the same format as Dep Graphs\nprovided to /v1/test-dep-graph endpoint.",
-        "properties": {
-          "dep_graph": {
-            "$ref": "#/components/schemas/DepGraphRef"
-          },
-          "type": {
-            "enum": [
-              "dep_graph"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "dep_graph"
-        ],
-        "type": "object"
-      },
-      "DepGraphRef": {
-        "additionalProperties": {},
-        "properties": {
-          "graph": {
-            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Graph"
-          },
-          "pkgManager": {
-            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.PackageManager"
-          },
-          "pkgs": {
-            "items": {
-              "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Package"
-            },
-            "type": "array"
-          },
-          "schemaVersion": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "schemaVersion",
-          "pkgManager",
-          "pkgs",
-          "graph"
-        ],
-        "type": "object",
-        "x-go-type": "json.RawMessage"
-      },
-      "DepGraphSubject": {
-        "description": "**Deprecated**\n\nProvide an InlineResource with the DepGraph contents\nand the SCA Scan Configuration instead.\n\nTest subject representing a Snyk dependency graph (a legacy SBOM format).",
-        "properties": {
-          "locator": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/LocalPathLocator"
-              }
-            ],
-            "description": "Source file(s) from which the dependency graph was derived.\n\nFor some managed package ecosystems (examples: Maven, Yarn workspaces),\nSnyk might derive a dependency graph from several files."
-          },
-          "type": {
-            "enum": [
-              "dep_graph"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "locator"
-        ],
-        "type": "object"
-      },
-      "DepGraphSubjectCreate": {
-        "description": "**Deprecated**\n\nProvide an InlineResource with the DepGraph contents\nand the SCA Scan Configuration instead.\n\nTest subject representing a Snyk dependency graph (a legacy SBOM format).",
-        "properties": {
-          "dep_graph": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/DepGraphRef"
-              }
-            ],
-            "description": "When creating a test, provide the dep-graph contents inline to the request.\n\nThis attribute is only available when creating a new Test."
-          },
-          "locator": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/LocalPathLocator"
-              }
-            ],
-            "description": "Source file(s) from which the dependency graph was derived.\n\nFor some managed package ecosystems (examples: Maven, Yarn workspaces),\nSnyk might derive a dependency graph from several files."
-          },
-          "type": {
-            "enum": [
-              "dep_graph"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "dep_graph",
-          "locator"
-        ],
-        "type": "object"
-      },
       "DependencyCountFact": {
-        "description": "DependencyCountFact represents a dependency count fact.",
+        "description": "A Fact containing the count of dependencies scanned during\nthe Test.",
         "properties": {
           "total_dependency_count": {
             "format": "int64",
@@ -10867,86 +10492,6 @@
         "required": [
           "format",
           "suggestions"
-        ],
-        "type": "object"
-      },
-      "DiffResource": {
-        "description": "DiffResources contain two versions of the same content\nto compare against each other.\n\nThe Base and Compare fields contain Resources representing\nan \"existing\" (base) version as well as a \"new\" (compare)\nversion. Most commonly these Resources will be of the same type,\ne.g. an ScmResource containing a reference the `main` branch being\ncompared to an ScmResource containing a reference to a new\nfeature branch.\n\nCurrently no scans are supported through the Test API\nfor DiffResources.",
-        "example": {
-          "base": {
-            "file_patterns": [],
-            "integration_id": "00000000-0000-0000-0000-000000000000",
-            "ref": "main",
-            "repo_url": "https://github.com/example/repo",
-            "type": "scm"
-          },
-          "compare": {
-            "file_patterns": [],
-            "integration_id": "00000000-0000-0000-0000-000000000000",
-            "ref": "feat/homepage",
-            "repo_url": "https://github.com/example/repo",
-            "type": "scm"
-          },
-          "type": "diff"
-        },
-        "properties": {
-          "base": {
-            "$ref": "#/components/schemas/BaseResourceVariant"
-          },
-          "compare": {
-            "$ref": "#/components/schemas/BaseResourceVariant"
-          },
-          "type": {
-            "enum": [
-              "diff"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "base",
-          "compare"
-        ],
-        "type": "object"
-      },
-      "DiffResourceCreateItem": {
-        "description": "DiffResources contain two versions of the same content\nto compare against each other.\n\nThe Base and Compare fields contain Resources representing\nan \"existing\" (base) version as well as a \"new\" (compare)\nversion. Most commonly these Resources will be of the same type,\ne.g. an ScmResource containing a reference the `main` branch being\ncompared to an ScmResource containing a reference to a new\nfeature branch.\n\nCurrently no scans are supported through the Test API\nfor DiffResources.",
-        "example": {
-          "base": {
-            "file_patterns": [],
-            "integration_id": "00000000-0000-0000-0000-000000000000",
-            "ref": "main",
-            "repo_url": "https://github.com/example/repo",
-            "type": "scm"
-          },
-          "compare": {
-            "file_patterns": [],
-            "integration_id": "00000000-0000-0000-0000-000000000000",
-            "ref": "feat/homepage",
-            "repo_url": "https://github.com/example/repo",
-            "type": "scm"
-          },
-          "type": "diff"
-        },
-        "properties": {
-          "base": {
-            "$ref": "#/components/schemas/BaseResourceVariantCreateItem"
-          },
-          "compare": {
-            "$ref": "#/components/schemas/BaseResourceVariantCreateItem"
-          },
-          "type": {
-            "enum": [
-              "diff"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "base",
-          "compare"
         ],
         "type": "object"
       },
@@ -15323,42 +14868,6 @@
         ],
         "type": "object"
       },
-      "GitUrlCoordinatesSubject": {
-        "description": "**Deprecated**\n\nProvide an ScmResource and include the\nSAST Scan Configuration instead.\n\nTest subject representing a source tree located in a Git repository that\nhas a Snyk SCM integration.\n\nGit URL coordinates are accepted through the API, but are not\nguaranteed to return Findings.",
-        "properties": {
-          "commit_id": {
-            "description": "Commit ID of the Git commit from which content will be retrieved for the\ntest.",
-            "pattern": "^[a-f0-9]{40,}$",
-            "type": "string"
-          },
-          "integration_id": {
-            "description": "Integration used to access the Git SCM repository in order to retrieve its source contents.",
-            "format": "uuid",
-            "type": "string"
-          },
-          "locator": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/ScmRepoLocator"
-              }
-            ],
-            "description": "Locate the SCM repository from which content will be retrieved for the\ntest."
-          },
-          "type": {
-            "enum": [
-              "git_url_coordinates"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "integration_id",
-          "commit_id",
-          "locator"
-        ],
-        "type": "object"
-      },
       "GithubCrAttributes": {
         "properties": {
           "required": {
@@ -17318,10 +16827,6 @@
         },
         "type": "object"
       },
-      "IacScanConfiguration": {
-        "description": "Scan configuration parameters for the IAC scanner.",
-        "type": "object"
-      },
       "Id": {
         "format": "uuid",
         "type": "string"
@@ -17598,134 +17103,6 @@
           "group"
         ],
         "type": "string"
-      },
-      "InlineContent": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/DepGraphContent"
-          }
-        ],
-        "description": "Content formats accepted inline for testing.",
-        "type": "object"
-      },
-      "InlineResource": {
-        "description": "Resource comprised of file contents included directly in\na request body.\n\nCurrently supported scans utilizing InlineResources are:\n- SCA (Open Source): (1) InlineResource containing a Dep Graph",
-        "example": {
-          "content": {
-            "dep_graph": {
-              "graph": {
-                "nodes": [
-                  {
-                    "deps": [],
-                    "nodeId": "root-node",
-                    "pkgId": "snyk@1.0.0-monorepo"
-                  }
-                ],
-                "rootNodeId": "root-node"
-              },
-              "pkgManager": {
-                "name": "npm"
-              },
-              "pkgs": [
-                {
-                  "id": "snyk@1.0.0-monorepo",
-                  "info": {
-                    "name": "snyk",
-                    "version": "1.0.0-monorepo"
-                  }
-                }
-              ],
-              "schemaVersion": "1.3.0"
-            },
-            "type": "dep_graph"
-          },
-          "name": "dep_graph.json",
-          "type": "inline"
-        },
-        "properties": {
-          "name": {
-            "maxLength": 256,
-            "type": "string"
-          },
-          "scm_context": {
-            "$ref": "#/components/schemas/ScmContext"
-          },
-          "type": {
-            "enum": [
-              "inline"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "name"
-        ],
-        "type": "object"
-      },
-      "InlineResourceCreateItem": {
-        "description": "Resource comprised of file contents included directly in\na request body.\n\nCurrently supported scans utilizing InlineResources are:\n- SCA (Open Source): (1) InlineResource containing a Dep Graph",
-        "example": {
-          "content": {
-            "dep_graph": {
-              "graph": {
-                "nodes": [
-                  {
-                    "deps": [],
-                    "nodeId": "root-node",
-                    "pkgId": "snyk@1.0.0-monorepo"
-                  }
-                ],
-                "rootNodeId": "root-node"
-              },
-              "pkgManager": {
-                "name": "npm"
-              },
-              "pkgs": [
-                {
-                  "id": "snyk@1.0.0-monorepo",
-                  "info": {
-                    "name": "snyk",
-                    "version": "1.0.0-monorepo"
-                  }
-                }
-              ],
-              "schemaVersion": "1.3.0"
-            },
-            "type": "dep_graph"
-          },
-          "name": "dep_graph.json",
-          "type": "inline"
-        },
-        "properties": {
-          "content": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/InlineContent"
-              }
-            ],
-            "description": "File contents to be tested."
-          },
-          "name": {
-            "maxLength": 256,
-            "type": "string"
-          },
-          "scm_context": {
-            "$ref": "#/components/schemas/ScmContext"
-          },
-          "type": {
-            "enum": [
-              "inline"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "name",
-          "content"
-        ],
-        "type": "object"
       },
       "InstalledAt": {
         "description": "Timestamp at which this app was first installed at.",
@@ -19615,6 +18992,7 @@
         "type": "object"
       },
       "LocalIgnore": {
+        "description": "A .snyk-style Ignore to apply to the Test.\nUsed to ignore known issues that should not be included\nin determining the Test's Outcome.",
         "properties": {
           "created_at": {
             "description": "When the ignore was first created.",
@@ -19654,74 +19032,6 @@
         },
         "required": [
           "vuln_id"
-        ],
-        "type": "object"
-      },
-      "LocalPathLocator": {
-        "description": "LocalPathLocator locates a test subject by local file paths, relative to the\nworking copy top-level directory of the source code.",
-        "properties": {
-          "paths": {
-            "description": "Local file paths. Limited to 256 characters.",
-            "items": {
-              "$ref": "#/components/schemas/String256"
-            },
-            "minItems": 1,
-            "type": "array"
-          },
-          "type": {
-            "enum": [
-              "local_path"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "paths"
-        ],
-        "type": "object"
-      },
-      "LocalPolicy": {
-        "description": "Locally configured policy options for determining outcome of this specific test.",
-        "properties": {
-          "fail_on_upgradable": {
-            "default": false,
-            "description": "Use to fail a test when there is at least one vulnerable finding that can be fixed by upgrading the version of the related\n   dependency. E.g. bumping lodash from 1.1.1 to 1.1.2.",
-            "type": "boolean"
-          },
-          "ignores": {
-            "description": "Defines ignore rules for known issues.",
-            "items": {
-              "$ref": "#/components/schemas/LocalIgnore"
-            },
-            "type": "array"
-          },
-          "reachability_filter": {
-            "$ref": "#/components/schemas/ReachabilityFilter"
-          },
-          "risk_score_threshold": {
-            "description": "Findings of equal or greater risk score will fail the test.",
-            "format": "uint16",
-            "maximum": 1000,
-            "minimum": 0,
-            "type": "integer"
-          },
-          "severity_threshold": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/Severity"
-              }
-            ],
-            "description": "Findings of equal or greater severity will fail the test."
-          },
-          "suppress_pending_ignores": {
-            "default": false,
-            "description": "Suppress ignores pending approval, so that they do not fail the test. If\nallowed by administrators, this might be set in developer workflows in\norder to unblock local development while an ignore is pending approval.",
-            "type": "boolean"
-          }
-        },
-        "required": [
-          "suppress_pending_ignores"
         ],
         "type": "object"
       },
@@ -21554,36 +20864,6 @@
       },
       "OtherLocation": {
         "description": "Finding locations which this API version is not capable of expressing.\n\nThis location may be available in a newer version of this API.",
-        "properties": {
-          "type": {
-            "enum": [
-              "other"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type"
-        ],
-        "type": "object"
-      },
-      "OtherLocator": {
-        "description": "OtherLocator represents any locator that this version of the API is not\ncapable of expressing.",
-        "properties": {
-          "type": {
-            "enum": [
-              "other"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type"
-        ],
-        "type": "object"
-      },
-      "OtherSubject": {
-        "description": "OtherSubject represents any subject that this version of the API is not\ncapable of expressing.",
         "properties": {
           "type": {
             "enum": [
@@ -23576,27 +22856,6 @@
         "pattern": "^[0-9a-f]{40}$",
         "type": "string"
       },
-      "ProjectEntityLocator": {
-        "description": "ProjectEntityLocator locates a Snyk Project by its public ID.",
-        "properties": {
-          "project_id": {
-            "description": "Public ID of the Snyk Project.",
-            "format": "uuid",
-            "type": "string"
-          },
-          "type": {
-            "enum": [
-              "project_entity"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "project_id"
-        ],
-        "type": "object"
-      },
       "ProjectID": {
         "description": "The relevant uuid for the project against which to run the test.",
         "format": "uuid",
@@ -23645,30 +22904,6 @@
           "issues_high_count",
           "issues_medium_count",
           "issues_low_count"
-        ],
-        "type": "object"
-      },
-      "ProjectNameLocator": {
-        "description": "ProjectNameLocator locates a Snyk Project by its name.",
-        "properties": {
-          "project_name": {
-            "description": "Name of the Snyk Project.",
-            "type": "string"
-          },
-          "target_reference": {
-            "description": "Target reference which differentiates this project, for example, with a\nbranch name or version. Projects having the same reference can be grouped\nbased on that reference.",
-            "type": "string"
-          },
-          "type": {
-            "enum": [
-              "project_name"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "project_name"
         ],
         "type": "object"
       },
@@ -24636,7 +23871,7 @@
       },
       "QueryVersion": {
         "description": "Requested API version",
-        "example": "2026-03-25",
+        "example": "2026-09-09",
         "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
         "type": "string"
       },
@@ -26058,8 +25293,18 @@
         ],
         "type": "object"
       },
-      "SastScanConfiguration": {
+      "SastScanConfigurationV2": {
         "description": "Scan configuration parameters for the SAST scanner.",
+        "properties": {
+          "file_patterns": {
+            "description": "File Patterns to include in the scan. Elements must be less than 256 characters.",
+            "items": {
+              "$ref": "#/components/schemas/String256"
+            },
+            "maxItems": 20,
+            "type": "array"
+          }
+        },
         "type": "object"
       },
       "SastTestChangeItem": {
@@ -26182,191 +25427,7 @@
         "additionalProperties": false,
         "properties": {
           "data": {
-            "properties": {
-              "attributes": {
-                "additionalProperties": false,
-                "properties": {
-                  "code": {
-                    "description": "An error catalog code to identify the error.",
-                    "example": "SNYK-0009",
-                    "type": "string"
-                  },
-                  "detail": {
-                    "description": "A human-readable explanation specific to the test error status.",
-                    "example": "The request was missing these required fields: ...",
-                    "type": "string"
-                  },
-                  "id": {
-                    "description": "A unique identifier for this particular occurrence of the problem.",
-                    "example": "f16c31b5-6129-4571-add8-d589da9be524",
-                    "format": "uuid",
-                    "type": "string"
-                  },
-                  "links": {
-                    "additionalProperties": false,
-                    "description": "A link that leads to further details about this particular occurrance of the problem.",
-                    "example": {
-                      "about": "https://example.com/about_this_error"
-                    },
-                    "properties": {
-                      "about": {
-                        "example": "https://example.com/api/resource",
-                        "oneOf": [
-                          {
-                            "description": "A string containing the link’s URL.",
-                            "example": "https://example.com/api/resource",
-                            "type": "string"
-                          },
-                          {
-                            "additionalProperties": false,
-                            "example": {
-                              "href": "https://example.com/api/resource"
-                            },
-                            "properties": {
-                              "href": {
-                                "description": "A string containing the link’s URL.",
-                                "example": "https://example.com/api/resource",
-                                "type": "string"
-                              },
-                              "meta": {
-                                "additionalProperties": true,
-                                "description": "Free-form object that may contain non-standard information.",
-                                "example": {
-                                  "key1": "value1",
-                                  "key2": {
-                                    "sub_key": "sub_value"
-                                  },
-                                  "key3": [
-                                    "array_value1",
-                                    "array_value2"
-                                  ]
-                                },
-                                "type": "object"
-                              }
-                            },
-                            "required": [
-                              "href"
-                            ],
-                            "type": "object"
-                          }
-                        ]
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "meta": {
-                    "additionalProperties": true,
-                    "example": {
-                      "key": "value"
-                    },
-                    "type": "object"
-                  },
-                  "source": {
-                    "additionalProperties": false,
-                    "properties": {
-                      "parameter": {
-                        "description": "A string indicating which URI query parameter caused the error.",
-                        "example": "param1",
-                        "type": "string"
-                      },
-                      "pointer": {
-                        "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
-                        "example": "/data/attributes",
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "status": {
-                    "description": "The status of the impact test.",
-                    "enum": [
-                      "STARTED",
-                      "COMPLETED",
-                      "ERRORED"
-                    ],
-                    "type": "string"
-                  },
-                  "title": {
-                    "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem.",
-                    "example": "Bad request",
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "status"
-                ],
-                "type": "object"
-              },
-              "id": {
-                "format": "uuid",
-                "type": "string"
-              },
-              "links": {
-                "additionalProperties": false,
-                "example": {
-                  "self": "https://example.com/api/this_resource"
-                },
-                "properties": {
-                  "self": {
-                    "example": "https://example.com/api/resource",
-                    "oneOf": [
-                      {
-                        "description": "A string containing the link’s URL.",
-                        "example": "https://example.com/api/resource",
-                        "type": "string"
-                      },
-                      {
-                        "additionalProperties": false,
-                        "example": {
-                          "href": "https://example.com/api/resource"
-                        },
-                        "properties": {
-                          "href": {
-                            "description": "A string containing the link’s URL.",
-                            "example": "https://example.com/api/resource",
-                            "type": "string"
-                          },
-                          "meta": {
-                            "additionalProperties": true,
-                            "description": "Free-form object that may contain non-standard information.",
-                            "example": {
-                              "key1": "value1",
-                              "key2": {
-                                "sub_key": "sub_value"
-                              },
-                              "key3": [
-                                "array_value1",
-                                "array_value2"
-                              ]
-                            },
-                            "type": "object"
-                          }
-                        },
-                        "required": [
-                          "href"
-                        ],
-                        "type": "object"
-                      }
-                    ]
-                  }
-                },
-                "type": "object"
-              },
-              "type": {
-                "description": "The type identifier for the \"tests\" resource.",
-                "enum": [
-                  "tests"
-                ],
-                "type": "string"
-              }
-            },
-            "required": [
-              "type",
-              "id",
-              "attributes",
-              "links"
-            ],
-            "type": "object"
+            "$ref": "#/components/schemas/TestResource"
           },
           "jsonapi": {
             "$ref": "#/components/schemas/JsonApi"
@@ -26609,42 +25670,6 @@
         "additionalProperties": true,
         "type": "object"
       },
-      "SbomReachabilitySubject": {
-        "description": "**Deprecated**\n\nProvide a BundleResource with SBOM Bundle ID,\na BundleResource with Source Bundle ID, and include\nSCA Scan Configuration instead.\n\nSBOM Reachability tests can also be initiated using\nUploadResources if using the File Upload API.\n\nTest subject for SBOM test with reachability analysis.",
-        "properties": {
-          "code_bundle_id": {
-            "description": "Source code to inspect for the reach of the vulnerable dependencies.",
-            "pattern": "^[a-fA-F0-9]{64}$",
-            "type": "string"
-          },
-          "locator": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/LocalPathLocator"
-              }
-            ],
-            "description": "Locate the local paths from which the SBOM and source code were derived."
-          },
-          "sbom_bundle_id": {
-            "description": "The SBOM to test for vulnerable dependencies.",
-            "pattern": "^[a-fA-F0-9]{64}$",
-            "type": "string"
-          },
-          "type": {
-            "enum": [
-              "sbom_reachability"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "sbom_bundle_id",
-          "code_bundle_id",
-          "locator"
-        ],
-        "type": "object"
-      },
       "SbomResource": {
         "additionalProperties": false,
         "properties": {
@@ -26679,36 +25704,6 @@
         ],
         "type": "object"
       },
-      "SbomSubject": {
-        "description": "**Deprecated**\n\nProvide a BundleResource with SBOM Bundle ID and include\nSCA Scan Configuration instead.\n\nSBOM tests can also be initiated using an\nUploadResource if using the File Upload API.\n\nTest subject for SBOM test without reachability analysis.",
-        "properties": {
-          "locator": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/LocalPathLocator"
-              }
-            ],
-            "description": "Locate the local paths from which the SBOM and source code were derived."
-          },
-          "sbom_bundle_id": {
-            "description": "The SBOM to test for vulnerable dependencies.",
-            "pattern": "^[a-fA-F0-9]{64}$",
-            "type": "string"
-          },
-          "type": {
-            "enum": [
-              "sbom"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "sbom_bundle_id",
-          "locator"
-        ],
-        "type": "object"
-      },
       "SbomTestCreateAttributes": {
         "properties": {
           "format": {
@@ -26728,7 +25723,7 @@
         "additionalProperties": true,
         "type": "object"
       },
-      "ScaScanConfiguration": {
+      "ScaScanConfigurationV2": {
         "description": "Scan configuration parameters for the SCA scanner.",
         "type": "object"
       },
@@ -26841,26 +25836,20 @@
         ],
         "type": "object"
       },
-      "ScanConfiguration": {
-        "description": "A map of scanner types to their specific set of\nconfiguration parameters.\n\nThe presence of a scanner's configuration in the\nprovided ScanConfiguration is used to determine what scans\nto run on the list of Resources provided.\n\nNote that an empty config object is different than\nomitting the field. An omitted scanner config results in\nthat scanner not being run. A provided empty scan config\nwill run the scanner if it is possible.",
+      "ScanConfigurationV2": {
+        "description": "A map of scanner types to their specific set of\nconfiguration parameters.\n\nThe presence of a scanner's configuration in the\nprovided ScanConfiguration is used to determine what scans\nto run on the list of Resources provided.\n\nNote that an empty config object is different than\nomitting the field. An omitted scanner config results in\nthat scanner not being run. A provided empty scan config\nwill run the scanner if it is possible.\n\nCurrently exactly one scanner config should be included.\n\nTo run multiple scans on the same set of Test Resources,\nrun multiple Tests.",
         "example": {
           "secrets": {}
         },
         "properties": {
-          "container": {
-            "$ref": "#/components/schemas/ContainerScanConfiguration"
-          },
-          "iac": {
-            "$ref": "#/components/schemas/IacScanConfiguration"
-          },
           "sast": {
-            "$ref": "#/components/schemas/SastScanConfiguration"
+            "$ref": "#/components/schemas/SastScanConfigurationV2"
           },
           "sca": {
-            "$ref": "#/components/schemas/ScaScanConfiguration"
+            "$ref": "#/components/schemas/ScaScanConfigurationV2"
           },
           "secrets": {
-            "$ref": "#/components/schemas/SecretsScanConfiguration"
+            "$ref": "#/components/schemas/SecretsScanConfigurationV2"
           }
         },
         "type": "object"
@@ -27019,83 +26008,37 @@
         "description": "Additional SCM information about a resource.\nProvides context about where the content came from; the resource itself is the testable item.\nScmResource does not use this; it identifies SCM via its own fields.",
         "properties": {
           "branch": {
+            "description": "Branch within SCM repo that will be tested.",
             "maxLength": 256,
             "type": "string"
           },
           "commit_ref": {
-            "maxLength": 1024,
-            "type": "string"
-          },
-          "repo_url": {
-            "maxLength": 1024,
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
-      "ScmRepoLocator": {
-        "description": "ScmRepoLocator locates a test subject by SCM repository coordinates.",
-        "properties": {
-          "branch_name": {
-            "description": "Branch name, if known and applicable to locating the test subject.\n\nIf not specified, the branch name can be assumed to be the \"default\nintegration branch\" of the repository.",
-            "type": "string"
-          },
-          "type": {
-            "enum": [
-              "scm_repo"
-            ],
-            "type": "string"
-          },
-          "url": {
-            "description": "URL of the SCM repository.",
-            "format": "uri",
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "url"
-        ],
-        "type": "object"
-      },
-      "ScmResource": {
-        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently supported scans utilizing ScmResources are:\n- SAST scans on (1) ScmResource that references a repo already\nimported into Snyk\n- Secrets scans on (1) ScmResource that references a repo which\nmay not already be imported into Snyk",
-        "example": {
-          "commit": "8dbd1ea7201a0d49603467981075a633d91e40b9",
-          "file_patterns": [],
-          "integration_id": "00000000-0000-0000-0000-000000000000",
-          "ref": "main",
-          "repo_url": "https://github.com/example/repo",
-          "type": "scm"
-        },
-        "properties": {
-          "commit": {
-            "description": "Commit hash to reference specifically.",
-            "maxLength": 1024,
-            "type": "string"
-          },
-          "file_patterns": {
-            "description": "File Patterns to include in the scan. Elements must be less than 256 characters.\n\nCurrently unsupported. Provide an empty list.",
-            "items": {
-              "$ref": "#/components/schemas/String256"
-            },
-            "maxItems": 20,
-            "type": "array"
-          },
-          "integration_id": {
-            "description": "Integration ID assigned to the specific SCM.\nThis ID can be found in the Snyk UI by navigating to\n\"Settings\" \u003e \"Integrations\" \u003e \"\u003cYour SCM\u003e\"\n\nThe ID will be displayed under \"General\" \u003e \"Integration ID\"",
-            "format": "uuid",
-            "type": "string"
-          },
-          "ref": {
-            "description": "Ref contains a branch name or other non-commit hash reference\nto a version of the content.",
+            "description": "Commit hash within the SCM repo containing the\ntested content.",
             "maxLength": 1024,
             "type": "string"
           },
           "repo_url": {
             "description": "URL at which the repository can be found in the SCM.",
-            "example": "https://github.com/snyk/cli",
             "maxLength": 1024,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "ScmResourceV2": {
+        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently supported scans utilizing ScmResources are:\n- SAST scans on (1) ScmResource that references a repo which\nmay not already be imported into Snyk\n- Secrets scans on (1) ScmResource that references a repo which\nmay not already be imported into Snyk\n- SCA scans on (1) ScmResource that references a repo which\nmay not already be imported into Snyk\n\u003e Note that Workspaces (SCM Cloning) must be enabled for SCA scans.",
+        "properties": {
+          "context": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ScmContext"
+              }
+            ],
+            "description": "Context provides information on the specific repository,\nand reference within that repository, to test."
+          },
+          "integration_id": {
+            "description": "Integration ID assigned to the specific SCM.\nThis ID can be found in the Snyk UI by navigating to\n\"Settings\" \u003e \"Integrations\" \u003e \"\u003cYour SCM\u003e\"\n\nThe ID will be displayed under \"General\" \u003e \"Integration ID\"",
+            "format": "uuid",
             "type": "string"
           },
           "type": {
@@ -27107,8 +26050,8 @@
         },
         "required": [
           "type",
-          "repo_url",
-          "integration_id"
+          "integration_id",
+          "context"
         ],
         "type": "object"
       },
@@ -27518,8 +26461,18 @@
         ],
         "type": "object"
       },
-      "SecretsScanConfiguration": {
+      "SecretsScanConfigurationV2": {
         "description": "Scan configuration parameters for the Secrets scanner.",
+        "properties": {
+          "file_patterns": {
+            "description": "File Patterns to include in the scan. Elements must be less than 256 characters.",
+            "items": {
+              "$ref": "#/components/schemas/String256"
+            },
+            "maxItems": 20,
+            "type": "array"
+          }
+        },
         "type": "object"
       },
       "SecurityDetails": {
@@ -27565,46 +26518,7 @@
         },
         "properties": {
           "self": {
-            "example": "https://example.com/api/resource",
-            "oneOf": [
-              {
-                "description": "A string containing the link’s URL.",
-                "example": "https://example.com/api/resource",
-                "type": "string"
-              },
-              {
-                "additionalProperties": false,
-                "example": {
-                  "href": "https://example.com/api/resource"
-                },
-                "properties": {
-                  "href": {
-                    "description": "A string containing the link’s URL.",
-                    "example": "https://example.com/api/resource",
-                    "type": "string"
-                  },
-                  "meta": {
-                    "additionalProperties": true,
-                    "description": "Free-form object that may contain non-standard information.",
-                    "example": {
-                      "key1": "value1",
-                      "key2": {
-                        "sub_key": "sub_value"
-                      },
-                      "key3": [
-                        "array_value1",
-                        "array_value2"
-                      ]
-                    },
-                    "type": "object"
-                  }
-                },
-                "required": [
-                  "href"
-                ],
-                "type": "object"
-              }
-            ]
+            "$ref": "#/components/schemas/LinkProperty"
           }
         },
         "type": "object"
@@ -27973,45 +26887,6 @@
             "type": "array"
           }
         },
-        "type": "object"
-      },
-      "SnykReferenceResource": {
-        "description": "SnykReferenceResources contain references to source code,\ncontainers, SBOMs, and other testable content that has already\nbeen provided to Snyk to create a Project or Target.\n\nIf the intended content to test is already known to Snyk as a\nProject, Target, or otherwise, this SnykReferenceResource can\nbe used to initiate a Test with the appropriate ID.\n\nSupported scans:\n- SCA scan on one (1) SnykReferenceResource which contains a\nTarget ID in addition to at least one of CommitRef or Branch\nprovided on the SCM Context object.",
-        "example": {
-          "ref_id": "00000000-0000-0000-0000-000000000000",
-          "reference_type": "project",
-          "type": "snyk_ref"
-        },
-        "properties": {
-          "ref_id": {
-            "description": "ID referring the contents already known by Snyk.",
-            "format": "uuid",
-            "type": "string"
-          },
-          "reference_type": {
-            "description": "Kind of Snyk reference contained in Ref ID.\n\nTargets and Projects exist in Snyk currently.\n\nAssets are a feature in-development, and are listed\nhere for future-forward compatibility.",
-            "enum": [
-              "target",
-              "project",
-              "asset"
-            ],
-            "type": "string"
-          },
-          "scm_context": {
-            "$ref": "#/components/schemas/ScmContext"
-          },
-          "type": {
-            "enum": [
-              "snyk_ref"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "reference_type",
-          "ref_id"
-        ],
         "type": "object"
       },
       "SonarqubeAttributes": {
@@ -28768,93 +27643,95 @@
         "type": "object"
       },
       "TestAttributes": {
-        "description": "TestAttributes represents the attributes of a Test resource.",
+        "additionalProperties": false,
         "properties": {
-          "components": {
-            "description": "Scanned Components of the tested content.\n\nUnique on a per-test basis, originating from a single Scan type\nthough a single Scan may identify multiple Components.",
-            "items": {
-              "$ref": "#/components/schemas/TestComponent"
+          "code": {
+            "description": "An error catalog code to identify the error.",
+            "example": "SNYK-0009",
+            "type": "string"
+          },
+          "detail": {
+            "description": "A human-readable explanation specific to the test error status.",
+            "example": "The request was missing these required fields: ...",
+            "type": "string"
+          },
+          "id": {
+            "description": "A unique identifier for this particular occurrence of the problem.",
+            "example": "f16c31b5-6129-4571-add8-d589da9be524",
+            "format": "uuid",
+            "type": "string"
+          },
+          "links": {
+            "$ref": "#/components/schemas/ErrorLink"
+          },
+          "meta": {
+            "additionalProperties": true,
+            "example": {
+              "key": "value"
             },
-            "readOnly": true,
-            "type": "array"
+            "type": "object"
           },
-          "config": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/TestConfiguration"
+          "source": {
+            "additionalProperties": false,
+            "properties": {
+              "parameter": {
+                "description": "A string indicating which URI query parameter caused the error.",
+                "example": "param1",
+                "type": "string"
+              },
+              "pointer": {
+                "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                "example": "/data/attributes",
+                "type": "string"
               }
-            ],
-            "description": "The test configuration. If not specified, caller accepts test configuration\ndefaults within the calling scope (org, group or tenant settings, etc)."
+            },
+            "type": "object"
           },
+          "status": {
+            "description": "The status of the impact test.",
+            "enum": [
+              "STARTED",
+              "COMPLETED",
+              "ERRORED"
+            ],
+            "type": "string"
+          },
+          "title": {
+            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem.",
+            "example": "Bad request",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "type": "object"
+      },
+      "TestAttributesV2": {
+        "description": "TestAttributes contains the attributes of the Test resource.",
+        "properties": {
           "created_at": {
-            "description": "Creation time of the test resource.",
+            "description": "Creation time of the Test resource.",
             "format": "date-time",
             "readOnly": true,
             "type": "string"
           },
-          "effective_summary": {
+          "inputs": {
             "allOf": [
               {
-                "$ref": "#/components/schemas/FindingSummary"
+                "$ref": "#/components/schemas/TestInputs"
               }
             ],
-            "description": "Summary of findings discovered by the test, effective to the outcome\ndecision. This summary excludes findings suppressed by policy.\n\nThis attribute is set when the test execution\ncompletes (state.execution == 'finished') successfully (without fatal errors\nblocking an outcome).",
+            "description": "Input parameters describing the kind of Test to run."
+          },
+          "outputs": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestOutputs"
+              }
+            ],
+            "description": "Outputs from the Test, including Outcome, discovered Facts and\nComponents, and summarized Findings.",
             "readOnly": true
-          },
-          "outcome": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/TestOutcome"
-              }
-            ],
-            "description": "The outcome of the test.\n\nThis attribute is set when the test execution\ncompletes (state.execution == 'completed') successfully (without fatal errors\nblocking an outcome).",
-            "readOnly": true
-          },
-          "raw_summary": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/FindingSummary"
-              }
-            ],
-            "description": "Summary of findings regardless of whether they are effective or not. This\nsummary includes all findings, even those suppressed by policy.\n\nThis attribute is set when the test execution\ncompletes (state.execution == 'finished') successfully (without fatal errors\nblocking an outcome).",
-            "readOnly": true
-          },
-          "resources": {
-            "description": "The units of testable content to be scanned by Snyk.\n\nResources are provided in conjunction with the ScanConfiguration,\nand appropriate scans to run are determined from that combination.\n\nThere is a \"best-fit\" approach taken, and not all Resources will be\nscanned by all requested scanners. E.g. Container resources cannot be\nscanned by the SAST scanner.",
-            "example": [
-              {
-                "resource": {
-                  "content_type": "source",
-                  "file_patterns": [
-                    "*.go"
-                  ],
-                  "repository_url": "https://example.com/source/repo",
-                  "revision_id": "abcde12345",
-                  "type": "upload"
-                },
-                "type": "base"
-              },
-              {
-                "resource": {
-                  "ref_id": "6BD4F5E2-D4E8-4C6B-BB0E-ECF0A70423F5",
-                  "reference_type": "target",
-                  "type": "snyk_ref"
-                },
-                "type": "base"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/TestResource"
-            },
-            "type": "array"
-          },
-          "sdlc_stage": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/SdlcStage"
-              }
-            ],
-            "description": "SDLC stage where the test was initiated."
           },
           "state": {
             "allOf": [
@@ -28862,133 +27739,19 @@
                 "$ref": "#/components/schemas/TestState"
               }
             ],
-            "description": "The state of the test's execution.",
+            "description": "The state of the Test's execution.",
             "readOnly": true
-          },
-          "subject": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/TestSubject"
-              }
-            ],
-            "description": "**Deprecated**\n\nUse an equivalent combination of Resources and\nScan Configurations instead. See Subject descriptions\nfor appropriate replacements.\n\nThe subject of a test."
-          },
-          "subject_locators": {
-            "description": "**Deprecated**\n\nMetadata about testable content is located on\nResources directly.\n\nAdditional locators which may help locate the test subject across test workflows.\n\nTest subjects generally will have a primary locator. Additional locators\nmay be provided to help link the test to existing projects and/or assets in\nthe Snyk platform.",
-            "example": [
-              {
-                "paths": [
-                  "package.json"
-                ],
-                "type": "local_path"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/TestSubjectLocator"
-            },
-            "type": "array"
-          },
-          "test_facts": {
-            "description": "Facts about the test that were computed during test execution.",
-            "items": {
-              "$ref": "#/components/schemas/TestFact"
-            },
-            "readOnly": true,
-            "type": "array"
-          },
-          "user_public_id": {
-            "description": "Public identifier of the user who initiated the test.",
-            "maxLength": 64,
-            "type": "string"
           }
         },
         "required": [
           "created_at",
-          "state"
+          "state",
+          "inputs"
         ],
         "type": "object"
       },
-      "TestAttributesCreate": {
-        "description": "TestAttributes represents the attributes of a Test resource.",
-        "properties": {
-          "config": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/TestConfiguration"
-              }
-            ],
-            "description": "The test configuration. If not specified, caller accepts test configuration\ndefaults within the calling scope (org, group or tenant settings, etc)."
-          },
-          "resources": {
-            "description": "The units of testable content to be scanned by Snyk.\n\nResources are provided in conjunction with the ScanConfiguration,\nand appropriate scans to run are determined from that combination.\n\nThere is a \"best-fit\" approach taken, and not all Resources will be\nscanned by all requested scanners. E.g. Container resources cannot be\nscanned by the SAST scanner.",
-            "example": [
-              {
-                "resource": {
-                  "content_type": "source",
-                  "file_patterns": [
-                    "*.go"
-                  ],
-                  "repository_url": "https://example.com/source/repo",
-                  "revision_id": "abcde12345",
-                  "type": "upload"
-                },
-                "type": "base"
-              },
-              {
-                "resource": {
-                  "ref_id": "6BD4F5E2-D4E8-4C6B-BB0E-ECF0A70423F5",
-                  "reference_type": "target",
-                  "type": "snyk_ref"
-                },
-                "type": "base"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/TestResourceCreateItem"
-            },
-            "type": "array"
-          },
-          "sdlc_stage": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/SdlcStage"
-              }
-            ],
-            "description": "SDLC stage where the test was initiated."
-          },
-          "subject": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/TestSubjectCreate"
-              }
-            ],
-            "description": "**Deprecated**\n\nUse an equivalent combination of Resources and\nScan Configurations instead. See Subject descriptions\nfor appropriate replacements.\n\nThe subject of a test."
-          },
-          "subject_locators": {
-            "description": "**Deprecated**\n\nMetadata about testable content is located on\nResources directly.\n\nAdditional locators which may help locate the test subject across test workflows.\n\nTest subjects generally will have a primary locator. Additional locators\nmay be provided to help link the test to existing projects and/or assets in\nthe Snyk platform.",
-            "example": [
-              {
-                "paths": [
-                  "package.json"
-                ],
-                "type": "local_path"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/TestSubjectLocator"
-            },
-            "type": "array"
-          },
-          "user_public_id": {
-            "description": "Public identifier of the user who initiated the test.",
-            "maxLength": 64,
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
-      "TestComponent": {
-        "description": "TestComponent represents a Test Component.",
+      "TestComponentV2": {
+        "description": "TestComponents are discrete units of content within the\ntestable resources provided that were scanned individually.\n\nE.g. in SCA scans, individual package manifests within a repo\nor an aggregated SBOM will be flagged as their own TestComponents.",
         "properties": {
           "asset_id": {
             "allOf": [
@@ -29017,10 +27780,17 @@
           "scan_type": {
             "allOf": [
               {
-                "$ref": "#/components/schemas/FindingType"
+                "description": "Type of Scan which discovered the Finding.",
+                "enum": [
+                  "sca",
+                  "sast",
+                  "other",
+                  "secrets"
+                ],
+                "type": "string"
               }
             ],
-            "description": "Type of Scanner producing Findings associated with this\nComponent."
+            "description": "Class of Scanner used to discover Findings associated with this\nComponent."
           },
           "tool": {
             "allOf": [
@@ -29037,82 +27807,90 @@
         ],
         "type": "object"
       },
-      "TestConfiguration": {
-        "description": "Test configuration.",
+      "TestConfigurationV2": {
+        "description": "2026-09-09 models.Configuration options for running the requested Test.",
         "properties": {
-          "asset_name": {
-            "maxLength": 256,
-            "type": "string"
-          },
-          "local_policy": {
+          "scan_config": {
             "allOf": [
               {
-                "$ref": "#/components/schemas/LocalPolicy"
+                "$ref": "#/components/schemas/ScanConfigurationV2"
               }
             ],
-            "description": "Inline configured policy options for determining outcome of this specific test.\n\nIf centrally managed policies are in scope, inline policies are overridden\nby managed policies. Policy references explain which policies were\neffective for test evaluation."
+            "description": "Options for configuring the scanners to run as part of the Test.\n\nRequires exactly one scanner included. Cannot run a Test with zero\nscans, and running multiple scans per Test is not (yet) supported."
           },
-          "monitor": {
-            "description": "Indicates whether the test result should be monitored with recurring tests.",
-            "type": "boolean"
-          },
-          "project_business_criticality": {
-            "maxLength": 256,
-            "type": "string"
-          },
-          "project_environment": {
-            "items": {
-              "type": "string"
-            },
-            "maxItems": 10,
-            "type": "array"
-          },
-          "project_lifecycle": {
-            "items": {
-              "type": "string"
-            },
-            "maxItems": 10,
-            "type": "array"
-          },
-          "project_tags": {
-            "items": {
-              "type": "string"
-            },
-            "maxItems": 10,
-            "type": "array"
-          },
-          "publish_report": {
-            "description": "Publish findings into a report, viewable in the Snyk web UI.",
-            "type": "boolean"
-          },
-          "scan_config": {
-            "$ref": "#/components/schemas/ScanConfiguration"
-          },
-          "target_name": {
-            "maxLength": 256,
-            "type": "string"
-          },
-          "target_reference": {
-            "description": "Fields from CLI.",
-            "maxLength": 1024,
-            "type": "string"
+          "test_criteria": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestCriteria"
+              }
+            ],
+            "description": "Criteria to apply to this Test when determining whether the Test\nhas passed or failed.\n\nIncludes thresholds on acceptable Severity or Risk and filters to apply\non discovered Findings."
           },
           "timeout": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/TimeoutSpec"
-              }
-            ],
-            "description": "Maximum test time in seconds, after which execution will be cancelled and\nthe test will fail with reason \"timeout\"."
+            "description": "Maximum test time in seconds, after which test progress will be abandoned and\nthe test will be failed with reason \"timeout\".",
+            "format": "uint32",
+            "type": "integer"
           }
         },
+        "required": [
+          "scan_config"
+        ],
         "type": "object"
       },
-      "TestData": {
-        "description": "TestData represents a Test resource object.",
+      "TestCriteria": {
+        "description": "Locally configured policy options for determining outcome of this specific test.",
+        "properties": {
+          "fail_on_upgradable": {
+            "default": false,
+            "description": "Use to fail a Test when there is at least one vulnerable Finding that can be fixed by upgrading the version of the related\n   dependency. E.g. bumping lodash from 1.1.1 to 1.1.2.",
+            "type": "boolean"
+          },
+          "ignored_issues": {
+            "description": "Defines ignore rules for known Issues. Findings related to\nthese local ignores will be suppressed.",
+            "items": {
+              "$ref": "#/components/schemas/LocalIgnore"
+            },
+            "type": "array"
+          },
+          "reachability_filter": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ReachabilityFilter"
+              }
+            ],
+            "description": "Filter out Findings based on their Reachability, to be used\nin conjunction with additional Reachability analysis on SCA scans."
+          },
+          "risk_score_threshold": {
+            "description": "Findings of equal or greater Risk Score will fail the Test.",
+            "format": "uint16",
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "severity_threshold": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Severity"
+              }
+            ],
+            "description": "Findings of equal or greater Severity will fail the Test."
+          },
+          "suppress_pending_ignores": {
+            "default": false,
+            "description": "Suppress Findings which have Ignores still Pending Approval, so that\nthey do not fail the test. If allowed by administrators, this might be\nset in developer workflows in order to unblock local development while an\nIgnore is Pending Approval.",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "suppress_pending_ignores"
+        ],
+        "type": "object"
+      },
+      "TestDataV2": {
+        "description": "TestData encapsulates a Test resource object.",
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/TestAttributes"
+            "$ref": "#/components/schemas/TestAttributesV2"
           },
           "id": {
             "format": "uuid",
@@ -29127,7 +27905,7 @@
                     "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
                   }
                 ],
-                "description": "Link to the findings discovered by the test, when it completes."
+                "description": "Link to the findings discovered by the test. Populated when the Test is successfully finished."
               }
             },
             "readOnly": true,
@@ -29142,25 +27920,6 @@
         },
         "required": [
           "id",
-          "type",
-          "attributes"
-        ],
-        "type": "object"
-      },
-      "TestDataCreate": {
-        "description": "TestData represents a Test resource object.",
-        "properties": {
-          "attributes": {
-            "$ref": "#/components/schemas/TestAttributesCreate"
-          },
-          "type": {
-            "enum": [
-              "tests"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
           "type",
           "attributes"
         ],
@@ -29188,7 +27947,69 @@
             "$ref": "#/components/schemas/DependencyCountFact"
           }
         ],
-        "description": "TestFact represents a test fact union.",
+        "description": "TestFacts provide information about what occured during the Test.\n\nNote that Facts are separate from Findings in that they do not\nrepresent vulnerabilities or issues with the tested content, but instead\ndescribe what the scanners did during the Test.",
+        "type": "object"
+      },
+      "TestInputs": {
+        "description": "Inputs used to determine what should be Tested and how.",
+        "properties": {
+          "config": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestConfigurationV2"
+              }
+            ],
+            "description": "The test configuration describing how to run the Test\nas well as its pass or failure conditions."
+          },
+          "origin": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestOrigin"
+              }
+            ],
+            "description": "Information concerning how the Test was initiated."
+          },
+          "resources": {
+            "description": "The units of testable content to be scanned by Snyk.\n\nA list of Resources should represent a single testable\nentity in that all Resources should relate to one another.\n\nThere is a \"best-fit\" approach taken when sending Resources to\nthe scanner requested in the ScanConfig. It is not guaranteed that\nall provided Resources will be scanned, if the combination of\nResources does not constitute a valid scan.",
+            "example": [
+              {
+                "context": {
+                  "branch": "main",
+                  "commit_ref": "8dbd1ea7201a0d49603467981075a633d91e40b9",
+                  "repo_url": "https://github.com/example/repo"
+                },
+                "integration_id": "00000000-0000-0000-0000-000000000000",
+                "type": "scm"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/TestResourceV2"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "resources",
+          "config"
+        ],
+        "type": "object"
+      },
+      "TestOrigin": {
+        "properties": {
+          "sdlc_stage": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SdlcStage"
+              }
+            ],
+            "description": "SDLC stage where the Test was initiated."
+          },
+          "user_public_id": {
+            "description": "Public identifier of the user who initiated the Test.",
+            "maxLength": 64,
+            "type": "string"
+          }
+        },
         "type": "object"
       },
       "TestOutcome": {
@@ -29233,16 +28054,39 @@
         ],
         "type": "string"
       },
-      "TestRequestBody": {
-        "description": "TestRequestBody represents the request body used when creating an Test.",
+      "TestOutputs": {
         "properties": {
-          "data": {
-            "$ref": "#/components/schemas/TestDataCreate"
+          "components": {
+            "description": "Scanned Components of the tested content.\n\nUnique on a per-test basis, originating from a single Scan type.\nA single Scan may identify multiple Components.",
+            "items": {
+              "$ref": "#/components/schemas/TestComponentV2"
+            },
+            "type": "array"
+          },
+          "facts": {
+            "description": "Facts about the Test that were computed during execution.",
+            "items": {
+              "$ref": "#/components/schemas/TestFact"
+            },
+            "type": "array"
+          },
+          "outcome": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestOutcome"
+              }
+            ],
+            "description": "The outcome of the Test.\n\nThis attribute is set when the Test execution\ncompletes (state.execution == 'finished') successfully\nor when the Test times out."
+          },
+          "summary": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestSummary"
+              }
+            ],
+            "description": "High-level summary of the Findings discovered during the Test."
           }
         },
-        "required": [
-          "data"
-        ],
         "type": "object"
       },
       "TestRequestBodyData": {
@@ -29261,41 +28105,50 @@
         ],
         "type": "object"
       },
-      "TestResource": {
-        "anyOf": [
-          {
-            "$ref": "#/components/schemas/BaseResource"
-          },
-          {
-            "$ref": "#/components/schemas/DiffResource"
+      "TestRequestV2Body": {
+        "description": "2026-09-09 modelsTestRequestBody represents the request body used when creating an Test.",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/TestDataV2"
           }
+        },
+        "required": [
+          "data"
         ],
-        "description": "TestResources contain single instances of testable content\nto be provided to Snyk scanners.",
-        "discriminator": {
-          "mapping": {
-            "base": "#/components/schemas/BaseResource",
-            "diff": "#/components/schemas/DiffResource"
-          },
-          "propertyName": "type"
-        }
+        "type": "object"
       },
-      "TestResourceCreateItem": {
-        "anyOf": [
-          {
-            "$ref": "#/components/schemas/BaseResourceCreateItem"
+      "TestResource": {
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/TestAttributes"
           },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "links": {
+            "$ref": "#/components/schemas/SelfLink"
+          },
+          "type": {
+            "$ref": "#/components/schemas/TestType"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "attributes",
+          "links"
+        ],
+        "type": "object"
+      },
+      "TestResourceV2": {
+        "allOf": [
           {
-            "$ref": "#/components/schemas/DiffResourceCreateItem"
+            "$ref": "#/components/schemas/ScmResourceV2"
           }
         ],
-        "description": "TestResources contain single instances of testable content\nto be provided to Snyk scanners.",
-        "discriminator": {
-          "mapping": {
-            "base": "#/components/schemas/BaseResourceCreateItem",
-            "diff": "#/components/schemas/DiffResourceCreateItem"
-          },
-          "propertyName": "type"
-        }
+        "description": "TestResources contain retrievable instances of testable content\nto be provided to Snyk scanners.",
+        "type": "object"
       },
       "TestResultsType": {
         "description": "The type identifier for the \"results\" resource.",
@@ -29346,102 +28199,27 @@
         ],
         "type": "object"
       },
-      "TestSubject": {
-        "description": "The subject of a test, which identifies the asset/project and content references\nnecessary to conduct a security test.",
-        "discriminator": {
-          "mapping": {
-            "deepcode_bundle": "#/components/schemas/DeepcodeBundleSubject",
-            "dep_graph": "#/components/schemas/DepGraphSubject",
-            "git_url_coordinates": "#/components/schemas/GitUrlCoordinatesSubject",
-            "other": "#/components/schemas/OtherSubject",
-            "sbom": "#/components/schemas/SbomSubject",
-            "sbom_reachability": "#/components/schemas/SbomReachabilitySubject"
+      "TestSummary": {
+        "description": "Overview of the counts of Findings discovered in the Test.",
+        "properties": {
+          "effective": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FindingSummary"
+              }
+            ],
+            "description": "Summary of findings discovered by the test, effective to the outcome\ndecision. This summary excludes findings suppressed by policy.\n\nThis attribute is set when the test execution\ncompletes (state.execution == 'finished') successfully (without fatal errors\nblocking an outcome)."
           },
-          "propertyName": "type"
-        },
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/DeepcodeBundleSubject"
-          },
-          {
-            "$ref": "#/components/schemas/DepGraphSubject"
-          },
-          {
-            "$ref": "#/components/schemas/GitUrlCoordinatesSubject"
-          },
-          {
-            "$ref": "#/components/schemas/SbomReachabilitySubject"
-          },
-          {
-            "$ref": "#/components/schemas/OtherSubject"
-          },
-          {
-            "$ref": "#/components/schemas/SbomSubject"
+          "raw": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FindingSummary"
+              }
+            ],
+            "description": "Summary of findings regardless of whether they are effective or not. This\nsummary includes all findings, even those suppressed by policy.\n\nThis attribute is set when the test execution\ncompletes (state.execution == 'finished') successfully (without fatal errors\nblocking an outcome)."
           }
-        ]
-      },
-      "TestSubjectCreate": {
-        "description": "The subject of a test, which identifies the asset/project and content references\nnecessary to conduct a security test.",
-        "discriminator": {
-          "mapping": {
-            "deepcode_bundle": "#/components/schemas/DeepcodeBundleSubject",
-            "dep_graph": "#/components/schemas/DepGraphSubjectCreate",
-            "git_url_coordinates": "#/components/schemas/GitUrlCoordinatesSubject",
-            "other": "#/components/schemas/OtherSubject",
-            "sbom": "#/components/schemas/SbomSubject",
-            "sbom_reachability": "#/components/schemas/SbomReachabilitySubject"
-          },
-          "propertyName": "type"
         },
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/DeepcodeBundleSubject"
-          },
-          {
-            "$ref": "#/components/schemas/DepGraphSubjectCreate"
-          },
-          {
-            "$ref": "#/components/schemas/GitUrlCoordinatesSubject"
-          },
-          {
-            "$ref": "#/components/schemas/SbomReachabilitySubject"
-          },
-          {
-            "$ref": "#/components/schemas/OtherSubject"
-          },
-          {
-            "$ref": "#/components/schemas/SbomSubject"
-          }
-        ]
-      },
-      "TestSubjectLocator": {
-        "discriminator": {
-          "mapping": {
-            "local_path": "#/components/schemas/LocalPathLocator",
-            "other": "#/components/schemas/OtherLocator",
-            "project_entity": "#/components/schemas/ProjectEntityLocator",
-            "project_name": "#/components/schemas/ProjectNameLocator",
-            "scm_repo": "#/components/schemas/ScmRepoLocator"
-          },
-          "propertyName": "type"
-        },
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/ProjectEntityLocator"
-          },
-          {
-            "$ref": "#/components/schemas/ProjectNameLocator"
-          },
-          {
-            "$ref": "#/components/schemas/ScmRepoLocator"
-          },
-          {
-            "$ref": "#/components/schemas/LocalPathLocator"
-          },
-          {
-            "$ref": "#/components/schemas/OtherLocator"
-          }
-        ]
+        "type": "object"
       },
       "TestType": {
         "description": "The type identifier for the \"tests\" resource.",
@@ -29449,23 +28227,6 @@
           "tests"
         ],
         "type": "string"
-      },
-      "TimeoutSpec": {
-        "description": "Specification for a test timeout policy. If the test does not complete within\nthe seconds specified, the test will instantly complete with the given outcome.",
-        "properties": {
-          "outcome": {
-            "$ref": "#/components/schemas/PassFail"
-          },
-          "seconds": {
-            "format": "uint32",
-            "type": "integer"
-          }
-        },
-        "required": [
-          "seconds",
-          "outcome"
-        ],
-        "type": "object"
       },
       "Titles": {
         "items": {
@@ -30231,73 +28992,6 @@
         ],
         "type": "object"
       },
-      "UploadResource": {
-        "description": "Resource referring to an Upload Revision created through the\nFile Upload API (currently in Closed Beta).\n\nRevisions contain collections of files uploaded by clients to\nSnyk for testing.\n\nUploadResources can be marked either as SBOM or Source to\nindicate the contents of the Revision.\n\nSBOM UploadResources should provide the following fields:\n- type\n- revision_id\n- name\n- file_patterns (may be empty)\n\nSource UploadResources should provide the following fields:\n- type\n- revision_id\n- repository_url\n- root_folder_id\n- file_patterns (may be empty)\n\nCurrently supported scans utilizing UploadResources are:\n- SBOM (SCA): (1) UploadResource containing an SBOM\n- SBOM + Reachability Analysis (SCA): (1) UploadResource containing an SBOM, (1) UploadResource containing Source files.\n- Secrets: (1) UploadResource containing Source files",
-        "example": {
-          "content_type": "source",
-          "file_patterns": [],
-          "repository_url": "https://github.com/example/repo",
-          "revision_id": "00000000-0000-0000-0000-000000000000",
-          "root_folder_id": ".",
-          "type": "upload"
-        },
-        "properties": {
-          "content_type": {
-            "description": "Content present in the Upload Revision.\n\nAccepted content types are SBOMs, Source files, and container analysis.",
-            "enum": [
-              "sbom",
-              "source",
-              "container_analysis"
-            ],
-            "type": "string"
-          },
-          "file_patterns": {
-            "description": "File Patterns to include in the scan. Elements must be less than 256 characters.\n\nCurrently unsupported. Provide an empty list.",
-            "items": {
-              "$ref": "#/components/schemas/String256"
-            },
-            "maxItems": 20,
-            "type": "array"
-          },
-          "name": {
-            "description": "A name to assign to the SBOM contained in the UploadRevision.\n\nOverrides the filename in the UploadRevision.",
-            "maxLength": 256,
-            "type": "string"
-          },
-          "repository_url": {
-            "description": "Repository URL at which the Source files are stored.",
-            "maxLength": 1024,
-            "type": "string"
-          },
-          "revision_id": {
-            "description": "The ID returned from the File Upload API for a given Revision.\nThe File Upload API is released in Closed Beta.\nCustomers with access may view the preview documentation for\ninformation on its usage.",
-            "example": "5025c59b-c4dd-48e3-b98a-e98d838f4c9b",
-            "maxLength": 1024,
-            "type": "string"
-          },
-          "root_folder_id": {
-            "description": "Folder inside the UploadRevision at which the Source files are located.",
-            "maxLength": 1024,
-            "type": "string"
-          },
-          "scm_context": {
-            "$ref": "#/components/schemas/ScmContext"
-          },
-          "type": {
-            "enum": [
-              "upload"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "revision_id",
-          "content_type",
-          "file_patterns"
-        ],
-        "type": "object"
-      },
       "User": {
         "additionalProperties": false,
         "properties": {
@@ -30949,104 +29643,6 @@
             "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
           }
         },
-        "type": "object"
-      },
-      "io.snyk.api.v1testdepgraph.request.Graph": {
-        "additionalProperties": {},
-        "properties": {
-          "nodes": {
-            "items": {
-              "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Node"
-            },
-            "type": "array"
-          },
-          "rootNodeId": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "rootNodeId",
-          "nodes"
-        ],
-        "type": "object"
-      },
-      "io.snyk.api.v1testdepgraph.request.Node": {
-        "additionalProperties": {},
-        "properties": {
-          "deps": {
-            "items": {
-              "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.NodeRef"
-            },
-            "type": "array"
-          },
-          "nodeId": {
-            "type": "string"
-          },
-          "pkgId": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "nodeId",
-          "pkgId",
-          "deps"
-        ],
-        "type": "object"
-      },
-      "io.snyk.api.v1testdepgraph.request.NodeRef": {
-        "additionalProperties": {},
-        "properties": {
-          "nodeId": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "nodeId"
-        ],
-        "type": "object"
-      },
-      "io.snyk.api.v1testdepgraph.request.Package": {
-        "additionalProperties": {},
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "info": {
-            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.PackageInfo"
-          }
-        },
-        "required": [
-          "id",
-          "info"
-        ],
-        "type": "object"
-      },
-      "io.snyk.api.v1testdepgraph.request.PackageInfo": {
-        "additionalProperties": {},
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "version": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "version"
-        ],
-        "type": "object"
-      },
-      "io.snyk.api.v1testdepgraph.request.PackageManager": {
-        "additionalProperties": {},
-        "properties": {
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name"
-        ],
         "type": "object"
       },
       "isolation_key": {
@@ -73319,11 +71915,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-09~beta"
         ],
         "x-snyk-api-resource": "tests",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2026-09-09~beta",
         "x-stability-level": "beta"
       }
     },
@@ -73419,11 +72016,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-09~beta"
         ],
         "x-snyk-api-resource": "tests",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2026-09-09~beta",
         "x-stability-level": "beta"
       }
     },
@@ -74012,11 +72610,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-09~beta"
         ],
         "x-snyk-api-resource": "tests",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2026-09-09~beta",
         "x-stability-level": "beta"
       }
     },
@@ -85697,10 +84296,10 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "description": "JobData represents a Job resource object.",
+                      "description": "JobData encapsulates a Job resource object.",
                       "properties": {
                         "attributes": {
-                          "description": "JobAttributes represents the attributes of a Job resource",
+                          "description": "JobAttributes represents the attributes of a Job resource,\ntracking the status of a Test in-flight.",
                           "properties": {
                             "created_at": {
                               "description": "Creation time of the job resource",
@@ -85719,7 +84318,7 @@
                                   "type": "string"
                                 }
                               ],
-                              "description": "State of the test, whether it is pending, running, complete or errored."
+                              "description": "State of the test, whether it is pending, started, finished or errored."
                             }
                           },
                           "required": [
@@ -85859,10 +84458,10 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "description": "JobData represents a Job resource object.",
+                      "description": "JobData encapsulates a Job resource object.",
                       "properties": {
                         "attributes": {
-                          "description": "JobAttributes represents the attributes of a Job resource",
+                          "description": "JobAttributes represents the attributes of a Job resource,\ntracking the status of a Test in-flight.",
                           "properties": {
                             "created_at": {
                               "description": "Creation time of the job resource",
@@ -85881,7 +84480,7 @@
                                   "type": "string"
                                 }
                               ],
-                              "description": "State of the test, whether it is pending, running, complete or errored."
+                              "description": "State of the test, whether it is pending, started, finished or errored."
                             }
                           },
                           "required": [
@@ -86073,17 +84672,18 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-09~beta"
         ],
         "x-snyk-api-resource": "tests",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2026-09-09~beta",
         "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/tests": {
       "post": {
-        "description": "Create a new test.\n\nProvide the items to be tested by Snyk as well as any configuration\nparameters for the test to be run.\n\nCurrently, scans using the Open Source (SCA) and Code Analysis (SAST)\nscanners can be run using the Test API.\n\nTests begun through the Test API yield lists of Findings when\nfinished. These Findings can be retrieved using the ListFindings endpoint.\n\nSuccessfully creating a new Test will yield a Job ID that can be used\nto poll for the Test's completion via the GetJob endpoint.\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `Test packages (org.package.test)`",
+        "description": "Create a new test.\n\nProvide the items to be tested by Snyk as well as any configuration\nparameters for the test to be run.\n\nCurrently, scans on SCM repositories using the\n- Open Source (SCA)\n- Code Analysis (SAST)\n- Secrets\nscanners can be run using the Test API.\n\nTests begun through the Test API yield lists of Findings when\nfinished.\n\nThese Findings can be retrieved using the Findings API, which provides\nthe option to either paginate through the Findings or export all of them\nas a document.\n\nSuccessfully creating a new Test will yield a Job ID that can be used\nto poll for the Test's completion via the GetJob endpoint.\n\n*Note*: SCA scans require the invoking organization to be opted-in to\nusing [Workspaces](https://docs.snyk.io/developer-tools/integrations/scm-integrations/workspaces#manage-workspaces).\nso that the repositories can be cloned.\n\nSAST and Secrets scans do not require opting into this feature.\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `Test packages (org.package.test)`",
         "operationId": "createTest",
         "parameters": [
           {
@@ -86110,7 +84710,7 @@
           "content": {
             "application/vnd.api+json": {
               "schema": {
-                "$ref": "#/components/schemas/TestRequestBody"
+                "$ref": "#/components/schemas/TestRequestV2Body"
               }
             }
           },
@@ -86125,7 +84725,7 @@
                     "data": {
                       "properties": {
                         "attributes": {
-                          "description": "JobAttributes represents the attributes of a Job resource",
+                          "description": "JobAttributes represents the attributes of a Job resource,\ntracking the status of a Test in-flight.",
                           "properties": {
                             "created_at": {
                               "description": "Creation time of the job resource",
@@ -86144,7 +84744,7 @@
                                   "type": "string"
                                 }
                               ],
-                              "description": "State of the test, whether it is pending, running, complete or errored."
+                              "description": "State of the test, whether it is pending, started, finished or errored."
                             }
                           },
                           "required": [
@@ -86298,11 +84898,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-09~beta"
         ],
         "x-snyk-api-resource": "tests",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2026-09-09~beta",
         "x-stability-level": "beta"
       }
     },
@@ -86341,7 +84942,7 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "$ref": "#/components/schemas/TestData"
+                      "$ref": "#/components/schemas/TestDataV2"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
@@ -86462,11 +85063,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-09~beta"
         ],
         "x-snyk-api-resource": "tests",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2026-09-09~beta",
         "x-stability-level": "beta"
       }
     },
@@ -86630,11 +85232,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-09~beta"
         ],
         "x-snyk-api-resource": "tests",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2026-09-09~beta",
         "x-stability-level": "beta"
       }
     },
@@ -86795,11 +85398,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2026-09-09~beta"
         ],
         "x-snyk-api-resource": "tests",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2026-09-09~beta",
         "x-stability-level": "beta"
       }
     },
