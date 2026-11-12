@@ -1,18 +1,18 @@
 ---
-description: Use snyk cos target add to create a target from a configuration file.
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-09T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: Use snyk cos target create to create a target from a configuration file.
 ---
 
-# COS target add
+# COS target create
 
 ## Usage
 
-`snyk cos target add [<OPTIONS>]`
+`snyk cos target create [<OPTIONS>]`
 
 ## Description
 
-The `snyk cos target add` command creates a target from a YAML configuration file.
+The `snyk cos target create` command creates a target from a YAML configuration file.
 
 For a sample configuration file you can copy and adapt, visit [COS target template](cos-target-template.md)
 
@@ -43,5 +43,5 @@ Use the `-d` option to output the debug logs.
 Example:
 
 ```bash
-$ snyk cos target add --config=acme.yaml
+$ snyk cos target create --config=acme.yaml
 ```

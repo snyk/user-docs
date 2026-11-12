@@ -20,7 +20,7 @@ You can find prioritization within Snyk under several names and with different c
 
 You can focus solely on one type of prioritization, or you can combine them for a more complex and targeted focus on the issues that require your immediate attention. You can use prioritization for your vulnerabilities, your security program, and your coverage (from a security perspective), or you can use it in the Reporting section of your Projects.\
 \
-For example, if you only prioritize the Projects from your repositories, then the list of issues is more general. However, if you choose to use prioritization with Issues, available for Snyk Essentials, the analyzed issues are filtered through several other factors (risk factors, assets) all contributing to the creation of an issues priority list based on more complex and targeted filters, allowing you to customize the prioritization based on your needs.
+For example, if you only prioritize the Projects from your repositories, then the list of issues is more general. However, if you choose to use prioritization with Issues, available for Snyk Essentials, the analyzed issues are filtered through several other factors, such as assets, all contributing to the creation of an issues priority list based on more complex and targeted filters, allowing you to customize the prioritization based on your needs.
 
 ### Prioritization at the Project level
 
@@ -107,15 +107,6 @@ You can use this type of prioritization with the Snyk Enterprise Plan. You can u
 ### Prioritization based on risk
 
 [Prioritization with Issues](prioritization-for-snyk-essentials.md) for Snyk uses holistic application intelligence to help you identify and prioritize container, code, and open source issues based on the risk they pose to your application. You can prioritize issues based on asset classification as defined in Snyk policies.
-
-You can use Prioritization with Insights to identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. These are the risk factors that you can use:
-
-* Deployed
-* Loaded package
-* OS condition
-* Public facing
-
-You can use the Prioritization with Insights at the Snyk Group or Snyk Organization level.
 
 ### Prioritization based on coverage and security program
 
