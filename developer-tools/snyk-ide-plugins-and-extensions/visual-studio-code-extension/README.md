@@ -16,7 +16,7 @@ Integrating security checks early in your development lifecycle helps you pass s
 The Snyk Visual Studio Code extension allows you to analyze your code, open-source dependencies, and Infrastructure as Code (IaC) configurations. With actionable insights directly in your IDE, you can address issues as they arise.
 
 {% hint style="info" %}
-The extension also works for other VSCode-based IDEs such as Windsurf, Cursor, and Eclipse Theia.
+The extension also works for other VSCode-based IDEs such as Devin Desktop, Cursor, and Eclipse Theia.
 {% endhint %}
 
 **Key features:**
@@ -62,9 +62,9 @@ Continue by following the instructions in the other Visual Studio Code extension
 * [Run an analysis with Visual Studio Code extension](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension)
 * [View analysis results from Visual Studio Code extension](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension)
 
-When the VS Code extension is installed for the first time, a modal will pop up asking users if they want to enable Secure at Inception capabilities via Snyk Studio. With Secure at Inception enabled, a file such as snyk\_rules.mdc may be written to the directory.
+The extension's Studio opt-in configures a rules-based integration. It does not replace the Studio installer for configuring Secure at inception hooks, MCP access, and the supported commands and skills together.
 
-For more information, see the Snyk Studio quickstart guides for [Cursor](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide), [Windsurf](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide), and [Copilot](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/github-copilot-guide).
+For local developer setup, visit [Getting started with Snyk Studio](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/getting-started-with-snyk-studio). For enterprise rollout, use the [Agentic Development Security (ADS) installer](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/activation-and-deployment).
 
 ## Support
 

@@ -1,7 +1,7 @@
 ---
-description: Use the snyk cos finding commands to list and inspect findings.
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-09T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: Use the snyk cos finding commands to list and inspect findings.
 ---
 
 # COS finding
@@ -19,7 +19,7 @@ For a list of related commands, visit the [Snyk COS](cos.md) help, `snyk cos --h
 ## Commands
 
 * [`snyk cos finding list`](cos-finding-list.md), `snyk cos finding list --help`: list the findings for a target or scan
-* [`snyk cos finding show`](cos-finding-show.md), `snyk cos finding show --help`: show the details of a finding
+* [`snyk cos finding get`](cos-finding-show.md), `snyk cos finding get --help`: show the details of a finding
 
 ## Configure the Snyk CLI
 
