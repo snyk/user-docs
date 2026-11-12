@@ -187,10 +187,10 @@ To complete your login:
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on. Please make sure you replace any Snyk URL with the correct regional environment per the tables above.
 
-{% file src="../../.gitbook/assets/SSO Azure Worksheet (3).pdf" %}
+{% file src="../../.gitbook/assets/SSO Azure Worksheet.pdf" %}
 
-{% file src="../../.gitbook/assets/SSO SAML Worksheet (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO SAML Worksheet.pdf" %}
 
-{% file src="../../.gitbook/assets/SSO ADFS Worksheet (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO ADFS Worksheet.pdf" %}
 
-{% file src="../../.gitbook/assets/SSO OIDC Worksheet (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO OIDC Worksheet.pdf" %}

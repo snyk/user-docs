@@ -35,6 +35,8 @@ To use this report, you must ensure you have installed the following prerequisit
 This report shows the adoption of Snyk testing in local development through the IDE plugins, using the CLI locally or incorporating Snyk Studio into agentic workflows. The report is available under the Change Report dropdown at the Group and Organization levels.
 
 {% hint style="info" %}
+Studio background scans use the `STUDIO` integration name. Direct calls through the MCP server use `MCP`. These are separate Studio execution paths.
+
 This report focuses on the local developer experience and does not include the use of CI/CD. In addition, it does not show Organizations or developers that have never used the CLI, IDE, or Snyk Studio (through MCP).
 {% endhint %}
 

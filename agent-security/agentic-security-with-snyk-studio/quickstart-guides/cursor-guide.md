@@ -1,158 +1,72 @@
 ---
-description: >-
-  How to install Snyk Studio in Cursor using the hooks-based or rules-based
-  approach
+description: How to set up Snyk Studio in Cursor with the Snyk CLI
 nav_context: classic
 last_reviewed: 2026-09-17
 last_reviewed_source: bulk-sync
 ---
 
-# Cursor guide
+# Connect Cursor to Snyk
 
-Access Snyk Studio in Cursor to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Cursor.
+Set up Snyk Studio in Cursor to scan code and dependencies, evaluate package health, and fix vulnerabilities from your coding assistant.
+
+For enterprise deployment across your development teams, use the [Agentic Development Security (ADS) installer](../../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md). The following procedure is for local developer setup.
 
 ## Install Snyk Studio with hooks support
 
-For installation instructions, visit [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-with-hooks-support).
+Install Cursor and the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli). Enable the Snyk products you want to scan with. Complete the account and product setup in [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md).
 
-## Install Snyk Studio (legacy rules-based approach)
+1. Authenticate with Snyk:
 
-### Access Snyk Studio using the Snyk Security extension
+   ```bash
+   snyk auth
+   ```
 
-* Click [this link](cursor:extension/snyk-security.snyk-vulnerability-scanner) to open up the Snyk Security extension directly
-* Click `Install`
+2. Run the installer as the developer who uses Cursor:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-10-13 at 2.19.30 PM.png" alt="Snyk Security extension installed in Cursor"><figcaption></figcaption></figure>
+   ```bash
+   snyk studio install --experimental --ade=cursor
+   ```
 
-### Enable Secure At Inception
+3. Start a new session in Cursor and open the repository you want to work in. Complete any MCP authentication or folder-trust request.
 
-Once installation completes, a modal window will appear prompting an opt-in to Snyk Studio's "Secure at Inception." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's Settings page.
+## Verify installation
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt="Modal prompting to opt in to Secure at Inception"><figcaption></figcaption></figure>
+Run:
 
-Choosing **Yes** activates `Auto Configure Snyk Mcp Server` and sets the `Secure at Inception: Execution Frequency` to **On Code Generation**. These settings handle the configuration of the Snyk MCP Server and the creation of the snyk\_rules.mdc file within the directory.
-
-#### Updating the Secure at Inception setting
-
-Users who previously installed the VS Code IDE extensions and did not enable Secure at Inception using the modal window can enable them after the fact through the IDE extension settings. Users can also update Secure at Inception settings or disable them by setting the `Execution Frequency` to "Manual."
-
-<figure><img src="../../.gitbook/assets/image (18).png" alt="Updating the Secure at Inception setting in the extension settings"><figcaption></figcaption></figure>
-
-### Authenticate
-
-Once you've made a selection regarding Secure at Inception, you will be asked to authenticate. You can authenticate at two points in this process:
-
-* Immediately after plugin install
-* Prior to your first Snyk code scan
-
-As part of the authentication flow, you'll be asked to either sign up or sign in on the Snyk website. A browser window will open.
-
-For new users, select the preferred sign up method and agree to the terms on the next screen. Once you've successfully authenticated, you'll be instructed to return to your IDE.
-
-To use Snyk Studio, specifically Snyk's SAST scanning capabilities, you must [enable Snyk Code](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to Snyk's [data retention policy](https://docs.snyk.io/snyk-data-and-governance/how-snyk-handles-your-data). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code.
-
-For existing users, select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code).
-
-If you are enabling Snyk Code for the first time, you must import or re-import existing projects in order to properly scan them.
-
-### Run Snyk Studio
-
-Once authenticated, Snyk Studio should be triggered whenever new code is generated by the LLM. If Snyk Studio is not enabled, restart your IDE and try generating code again.
-
-Free users are limited to a set number of scans. If you reach the allotment, we recommend [reaching out to sales](https://snyk.io/contact-us/) to unlock additional thresholds.
-
-## Alternative: Install Snyk Studio Directly
-
-#### Install using the Cursor Link
-
-Click [this link](cursor://anysphere.cursor-deeplink/mcp/install?name=snyk\&config=eyJjb21tYW5kIjoibnB4IC15IHNueWtAbGF0ZXN0IG1jcCAtdCBzdGRpbyJ9) to directly add the Snyk MCP Server to Cursor. Confirm the installation by clicking `Install` in the Cursor settings.
-
-<figure><img src="../../.gitbook/assets/image (19).png" alt="Installing the Snyk MCP server from the Cursor install link"><figcaption></figcaption></figure>
-
-#### Install using the Cursor MCP Directory
-
-Search the [Cursor MCP Directory](https://cursor.com/docs/context/mcp/directory) for `Snyk`. Then install by clicking the `Add to Cursor` button. Confirm the installation by clicking `Install` in the Cursor settings.
-
-<figure><img src="../../.gitbook/assets/image (20).png" alt="Snyk listed in the Cursor MCP Directory"><figcaption></figcaption></figure>
-
-#### Install manually
-
-Install the Snyk MCP Server using the method that best suits your operating system and local development environment. The Snyk MCP Server can be installed and run via `npx` or via the Snyk CLI.
-
-Navigate to Cursor **Settings** > **Tools & Integrations** > **Add Custom MCP.**
-
-To install and run using `npx`:
-
-```json5
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "npx -y snyk@latest mcp -t stdio",
-      "env": {}
-    }
-  }
-}
+```bash
+snyk studio install --experimental --verify --ade=cursor
 ```
 
-To install and run using the Snyk CLI:
+This checks the installed assets. For merged configuration files, the verifier checks only file existence. It does not confirm that a scan completed.
 
-```json5
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "/abosolute/path/to/snyk",
-      "args": ["mcp", "-t", "stdio"],
-      "env": {}
-    }
-  }
-}
+Ask Cursor to scan the repository:
+
+```text
+Scan this repository for code and dependency vulnerabilities. Summarize the findings before making changes.
 ```
 
-## Setting up the Snyk MCP Server
+## Check background hook scanning
 
-As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
+Run a coding task in a new assistant session. Studio hooks trigger background scans for supported code and dependency changes. Inspect the activity with:
 
-These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog.
-
-If you need to authenticate and trust the current directory, then proceed and complete the process.
-
-## Examples
-
-### Scanning for security vulnerabilities
-
-In the chat, you can tag specific files or functions and ask Windsurf to scan your code for safely deploying to production:
-
-{% code title="prompt" overflow="wrap" %}
+```bash
+snyk studio logs --experimental --level=debug
 ```
-Scan this directory for code security & dependency vulnerabilities and security issues
+
+Check for hook events and scan results. A successful direct MCP scan does not verify that the hooks ran. For scan failures, authentication, or missing activity, visit [Troubleshooting](../troubleshooting.md).
+
+## Update or remove Snyk Studio
+
+After updating the Snyk CLI, run the installation command again to refresh the components, then start a new assistant session.
+
+To remove the local setup for Cursor, run:
+
+```bash
+snyk studio install --experimental --uninstall --ade=cursor
 ```
-{% endcode %}
 
-Cursor indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
+If your company deployed Studio through ADS, use the [ADS removal procedure](../../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md#uninstall).
 
-Cursor is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found.
+## Manual MCP configuration
 
-### "Secure at inception" rules
-
-To practice [Secure at Inception](https://docs.snyk.io/glossary#secure-at-inception-directive), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
-
-The following is a suggested instruction for [Cursor rules](https://docs.cursor.com/en/context/rules). Append the following contents to the rules file at `.cursor/rules`:
-
-{% code title=".cursor/rules" overflow="wrap" %}
-```
----
-alwaysApply: true
-always_on: true
-trigger: always_on
-applyTo: "**"
-description: Snyk Security At Inception
----
-
-# Project security best practices
-
-- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
-- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no new issues are found.
-```
-{% endcode %}
+For an MCP-only connection, use the [manual configuration instructions](../getting-started-with-snyk-studio.md#configure-the-snyk-mcp-server) with your client's supported configuration format. Manual MCP setup does not install the full Studio components.
