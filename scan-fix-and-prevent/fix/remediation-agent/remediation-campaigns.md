@@ -24,7 +24,7 @@ To create a campaign, you must have:
 * Access to Evo by Snyk and to the Organization that owns the repositories. If Snyk needs to install its App in the Organization, you also need permission to install Apps in that Organization. The **Org Admin** role includes this permission.
 * Repositories that use a [supported package manager](#supported-package-managers).
 
-Campaigns do not support private package registries. For details, see [Limitations](#limitations).
+For repositories with private dependencies, configure the required integrations in the Snyk Organization. Visit [Private package support](#private-package-support) for the supported configurations.
 
 ## Supported package managers
 
@@ -44,6 +44,23 @@ Remediation campaigns support the following package managers and build tools:
 | Bundler | Ruby |
 
 Bundler support is limited to relock operations.
+
+## Private package support
+
+The agent can install and scan private dependencies using integrations already configured in your Snyk Organization. This access lets campaigns build repositories with private dependencies and fix vulnerabilities in their dependency trees. It does not add support for upgrading private package versions or assessing their breaking-change risk. Existing Snyk Open Source scanning limitations still apply.
+
+Support depends on the package source and connection:
+
+| Package source or connection | Support |
+|---|---|
+| Private npm packages | Uses the [npm Teams and npm Enterprise integration](../../scan-with-snyk/snyk-open-source/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md), with the registry URL and a token that can read the required packages |
+| Artifactory or Nexus, direct connection | All ecosystems supported by the Remediation Agent, using the integration's username and password |
+| Artifactory or Nexus through Snyk Broker | .NET, Go, npm, and Maven |
+| Private Go modules on GitHub | Uses the repository's existing GitHub SCM integration credentials, including GitHub App and direct GitHub Enterprise integrations. The credentials must grant read access to the module repositories under the same GitHub owner. Brokered SCM connections are not supported for fetching these modules. |
+
+Configure the relevant integration before running a campaign. For registry setup, visit [Package repository integrations](../../scan-with-snyk/snyk-open-source/package-repository-integrations/README.md).
+
+A supported package manager does not guarantee access to every private registry. If the sandbox cannot access a required private dependency, dependency installation fails and prevents builds or fix validation that require it.
 
 ## How campaigns work
 
@@ -188,12 +205,11 @@ Campaigns run the same agent as `snyk fix --agentic` in the [Snyk CLI](../remedi
 | Where the agent runs | Snyk-hosted sandbox | Your machine or pipeline |
 | Model configuration | Snyk supplies the model | You configure a provider and credentials |
 | Approval | The agent proceeds automatically. You review its pull request. | Interactive, unless you use `--auto-approve` |
-| Private package registries | Not supported | Supported when your local environment can reach them |
+| Private packages | Supported for the [documented package sources and connections](#private-package-support), using existing Snyk integrations | Supported when your local environment can reach them |
 | Scan types | Snyk Open Source | Snyk Open Source, Snyk Code, and Snyk Container |
 
 
 {% hint style="info" %}
-* The agent fetches dependencies from public registries only. Repositories that depend on private registries can fail to build in the sandbox.
 * The agent can fix breaking changes that require small code edits. It does not perform large migrations, such as a major framework upgrade.
 * Campaigns do not disable [Snyk Fix PRs](../snyk-pull-or-merge-requests/README.md). If you use both for a repository, both can open pull requests for the same vulnerability.
 {% endhint %}
