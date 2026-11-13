@@ -14,14 +14,14 @@ Deploy Agentic Development Security (ADS) to Windows devices with Microsoft Intu
 
 Intune supports two deployment methods. Assign each group of devices to one method only.
 
-|                       | Standard install                                              | Managed mode                                                                         |
-| --------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| **Products installed**| The products you selected, including Studio                   | Scan and Guard. Studio is not installed.                                             |
-| **Applies to**        | The signed-in user                                            | Every user on the machine, and protected from removal by the people using them       |
-| **How you deploy**    | A line-of-business app and a remediation script               | A line-of-business app with command-line arguments. No remediation or other script is needed. |
-| **Codex governance**  | Each developer must accept a prompt in Codex                  | No prompt                                                                            |
+| Feature                  | Standard install                                              | Managed mode                                                                         |
+| ------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **Products installed**   | The products you selected, including Studio                   | Scan and Guard. Studio is not installed.                                             |
+| **Applies to**           | The signed-in user                                            | Every user on the machine, and protected from removal by the people using them       |
+| **How you deploy**       | A line-of-business app and a remediation script               | A line-of-business app with command-line arguments. No remediation or other script is needed. |
+| **Codex governance**     | Each developer must accept a prompt in Codex                  | No prompt                                                                            |
 
-The steps below describe the standard install. For managed mode, visit [Managed mode](deploy-with-microsoft-intune.md#managed-mode).
+The following steps describe the standard install. For managed mode, visit [Managed mode](#managed-mode).
 
 {% hint style="warning" %}
 **Codex in user mode requires each developer to accept a prompt**
@@ -67,7 +67,7 @@ You need the following:
     Exit 0
     ```
 
-    Intune runs the remediation when the detection script exits with a non-zero code. This script exits 1 when the installer is present, so the remediation runs on every schedule. Each run fetches your current published configuration and skips binaries that already match by checksum.
+    Intune runs the remediation when the detection script exits with a non-zero code. This script exits 1 if the installer is present, so the remediation runs on every schedule. Each run fetches your current published configuration and skips binaries that already match by checksum.
 
     Remediation script:
 
@@ -89,14 +89,14 @@ You need the following:
     exit $LASTEXITCODE
     ```
 
-    Leave `--install-mode` unset. The installer then takes the mode from your Tenant's configuration, and uses user mode when none is set. The remediation runs as the signed-in user without elevation, so keep your Tenant configuration on user mode for devices that use the standard install.
+    Leave `--install-mode` unset. The installer then takes the mode from your Tenant's configuration and uses user mode when none is set. The remediation runs as the signed-in user without elevation, so keep your Tenant configuration on user mode for devices that use the standard install.
 4. On the remediation's **Settings** page, set:
    * **Run this script using the logged-on credentials**: **Yes**
    * **Enforce script signature check**: **No**
    * **Run script in 64-bit PowerShell**: **Yes**
 5. On **Assignments**, target the same devices as your app, choose how often the remediation runs, and save. A daily schedule keeps device configuration aligned with changes you make in Snyk.
 
-Onboarding runs the next time each targeted device checks in: within an hour for an enrolled device, or immediately when you click **Sync** on the device page. The remediation runs only when a user is signed in. A device with no signed-in user is onboarded on a later run, after someone signs in.
+Onboarding runs the next time each targeted device checks in: within an hour for an enrolled device, or immediately when you click **Sync** on the device page. The remediation runs only when a user is signed in. A device with no signed-in user is onboarded on a later run, after someone has signed in.
 
 {% hint style="warning" %}
 **Run this script using the logged-on credentials** must be **Yes**. On Windows, the installer runs as the account that invokes it, so ADS installs for the account the remediation runs under. If you set it to **No**, the remediation runs as SYSTEM and installs ADS for SYSTEM rather than for the person using the machine. The signed-in user then has nothing installed.
@@ -118,7 +118,7 @@ If the Tenant was not onboarded, for example because the push key was wrong, Int
 
 Publish the change in **Settings** first. The `Snyk ADS – onboard tenant` remediation runs on its own schedule and fetches your current published configuration each time, so changes apply on the next run. To apply a change sooner, click **Sync** on the device, or shorten the interval between remediation runs.
 
-Each run skips binaries that already match by checksum, so repeated runs are cheap. For managed mode, visit [Apply a configuration change in managed mode](deploy-with-microsoft-intune.md#apply-a-configuration-change-in-managed-mode).
+Each run skips binaries that already match by checksum, so repeated runs are cheap. For managed mode, visit [Apply a configuration change in managed mode](#apply-a-configuration-change-in-managed-mode).
 
 ## Upgrade the installer
 
@@ -128,7 +128,7 @@ Replace the `.msi` on the app and redeploy. Intune detects the new package by it
 
 Managed mode is an opt-in for companies that need the products to apply to every user on a machine and to be protected from removal by the people using it. It requires ADS installer v1.88.0 or later, with Machines and Agent Behavior Governance on version 0.6.4 or later. For how the two modes differ, visit [Installation mode](./#installation-mode).
 
-Use managed mode when Scan and Guard should cover every local user on a device, including shared machines and machines where nobody has signed in yet. Studio is not installed in managed mode. To include Studio, use the standard install.
+Use managed mode when Scan and Guard must cover every local user on a device, including shared machines and machines where nobody has signed in yet. Studio is not installed in managed mode. To include Studio, use the standard install.
 
 Managed mode needs no script. Do not create a detection script or a remediation, and do not run the installer from PowerShell. To select managed mode, pass the credentials and the mode as command-line arguments on the line-of-business app. The `.msi` installs and onboards in one step:
 
@@ -139,7 +139,9 @@ TENANTID=<TENANT_ID> PUSHKEY=<PUSH_KEY> INSTALLMODE=managed /qn
 `/qn` keeps the `msiexec` run fully silent, with no interface and no prompts. If you log in outside the default US region, add `BASEURL=<BASE_URL>` before `/qn`. **App install context** must be **Device**. Assign the app to a dedicated device group, separate from any group that uses the standard install.
 
 {% hint style="warning" %}
-Always include `INSTALLMODE=managed`. With **App install context** set to **Device**, Intune runs the `.msi` as SYSTEM, and the installer runs as whoever starts `msiexec`, which is SYSTEM as well. Managed mode needs that elevated run, and it places the products in machine-wide paths that the machine's users cannot change. If you leave `INSTALLMODE` out, the installer writes the products into SYSTEM's profile and the signed-in user is not onboarded. For a per-user install, leave the command-line arguments blank and use the standard install.
+**Always include `INSTALLMODE=managed`.**
+
+With **App install context** set to **Device**, Intune runs the `.msi` as SYSTEM, and the installer runs as whoever starts `msiexec`, which is SYSTEM as well. Managed mode needs that elevated run, and it places the products in machine-wide paths that the machine's users cannot change. If you leave `INSTALLMODE` out, the installer writes the products into SYSTEM's profile and the signed-in user is not onboarded. For a per-user install, leave the command-line arguments blank and use the standard install.
 {% endhint %}
 
 If the Tenant was not onboarded, for example because the push key was wrong, the install fails and Intune reports the whole app installation as failed. It does not report partial success.
@@ -148,9 +150,9 @@ If the Tenant was not onboarded, for example because the push key was wrong, the
 
 After Intune installs the app on a device, it does not run the install command again on its own. Intune detects the app by the package's product code, which does not change when you change your Tenant's configuration. To apply a configuration change, publish it in **Settings**, then do one of the following:
 
-* In Intune, open the app's device install status, select the device, and use **Retry**.
+* In Intune, open the app's **Device install status**, select the device, and click **Retry**.
 * Click **Sync** on the device. This is enough when the app was left in a non-compliant state, for example after a failed onboarding.
 
 Repeating the install is safe. The installer fetches your current published configuration each time and skips binaries that already match by checksum. To apply changes on a recurring schedule instead of on demand, automate periodic **Retry** actions, for example through the Microsoft Graph API.
 
-To confirm a managed mode deployment, visit [Verify an installation](verify-an-installation.md).
+To confirm a managed mode deployment, visit [Verify an installation](verify-an-installation.md#managed-mode-on-windows).
