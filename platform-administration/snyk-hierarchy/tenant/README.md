@@ -19,7 +19,7 @@ A Tenant is the top level of the Snyk hierarchy. It encompasses all your Groups 
 
 At the Tenant level, you can manage access to features that work across your entire Snyk estate, such as [Snyk Analytics](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics) and Members, which allows you to manage users.
 
-Tenant-level roles include **Tenant Admin**, **Tenant Viewer**, and **Tenant Member**. For more information, see [Pre-defined roles](../../user-management/pre-defined-roles.md#role-types).
+Tenant-level roles include **Tenant Admin**, **Tenant Viewer**, **Tenant Viewer with Evo access**, **Tenant Member**, and **Tenant Member with Evo access**. For more information, see [Pre-defined roles](../../user-management/pre-defined-roles.md#role-types).
 
 ## Tenant-level options
 

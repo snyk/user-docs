@@ -24,7 +24,9 @@ The pre-defined roles Snyk provides are as follows:
 * **Group Member:** a non-functional user role added to your environment as a transition from Group Viewer if you do not yet wish to create a custom role after onboarding with Snyk. This means the permissions granted can vary depending on your requirements, as discussed with your Snyk contacts. Select the named role from the list under Manage Members in the Snyk Web UI to check the permissions assigned to your Group Member role.
 * **Tenant Admin**: a user who can access all Tenant products and settings. This role is reserved for account owners and admins only.
 * **Tenant Viewer**: a user who can see the list of all users of a Tenant, as well as all the Groups and Organizations set up for a Tenant.
-* **Tenant Member:** the default role of all users of a Tenant, but with no access to any Tenant level option.
+* **Tenant Viewer with Evo access**: a Tenant Viewer with full access to the Evo platform.
+* **Tenant Member:** the default role assigned to all users of a Tenant, with a minimal set of Tenant-level permissions.
+* **Tenant Member with Evo access:** a Tenant Member with full access to the Evo platform.
 
 ### Role types
 
@@ -57,27 +59,28 @@ This table details the Group-level permissions that apply to each pre-defined ro
 ### Tenant-level permissions <a href="#tenant-level-permissions" id="tenant-level-permissions"></a>
 
 Tenant permissions are set and managed on the Tenant **Members** page.\
-The available Tenant roles are: **Tenant Admin**, **Tenant Viewer**, and **Tenant Member**. For more information, see [Manage users in a Tenant](../snyk-hierarchy/tenant/manage-users-in-a-tenant.md).
+The available Tenant roles are: **Tenant Admin**, **Tenant Viewer**, **Tenant Viewer with Evo access**, **Tenant Member**, and **Tenant Member with Evo access**. For more information, see [Manage users in a Tenant](../snyk-hierarchy/tenant/manage-users-in-a-tenant.md).
 
 This table details the Tenant-level permissions that apply to each pre-defined role:
 
-|                                     | Tenant Admin         | Tenant Viewer        | Tenant Member        |
-| ----------------------------------- | -------------------- | -------------------- | -------------------- |
-| View Tenant                         | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
-| Edit Tenant                         | :heavy\_check\_mark: |                      |                      |
-| Access Evo Platform                 | :heavy\_check\_mark: |                      |                      |
-| List Group                          | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| View Membership                     | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| Edit Membership                     | :heavy\_check\_mark: |                      |                      |
-| Edit Owner                          | :heavy\_check\_mark: |                      |                      |
-| Create SSO                          | :heavy\_check\_mark: |                      |                      |
-| Edit SSO                            | :heavy\_check\_mark: |                      |                      |
-| View SSO                            | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| Delete SSO                          | :heavy\_check\_mark: |                      |                      |
-| View User                           | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| View Report                         | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| View Billing                        | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| Raise Support Community Cases       | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
-| View Support Community Cases        | :heavy\_check\_mark: |                      |                      |
-| View Snyk Learn Learning Programs   | :heavy\_check\_mark: |                      |                      |
-| Modify Snyk Learn Learning Programs | :heavy\_check\_mark: |                      |                      |
+|  | Tenant Admin | Tenant Viewer | Tenant Viewer with Evo access | Tenant Member | Tenant Member with Evo access |
+| --- | --- | --- | --- | --- | --- |
+| View Tenant | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| Edit Tenant | :heavy\_check\_mark: |  |  |  |  |
+| View the Evo Platform | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |  | :heavy\_check\_mark: |
+| Access Evo Platform | :heavy\_check\_mark: |  | :heavy\_check\_mark: |  | :heavy\_check\_mark: |
+| List Group | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |  |  |
+| View Membership | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |  |  |
+| Edit Membership | :heavy\_check\_mark: |  |  |  |  |
+| Edit Owner | :heavy\_check\_mark: |  |  |  |  |
+| Create SSO | :heavy\_check\_mark: |  |  |  |  |
+| Edit SSO | :heavy\_check\_mark: |  |  |  |  |
+| View SSO | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |  |  |
+| Delete SSO | :heavy\_check\_mark: |  |  |  |  |
+| View User | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |  |  |
+| View Report | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |  |  |
+| View Billing | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |  |  |
+| Raise Support Community Cases | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| View Support Community Cases | :heavy\_check\_mark: |  |  |  |  |
+| View Snyk Learn Learning Programs | :heavy\_check\_mark: |  |  |  |  |
+| Modify Snyk Learn Learning Programs | :heavy\_check\_mark: |  |  |  |  |
