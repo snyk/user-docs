@@ -67,7 +67,7 @@ Two versions are involved in an install:
 Pin a product version when every machine in a rollout needs the same build. A pinned version does not change until you change it, and the installer applies it the next time it runs.
 
 {% hint style="warning" %}
-Scheduled scanning requires version 0.6.8 or later of Machines. Earlier versions run one scan each time the installer runs, not on a schedule.
+Scheduled scanning requires version 0.6.0 or later of Machines. Earlier versions run one scan each time the installer runs, not on a schedule.
 {% endhint %}
 
 ### Installation mode
@@ -117,7 +117,7 @@ The Windows `.msi` does not accept this flag. To use a custom directory on Windo
 
 Agent Supply Chain Security scans run every 24 hours by default on macOS and Windows. The installer registers a scheduled job on the machine, and that job runs the scan and exits. Your MDM tool does not need to run the installer again to trigger a scan. Scheduled scans are not supported on Linux.
 
-The first scan runs at install time rather than waiting for the job's first run. Running the installer again within 24 hours of the last scan does not trigger another scan or disturb the schedule, so you can safely run the installer on a frequent MDM policy.
+The first scan runs at install time rather than waiting for the job's first run. Running the installer again before the configured scan interval has elapsed does not trigger another scan or disturb the schedule, so you can safely run the installer on a frequent MDM policy.
 
 The scheduled job runs the scan only. It does not fetch changes to your product selection or versions. Those apply the next time the installer itself runs on the machine.
 
@@ -210,7 +210,7 @@ Unselecting a product in ADS settings and running `uninstall` do different thing
 
 Unselecting a product in ADS settings stops the installer from setting it up on machines that do not have it yet.
 
-It does not change machines that already have the product. The installer does not reconcile existing machines and removes nothing on later runs. The scheduled scan keeps running, and Agent Behavior Governance hooks stay in place. To remove a product from those machines, run the `uninstall` command described in [Remove an ADS product from a machine](./#remove-an-ads-product-from-a-machine).
+It does not change machines that already have the product. By default, the installer does not reconcile existing machines and removes nothing on later runs. If you pass `--auto-uninstall`, the installer removes unselected Agent Behavior Governance and Snyk Studio components. Without that flag, the scheduled scan keeps running and Agent Behavior Governance hooks stay in place. To remove a product from those machines, run the `uninstall` command described in [Remove an ADS product from a machine](./#remove-an-ads-product-from-a-machine).
 
 1. In ADS settings, unselect the product.
 2. Click **Save & Publish**. Publishing updates the manifest, and the installer reads it the next time it runs on a new machine.
