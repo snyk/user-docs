@@ -44,9 +44,9 @@ Get-ChildItem "$env:ProgramData\Snyk\ads-scan" -File | Select-Object Name, Lengt
 schtasks /Query /TN "\Snyk\ADS\" /V /FO LIST 2>$null | Select-String "TaskName|Run As User"
 ```
 
-`Run As User` for the scheduled task shows `BUILTIN\Users` rather than one specific account. That is the machine-wide principal that applies the scan to every local user.
+`Run As User` for the scheduled task must show `BUILTIN\Users` rather than one specific account. That is the machine-wide principal that applies the scan to every local user.
 
-The scheduled task exists only when Machines is on version 0.6.8 or later. On an earlier version the query returns nothing, which does not mean the install failed.
+The scheduled task exists only when Machines is on version 0.6.0 or later. On an earlier version the query returns nothing, which does not mean the install failed.
 
 ## If a machine is missing from Evo
 
