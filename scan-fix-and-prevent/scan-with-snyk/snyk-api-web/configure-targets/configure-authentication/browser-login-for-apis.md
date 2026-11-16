@@ -1,22 +1,18 @@
 ---
+last_reviewed: 2026-10-02T00:00:00.000Z
+last_reviewed_source: focused-edit
 description: >-
   Record a login sequence once and map the session credential so Snyk API & Web
   can authenticate API targets at scan time without manual token refresh.
-last_reviewed: 2026-10-02
-last_reviewed_source: focused-edit
 ---
 
 # Browser login for APIs
 
 {% hint style="info" %}
-Browser login for API targets is in **Early Access**. Contact your account team or [Snyk Support](https://support.snyk.io/s/contactsupport) if you want to try this feature.
-
-This release does not support:
+This feature does not support:
 
 * OpenAPI or GraphQL API targets
-* multi-factor authentication (MFA), including time-based one-time passwords (TOTP)
 * AI-assisted login sequence configuration
-* login video downloads for debugging
 {% endhint %}
 
 Snyk API & Web can replay a browser-driven sign-in flow at scan time, extract the resulting session credential, and attach it to your collection requests, so authenticated scans run on a schedule without manual token refresh. Use this when sign-in happens in a browser (for example, OAuth 2.0, OIDC, SAML, or SSO) rather than through a scripted collection folder. For other authentication options, visit [Authentication](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication).
@@ -44,6 +40,8 @@ Before you configure browser login for an API target, ensure you have:
 3. Paste or upload your login sequence JSON, then click **Submit sequence**.
 
 For recording, reusing a sequence from a web target, and plugin setup, follow [Login sequence](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-login-sequence).
+
+Browser login supports two-factor authentication (2FA), if needed. [Configure 2FA](./#two-factor-authentication) for the login sequence as you do for web targets.
 
 ## Map session credential
 
