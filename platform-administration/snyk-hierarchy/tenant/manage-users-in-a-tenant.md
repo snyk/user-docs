@@ -29,7 +29,9 @@ On the Tenant **Members** page, you can see all the users associated with your T
 
 * **Tenant Admin**: can access all Tenant products and settings. Reserved for Snyk Admins only.
 * **Tenant Viewer:** can see the list of all Tenant users, all the Groups, and all the Organizations of the Tenant.
-* **Tenant Member**: the default role of all users of the Tenant with no access to any Tenant level option.
+* **Tenant Viewer with Evo access**: a Tenant Viewer with full access to the Evo platform.
+* **Tenant Member**: the default role assigned to all users of the Tenant, with a minimal set of Tenant-level permissions.
+* **Tenant Member with Evo access**: a Tenant Member with full access to the Evo platform.
 
 Users with the Tenant Admin or Tenant Viewer roles can navigate the list of users by:
 

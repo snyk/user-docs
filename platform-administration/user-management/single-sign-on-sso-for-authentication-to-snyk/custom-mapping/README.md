@@ -173,6 +173,8 @@ Snyk has a set of [pre-defined roles](../../pre-defined-roles.md). Their corresp
 | Group        | Group Admin      | `group_admin`      |
 | Group        | Group Viewer     | `group_viewer`     |
 | Group        | Group Member     | `group_member`     |
-| Tenant       | Tenant Admin     | `tenant_admin`     |
-| Tenant       | Tenant Viewer    | `tenant_viewer`    |
-| Tenant       | Tenant Member    | `tenant_member`    |
+| Tenant       | Tenant Admin                  | `tenant_admin`                  |
+| Tenant       | Tenant Viewer                 | `tenant_viewer`                 |
+| Tenant       | Tenant Viewer with Evo access | `tenant_viewer_with_evo_access` |
+| Tenant       | Tenant Member                 | `tenant_member`                 |
+| Tenant       | Tenant Member with Evo access | `tenant_member_with_evo_access` |

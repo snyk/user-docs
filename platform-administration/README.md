@@ -57,7 +57,9 @@ Snyk has the following types of pre-defined users:
 * Group Member
 * Tenant Admin
 * Tenant Viewer
+* Tenant Viewer with Evo access
 * Tenant Member
+* Tenant Member with Evo access
 
 Visit the [Pre-defined roles](user-management/pre-defined-roles.md) page for more details, including the permissions associated with each role.
 
