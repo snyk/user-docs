@@ -13345,6 +13345,48 @@
                   "type": "object"
                 },
                 {
+                  "description": "An organization's AI-BOM policy, violated by an AI component.",
+                  "properties": {
+                    "id": {
+                      "description": "The AI-BOM policy ID.",
+                      "type": "string"
+                    },
+                    "remediation_advice": {
+                      "description": "The policy's advice on resolving the finding.",
+                      "type": "string"
+                    },
+                    "severity": {
+                      "allOf": [
+                        {
+                          "description": "Indicate the severity of a finding discovered by a Test.",
+                          "enum": [
+                            "critical",
+                            "high",
+                            "medium",
+                            "low",
+                            "none",
+                            "other"
+                          ],
+                          "type": "string"
+                        }
+                      ],
+                      "description": "Severity level of the finding."
+                    },
+                    "source": {
+                      "enum": [
+                        "aibom_policy"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "source",
+                    "id",
+                    "severity"
+                  ],
+                  "type": "object"
+                },
+                {
                   "description": "Problem which this API version is not capable of expressing.\n\nThis problem may be available in a newer version of this API.",
                   "properties": {
                     "source": {
@@ -14116,7 +14158,8 @@
           "other",
           "config",
           "secret",
-          "secrets"
+          "secrets",
+          "aibom"
         ],
         "type": "string"
       },
@@ -27785,7 +27828,8 @@
                   "sca",
                   "sast",
                   "other",
-                  "secrets"
+                  "secrets",
+                  "aibom"
                 ],
                 "type": "string"
               }
