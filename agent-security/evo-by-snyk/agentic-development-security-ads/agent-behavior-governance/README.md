@@ -1,10 +1,10 @@
 ---
 nav_context: agnostic
+last_reviewed: 2026-10-23T00:00:00.000Z
+last_reviewed_source: focused-edit
 description: >-
   How Agent Behavior Governance secures what AI agents do inside their execution
   loop
-last_reviewed: 2026-10-23
-last_reviewed_source: focused-edit
 ---
 
 # Agent Behavior Governance
@@ -13,17 +13,17 @@ Agent Behavior Governance secures what agents do as they run. It works within th
 
 ## Supported agents
 
-Claude Code, Codex, Cursor, and GitHub Copilot.
+Claude Code, Codex, Cursor, and GitHub Copilot across macOS, Linux, and Windows.
 
 {% hint style="warning" %}
 **Codex in user mode requires each developer to accept a prompt**
 
-After installation in user mode, Codex prompts the developer to allow hook configuration outside the managed path. If the developer does not accept, the hooks stay installed but do not run, and Agent Behavior Governance does not govern Codex on that machine. Managed mode does not show the prompt. To choose a mode, visit [Installation mode](../activation-and-deployment/README.md#installation-mode).
+After installation in user mode, Codex prompts the developer to allow hook configuration outside the managed path. If the developer does not accept, the hooks stay installed but do not run, and Agent Behavior Governance does not govern Codex on that machine. Managed mode does not show the prompt. To choose a mode, visit [Installation mode](../activation-and-deployment/#installation-mode).
 {% endhint %}
 
 ## Supported use cases
 
-* [MCP Governance ](mcp-governance.md)
+* [MCP Governance](mcp-governance.md)
 
 ### Limits
 

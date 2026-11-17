@@ -1,9 +1,9 @@
 ---
+last_reviewed: 2026-10-30T00:00:00.000Z
+last_reviewed_source: focused-edit
 description: >-
   Establishing an MCP server policy in Evo, evaluating real usage against your
   environment, and safely enabling runtime enforcement.
-last_reviewed: 2026-10-30
-last_reviewed_source: focused-edit
 ---
 
 # MCP Governance
@@ -21,7 +21,7 @@ For more information, visit [ADS Activation and deployment](../activation-and-de
 
 ## How to use
 
-MCP Governance takes three steps:&#x20;
+MCP Governance takes three steps:
 
 1. Understand your MCP usage: see which MCP servers are in use and by whom.
 2. Define your rules and preview the impact: classify servers with an allowlist, set risk-based conditions, or both. Then return to the inventory to see which servers fall out of policy and how far they reach.
@@ -38,7 +38,7 @@ Go to the MCP Servers page to see all MCP servers detected across code repositor
 
 Choose how you want to define what's allowed. You can use either approach or both.
 
-**Option 1: Classify with an allowlist**&#x20;
+**Option 1: Classify with an allowlist**
 
 Classify the servers you trust. Everything else shows as Not Allowed, so you can focus on the servers outside your list.
 
@@ -47,7 +47,7 @@ Classify the servers you trust. Everything else shows as Not Allowed, so you can
 
 Best for: teams that want a defined set of approved servers and a clear status for every server, with the flexibility to avoid blocking developers over low-risk tools.
 
-> Note: The allowlist ships empty and disabled by default.&#x20;
+> Note: The allowlist ships empty and disabled by default.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-10-21 at 10.23.15.png" alt="Policy screen showing the enforcement toggle off, an approved servers list, and an Evo chat panel"><figcaption><p>MCP Servers classification</p></figcaption></figure>
 
@@ -86,7 +86,7 @@ If you set an allowlist, it will act as a policy condition alongside Evo's risk 
 * Block everything outside your allowlist: Use allowlist status as your sole condition. Any server marked as "Not Allowed" is immediately blocked.
 * Block high-risk cases only: Combine allowlist status with specific risk conditions. For example, block unapproved servers that present high overall risk, contain prompt injection threats in a tool, or possess destructive capabilities. Lower-risk unapproved servers remain unblocked and visible for review.
 
-You can also block based on risk alone without using the Allowlist attribute.&#x20;
+You can also block based on risk alone without using the Allowlist attribute.
 
 > Note: Enforcement can be toggled off at any time to immediately disable blocking across your fleet.
 
@@ -102,13 +102,29 @@ When an agent attempts to call an unauthorized MCP server, Evo halts execution i
 
 The [Evo MCP server](../../platform-surfaces/evo-mcp-server/) lets you interact with your MCP Governance data in a conversational way, rather than only through the MCP Servers page. This is useful for ad hoc investigation, cross-referencing data you keep outside Evo, and building a policy without leaving the chat.
 
-Common use cases:
+### Common use cases
 
-* See what your fleet is using, for example: "Give me the list of MCP servers my fleet is using."
-* Build your allow list from a list you already maintain within your Organization, assuming your agent has access to it. This list is separate from the Allowed MCP Servers policy and does not affect blocking.
-* Find where out-of-policy usage is happening, for example: "Show me the list of machines using an MCP server outside my allowlist."
-* Build a dashboard from this data, based on your preference and the signals you need.
-* Cross-reference against your own records.
-* Route violations to Jira tickets (see Evo MCP server common use cases).
+#### See what is in use
 
-For the full set of tools available through Evo MCP, see the [Evo MCP server](../../platform-surfaces/evo-mcp-server/) page.
+* List your fleet's MCP servers: "Give me the list of MCP servers my fleet is using."
+* Look up one server: "What's the risk of Slack MCP?"
+
+#### Find problems
+
+* Out-of-policy usage: "Show me the machines using an MCP server outside my allowlist."
+* Risky servers in use: "Which high-risk servers are actually being called?" or "Which unapproved servers score above X?"
+
+#### Take action
+
+Creating a policy or updating the allowlist needs a Tenant role with Evo write access and a client that supports MCP elicitation. For details, visit [Available tools](../../platform-surfaces/evo-mcp-server/#available-tools).
+
+* Create a policy: "Create a policy to flag or block servers above 600."
+* Build your allowlist from an existing list: if your agent can access a list you already maintain, it can build the allowlist in Evo from it.&#x20;
+
+#### Report and integrate
+
+* Build a dashboard from this data, using the signals you need.
+* Cross-reference the data against your own records.
+* Route violations to Jira tickets. Visit [Evo MCP server common use cases](../../platform-surfaces/evo-mcp-server/common-use-cases.md#turn-a-violation-into-a-ticket).
+
+For the full set of tools available through the Evo MCP server, see the [Evo MCP server](../../platform-surfaces/evo-mcp-server/) page.
