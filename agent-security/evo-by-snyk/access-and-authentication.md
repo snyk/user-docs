@@ -43,8 +43,6 @@ A user joins a Tenant as a Tenant Member. This role gives read-only Evo access l
 | Tenant Member with Evo access | Every asset and issue in the Tenant, and every write action                   |
 | Tenant Viewer with Evo access | Every asset and issue in the Tenant, and every write action                   |
 
-Snyk creates two roles with Evo access in your tenant when a Tenant Admin first logs in to Evo. Each role includes the permissions of its base role and full Evo access.
-
 To limit user access to specific Organizations, see Restrict access to specific Organizations.
 
 For more information, visit [Manage users in a Tenant](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/manage-users-in-a-tenant).

@@ -49,7 +49,7 @@ Choose how to control product versions before testing the deployment:
 | Latest published version | You want subsequent installer runs to use the latest published build | The selected version follows new releases. Machines receive it when the ADS installer runs. |
 | Pinned version | You need the same build across the rollout or want to test a release before adopting it | The selected version stays fixed until you change and publish it. Machines receive the change when the ADS installer runs. |
 
-The ADS installer version and the Studio product version are separate choices. For the version selection procedure, visit [Choose a version](../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md#choose-a-version).
+The ADS installer version and the Studio product version are separate choices. Studio versions follow the Snyk CLI version numbers. For the version selection procedure, visit [Choose a version](../evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md#choose-a-version).
 
 Use a push key for the Evo Tenant that receives deployment data, and configure the region's API host when required. Each developer still authenticates the Snyk CLI and MCP server individually. A deployment push key does not replace developer scanning authentication.
 
