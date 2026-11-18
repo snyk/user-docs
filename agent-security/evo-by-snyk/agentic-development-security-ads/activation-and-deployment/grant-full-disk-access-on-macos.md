@@ -8,9 +8,11 @@ last_reviewed_source: reviewed
 
 # Grant Full Disk Access on macOS
 
-macOS protects some locations from background processes, and shows a permission pop-up when a process tries to read them. To let the Agentic Development Security (ADS) Machines (Agent Supply Chain Security) scan read these locations, deploy a configuration profile that grants Full Disk Access to the scan binary. Snyk provides the profile as a `.mobileconfig` file, and you deploy it through your mobile device management (MDM) tool.
+macOS protects some locations from background processes, and shows a permission pop-up when a process tries to read them. To let the Agentic Development Security (ADS) Machines (Agent Supply Chain Security) scan read these locations, deploy a configuration profile that grants Full Disk Access to the scan binary and to the ADS installer that starts it. macOS checks the permission of the process that starts the scan. Snyk provides the profile as a `.mobileconfig` file, and you deploy it through your mobile device management (MDM) tool.
 
-The profile grants access to the scan binary in `/Library/Application Support/Snyk/ads-scan/bin/`, the directory that [managed mode](./#installation-mode) uses. The binary name depends on the processor, so each processor architecture has its own profile.
+The profile grants access to the scan binary and the installer in `/Library/Application Support/Snyk/ads-scan/bin/`, the directory that [managed mode](./#installation-mode) uses. The installer is `snyk-ads-installer` when you install ADS with the `.pkg` package, and `snyk-ads` otherwise. The profile covers both. The scan binary name depends on the processor, so each processor architecture has its own profile.
+
+If you deployed an earlier version of this profile, upload the updated profile to replace it. The earlier profile grants Full Disk Access to the scan binary only.
 
 {% hint style="info" %}
 This page applies to managed mode only. If you install ADS in user mode, you do not need a Full Disk Access profile.
