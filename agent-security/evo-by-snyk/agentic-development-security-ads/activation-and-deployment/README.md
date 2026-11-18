@@ -29,7 +29,28 @@ Under **Capabilities**, select the products to roll out:
 
 Each product defaults to the latest published version. You can pin a specific version instead, as described in [Choose a version](./#choose-a-version).
 
+{% hint style="info" %}
+The ADS installer installs Snyk Studio through the Snyk CLI. Studio and the Snyk CLI ship together, so you deploy one self-contained package. To install Studio on a single machine without ADS, use the Snyk CLI. For steps, visit [Install on your machine](../../../agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md#install-on-your-machine).
+{% endhint %}
+
 After you select the products, click **Save & Publish**. Publishing writes the configuration manifest that the installer reads when it runs.
+
+## If you log in outside the United States
+
+Every deployment method needs your region's API host when you log in outside the default US region. The host mirrors the URL you log in with, so `evo.eu.snyk.io` uses `https://api.eu.snyk.io`.
+
+| Region               | Base URL                 |
+| -------------------- | ------------------------ |
+| SNYK-US-01 (default) | not needed               |
+| SNYK-US-02           | `https://api.us.snyk.io` |
+| SNYK-EU-01           | `https://api.eu.snyk.io` |
+| SNYK-AU-01           | `https://api.au.snyk.io` |
+
+Each deployment page shows where to set the base URL for that method.
+
+{% hint style="warning" %}
+A push key works only against its own region. If you use the wrong base URL, authentication fails. The installer does not fall back to another region.
+{% endhint %}
 
 ## Install
 
@@ -62,7 +83,7 @@ Linux has no package. On Linux, use the command-line install shown in **Settings
 Two versions are involved in an install:
 
 * The **installer version** is the version of the ADS installer itself. You choose it when you download the package.
-* The **product versions** decide which build of each product the installer sets up. Under **Capabilities**, each product has a version selector that defaults to the latest published version. Machines and Agent Behavior Governance share one version. Snyk Studio is versioned separately.
+* The **product versions** decide which build of each product the installer sets up. Under **Capabilities**, each product has a version selector that defaults to the latest published version. Machines and Agent Behavior Governance share one version. Snyk Studio is versioned separately. Its versions follow the Snyk CLI version numbers. To learn why, visit [Choose products](./#choose-products). In the version selector, the numbers move from 1.0.19 to 1.1308.4, the first CLI-based version. You pin a Studio version in the same way as any other product version. Machines that already have Studio from the standalone installer, or that pin a version at or below 1.0.19, keep working. When the installer updates one of these machines to a CLI-based version, it overwrites the Studio hooks, as in any Studio upgrade. You do not need to change an existing pin.
 
 Pin a product version when every machine in a rollout needs the same build. A pinned version does not change until you change it, and the installer applies it the next time it runs.
 
@@ -147,7 +168,7 @@ When the installer runs, it sets up each selected product on the machine:
 
 * **Agent Supply Chain Security** discovers the skills and MCP servers in the known directories, performs a risk assessment, and sends the results to the Evo Tenant associated with the push key.
 * **Agent Behavior Governance** checks whether the supported agents have the required hooks configured. If they do not, it writes them with the push key, so subsequent agent activity is pushed to Evo and evaluated against your Tenant's policies.
-* **Trusted Output Assurance** checks whether the required configuration is in place: the Snyk CLI and its MCP server, the Secure at inception hooks, and the package health check, fix commands, and skills. It adds anything missing, so subsequent agent activity runs through the Secure-at-inception loop. Each developer still authenticates the Snyk CLI and MCP server individually.
+* **Trusted Output Assurance** checks whether the required configuration is in place: the Snyk CLI (which provides Studio and its MCP server), the Secure at inception hooks, and the package health check, fix commands, and skills. It adds anything missing, and downloads its own copy of the Snyk CLI version that matches the selected Studio version. It does not use a Snyk CLI that a developer installed. Subsequent agent activity runs through the Secure-at-inception loop. Each developer still authenticates the Snyk CLI and MCP server individually.
 
 ## Manage push keys
 
@@ -178,23 +199,6 @@ To rotate a key without interrupting a fleet:
 Creating or revoking a key takes effect immediately. A machine uses a new key only after you deploy the installer with that key through your MDM tool.
 
 Push keys are managed separately from the installer configuration. **Save & Publish** does not apply them.
-{% endhint %}
-
-## If you log in outside the United States
-
-Every deployment method needs your region's API host when you log in outside the default US region. The host mirrors the URL you log in with, so `evo.eu.snyk.io` uses `https://api.eu.snyk.io`.
-
-| Region               | Base URL                 |
-| -------------------- | ------------------------ |
-| SNYK-US-01 (default) | not needed               |
-| SNYK-US-02           | `https://api.us.snyk.io` |
-| SNYK-EU-01           | `https://api.eu.snyk.io` |
-| SNYK-AU-01           | `https://api.au.snyk.io` |
-
-Each deployment page shows where to set the base URL for that method.
-
-{% hint style="warning" %}
-A push key works only against its own region. If you use the wrong base URL, authentication fails. The installer does not fall back to another region.
 {% endhint %}
 
 ## Uninstall
@@ -259,6 +263,8 @@ On Windows, run the same command from an elevated PowerShell, without `sudo`.
 #### Remove specific products
 
 To remove one or two products rather than all three, pass a component flag for each product you want to remove. You cannot combine `--all` with component flags. You must pass one or the other, because the installer rejects `uninstall` with no flags.
+
+If the installer installed Studio through the Snyk CLI, `--studio` and `--all` also remove the copy of the Snyk CLI that the installer downloaded.
 
 | ADS product                                | Flag       |
 | ------------------------------------------ | ---------- |
