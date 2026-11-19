@@ -77,5 +77,5 @@ On the indirect surface, the attacker hides instructions in content the model re
 {% hint style="info" %}
 Learn how Snyk scores attacker goals and rolls up scores in [Risk intelligence](./).
 
-Raise an issue when a model exceeds a selected score in [Policies & issues](../../platform-surfaces/policies-and-issues.md).
+Raise an issue when a model exceeds a selected score in [Policies and issues](../../platform-surfaces/policies-and-issues.md).
 {% endhint %}
