@@ -22,3 +22,7 @@ Depth is determined by whether a source repository is linked. There is no separa
 | **Greybox**  | Repository linked    | Agents use source code to understand structure and reach logic flaws that are invisible from the outside. Remediation guidance names the file, the line, and the suggested code change |
 
 Link repositories to help Snyk find more issues and provide more actionable guidance on fixes.
+
+## Related
+
+Use Continuous Offensive Security for AI-driven continuous pentesting that validates real vulnerabilities and tracks findings over time. For cloud-based dynamic application security testing (DAST) of running web applications and APIs — including crawl-based coverage, API schema testing, and CI/CD integration — visit [Snyk API & Web](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web).

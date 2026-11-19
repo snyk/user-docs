@@ -15,7 +15,7 @@ Evo surfaces risk context for the assets that AI Security Posture Management (AI
 ## In this section
 
 * [Access and authentication](access-and-authentication.md) — enable Evo for your Tenant and set up roles.
-* [Platform surfaces](platform-surfaces/) — the Inventory, Policies & issues, Reports, and Evo chat surfaces.
+* [Platform surfaces](platform-surfaces/) — the Inventory, Policies and issues, Reports, and Evo chat surfaces.
 * [AI-SPM](ai-spm/) — AI asset visibility and risk intelligence.
 * [Agentic Development Security (ADS)](agentic-development-security-ads/) — activation, deployment, and governance of agent-generated output.
 * [Continuous Offensive Security (COS)](continuous-offensive-security-cos/) — targets, scans, and findings for offensive security testing.
