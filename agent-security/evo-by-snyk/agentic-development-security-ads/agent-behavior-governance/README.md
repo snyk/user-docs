@@ -28,4 +28,4 @@ After installation in user mode, Codex prompts the developer to allow hook confi
 ### Limits
 
 * Rate limit: Each entitlement is limited to 5k behavioral guardrail requests (hook calls) per calendar day per Machine.
-* Data retention limi&#x74;_:_ Data is retained for seven days. The data retention setting is fixed at seven days and cannot be changed.
+* Data retention limit: Snyk retains data for seven days. The data retention setting is fixed at seven days, and you cannot change it.
