@@ -124,7 +124,7 @@ Two fields are useful for procurement policies. **License type** identifies whet
 
 Scores describe a model. Policies decide what to do about them.
 
-A policy watches one attacker goal or one sub-category and raises an issue when a model's score for it crosses a threshold. Snyk provides default policies, and you can create your own. To learn how Evo raises and tracks issues, visit [Policies & issues](../../platform-surfaces/policies-and-issues.md).
+A policy watches one attacker goal or one sub-category and raises an issue when a model's score for it crosses a threshold. Snyk provides default policies, and you can create your own. To learn how Evo raises and tracks issues, visit [Policies and issues](../../platform-surfaces/policies-and-issues.md).
 
 ### Default policies
 

@@ -1,6 +1,6 @@
 ---
 description: >-
-  How to integrate Snyk Evo with Anthropic's Claude Enterprise to inventory AI
+  How to integrate Evo by Snyk with Anthropic's Claude Enterprise to inventory AI
   assets
 nav_context: classic
 last_reviewed: 2026-07-21
@@ -13,11 +13,11 @@ last_reviewed_source: bulk-sync
 **Early Access** — This integration is available in early access. Contact your Snyk account team to enable it.
 {% endhint %}
 
-Integrate Snyk Evo with Anthropic's Claude Enterprise to ingest a snapshot of your Claude Enterprise organization. This integration surfaces AI assets, such as Claude models in use and organization-approved MCP servers, directly in your Evo inventory.
+Integrate Evo by Snyk with Anthropic's Claude Enterprise to ingest a snapshot of your Claude Enterprise organization. This integration surfaces AI assets, such as Claude models in use and organization-approved MCP servers, directly in your Evo inventory.
 
 ### Prerequisites
 
-* Snyk Evo with the Anthropic Claude Enterprise integration enabled. Contact your Snyk account team to request access.
+* Evo by Snyk with the Anthropic Claude Enterprise integration enabled. Contact your Snyk account team to request access.
 * A Claude Enterprise account.
 * Primary Owner role in Claude Enterprise. Only the Primary Owner can create a Compliance Access Key.
 
@@ -26,7 +26,7 @@ Integrate Snyk Evo with Anthropic's Claude Enterprise to ingest a snapshot of yo
 1. Log in to [claude.ai](https://claude.ai) as the Primary Owner of your organization.
 2. Navigate to **Settings > Data and Privacy > Compliance access keys**.
 3. Click **Create key**.
-4. Enter a name for the key, for example, _Snyk Evo_.
+4. Enter a name for the key, for example, _Evo by Snyk_.
 5. Select the following three scopes:
    * `read:compliance_activities`
    * `read:compliance_user_data`

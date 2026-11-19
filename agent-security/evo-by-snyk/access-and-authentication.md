@@ -1,6 +1,6 @@
 ---
 nav_context: classic
-description: How to enable Snyk Evo for your Tenant, add members, and assign roles
+description: How to enable Evo by Snyk for your Tenant, add members, and assign roles
 last_reviewed: 2026-10-30
 last_reviewed_source: focused-edit
 ---
