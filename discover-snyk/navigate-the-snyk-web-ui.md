@@ -1,4 +1,5 @@
 ---
+nav_context: new
 description: >-
   Where to find features in the new Snyk interface, with a mapping from the
   classic navigation.
