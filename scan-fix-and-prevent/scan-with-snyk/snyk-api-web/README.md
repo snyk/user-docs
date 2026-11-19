@@ -64,3 +64,7 @@ Snyk detects and reports security vulnerabilities with detailed information, inc
 * Vulnerability evidence: evidence demonstrating how an attacker can exploit the vulnerability.
 
 Use customizable scan profiles to balance speed and coverage based on your needs, from fast SSL/TLS checks for CI/CD gates to comprehensive full scans for thorough security assessments.
+
+## Related
+
+Use Snyk API & Web for cloud-based DAST of running web applications and APIs. For AI-driven continuous pentesting that validates real vulnerabilities and tracks findings over time, visit [Continuous Offensive Security (COS)](https://docs.snyk.io/agent-security/evo-by-snyk/continuous-offensive-security-cos).
