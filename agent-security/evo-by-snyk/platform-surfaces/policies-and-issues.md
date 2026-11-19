@@ -6,7 +6,7 @@ last_reviewed: 2026-10-23
 last_reviewed_source: focused-edit
 ---
 
-# Policies & issues
+# Policies and issues
 
 Policies govern how AI is used across your environment. When an asset violates a policy, Evo raises an issue that you triage and resolve in your standard security workflow.
 
@@ -16,7 +16,7 @@ A policy has a name, a severity (Critical, High, Medium, or Low), one or more co
 
 Severity is fixed per policy. A policy does not change severity based on the score it matches, so to raise different severities at different scores, create a policy for each.
 
-Create and edit policies from the Policies & issues page or with Evo chat. You can delete custom policies. You cannot edit or delete default policies. You can disable and enable any policy.
+Create and edit policies from the **Policies** page or with Evo chat. You can delete custom policies. You cannot edit or delete default policies. You can disable and enable any policy.
 
 {% hint style="info" %}
 Users with a Tenant role and full Evo access can create, edit, delete, disable, and enable policies. Users restricted to specific Organizations can read policies and issues, but they cannot change them. Visit [Access and authentication](../access-and-authentication.md) for more information.
@@ -132,6 +132,6 @@ Only users with a Tenant role and full Evo access can disable or enable a policy
 
 ## Issues
 
-An issue is a policy violation. View issues on the Policies & issues page under Issues, or on an asset in Inventory to see them in context.
+An issue is a policy violation. View issues in the **Issues** view, or on an asset in **Inventory** to see them in context.
 
 Each issue shows its severity, the triggering asset, remediation advice, and the number of occurrences. The remaining details vary by issue type.
