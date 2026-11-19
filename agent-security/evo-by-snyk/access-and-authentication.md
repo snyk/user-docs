@@ -1,6 +1,6 @@
 ---
 nav_context: classic
-description: How to enable Snyk Evo for your Tenant, add members, and assign roles
+description: How to enable Evo by Snyk for your Tenant, add members, and assign roles
 last_reviewed: 2026-10-30
 last_reviewed_source: focused-edit
 ---
@@ -43,7 +43,7 @@ A user joins a Tenant as a Tenant Member. This role gives read-only Evo access l
 | Tenant Member with Evo access | Every asset and issue in the Tenant, and every write action                   |
 | Tenant Viewer with Evo access | Every asset and issue in the Tenant, and every write action                   |
 
-To limit user access to specific Organizations, see Restrict access to specific Organizations.
+To limit user access to specific Organizations, visit [Restrict access to specific Organizations](#restrict-access-to-specific-organizations).
 
 For more information, visit [Manage users in a Tenant](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/manage-users-in-a-tenant).
 

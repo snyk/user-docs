@@ -1003,6 +1003,52 @@ An unexpected error occurred while narrowing the permissions of an authenticatio
 * [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 * [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
 
+### [SNYK-CLI-0033](error-catalog.md#snyk-cli-0033)
+
+**Configuration profile not found**
+
+The configuration profile cannot be found. Check the name for typos, then try again.
+
+
+### [SNYK-CLI-0034](error-catalog.md#snyk-cli-0034)
+
+**Invalid configuration profile name**
+
+A profile name can contain only lowercase letters, digits, hyphens and underscores, and cannot be a reserved system name such as nul. Use a different name and try again.
+
+
+### [SNYK-CLI-0035](error-catalog.md#snyk-cli-0035)
+
+**Configuration profile unreadable**
+
+The configuration profile cannot be read because its file is unreadable or invalid. Restore a valid copy or correct the file. Deleting it erases the profile's settings.
+
+
+### [SNYK-CLI-0036](error-catalog.md#snyk-cli-0036)
+
+**Invalid configuration profile directory**
+
+The directory that holds the configuration profiles is not set or is not an absolute path. Set it to an absolute path and try again.
+
+
+### [SNYK-CLI-0037](error-catalog.md#snyk-cli-0037)
+
+**Configuration profiles unavailable**
+
+Configuration profiles cannot be used because of a problem outside the profile name, file and directory, for example because the application that runs the command does not support them or is not set up for them. The profile itself is not the cause. If this happens with an official Snyk build, report it to Snyk support.
+
+
+### [SNYK-CLI-0038](error-catalog.md#snyk-cli-0038)
+
+**Install or uninstall failed**
+
+One or more steps provided by extensions failed, so the install or uninstall did not complete. A failed step does not stop the other steps. The error details list each failed step on its own line as `step ID: message`. Fix the cause named in each message, then run the command again. See [Snyk CLI debugging](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli).
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
 ### [SNYK-OS-7001](error-catalog.md#snyk-os-7001)
 
 **Request to Snyk API timeout**
@@ -1788,6 +1834,42 @@ To resolve this, perform one of the following actions:
 **Help Links:**
 
 * [https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1202](https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1202)
+
+### [SNYK-OS-DOTNET-0016](error-catalog.md#snyk-os-dotnet-0016)
+
+**The project file was not found in the repository**
+
+Snyk could not find the project file in the repository at the revision that was tested. The file was probably deleted, renamed or moved.
+
+To resolve this, do one of the following:
+
+1. If the project file was deleted, deactivate or delete the Snyk project for it.
+2. If the project file was renamed or moved, import the repository again. Snyk then creates a project for the new path.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+
+* [https://docs.snyk.io/scan-with-snyk/project-repositories/snyk-repo-content-sync](https://docs.snyk.io/scan-with-snyk/project-repositories/snyk-repo-content-sync)
+
+### [SNYK-OS-DOTNET-0017](error-catalog.md#snyk-os-dotnet-0017)
+
+**The target framework of the project does not match the project file**
+
+Snyk could not match this project to a target framework of its project file.
+
+The target framework that was stored for the project may no longer be in the project file.
+
+The stored value may also be one Snyk cannot read, such as an unevaluated MSBuild property like `$(TargetFramework)`. If the project file now defines more than one target framework, Snyk cannot tell which one the project stands for.
+
+To resolve this, import the repository again. Snyk then creates one project for each target framework in the project file. You can then delete this project.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+
+* [https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#targetframework](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#targetframework)
+* [https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#targetframeworks](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#targetframeworks)
 
 ### [SNYK-OS-GO-0001](error-catalog.md#snyk-os-go-0001)
 
@@ -3412,6 +3494,14 @@ This error occurs when Snyk Secrets is not enabled for the current Organization.
 An error occurred while analyzing the files for secrets. Review the request, then try again. If the error persists, contact Snyk Support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+### [SNYK-SECRETS-0004](error-catalog.md#snyk-secrets-0004)
+
+**Git history scan error**
+
+An error occurred while running prerequisite for git history scanning. Review the request, then try again. If the error persists, contact Snyk Support.
+
+**HTTP Status:** [412](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/412)
 
 ***
 

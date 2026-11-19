@@ -46,7 +46,7 @@
   * [Evo MCP server](evo-by-snyk/platform-surfaces/evo-mcp-server/README.md)
     * [Common use cases](evo-by-snyk/platform-surfaces/evo-mcp-server/common-use-cases.md)
   * [Inventory](evo-by-snyk/platform-surfaces/inventory.md)
-  * [Policies & issues](evo-by-snyk/platform-surfaces/policies-and-issues.md)
+  * [Policies and issues](evo-by-snyk/platform-surfaces/policies-and-issues.md)
   * [Reports](evo-by-snyk/platform-surfaces/reports.md)
   * [Evo chat](evo-by-snyk/platform-surfaces/evo-chat.md)
 * [AI-SPM](evo-by-snyk/ai-spm/README.md)
