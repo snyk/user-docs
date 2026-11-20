@@ -1,14 +1,14 @@
 ---
 last_reviewed: 2026-10-09T00:00:00.000Z
 last_reviewed_source: bulk-sync
-description: Use this sample configuration file with snyk cos target add.
+description: Use this sample configuration file with snyk cos target create.
 ---
 
 # COS target template
 
 ## Description
 
-Use this sample template file with the [`snyk cos target add`](cos-target-add.md) command.
+Use this sample template file with the [`snyk cos target create`](cos-target-create.md) command.
 
 The configuration file has three sections:
 

@@ -1,7 +1,7 @@
 ---
 description: How Snyk regional hosting and data residency let you control your data region, available on Enterprise plans
 nav_context: agnostic
-last_reviewed: 2026-07-07
+last_reviewed: 2026-11-20
 last_reviewed_source: focused-edit
 ---
 
@@ -28,7 +28,7 @@ A list of [regional URLs](regional-hosting-and-data-residency.md#regional-urls) 
 
 ## Regional and global data
 
-Snyk uses subprocessors to provide a high-quality service. Thus, not all data types can be stored within your region of choice. The list of subprocessors is available [on the Snyk website](https://snyk.io/policies/subprocessors/).
+Snyk uses subprocessors to provide a high-quality service. Thus, not all data types can be stored within your region of choice. The list of subprocessors is available [on the Snyk website](https://snyk.io/policies/subprocessors/). For the AI model providers that Snyk features use, visit [How Snyk incorporates generative AI into the platform](how-snyk-incorporates-generative-ai-into-the-platform.md).
 
 See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-specific examples of how data is handled.
 
