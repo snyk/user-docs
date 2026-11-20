@@ -1,91 +1,49 @@
 ---
 nav_context: agnostic
 description: >-
-  How Snyk releases features through stages from alpha to general availability,
-  and what each stage means for access and documentation.
-last_reviewed: 2026-10-09
-last_reviewed_source: bulk-sync
+  The release and lifecycle statuses Snyk uses for features, what each status
+  means for access, support, and documentation, how much notice Snyk gives
+  before a lifecycle change, and how legacy statuses map to the current ones.
+last_reviewed: 2026-11-20
+last_reviewed_source: reviewed
 ---
 
 # Snyk release process
 
 {% hint style="info" %}
-Not all features follow all these stages, and timelines for each feature vary.
+New major capabilities go through every release status. Smaller features can ship without going through the release statuses. Timelines vary by feature.
 {% endhint %}
 
-## Feature release stages
+Since September 1, 2026, Snyk uses the following statuses for every feature that was not yet Generally Available on that date. A status that Snyk announced before September 1, 2026 still applies, so some features show a legacy status. For those, visit [Legacy release statuses](snyk-release-process.md#legacy-release-statuses).
 
-Snyk releases features to users in the following stages.
+## Release statuses
 
-<table><thead><tr><th width="130.39453125">Stage</th><th width="195.8680419921875">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Alpha</td><td>Internal release only</td><td>Snyk internal users, potentially some design partners</td><td>Controlled</td><td>No documentation provided</td></tr><tr><td>Closed Beta</td><td>The first customer-facing rollout of a feature</td><td>A preselected group of users</td><td>Invitation only</td><td>Provided but not public</td></tr><tr><td>Early Access</td><td>Feature is tested and ready for use, but not available by default. Visit <a href="snyk-release-process.md#early-access-features">Early Access features</a></td><td>All users on an opt-in basis. This can include additional purchase costs</td><td>Opt-in: on request through Snyk account team, or using Snyk Preview</td><td>Public documentation</td></tr><tr><td>General Availability</td><td>Feature is fully enabled</td><td>All users, subject to standard feature availability</td><td>Available by default</td><td>Public documentation</td></tr></tbody></table>
+Each release status lets more customers use the feature, and each comes with a different level of support.
 
-## Feature lifecycle stages
+<table><thead><tr><th width="150">Status</th><th width="230">Description</th><th>Available to</th><th>Access</th><th>Support</th><th>Docs</th></tr></thead><tbody><tr><td>Prototype</td><td>Snyk builds and tests the feature internally.</td><td>Snyk internal users only</td><td>Not available outside Snyk</td><td>No support commitment</td><td>No documentation</td></tr><tr><td>Experimental Preview</td><td>Snyk tests the feature with a small number of design partners. This is the first customer-facing release. Snyk makes no commitments about the feature.</td><td>A small number of existing Snyk customers that the Snyk team building the feature selects</td><td>Invitation only. The Snyk team building the feature turns it on.</td><td>No support commitment. The Snyk team building the feature handles questions directly.</td><td>Provided to design partners for onboarding, not public</td></tr><tr><td>Open Preview</td><td>Snyk tests whether the feature delivers value to customers beyond the design partners. The feature has stated limits. Snyk can move the feature back to Experimental Preview or discontinue it.</td><td>Customers who opt in and meet the criteria Snyk sets for the feature, primarily existing Snyk customers</td><td>Opt-in: on request through your Snyk account team. Open Preview features are not priced by default. If Snyk sets pricing for a feature, the feature can require a purchase.</td><td>Best effort, within the stated limits of the feature</td><td>Public documentation</td></tr><tr><td>Generally Available</td><td>The feature is fully available. Snyk continues to improve it based on customer feedback.</td><td>All customers, subject to standard feature availability for their plan</td><td>Your Snyk account team turns on the feature. Some features require a purchase.</td><td>Full support, covered by the Snyk support SLA</td><td>Public documentation</td></tr></tbody></table>
 
-<table><thead><tr><th width="130.26171875">Stage</th><th>Description</th><th width="131.5997314453125">Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Deprecated</td><td>The feature is available, but Snyk discourages its use. Visit <a href="snyk-release-process.md#deprecated-features">Deprecated features</a></td><td>Active users only</td><td>Available by default</td><td>Public documentation, with the Release status at the top of the page</td></tr><tr><td>End of support</td><td>Snyk does not answer new support tickets. Visit <a href="snyk-release-process.md#end-of-support-features">End of support features</a></td><td>Active users only</td><td>Available by default</td><td>Public documentation, with the Release status at the top of the page</td></tr><tr><td>End of Life</td><td>The feature is no longer available</td><td>No users</td><td>Not available</td><td>No documentation available</td></tr></tbody></table>
+## Lifecycle statuses
+
+After a feature is available, it can move to one of the following statuses. Before the change, Snyk gives notice based on its impact. For details, visit [Notice periods](snyk-release-process.md#notice-periods).
+
+<table><thead><tr><th width="150">Status</th><th width="230">Description</th><th>Available to</th><th>Access</th><th>Support</th><th>Docs</th></tr></thead><tbody><tr><td>End of support</td><td>The feature still works, but Snyk stops development on it.</td><td>Existing users only</td><td>Available to existing users</td><td>Snyk does not answer new support tickets</td><td>Public documentation, with the release status at the top of the page</td></tr><tr><td>Discontinued</td><td>Snyk removes the feature from the product.</td><td>No users</td><td>Not available</td><td>No support</td><td>Snyk removes the documentation</td></tr></tbody></table>
+
+## Notice periods
+
+Snyk announces a lifecycle change in the documentation before the change takes effect. This also applies to other changes that break existing workflows, integrations, or API behavior. Snyk can also notify affected customers by email, through in-product messages, on [updates.snyk.io](https://updates.snyk.io), or on [trust.snyk.io/updates](https://trust.snyk.io/updates).
+
+The notice period starts on the date of the public announcement. Snyk sets the length of the notice period by the impact of the change:
+
+<table><thead><tr><th width="150">Notice period</th><th>When it applies</th></tr></thead><tbody><tr><td>Six months</td><td>Snyk discontinues a feature, or the change requires you to migrate. Six months' notice also applies when the change affects a large share of customers or cannot be reversed.</td></tr><tr><td>Three months</td><td>The change requires you to act, has a documented migration path, and affects a limited set of customers.</td></tr><tr><td>One month</td><td>The change has a low impact: it affects few customers, has a simple or automated fix, requires no migration, and can be reversed.</td></tr></tbody></table>
+
+In exceptional cases, the notice period can be shorter than one month.
 
 ## Brownouts
 
-Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, making it unavailable for use. This situation indicates that the resource or service is still operational, but its performance is reduced compared to its normal or expected capacity.
+Before Snyk removes a feature or an API endpoint, Snyk can schedule brownouts. A brownout is a short, announced period when Snyk turns off the feature or endpoint. Brownouts help you find any dependencies on the feature before the removal date. Snyk runs brownouts near the end of the notice period.
 
-## Feature status
+## Legacy release statuses
 
-### Early Access features
+Some features show a status that Snyk announced before September 1, 2026. Snyk does not relabel these features. Use this table to find the current status that matches each legacy status.
 
-* [Snyk GitHub Cloud App](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/github-cloud-app)
-* [Automatically created Project collections](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/automatically-created-project-collections)
-* [Fix code vulnerabilities automatically](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically)
-* Risk Management
-  * [Risk Score](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/risk-score)
-  * [Reachability analysis for Snyk CLI and CI/CD integrations](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/reachability-analysis#enable-reachability-for-snyk-cli-and-ci-cd-integrations)
-  * [Breakability risk levels](https://docs.snyk.io/scan-fix-and-prevent/fix/snyk-pull-or-merge-requests/breakability-risk-levels)
-* Language support
-  * [Improved Gradle SCM scanning](supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning)
-  * [CLI support for uv](supported-languages/supported-languages-list/python/support-for-uv.md)
-  * SCM integration for uv
-* Reports
-  * [Repositories tested in CI/CD report](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/prevention-reports#repositories-tested-in-ci-cd-report)
-* [Navigate the Snyk Web UI](navigate-the-snyk-web-ui.md)
-
-### Deprecated features
-
-Deprecated features are outdated and scheduled for removal. Snyk announces the transition of a feature to Deprecated on the documentation page six months before its start date.
-
-* Snyk Code Local Engine is deprecated.
-* Apps API has the following deprecated endpoints:
-  * Revoke app bot authorization endpoint
-    * The [Revoke app bot authorization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-revoke-app-bot-authorization) endpoint is deprecated.
-    * Use the [Revoke app authorization for a Snyk Group with install ID](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#revoke-app-authorization-for-a-snyk-group-with-install-id) endpoint.
-  * Create a new app for an organization endpoint
-    * The [Create a new app for an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-create-a-new-app-for-an-organization) endpoint is deprecated.
-    * Use the [Create a new Snyk App for an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#create-a-new-snyk-app-for-an-organization) endpoint.
-  * Get a list of apps created by an organization endpoint
-    * The [Get a list of apps created by an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-get-a-list-of-apps-created-by-an-organization) endpoint is deprecated.
-    * Use the new [Get a list of apps created by an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#get-a-list-of-apps-created-by-an-organization) endpoint.
-  * Update app attributes that are name, redirect URIs, and access token time to live endpoint
-    * The [Update app attributes that are name, redirect URIs, and access token time to live](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-update-app-attributes-that-are-name-redirect-uris-and-access-token-time-to-live) endpoint is deprecated.
-    * Use the [Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#update-app-creation-attributes-such-as-name-redirect-uris-and-access-token-time-to-live-using-the-ap) endpoint.
-  * Get an app by client id endpoint
-    * The [Get an app by client id](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-get-an-app-by-client-id) endpoint is deprecated.
-    * Use the [Get a Snyk App by its App ID](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#get-a-snyk-app-by-its-app-id) endpoint.
-  * Delete an app endpoint
-    * The [Delete an app](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-delete-an-app) endpoint is deprecated.
-    * Use the [Delete a Snyk App by its App ID](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#delete-an-app-by-its-app-id) endpoint.
-  * Manage client secrets for an app endpoint
-    * The [Manage client secrets for an app](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-manage-client-secrets-for-an-app) endpoint is deprecated.
-    * Use the [Manage client secret for non-interactive Snyk App installations](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#manage-client-secret-for-non-interactive-snyk-app-installations) endpoint.
-  * Get a list of app bots authorized to an organization endpoint
-    * The [Get a list of app bots authorized to an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#deprecated-get-a-list-of-app-bots-authorized-to-an-organization) endpoint is deprecated.
-    * Use the [Get a list of apps installed for an organization](https://docs.snyk.io/developer-tools/snyk-api/api-endpoints-index-and-tips#get-a-list-of-apps-installed-for-an-organization) endpoint.
-* [Integration with Google Container Registry (GCR)](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-google-container-registry-gcr) is deprecated.
-
-### End of support features
-
-When a feature transitions to End of support, Snyk stops both development and support work.
-
-Snyk announces the transition of a feature to End of support on the documentation page six months before its start date.
-
-### End of life features
-
-A feature can also reach end of life. The affected feature or capability then ceases to exist, and Snyk removes it from the product and the public documentation.
-
-API endpoints have a dedicated section for the end-of-life process and also provide details about the migration steps. For details, visit [API End of Life process and migration guides](https://docs.snyk.io/developer-tools/snyk-api/api-end-of-life-eol-process-and-migration-guides).
+<table><thead><tr><th width="200">Before</th><th>After</th></tr></thead><tbody><tr><td>Alpha</td><td>Prototype</td></tr><tr><td>Closed Beta</td><td>Experimental Preview</td></tr><tr><td>Early Access</td><td>Open Preview</td></tr><tr><td>General Availability</td><td>Generally Available</td></tr><tr><td>Deprecated</td><td>End of support</td></tr><tr><td>End of Life</td><td>Discontinued</td></tr></tbody></table>
