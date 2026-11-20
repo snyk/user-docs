@@ -5,7 +5,7 @@ description: >-
   changes, and knowledge base improvements
 cover: .gitbook/assets/docs-banner-nov25.webp
 coverY: 0
-last_reviewed: 2026-11-02
+last_reviewed: 2026-11-19
 last_reviewed_source: focused-edit
 ---
 
@@ -503,7 +503,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * MCP updates:
   * [Updated the list of supported Snyk security tools into an AI system](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/readme#mcp-server-supported-tools).
-  * Updated release status from experimental to [Early access](snyk-release-process.md#early-access-features) and removed the experimental flag.
+  * Updated release status from experimental to [Early access](snyk-release-process.md#legacy-release-statuses) and removed the experimental flag.
   * Added [Cursor](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) as a new supported agentic IDE for MCP.
 * PAT updates:
   * Added PAT support for [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/authenticate-to-use-the-cli).
@@ -779,7 +779,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * The updated [Regional hosting and data residency](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency) page was published.
 * [Glossary](glossary.md) terms were updated for SCA, SAST, DAST, and IAST as well as Software Composition Analysis.
-* [Early Access](snyk-release-process.md#early-access) release status notices were updated.
+* [Early Access](snyk-release-process.md#legacy-release-statuses) release status notices were updated.
 
 #### August 2024
 
