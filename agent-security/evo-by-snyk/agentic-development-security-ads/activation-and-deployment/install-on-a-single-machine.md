@@ -19,7 +19,7 @@ You need the following:
 * a published product selection: in **Settings**, select your products and click **Save & Publish**
 * your Tenant ID from **Settings**, and a push key. To create a push key, visit [Manage push keys](./#manage-push-keys).
 * the installer version you want: **Settings** defaults to the latest published version
-* administrator access on the machine, to install the package
+* administrator access on the machine: to install the package on macOS and Windows, and to run the installer with `sudo` in managed mode
 * a supported operating system:
   * Linux (x86\_64 and arm64): Ubuntu 22.04, Debian 12, Amazon Linux 2023, or Fedora 40, or a later version of the same distribution
   * Windows (x86\_64): Windows 10 or later
@@ -51,7 +51,7 @@ In user mode, Codex prompts you to allow hook configuration outside the managed 
     ```bash
     sudo installer -pkg <PACKAGE_FILE> -target /
     ```
-3.  Run the installer with your credentials, as yourself and without `sudo`. In user mode, the installer refuses to set up Agent Behavior Governance when it runs with elevated privileges.
+3.  Run the installer with your credentials, as yourself and without `sudo`. In user mode, the installer refuses to set up Agent Behavior Governance when it runs with elevated privileges. To install in managed mode, which requires `sudo`, visit [Install in managed mode](#install-in-managed-mode).
 
     ```bash
     /usr/local/bin/snyk-ads/snyk-ads-installer \
@@ -73,6 +73,49 @@ In user mode, Codex prompts you to allow hook configuration outside the managed 
 {% endtabs %}
 
 Replace `<TENANT_ID>` and `<PUSH_KEY>` with your own values before you run a command. The command copied from **Settings** fills in only the Tenant ID.
+
+### Install in managed mode
+
+The preceding steps install in user mode. Use `sudo` for the installer only when you install in [managed mode](./#installation-mode). To test managed mode on one machine, run the installer with elevated privileges and add `--install-mode managed`. A managed install that runs without elevated privileges fails with the error `managed install requires an elevated invocation`.
+
+{% tabs %}
+{% tab title="macOS" %}
+Run both commands with `sudo`. Replace `<PACKAGE_FILE>` with the file name for your processor:
+
+```bash
+sudo installer -pkg <PACKAGE_FILE> -target /
+sudo /usr/local/bin/snyk-ads/snyk-ads-installer \
+  --tenant-id "<TENANT_ID>" \
+  --push-key "<PUSH_KEY>" \
+  --install-mode managed
+```
+{% endtab %}
+
+{% tab title="Linux" %}
+Download the installer, then run it with `sudo`. Replace `<ARCHITECTURE>` with `arm64` or `x86_64`:
+
+```bash
+curl -fsSL https://downloads.snyk.io/ads/installer/latest/snyk-ads-installer-linux-<ARCHITECTURE> -o /tmp/snyk-ads-installer-linux-<ARCHITECTURE>
+chmod +x /tmp/snyk-ads-installer-linux-<ARCHITECTURE>
+sudo /tmp/snyk-ads-installer-linux-<ARCHITECTURE> \
+  --tenant-id "<TENANT_ID>" \
+  --push-key "<PUSH_KEY>" \
+  --install-mode managed
+```
+
+Keep the downloaded installer. You need it to remove a managed install.
+{% endtab %}
+
+{% tab title="Windows" %}
+From an elevated PowerShell, add `INSTALLMODE=managed` to the install command:
+
+```powershell
+Start-Process msiexec.exe -Wait -ArgumentList '/i snyk-ads-installer-windows-x86_64.msi TENANTID=<TENANT_ID> PUSHKEY=<PUSH_KEY> INSTALLMODE=managed /qn /l*v ads-install.log'
+```
+{% endtab %}
+{% endtabs %}
+
+To remove a managed install, visit [Remove a managed install](./#remove-a-managed-install). To roll managed mode out across a fleet, use your device management tool.
 
 ## Install from the command line
 
@@ -132,7 +175,7 @@ Add your region's base URL, as listed in [If you log in outside the United State
 
 ## What gets installed
 
-Either method sets up the products for the signed-in user.
+In user mode, either method sets up the products for the signed-in user. In [managed mode](./#installation-mode), the products apply to every user on the machine.
 
 ## Apply a configuration change
 
