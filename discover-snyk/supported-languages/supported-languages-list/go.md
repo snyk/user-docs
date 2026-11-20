@@ -151,7 +151,9 @@ Private module support for different SCMs varies based on whether you enable or 
 
 | Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| <ul><li>Azure Repos</li><li>Bitbucket Cloud</li><li>Bitbucket Server</li><li>GitHub</li><li>GitLab</li><li>GitHub Enterprise</li></ul> | <ul><li>Bitbucket Cloud</li><li>GitHub</li><li>GitHub Enterprise</li></ul> |
+| <ul><li>Azure Repos</li><li>Bitbucket Cloud</li><li>Bitbucket Server</li><li>GitHub</li><li>GitLab</li><li>GitHub Enterprise</li><li>GitHub Cloud App</li><li>GitHub Server App</li></ul> | <ul><li>Bitbucket Cloud</li><li>GitHub</li><li>GitHub Enterprise</li><li>GitHub Cloud App (brokered only)</li><li>GitHub Server App (brokered only)</li></ul> |
+
+With full source code analysis disabled, the GitHub Cloud App and GitHub Server App support private modules only when the integration is brokered through [Universal Broker](https://docs.snyk.io/platform-administration/snyk-broker/universal-broker). For a non-brokered GitHub Cloud App or GitHub Server App, Snyk does not pass SCM credentials to the Go scan, and Projects that need a private module fail with `SNYK-OS-GO-0008`. To fix this, broker the integration or enable full source code analysis.
 
 #### Private and brokered package sources
 
@@ -174,7 +176,7 @@ For package registries or proxies (Artifactory, Nexus), Snyk always requires an 
 
 For private dependencies in source control (GitHub and GitHub Enterprise, Bitbucket, GitLab, Azure Repos):
 
-* Snyk requires an explicit URL only if you use a brokered connection. For non-brokered setups, Snyk relies natively on your existing SCM Organization permissions, and you do not need to configure a URL here.
+* Snyk requires an explicit URL only if you use a brokered connection. For non-brokered setups, Snyk relies natively on your existing SCM Organization permissions, and you do not need to configure a URL here. The exception is a non-brokered GitHub Cloud App or GitHub Server App with full source code analysis disabled, which does not support private modules. For details, visit [Private modules](#private-modules).
 * When you provide a URL for a brokered SCM, Snyk adds the host to `GONOSUMDB` so Go correctly tunnels traffic and skips the public checksum database. For example: `https://github.snyk-customer.com/owner/internal-shared-lib`
 
 #### Configuration rules
