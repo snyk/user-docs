@@ -1,16 +1,21 @@
 ---
-description: Use snyk cos gateway run to run a gateway
+description: Use snyk cos gateway run to run a gateway.
 ---
 
 # COS gateway run
 
 ## Usage
 
-`snyk cos gateway create [<OPTIONS>]`
+`snyk cos gateway run [<OPTIONS>]`
 
 ## Description
 
 The `snyk cos gateway run` command runs a gateway in the foreground until it is stopped with Ctrl+C or SIGTERM. It keeps the gateway registered with Snyk and carries scan traffic to the targets that the host can reach.
+
+The gateway authenticates with the node token that [`snyk cos gateway create`](cos-gateway-create.md) prints. Provide the token in one of these ways, but not both:
+
+* Set the `SNYK_GATEWAY_TOKEN` environment variable.
+* Use the `--token-file` option.
 
 For a list of related commands, visit the [Snyk COS](cos.md) help, `snyk cos --help`.
 
@@ -18,8 +23,8 @@ For a list of related commands, visit the [Snyk COS](cos.md) help, `snyk cos --h
 
 Possible exit codes and their meaning:
 
-**0**: gateway successfully started\
-**3**: failure, configuration file not found
+**0**: success, the gateway stopped after Ctrl+C or SIGTERM\
+**2**: failure, try to re-run the command. Use `-d` to output the debug logs.
 
 ## Configure the Snyk CLI
 
@@ -31,12 +36,19 @@ Use the `-d` option to output the debug logs.
 
 ## Options
 
-### `--`SNYK\_GATEWAY\_TOKEN`=<TOKEN>`
+### `--token-file=<PATH>`
 
-**Required**. The token to run the gateway
+Optional. The path to a file that contains the node token. Leading and trailing whitespace is trimmed. Use this option instead of the `SNYK_GATEWAY_TOKEN` environment variable. If you set both, the command fails.
 
-Example:
+Example, with the token in the `SNYK_GATEWAY_TOKEN` environment variable:
 
 ```bash
-$ snyk cos gateway run --SNYK_GATEWAY_TOKEN=<TOKEN>
+$ export SNYK_GATEWAY_TOKEN=<TOKEN>
+$ snyk cos gateway run
+```
+
+Example, with the token in a file:
+
+```bash
+$ snyk cos gateway run --token-file=<PATH>
 ```
