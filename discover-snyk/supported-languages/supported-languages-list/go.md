@@ -32,6 +32,7 @@ Available integrations:
 * google/generative-ai-go/genai
 * GORM library
 * grpc-go
+* Kong/go-pdk
 * labstack/echo
 * lib/pq
 * sashabaranov/go-openai

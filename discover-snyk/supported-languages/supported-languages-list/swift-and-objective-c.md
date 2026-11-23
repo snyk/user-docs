@@ -19,7 +19,7 @@ Code analysis support for Objective-C is in Early Access and is available only w
 
 For an overview of the supported security rules, visit [Swift rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/swift-rules) and [Objective-C rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/objective-c-rules).
 
-For Swift with Snyk Code, Snyk supports Swift versions up to 5.7.x. You can use higher versions, but Snyk does not provide support for them.
+For Swift with Snyk Code, Snyk supports Swift versions up to 6.4.
 
 ### Supported frameworks and libraries
 

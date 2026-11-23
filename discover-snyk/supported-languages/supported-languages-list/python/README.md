@@ -58,6 +58,7 @@ For Python, Snyk supports the following frameworks and libraries:
 * httpx
 * huggingface\_hub
 * aiopg
+* kong-pdk
 * LangChain
 * LangChain LiteLLM
 * ldap3

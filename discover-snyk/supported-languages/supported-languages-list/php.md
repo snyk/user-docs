@@ -15,7 +15,7 @@ Snyk supports PHP for Snyk Code and Snyk Open Source.
 
 ## PHP for Snyk Code
 
-Snyk Code supports PHP versions 5.2 through 8.0 and is designed to process code from newer PHP versions where feasible.
+Snyk Code supports PHP versions 5.2 through 8.5.
 
 For an overview of the supported security rules, visit [PHP rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules/php-rules).
 

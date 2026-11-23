@@ -58,6 +58,7 @@ Snyk Code supports the following frameworks and libraries:
 * jzip
 * koa
 * koa-graphql
+* kong-pdk
 * libxml
 * libxmljs
 * lodash
@@ -110,6 +111,8 @@ Snyk Code supports the following frameworks and libraries:
 Snyk Code supports the following file formats: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`, `.erb`.
 
 To resolve imports that use path aliases when tracing data flow across modules, Snyk Code reads `tsconfig.json` and `jsconfig.json` in your Project.
+
+Snyk Code supports `using` and `await using` declarations.
 
 ### Available features
 
