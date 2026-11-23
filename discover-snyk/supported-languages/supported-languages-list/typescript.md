@@ -46,6 +46,8 @@ For TypeScript with Snyk Code, Snyk supports the following file formats: `.ejs`,
 
 To resolve imports that use path aliases when tracing data flow across modules, Snyk Code reads `tsconfig.json` and `jsconfig.json` in your Project.
 
+Snyk Code supports `using` and `await using` declarations.
+
 Available features:
 
 * Reports

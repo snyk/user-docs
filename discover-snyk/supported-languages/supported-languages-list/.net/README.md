@@ -19,6 +19,8 @@ last_reviewed_source: focused-edit
 For .NET with Snyk Code, C# and VB.NET are supported.
 {% endhint %}
 
+Snyk Code supports C# up to version 14 and VB.NET up to version 16.9.
+
 ### Supported frameworks and libraries
 
 For .NET, Snyk Code supports the following frameworks and libraries:
