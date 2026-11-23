@@ -2521,6 +2521,23 @@
           "type": "string"
         }
       },
+      "ProjectStatus": {
+        "description": "A filter to select issues from monitored or deactivated projects.",
+        "examples": {
+          "active": {
+            "value": "active"
+          },
+          "inactive": {
+            "value": "inactive"
+          }
+        },
+        "in": "query",
+        "name": "project_status",
+        "schema": {
+          "$ref": "#/components/schemas/ProjectStatus"
+        },
+        "style": "form"
+      },
       "ProviderFilter": {
         "description": "Return only models whose provider slug matches one of the given values (case-insensitive). Comma-separated, e.g. provider=openai,anthropic.\n",
         "example": [
@@ -2906,6 +2923,19 @@
           "type": "string"
         },
         "x-snyk-internal": true
+      },
+      "SourceTypes": {
+        "description": "A filter to select issues from one or more target [sources](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects#origin-or-source).\n",
+        "explode": false,
+        "in": "query",
+        "name": "source_types",
+        "schema": {
+          "items": {
+            "$ref": "#/components/schemas/SourceType"
+          },
+          "type": "array"
+        },
+        "style": "form"
       },
       "SparseFieldsets": {
         "description": "Sparse fieldsets allow clients to request only specific fields for a given resource type.\nUse the format `fields[\u003ctype\u003e]=field1,field2` where `\u003ctype\u003e` is the JSON:API resource type.\n\n**Container image fields** (use with `fields[container_images]`):\n- `class` - Classification of the asset\n- `registry` - Container registry hostname\n- `repository` - Repository path\n- `config_digest` - Image config digest\n- `distribution_digests` - Distribution digests (manifest/index pairs)\n- `image_tags` - Distinct image tags across all discovery sources\n- `built_at` - When the image was built\n- `size_bytes` - Size of the image in bytes\n- `author` - Image author\n- `architecture` - CPU architecture\n- `os` - Operating system\n- `variant` - CPU architecture variant\n- `os_version` - Operating system version\n- `os_pretty_name` - Human-readable operating system name\n- `os_features` - OS features\n- `config` - Image runtime configuration (OCI config)\n- `root_fs` - Root filesystem information\n- `history` - Image build history\n- `inferred_base_images` - Inferred base images\n- `teams` - Teams associated with the asset\n- `labels` - Labels associated with the asset\n- `aliases` - Alternate identifiers for the asset\n- `abstract_id` - Identifier of the abstract asset this asset is a variant of\n- `discovery_scopes` - Groups the asset is discovered in, by discovery source type\n- `tags` - Key-value tags for the asset\n- `risk_score` - Risk score for the asset\n- `test_surfaces` - Test surfaces for the asset\n- `issues` - Issue counts by severity\n- `created_at` - When the asset was created\n- `updated_at` - When the asset was last updated\n- `last_scan` - When the asset was last scanned\n- `scan_engines` - Scan engines applied to the asset\n\n`fields[repositories]` accepts the repository attributes and the shared asset fields, including `aliases`, `abstract_id`, and `discovery_scopes`.\n\n`fields[incubating]` accepts `subtype`, `metadata` and the shared asset fields, including `aliases`.\n\nNote: `type` and `id` are always included regardless of field selection.\n",
@@ -17947,6 +17977,9 @@
             "minItems": 1,
             "type": "array"
           },
+          "project_status": {
+            "$ref": "#/components/schemas/ProjectStatus"
+          },
           "resolution": {
             "$ref": "#/components/schemas/Resolution"
           },
@@ -17958,6 +17991,11 @@
               "$ref": "#/components/schemas/CVSSSource"
             },
             "type": "array"
+          },
+          "source_type": {
+            "description": "The source of the target containing this issue. The full list is available in the [projects documentation](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects#origin-or-source).",
+            "example": "github",
+            "type": "string"
           },
           "status": {
             "description": "The issue's status. Derived from the issue's resolution, which provides more details.",
@@ -23469,6 +23507,14 @@
         },
         "type": "object"
       },
+      "ProjectStatus": {
+        "description": "Whether the project containing an issue is currently monitored or de-activated.",
+        "enum": [
+          "active",
+          "inactive"
+        ],
+        "type": "string"
+      },
       "ProposedBaseImages": {
         "description": "Categorized base image upgrade recommendations",
         "properties": {
@@ -27021,6 +27067,39 @@
           "sonarqube_api_token"
         ],
         "type": "object"
+      },
+      "SourceType": {
+        "description": "The source of the target containing an issue. The full list is available in the [projects documentation](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects#origin-or-source).",
+        "enum": [
+          "bitbucket-server",
+          "gitlab",
+          "github-enterprise",
+          "bitbucket-cloud",
+          "bitbucket-connect-app",
+          "azure-repos",
+          "github",
+          "github-cloud-app",
+          "github-server-app",
+          "cli",
+          "docker-hub",
+          "in-memory-fs",
+          "acr",
+          "ecr",
+          "gcr",
+          "artifactory-cr",
+          "harbor-cr",
+          "quay-cr",
+          "github-cr",
+          "nexus-cr",
+          "digitalocean-cr",
+          "gitlab-cr",
+          "google-artifact-cr",
+          "kubernetes",
+          "api",
+          "terraform-cloud"
+        ],
+        "example": "github",
+        "type": "string"
       },
       "String256": {
         "maxLength": 256,
@@ -34101,6 +34180,12 @@
               "format": "date-time",
               "type": "string"
             }
+          },
+          {
+            "$ref": "#/components/parameters/SourceTypes"
+          },
+          {
+            "$ref": "#/components/parameters/ProjectStatus"
           },
           {
             "$ref": "#/components/parameters/EffectiveSeverityLevel"
@@ -74839,6 +74924,12 @@
             }
           },
           {
+            "$ref": "#/components/parameters/SourceTypes"
+          },
+          {
+            "$ref": "#/components/parameters/ProjectStatus"
+          },
+          {
             "$ref": "#/components/parameters/EffectiveSeverityLevel"
           },
           {
@@ -78731,7 +78822,7 @@
     },
     "/orgs/{org_id}/policies/{policy_id}/events": {
       "get": {
-        "description": "Retrieve the event history for the given policy.\n\n*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently\nrestricted via \"snykCodeConsistentIgnores\" and \"ignoreApprovalWorkflow\" feature flags\nand will result in a 403 Forbidden error without the flag enabled. Please contact your\naccount representative for eligibility requirements.\n\n#### Required permissions\n\n- `View Ignores (org.project.ignore.read)`",
+        "description": "Retrieve the event history for the given policy.\n\n*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently\nrestricted to organizations with Snyk Code or Snyk Open Source consistent ignores enabled,\nand will result in a 403 Forbidden error otherwise. Please contact your account\nrepresentative for eligibility requirements.\n\n#### Required permissions\n\n- `View Ignores (org.project.ignore.read)`",
         "operationId": "getOrgPolicyEvents",
         "parameters": [
           {
