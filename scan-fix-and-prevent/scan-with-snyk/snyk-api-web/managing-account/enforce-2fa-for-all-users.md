@@ -1,19 +1,19 @@
 ---
-description: How to enforce two-factor authentication for all Snyk API & Web users
-nav_context: classic
+description: Learn how to enforce two-factor authentication (2FA) for all users of your Snyk API & Web account
+nav_context: agnostic
 last_reviewed: 2026-08-03
 last_reviewed_source: bulk-sync
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Enforce 2FA for all users
 
-Learn how to enforce two-factor authentication (2FA) for all users of your Snyk API & Web account.
+Two-factor authentication (2FA) strengthens authentication by adding an extra layer of security that requires an additional piece of evidence (the possession factor). To get the possession factor, you can use an authenticator like Google Authenticator, 1Password, Authy, or Microsoft Authenticator, which provides a frequently changing code.
 
-Two-factor authentication (2FA) strengthens authentication with an additional layer of security that requires presenting an extra piece of evidence (the possession factor) to the authentication mechanism of a website or application. To obtain the possession factor, you can use an authenticator like Google Authenticator, 1Password, Authy, or Microsoft Authenticator, which provides a random code that changes frequently.
+If you are the account owner, you can enforce 2FA for all users of your account so that they have this extra layer of authentication in their profiles.
 
-If you are the owner of the Snyk account, you can enforce 2FA for all its users so that they have this extra layer of authentication in their profiles.
+{% hint style="info" %}
+For Snyk-managed accounts, Snyk handles authentication. This page does not apply: you cannot enforce two-factor authentication in Snyk API & Web. For details, visit [Understand Snyk-managed accounts](snyk-managed-accounts.md).
+{% endhint %}
 
 ## Enforce 2FA
 

@@ -1,15 +1,15 @@
 ---
-description: How to get started with teams in Snyk API & Web
-nav_context: classic
+description: Plan and manage scans between different teams in your company
+nav_context: agnostic
 last_reviewed: 2026-08-03
 last_reviewed_source: bulk-sync
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Get started with teams
 
-Plan and manage target scans between different teams in your organization.
+{% hint style="info" %}
+For Snyk-managed accounts, Teams are called Organizations. They come from your Snyk Organizations and are created for you, so you cannot add, rename, edit, or delete one in Snyk API & Web. Find them under **Settings** > **Organizations**, where you choose a Group first. You can still add and remove Targets and API Keys on an Organization. For details, visit [Understand Snyk-managed accounts](snyk-managed-accounts.md).
+{% endhint %}
 
 Teams provide a way for you to group Users, API keys, and Targets in one place so that managing them becomes easier and time-efficient. You can create multiple teams for one account. Teams act as independent units and help you separate and assign targets for each team, limit the number of targets, set scopes, and user roles.
 
@@ -28,7 +28,7 @@ The following sections detail each one of these aspects.
 
 Follow these steps to add a team:
 
-1. Log in to your account, open the **Settings** dropdown on the bottom-left corner of the navigation bar, and choose **Teams**.
+1. Log in to your account, open the **Settings** dropdown in the bottom-left corner of the navigation bar, and choose **Teams**.
 2. Click **Add team** and give it a name. The name is required to identify the team.
 3. Optionally, limit the number of targets each team can create by assigning a target quota. This value depends on how many targets you can still add to your Snyk API & Web account.
 4. If you assign a target quota (a limit of targets), you can reserve target slots for the current team. Doing so prevents other teams from using those slots beforehand. Reserving that quota to the team is optional.
@@ -39,7 +39,7 @@ When you access the details for a team, you have three tabs where you can manage
 
 To manage a team, navigate to its details and:
 
-* From the **Users** tab, add users in bulk and assign them a role in the context of that team.
+* From the **Users** tab, add users in bulk and assign them a role in the context of that team. For Snyk-managed accounts, membership comes from Snyk, and this tab is read-only.
 * Click the **API Keys** tab, and manage API keys exactly as you did for users.
 * Click the **Targets** tab, and add targets to the team by selecting the ones you want from the list of existing targets.
 
@@ -47,7 +47,7 @@ After you create and set up your team, users who were added to that team can acc
 
 ## Manage Users, API Keys, and Targets
 
-You can manage every component of a team (Users, API Keys, and Targets) from the details for the team, and you can also manage these components from their respective sections.
+You can manage every component of a team (Users, API Keys, and Targets) from the team details, and you can also manage these components from their respective sections.
 
 For instance, through the Users list, you can add new users or edit existing ones to accommodate distinct roles for different access scopes:
 
@@ -56,6 +56,10 @@ For instance, through the Users list, you can add new users or edit existing one
 * With a **specific Target** scope, the user can only use the assigned role in the context of that target.
 
 To do this, select the role you want to assign and choose the respective scope using the **Teams** or **Targets** toggle and selecting the intended scope from the respective dropdown.
+
+{% hint style="info" %}
+Snyk-managed accounts cannot assign roles or scopes to users here, because those come from Snyk. API keys take roles from Snyk too, and you cannot scope a key to a single target.
+{% endhint %}
 
 You can do the same for API keys by accessing the **API Keys** menu entry and either adding a new API key or editing an existing one.
 

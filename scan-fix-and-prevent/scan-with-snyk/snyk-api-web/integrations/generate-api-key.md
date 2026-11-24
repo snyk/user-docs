@@ -1,15 +1,23 @@
 ---
-description: How to generate an API key for Snyk API & Web
-nav_context: classic
+description: Learn how to generate API keys to integrate with Snyk API & Web
+nav_context: agnostic
 last_reviewed: 2026-08-03
 last_reviewed_source: bulk-sync
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Generate API key
 
-Learn how to generate API keys to integrate with Snyk API & Web.
+{% hint style="info" %}
+For Snyk-managed accounts, you manage API keys in Snyk API & Web, not in Snyk.
+
+The page lists the keys of one Group. Choose the Group in the bar at the top first.
+
+When adding or editing a key, choose an Organization, then a role, then click **Add**. Add one pair for each Organization the key needs access to. At least one pair is required, and you cannot choose all Organizations in a Group at once.
+
+The roles available come from your Snyk roles, and you cannot scope a key to a single target.
+
+For details, visit [Understand Snyk-managed accounts](../managing-account/snyk-managed-accounts.md).
+{% endhint %}
 
 ## Overview
 

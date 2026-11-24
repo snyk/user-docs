@@ -1242,6 +1242,7 @@ paths:
                         enabled: true
                       ignores:
                         reasonRequired: false
+                        disregardFilesystemIgnores: false
                         autoApproveIgnores: false
                         approvalWorkflowEnabled: false
               example:
@@ -1249,6 +1250,7 @@ paths:
                   enabled: true
                 ignores:
                   reasonRequired: false
+                  disregardFilesystemIgnores: false
                   autoApproveIgnores: false
                   approvalWorkflowEnabled: false
       deprecated: false
@@ -12808,8 +12810,9 @@ components:
         requestAccess:
           allOf:
             - $ref: '#/components/schemas/requestAccess1'
-            - $ref: '#/components/schemas/orgIgnoreSettings'
             - description: Will only be returned if `API_KEY` has read access to request access settings.
+        ignores:
+          $ref: '#/components/schemas/orgIgnoreSettings'
     Orgsettingsrequest:
       title: Orgsettingsrequest
       type: object
@@ -17758,6 +17761,10 @@ components:
         reasonRequired:
           type: boolean
           description: Whether a reason is required for creating ignores.
+          example: false
+        disregardFilesystemIgnores:
+          type: boolean
+          description: Whether ignores from the Snyk CLI or a `.snyk` file are disregarded, so only ignores created in the Snyk Web UI or API apply.
           example: false
         approvalWorkflowEnabled:
           type: boolean

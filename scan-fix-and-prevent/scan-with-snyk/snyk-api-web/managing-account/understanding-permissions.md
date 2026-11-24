@@ -1,5 +1,5 @@
 ---
-description: How permissions work in Snyk API & Web
+description: Learn what actions each permission grants to better configure your custom roles
 nav_context: agnostic
 last_reviewed: 2026-07-06
 last_reviewed_source: bulk-sync
@@ -7,7 +7,9 @@ last_reviewed_source: bulk-sync
 
 # Understanding permissions
 
-Learn what actions each permission grants to better configure your custom roles.
+{% hint style="info" %}
+For Snyk-managed accounts, roles come from Snyk, and the target-level scope is not available. For details, visit [Understand Snyk-managed accounts](snyk-managed-accounts.md) and [Map Snyk roles to Snyk API & Web permissions](snyk-role-permission-mapping.md).
+{% endhint %}
 
 This article provides a detailed breakdown of the high-level permissions in Snyk API & Web, explaining what actions each permission grants. Snyk groups permissions into roles, either built-in or custom. The role, along with a scope, dictates the actions a user can perform.
 

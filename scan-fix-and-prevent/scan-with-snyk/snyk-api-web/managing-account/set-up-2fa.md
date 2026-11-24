@@ -1,19 +1,19 @@
 ---
-description: How to set up two-factor authentication in Snyk API & Web
-nav_context: classic
+description: Learn how to set up two-factor authentication (2FA) for your profile and recover access if you lose your device
+nav_context: agnostic
 last_reviewed: 2026-07-09
 last_reviewed_source: focused-edit
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Set up two-factor authentication
 
-Learn how to set up two-factor authentication (2FA) for your profile and recover access if you lose your device.
-
-Two-factor authentication (2FA) strengthens authentication with an additional layer of security that requires presenting an extra piece of evidence (the possession factor) to an authentication mechanism. To obtain the possession factor, you can use an authenticator like Google Authenticator, 1Password, Authy, or Microsoft Authenticator, which provides a random code that changes frequently.
+Two-factor authentication (2FA) strengthens authentication by adding an extra layer of security that requires an additional piece of evidence (the possession factor). To get the possession factor, you can use an authenticator like Google Authenticator, 1Password, Authy, or Microsoft Authenticator, which provides a frequently changing code.
 
 In Snyk API & Web, users can set up 2FA by configuring this extra layer of authentication in their profiles.
+
+{% hint style="info" %}
+For Snyk-managed accounts, Snyk handles authentication. This page does not apply: you cannot set up, reset, or recover two-factor authentication in Snyk API & Web. For details, visit [Understand Snyk-managed accounts](snyk-managed-accounts.md).
+{% endhint %}
 
 ## Set up 2FA for your profile
 
