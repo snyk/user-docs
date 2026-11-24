@@ -15,7 +15,15 @@ Regional hosting and data residency are available only for Enterprise plans. For
 
 Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For information about GDPR, see [Privacy compliance](how-snyk-handles-your-data.md#privacy-compliance).
 
-Data residency is available for [Snyk Open Source](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source), [Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code), [Snyk Container](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container), and [Snyk IaC](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-iac). Snyk can host your data in a number of regions.
+Data residency is available for [Snyk Open Source](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source), [Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code), [Snyk Container](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container), [Snyk IaC](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-iac), and [Evo by Snyk](https://docs.snyk.io/agent-security/evo-by-snyk/overview). Snyk can host your data in a number of regions.
+
+{% hint style="info" %}
+**Evo by Snyk and generative AI features**
+
+Evo by Snyk is available in the regions listed in [Access and authentication](https://docs.snyk.io/agent-security/evo-by-snyk/access-and-authentication), each with its own Evo URL.
+
+Generative AI features, including features in Evo by Snyk, send limited, feature-specific data to third-party model providers through AWS Bedrock or GCP Vertex. This processing is not always localized to your selected region. For the providers each feature uses and the data each feature sends, visit [How Snyk incorporates generative AI into the platform](how-snyk-incorporates-generative-ai-into-the-platform.md).
+{% endhint %}
 
 This page provides information on:
 
