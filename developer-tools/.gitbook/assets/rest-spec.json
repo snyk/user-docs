@@ -21939,6 +21939,18 @@
         ],
         "type": "string"
       },
+      "PnpmBuildArgs": {
+        "additionalProperties": false,
+        "properties": {
+          "pnpm_workspace_root": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "pnpm_workspace_root"
+        ],
+        "type": "object"
+      },
       "PoetrySettings": {
         "additionalProperties": false,
         "properties": {
@@ -22864,6 +22876,12 @@
               },
               {
                 "$ref": "#/components/schemas/NugetBuildArgs"
+              },
+              {
+                "$ref": "#/components/schemas/PnpmBuildArgs"
+              },
+              {
+                "$ref": "#/components/schemas/UvBuildArgs"
               }
             ]
           },
@@ -29514,6 +29532,18 @@
       "Uuid": {
         "format": "uuid",
         "type": "string"
+      },
+      "UvBuildArgs": {
+        "additionalProperties": false,
+        "properties": {
+          "uv_workspace_root": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "uv_workspace_root"
+        ],
+        "type": "object"
       },
       "VcsReference": {
         "description": "A reference to a version control system, with optional branch, tag, or revision information",
