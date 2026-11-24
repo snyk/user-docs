@@ -1,26 +1,24 @@
 ---
-description: How to set up single sign-on (SSO) in Snyk API & Web
-nav_context: classic
+description: Learn how to configure your company's Single Sign-On to log in to the Snyk API & Web app
+nav_context: agnostic
 last_reviewed: 2026-08-03
 last_reviewed_source: bulk-sync
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Set up single sign-on (SSO)
-
-Learn how to configure your company's Single Sign-On to log in to the Snyk API & Web app.
 
 Snyk API & Web uses the standard Security Assertion Markup Language (SAML) to exchange authentication and authorization information with an Identity Provider (IdP) to enable Single Sign-On (SSO) to the Snyk API & Web app. This means that if you have your company's SSO in place for your users to log in to your applications, you can also enable SSO to access the Snyk API & Web app.
 
 When you do this, users from your account can choose the following option from the login screen to access Snyk API & Web:
 
-Note:
-
-* If you already use SSO to log in to Snyk, you can log in to Snyk API & Web with your existing Snyk account, using the **Log in with Snyk** button:
+* If you already use SSO to log in to Snyk, you can log in to Snyk API & Web with your existing Snyk account, using the **Log in with Snyk** button.
 * If you already have a Snyk account but you do not use SSO, you can [set up SSO with Snyk](https://docs.snyk.io/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk).
 
 Learn more in [Log in to Snyk API & Web](log-in-to-snyk-api-web.md).
+
+{% hint style="info" %}
+For Snyk-managed accounts, Snyk handles authentication. This page does not apply: log in using the **Log in with Snyk** button. For details, visit [Understand Snyk-managed accounts](snyk-managed-accounts.md).
+{% endhint %}
 
 ***
 
