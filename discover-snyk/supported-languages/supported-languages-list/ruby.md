@@ -34,9 +34,10 @@ Snyk supports the following Ruby versions:
 | `2.7.X`           | `2.7.0` to `2.7.8`    |
 | `3.0.X`           | `3.0.0` to `3.0.7`    |
 | `3.1.X`           | `3.1.0` to `3.1.7`    |
-| `3.2.X`           | `3.2.0` to `3.2.9`    |
-| `3.3.X`           | `3.3.0` to `3.3.9`    |
-| `3.4.X`           | `3.4.0` to `3.4.5`    |
+| `3.2.X`           | `3.2.0` to `3.2.11`   |
+| `3.3.X`           | `3.3.0` to `3.3.14`   |
+| `3.4.X`           | `3.4.0` to `3.4.13`   |
+| `4.0.X`           | `4.0.0` to `4.0.10`   |
 
 ### Supported frameworks and libraries
 
@@ -115,9 +116,9 @@ When creating Fix PRs for Ruby Projects using private gem sources, Snyk may need
 ### Fixing vulnerabilities in your Ruby Projects
 
 {% hint style="info" %}
-For Ruby versions earlier than 3.2, Snyk does not support pinning a specific version of Ruby in the Gemfile, for example, `ruby "2.7.7"`. You must use a more permissive version range that encapsulates all point versions, such as `ruby "~> 2.7.x"`.
+Snyk does not support Fix PRs for Projects using Ruby versions earlier than 3.1. Upgrade to Ruby 3.1 or later to use Fix PRs.
 {% endhint %}
 
-Snyk can fix vulnerabilities by updating vulnerable gems using `bundle update` after modifying your Gemfile, adhering to the rules you have specified there as far as possible.
+Snyk can fix vulnerabilities by updating vulnerable gems with `bundle lock --update` after it modifies your Gemfile. Snyk follows the rules in your Gemfile as far as possible.
 
 In some scenarios, Snyk cannot upgrade all dependencies to non-vulnerable versions. In this case, update the rules in your Gemfile.

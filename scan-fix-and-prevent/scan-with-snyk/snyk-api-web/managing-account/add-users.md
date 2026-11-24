@@ -1,15 +1,15 @@
 ---
-description: How to add users to Snyk API & Web
-nav_context: classic
+description: Learn how to add team members to your Snyk API & Web account
+nav_context: agnostic
 last_reviewed: 2026-06-17
 last_reviewed_source: focused-edit
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Add users
 
-Learn how to add team members to your Snyk API & Web account.
+{% hint style="info" %}
+For Snyk-managed accounts, you add users in Snyk, not here, and there is no **Add User** button. A user appears in Snyk API & Web the first time they log in. For details, visit [Understand Snyk-managed accounts](snyk-managed-accounts.md).
+{% endhint %}
 
 ## Add a user to your account
 

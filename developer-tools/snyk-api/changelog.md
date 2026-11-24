@@ -1,3 +1,19 @@
+## 2026-09-09 - Updated 2026-11-24
+
+### GET - `/orgs/{org_id}/projects` - Updated
+- added `#/components/schemas/PnpmBuildArgs, #/components/schemas/UvBuildArgs` to the `data/items/attributes/build_args` response property `oneOf` list for the response status `200`
+
+
+
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added `#/components/schemas/PnpmBuildArgs, #/components/schemas/UvBuildArgs` to the `data/attributes/build_args` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added `#/components/schemas/PnpmBuildArgs, #/components/schemas/UvBuildArgs` to the `data/attributes/build_args` response property `oneOf` list for the response status `200`
+
+
 ## 2026-09-09
 
 ### GET - `/orgs/{org_id}/issues` - Updated
