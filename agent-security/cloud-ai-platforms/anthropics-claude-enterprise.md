@@ -1,10 +1,10 @@
 ---
-description: >-
-  How to integrate Evo by Snyk with Anthropic's Claude Enterprise to inventory AI
-  assets
 nav_context: classic
-last_reviewed: 2026-07-21
+last_reviewed: 2026-07-21T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: >-
+  How to integrate Evo by Snyk with Anthropic's Claude Enterprise to inventory
+  AI assets
 ---
 
 # Anthropic's Claude Enterprise
@@ -75,18 +75,9 @@ The Models tab lists every Claude model detected in use across your organization
 
 Select a model to open its detail page. The detail page shows usage statistics (Organizations, Projects, Used in chats, Users) and three tabs:
 
-* Usage: Lists the organizations using this model, with the date added and the creator who first associated it.
-* Risk profile: Evo's AI Risk DB scores the model across vulnerability categories on a 0–1000 index (lower is better):
-
-| Category                 | Description                                                                                                                                                    |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bias & discrimination    | Measures fairness and discriminatory behavior across demographics.                                                                                             |
-| Insecure code generation | Measures how often the model generates code containing vulnerabilities such as SQL injection, XSS, OS injection, path traversal, or improper input validation. |
-| Sensitive data exposure  | Tests whether the model memorizes and reproduces personally identifiable information (PII) from its training data.                                             |
-| Attack reconnaissance    | Measures susceptibility to assisting with information gathering for attacks.                                                                                   |
-| Safety guardrail bypass  | Tests resistance to attempts to circumvent safety controls.                                                                                                    |
-
-* Capabilities: Displays model metadata including vendor, model family, model variant, tasks, modalities, license type, cost tier, and a link to the Anthropic model documentation.
+* **Usage**: lists the organizations using this model, with the date added and the creator who first associated it.
+* **Risk profile**: shows the model's risk scores on a scale of 0 to 1,000, by risk category and attacker goal. A higher score means higher risk. To learn how Snyk calculates scores, visit [Risk intelligence](../evo-by-snyk/ai-spm/risk-intelligence/).
+* **Capabilities**: displays model metadata, including vendor, model family, model variant, tasks, modalities, license type, cost tier, and a link to the Anthropic model documentation.
 
 #### MCP servers
 
