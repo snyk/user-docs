@@ -12,7 +12,7 @@ If you are an internal Snyk contributor, such as a PM or SME, request docs with 
 
 1. Run `/ship-it` from anywhere in Slack, or from the Ship It app in your sidebar, and add a link to the PRD or technical spec. Complete all the fields in one sitting, because the multi-step form does not save partial progress. Connect Atlassian to Slack first, because the workflow creates a Jira ticket.
 2. The ship-it automation drafts the docs as a draft pull request in [`snyk/user-docs-internal`](https://github.com/snyk/user-docs-internal), the source repository for docs.snyk.io, and replies in the Slack thread with the link.
-3. Review the draft for technical accuracy, and resolve every `[ACTION REQUIRED]` item. A technical writer does the final review and merges it.
+3. Review the draft for technical accuracy, and resolve every review comment on the pull request. A technical writer does the final review and merges it.
 
 For a minor update, or if you prefer to write the draft by hand, open a pull request in `snyk/user-docs-internal` instead. Use a branch rather than a fork, to allow GitBook previews, and place pages under `docs/<section>/`. Then run `/ship-it` and add the pull request URL in the **Docs Draft** field.
 
