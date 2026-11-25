@@ -17226,10 +17226,20 @@
                 },
                 {
                   "type": "boolean"
+                },
+                {
+                  "additionalProperties": true,
+                  "type": "object"
+                },
+                {
+                  "items": {
+                    "nullable": true
+                  },
+                  "type": "array"
                 }
               ]
             },
-            "description": "The fields the subtype declares. Keys and value types depend on the subtype.",
+            "description": "The fields the subtype declares. Keys and value types depend on the subtype.\nObject and array fields have unrestricted nested JSON contents.\n",
             "type": "object"
           },
           "subtype": {
@@ -22949,6 +22959,11 @@
           "origin": {
             "description": "The origin the project was added from.",
             "example": "github",
+            "type": "string"
+          },
+          "profile_name": {
+            "description": "The name of the integration profile the project's target was imported through. Returned only when retrieving a single project, and only when the org has multiple accounts enabled for the project's integration type and that integration has a profile name.",
+            "example": "production-aws",
             "type": "string"
           },
           "read_only": {
@@ -37216,7 +37231,7 @@
     },
     "/groups/{group_id}/rule_extensions/assignments": {
       "delete": {
-        "description": "Delete assignments for rule extensions with Group or Organization scope.\n\n#### Required permissions\n\n- `group.rule_extension.edit`",
+        "description": "Delete assignments for Rule Extensions with Group or Organization scope.\n\n#### Required permissions\n\n- `group.rule_extension.edit`",
         "operationId": "deleteAssignments",
         "parameters": [
           {
@@ -38255,7 +38270,7 @@
             }
           }
         },
-        "summary": "Delete assignments for rule extensions",
+        "summary": "Delete assignments for Rule Extensions",
         "tags": [
           "Assignments"
         ],
@@ -38269,7 +38284,7 @@
         "x-stability-level": "stable"
       },
       "get": {
-        "description": "Returns a paginated list of all rule extension assignments for the requested group.\n\n**Pagination:** The `starting_after` and `ending_before` query parameters are mutually exclusive. Providing both will result in a 400 Bad Request response.\n\n**Filtering:** The `org_id` and `group_id` query parameters are mutually exclusive. Providing both will result in a 400 Bad Request response.\n\n#### Required permissions\n\n- `group.rule_extension.read`",
+        "description": "Returns a paginated list of all Rule Extension assignments for the requested group.\n\n**Pagination:** The `starting_after` and `ending_before` query parameters are mutually exclusive. Providing both will result in a 400 Bad Request response.\n\n**Filtering:** The `org_id` and `group_id` query parameters are mutually exclusive. Providing both will result in a 400 Bad Request response.\n\n#### Required permissions\n\n- `group.rule_extension.read`",
         "operationId": "listAssignments",
         "parameters": [
           {
@@ -39591,7 +39606,7 @@
         "x-stability-level": "stable"
       },
       "post": {
-        "description": "Assign published rule extensions with Group or Organization scope.\n\n#### Required permissions\n\n- `group.rule_extension.edit`",
+        "description": "Assign published Rule Extensions with Group or Organization scope.\n\n#### Required permissions\n\n- `group.rule_extension.edit`",
         "operationId": "createAssignments",
         "parameters": [
           {
@@ -39636,7 +39651,7 @@
         },
         "responses": {
           "204": {
-            "description": "Assignments for rule extension successfully created.",
+            "description": "Assignments for Rule Extension successfully created.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -41109,7 +41124,7 @@
             }
           }
         },
-        "summary": "Create bulk assignments for rule extensions",
+        "summary": "Create bulk assignments for Rule Extensions",
         "tags": [
           "Assignments"
         ],
@@ -41125,7 +41140,7 @@
     },
     "/groups/{group_id}/sast/rule_extensions": {
       "get": {
-        "description": "Get a list of all the SAST rule extensions for the requested Group ID and its child Org(s).\n\n#### Required permissions\n\n- `group.rule_extension.read`",
+        "description": "Get a list of all the SAST Rule Extensions for the requested Group ID and its child Org(s).\n\n#### Required permissions\n\n- `group.rule_extension.read`",
         "operationId": "listSastRuleExtensionsByGroup",
         "parameters": [
           {
@@ -41181,7 +41196,7 @@
                 }
               }
             },
-            "description": "Returns a list of all the SAST rule extensions associated with the requested Group ID and its child Org(s)",
+            "description": "Returns a list of all the SAST Rule Extensions associated with the requested Group ID and its child Org(s)",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -42419,7 +42434,7 @@
             }
           }
         },
-        "summary": "Get a list of all the SAST rule extensions for the requested Group",
+        "summary": "Get a list of all the SAST Rule Extensions for the requested Group",
         "tags": [
           "SastRuleExtensions"
         ],
@@ -42433,7 +42448,7 @@
         "x-stability-level": "stable"
       },
       "post": {
-        "description": "SAST rule extensions adapt Snyk SAST analysis, making Snyk Code Rules more suitable for your code. You must associate SAST rule extensions with particular Snyk Code Rule Keys. Only published SAST rule extensions with assignment would be applied to Snyk SAST scans.\n\n#### Required permissions\n\n- `group.rule_extension.create`",
+        "description": "SAST Rule Extensions adapt Snyk Code analysis, making Snyk Code Rules more suitable for your code. You must associate SAST Rule Extensions with particular Snyk Code Rule Keys. Only published SAST Rule Extensions with assignment would be applied to Snyk Code scans.\n\n#### Required permissions\n\n- `group.rule_extension.create`",
         "operationId": "createSastRuleExtension",
         "parameters": [
           {
@@ -42496,7 +42511,7 @@
                 }
               }
             },
-            "description": "SAST rule extension successfully created. SAST rule extensions will only apply once published and assigned.",
+            "description": "SAST Rule Extension successfully created. SAST Rule Extensions will only apply once published and assigned.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -43972,7 +43987,7 @@
             }
           }
         },
-        "summary": "Create a SAST rule extension",
+        "summary": "Create a SAST Rule Extension",
         "tags": [
           "SastRuleExtensions"
         ],
@@ -45281,7 +45296,7 @@
             }
           }
         },
-        "summary": "Trigger a SAST rule extension impact test.",
+        "summary": "Trigger a SAST Rule Extension impact test.",
         "tags": [
           "SastRuleExtensions"
         ],
@@ -45297,7 +45312,7 @@
     },
     "/groups/{group_id}/sast/rule_extensions/tests/{test_id}": {
       "get": {
-        "description": "Get the SAST rule extension test status for a requested Snyk Code project.\n\n#### Required permissions\n\n- `group.rule_extension.read`",
+        "description": "Get the SAST Rule Extension test status for a requested Snyk Code project.\n\n#### Required permissions\n\n- `group.rule_extension.read`",
         "operationId": "getSastImpactTestStatus",
         "parameters": [
           {
@@ -46589,7 +46604,7 @@
             }
           }
         },
-        "summary": "Retrieve the SAST rule extension impact test status.",
+        "summary": "Retrieve the SAST Rule Extension impact test status.",
         "tags": [
           "SastRuleExtensions"
         ],
@@ -46659,7 +46674,7 @@
                 }
               }
             },
-            "description": "Returns the test results of the input SAST rule extension against a Snyk Code project.",
+            "description": "Returns the test results of the input SAST Rule Extension against a Snyk Code project.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -47897,7 +47912,7 @@
             }
           }
         },
-        "summary": "Retrieve the impact test result for a SAST rule extension.",
+        "summary": "Retrieve the impact test result for a SAST Rule Extension.",
         "tags": [
           "SastRuleExtensions"
         ],
@@ -47913,7 +47928,7 @@
     },
     "/groups/{group_id}/sast/rule_extensions/{rule_extension_id}": {
       "delete": {
-        "description": "Delete the SAST rule extension for the requested SAST rule extension ID. Draft rule extensions can be deleted unconditionally. Published rule extensions can only be deleted if they have no assignments. All assignments must be removed before a published rule extension can be deleted.\n\n#### Required permissions\n\n- `group.rule_extension.delete`",
+        "description": "Delete the SAST Rule Extension for the requested SAST Rule Extension ID. Draft Rule Extensions can be deleted unconditionally. Published Rule Extensions can only be deleted if they have no assignments. All assignments must be removed before a published Rule Extension can be deleted.\n\n#### Required permissions\n\n- `group.rule_extension.delete`",
         "operationId": "deleteSastRuleExtension",
         "parameters": [
           {
@@ -47946,7 +47961,7 @@
         ],
         "responses": {
           "204": {
-            "description": "SAST rule extension deleted successfully.",
+            "description": "SAST Rule Extension deleted successfully.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -49184,7 +49199,7 @@
             }
           }
         },
-        "summary": "Delete a SAST rule extension by SAST rule extension ID",
+        "summary": "Delete a SAST Rule Extension by SAST Rule Extension ID",
         "tags": [
           "SastRuleExtensions"
         ],
@@ -49198,7 +49213,7 @@
         "x-stability-level": "stable"
       },
       "get": {
-        "description": "Get the SAST rule extension for the requested SAST rule extension ID\n\n#### Required permissions\n\n- `group.rule_extension.read`",
+        "description": "Get the SAST Rule Extension for the requested SAST Rule Extension ID\n\n#### Required permissions\n\n- `group.rule_extension.read`",
         "operationId": "getSastRuleExtension",
         "parameters": [
           {
@@ -49243,7 +49258,7 @@
                 }
               }
             },
-            "description": "SAST rule extension retrieved successfully.",
+            "description": "SAST Rule Extension retrieved successfully.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -50481,7 +50496,7 @@
             }
           }
         },
-        "summary": "Get a SAST rule extension by SAST rule extension ID",
+        "summary": "Get a SAST Rule Extension by SAST Rule Extension ID",
         "tags": [
           "SastRuleExtensions"
         ],
@@ -50495,7 +50510,7 @@
         "x-stability-level": "stable"
       },
       "patch": {
-        "description": "Update the SAST rule extension for the requested SAST rule extension ID\n\n#### Required permissions\n\n- `group.rule_extension.edit`",
+        "description": "Update the SAST Rule Extension for the requested SAST Rule Extension ID\n\n#### Required permissions\n\n- `group.rule_extension.edit`",
         "operationId": "updateSastRuleExtension",
         "parameters": [
           {
@@ -50558,7 +50573,7 @@
                 }
               }
             },
-            "description": "SAST rule extension updated successfully.",
+            "description": "SAST Rule Extension updated successfully.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -52031,7 +52046,7 @@
             }
           }
         },
-        "summary": "Update a SAST rule extension by SAST rule extension ID",
+        "summary": "Update a SAST Rule Extension by SAST Rule Extension ID",
         "tags": [
           "SastRuleExtensions"
         ],
@@ -52047,7 +52062,7 @@
     },
     "/groups/{group_id}/secrets/rule_extensions": {
       "get": {
-        "description": "Get a list of all secrets rule extensions for the requested Group ID and its child Org(s).\n\n#### Required permissions\n\n- `group.rule_extension.read`",
+        "description": "Get a list of all Secrets Rule Extensions for the requested Group ID and its child Org(s).\n\n#### Required permissions\n\n- `group.rule_extension.read`",
         "operationId": "listSecretsRuleExtensions",
         "parameters": [
           {
@@ -52103,7 +52118,7 @@
                 }
               }
             },
-            "description": "Returns a list of all secrets rule extensions for the requested Group ID.",
+            "description": "Returns a list of all Secrets Rule Extensions for the requested Group ID.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -53341,7 +53356,7 @@
             }
           }
         },
-        "summary": "Get a list of all secrets rule extensions for the requested Group",
+        "summary": "Get a list of all Secrets Rule Extensions for the requested Group",
         "tags": [
           "SecretsRuleExtensions"
         ],
@@ -53355,7 +53370,7 @@
         "x-stability-level": "stable"
       },
       "post": {
-        "description": "Secrets rule extensions adapt Snyk Secret analysis, making Snyk Secret Rules more suitable for your code. Only published secrets rule extensions with assignment would be applied to Snyk scans.\n\n#### Required permissions\n\n- `group.rule_extension.create`",
+        "description": "Secrets Rule Extensions adapt Snyk Secrets analysis, making Snyk Secrets Rules more suitable for your code. Only published Secrets Rule Extensions with assignment would be applied to Snyk Secrets scans.\n\n#### Required permissions\n\n- `group.rule_extension.create`",
         "operationId": "createSecretsRuleExtension",
         "parameters": [
           {
@@ -53413,7 +53428,7 @@
                 }
               }
             },
-            "description": "Secrets rule extension successfully created. Secrets rule extensions will only apply once published and assigned.",
+            "description": "Secrets Rule Extension successfully created. Secrets Rule Extensions will only apply once published and assigned.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -54889,7 +54904,7 @@
             }
           }
         },
-        "summary": "Create a secrets rule extension",
+        "summary": "Create a Secrets Rule Extension",
         "tags": [
           "SecretsRuleExtensions"
         ],
@@ -54905,7 +54920,7 @@
     },
     "/groups/{group_id}/secrets/rule_extensions/{rule_extension_id}": {
       "delete": {
-        "description": "Delete the secrets rule extension for the requested rule extension ID. Draft rule extensions can be deleted unconditionally. Published rule extensions can only be deleted if they have no assignments.\n\n#### Required permissions\n\n- `group.rule_extension.delete`",
+        "description": "Delete the Secrets Rule Extension for the requested Rule Extension ID. Draft Rule Extensions can be deleted unconditionally. Published Rule Extensions can only be deleted if they have no assignments.\n\n#### Required permissions\n\n- `group.rule_extension.delete`",
         "operationId": "deleteSecretsRuleExtension",
         "parameters": [
           {
@@ -54938,7 +54953,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Secrets rule extension deleted successfully.",
+            "description": "Secrets Rule Extension deleted successfully.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -56176,7 +56191,7 @@
             }
           }
         },
-        "summary": "Delete a secrets rule extension by rule extension ID",
+        "summary": "Delete a Secrets Rule Extension by Rule Extension ID",
         "tags": [
           "SecretsRuleExtensions"
         ],
@@ -56190,7 +56205,7 @@
         "x-stability-level": "stable"
       },
       "get": {
-        "description": "Get the secrets rule extension for the requested rule extension ID.\n\n#### Required permissions\n\n- `group.rule_extension.read`",
+        "description": "Get the Secrets Rule Extension for the requested Rule Extension ID.\n\n#### Required permissions\n\n- `group.rule_extension.read`",
         "operationId": "getSecretsRuleExtension",
         "parameters": [
           {
@@ -56230,7 +56245,7 @@
                 }
               }
             },
-            "description": "Secrets rule extension retrieved successfully.",
+            "description": "Secrets Rule Extension retrieved successfully.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -57468,7 +57483,7 @@
             }
           }
         },
-        "summary": "Get a secrets rule extension by rule extension ID",
+        "summary": "Get a Secrets Rule Extension by Rule Extension ID",
         "tags": [
           "SecretsRuleExtensions"
         ],
@@ -57482,7 +57497,7 @@
         "x-stability-level": "stable"
       },
       "patch": {
-        "description": "Update the secrets rule extension for the requested rule extension ID.\n\n#### Required permissions\n\n- `group.rule_extension.edit`",
+        "description": "Update the Secrets Rule Extension for the requested Rule Extension ID.\n\n#### Required permissions\n\n- `group.rule_extension.edit`",
         "operationId": "updateSecretsRuleExtension",
         "parameters": [
           {
@@ -57540,7 +57555,7 @@
                 }
               }
             },
-            "description": "Secrets rule extension updated successfully.",
+            "description": "Secrets Rule Extension updated successfully.",
             "headers": {
               "deprecation": {
                 "description": "The deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -59013,7 +59028,7 @@
             }
           }
         },
-        "summary": "Update a secrets rule extension by rule extension ID",
+        "summary": "Update a Secrets Rule Extension by Rule Extension ID",
         "tags": [
           "SecretsRuleExtensions"
         ],
