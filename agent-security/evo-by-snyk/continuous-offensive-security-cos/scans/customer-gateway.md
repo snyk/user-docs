@@ -2,7 +2,7 @@
 description: >-
   Install a customer gateway in your network so Continuous Offensive Security
   can scan your internal applications.
-last_reviewed: 2026-11-09
+last_reviewed: 2026-11-25
 last_reviewed_source: reviewed
 ---
 
@@ -14,16 +14,12 @@ The gateway itself does not use credits. A scan of a target that uses a gateway 
 
 Setting up a gateway takes three tasks: create the gateway, start it in your network, and attach it to a target.
 
-{% hint style="info" %}
-The `snyk cos gateway` commands are in the preview release channel of the Snyk CLI. To use them, install the latest preview version of the CLI. For more information, visit [Releases and channels for the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli).
-{% endhint %}
-
 ## Prerequisites
 
 To set up a gateway, you need:
 
 * the Tenant Admin role, to create a gateway (the `tenant.evo.all` permission) and to attach it to a target
-* the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli), if you create or start the gateway from the CLI. Use the [latest preview version](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli) of the CLI.
+* the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli), if you create or start the gateway from the CLI. Use the [stable version](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli) of the CLI.
 * a machine in your network that can reach the Snyk API, the Snyk gateway relays, and the targets you want to scan
 
 The machine needs outbound access to the Snyk API and to the gateway relays on TCP port 443 and UDP port 4500. The gateway uses UDP port 4500 when it is reachable, and otherwise uses TCP port 443. Find your region in the following table, and allow the relay addresses for that region.
@@ -68,7 +64,7 @@ In the window that opens, copy and save the information you need to start the ga
 {% endstep %}
 {% endstepper %}
 
-To create the gateway from the CLI instead, run the following command. Replace `<gateway name>` with a name for the gateway. Use the [latest preview version](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli) of the CLI.
+To create the gateway from the CLI instead, run the following command. Replace `<gateway name>` with a name for the gateway. Use the [stable version](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli) of the CLI.
 
 ```
 snyk cos gateway create --name <gateway_name>
@@ -84,7 +80,7 @@ Snyk shows the gateway token only once, when you create the gateway. Save it sec
 
 Start the gateway inside your network. You can start it from the CLI with the gateway token, or deploy it with Docker, Docker Compose, or Kubernetes.
 
-To start the gateway from the CLI, run the following commands. Use the [latest preview version](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli) of the CLI. Replace `<token>` with the gateway token. \
+To start the gateway from the CLI, run the following commands. Use the [stable version](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli) of the CLI. Replace `<token>` with the gateway token. \
 Replace `<api url>` with the Snyk API URL for your region from the table in [Prerequisites](customer-gateway.md#prerequisites). Use the API URL of the account that created the gateway, and do not add `/rest` to the URL.
 
 ```bash
@@ -146,6 +142,6 @@ Delete the gateway entry.
 {% endstep %}
 {% endstepper %}
 
-To delete the gateway from the CLI instead, run `snyk cos gateway delete --gateway-id <gateway ID>`. Use the [latest preview version](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli) of the CLI.
+To delete the gateway from the CLI instead, run `snyk cos gateway delete --gateway-id <gateway ID>`. Use the [stable version](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli) of the CLI.
 
 For more details, visit [Before you begin](../targets/before-you-begin.md) to learn how to add a target and what to prepare first, [Scanner IP addresses](scanner-ip-addresses.md) to find the addresses to allow through your firewall or WAF, and [Monitor and Manage Scans](monitor-and-manage-scans.md) to follow scan progress and cancel a scan.
