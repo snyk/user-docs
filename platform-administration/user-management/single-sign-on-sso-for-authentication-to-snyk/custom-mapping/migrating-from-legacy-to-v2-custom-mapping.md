@@ -65,6 +65,8 @@ Update your IdP to pass a multi-value attribute containing the new strings.
 * Mandatory prefix: all strings must start with `snyk:`
 * Case sensitivity: role values are case-sensitive
 
+For the full list of prerequisites, including the attribute name and what changes at activation, visit [Custom mapping prerequisites](README.md#prerequisites).
+
 Legacy and v2 mappings can coexist in the assertion during the transition period. Snyk recommends retaining the legacy mappings temporarily so that you can roll back if needed.
 
 ## Implementation and rollout
