@@ -104,6 +104,14 @@ You can run this policy repeatedly. Each run fetches your current published conf
 
 Replace the package on the policy for the matching architecture, and redeploy.
 
+## Remove the installer
+
+The package has no uninstaller. Deleting the files that the package installed does not run `uninstall`, so the products and the scheduled scan stay on the Mac. They run the installer, so they fail at every interval after you delete it.
+
+Run `uninstall` first, while the installer is still on the Mac, and then delete the package files.
+
+For the `uninstall` flags, visit [Remove an ADS product from a machine](./#remove-an-ads-product-from-a-machine).
+
 ## Managed mode
 
 Managed mode is an opt-in for companies that need the products to apply to every user on a machine and to be protected from removal by the people using it. It requires ADS installer v1.88.0 or later, with Machines and Agent Behavior Governance on version 0.6.4 or later. For how the two modes differ, visit [Installation mode](./#installation-mode).

@@ -304,3 +304,11 @@ You can run the script repeatedly. Each run fetches your current published confi
 Upload the new `.pkg` to the app for that processor architecture, and review its version detection settings.
 
 If onboarding fails, visit [Troubleshooting](troubleshooting.md).
+
+## Remove the installer
+
+Removing the app in Intune deletes only the installer. It does not run `uninstall`, so the products and the scheduled scan stay on the device. They run the installer, so they fail at every interval after it is gone.
+
+Run `uninstall` on the devices first, while the installer is still there, and then remove the app.
+
+For the `uninstall` flags, visit [Remove an ADS product from a machine](./#remove-an-ads-product-from-a-machine).

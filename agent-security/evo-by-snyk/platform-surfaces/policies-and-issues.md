@@ -1,9 +1,8 @@
 ---
-description: >-
-  How Evo policies govern AI use and raise issues when an asset violates them
 nav_context: classic
-last_reviewed: 2026-10-23
+last_reviewed: 2026-10-23T00:00:00.000Z
 last_reviewed_source: focused-edit
+description: How Evo policies govern AI use and raise issues when an asset violates them
 ---
 
 # Policies and issues
@@ -41,11 +40,11 @@ To learn how model risk scores are calculated, visit [Risk intelligence](../ai-s
 
 You can also create custom policies. With custom policies, you target assets by their attributes — for example, disallow a specific model in your code, or disallow a specific MCP server in your code, on end users' machines, or both.
 
-For model risk, you can target an attacker's goal or a sub-category. Impact categories cannot be targeted.
+For model risk, you can target an attacker goal or a sub-category.
 
 Target a sub-category when its attacker goals are interchangeable for you: the same fix, the same owner, and the specific goal does not change what you do about it. Bias is the common example, where you care that a model shows bias rather than whether it is gender, race, or religious bias.
 
-Avoid pairing an attacker's goal with the sub-category that contains it. Both fire, and you get two issues for one problem.
+Avoid creating one policy for an attacker goal and another for the sub-category that contains it. Evo raises an issue for each policy, so one problem raises two issues.
 
 #### Create a policy
 
@@ -88,7 +87,7 @@ From the **Policies** page, select the policy you want to edit and click **Edit 
 #### Delete a policy
 
 {% hint style="warning" %}
-You cannot delete default policies. To stop a default policy from raising issues, [disable it](#disable-or-enable-a-policy).
+You cannot delete default policies. To stop a default policy from raising issues, [disable it](policies-and-issues.md#disable-or-enable-a-policy).
 {% endhint %}
 
 You can delete user-defined policies. To quickly identify critical enforcement policies, you can group them by severity.
@@ -104,7 +103,7 @@ To delete a policy:
 The Model Risk Score replaces the Risk index. Policies you created against a Risk index category stop raising issues and need to be recreated.
 
 {% hint style="warning" %}
-The five Risk index categories do not map onto the new taxonomy, and the two scores are not equivalent. You cannot carry a Risk index threshold across. Set the threshold again against the attacker's goal or sub-category you want to govern.
+The five Risk index categories do not map onto the new taxonomy, and the two scores are not equivalent. You cannot carry a Risk index threshold across. Set the threshold again against the attacker goal or sub-category you want to govern.
 {% endhint %}
 
 For what the new taxonomy contains and how to read a score, visit [Risk intelligence](../ai-spm/risk-intelligence/).
