@@ -1,10 +1,10 @@
 ---
+nav_context: agnostic
+last_reviewed: 2026-08-19T00:00:00.000Z
+last_reviewed_source: bulk-sync
 description: >-
   How AI Security Posture Management gives you visibility and governance over
   the AI assets in your code
-nav_context: agnostic
-last_reviewed: 2026-08-19
-last_reviewed_source: bulk-sync
 ---
 
 # AI-SPM
@@ -20,7 +20,7 @@ AI-SPM assets appear under **Inventory** > **Code**.
 AI-SPM runs as three agents:
 
 * Map assets: the **Discovery agent** maps the AI assets across your repositories and applications. To learn more, visit [AI asset visibility](ai-asset-visibility.md).
-* Assess risk: the **Risk intelligence agent** scores the models in your inventory with a Model Risk Score, and evaluates your policies to surface violations and risky usage. To learn more, visit [Risk intelligence](risk-intelligence/).
+* Assess risk: the **Risk intelligence agent** scores the models in your inventory with a Model Risk Score, and evaluates your policies to surface violations and risky usage. To learn more, visit [Risk intelligence](risk-intelligence/). To compare every model Snyk has scored, including models you do not use, visit [Global Risk Database](risk-intelligence/global-risk-database.md).
 * Enforce governance: the **Policy agent** governs your assets through policies and issues. To learn more, visit [Policies and issues](../platform-surfaces/policies-and-issues.md).
 
 ### Set up AI-SPM
