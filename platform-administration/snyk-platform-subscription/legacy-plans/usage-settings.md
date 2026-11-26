@@ -3,8 +3,8 @@ nav_context: classic
 description: >-
   How to view Snyk usage details for your Group or Organization, including tests
   and contributing developers
-last_reviewed: 2026-10-30
-last_reviewed_source: focused-edit
+last_reviewed: 2026-11-26
+last_reviewed_source: reviewed
 ---
 
 # SKU-based licensing usage settings
@@ -31,7 +31,7 @@ The **Test Usage** section shows how many tests you are using over the current b
 {% hint style="info" %}
 Test limits vary for Snyk products and plans.
 
-For the Free plan, the limits are 400 tests for Open Source, 100 tests for Code, 300 tests for IaC, and 100 tests for Container.
+For the Free plan, the monthly limits are 200 tests for Open Source, 100 tests for Code, 300 tests for IaC, and 100 tests for Container.
 
 To see the limits that apply to you and how much of them you have used, open **Usage** in your Organization settings. On an Enterprise plan, your contract sets your limits, and Snyk does not publish them here. Your Snyk account team can confirm them. For more details, visit [Plans and pricing](https://snyk.io/plans/). For details of how Snyk counts tests, visit [What counts as a test?](https://docs.snyk.io/snyk-data-and-governance/what-counts-as-a-test)
 {% endhint %}

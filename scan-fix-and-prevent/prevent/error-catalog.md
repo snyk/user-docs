@@ -1049,6 +1049,13 @@ One or more steps provided by extensions failed, so the install or uninstall did
 
 * [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
 
+### [SNYK-CLI-0039](error-catalog.md#snyk-cli-0039)
+
+**External program failed**
+
+An external program could not be prepared, could not be started, or exited with an error.
+
+
 ### [SNYK-OS-7001](error-catalog.md#snyk-os-7001)
 
 **Request to Snyk API timeout**
