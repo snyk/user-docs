@@ -54,6 +54,7 @@
     * [Non-code scanning](evo-by-snyk/ai-spm/non-code-scanning.md)
   * [Risk intelligence](evo-by-snyk/ai-spm/risk-intelligence/README.md)
     * [Framework mappings](evo-by-snyk/ai-spm/risk-intelligence/framework-mappings.md)
+    * [Global Risk Database](evo-by-snyk/ai-spm/risk-intelligence/global-risk-database.md)
 * [Agentic Development Security (ADS)](evo-by-snyk/agentic-development-security-ads/README.md)
   * [Activation and deployment](evo-by-snyk/agentic-development-security-ads/activation-and-deployment/README.md)
     * [Install on a single machine](evo-by-snyk/agentic-development-security-ads/activation-and-deployment/install-on-a-single-machine.md)
