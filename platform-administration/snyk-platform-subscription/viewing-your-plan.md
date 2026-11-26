@@ -45,3 +45,7 @@ For each capability, the page displays the contracted metric:
 * For capabilities purchased through SKU-based licensing, Snyk displays the contracted number, for example, the number of contributing developers.
 * For capabilities available on the consumption model, Snyk displays **Credits**.
 * For capabilities you are trialing, Snyk displays a **Pilot** badge and no contracted number.
+
+{% hint style="info" %}
+A Tenant Admin enables and disables capabilities that use **Credits** in [Capability Access](capability-control-panel.md), in the Tenant settings. A disabled capability stops tests for every Group and Organization in the Tenant. If tests or PR checks fail unexpectedly, ask a Tenant Admin to check that the capability is enabled.
+{% endhint %}

@@ -1,3 +1,19 @@
+## 2026-09-09 - Updated 2026-11-25
+
+### GET - `/orgs/{org_id}/projects` - Updated
+- added the optional property `data/items/attributes/profile_name` to the response with the `200` status
+
+
+
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/profile_name` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/profile_name` to the response with the `200` status
+
+
 ## 2026-09-09 - Updated 2026-11-24
 
 ### GET - `/orgs/{org_id}/projects` - Updated

@@ -8,10 +8,6 @@ last_reviewed_source: focused-edit
 
 # Configure an API target without a schema file
 
-{% hint style="info" %}
-This feature is in Early Access. Contact your Snyk account team if you want to enable it.
-{% endhint %}
-
 You can now add OpenAPI targets by connecting them to a source code repository instead of providing a schema URL or file. Snyk API & Web automatically searches your repository for existing OpenAPI or Swagger files and, if your account has AI usage enabled, generates candidate schemas from your application code.
 
 This eliminates the need to manually create or maintain API specifications. You can start scanning your APIs faster, even when documentation is missing or outdated.
