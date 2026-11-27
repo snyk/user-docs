@@ -22276,7 +22276,7 @@
             "$ref": "#/components/schemas/PolicyActionIgnore__0"
           },
           "new_conditions_group": {
-            "$ref": "#/components/schemas/PolicyConditionsGroup"
+            "$ref": "#/components/schemas/PolicyResponseConditionsGroup"
           },
           "new_name": {
             "type": "string"
@@ -22288,7 +22288,7 @@
             "$ref": "#/components/schemas/PolicyActionIgnore__0"
           },
           "old_conditions_group": {
-            "$ref": "#/components/schemas/PolicyConditionsGroup"
+            "$ref": "#/components/schemas/PolicyResponseConditionsGroup"
           },
           "old_name": {
             "type": "string"
@@ -22439,7 +22439,7 @@
             "type": "string"
           },
           "conditions_group": {
-            "$ref": "#/components/schemas/PolicyConditionsGroup"
+            "$ref": "#/components/schemas/PolicyResponseConditionsGroup"
           },
           "created_at": {
             "example": "2024-03-16T00:00:00Z",
@@ -22469,6 +22469,73 @@
           "review",
           "created_at",
           "updated_at"
+        ],
+        "type": "object"
+      },
+      "PolicyResponseCondition": {
+        "additionalProperties": false,
+        "properties": {
+          "field": {
+            "description": "field refers to the type of identifier used in the condition of the policy:\n- `snyk/asset/finding/v1` : identity of the finding scoped to a Snyk asset (e.g. a repository).\n- `snyk-id` (Closed Beta) : the Snyk ID of the Open Source vulnerability or license issue.\n- `asset-id` (Closed Beta) : the ID of the repository asset that the ignore applies to.\nFor a given issue, `snyk/asset/finding/v1` can be extracted from the `key_asset` field in the [issues API](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/issues).\nIn addition, finding identities can be extracted from the fingerprints section of the SARIF, which is accessible via the Snyk CLI. More details can be found in the [CLI documentation](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results#export-test-results).\n",
+            "enum": [
+              "snyk/asset/finding/v1",
+              "snyk-id",
+              "asset-id"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "PolicyResponseSnykAssetFindingV1",
+              "PolicyResponseSnykID",
+              "PolicyResponseAssetID"
+            ]
+          },
+          "operator": {
+            "description": "Operator for the field to value matching. Currently\nonly 'includes' is supported.\n",
+            "enum": [
+              "includes"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "PolicyResponseIncludes"
+            ]
+          },
+          "value": {
+            "description": "The value of the field to match on.\n",
+            "type": "string"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
+      "PolicyResponseConditionsGroup": {
+        "description": "The conditions of an org-level policy. A Snyk Code consistent ignore has one `snyk/asset/finding/v1` condition. An Open Source consistent ignore (Closed Beta) has one `snyk-id` condition and one `asset-id` condition.\n",
+        "properties": {
+          "conditions": {
+            "items": {
+              "$ref": "#/components/schemas/PolicyResponseCondition"
+            },
+            "maxItems": 2,
+            "minItems": 1,
+            "type": "array"
+          },
+          "logical_operator": {
+            "description": "The logical operator for the policy condition. Currently only 'and' is supported.",
+            "enum": [
+              "and"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "PolicyResponseAnd"
+            ]
+          }
+        },
+        "required": [
+          "logical_operator",
+          "conditions"
         ],
         "type": "object"
       },
