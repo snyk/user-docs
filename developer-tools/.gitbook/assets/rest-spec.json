@@ -22136,7 +22136,7 @@
             "type": "string"
           },
           "conditions_group": {
-            "$ref": "#/components/schemas/PolicyConditionsGroup"
+            "$ref": "#/components/schemas/PolicyCreateConditionsGroup"
           },
           "name": {
             "maxLength": 255,
@@ -22232,6 +22232,73 @@
               "and"
             ],
             "type": "string"
+          }
+        },
+        "required": [
+          "logical_operator",
+          "conditions"
+        ],
+        "type": "object"
+      },
+      "PolicyCreateCondition": {
+        "additionalProperties": false,
+        "properties": {
+          "field": {
+            "description": "field refers to the type of identifier used in the condition of the policy:\n- `snyk/asset/finding/v1` : identity of the finding scoped to a Snyk asset (e.g. a repository).\n- `snyk-id` (Closed Beta) : the Snyk ID of the Open Source vulnerability or license issue to ignore.\n- `repository-url` (Closed Beta) : the URL of the repository that the ignore applies to, on every branch and every project of the repository. The repository must be imported into a Snyk project in this organization. The policy stores the ID of the repository asset in an `asset-id` condition, and never stores the URL.\nFor a given issue, `snyk/asset/finding/v1` can be extracted from the `key_asset` field in the [issues API](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/issues).\nIn addition, finding identities can be extracted from the fingerprints section of the SARIF, which is accessible via the Snyk CLI. More details can be found in the [CLI documentation](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results#export-test-results).\n",
+            "enum": [
+              "snyk/asset/finding/v1",
+              "snyk-id",
+              "repository-url"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "PolicyCreateSnykAssetFindingV1",
+              "PolicyCreateSnykID",
+              "PolicyCreateRepositoryURL"
+            ]
+          },
+          "operator": {
+            "description": "Operator for the field to value matching. Currently\nonly 'includes' is supported.\n",
+            "enum": [
+              "includes"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "PolicyCreateIncludes"
+            ]
+          },
+          "value": {
+            "description": "The value of the field to match on.\n",
+            "type": "string"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
+      "PolicyCreateConditionsGroup": {
+        "description": "The conditions of a new org-level policy. A Snyk Code consistent ignore has one `snyk/asset/finding/v1` condition. An Open Source consistent ignore (Closed Beta) has one `snyk-id` condition and one `repository-url` condition.\n",
+        "properties": {
+          "conditions": {
+            "items": {
+              "$ref": "#/components/schemas/PolicyCreateCondition"
+            },
+            "maxItems": 2,
+            "minItems": 1,
+            "type": "array"
+          },
+          "logical_operator": {
+            "description": "The logical operator for the policy condition. Currently only 'and' is supported.",
+            "enum": [
+              "and"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "PolicyCreateAnd"
+            ]
           }
         },
         "required": [
@@ -26482,7 +26549,8 @@
         "properties": {
           "type": {
             "enum": [
-              "addition"
+              "addition",
+              "suppression"
             ],
             "type": "string"
           }
