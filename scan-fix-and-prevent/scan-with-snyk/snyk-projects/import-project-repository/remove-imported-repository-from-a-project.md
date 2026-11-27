@@ -75,6 +75,6 @@ The **Code analysis** Project you selected is either deactivated or deleted, and
 If you want Snyk Code to resume its testing after you delete or deactivate the **Code analysis** Project of a repository, do the following:
 
 * After deleting the Code analysis Project, re-import the repository to Snyk and then refresh the **Projects** page to view the results of the re-import.
-* After deactivating the Code analysis Project, re-activate the **Code analysis** Project via the **Settings** page of the Project. After you deactivate a Project, the **Deactivate project** button changes to **Activate project**, and a new **Activate** button appears at the top of the page. Click one of these buttons to re-activate the Project:
+* After deactivating the Code analysis Project, re-activate the **Code analysis** Project through the **Settings** page of the Project. After you deactivate a Project, the **Deactivate project** button changes to **Activate project**, and a new **Activate** button appears at the top of the page. Click one of these buttons to re-activate the Project:
 
 <figure><img src="../../../.gitbook/assets/project_settings_activate_project.png" alt="Activate project button on Code analysis Project Settings page"><figcaption><p>Activate project button on Code analysis Project Settings page</p></figcaption></figure>

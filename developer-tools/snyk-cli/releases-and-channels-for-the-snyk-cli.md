@@ -110,7 +110,7 @@ Existing Snyk customers who are opted in to the previously known latest channel 
 
 ### Linux static builds
 
-As of `v1.1305.0`, the Snyk CLI Linux binaries (`snyk-linux`, `snyk-linux-arm64`) are compiled to be self-contained, including all necessary dependencies, so they don't rely on a user's system having those libraries installed.
+As of `v1.1305.0`, the Snyk CLI Linux binaries (`snyk-linux`, `snyk-linux-arm64`) are compiled to be self-contained, including all necessary dependencies, so they do not rely on a user's system having those libraries installed.
 
 ## Support policy
 

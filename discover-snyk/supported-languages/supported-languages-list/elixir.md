@@ -27,7 +27,7 @@ Available integrations:
 For Elixir, the following features are available:
 
 * Reports
-* Test your app's SBOM and packages using `pkg:hex` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:hex` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) CLI command
 
 {% hint style="info" %}
 The **Snyk Fix PR** feature is not available for Elixir. This means that Snyk does not notify you if the PR checks fail when the following conditions are met:
@@ -42,7 +42,7 @@ The **Snyk Fix PR** feature is not available for Elixir. This means that Snyk do
 To scan your dependencies, you must first install Elixir and Mix. For details, visit the [Elixir installation instructions](https://elixir-lang.org/install.html).
 {% endhint %}
 
-Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](https://docs.snyk.io/developer-tools/snyk-cli).
+Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](https://docs.snyk.io/developer-tools/snyk-cli/overview).
 
 Mix is a build tool that compiles, tests, and creates Elixir projects. Mix manages dependencies by integrating with the Hex package manager.
 

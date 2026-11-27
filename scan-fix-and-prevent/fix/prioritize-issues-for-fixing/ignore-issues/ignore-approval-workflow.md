@@ -22,7 +22,7 @@ ignores for Snyk OS, Snyk Container, and Snyk IaC.
 
 ## Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
-* ​[Enable Snyk Code Consistent Ignores](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#enable-snyk-code-consistent-ignores) as the Ignore Approval Workflow does not process other types of ignores. Any existing ignores persist as approved ignores if the Ignore Approval Workflow is enabled.
+* ​[Enable Snyk Code Consistent Ignores](./consistent-ignores-for-snyk-code/README.md#enable-snyk-code-consistent-ignores) as the Ignore Approval Workflow does not process other types of ignores. Any existing ignores persist as approved ignores if the Ignore Approval Workflow is enabled.
 * ​Disable DeepCode inline Code ignores. Existing inline Code does not persist when the Ignore Approval Workflow is enabled. DeepCode inline ignores, which are behind a feature flag and not publicly documented, need to be disabled.
 * Ignore Approval Workflow is supported on the following versions of Snyk CLI and IDE:
   * Snyk CLI v1.1299.1
@@ -36,7 +36,7 @@ ignores for Snyk OS, Snyk Container, and Snyk IaC.
 
 You can enable Ignore Approval Workflow at the Organization-level settings as follows:
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](https://docs.snyk.io/snyk-platform-administration/groups-and-organizations).
+1. Log in to the Snyk Web UI and select your [Group and Organization](https://docs.snyk.io/platform-administration/snyk-hierarchy/groups-and-organizations).
 2. Navigate to **Organization** > **Settings**.
 3. Enable **Ignore Approval Workflow for Snyk Code**.
 
@@ -85,7 +85,7 @@ Snyk no longer makes the ignore request data available.
 
 Reviewers get email notifications about new requests pending their approval. You can review the request in the **Ignore Requests** page in Snyk Web UI.
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](https://docs.snyk.io/snyk-platform-administration/groups-and-organizations).
+1. Log in to the Snyk Web UI and select your [Group and Organization](https://docs.snyk.io/platform-administration/snyk-hierarchy/groups-and-organizations).
 2. Navigate to **Organization** > **Ignore requests**.
 
 You can list all ignore requests in a **Pending**, **Approved**, or **Rejected** state on the **Ignore requests** page.

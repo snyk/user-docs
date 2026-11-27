@@ -68,7 +68,7 @@ Available features for Go Projects with dependencies managed by Go Modules and d
 * PR checks
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:golang` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) command
+* Test your app's SBOM and packages using `pkg:golang` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) command
 
 {% hint style="info" %}
 If the **Snyk Fix PR** feature is enabled, Snyk notifies you if the PR checks fail when the following conditions are met:

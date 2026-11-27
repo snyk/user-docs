@@ -9,7 +9,7 @@ last_reviewed_source: bulk-sync
 
 This page contains the list of V1, non-GA REST, and older versions of GA REST endpoints that are potential candidates for future end-of-life cadences. To see which endpoints are end-of-life'd, see [API EOL endpoints and key dates](api-eol-endpoints-and-key-dates.md).
 
-If an endpoint is listed in the table below, it does not guarantee that the endpoint will be included in the next end-of-life cadence. In addition, an endpoint can go straight into the next end-of-life cadence without having to be listed in the table below.&#x20;
+If an endpoint is listed in the following table, it does not guarantee that the endpoint will be included in the next end-of-life cadence. In addition, an endpoint can go straight into the next end-of-life cadence without having to be listed in the following table.&#x20;
 
 The endpoints in this list, and in any end-of-life cadence, must adhere to our end-of-life criteria, which require that the endpoints have:&#x20;
 

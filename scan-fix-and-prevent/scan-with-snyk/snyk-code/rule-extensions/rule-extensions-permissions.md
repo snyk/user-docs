@@ -9,7 +9,7 @@ last_reviewed_source: focused-edit
 
 # Rule Extensions permissions
 
-Rule Extensions are available to Enterprise customers. Access is granted through a [custom role](https://docs.snyk.io/snyk-platform-administration/user-roles/user-role-management). Rule Extensions are **managed at the Group level** and **tested at the Organization level**, so a role combines Group-level and Organization-level permissions.
+Rule Extensions are available to Enterprise customers. Access is granted through a [custom role](https://docs.snyk.io/platform-administration/user-management/user-role-management). Rule Extensions are **managed at the Group level** and **tested at the Organization level**, so a role combines Group-level and Organization-level permissions.
 
 Grant only the permissions a role needs. The set differs slightly depending on whether the role is used through the **API** or the **in-product UI**.
 

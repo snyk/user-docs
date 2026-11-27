@@ -19,7 +19,7 @@ To set up Slack Apps with a webhook, follow these steps:
 2. Select **Create New App**.
 3. Select **From scratch**.
 4. Give the app a name like "Snyk".
-5. If you want to set the logo and an appropriate background you can download the Snyk logo [here](https://snyk.io/press-kit/) while using background color #1d1848.
+5. If you want to set the logo and an appropriate background you can download the Snyk logo from the [Snyk press kit](https://snyk.io/press-kit/) while using background color #1d1848.
 6. Select your workspace.
 7. With the Slack App created, click **Add features and functionality**.
 8. Select **Incoming Webhooks**.

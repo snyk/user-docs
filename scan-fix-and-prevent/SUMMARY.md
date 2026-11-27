@@ -389,7 +389,7 @@
     * [Add a custom CA certificate](scan-with-snyk/snyk-api-web/managing-account/add-a-custom-ca-certificate.md)
 * [Snyk Secrets](scan-with-snyk/snyk-secrets/README.md)
   * [Custom RegEx for Secrets](scan-with-snyk/snyk-secrets/custom-regex-for-secrets.md)
-  * [Secrets Pull Requests status checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/secrets-pull-request-checks)
+  * [Secrets Pull Requests status checks](./prevent/pull-request-checks/secrets-pull-request-checks.md)
   * [Secrets scanning in the IDE](scan-with-snyk/snyk-secrets/secrets-scanning-in-the-ide.md)
   * [Secrets scanning in the SCM](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm)
   * [Secrets scanning in the Snyk CLI](scan-with-snyk/snyk-secrets/secrets-scanning-in-the-snyk-cli.md)

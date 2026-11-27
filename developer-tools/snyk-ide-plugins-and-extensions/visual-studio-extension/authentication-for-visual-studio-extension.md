@@ -42,7 +42,7 @@ Follow the next steps to authenticate:
 The analysis starts automatically. The IDE reads and saves the authentication on your local machine.
 
 {% hint style="info" %}
-You might encounter the browser redirecting to 127.0.0.1:8080. This is normal, and you would need to retry the steps above.<br>
+You might encounter the browser redirecting to 127.0.0.1:8080. This is normal, and you would need to retry the preceding steps.<br>
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/endhint.png" alt="Browser redirect to the local callback address during OAuth authentication"><figcaption></figcaption></figure>

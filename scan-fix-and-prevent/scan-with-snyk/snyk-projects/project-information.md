@@ -13,7 +13,7 @@ The **Projects** page lists imported Projects and information about the Projects
 
 ## Filter existing Projects
 
-On the **Projects** page, you can filter your Projects by whether or not they contain issues and by the type of Git integration. The following filters are available:
+On the **Projects** page, you can filter your Projects by whether or not they contain issues and by the type of SCM integration. The following filters are available:
 
 * **Show**:
   * **With issues** - displays only Projects with issues.

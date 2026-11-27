@@ -20,7 +20,7 @@ Use Snyk Secrets for the CLI to identify and manage sensitive information (API k
 
 To use this feature, you must:
 
-1. Install the latest version of the Snyk CLI. For installation instructions, visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli).
+1. Install the latest version of the Snyk CLI. For installation instructions, visit [Install the Snyk CLI](../../install-the-snyk-cli/README.md).
 2. Authenticate your machine with the following command:
 
 ```bash

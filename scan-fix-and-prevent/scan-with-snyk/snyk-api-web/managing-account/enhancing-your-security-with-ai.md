@@ -32,4 +32,4 @@ Snyk prioritizes your privacy and the security of your data. When AI features ar
 * **No training on your data:** Snyk does **not** use your proprietary code or sensitive request data to train, optimize, or fine-tune its AI models.
 * **Secure infrastructure**: Snyk uses a combination of proprietary models and secure third-party LLMs. For third-party models, Snyk never uses your data for model training and retains it for no more than eight hours.
 
-For a comprehensive breakdown of Snyk AI governance and legal commitments, visit [How Snyk incorporates generative AI into the platform](https://docs.snyk.io/working-with-snyk/how-snyk-incorporates-generative-ai-into-the-platform).
+For a comprehensive breakdown of Snyk AI governance and legal commitments, visit [How Snyk incorporates generative AI into the platform](https://docs.snyk.io/snyk-data-and-governance/how-snyk-incorporates-generative-ai-into-the-platform).
