@@ -1,6 +1,36 @@
 ## 2026-09-09 - Updated 2026-11-27
 
 ### POST - `/orgs/{org_id}/policies` - Updated
+- added the new `repository-url` enum value to the request property `data/attributes/conditions_group/conditions/items/field`
+
+- added the new `snyk-id` enum value to the request property `data/attributes/conditions_group/conditions/items/field`
+
+
+
+### POST - `/groups/{group_id}/secrets/rule_extensions` - Updated
+- added the new `suppression` enum value to the `data/attributes/configuration/type` response property for the response status `201`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `suppression` enum value to the request property `data/attributes/oneOf[#/components/schemas/CreateSecretsRuleExtensionAttributes]/configuration/type`
+
+
+
+### GET - `/groups/{group_id}/secrets/rule_extensions` - Updated
+- added the new `suppression` enum value to the `data/items/attributes/configuration/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### PATCH - `/groups/{group_id}/secrets/rule_extensions/{rule_extension_id}` - Updated
+- added the new `suppression` enum value to the `data/attributes/configuration/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/secrets/rule_extensions/{rule_extension_id}` - Updated
+- added the new `suppression` enum value to the `data/attributes/configuration/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+## 2026-09-09 - Updated 2026-11-27
+
+### POST - `/orgs/{org_id}/policies` - Updated
 - added the new `asset-id` enum value to the `data/attributes/conditions_group/conditions/items/field` response property for the response status `201`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - added the new `snyk-id` enum value to the `data/attributes/conditions_group/conditions/items/field` response property for the response status `201`
