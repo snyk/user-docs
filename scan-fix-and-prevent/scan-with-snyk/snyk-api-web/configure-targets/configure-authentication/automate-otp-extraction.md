@@ -1,13 +1,15 @@
 ---
-description: How to automate OTP extraction for Snyk API & Web authentication
 nav_context: classic
-last_reviewed: 2026-08-03
+last_reviewed: 2026-08-03T00:00:00.000Z
 last_reviewed_source: bulk-sync
+description: How to automate OTP extraction for Snyk API & Web authentication
 ---
+
+# Automate OTP extraction
 
 {% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# Automate OTP extraction
+## Automate OTP extraction
 
 Automate the extraction of one-time passwords (OTPs) from email and send them to Snyk API & Web for two-factor authentication.
 
@@ -18,19 +20,19 @@ This article provides examples for automating OTP extraction using:
 * Google Apps Script (for Gmail)
 * Microsoft Power Automate (for Outlook)
 
-## Prerequisites
+### Prerequisites
 
 Configure alternative OTP two-factor authentication for your target before proceeding. Visit [Configure two-factor authentication (2FA)](configure-two-factor-authentication.md) for setup instructions.
 
 You need the **UNIQUE 2FA CONFIGURATION URL** from the Authentication settings of your target.
 
-## Automate OTP extraction from Gmail
+### Automate OTP extraction from Gmail
 
 Use Google Apps Script to automate OTP extraction from Gmail accounts.
 
 The script polls emails from the Gmail account, extracts the OTP using a regular expression, and sends it to Snyk through the API endpoint.
 
-### Create the Google Apps Script
+#### Create the Google Apps Script
 
 1. Navigate to [https://script.google.com](https://script.google.com) and log in with the Gmail account that receives OTP emails.
 2. Select **My Projects** and click **CREATE APPS SCRIPT**.
@@ -122,7 +124,7 @@ function extractOTPFunction() {
 }
 ```
 
-### Configure the script
+#### Configure the script
 
 Customize the **runTask** function with your specific configuration:
 
@@ -163,7 +165,7 @@ If you change the OTP position in the regular expression, update this line accor
 const extractedOTP = match[2]; // Change index if OTP is in a different group
 ```
 
-### Save and test the script
+#### Save and test the script
 
 1. Click **Save** to save your script.
 
@@ -172,7 +174,7 @@ const extractedOTP = match[2]; // Change index if OTP is in a different group
 2. Test the script manually by clicking **Run**.
 3. Review the execution log to verify the script works correctly.
 
-### Set up automated execution
+#### Set up automated execution
 
 Configure a trigger to run the script automatically:
 
@@ -193,19 +195,19 @@ Configure a trigger to run the script automatically:
 
 The trigger executes the **extractOTPFunction** every minute, which runs the **runTask** function four times per minute (every 15 seconds) to check for new OTP emails.
 
-## Automate OTP extraction with Microsoft Power Automate
+### Automate OTP extraction with Microsoft Power Automate
 
 Use Microsoft Power Automate to automate OTP extraction from Outlook email accounts.
 
 This flow retrieves an OTP from an email and sends it to Snyk through the API endpoint.
 
-### Prerequisites
+#### Prerequisites
 
 * Access to Power Automate (Premium license required for HTTP POST calls)
 * An email account configured in Power Automate that receives OTP emails
 * The **UNIQUE 2FA CONFIGURATION URL** from the Authentication settings of your target. Visit [Configure two-factor authentication (2FA)](configure-two-factor-authentication.md).
 
-### Create a new automated cloud flow
+#### Create a new automated cloud flow
 
 1. Log in to [Power Automate](https://make.powerautomate.com/).
 2. From the left navigation pane, select **+ Create**.
@@ -216,7 +218,7 @@ This flow retrieves an OTP from an email and sends it to Snyk through the API en
 
 <figure><img src="../../../../.gitbook/assets/automate-otp-extraction-power-automate-flow.png" alt="Create automated cloud flow in Power Automate"><figcaption></figcaption></figure>
 
-### Configure the email trigger
+#### Configure the email trigger
 
 Configure the trigger action to identify OTP emails:
 
@@ -224,7 +226,7 @@ Configure the trigger action to identify OTP emails:
 2. **Subject filter**: Enter a keyword or phrase present in the OTP email subject (for example, "Your OTP Code" or "Verification Code").
 3. **From**: Enter the email address from which the OTP email is sent.
 
-### Extract the OTP from the email body
+#### Extract the OTP from the email body
 
 Extract the OTP value from the email content using a compose action:
 
@@ -233,14 +235,14 @@ Extract the OTP value from the email content using a compose action:
 3. In the **Inputs** field, write an expression to extract the OTP:
 
 ```
-substring(outputs(@'email_body'), add(indexOf(outputs('email_body'),'Your OTP is: '),13),6)
+substring(outputs('email_body'), add(indexOf(outputs('email_body'),'Your OTP is: '),13),6)
 ```
 
 Where:
 
 * `13` is the number of characters from the start of the phrase to the start of the OTP code
 * `6` is the number of characters in the OTP code
-* `outputs(@'email_body')` points to the email body
+* `outputs('email_body')` points to the email body
 
 Alternatively, click the lightning bolt icon and select **Body** from the previous "When a new email arrives" step.
 
@@ -248,7 +250,7 @@ Alternatively, click the lightning bolt icon and select **Body** from the previo
 Test your expression carefully with actual OTP email content to ensure it extracts the correct value. Refine the expression based on your specific OTP email format.
 {% endhint %}
 
-### Send the OTP via HTTP POST
+#### Send the OTP via HTTP POST
 
 Configure an HTTP action to send the extracted OTP to Snyk API & Web:
 
@@ -265,13 +267,13 @@ Configure an HTTP action to send the extracted OTP to Snyk API & Web:
 
     ```json
     {
-      "otp_code": @{outputs('Compose')}
+      "otp": "@{outputs('Compose')}"
     }
     ```
 
     Replace `'Compose'` with the name of your Compose action if you changed it.
 
-### Save and test the flow
+#### Save and test the flow
 
 1. Click **Save** in the top right corner.
 2. Click **Test** to run a test of the flow.
@@ -279,13 +281,13 @@ Configure an HTTP action to send the extracted OTP to Snyk API & Web:
 4. Complete the login process with 2FA to generate a test OTP email.
 5. Verify the flow runs successfully and check the run history for any errors.
 
-### Troubleshooting
+#### Troubleshooting
 
 Email filtering: Double-check your subject filters and email criteria to ensure the correct emails trigger the flow.
 
 OTP extraction: Use the "Test Flow" feature in Power Automate with actual email content to debug your OTP extraction expression. Inspect the outputs of each step to see which data Power Automate processes.
 
-## Related content
+### Related content
 
 * [Configure two-factor authentication (2FA)](configure-two-factor-authentication.md)
 * [Configure login form authentication](configure-login-form.md)

@@ -1,3 +1,32 @@
+## 2026-09-09 - Updated 2026-11-27
+
+### POST - `/orgs/{org_id}/policies` - Updated
+- added the new `asset-id` enum value to the `data/attributes/conditions_group/conditions/items/field` response property for the response status `201`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `snyk-id` enum value to the `data/attributes/conditions_group/conditions/items/field` response property for the response status `201`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/orgs/{org_id}/policies` - Updated
+- added the new `asset-id` enum value to the `data/items/attributes/conditions_group/conditions/items/field` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `snyk-id` enum value to the `data/items/attributes/conditions_group/conditions/items/field` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- added the new `asset-id` enum value to the `data/attributes/conditions_group/conditions/items/field` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `snyk-id` enum value to the `data/attributes/conditions_group/conditions/items/field` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- added the new `asset-id` enum value to the `data/attributes/conditions_group/conditions/items/field` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `snyk-id` enum value to the `data/attributes/conditions_group/conditions/items/field` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2026-09-09 - Updated 2026-11-25
 
 ### GET - `/orgs/{org_id}/projects` - Updated
