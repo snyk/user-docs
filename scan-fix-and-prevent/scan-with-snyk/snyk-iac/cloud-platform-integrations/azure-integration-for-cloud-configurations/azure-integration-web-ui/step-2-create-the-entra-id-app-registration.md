@@ -23,12 +23,12 @@ Additionally, Snyk has a security feature that locks the federated credential fo
 You can create the app registration, federated identity credential, and service principal using one of the following tools, according to the type of file you downloaded from Snyk:
 
 * [Terraform](step-2-create-the-entra-id-app-registration.md#create-azure-app-registration-infrastructure-using-terraform): Terraform CLI
-* [Bash](step-2-create-the-entra-id-app-registration.md#create-azure-app-registration-infrastructure-using-the-azure-cli): Azure CLI, installed locally or accessed via Cloud Shell
+* [Bash](step-2-create-the-entra-id-app-registration.md#create-azure-app-registration-infrastructure-using-the-azure-cli): Azure CLI, installed locally or accessed through Cloud Shell
 
 ### Create Azure app registration infrastructure using Terraform
 
 {% hint style="info" %}
-Before you use the [Terraform CLI](https://www.terraform.io/downloads), ensure you [configure it to use your Azure credentials](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs#authenticating-to-azure-active-directory). Your user must have either the Application Administrator or Global Administrator directory role. This is required to create the [federated identity credential](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/application_federated_identity_credential#api-permissions) and [service principal](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/service_principal) via Terraform.
+Before you use the [Terraform CLI](https://www.terraform.io/downloads), ensure you [configure it to use your Azure credentials](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs#authenticating-to-azure-active-directory). Your user must have either the Application Administrator or Global Administrator directory role. This is required to create the [federated identity credential](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/application_federated_identity_credential#api-permissions) and [service principal](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/service_principal) through Terraform.
 {% endhint %}
 
 1. In your terminal, navigate to the directory containing the Terraform file you downloaded (named `snyk-permissions-azure.tf` if downloaded from the Snyk Web UI).

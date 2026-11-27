@@ -31,7 +31,7 @@ A new upgrade or patch is available for a vulnerability that you previously igno
 
 ## Set up the Slack integration
 
-To set up the integration, you must generate a Slack webhook. You can do this either via the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
+To set up the integration, you must generate a Slack webhook. You can do this either through the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
 
 Once you have generated your Slack Webhook URL, go to your **Manage Organization** settings and enter the URL.
 

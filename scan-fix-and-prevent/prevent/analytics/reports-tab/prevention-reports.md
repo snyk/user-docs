@@ -85,7 +85,7 @@ The following prerequisites and data limits apply:
     * [JetBrains v2.20.0](https://plugins.jetbrains.com/plugin/10972-snyk-security/versions/stable) or later
     * [Eclipse v3.8.0](https://marketplace.eclipse.org/content/snyk-security) or later
     * [Visual Studio v2.8.0](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022) or later
-  * Use CLI version [1.1303.0](https://docs.snyk.io/developer-tools/snyk-ide-plugins-and-extensions/compatibility-matrix) or later
+  * Use CLI version [1.1303.0](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/compatibility-matrix) or later
 * Data is available for the following developer surfaces:
   * Snyk Studio (MCP)
   * IDE

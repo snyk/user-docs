@@ -9,7 +9,7 @@ last_reviewed_source: bulk-sync
 
 Snyk Infrastructure as Code allows users to raise Jira issues for misconfigurations found in their IaC resources.
 
-This integration is available via the Snyk Web UI only; API support is not provided.
+This integration is available through the Snyk Web UI only; API support is not provided.
 
 To learn more about setting up and using the integration, see [Jira integration](https://docs.snyk.io/developer-tools/integrations/jira-and-slack-integrations/jira-integration).
 

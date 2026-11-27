@@ -23,16 +23,16 @@ The extension also works for other VSCode-based IDEs such as Devin Desktop, Curs
 
 * **In-line issue highlighting:** Security issues are flagged directly within your code, categorized by type and severity for quick identification and resolution.
 * **Comprehensive scanning:** The extension scans for a wide range of security issues, including:
-  * [**Open Source Security**](https://snyk.io/product/open-source-security-management/)**:** Detects vulnerabilities and license issues in both direct and transitive open-source dependencies. Automated fix suggestions simplify remediation. Explore more in the [Snyk Open Source documentation](https://docs.snyk.io/scan-using-snyk/snyk-open-source).
-  * [**Code Security**](https://snyk.io/product/snyk-code/)**:** Identifies security vulnerabilities in your custom code. Explore more in the [Snyk Code documentation](https://docs.snyk.io/scan-using-snyk/snyk-code).
-  * [**IaC Security**](https://snyk.io/product/infrastructure-as-code-security/)**:** Uncovers configuration issues in your Infrastructure as Code templates (Terraform, Kubernetes, CloudFormation, Azure Resource Manager). Explore more in the [IaC documentation](https://docs.snyk.io/scan-using-snyk/snyk-iac).
+  * [**Open Source Security**](https://snyk.io/product/open-source-security-management/)**:** Detects vulnerabilities and license issues in both direct and transitive open-source dependencies. Automated fix suggestions simplify remediation. Explore more in the [Snyk Open Source documentation](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source).
+  * [**Code Security**](https://snyk.io/product/snyk-code/)**:** Identifies security vulnerabilities in your custom code. Explore more in the [Snyk Code documentation](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code).
+  * [**IaC Security**](https://snyk.io/product/infrastructure-as-code-security/)**:** Uncovers configuration issues in your Infrastructure as Code templates (Terraform, Kubernetes, CloudFormation, Azure Resource Manager). Explore more in the [IaC documentation](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-iac).
   * Secrets Security: Detect and prevent secrets from being exposed in your code. Explore more in the [Snyk Secrets](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-secrets) documentation.
-* **Broad language and framework support:** Snyk Open Source and Snyk Code cover a wide array of package managers, programming languages, and frameworks, with ongoing updates to support the latest technologies. For the most up-to-date information on supported languages, package managers, and frameworks, see the [supported language technologies pages](https://docs.snyk.io/supported-languages-package-managers-and-frameworks).
+* **Broad language and framework support:** Snyk Open Source and Snyk Code cover a wide array of package managers, programming languages, and frameworks, with ongoing updates to support the latest technologies. For the most up-to-date information on supported languages, package managers, and frameworks, see the [supported language technologies pages](https://docs.snyk.io/supported-languages/supported-languages-package-managers-and-frameworks).
 
 ## How to install and set up the extension
 
 {% hint style="info" %}
-For information about the versions of Visual Studio Code supported by the Visual Studio Code extension, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions).
+For information about the versions of Visual Studio Code supported by the Visual Studio Code extension, see [Snyk IDE plugins and extensions](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions).
 
 Snyk recommends always using the latest version of the Visual Studio Code extension.
 {% endhint %}
@@ -51,16 +51,16 @@ Snyk Visual Studio Code extension does not support remote and containerized envi
 
 Install the plugin at any time free of charge from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and use it with any Snyk account, including a Free account. For more information, see the [VS Code extension installation guide](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-an-extension).
 
-When the extension is installed, it automatically downloads the [Snyk CLI,](https://docs.snyk.io/snyk-cli) which includes the [Language Server](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server).
+When the extension is installed, it automatically downloads the [Snyk CLI,](../../snyk-cli/overview.md) which includes the [Language Server](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/snyk-language-server).
 
 Continue by following the instructions in the other Visual Studio Code extension docs:
 
-* [Visual Studio Code extension configuration, environment variables, and proxy](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy)
-* [Authentication for Visual Studio Code extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication)
-* [Visual Studio Code Workspace trust](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/workspace-trust)
-* [Create a .dcignore file](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/create-a-.dcignore-file)
-* [Run an analysis with Visual Studio Code extension](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension)
-* [View analysis results from Visual Studio Code extension](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension)
+* [Visual Studio Code extension configuration, environment variables, and proxy](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy)
+* [Authentication for Visual Studio Code extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/authentication-for-visual-studio-code-extension)
+* [Visual Studio Code Workspace trust](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-workspace-trust)
+* [Create a .dcignore file](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/create-a-.dcignore-file)
+* [Run an analysis with Visual Studio Code extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension)
+* [View analysis results from Visual Studio Code extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension)
 
 The extension's Studio opt-in configures a rules-based integration. It does not replace the Studio installer for configuring Secure at inception hooks, MCP access, and the supported commands and skills together.
 
@@ -68,6 +68,6 @@ For local developer setup, visit [Getting started with Snyk Studio](https://docs
 
 ## Support
 
-For troubleshooting and known issues, see [Troubleshooting for Visual Studio Code extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/troubleshooting-for-visual-studio-code-extension).
+For troubleshooting and known issues, see [Troubleshooting for Visual Studio Code extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/troubleshooting-for-visual-studio-code-extension).
 
 If you need help, submit a request to [Snyk Support](https://support.snyk.io).

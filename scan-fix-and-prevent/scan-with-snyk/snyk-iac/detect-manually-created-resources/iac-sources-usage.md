@@ -7,7 +7,7 @@ last_reviewed_source: bulk-sync
 
 {% include "../../../.gitbook/includes/new-navigation-banner.md" %}
 
-# IAC sources usage
+# IaC sources usage
 
 ## **Supported IaC sources**
 

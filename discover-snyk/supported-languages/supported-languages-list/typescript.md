@@ -65,7 +65,7 @@ Available features:
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:npm` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:npm` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) CLI command
 
 {% hint style="info" %}
 The **Snyk Fix PR** feature is not available for TypeScript. This means that Snyk does not notify you if the PR checks fail when the following conditions are met:

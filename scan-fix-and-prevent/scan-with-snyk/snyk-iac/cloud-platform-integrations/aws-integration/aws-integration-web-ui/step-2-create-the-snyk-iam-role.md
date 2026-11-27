@@ -111,7 +111,7 @@ If the output says `"CREATE_COMPLETE"`, AWS has finished creating your role.
 
 13\. Select **Create stack**.
 
-14\. AWS launches the stack, and you'll see a page with stack details. You can select the **Refresh** button to refresh its status:
+14\. AWS launches the stack, and you will see a page with stack details. You can select the **Refresh** button to refresh its status:
 
 <figure><img src="../../../../../.gitbook/assets/snyk-cloud-stack-status.png" alt="Select the Refresh button to refresh the stack status in the AWS Management Console"><figcaption><p>Select the Refresh button to refresh the stack status in the AWS Management Console</p></figcaption></figure>
 

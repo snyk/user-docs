@@ -78,7 +78,7 @@ For Rust with Snyk Open Source, Snyk supports the following:
 
 ### Available features
 
-* Test your SBOM containing `cargo` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command or API
+* Test your SBOM containing `cargo` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) CLI command or API
 * Test your individual Rust packages using the [List issues for a package](https://docs.snyk.io/developer-tools/snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package) API
 
 {% hint style="info" %}

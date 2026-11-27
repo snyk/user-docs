@@ -13,7 +13,7 @@ This page provides answers to common questions about using Rule Extensions, alon
 
 ### What entitlements and permissions do I need to use this feature?
 
-You must be an Enterprise customer, and you need the appropriate permissions on a [custom role](https://docs.snyk.io/snyk-platform-administration/user-roles/user-role-management). The exact set depends on whether you access Rule Extensions through the API or the in-product UI — see [Rule Extensions permissions](rule-extensions-permissions.md) for the full breakdown.
+You must be an Enterprise customer, and you need the appropriate permissions on a [custom role](https://docs.snyk.io/platform-administration/user-management/user-role-management). The exact set depends on whether you access Rule Extensions through the API or the in-product UI — see [Rule Extensions permissions](rule-extensions-permissions.md) for the full breakdown.
 
 ### What are the API rate limits?
 
@@ -21,7 +21,7 @@ Impact test requests — creating a test and retrieving its results — use a lo
 
 ### Which languages are supported by Rule Extensions?
 
-Rule Extensions support most of the same languages as Snyk Code tests. The [Supported rules](supported-rules.md) page shows detailed support for combinations of rules, languages, and Rule Extensions. For more information on Snyk Code language support, refer to the [documentation](https://docs.snyk.io/supported-languages-package-managers-and-frameworks). For information about the roadmap, reach out to your account team.
+Rule Extensions support most of the same languages as Snyk Code tests. The [Supported rules](supported-rules.md) page shows detailed support for combinations of rules, languages, and Rule Extensions. For more information on Snyk Code language support, refer to the [documentation](https://docs.snyk.io/supported-languages/supported-languages-package-managers-and-frameworks). For information about the roadmap, reach out to your account team.
 
 ## Migrating from the closed beta
 

@@ -20,7 +20,7 @@ Snyk Spark is a customer-focused program designed to help Snyk customers adopt a
 
 ## Snyk Spark Services description
 
-The Snyk Spark service provides marketing and training materials for thought leadership and developer adoption workshops. You'll have access to a variety of sessions for developers, security teams, and leadership, based on popular topics like AI and ethical hacking. You can choose the sessions that best fit your needs, with optional extras like technical support from your account team and gamified rewards (e.g., swag or prizes) that fall in line with your company’s gifting policy.
+The Snyk Spark service provides marketing and training materials for thought leadership and developer adoption workshops. You will have access to a variety of sessions for developers, security teams, and leadership, based on popular topics like AI and ethical hacking. You can choose the sessions that best fit your needs, with optional extras like technical support from your account team and gamified rewards (e.g., swag or prizes) that fall in line with your company’s gifting policy.
 
 ### Snyk Spark Key Benefits
 
@@ -55,7 +55,7 @@ The Snyk Spark service provides marketing and training materials for thought lea
   * Session and event Marketing support includes the following deliverables:
     * 1 customized landing page per session with training descriptions to drive event registration (Note: Event must be run on Snyk’s Zoom webinar platform for this option).
     * 1 customized PDF one-pager with images to help promote each session leading to the registration landing page.
-    * Live advertising pop-ups on Snyk.io (AMER only) can be configured to promote your organization's Spark session to members of your organization configured via unique email domain delivery.
+    * Live advertising pop-ups on Snyk.io (AMER only) can be configured to promote your organization's Spark session to members of your organization configured through unique email domain delivery.
     * Post event analytics will be delivered, including registration data, attendee data and survey results from attendee feedback post session.
     * A secure zoom link to the session recording will be shared post event to be used internally by the customer to publicize the content and use for future training purposes internally at your organization.
 
@@ -65,7 +65,7 @@ Snyk Spark Services delivery is a 12-month engagement that begins with a kick of
 
 All virtual training and event requests must be submitted no less than 60 days before the requested event date and/or the term expires to ensure delivery.
 
-All events offered will be offered virtually using Zoom webinar, within the Eastern Time (ET) zone, offered between the hours of 9am-5pm ET. If a customer requests a different platform for training, such as Microsoft Teams or Webex, they will need to provide the webinar ID and will be responsible for recording the session via their organization’s link.
+All events offered will be offered virtually using Zoom webinar, within the Eastern Time (ET) zone, offered between the hours of 9am-5pm ET. If a customer requests a different platform for training, such as Microsoft Teams or Webex, they will need to provide the webinar ID and will be responsible for recording the session through their organization’s link.
 
 In-person events are not guaranteed and will be assessed on a per request basis, based upon Snyk subject matter expert availability and resourcing. &#x20;
 

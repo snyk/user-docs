@@ -9,7 +9,7 @@ last_reviewed_source: focused-edit
 # Remediation Agent
 
 {% hint style="info" %}
-The coding-assistant and Snyk CLI entry points are available for all Snyk plans and are in [Early Access](https://docs.snyk.io/discover-snyk/getting-started/snyk-release-process#early-access-features). To turn them on, visit [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-platform-administration/snyk-preview) or ask your Snyk account team.
+The coding-assistant and Snyk CLI entry points are available for all Snyk plans and are in [Early Access](https://docs.snyk.io/snyk-release-process#early-access-features). To turn them on, visit [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-hierarchy/snyk-preview) or ask your Snyk account team.
 
 Remediation campaigns require Evo by Snyk. Snyk enables campaigns for each Tenant. To request access, contact your Snyk account team.
 {% endhint %}

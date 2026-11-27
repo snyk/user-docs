@@ -19,7 +19,7 @@ Snyk integrates with JFrog Artifactory so it can resolve your private Go modules
 
 You configure an Artifactory Go module proxy from a single page (**Settings > Languages > Go**) using one of two boxes, depending on how your Artifactory instance is reachable. The configuration steps are identical for both:
 
-* **Private package registries** for an Artifactory instance that is publicly reachable and protected by credentials. Snyk connects to it directly. **Prerequisite:** configure your [Artifactory integration](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup) first.
+* **Private package registries** for an Artifactory instance that is publicly reachable and protected by credentials. Snyk connects to it directly. **Prerequisite:** configure your [Artifactory integration](./README.md) first.
 * **Brokered package registries** for an Artifactory instance that is not publicly reachable. **Prerequisite:** configure the [Snyk Universal Broker](https://docs.snyk.io/platform-administration/snyk-broker/universal-broker) first and then [enable it for Open Source](https://docs.snyk.io/platform-administration/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker#integrate-your-connection-with-an-organization-that-uses-universal-broker).
 
 {% hint style="info" %}
@@ -29,7 +29,7 @@ This configuration applies to Snyk Web UI (SCM) integrations only. The Snyk CLI 
 ### Configure an Artifactory Go registry
 
 {% hint style="warning" %}
-If a private or brokered package registry integration is not configured first, the steps below will not work — the registry settings field will not be visible on the page.
+If a private or brokered package registry integration is not configured first, the following steps will not work — the registry settings field will not be visible on the page.
 {% endhint %}
 
 First, set up the Artifactory integration: go to **Organization Settings > Add Integration > Artifactory > Edit Settings**.

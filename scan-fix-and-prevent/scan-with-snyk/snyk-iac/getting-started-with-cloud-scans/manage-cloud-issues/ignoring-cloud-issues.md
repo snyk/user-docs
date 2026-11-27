@@ -21,7 +21,7 @@ Ignores are applied at the Organization level.
 
 ## Ignoring an issue <a href="#docs-internal-guid-328370e3-7fff-a6c7-193a-31d26381f4e0" id="docs-internal-guid-328370e3-7fff-a6c7-193a-31d26381f4e0"></a>
 
-To ignore an issue via the Snyk Web UI:
+To ignore an issue through the Snyk Web UI:
 
 1. Navigate to your Organization's Cloud tab.
 2. Select the issue you want to ignore.
@@ -56,7 +56,7 @@ After an issue is ignored, you can unignore it or edit the ignore.
 
 ## Unignoring an issue
 
-To unignore an issue via the Snyk Web UI:
+To unignore an issue through the Snyk Web UI:
 
 1. Select the ignored issue from your Organization's Cloud tab.
 2. Select the **Unignore** button.
@@ -69,7 +69,7 @@ To unignore an issue via the Snyk Web UI:
 
 ## Editing an ignore
 
-To edit an ignore via the Snyk Web UI:
+To edit an ignore through the Snyk Web UI:
 
 1. Select the ignored issue from your Organization's Cloud tab.
 2. In the side panel, select the **Edit ignore** button.

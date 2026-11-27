@@ -35,7 +35,7 @@ The CLI provides:
 * Support for private packages without configuring an additional integration, if your build environment has access to your private packages
 * Visibility into components pushed to production, either by breaking builds and reporting to Snyk or by only reporting to Snyk
 
-Several [CI/CD integrations](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations) are available. Alternatively, use the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli) in your pipeline for more flexibility in the tests you run.
+Several [CI/CD integrations](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations) are available. Alternatively, use the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/overview) in your pipeline for more flexibility in the tests you run.
 
 In the initial phase, Snyk recommends using the `monitor` command to import information into Snyk so you can see any discovered issues (unless you are already importing your repos using a source control integration to achieve this). Later, when you want to start gating new vulnerabilities, introduce the `test` command. Initially, fail builds on critical issues, and then gradually adapt the fail criteria over time.
 
@@ -45,7 +45,7 @@ For `snyk iac test --report`, if Snyk finds issues, the command returns a non-ze
 If you want to test passively with the `--report` option, either set the build step to always continue or use an alternative such as appending logic equivalent to "or true" (for example, `snyk iac test --report || true`). The exact syntax depends on the ecosystem the CLI runs in.
 {% endhint %}
 
-When configuring pipelines, you can use popular plugins like [`snyk-filter`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) for advanced filtering.
+When configuring pipelines, you can use popular plugins like [`snyk-filter`](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) for advanced filtering.
 
 {% hint style="info" %}
 Some plugins that require API access might not be usable on the Team plan, because API access is available on the Snyk Enterprise plan.

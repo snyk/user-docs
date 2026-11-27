@@ -87,7 +87,7 @@ Snyk API & Web Managed Scans are delivered through:
 
 ### Customer-initiated requests
 
-* On-demand support for all activities outlined in the 'Managed Web & API activities' Section above, submitted via a private Slack channel or email. Other methods of secure communication are available.
+* On-demand support for all activities outlined in the 'Managed Web & API activities' Section above, submitted through a private Slack channel or email. Other methods of secure communication are available.
 * Required information for each request includes: Account Name, Target Name, Target URL, and the specific service requested.
 
 ## Plans and plan hours
@@ -122,7 +122,7 @@ Snyk API & Web Managed Scans are offered in four tiers, each with a defined maxi
 * Monthly scheduled readout call to review the report, scheduled scans, and to provide remediation guidance
 * Quarterly report of hours, customer requests, and all activities performed.
 
-Snyk API & Web Managed Scans are designed to be adaptable to a customer's evolving needs, offering support when and if it's needed over the term of the subscription. The monthly maximum hours allowable under the plan type are determined by the plan you purchase. The maximum hours represent the maximum number of hours per month of Snyk services performed throughout the term of the subscription and do not roll over or accumulate from month to month.
+Snyk API & Web Managed Scans are designed to be adaptable to a customer's evolving needs, offering support when and if it is needed over the term of the subscription. The monthly maximum hours allowable under the plan type are determined by the plan you purchase. The maximum hours represent the maximum number of hours per month of Snyk services performed throughout the term of the subscription and do not roll over or accumulate from month to month.
 
 ## Key assumptions
 

@@ -12,7 +12,7 @@ Snyk enables Secrets Pull Request checks by default for Organizations that use S
 
 Snyk Secrets adds hard-coded secret detection to Pull Request checks. It scans pull request changes for exposed credentials, tokens, and API keys before merge.
 
-This page covers only Secrets-specific behavior. For setup, supported source code management (SCM) integrations, status checks, and branch protection, visit the main [Pull Request checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks) documentation.
+This page covers only Secrets-specific behavior. For setup, supported source code management (SCM) integrations, status checks, and branch protection, visit the main [Pull Request checks](./README.md) documentation.
 
 ## About Secrets Pull Request checks
 
@@ -50,4 +50,4 @@ Snyk reports findings as **Hardcoded Secrets** and labels each finding with the 
 
 Secrets findings often require more than a code change. If a finding exposes a valid credential, revoke or rotate it first. Then remove it from the codebase and replace it with a secure secret source.
 
-For related guidance, visit [Snyk Secrets](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-secrets), [Secrets scanning in the SCM](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm), and [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/integrations/scm-integrations/snyk-secrets/secrets-scanning-in-the-snyk-cli).
+For related guidance, visit [Snyk Secrets](../../scan-with-snyk/snyk-secrets/README.md), [Secrets scanning in the SCM](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm), and [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/integrations/scm-integrations/snyk-secrets/secrets-scanning-in-the-snyk-cli).

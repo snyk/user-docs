@@ -49,7 +49,7 @@ Add an import statement for Express and its TypeScript type / interface definiti
 
 The class constructor will initialize Express on port 3000 when the class is instantiated. We'll create a private function `listen()` for the constructor to call which will handle the actual start of the Express server.
 
-Don't forget to export the class at the bottom, we'll need it later.
+Do not forget to export the class at the bottom, we'll need it later.
 
 ```typescript
 import express from 'express';
@@ -217,7 +217,7 @@ Build the project using `npx tsc` then run the compiled entrypoint with `node`:
 npx tsc && node ./dist/index.js
 ```
 
-Provided everything was successful, you'll see the message `App listening on port: 3000` in the console.
+Provided everything was successful, you will see the message `App listening on port: 3000` in the console.
 
 Now visit http://localhost:3000 in your browser or use curl to check the response. If you see `index route!`, then congratulations! Express is serving the application and responding to routes!
 
