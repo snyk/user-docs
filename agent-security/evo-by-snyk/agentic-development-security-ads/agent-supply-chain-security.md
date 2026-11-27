@@ -64,7 +64,7 @@ The MCP Risk Score combines three kinds of signal:
 * Trust (local and remote servers): how popular the server is, whether it is an official first-party MCP server, the reputation of the URLs it connects to, and the identity of its maintainers.&#x20;
 * Implementation, maintenance, and dependencies (local servers only): the quality of the code, how actively it is maintained, and the risk in its dependencies. Evo assesses these only when source code is available.
 
-Note: Evo doesn't score a server it can't identify or doesn't have a signature for.
+Note: Evo doesn't score a server it cannot identify or doesn't have a signature for.
 
 **Where you see it**
 
