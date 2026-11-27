@@ -17,7 +17,7 @@ To activate MCP Governance, ensure the following prerequisites are met:
 * The Agentic Development Security (ADS) installer, deployed fleet-wide with both Agent Supply Chain Security and Agent Behavior Governance enabled, providing machine-level visibility into installed MCP servers and runtime enforcement of your policy.
 * AI-SPM (SCM integration), connected to provide code-level visibility into MCP servers declared in your repositories.
 
-For more information, visit [ADS Activation and deployment](../activation-and-deployment/), and [AI-SPM](https://docs.snyk.io/agent-security/evo-by-snyk/ai-spm).
+For more information, visit [ADS Activation and deployment](../activation-and-deployment/), and [AI-SPM](../../ai-spm/README.md).
 
 ## How to use
 
@@ -75,7 +75,7 @@ From either view, decide whether to add legitimate tools to your allowlist, adju
 
 When your rules reflect production reality, turn on blocking. Evo will then block non-compliant agent requests directly on the developer's machine at invocation.
 
-You can enforce blocking by enabling the Block action on an existing policy, or by creating a dedicated policy via Policies > Create policy > Block MCP servers that are not allowed.
+You can enforce blocking by enabling the Block action on an existing policy, or by creating a dedicated policy through Policies > Create policy > Block MCP servers that are not allowed.
 
 > Setup Requirement: Your policy must include at least the Type is MCP Server condition.
 
