@@ -71,7 +71,7 @@ For details about using the Snyk CLI to scan each content type, see the followin
 * [Snyk CLI for Snyk Open Source](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source) and the CLI help for the [`test`](https://docs.snyk.io/snyk-cli/commands/test) and [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor) commands
 * [Snyk CLI for Snyk Code](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code) and the [Snyk Code CLI help](https://docs.snyk.io/snyk-cli/commands/code)
 * [Snyk CLI for Snyk Container](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container), including Docker scanning, and the [Snyk Container CLI help](https://docs.snyk.io/snyk-cli/commands/container)
-* [Snyk CLI for Snyk IaC](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac), including Terraform and Kubernetes (K8s) Projects, and the [Snyk IAC CLI help](https://docs.snyk.io/snyk-cli/commands/iac)
+* [Snyk CLI for Snyk IaC](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac), including Terraform and Kubernetes (K8s) Projects, and the [Snyk IaC CLI help](https://docs.snyk.io/snyk-cli/commands/iac)
 * [Snyk CLI for Snyk Secrets](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets), including pre-commit hooks and ignores, and the [Snyk Secrets CLI help](https://docs.snyk.io/developer-tools/snyk-cli/commands/secrets-test)
 
 ## Monitor your Open Source or Container Project

@@ -7,7 +7,7 @@ last_reviewed_source: bulk-sync
 
 # Environment variables for the Eclipse plugin
 
-To analyze open-source dependencies and IAC template files, the plugin uses the Snyk CLI. The CLI needs the following environment variables:
+To analyze open-source dependencies and IaC template files, the plugin uses the Snyk CLI. The CLI needs the following environment variables:
 
 * `PATH`: The path to needed binaries, for example, to Maven. You can also adjust the `PATH` variable manually using the `Path` field in the settings dialog.
 * `JAVA_HOME`: The path to the JDK you want to use to analyze Java dependencies.

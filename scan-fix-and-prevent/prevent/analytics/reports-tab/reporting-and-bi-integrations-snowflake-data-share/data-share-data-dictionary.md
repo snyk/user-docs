@@ -17,7 +17,7 @@ This dictionary is designed to help you navigate the dataset efficiently. It pro
 
 ### Data Share Tables
 
-The diagram above represents the objects listed in the data dictionary as a database diagram. It covers the following tables:
+The preceding diagram represents the objects listed in the data dictionary as a database diagram. It covers the following tables:
 
 * [Groups](data-share-data-dictionary.md#groups)
 * [Orgs](data-share-data-dictionary.md#orgs)

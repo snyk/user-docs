@@ -22,7 +22,7 @@ A benefit of adding tests to your pipeline is that you do not need to import the
 When adding Snyk to a build pipeline, there are common options:
 
 * Using the specific [pipeline integration](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations) for your tool.
-* Using the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli) and running the specific commands directly.
+* Using the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/overview) and running the specific commands directly.
 
 Each option has benefits. An existing pipeline integration can be faster and easier to configure, but the Snyk CLI gives you a greater range of options and flexibility in your "fail" criteria.
 
@@ -32,7 +32,7 @@ When you run a test in your pipeline, filters determine what results in a test p
 
 ## CLI supporting tools
 
-If you use the Snyk CLI in your pipeline, a range of supporting [Snyk Tools](https://docs.snyk.io/developer-tools/snyk-apps/snyk-tools) provide additional functionality, including [`snyk-filter`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter), which you can use for more complex "fail" criteria, such as "fail if more than three High severity vulnerabilities are found."
+If you use the Snyk CLI in your pipeline, a range of supporting [Snyk Tools](https://docs.snyk.io/developer-tools/snyk-apps/snyk-tools) provide additional functionality, including [`snyk-filter`](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter), which you can use for more complex "fail" criteria, such as "fail if more than three High severity vulnerabilities are found."
 
 ## Related information
 

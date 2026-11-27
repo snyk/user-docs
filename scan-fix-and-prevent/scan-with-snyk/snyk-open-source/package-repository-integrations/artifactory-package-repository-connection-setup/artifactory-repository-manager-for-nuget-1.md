@@ -29,7 +29,7 @@ This configuration applies to Snyk Web UI (SCM) integrations only. The Snyk CLI 
 ### Configure an Artifactory Go registry
 
 {% hint style="warning" %}
-If a private or brokered package registry integration is not configured first, the steps below will not work — the registry settings field will not be visible on the page.
+If a private or brokered package registry integration is not configured first, the following steps will not work — the registry settings field will not be visible on the page.
 {% endhint %}
 
 First, set up the Artifactory integration: go to **Organization Settings > Add Integration > Artifactory > Edit Settings**.

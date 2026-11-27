@@ -51,7 +51,7 @@ After retrieval and generation, Snyk validates all schemas before presenting the
 
 ### Review and link a schema
 
-When schemas are ready, you'll receive an email with a link to the target settings. Alternatively, navigate to the target manually:
+When schemas are ready, you will receive an email with a link to the target settings. Alternatively, navigate to the target manually:
 
 1. Navigate to **Targets** and identify your target.
 2. Open the **Scanner** tab in target settings.

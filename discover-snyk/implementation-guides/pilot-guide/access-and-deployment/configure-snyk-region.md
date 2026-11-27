@@ -30,7 +30,7 @@ snyk auth $SNYK_TOKEN
 snyk test
 ```
 
-For more details, visit [Authenticate to use the CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/authenticate-to-use-the-cli).
+For more details, visit [Authenticate to use the CLI](https://docs.snyk.io/developer-tools/snyk-cli/authenticate-to-use-the-cli).
 
 ## Snyk API
 

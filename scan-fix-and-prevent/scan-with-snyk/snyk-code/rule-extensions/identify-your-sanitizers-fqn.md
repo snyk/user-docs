@@ -56,7 +56,7 @@ namespace MyCorp.Security {
 
 **Common pitfalls**
 
-* **Using `using` directives**: If your sanitizer is imported via a `using` directive (especially wildcard imports), the engine may not resolve the FQN correctly. Use explicit namespace references at the call site.
+* **Using `using` directives**: If your sanitizer is imported through a `using` directive (especially wildcard imports), the engine may not resolve the FQN correctly. Use explicit namespace references at the call site.
 * **Missing `global::` prefix**: Always include `global::` at the start of your FQN.
 
 **Instance methods**
@@ -793,8 +793,8 @@ The way your sanitizer is called affects FQN resolution:
 
 **Problematic patterns:**
 
-* Functions imported via wildcard imports (`import pkg.*`)
-* Functions called via relative imports (`import { func } from './utils'`)
+* Functions imported through wildcard imports (`import pkg.*`)
+* Functions called through relative imports (`import { func } from './utils'`)
 * Implicitly typed variables (for languages with type inference)
 
 ### Step 4: Test your FQN
