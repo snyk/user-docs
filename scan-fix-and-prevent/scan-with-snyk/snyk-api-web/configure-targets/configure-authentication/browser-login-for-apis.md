@@ -15,7 +15,7 @@ This feature does not support:
 * AI-assisted login sequence configuration
 {% endhint %}
 
-Snyk API & Web can replay a browser-driven sign-in flow at scan time, extract the resulting session credential, and attach it to your collection requests, so authenticated scans run on a schedule without manual token refresh. Use this when sign-in happens in a browser (for example, OAuth 2.0, OIDC, SAML, or SSO) rather than through a scripted collection folder. For other authentication options, visit [Authentication](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication).
+Snyk API & Web can replay a browser-driven sign-in flow at scan time, extract the resulting session credential, and attach it to your collection requests, so authenticated scans run on a schedule without manual token refresh. Use this when sign-in happens in a browser (for example, OAuth 2.0, OIDC, SAML, or SSO) rather than through a scripted collection folder. For other authentication options, visit [Authentication](./README.md).
 
 By the end of this guide, you will have recorded a login sequence and mapped one or more session credentials for a Postman or Bruno API target. See [Complete the setup](browser-login-for-apis.md#complete-the-setup) for the remaining steps.
 
@@ -27,9 +27,9 @@ Your collection must already run end-to-end when the session variable is populat
 
 Before you configure browser login for an API target, ensure you have:
 
-* An existing Postman or Bruno API target with collection and environment variables configured. If you are starting from scratch, visit [Configure Postman Collection targets](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets/configure-postman-collection-targets) for Postman or [Configure an API target with a Bruno Collection](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets/configure-an-api-target-with-a-bruno-collection) for Bruno.
+* An existing Postman or Bruno API target with collection and environment variables configured. If you are starting from scratch, visit [Configure Postman Collection targets](../configure-api-targets/configure-postman-collection-targets.md) for Postman or [Configure an API target with a Bruno Collection](../configure-api-targets/configure-an-api-target-with-a-bruno-collection.md) for Bruno.
 * **Change Target Settings** permission for the target.
-* A **login sequence** JSON ready to paste or upload. To record a new sequence, install the [Snyk API & Web Sequence Recorder](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-web-targets/use-sequence-recorder) browser plugin and follow the instructions in [Record a login sequence](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-login-sequence#record-a-login-sequence). If you have already scanned the same application as a web target and have a working login sequence, you can reuse it.
+* A **login sequence** JSON ready to paste or upload. To record a new sequence, install the [Snyk API & Web Sequence Recorder](../configure-web-targets/use-sequence-recorder.md) browser plugin and follow the instructions in [Record a login sequence](./configure-login-sequence.md#record-a-login-sequence). If you have already scanned the same application as a web target and have a working login sequence, you can reuse it.
 * A working understanding of where your session credential appears after sign-in (response body, response header, redirect query parameter, cookie, or browser storage).
 * Collection requests that reference the variable you map in the **Map session credential** (for example, `{{access_token}}` in Postman or `{{access_token}}` / `bru.getVar("access_token")` in Bruno).
 
@@ -39,7 +39,7 @@ Before you configure browser login for an API target, ensure you have:
 2. Expand **Browser login** > **Record browser sign-in** > **Add login sequence**.
 3. Paste or upload your login sequence JSON, then click **Submit sequence**.
 
-For recording, reusing a sequence from a web target, and plugin setup, follow [Login sequence](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-login-sequence).
+For recording, reusing a sequence from a web target, and plugin setup, follow [Login sequence](./configure-login-sequence.md).
 
 Browser login supports two-factor authentication (2FA), if needed. [Configure 2FA](./#two-factor-authentication) for the login sequence as you do for web targets.
 
@@ -121,10 +121,10 @@ Click **Save** on the authentication page. A **Configured** badge appears when b
 
 Complete the remaining steps in your target setup:
 
-1. **Test configuration**: Use **Test configuration** in the page header to verify your setup before running a full scan. Visit the [Test target configuration](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/test-target-configuration).
-2. **Logout detection** (optional): If your session can expire during a long scan, configure [Logout detection](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-logout-detection).
+1. **Test configuration**: Use **Test configuration** in the page header to verify your setup before running a full scan. Visit the [Test target configuration](../test-target-configuration.md).
+2. **Logout detection** (optional): If your session can expire during a long scan, configure [Logout detection](./configure-logout-detection.md).
 3. **Stop scan on login failure** (optional): On the **Authentication** tab, enable **Stop scan on login failure** if you want the scan to stop immediately when login fails instead of continuing without a valid session.
-4. Start a scan: Run an authenticated scan from your target. Visit [Start scanning](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/start-scanning).
+4. Start a scan: Run an authenticated scan from your target. Visit [Start scanning](../../start-scanning/README.md).
 
 ## Disable Browser login
 

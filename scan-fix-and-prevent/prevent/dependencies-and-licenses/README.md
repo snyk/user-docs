@@ -7,7 +7,7 @@ last_reviewed_source: bulk-sync
 # Dependencies and licenses
 
 {% hint style="info" %}
-**Note that this option** (viewing dependencies and licenses as a report across multiple projects in an organization/group) **is not available for Free and Team plan users.** Users of the Free plan can view a list of dependencies **per** [**project**](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/view-project-issues-fixes-and-dependencies#view-dependency-details) only, and Team plan users will also see license information in that same view.
+**Note that this option** (viewing dependencies and licenses as a report across multiple projects in an organization/group) **is not available for Free and Team plan users.** Users of the Free plan can view a list of dependencies **per** [**project**](../../scan-with-snyk/snyk-projects/view-project-issues-fixes-and-dependencies.md#view-dependency-details) only, and Team plan users will also see license information in that same view.
 {% endhint %}
 
 You can [view dependencies](view-dependencies.md) and [license information](view-licenses.md) for all Projects in your Group or Organization using the **Dependencies** option in your Group or Organization menu. <br>

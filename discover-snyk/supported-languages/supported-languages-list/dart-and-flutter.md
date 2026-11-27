@@ -79,8 +79,8 @@ Snyk supports the following file formats: `.dart`
 
 ### Available features
 
-* Test your app's SBOM and packages using `pkg:pub` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command
-* Test and monitor the native platform dependencies of your Flutter apps using the [`snyk test`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/test) and [`snyk monitor`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/monitor) commands
+* Test your app's SBOM and packages using `pkg:pub` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) CLI command
+* Test and monitor the native platform dependencies of your Flutter apps using the [`snyk test`](https://docs.snyk.io/developer-tools/snyk-cli/commands/test) and [`snyk monitor`](https://docs.snyk.io/developer-tools/snyk-cli/commands/monitor) commands
 
 ### Testing the pub dependency tree of a Dart application
 
@@ -95,7 +95,7 @@ spdx:
 EOF
 ```
 
-Use the Dart `sbom` command to create an SBOM file, and test it using the [`sbom test`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) command:
+Use the Dart `sbom` command to create an SBOM file, and test it using the [`sbom test`](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) command:
 
 ```
 dart pub global run sbom
