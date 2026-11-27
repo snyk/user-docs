@@ -13,7 +13,7 @@ last_reviewed_source: bulk-sync
 
 ## Clone an integration across your Snyk Organizations
 
-You can choose to use the same brokered Git integration across multiple Organizations in Snyk by copying and duplicating the Organization you have already configured.
+You can choose to use the same brokered SCM integration across multiple Organizations in Snyk by copying and duplicating the Organization you have already configured.
 
 For example, you can integrate Snyk Organizations X, Y, and Z with your single Git repo X.
 
