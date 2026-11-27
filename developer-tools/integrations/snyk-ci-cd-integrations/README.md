@@ -23,12 +23,12 @@ For more information, see the [Snyk CLI repository](https://github.com/snyk/cli)
 {% hint style="info" %}
 **Snyk Secrets support**
 
-Snyk Secrets does not support CI/CD plugin integrations. For CI/CD-time secret scanning, use [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli) directly in your pipeline.
+Snyk Secrets does not support CI/CD plugin integrations. For CI/CD-time secret scanning, use [Secrets scanning in the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli.md) directly in your pipeline.
 {% endhint %}
 
 ## Adopting a CI/CD integration
 
-When you decide to use a CI/CD integration, you typically adopt the integration in stages, initially selecting a deployment method and the implementing strategies for the code you are scanning. For details, see [Snyk CI/CD Integration deployment and strategies](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies).
+When you decide to use a CI/CD integration, you typically adopt the integration in stages, initially selecting a deployment method and the implementing strategies for the code you are scanning. For details, see [Snyk CI/CD Integration deployment and strategies](./snyk-ci-cd-integration-deployment-and-strategies/README.md).
 
 For detailed information, see the pages for the integration you are using:
 
@@ -39,7 +39,7 @@ For detailed information, see the pages for the integration you are using:
 * [GitHub Actions integration](github-actions-for-snyk-setup-and-checking-for-vulnerabilities/)
 * [Jenkins integration](jenkins-plugin-integration-with-snyk.md)
 * [Maven integration](github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-maven-action.md)
-* [TeamCity integration](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/teamcity-jetbrains-integration-using-the-snyk-security-plugin)
+* [TeamCity integration](./teamcity-jetbrains-integration-using-the-snyk-security-plugin/README.md)
 * [Terraform Cloud integration for IaC](terraform-cloud-integration-for-snyk-iac-using-run-tasks/set-up-the-terraform-cloud-integration-for-iac.md)
 * [Terraform Enterprise integration for IaC](terraform-enterprise-integration-for-snyk-iac.md)
 

@@ -9,11 +9,11 @@ last_reviewed_source: bulk-sync
 
 # CLI support for JavaScript
 
-To help generate reports locally or at build time, visit the [snyk-to-html plugin](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
+To help generate reports locally or at build time, visit the [snyk-to-html plugin](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
 
 Use the `--json` and `--sarif` options to generate output that can be programmatically accessed.
 
-For advanced filtering options, visit [snyk-filter](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
+For advanced filtering options, visit [snyk-filter](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
 
 ## Open Source libraries
 
@@ -43,4 +43,4 @@ Visit [Infrastructure as Code security](https://snyk.io/product/infrastructure-a
 
 ## Resources
 
-Visit the [CLI commands and options summary](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.
+Visit the [CLI commands and options summary](https://docs.snyk.io/developer-tools/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.

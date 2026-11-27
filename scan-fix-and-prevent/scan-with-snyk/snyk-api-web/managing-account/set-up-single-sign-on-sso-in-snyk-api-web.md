@@ -12,7 +12,7 @@ Snyk API & Web uses the standard Security Assertion Markup Language (SAML) to ex
 When you do this, users from your account can choose the following option from the login screen to access Snyk API & Web:
 
 * If you already use SSO to log in to Snyk, you can log in to Snyk API & Web with your existing Snyk account, using the **Log in with Snyk** button.
-* If you already have a Snyk account but you do not use SSO, you can [set up SSO with Snyk](https://docs.snyk.io/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk).
+* If you already have a Snyk account but you do not use SSO, you can [set up SSO with Snyk](https://docs.snyk.io/platform-administration/user-management/single-sign-on-sso-for-authentication-to-snyk).
 
 Learn more in [Log in to Snyk API & Web](log-in-to-snyk-api-web.md).
 

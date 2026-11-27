@@ -38,7 +38,7 @@ Follow these steps to set up a single Container Registry Agent instance with acc
 
 ### **Step 1: Run the Container Registry Agent with a IAM User or IAM Role**
 
-In this step, create an IAM Role or an IAM User for use by the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent via the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
+In this step, create an IAM Role or an IAM User for use by the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent through the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
 
 The following examples explain how to provide the IAM Role or IAM User using one of the following methods. You can also provide a dedicated role in Amazon ECS tasks. For more information, see the [AWS docs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html).
 

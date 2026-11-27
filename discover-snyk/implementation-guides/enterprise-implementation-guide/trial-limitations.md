@@ -34,7 +34,7 @@ The following Enterprise features are limited or unavailable during the trial:
 * [Broker](https://docs.snyk.io/platform-administration/snyk-broker/snyk-broker): Not available.
 * [Self-hosted Git](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/github-enterprise): Not available.
 * [Private Registry Integrations](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations): Not available.
-* [Snyk Essentials Inventory](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets): Not available.
+* [Snyk Essentials Inventory](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory): Not available.
 * [Snyk Essentials Issue page](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/prioritization-for-snyk-essentials): Limited capabilities. The Funnel view, Risk factors, and evidence graph are not available.
 
 ## Inactive Free plan Tenant deletion
@@ -57,7 +57,7 @@ Any one of the following actions resets the 60-day period. Any member can perfor
 | --- | --- |
 | [Web UI login](https://app.snyk.io/login) | Someone logs in to the Snyk Web UI. |
 | [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/getting-started-with-the-snyk-cli) | Someone runs any CLI command while authenticated to your Tenant, such as `snyk test`, `snyk monitor`, `snyk code test`, `snyk container test`, or `snyk iac test`. CI pipelines that run the CLI with your Tenant token also count. |
-| [Snyk IDE plugin](https://docs.snyk.io/developer-tools/snyk-ide-plugins-and-extensions) | Someone uses the plugin while authenticated to your Tenant. |
+| [Snyk IDE plugin](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions) | Someone uses the plugin while authenticated to your Tenant. |
 | [PR checks and fix PRs](https://docs.snyk.io/scan-fix-and-prevent/fix/pull-requests) | Snyk runs a PR check or opens a fix PR through your GitHub or other SCM integration. |
 
 Scheduled or recurring scans of imported Projects do not count as activity. After you import a Project, Snyk automatically retests it on a schedule, for example, daily or weekly. Snyk starts these tests itself, so they do not show that a person is using your Tenant. If automatic retests are all you use, log in or run a CLI command at least once every 60 days.

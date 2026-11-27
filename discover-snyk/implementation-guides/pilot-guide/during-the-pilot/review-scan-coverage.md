@@ -23,7 +23,7 @@ Ensure that the Group-level SCM integration is configured.
 
 ## Review coverage in the Inventory
 
-At Group scope, select **Inventory** in the side menu. The **Overview** tab shows your most important repositories and identifies coverage gaps: which repositories Snyk has tested and which it has not. For details, visit [Manage assets](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets).
+At Group scope, select **Inventory** in the side menu. The **Overview** tab shows your most important repositories and identifies coverage gaps: which repositories Snyk has tested and which it has not. For details, visit [Manage assets](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory).
 
 <figure><img src="../../../.gitbook/assets/group-inventory-overview-new-navigation.png" alt="Inventory Overview tab showing coverage gaps across repositories"><figcaption></figcaption></figure>
 
@@ -46,6 +46,6 @@ Use the asset class to filter on the most critical repositories in your company,
 {% hint style="info" %}
 Additional resources
 
-* [Manage assets](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets)
+* [Manage assets](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory)
 * [Product Training: Snyk Essentials](https://learn.snyk.io/catalog/?type=product-training\&topics=Snyk+Essentials)
 {% endhint %}

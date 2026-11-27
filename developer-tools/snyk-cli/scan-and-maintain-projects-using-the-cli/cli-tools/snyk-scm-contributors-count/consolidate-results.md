@@ -11,7 +11,7 @@ last_reviewed_source: bulk-sync
 
 When you work with the SCM-Contributors-Count tool, you may work with more than one source control manager (SCM). You will run a separate command for each SCM to get the contributors count for your repos there.
 
-For example: If you have a contributor that commits to both GitHub repos and Bitbucket projects, you'll see that contributor's details in the output for both SCMs.
+For example: If you have a contributor that commits to both GitHub repos and Bitbucket projects, you will see that contributor's details in the output for both SCMs.
 
 If you want to get an overall picture of all your contributors across all the SCMs, use the `consolidateResults` command.
 

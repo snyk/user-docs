@@ -20,7 +20,7 @@ Snyk analyzes and builds the dependency tree depending on the language and packa
 ### How Snyk Open Source and licensing works
 
 {% hint style="info" %}
-Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must build your Project. For details, visit [Open Source Projects that must be built before testing with the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli).
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must build your Project. For details, visit [Open Source Projects that must be built before testing with the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli).
 {% endhint %}
 
 Snyk builds a dependency graph (dependency tree) and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.

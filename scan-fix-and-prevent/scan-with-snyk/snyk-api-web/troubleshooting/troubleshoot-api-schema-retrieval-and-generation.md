@@ -82,6 +82,6 @@ This is not an error. The generated schema is valid, and you can use it to scan 
 
 ## Related information
 
-* [API targets](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets)
-* [What is a target?](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/what-is-a-target)
-* [Network timeout errors](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/troubleshooting/network-timeout-errors)
+* [API targets](../configure-targets/configure-api-targets/README.md)
+* [What is a target?](../configure-targets/what-is-a-target.md)
+* [Network timeout errors](./network-timeout-errors.md)

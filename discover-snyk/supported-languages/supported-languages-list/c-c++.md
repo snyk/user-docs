@@ -90,7 +90,7 @@ When using the IDE, you do not need additional options. The Snyk plugin displays
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:generic` or `pkg:conan` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:generic` or `pkg:conan` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) CLI command
 
 {% hint style="info" %}
 The **Snyk Fix PR** feature is not available for C/C++. This means that Snyk does not notify you if the PR checks fail when the following conditions are met:
@@ -139,9 +139,9 @@ For codebase scanning, Snyk analyzes your source code without requiring a build.
 snyk code test
 ```
 
-Use the `snyk-to-html` plugin to generate reports. To access results programmatically, export them to JSON or SARIF using the `--json` or `--sarif` options. For more information, visit [Exporting the test results to a JSON or SARIF file](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results#export-test-results).
+Use the `snyk-to-html` plugin to generate reports. To access results programmatically, export them to JSON or SARIF using the `--json` or `--sarif` options. For more information, visit [Exporting the test results to a JSON or SARIF file](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results#export-test-results).
 
-For advanced filtering options, visit [snyk-filter](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
+For advanced filtering options, visit [snyk-filter](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
 
 To scan an Open Source Project, Snyk requires the dependencies to be available as source code in the scanned directory. If the dependencies reside in a different location, you must scan that location.
 
@@ -440,7 +440,7 @@ You can use the following command-line options with the `snyk test --unmanaged` 
 * `--target-reference=TARGET_REFERENCE` (`snyk monitor` only)
 * `--project-name=c-project` (`snyk monitor` only)
 
-For more information about command-line options, visit [Options for scanning with `snyk test --unmanaged`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/test#unmanaged) or [`snyk monitor --unmanaged`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/monitor#unmanaged).
+For more information about command-line options, visit [Options for scanning with `snyk test --unmanaged`](https://docs.snyk.io/developer-tools/snyk-cli/commands/test#unmanaged) or [`snyk monitor --unmanaged`](https://docs.snyk.io/developer-tools/snyk-cli/commands/monitor#unmanaged).
 
 To import the test results (issues and dependencies) in the Snyk CLI, run the `snyk monitor --unmanaged` command:
 
