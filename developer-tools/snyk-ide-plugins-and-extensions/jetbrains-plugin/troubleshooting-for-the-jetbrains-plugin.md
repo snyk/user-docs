@@ -83,7 +83,7 @@ at io.snyk.plugin.ui.jcef.JCEFUtils.getJBCefBrowserIfSupported(Utils.kt:27)
 Key observations from the stack trace:
 
 * The error originates deep within the JCEF remote messaging infrastructure, specifically in `com.jetbrains.cef.remote.router.RemoteMessageRouterImpl.create` at line 38. This class is part of the JetBrains implementation of JCEF, handling communication with an out-of-process browser.
-* The Snyk plugin initiates the sequence of calls leading to the error. The trace shows `io.snyk.plugin.ui.jcef.OpenFileLoadHandlerGenerator.generate` attempting to create a `JBCefJSQuery` (via `com.intellij.ui.jcef.JBCefJSQuery.create`).
+* The Snyk plugin initiates the sequence of calls leading to the error. The trace shows `io.snyk.plugin.ui.jcef.OpenFileLoadHandlerGenerator.generate` attempting to create a `JBCefJSQuery` (through `com.intellij.ui.jcef.JBCefJSQuery.create`).
 * `JBCefJSQuery.create` internally calls `com.intellij.ui.jcef.JBCefApp.createMessageRouter`, which in turn attempts to create a `CefMessageRouter`. This process ultimately fails within the remote router initialization.
 
 The `NullPointerException: Cannot read field "objId" because "robj" is null` encountered in IntelliJ IDEA 2025.1 with the Snyk plugin installed is a manifestation of a known platform issue, tracked as IJPL-186252. This issue is strongly correlated with the new default out-of-process JCEF architecture in IntelliJ IDEA 2025.1. The Snyk plugin, in its operations involving JCEF for UI rendering, was triggering this underlying platform instability.

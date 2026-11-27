@@ -24,9 +24,9 @@ Snyk tests and monitors Microsoft Azure Container Registry (ACR) container image
 The view **Which images do you want to test?** opens, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
 1. Select single or multiple images using any or all of the following methods:
-   1. Type the name of a single image for import in the **Image Name** field (at number 1, the Image Name field in the image above),
-   2. Select any of the repositories if you want to import all of the associated images (at number 2, the second item listed in the image above).
-   3. Expand and collapse repositories to select multiple images at number 3, the third item listed in the image above) across multiple repositories.
+   1. Type the name of a single image for import in the **Image Name** field (at number 1, the Image Name field in the preceding image),
+   2. Select any of the repositories if you want to import all of the associated images (at number 2, the second item listed in the preceding image).
+   3. Expand and collapse repositories to select multiple images at number 3, the third item listed in the preceding image) across multiple repositories.
 2.  Click **Add selected repositories**.
 
     A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.

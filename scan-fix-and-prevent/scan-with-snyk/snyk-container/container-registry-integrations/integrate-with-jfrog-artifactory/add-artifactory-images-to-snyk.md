@@ -22,9 +22,9 @@ Snyk tests and monitors your Artifactory container images by evaluating the tags
 * Go to **Projects** and click **Add projects**. The list of integrations already configured on your account opens.
 * The view **Which images do you want to test?** opens, displaying all of the available images for the registry to which you connected, grouped by each of your repositories.
 * Select single or multiple images using any or all of the following methods:
-  * Type the name of a single image for import in the Image Name field (at number 1, the image name field, in the image above),
-  * Select any of the repositories if you want to import all of the associated images (at number 2, the second item listed in the image above).
-  * Expand and collapse repositories to select multiple images (at number 3, the third image listed in the image above) across multiple repositories.
+  * Type the name of a single image for import in the Image Name field (at number 1, the image name field, in the preceding image),
+  * Select any of the repositories if you want to import all of the associated images (at number 2, the second item listed in the preceding image).
+  * Expand and collapse repositories to select multiple images (at number 3, the third image listed in the preceding image) across multiple repositories.
 *   Click **Add selected repositories**.
 
     A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
