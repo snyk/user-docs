@@ -25,7 +25,7 @@ Installing the Scanning Agent involves the following steps:
 Ensure you have the following before you begin:
 
 * An active Snyk API & Web account with permissions to create Scanning Agents.
-* The minimal system resources and specific network requirements are listed in the [Farcaster Agent GitHub Repository README](https://github.com/Probely/farcaster-onprem-agent/blob/main/README.md). That table also covers the out-of-band callback server, which confirms Log4Shell-style vulnerabilities by receiving a connection from the scanned system. Allow its hostname as well as its IP address. The target scan and asset discovery addresses are not in that table; they are listed in [Scanner IP address](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/start-scanning/overview-scan-access-and-connectivity/scanner-ip-address).
+* The minimal system resources and specific network requirements are listed in the [Farcaster Agent GitHub Repository README](https://github.com/Probely/farcaster-onprem-agent/blob/main/README.md). That table also covers the out-of-band callback server, which confirms Log4Shell-style vulnerabilities by receiving a connection from the scanned system. Allow its hostname as well as its IP address. The target scan and asset discovery addresses are not in that table; they are listed in [Scanner IP address](../overview-scan-access-and-connectivity/scanner-ip-address.md).
 
 ### Create the Scanning Agent Token
 

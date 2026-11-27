@@ -40,7 +40,7 @@ Push events trigger synchronization using webhooks. Snyk creates a webhook when 
 * Manifest, Dockerfile, and IaC configuration files: adding, deleting, or renaming these files triggers an automatic update. You can view details of these actions in your Snyk import logs.
 * Exclusions: Snyk respects folder and file exclusions as follows:
   * Snyk Open Source, Container, and IaC: Use the Exclude Folders field in the Organization level repository import window, or configure exclusions using Repo Monitor Configuration in the Inventory. Repo Content Sync respects these settings on each subsequent sync.
-  * Snyk Code: Use a `.snyk` file in the root of your repository to exclude specific directories or files from import. For details, visit [Exclude directories and files from Project import](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/import-project-repository/exclude-directories-and-files-from-project-import).
+  * Snyk Code: Use a `.snyk` file in the root of your repository to exclude specific directories or files from import. For details, visit [Exclude directories and files from Project import](./exclude-directories-and-files-from-project-import.md).
   * Snyk Secrets: Use a `.snyk` file in the root of your repository, with the global or secrets exclude sections. Snyk Secrets reads only the root file and does not apply `.snyk` files in subdirectories. For details, visit [Secrets scanning in the SCM integration](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm).
 
 ### Delete Projects and exclude them from future scans

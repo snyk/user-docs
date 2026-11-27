@@ -115,7 +115,7 @@ Obtain the following information from your identity provider. Provide this infor
 | Client Secret                | Needed only if the IdP does not allow the Implicit grant type                                                               |
 | Email domains and subdomains | The email domains and subdomains that need access to the SSO                                                                |
 
-### Set up Entra ID as SSO (via App Registration/OIDC)
+### Set up Entra ID as SSO (through App Registration/OIDC)
 
 When using Entra ID (formerly Azure AD) for the connection between your Identity provider and Snyk, you must add the Redirect URIs in your Identity provider to establish trust with Snyk.
 

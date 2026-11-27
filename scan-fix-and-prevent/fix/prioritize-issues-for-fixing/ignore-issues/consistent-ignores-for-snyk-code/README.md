@@ -67,7 +67,7 @@ You can manage ignores proactively using Group-level Snyk Code Security policies
 To manage the ignores through security policies, Snyk Code Consistent Ignores need to be enabled at the Group level. You do not require [conversion](convert-project-scoped-ignores-to-asset-scoped-ignores.md) for any previously applied Group level policy ignores. If you want to activate Snyk Code Security policies at the Group level, contact your Snyk account team or Snyk Support.
 
 {% hint style="info" %}
-[**Snyk Security Policies**](https://docs.snyk.io/manage-risk/policies/security-policies) are a separate feature, available at the Group level to all Enterprise customers. That feature is applicable to Open Source and Container, and will not work for Snyk Code. For Group level policy Ignores to apply to Snyk Code, you must use the Snyk Code Security policies feature.
+[**Snyk Security Policies**](../../../../prevent/policies/security-policies/README.md) are a separate feature, available at the Group level to all Enterprise customers. That feature is applicable to Open Source and Container, and will not work for Snyk Code. For Group level policy Ignores to apply to Snyk Code, you must use the Snyk Code Security policies feature.
 {% endhint %}
 
 Policies configured to ignore based on Project attributes do not result in ignores being applied in Snyk CLI and IDE settings where a Snyk Project is not available.
@@ -77,7 +77,7 @@ To configure a Snyk Code Security policy, select the organization/s or project a
 | Criteria | Description                                                                                                                                                                                                                                                      |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CWE      | You can provide any CWE value. Snyk Code will ignore any subsequent tests that find associated findings or issues. You can find valid CWEs on [MITRE’s website](https://cwe.mitre.org/data/published/cwe_latest.pdf) or anywhere you can view Snyk Code results. |
-| Rule IDs | You can provide any Snyk Code rule ID. You can find Snyk Code rule IDs as part of the SARIF output that you exported using [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli).                                                                            |
+| Rule IDs | You can provide any Snyk Code rule ID. You can find Snyk Code rule IDs as part of the SARIF output that you exported using [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/overview).                                                                            |
 | Severity | Matches all issues that contain a specified severity level. When multiple values are selected, the condition applies to all issues containing any of the selected severity levels (for example, High, Medium, Low).                                              |
 
 ### Manage ignores in Snyk Projects

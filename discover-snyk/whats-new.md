@@ -240,8 +240,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk CLI
 
-* The [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/install-the-snyk-cli) page and sub-pages have been updated to reflect configuration best practice, including easily copied code snippets.
-* The [Authenticate to use the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/authenticate-to-use-the-cli) page has been updated to reflect best practice, including easily copied code snippets.
+* The [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) page and sub-pages have been updated to reflect configuration best practice, including easily copied code snippets.
+* The [Authenticate to use the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/authenticate-to-use-the-cli) page has been updated to reflect best practice, including easily copied code snippets.
 
 ### Snyk supported languages
 
@@ -263,7 +263,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Evo by Snyk
 
-* Added the [`aibom test`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/aibom-test) command under [Snyk CLI Help](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands#snyk-aibom-test).
+* Added the [`aibom test`](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom-test) command under [Snyk CLI Help](https://docs.snyk.io/developer-tools/snyk-cli/commands#snyk-aibom-test).
 * Updated `redteam` with additional options, and also added Snyk Agent Red Teaming.
 
 ### Snyk Analytics
@@ -275,7 +275,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Snyk CLI
 
 * The latest Snyk CLI version is [1.1303.2](https://github.com/snyk/cli/releases/tag/v1.1303.2).
-* The [environment variables page](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli#configure-max-network-attempts) has been updated to include `SNYK_MAX_ATTEMPTS` .
+* The [environment variables page](https://docs.snyk.io/developer-tools/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli#configure-max-network-attempts) has been updated to include `SNYK_MAX_ATTEMPTS` .
 
 ### Other updates
 
@@ -294,7 +294,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk CLI
 
-* [Container SBOM](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/container-sbom) has been updated with additional options.
+* [Container SBOM](https://docs.snyk.io/developer-tools/snyk-cli/commands/container-sbom) has been updated with additional options.
 * The Snyk CLI latest release version is [v1.1303.0](https://github.com/snyk/cli/releases/tag/v1.1303.0).
 
 ### Snyk Open Source
@@ -327,9 +327,9 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk CLI
 
-* [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test) command is now in Early Access.
-* The latest [Snyk CLI version](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/install-the-snyk-cli) available is v1.1302.1.
-* The [debugging mode of the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/debugging-the-snyk-cli) has been enhanced with error catalog codes and exit codes.
+* [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) command is now in Early Access.
+* The latest [Snyk CLI version](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) available is v1.1302.1.
+* The [debugging mode of the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/debugging-the-snyk-cli) has been enhanced with error catalog codes and exit codes.
 
 ### Snyk IDE
 
@@ -338,9 +338,9 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Studio
 
-* The [Agentic security with Snyk Studio](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/readme) documentation has been restructured to accurately reflect the workflow you would go through when using Snyk Studio for the first time, and using the available [Quickstart guides](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides).
+* The [Agentic security with Snyk Studio](https://docs.snyk.io/agent-security) documentation has been restructured to accurately reflect the workflow you would go through when using Snyk Studio for the first time, and using the available [Quickstart guides](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides).
 * The [Snyk Studio Adoption](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/usage-analytics) report is now available under [Redesigned analytics](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/overview-tab#snyk-studio-adoption).
-* The [supported tools list](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/readme#mcp-server-supported-tools) was updated to clarify that Snyk supports `snyk_send_feedback`.
+* The [supported tools list](https://docs.snyk.io/agent-security#mcp-server-supported-tools) was updated to clarify that Snyk supports `snyk_send_feedback`.
 
 ### Snyk supported languages
 
@@ -353,7 +353,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Other updates
 
-* [Container monitor](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/container-monitor) has been updated to include a new CLI option `--prune-repeated-subdependencies` to prune depgraphs for large container scans.
+* [Container monitor](https://docs.snyk.io/developer-tools/snyk-cli/commands/container-monitor) has been updated to include a new CLI option `--prune-repeated-subdependencies` to prune depgraphs for large container scans.
 * The [redesigned Snyk Analytics experience](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/overview-tab) is now in General Availability.
 * The [Bitbucket Cloud documentation](https://docs.snyk.io/developer-tools/integrations/scm-integrations/organization-level-integrations/bitbucket-cloud) has been updated to make it clear that scopeless API tokens are not supported for this integration.
 
@@ -376,13 +376,13 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk Studio
 
-* The [Snyk Studio - Agentic integrations](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/readme) documentation has been updated to provide a clearer explanation of MCP usage and the available Snyk Studio tools.
+* The [Snyk Studio - Agentic integrations](https://docs.snyk.io/agent-security) documentation has been updated to provide a clearer explanation of MCP usage and the available Snyk Studio tools.
 * The [Quickstart guides for Snyk Studio](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides) were updated with new and refreshed setup guidance, including [Cursor](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) and [Windsurf](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide).
 
 #### Other updates
 
 * GitHub Cloud App and GitHub Server App have been added to the list of [supported SCMs for Dockerfile analysis](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/scan-your-dockerfile#supported-scms-for-dockerfile-analysis).
-* The `snyk-scm-contributors-count` docs were updated with prerequisites and setup notes. See [snyk-scm-contributors-count](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count).
+* The `snyk-scm-contributors-count` docs were updated with prerequisites and setup notes. See [snyk-scm-contributors-count](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count).
 * The Declining Balance documentation from the [Snyk Declining Balance of Hours Service Description](https://docs.snyk.io/snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/declining-balance) page was updated with service description and expiration details.
 * The IaC issue-reporting walkthrough from the 'Getting started with Snyk IaC' page was updated to remove outdated screenshots and copy.
 * PR template variables were updated on the [Variables list and description](https://docs.snyk.io/scan-fix-and-prevent/fix/snyk-pull-or-merge-requests/customize-pr-templates/variables-list-and-description) page with a new container base image `short name` values for cleaner PR titles and messages.
@@ -395,7 +395,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk CLI
 
-* The latest [Snyk CLI version](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/install-the-snyk-cli) available is v1.1301.0.
+* The latest [Snyk CLI version](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) available is v1.1301.0.
 * The [CLI help](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/reachability-analysis#using-reachability-analysis-with-snyk-cli) has been updated with commands for reachability analysis.
 
 #### Snyk IDE
@@ -426,13 +426,13 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk CLI
 
-* Snyk CLI now supports uploading files and folders for Snyk Code scanning. The command [`code-test`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/code-test) has been updated with options reflecting these capabilities.
-* The latest [Snyk CLI version](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/install-the-snyk-cli) available is v1.1300.2.
+* Snyk CLI now supports uploading files and folders for Snyk Code scanning. The command [`code-test`](https://docs.snyk.io/developer-tools/snyk-cli/commands/code-test) has been updated with options reflecting these capabilities.
+* The latest [Snyk CLI version](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) available is v1.1300.2.
 
 #### Snyk integrations
 
 * The list of Snyk MCP quick guides now includes [Devin guide](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/devin-guide), [Factory guide](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/factory-guide), [Factory terminal guide](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/factory-terminal-ide-guide).
-* The Snyk MCP Server has been rebranded as [Snyk Studio](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/readme).
+* The Snyk MCP Server has been rebranded as [Snyk Studio](https://docs.snyk.io/agent-security).
 * [SCM integration support for Python](supported-languages/supported-languages-list/python/scm-integrations-and-python.md) has been updated with support for Python 3.14.
 
 #### Other updates
@@ -475,9 +475,9 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk CLI
 
-* [Experimental builds](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/releases-and-channels-for-the-snyk-cli#experimental-builds) information is now available for the CLI releases and channels.
-* The [AI-BOM](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/aibom) Snyk CLI command is now available with any stable CLI release.
-* A new Snyk CLI analytics page is now available, providing information about [Essential Operational Analytics](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/snyk-cli-analytics#essential-operational-analytics) and [Optional Usage Analytics](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/snyk-cli-analytics#optional-usage-analytics).
+* [Experimental builds](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli#experimental-builds) information is now available for the CLI releases and channels.
+* The [AI-BOM](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom) Snyk CLI command is now available with any stable CLI release.
+* A new Snyk CLI analytics page is now available, providing information about [Essential Operational Analytics](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli-analytics#essential-operational-analytics) and [Optional Usage Analytics](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli-analytics#optional-usage-analytics).
 
 #### Snyk integrations
 
@@ -502,11 +502,11 @@ The most recent updates include significant changes to the user docs, such as fe
 #### Snyk CLI
 
 * MCP updates:
-  * [Updated the list of supported Snyk security tools into an AI system](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/readme#mcp-server-supported-tools).
+  * [Updated the list of supported Snyk security tools into an AI system](https://docs.snyk.io/agent-security#mcp-server-supported-tools).
   * Updated release status from experimental to [Early access](snyk-release-process.md#legacy-release-statuses) and removed the experimental flag.
   * Added [Cursor](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) as a new supported agentic IDE for MCP.
 * PAT updates:
-  * Added PAT support for [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/authenticate-to-use-the-cli).
+  * Added PAT support for [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/authenticate-to-use-the-cli).
   * Added PAT support for Snyk CI/CD integrations ([CircleCI](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb), [Jenkins](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk), [Maven](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)).
 
 #### Snyk Code
@@ -560,8 +560,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk CLI
 
-* The `--platform` option was added to the [`container sbom`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/container-sbom) command.
-* The MCP information was expanded to [Developer guardrails for agentic workflows](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/readme).
+* The `--platform` option was added to the [`container sbom`](https://docs.snyk.io/developer-tools/snyk-cli/commands/container-sbom) command.
+* The MCP information was expanded to [Developer guardrails for agentic workflows](https://docs.snyk.io/agent-security).
 
 #### IDE plugins and extensions
 
@@ -585,7 +585,7 @@ The [Bitbucket Cloud App](https://docs.snyk.io/developer-tools/integrations/scm-
 
 * For [SCM integrations with Python](supported-languages/supported-languages-list/python/scm-integrations-and-python.md), the list of dependencies that are not supported has been updated to include `pip` for Python 2.7 and 3.7.
 * [Python dependency filtering results](supported-languages/supported-languages-list/python/scm-integrations-and-python.md) have been updated to clarify the conditions in which certain packages and configurations are skipped by SCM scans.
-* The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages/supported-languages-list/c-c++.md), [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/sbom-test), [Test an SBOM document for vulnerabilities](https://docs.snyk.io/developer-tools/snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities).
+* The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages/supported-languages-list/c-c++.md), [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test), [Test an SBOM document for vulnerabilities](https://docs.snyk.io/developer-tools/snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities).
 * [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](https://docs.snyk.io/platform-administration/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker) were clarified.
 
 ### April 2025
@@ -599,8 +599,8 @@ The [Bitbucket Cloud App](https://docs.snyk.io/developer-tools/integrations/scm-
 
 #### Snyk Essentials
 
-* [The Inventory Overview tab](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets/assets-inventory-layouts) is now available to provide insights and prescriptive guidance to improve your application security.
-* [The Visibility column](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets/assets-inventory-components#visibility) has been added to show the visibility status of your repositories.
+* [The Inventory Overview tab](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory/assets-inventory-layouts) is now available to provide insights and prescriptive guidance to improve your application security.
+* [The Visibility column](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory/assets-inventory-components#visibility) has been added to show the visibility status of your repositories.
 
 #### Snyk Broker
 
@@ -628,7 +628,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 #### Other updates
 
-* DAST scanning is now available with [Snyk API & Web](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/readme#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones.
+* DAST scanning is now available with [Snyk API & Web](https://docs.snyk.io/scan-fix-and-prevent#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones.
 * PR Checks is now available with a General Availability release status.
 
 ### March 2025
@@ -645,7 +645,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 #### Snyk CLI, CI/CD, IDE
 
-* [Advanced use of Snyk Container CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/advanced-use-of-snyk-container-cli) now includes support for scanning Kaniko image archives.
+* [Advanced use of Snyk Container CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/advanced-use-of-snyk-container-cli) now includes support for scanning Kaniko image archives.
 * The [support policy for the CI/CD plugins](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations#support-policy) was updated to align with the CLI support policy.
 * The Net new issues feature was added to the IDE documentation for [Eclipse](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/eclipse-plugin), [JetBrains](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin#net-new-issues-versus-all-issues), [Visual Studio](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension#net-new-issues-versus-all-issues), and [Visual Studio Code](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension#net-new-issues-versus-all-issues), and [troubleshooting information](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting) was added.
 
@@ -659,7 +659,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 #### Snyk Essentials
 
 * A new feature is now available in Snyk Essentials, introducing a new type of [asset tag](https://docs.snyk.io/scan-fix-and-prevent/prevent/policies/assets-policies#asset-tagging) known as GitHub custom properties.
-* [Asset tags](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets/assets-inventory-components#tags) have been redefined and are now clearly separated into system tags and user-defined tags.
+* [Asset tags](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory/assets-inventory-components#tags) have been redefined and are now clearly separated into system tags and user-defined tags.
 
 #### Snyk Integrations
 
@@ -705,7 +705,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * [Visual Studio IDE](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension) major update
 * Region configuration update for [IDEs](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions)
 * [Snyk images EOL policy updated](https://docs.snyk.io/developer-tools/integrations/snyk-ci-cd-integrations/snyk-images-and-eol-image-policy)
-* [`snyk container test`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/container-test) and [`snyk container monitor`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/container-monitor) option `--exclude-node-modules` added
+* [`snyk container test`](https://docs.snyk.io/developer-tools/snyk-cli/commands/container-test) and [`snyk container monitor`](https://docs.snyk.io/developer-tools/snyk-cli/commands/container-monitor) option `--exclude-node-modules` added
 
 **Other updates**
 
@@ -731,13 +731,13 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 **Snyk API**
 
-* [Asset inventory components](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets/assets-inventory-components#clusters) has been updated to include details on clusters.
+* [Asset inventory components](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory/assets-inventory-components#clusters) has been updated to include details on clusters.
 
 **Snyk CLI and IDEs**
 
-* The [CLI authentication page](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/authenticate-to-use-the-cli) has been updated for the OAuth 2.0 protocol.
-* The page [Debugging the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/debugging-the-snyk-cli) has been added.
-* [CLI standalone executables](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/install-the-snyk-cli#direct-binary-download) have been updated to include Alpine Arm64.
+* The [CLI authentication page](https://docs.snyk.io/developer-tools/snyk-cli/authenticate-to-use-the-cli) has been updated for the OAuth 2.0 protocol.
+* The page [Debugging the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/debugging-the-snyk-cli) has been added.
+* [CLI standalone executables](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli#direct-binary-download) have been updated to include Alpine Arm64.
 * IDE [Eclipse plugin](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/eclipse-plugin) and [JetBrains plugin](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin) documentation pages have been updated.
 * Authentication information has been updated for all [IDEs](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions).
 
@@ -767,9 +767,9 @@ The Universal Broker feature is now available in Early Access. The Universal Bro
 
 **Snyk CLI**
 
-* The [CLI commands and options summary](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/cli-commands-and-options-summary) was updated.
-* [Authentication](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/authenticate-to-use-the-cli) has been updated.
-* Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/config) help, [`snyk config environment`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/config-environment) help.
+* The [CLI commands and options summary](https://docs.snyk.io/developer-tools/snyk-cli/cli-commands-and-options-summary) was updated.
+* [Authentication](https://docs.snyk.io/developer-tools/snyk-cli/authenticate-to-use-the-cli) has been updated.
+* Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](https://docs.snyk.io/developer-tools/snyk-cli/commands/config) help, [`snyk config environment`](https://docs.snyk.io/developer-tools/snyk-cli/commands/config-environment) help.
 
 **Snyk Integrations**
 
@@ -790,14 +790,14 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 **Snyk CLI**
 
-* [`snyk auth`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/auth) command help updated to reflect OAuth default.
-* [CLI authentication](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/authenticate-to-use-the-cli) instructions updated for OAuth default and improved flow.
-* [`snyk config environment`](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/config-environment) command help has been added.
+* [`snyk auth`](https://docs.snyk.io/developer-tools/snyk-cli/commands/auth) command help updated to reflect OAuth default.
+* [CLI authentication](https://docs.snyk.io/developer-tools/snyk-cli/authenticate-to-use-the-cli) instructions updated for OAuth default and improved flow.
+* [`snyk config environment`](https://docs.snyk.io/developer-tools/snyk-cli/commands/config-environment) command help has been added.
 * CLI [support for pnpm added](supported-languages/supported-languages-list/javascript/#support-for-pnpm).
 
 **Snyk IDE**
 
-* [CLI authentication](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/authenticate-to-use-the-cli) instructions updated for IDE.
+* [CLI authentication](https://docs.snyk.io/developer-tools/snyk-cli/authenticate-to-use-the-cli) instructions updated for IDE.
 * IDE authentication instructions updated: [Eclipse](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin), [Jetbrains](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/authentication-for-the-jetbrains-plugins), [VS extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/authentication-for-visual-studio-extension), [VS Code extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/authentication-for-visual-studio-code-extension)
 
 **Snyk Integrations**
@@ -811,8 +811,8 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * The API documentation now provides the API Reference and explanatory documentation in the [API section](https://docs.snyk.io/developer-tools/snyk-api/snyk-api).
 * The [API End of Life (EOL) process and migration guides](https://docs.snyk.io/developer-tools/snyk-api/api-end-of-life-eol-process-and-migration-guides) are now published and updated to support the process, which began in July.
-* [Asset inventory filtering](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets/assets-inventory-components#asset-tabs) describes the new, simplified view that provides an improved experience of filtering the assets.
-* The [Asset inventory layouts](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets/assets-inventory-layouts) have been renamed to better reflect their functionality.
+* [Asset inventory filtering](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory/assets-inventory-components#asset-tabs) describes the new, simplified view that provides an improved experience of filtering the assets.
+* The [Asset inventory layouts](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory/assets-inventory-layouts) have been renamed to better reflect their functionality.
 * Four new SCM integrations are now available for Snyk:
   * [Atlassian Compass](https://docs.snyk.io/developer-tools/integrations/scm-integrations/application-context-for-scm-integrations#atlassian-compass)
   * [Harness](https://docs.snyk.io/developer-tools/integrations/scm-integrations/application-context-for-scm-integrations#harness)

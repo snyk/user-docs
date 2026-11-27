@@ -17,7 +17,7 @@ Rule Extensions are managed at the **Group** level in the Snyk Web UI, under **G
 
 Add a custom sanitizer to an existing Snyk Code rule.
 
-1. Log in to the Snyk Web UI and select your [Group](https://docs.snyk.io/snyk-admin/groups-and-organizations).
+1. Log in to the Snyk Web UI and select your [Group](https://docs.snyk.io/platform-administration/snyk-hierarchy/groups-and-organizations).
 2. Navigate to **Group settings → Snyk Code → Rule Extensions**.
 3.  Click **Create sanitizer** and define the functional attributes:
 
@@ -38,7 +38,7 @@ Add a custom sanitizer to an existing Snyk Code rule.
 
 You can update attributes such as sanitization type, scope, description, or status. The sanitizer, the rule selections, and the Rule Extension name are not editable.
 
-1. Log in to the Snyk Web UI and select your [Group](https://docs.snyk.io/snyk-admin/groups-and-organizations).
+1. Log in to the Snyk Web UI and select your [Group](https://docs.snyk.io/platform-administration/snyk-hierarchy/groups-and-organizations).
 2. Navigate to **Rule Extensions**.
 3. Select the horizontal ellipsis and then select **Edit**.
 4. Click **Save**.
@@ -47,7 +47,7 @@ You can update attributes such as sanitization type, scope, description, or stat
 
 After you delete a Rule Extension, tests no longer pick it up.
 
-1. Log in to the Snyk Web UI and select your [Group](https://docs.snyk.io/snyk-admin/groups-and-organizations).
+1. Log in to the Snyk Web UI and select your [Group](https://docs.snyk.io/platform-administration/snyk-hierarchy/groups-and-organizations).
 2. Navigate to **Rule Extensions**.
 3. Select the horizontal ellipsis and then select **Delete**.
 4. Confirm the deletion.

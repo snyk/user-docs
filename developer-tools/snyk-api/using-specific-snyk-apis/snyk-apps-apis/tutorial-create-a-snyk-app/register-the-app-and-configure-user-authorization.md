@@ -78,7 +78,7 @@ User authentication for Snyk Apps is done by way of a webpage URL containing que
 
 After access has been provisioned, the user will be kicked back to our app's registered `callbackURL`, which we defined as `http://localhost:3000/callback`.
 
-Essentially, our app needs to generate a link like the following and then send the user to it when it's time to authorize:
+Essentially, our app needs to generate a link like the following and then send the user to it when it is time to authorize:
 
 ```
 https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectURI}&state={state}&code_challenge={codeChallenge}&code_challenge_method=S256
@@ -370,7 +370,7 @@ export async function getAppOrgID(tokenType: string, accessToken: string): Promi
 
 ### Make encrypt / decrypt easy
 
-It's a good idea to encrypt the data we'll be pulling out of the API. We will define a small class for doing so. The class has two members:
+It is a good idea to encrypt the data we'll be pulling out of the API. We will define a small class for doing so. The class has two members:
 
 1. `secret`: The key used to encrypt data
 2. `cryptr`: Instance of the Cryptr library
@@ -412,13 +412,13 @@ export class EncryptDecrypt {
 
 ### Configure Passport.js and the Snyk-OAuth2 strategy
 
-We've laid the groundwork; now it's time to start doing things.
+We've laid the groundwork; now it is time to start doing things.
 
 As discussed in a previous section, our app needs to send would-be authorizers to a specific token URL. We'll add an `/auth` route in our Snyk App and add some authentication middleware to Express. For this, we'll use the excellent [passportjs](https://www.passportjs.org), the [passport-oauth2](https://www.passportjs.org/packages/passport-oauth2/) authentication strategy, along with Snyk's [@snyk/passport-snyk-oauth2](https://www.npmjs.com/package/@snyk/passport-snyk-oauth2). `passport` and its friends handle a large portion of what would otherwise be a lengthy and complicated authentication process.
 
 Because `passport` takes its encapsulation philosophy seriously, we'll need to handle everything else about the auth process. We need to set up an instance of the passport strategy we'll be using. We'll put our database helpers from earlier to use here as well, adding an entry into our database when we receive successful authorization.
 
-It's worth taking the time to go over this file and make sure you've understood everything it's doing.
+It is worth taking the time to go over this file and make sure you've understood everything it is doing.
 
 ```typescript
 // ./util/OAuth2Strategy.ts
@@ -576,9 +576,9 @@ touch ./src/routes/auth/authController.ts
 touch ./src/routes/callback/callbackController.ts
 ```
 
-The `AuthController` handles authentication of the App via the previously described authorization flow. This is the third step of `passport` setup. Every controller class implements the controller interface which has two members: the path and the router.
+The `AuthController` handles authentication of the App through the previously described authorization flow. This is the third step of `passport` setup. Every controller class implements the controller interface which has two members: the path and the router.
 
-This controller handles the `/auth` route, which is what we'll use to send users (via `passport`) to the Snyk website for authorization approval.
+This controller handles the `/auth` route, which is what we'll use to send users (through `passport`) to the Snyk website for authorization approval.
 
 ```typescript
 // ./src/routes/auth/authController.ts
@@ -609,7 +609,7 @@ class AuthController implements Controller {
 export default AuthController;
 ```
 
-Once a user approves authorization to our Snyk App via the Snyk website, the user is kicked back to our callback URI, `/callback`. We'll handle this route similarly, invoking passport again. This is the final step of user authorization.
+Once a user approves authorization to our Snyk App through the Snyk website, the user is kicked back to our callback URI, `/callback`. We'll handle this route similarly, invoking passport again. This is the final step of user authorization.
 
 The `CallbackController` accepts requests on `/callback`, but also creates two sub-routes, `/callback/success` and `/callback/failure`, to handle the different possible outcomes it might receive from Snyk.
 

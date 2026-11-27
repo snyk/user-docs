@@ -41,7 +41,7 @@ Select [**Reports**](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics
 
 #### Group inventory
 
-Select [**Inventory**](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-assets#inventory-menu) to view, filter, and manage your assets.
+Select [**Inventory**](https://docs.snyk.io/scan-fix-and-prevent/fix/manage-asset-inventory#inventory-menu) to view, filter, and manage your assets.
 
 #### Group issues
 

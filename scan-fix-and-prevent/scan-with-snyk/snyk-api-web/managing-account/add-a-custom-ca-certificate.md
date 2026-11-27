@@ -33,7 +33,7 @@ After you upload the certificate, every scan across every target in the account 
 * To replace it: click **Upload** and select a new PEM file. This replaces the existing configuration entirely.
 * To remove it: click **Remove**. This returns the account to the default public trust store.&#x20;
 
-The [account audit log](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/managing-account/generate-and-use-audit-log-reports) records both actions, including the user and timestamp, providing an audit trail for untrusted-certificate findings.
+The [account audit log](./generate-and-use-audit-log-reports.md) records both actions, including the user and timestamp, providing an audit trail for untrusted-certificate findings.
 
 ### Certificate expiry
 
